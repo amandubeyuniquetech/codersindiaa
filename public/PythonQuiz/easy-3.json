@@ -1,0 +1,262 @@
+[
+
+    {
+        "id": 1,
+        "question":"In the years list, which year were you the oldest?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["The first year in years_list",
+        "The second year in years_list",
+        "The fifth year in years_list",
+        "The last year in years_list"
+        ],
+        "answer":"The last year in years_list",
+        "discription":"You are the oldest in the last year of the years_list because it represents the most recent year in the sequence, which corresponds to the highest age."
+    },
+
+    {
+        "id": 2,
+        "question":"Make a list called things with these three strings as elements: 'mozzarella', 'cinderella', 'salmonella'.",
+        "optionsCode":[],                                                                                                
+        "optionsText":["things = ['mozzarella', 'cinderella', 'salmonella']",
+        "things = ['mozzarella' + 'cinderella' + 'salmonella']",
+        "things = ('mozzarella', 'inderella', 'salmonella')",
+        "things = ['mozzarella', 'cinderella', 'salmonella', 'pizza']"
+        ],
+        "answer":"things = ['mozzarella', 'cinderella', 'salmonella']",
+        "discription":"To create a list called things containing the three strings 'mozzarella', 'cinderella', and 'salmonella', you enclose the strings in square brackets, separated by commas."
+    },
+
+    {
+        "id": 3,
+        "question":"How do you capitalize the element in things that refers to a person and then print the list? Did it change the element in the list?",
+        "optionsText":[],                                                                                                
+        "optionsCode":["things[1] = things[1].capitalize();\nprint(things) \n#Yes, it changed the element in the list.",
+        "things[1].capitalize();\nprint(things) \n#No, it did not change the element in the list.",
+        "things[0] = things[0].capitalize();\nprint(things) \n#Yes, it changed the element in the list.",
+        "print(things[1].capitalize());\nprint(things) \n#No, it did not change the element in the list."
+        ],
+        "answer":"things[1] = things[1].capitalize(); print(things) — Yes, it changed the element in the list.",
+        "discription":"To capitalize the element in things that refers to a person (i.e., 'cinderella'), you assign the capitalized version back to the list (things[1]). This changes the element in the list itself."
+    },
+
+    {
+        "id": 4,
+        "question":"How do you create a list called surprise with the elements 'Groucho', 'Chico', and 'Harpo'?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["surprise = ['Groucho', 'Chico', 'Harpo']",
+        "surprise = 'Groucho', 'Chico', 'Harpo'",
+        "surprise = ['Groucho' + 'Chico' + 'Harpo']",
+        "surprise = ('Groucho', 'Chico', 'Harpo')"
+        ],
+        "answer":"surprise = ['Groucho', 'Chico', 'Harpo']",
+        "discription":"To create a list called surprise with the elements 'Groucho', 'Chico', and 'Harpo', you enclose the strings in square brackets and separate them with commas."
+    },
+
+    {
+        "id": 5,
+        "question":"Make an English-to-French dictionary called e2f and print it. Here are your starter words: dog is chien, cat is chat, and walrus is morse.",
+        "optionsText":[],                                                                                                
+        "optionsCode":["e2f = {'dog': 'chien', 'cat': 'chat', 'walrus': 'morse'}\nprint(e2f)",
+        "e2f = ['dog': 'chien', 'cat': 'chat', 'walrus': 'morse']\nprint(e2f)",
+        "e2f = {'chien': 'dog', 'chat': 'cat', 'morse': 'walrus'}\nprint(e2f)",
+        "e2f = (dog, chien, cat, chat, walrus, morse)\nprint(e2f)"
+        ],
+        "answer":"e2f = {'dog': 'chien', 'cat': 'chat', 'walrus': 'morse'}\nprint(e2f)",
+        "discription":"To create an English-to-French dictionary named e2f, use curly braces {} with key-value pairs, where the English word is the key and the French translation is the value. Printing e2f will display the dictionary."
+    },
+
+    {
+        "id": 6,
+        "question":"How do you retrieve the French word for 'walrus' from the e2f dictionary?",
+        "optionsText":[],                                                                                                
+        "optionsCode":["e2f['morse']",
+        "e2f['walrus']",
+        "e2f.get('walrus')",
+        "e2f['chat']"
+        ],
+        "answer":"e2f['walrus']",
+        "discription":"To get the French translation of 'walrus' from the e2f dictionary, you access it using the key 'walrus', which returns the value 'morse'."
+    },
+
+    {
+        "id": 7,
+        "question":"How do you create a French-to-English dictionary called f2e from the e2f dictionary using the items method?",
+        "optionsText":[],                                                                                                
+        "optionsCode":["f2e = {value: key for key, value in e2f.items()}",
+        "f2e = {key: value for value, key in e2f.items()}",
+        "f2e = dict(e2f.items())",
+        "f2e = {key: value for key, value in e2f.items()}"
+        ],
+        "answer":"f2e = {value: key for key, value in e2f.items()}",
+        "discription":"To create a French-to-English dictionary f2e from e2f, use a dictionary comprehension that reverses the key-value pairs. This swaps the keys and values, using e2f.items() to iterate over the original dictionary's items."
+    },
+
+    {
+        "id": 8,
+        "question":"How do you print the English word for the French word 'chien' using the f2e dictionary?",
+        "optionsText":[],                                                                                                
+        "optionsCode":["print(f2e['chien'])",
+        "print(f2e.get('chien'))",
+        "print(f2e['chat'])",
+        "print(f2e['morse'])"
+        ],
+        "answer":"print(f2e['chien'])",
+        "discription":"To print the English translation of the French word 'chien' using the f2e dictionary, access it with the key 'chien' and print the corresponding value."
+    },
+
+    {
+        "id": 9,
+        "question":"Print the following values of the list [3, 2, 1, 0] using a for loop.",
+        "optionsText":[],                                                                                                
+        "optionsCode":["my_list = [3, 2, 1, 0]\nfor i in my_list:\n    print(my_list)",
+        "my_list = [3, 2, 1, 0]\nfor i in my_list:\n    print(i)",
+        "my_list = [3, 2, 1, 0]\nfor i in range(4):\n    print(i)",
+        "my_list = [3, 2, 1, 0]\nfor i in range(len(my_list)):\n    print(i)"
+        ],
+        "answer":"my_list = [3, 2, 1, 0]\nfor i in my_list:\n    print(i)",
+        "discription":"This option correctly iterates through the list [3, 2, 1, 0] using a for loop and prints each element (i) of the list individually."
+    },
+
+    {
+        "id": 10,
+        "question":"Define a function called good that returns the list ['Harry', 'Ron', 'Hermione'].",
+        "optionsText":[],                                                                                                
+        "optionsCode":["def good():\n    return 'Harry', 'Ron', 'Hermione'",
+        "def good():\n    return ['Harry', 'Ron', 'Hermione']",
+        "def good():\n    return {'Harry', 'Ron', 'Hermione'}",
+        "def good():\n    return 'Harry', 'Ron', 'Hermione'"
+        ],
+        "answer":"def good():\n    return ['Harry', 'Ron', 'Hermione']",
+        "discription":"The function good is defined to return a list containing the three elements 'Harry', 'Ron', and 'Hermione'. This is the correct way to return a list in Python."
+    },
+
+    {
+        "id": 11,
+        "question":"How would you create a plain dictionary with the key-value pairs 'a': 1, 'b': 2, and 'c': 3, and print it out?",
+        "optionsText":[],                                                                                                
+        "optionsCode":["my_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(my_dict)",
+        "my_dict = dict('a' = 1, 'b' = 2, 'c' = 3)\nprint(my_dict)",
+        "my_dict = ['a': 1, 'b': 2, 'c': 3]\nprint(my_dict)",
+        "my_dict = ('a': 1, 'b': 2, 'c': 3)\nprint(my_dict)"
+        ],
+        "answer":"my_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(my_dict)",
+        "discription":"This option correctly creates a dictionary with the specified key-value pairs and prints it out. The syntax {} is used to define a dictionary in Python."
+    },
+
+    {
+        "id": 12,
+        "question":"What is the purpose of Object-Oriented Programming (OOP) in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To increase the speed of the program.",
+        "To organize code using objects and classes.",
+        "To simplify writing loops.",
+        "To make code harder to read."
+        ],
+        "answer":"To organize code using objects and classes.",
+        "discription":"Python's OOP is used to structure programs by bundling related properties and behaviors into objects and classes, making the code more modular and easier to manage"
+    },
+
+    {
+        "id": 13,
+        "question":"How do you distinguish between a class object and an instance object in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A class object is created using the __init__ method, while an instance object is not.",
+        "A class object holds methods and attributes, while an instance object holds specific data.",
+        "A class object can only be created once, while an instance object can be created multiple times.",
+        "A class object is a template, while an instance object is the data stored in variables."
+        ],
+        "answer":"A class object holds methods and attributes, while an instance object holds specific data.",
+        "discription":"In Python, a class object defines methods and attributes common to all instances, while an instance object contains the actual data specific to that instance, created based on the class."
+    },
+
+    {
+        "id": 14,
+        "question":"What is the purpose of the __init__ method in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To destroy an object after it is used.",
+        "To initialize the class and define its attributes.",
+        "To override built-in Python functions.",
+        "To create a copy of an object."
+        ],
+        "answer":"To initialize the class and define its attributes.",
+        "discription":"The __init__ method in Python is a special method used to initialize newly created objects. It allows you to set the initial state of an object by assigning values to its attributes when the object is created."
+    },
+
+    {
+        "id": 15,
+        "question":"What is the process for creating a class instance in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Assign the class name directly to a variable.",
+        "Call the class by name, followed by parentheses.",
+        "Use the import statement to create an instance.",
+        "Define a new function to generate an instance."
+        ],
+        "answer":"Call the class by name, followed by parentheses.",
+        "discription":"To create a class instance in Python, you call the class name followed by parentheses, which triggers the __init__ method if defined. For example, if you have a class named Dog, you can create an instance with my_dog = Dog(). This creates an object of the class Dog and assigns it to the variable my_dog"
+    },
+    {
+        "id": 16,
+        "question":"What is the process for creating a class?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Use the def keyword followed by the class name.",
+        "Use the create keyword followed by the class name.",
+        "Use the class keyword followed by the class name.",
+        "Use the init keyword to start the class definition."
+        ],
+        "answer":"Use the class keyword followed by the class name.",
+        "discription":"In Python, you create a class by using the class keyword followed by the class name and a colon. Inside the class, you define methods and attributes."
+    },
+
+    {
+        "id": 17,
+        "question":"Where and how should be class attributes created?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Inside the __init__ method, using the self keyword.",
+        "Inside any method, without the self keyword.",
+        "Directly within the class body, outside of any methods.",
+        "Inside the __main__ block, using the class name."
+        ],
+        "answer":"Directly within the class body, outside of any methods.",
+        "discription":"Class attributes are created directly within the class body, outside of any methods. These attributes are shared among all instances of the class and are defined at the class level"
+    },
+
+    {
+        "id": 18,
+        "question":"What are the two most important concepts to grasp in order to comprehend Python OOP code?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Lists and Dictionaries.",
+        "Loops and Conditionals.",
+        "Classes and Objects.",
+        "Functions and Modules"
+        ],
+        "answer":"Classes and Objects.",
+        "discription":"Understanding classes and objects is essential for grasping Python OOP code. Classes serve as blueprints that define the structure and behavior of objects, while objects are instances of classes that encapsulate data and functionality."
+    },
+
+    {
+        "id": 19,
+        "question":"What is the meaning of multiple inheritance?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A class inherits from a single superclass.",
+        "A class can inherit from more than one superclass.",
+        "A class inherits methods from a superclass only.",
+        "A class cannot inherit from any superclass."
+        ],
+        "answer":"A class can inherit from more than one superclass.",
+        "discription":"Multiple inheritance in Python allows a class to inherit attributes and methods from more than one superclass. This means a class can combine features from multiple parent classes. For example, class DerivedClass(Base1, Base2): indicates that DerivedClass inherits from both Base1 and Base2."
+    },
+
+    {
+        "id": 20,
+        "question":"What are your options for recovering from an exception in your Python script?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Stop the script immediately.",
+        "Ignore the exception and continue.",
+        "Use a try-except block to handle the exception.",
+        "Restart the script from the beginning."
+        ],
+        "answer":"Use a try-except block to handle the exception.",
+        "discription":"In Python, you can recover from exceptions using a try-except block. This allows you to catch and handle exceptions gracefully without crashing the script. By placing the code that might cause an exception inside a try block and writing an appropriate response in the except block, you can manage errors and continue the program's execution."
+    }
+
+]

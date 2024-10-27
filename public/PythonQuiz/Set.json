@@ -1,0 +1,221 @@
+[{"id": 1,
+"question":"Which of the following is the correct way to create an empty set in Python?",
+
+"options":["empty_set = {}",
+"empty_set = []",
+"empty_set = set()",
+"empty_set = ()"],
+"answer":"empty_set = set()",
+"description":"In Python, the correct way to create an empty set is by using set()."
+},
+
+{"id": 2,
+"question":"Write a Python program to create a set with elements 'apple', 'banana', and 'cherry'.",
+
+"options":["set = {'apple', 'banana', 'cherry'}",
+"my_set = ['apple', 'banana', 'cherry']",
+"my_set = ('apple', 'banana', 'cherry')",
+"my_set = {'apple', 'banana', 'cherry'}"],
+"answer":"my_set = {'apple', 'banana', 'cherry'}",
+"description":"In Python, sets are created using curly braces {} with elements separated by commas. The variable my_set correctly holds the set with the elements 'apple', 'banana', and 'cherry'."
+},
+
+{"id": 3,
+"question":"What will be the output of the following Python code?\nmy_set = {1, 2, 3, 4, 5}\nmy_set.add(6)\nprint(my_set)",
+
+"options":["{1, 2, 3, 4, 5, 6}",
+"{1, 2, 3, 4, 5}",
+"{1, 2, 3, 4, 5, 6, 6}",
+"Error"],
+"answer":"{1, 2, 3, 4, 5, 6}",
+"description":"The add() method adds an element to the set. Since sets do not allow duplicate elements, the new element 6 is added to my_set, resulting in {1, 2, 3, 4, 5, 6}."
+},
+
+{"id": 4,
+"question":"Which of the following Python code snippets correctly performs the union of two sets A and B?",
+
+"options":["A = {1, 2, 3}\nB = {3, 4, 5}\nC = A + B\nprint(C)",
+"A = {1, 2, 3}\nB = {3, 4, 5}\nC = A.union(B)\nprint(C)",
+"A = {1, 2, 3}\nB = {3, 4, 5}\nC = A & B\nprint(C)",
+"A = {1, 2, 3}\nB = {3, 4, 5}\nC = A - B\nprint(C)"],
+"answer":"A = {1, 2, 3}\nB = {3, 4, 5}\nC = A.union(B)\nprint(C)",
+"description":"The union() method in Python combines all unique elements from both sets A and B, effectively creating their union. Other options either perform different operations or cause an error."
+},
+
+{"id": 5,
+"question":"Which of the following Python programs correctly performs the intersection of two sets?",
+
+"options":["set1 = {1, 2, 3, 4}\nset2 = {3, 4, 5, 6}\nintersection = set1 & set2\nprint(intersection)",
+"set1 = [1, 2, 3, 4]\nset2 = [3, 4, 5, 6]\nintersection = set1 & set2\nprint(intersection)",
+"set1 = {1, 2, 3, 4}\nset2 = {3, 4, 5, 6}\nintersection = set1.intersection(set2)\nprint(intersection)",
+"set1 = (1, 2, 3, 4)\nset2 = (3, 4, 5, 6)\nintersection = set1.intersection(set2)\nprint(intersection)"],
+"answer":"set1 = {1, 2, 3, 4}\nset2 = {3, 4, 5, 6}\nintersection = set1.intersection(set2)\nprint(intersection)",
+"description":"intersection() method, which is the correct way to perform a set intersection in Python. Option A is also correct, but it uses the & operator instead of the .intersection() method. Options B and D are incorrect because lists and tuples do not support intersection operations."
+},
+
+{"id": 6,
+"question":"Consider the following Python code that performs a set difference operation. What will be the output of the program?\nset_a = {1, 2, 3, 4, 5}\nset_b = {3, 4, 6, 7}\ndifference = set_a - set_b\nprint(difference)",
+
+"options":["{1, 2, 3, 4, 5}",
+"{6, 7}",
+"{1, 2, 5}",
+"{3, 4}"],
+"answer":"{1, 2, 5}",
+"description":"The set difference operation set_a - set_b returns elements that are in set_a but not in set_b. In this case, the elements {1, 2, 5} are in set_a but not in set_b, so the result is {1, 2, 5}."
+},
+
+{"id": 7,
+"question":"Given the following Python code, which option correctly performs the symmetric difference between two sets, set1 and set2?\nset1 = {1, 2, 3, 4}\nset2 = {3, 4, 5, 6}\nresult = ?",
+
+"options":["set1 ^ set2",
+"set1 & set2",
+"set1 | set2",
+"set1 - set2"],
+"answer":"set1 ^ set2",
+"description":"The symmetric difference of two sets returns a new set containing elements that are in either of the sets but not in their intersection. In Python, the ^ operator is used to perform this operation between two sets."
+},
+
+{"id": 8,
+"question":"Write a Python program to check if a set is a subset of another set.\nA = {1, 2, 3}\nB = {1, 2, 3, 4, 5}\nresult = A.issubset(B)\nprint(result)",
+
+"options":["True",
+"False",
+"None",
+"Error"],
+"answer":"True",
+"description":"The issubset() method in Python checks whether all elements of set A are in set B. Since {1, 2, 3} is a subset of {1, 2, 3, 4, 5}, the output of the code will be True."
+},
+
+{"id": 9,
+"question":"Which of the following Python code snippets correctly checks if two sets are disjoint?",
+
+"options":["set1 = {1, 2, 3} set2 = {4, 5, 6} result = set1 & set2 == set() print(result)",
+"set1 = {1, 2, 3}\nset2 = {3, 4, 5}\nresult = set1.isdisjoint(set2)\nprint(result)",
+"set1 = {1, 2, 3} set2 = {2, 3, 4} result = set1.intersection(set2) == set() print(result)",
+"set1 = {1, 2, 3}\nset2 = {4, 5, 6}\nresult = set1 - set2 == set()\nprint(result)"],
+"answer":"set1 = {1, 2, 3}\nset2 = {3, 4, 5}\nresult = set1.isdisjoint(set2)\nprint(result)",
+"description":"isdisjoint() method to check if set1 and set2 have no elements in common. This method returns True if the sets are disjoint (i.e., they do not share any elements), and False otherwise."
+},
+
+{"id": 10,
+"question":"Write a Python program to clear all elements from a set.",
+
+"options":["my_set = {1, 2, 3}\nmy_set.remove_all()",
+"my_set = {1, 2, 3}\nmy_set.clear()",
+"my_set = {1, 2, 3}\nmy_set.delete()",
+"my_set = {1, 2, 3}\nmy_set.empty()"],
+"answer":"my_set = {1, 2, 3}\nmy_set.clear()",
+"description":"The clear() method is used to remove all elements from a set in Python."
+},
+
+{"id": 11,
+"question":"Which of the following Python code snippets correctly copies a set?",
+
+"options":["original_set = {1, 2, 3}\ncopied_set = original_set.copy()",
+"original_set = {1, 2, 3}\ncopied_set = original_set",
+"original_set = {1, 2, 3}\ncopied_set = set(original_set)",
+"original_set = {1, 2, 3}\ncopied_set = list(original_set)"],
+"answer":"original_set = {1, 2, 3}\ncopied_set = original_set.copy()",
+"description":"uses the copy() method, which creates a shallow copy of the set."
+},
+
+{"id": 12,
+"question":"What will be the output of the following Python code?\nmy_set = {1, 2, 3, 4, 5}\nelement = my_set.pop()\nprint(element)\nprint(my_set)",
+
+"options":["The output will be 1 followed by {2, 3, 4, 5}",
+"The output will be 5 followed by {1, 2, 3, 4}",
+"The output will be an arbitrary element (e.g., 1) followed by a set with that element removed",
+"The output will be an error message"],
+"answer":"The output will be an arbitrary element (e.g., 1) followed by a set with that element removed",
+"description":"The pop() method removes and returns an arbitrary element from the set. Since sets are unordered, the element removed is not predictable, but it will be an element that was in the set before the call. The remaining set will have the element removed."
+},
+
+{"id": 13,
+"question":"Write a Python program to find the difference between two sets using the '-' operator.\nset1 = {1, 2, 3, 4}\nset2 = {3, 4, 5, 6}\ndifference = set1 - set2\nprint(difference)",
+
+"options":["{1, 2, 3, 4}",
+"{5, 6}",
+"{1, 2}",
+"{3, 4}"],
+"answer":"{1, 2}",
+"description":"The - operator finds the difference between two sets. In this example, set1 - set2 returns the elements that are in set1 but not in set2. So, {1, 2} is the result."
+},
+
+{"id": 14,
+"question":"Which Python code snippet correctly updates a set s with elements from another iterable iterable?",
+
+"options":["s.update(iterable)",
+"s.add(iterable)",
+"s.insert(iterable)",
+"s.append(iterable)"],
+"answer":"s.update(iterable)",
+"description":"The update() method adds elements from an iterable (like a list or another set) to the set s. The other options (add(), append(), and insert()) do not support adding multiple elements from an iterable to a set."
+},
+
+{"id": 15,
+"question":"How can you remove the element 3 from the set my_set using the discard method in Python?\nmy_set = {1, 2, 3, 4, 5}\nmy_set.discard(3)\nprint(my_set)",
+
+"options":["{1, 2, 3, 4, 5}",
+"{1, 2, 4, 5}",
+"{1, 2, 3, 5}",
+"{3, 1, 2, 4, 5}"],
+"answer":"{1, 2, 4, 5}",
+"description":"The discard method removes the specified element from the set if it exists. If the element is not present, the set remains unchanged. In this case, 3 is removed from {1, 2, 3, 4, 5}, resulting in {1, 2, 4, 5}."
+},
+
+{"id": 16,
+"question":"Which of the following Python code snippets finds the common elements between multiple sets?",
+
+"options":["set1 = {1, 2, 3}\nset2 = {2, 3, 4}\nset3 = {3, 4, 5}\ncommon_elements = set1 & set2 & set3\nprint(common_elements)",
+"set1 = {1, 2, 3}\nset2 = {2, 3, 4}\nset3 = {3, 4, 5}\ncommon_elements = set1.intersection(set2, set3)\nprint(common_elements)",
+"set1 = {1, 2, 3}\nset2 = {2, 3, 4}\nset3 = {3, 4, 5}\ncommon_elements = set1.union(set2, set3)\nprint(common_elements)",
+"set1 = {1, 2, 3}\nset2 = {2, 3, 4}\nset3 = {3, 4, 5}\ncommon_elements = set1.symmetric_difference(set2).symmetric_difference(set3)\nprint(common_elements)"],
+"answer":"set1 = {1, 2, 3}\nset2 = {2, 3, 4}\nset3 = {3, 4, 5}\ncommon_elements = set1.intersection(set2, set3)\nprint(common_elements)",
+"description":"uses the intersection method to find common elements across multiple sets. This method effectively identifies elements that are present in all specified sets."
+},
+
+{"id": 17,
+"question":"Which of the following Python code snippets correctly creates a frozen set?",
+
+"options":["my_frozen_set = frozenset([1, 2, 3, 4])",
+"my_frozen_set = set([1, 2, 3, 4])",
+"my_frozen_set = frozenset({1, 2, 3, 4})",
+"my_frozen_set = {1, 2, 3, 4}"],
+"answer":"my_frozen_set = frozenset([1, 2, 3, 4])",
+"description":"A frozen set is an immutable version of a set. The frozenset() function is used to create a frozen set. Option A is correct because it uses the frozenset() function, while the other options either use the mutable set() function or incorrect syntax."
+},
+
+{"id": 18,
+"question":"Which Python code correctly removes the intersection of two sets (setB) from a third set (setA)?",
+
+"options":["setA = {1, 2, 3, 4, 5}\nsetB = {3, 4}\nsetA = setA - setB",
+"setA = {1, 2, 3, 4, 5}\nsetB = {3, 4}\nsetA = setA & setB",
+"setA = {1, 2, 3, 4, 5}\nsetB = {3, 4}\nsetA = setA - setA & setB",
+"setA = {1, 2, 3, 4, 5}\nsetB = {3, 4}\nsetA = setA | setB"],
+"answer":"setA = {1, 2, 3, 4, 5}\nsetB = {3, 4}\nsetA = setA - setB",
+"description":"The code in option A uses the set difference operator (-) to remove all elements of setB from setA, effectively removing the intersection of the two sets from setA."
+},
+
+{"id": 19,
+"question":"What is the correct way to convert a list into a set in Python?",
+
+"options":["set([1, 2, 3])",
+"list({1, 2, 3})",
+"convert([1, 2, 3])",
+"set(list([1, 2, 3]))"],
+"answer":"set([1, 2, 3])",
+"description":"In Python, to convert a list into a set, you use the set() constructor. Option A correctly converts a list [1, 2, 3] into a set. Option B tries to convert a set into a list. Option C is not a valid Python function for this purpose. Option D is redundant as it converts the list to a set directly without needing the list() call."
+},
+
+{"id": 20,
+"question":"Which Python code correctly finds the union of multiple sets?",
+
+"options":["set1 = {1, 2, 3}\nset2 = {3, 4, 5}\nset3 = {5, 6, 7}\nunion_set = set1 + set2 + set3\nprint(union_set)",
+"set1 = {1, 2, 3}\nset2 = {3, 4, 5}\nset3 = {5, 6, 7}\nunion_set = set1 | set2 | set3\nprint(union_set)",
+"set1 = {1, 2, 3}\nset2 = {3, 4, 5}\nset3 = {5, 6, 7}\nunion_set = set1.union(set2).union(set3)\nprint(union_set)",
+"set1 = {1, 2, 3}\nset2 = {3, 4, 5}\nset3 = {5, 6, 7}\nunion_set = set1 + set2 + set3\nprint(set(union_set))"],
+"answer":"set1 = {1, 2, 3}\nset2 = {3, 4, 5}\nset3 = {5, 6, 7}\nunion_set = set1 | set2 | set3\nprint(union_set)",
+"description":"The | operator computes the union of sets, combining all unique elements from each set. Option B correctly finds the union of set1, set2, and set3 using this operator."
+}
+
+]

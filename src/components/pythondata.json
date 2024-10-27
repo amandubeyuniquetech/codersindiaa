@@ -1,0 +1,80 @@
+[    
+	{    
+		"id": "1",
+		"title":"Python introduction",
+		"SubHeading": "What is Python?",
+		"SubHeadingParagraph": "Python is a versatile and powerful high-level programming language that is widely used for various applications, from web development to data analysis, artificial intelligence, and scientific computing. Here's an introduction to Python, covering its key features and why it's popular among developers.",
+		"Syntax":"",
+		"Example":"x = 10\nname = 'Alice'\nprint(f'Name: {name}, Age: {x}')\n\n#Output:\n#Name:Alice,Age:10",
+		"batter":
+			[
+                {   "id":"001",
+                    "x":23,
+                    "y":24
+                        
+                }
+            ],
+		"topping":
+			[
+				{ "id": "5001", "type": "None" },
+				{ "id": "5002", "type": "Glazed" },
+				{ "id": "5005", "type": "Sugar" },
+				{ "id": "5007", "type": "Powdered Sugar" },
+				{ "id": "5006", "type": "Chocolate with Sprinkles" },
+				{ "id": "5003", "type": "Chocolate" },
+				{ "id": "5004", "type": "Maple" }
+			]
+	},
+	{    
+		"id": "2",
+		"title":"Python introduction",
+		"SubHeading": "What is Python?",
+		"SubHeadingParagraph": "Python is a versatile and powerful high-level programming language that is widely used for various applications, from web development to data analysis, artificial intelligence, and scientific computing. Here's an introduction to Python, covering its key features and why it's popular among developers.",
+		"Syntax":"",
+		"Example":" x = 10\nname = 'Alice'\nprint(f'Name: {name}, Age: {x}')",
+		"batter":
+			[
+                {   "id":"001",
+                    "x":23,
+                    "y":24
+                        
+                }
+            ],
+		"topping":
+			[
+				{ "id": "5001", "type": "None" },
+				{ "id": "5002", "type": "Glazed" },
+				{ "id": "5005", "type": "Sugar" },
+				{ "id": "5007", "type": "Powdered Sugar" },
+				{ "id": "5006", "type": "Chocolate with Sprinkles" },
+				{ "id": "5003", "type": "Chocolate" },
+				{ "id": "5004", "type": "Maple" }
+			]
+	},
+	{    
+		"id": "",
+		"title":"Python introduction",
+		"SubHeading": "What is Python?",
+		"SubHeadingParagraph": "Python is a versatile and powerful high-level programming language that is widely used for various applications, from web development to data analysis, artificial intelligence, and scientific computing. Here's an introduction to Python, covering its key features and why it's popular among developers.",
+		"Syntax":"",
+		"Example":" x = 10\nname = 'Alice'\nprint(f'Name: {name}, Age: {x}')",
+		"batter":
+			[
+                {   "id":"001",
+                    "x":23,
+                    "y":24
+                        
+                }
+            ],
+		"topping":
+			[
+				{ "id": "5001", "type": "None" },
+				{ "id": "5002", "type": "Glazed" },
+				{ "id": "5005", "type": "Sugar" },
+				{ "id": "5007", "type": "Powdered Sugar" },
+				{ "id": "5006", "type": "Chocolate with Sprinkles" },
+				{ "id": "5003", "type": "Chocolate" },
+				{ "id": "5004", "type": "Maple" }
+			]
+	}
+]

@@ -1,0 +1,263 @@
+[
+    {
+    "id": 1,
+    "question":"If you had a function named bacon() inside a module named spam, how would you call it after importing spam?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["bacon.spam()",
+    "spam.bacon()",
+    "call spam.bacon()",
+    "import spam.bacon()"
+    ],
+    "answer":"spam.bacon()",
+    "discription":"After importing the spam module, you call the bacon() function using the syntax module_name.function_name(). Therefore, you would call bacon() as spam.bacon()."
+},
+
+{
+    "id": 2,
+    "question":"Why are functions advantageous to have in your programs?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["They allow you to write code that is syntactically incorrect.",
+    "They make your program run faster.",
+    "They help you avoid repetition, make the code more modular, and easier to understand and maintain.",
+    "They eliminate the need for variables in your program."
+    ],
+    "answer":"They help you avoid repetition, make the code more modular, and easier to understand and maintain.",
+    "discription":"Functions help in organizing code into manageable sections, making it reusable and reducing redundancy. This enhances code readability, maintainability, and overall structure."
+},
+
+{
+    "id": 3,
+    "question":"When does the code in a function run: when it's specified or when it's called?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["When it's specified.",
+    "When it's called",
+    "When the program starts.",
+    "Continuously in a loop."
+    ],
+    "answer":"When it's called",
+    "discription":"The code inside a function executes only when the function is called, not when it is defined. Defining a function merely specifies what it does, but it doesn't run until you explicitly call it."
+},
+
+
+{
+    "id": 4,
+    "question":"What is the difference between a function and a function call?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A function is the code that performs a task; a function call is how you define the function.",
+    "A function is how you use the function; a function call is the code that performs the task.",
+    "A function is the block of code that performs a task; a function call is the code that executes the function.",
+    "A function is an input to a program; a function call is the output of a program."
+    ],
+    "answer":"A function is the block of code that performs a task; a function call is the code that executes the function.",
+    "discription":"A function is a defined block of code that performs a specific task.\nA function call is when you execute the function to perform its task."
+},
+
+{
+    "id": 5,
+    "question":"How many global scopes are there in a Python program? How many local scopes?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["There is one global scope and one local scope.",
+    "There are multiple global scopes and one local scope.",
+    "There is one global scope and multiple local scopes.",
+    "There are multiple global scopes and multiple local scopes."
+    ],
+    "answer":"There is one global scope and multiple local scopes.",
+    "discription":"In a Python program, there is only one global scope, which exists for the duration of the program.\nEach function call creates a new local scope, so there can be multiple local scopes in a program."
+},
+
+{
+    "id": 6,
+    "question":"What happens to variables in a local scope when the function call returns?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["They are preserved and can be accessed outside the function.",
+    "They are deleted and cannot be accessed outside the function.",
+    "They are converted to global variables.",
+    "They are stored in memory until the program ends."
+    ],
+    "answer":"They are deleted and cannot be accessed outside the function.",
+    "discription":"When a function call returns, the local scope is destroyed, and all variables defined within that local scope are deleted. They cannot be accessed outside the function."
+},
+
+{
+    "id": 7,
+    "question":"If a function does not have a return statement, what is the return value of a call to that function?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["The function returns 0.",
+    "The function returns None.",
+    "The function returns an empty string' '.",
+    "The function returns an error."
+    ],
+    "answer":"The function returns None.",
+    "discription":"In Python, if a function does not have a return statement, it automatically returns None when called. This is the default return value for all functions that do not explicitly return a value."
+},
+
+{
+    "id": 8,
+    "question":"How do you make a function variable refer to the global variable?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Use the local keyword before the variable name.",
+    "Use the global keyword before the variable name.",
+    "Use the universal keyword before the variable name.",
+    "Use the extern keyword before the variable name."
+    ],
+    "answer":"Use the global keyword before the variable name.",
+    "discription":"In Python, the global keyword is used inside a function to refer to a variable that is defined in the global scope. This allows the function to modify the global variable."
+},
+
+{
+    "id": 9,
+    "question":"If you had a bacon() function in a spam module, how would you call it after importing spam?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["bacon()",
+    "call spam.bacon()",
+    "spam.bacon()",
+    "spam::bacon()"
+    ],
+    "answer":"spam.bacon()",
+    "discription":"After importing the spam module, you call the bacon() function using the syntax module_name.function_name(), which in this case is spam.bacon()."
+},
+
+{
+    "id": 10,
+    "question":"What is the purpose of the try clause? What is the purpose of the except clause?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["The try clause is used to test if a block of code has errors; the except clause is used to skip the error.",
+    "The try clause is used to define functions; the except clause is used to handle function arguments.",
+    "The try clause is used to execute code that might cause an exception; the except clause is used to handle the exception if one occurs.",
+    "The try clause is used to iterate over a sequence; the except clause is used to end the iteration."
+    ],
+    "answer":"The try clause is used to execute code that might cause an exception; the except clause is used to handle the exception if one occurs.",
+    "discription":"The try clause allows you to write code that might raise an exception. If an exception occurs, the code in the except clause is executed to handle the exception gracefully. This helps in preventing the program from crashing and allows for proper error handling."
+},
+
+
+{
+    "id": 11,
+    "question":"What is the value of the expression spam[int(int('3' * 2) / 11)]?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["The expression results in an error.",
+    "The expression evaluates to spam[2].",
+    "The expression evaluates to spam[1].",
+    "The expression evaluates to spam[0]."
+    ],
+    "answer":"The expression results in an error.",
+    "discription":"Evaluating the expression:\n '3' * 2 results in '33'.\n int('33') converts '33' to 33.\n 3 / 11 is 3.0.\n int(3.0) converts 3.0 to 3.\n If spam is not defined, attempting to use spam[3] will cause an error."
+},
+
+{
+    "id": 12,
+    "question":"What is the value of spam[:2]?\nLet's pretend bacon has the list [3.14, 'cat', 11, 'cat', True] for the next three questions.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["[3.14, 'cat']",
+    "['cat', 11]",
+    "[3.14, 'cat', 11]",
+    "['cat', 11, 'cat']"
+    ],
+    "answer":"[3.14, 'cat']",
+    "discription":"The slice spam[:2] returns the elements from the start of the list up to, but not including, index 2. Therefore, the first two elements of bacon are [3.14, 'cat']."
+},
+
+{
+    "id": 13,
+    "question":"Given the list bacon = [3.14, 'cat', 11, 'cat', True], what is the value of bacon.index('cat')?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["1",
+    "2",
+    "3",
+    "4"
+    ],
+    "answer":"1",
+    "discription":"The index() method returns the first occurrence of the specified value. In this case, the first occurrence of 'cat' in the list bacon is at index 1."
+},
+
+{
+    "id": 14,
+    "question":"Given the list bacon = [3.14, 'cat', 11, 'cat', True], how does bacon.append(99) change the look of the list value in bacon?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["[99, 3.14, 'cat', 11, 'cat', True]",
+    "[3.14, 'cat', 11, 'cat', True, 99]",
+    "[3.14, 'cat', 11, 99, 'cat', True]",
+    "[3.14, 'cat', 11, 'cat']"
+    ],
+    "answer":"[3.14, 'cat', 11, 'cat', True, 99]",
+    "discription":"The append() method adds its argument to the end of the list. Thus, appending 99 to the list bacon results in [3.14, 'cat', 11, 'cat', True, 99]."
+},
+
+{
+    "id": 15,
+    "question":"Given the list bacon = [3.14, 'cat', 11, 'cat', True], how does bacon.remove('cat') change the look of the list value in bacon?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["[3.14, 11, 'cat', True]",
+    "[3.14, 'cat', 'cat', True]",
+    "[3.14, 'cat', 11, 'cat']",
+    "['cat', 11, 'cat', True]"
+    ],
+    "answer":"[3.14, 11, 'cat', True]",
+    "discription":"The remove() method removes the first occurrence of the specified value. In this case, removing 'cat' from the list bacon results in [3.14, 11, 'cat', True]."
+},
+
+{
+    "id": 16,
+    "question":"What are the list concatenation and list replication operators in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["+ and *",
+    "& and |",
+    "- and ",
+    "@ and %"
+    ],
+    "answer":"+ and *",
+    "discription":"The + operator is used for list concatenation, which combines two lists into one.\nThe * operator is used for list replication, which repeats the elements of a list a specified number of times."
+},
+
+{
+    "id": 17,
+    "question":"How are list values and string values identical in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Both lists and strings are immutable.",
+    "Both lists and strings can be concatenated and replicated.",
+    "Both lists and strings can only contain characters.",
+    "Both lists and strings are created using square brackets."
+    ],
+    "answer":"Both lists and strings can be concatenated and replicated.",
+    "discription":"Both lists and strings support concatenation using the + operator and replication using the * operator. While strings are immutable and lists are mutable, these operations work similarly for both types."
+},
+
+{
+    "id": 18,
+    "question":"How do you get a list value's tuple form? How do you get a tuple value's list form?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Use list() for both conversions.",
+    "Use tuple() to convert a list to a tuple and list() to convert a tuple to a list.",
+    "Use list() to convert a list to a tuple and tuple() to convert a tuple to a list.",
+    "Use tuple() for both conversions."
+    ],
+    "answer":"Use tuple() to convert a list to a tuple and list() to convert a tuple to a list.",
+    "discription":"The tuple() function converts a list to a tuple, and the list() function converts a tuple to a list. These functions allow you to change the data type while preserving the elements."
+},
+
+{
+    "id": 19,
+    "question":"Variables that 'contain' list values are not necessarily lists themselves. Instead, what do they contain?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["The list values themselves",
+    "References to the list values",
+    "Copies of the list values",
+    "The length of the list"
+    ],
+    "answer":"References to the list values",
+    "discription":"Variables that 'contain' list values actually contain references (or pointers) to the list values stored in memory, not the list values themselves. This means the variable points to the location where the list is stored."
+},
+
+{
+    "id": 20,
+    "question":"What is the value of a dictionary entry with the key 'foo' and the value 42?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["{'foo': 42}",
+    "{'foo', 42}",
+    "[foo: 42]",
+    "('foo', 42)"
+    ],
+    "answer":"{'foo': 42}",
+    "discription":"In Python, a dictionary entry with the key 'foo' and the value 42 is represented as {'foo': 42}. The key-value pair is written inside curly braces, with the key and value separated by a colon."
+}
+]

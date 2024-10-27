@@ -1,0 +1,262 @@
+[
+    {
+        "id": 1,
+        "question":"How do you inherit from a base class in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["class DerivedClass(BaseClass):",
+        "class DerivedClass inherits BaseClass:",
+        "class DerivedClass extends BaseClass:",
+        "class DerivedClass(BaseClass) ->"
+        ],
+        "answer":"class DerivedClass(BaseClass):",
+        "discription":"Inheritance is specified by placing the base class in parentheses after the derived class name."
+    },
+
+    {
+        "id": 2,
+        "question":"How do you declare a variable in Python?",
+        "optionsText":[],                                                                                                
+        "optionsCode":["var x = 10",
+        "int x = 10",
+        "x = 10",
+        "declare x = 10"
+        ],
+        "answer":"x = 10",
+        "discription":" In Python, you simply assign a value to a variable using the = operator."
+    },
+
+    {
+        "id": 3,
+        "question":"What is a list in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["An immutable sequence of values.",
+        "A mutable sequence of values.",
+        "A type of set",
+        "A dictionary of values."
+        ],
+        "answer":"An immutable sequence of values.",
+        "discription":"Lists in Python are mutable sequences that can store multiple items of different types."
+    },
+
+    {
+        "id": 4,
+        "question":"Which of the following is an immutable data type in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["List",
+        "Dictionary",
+        "Tuple",
+        "Set"
+        ],
+        "answer":"Tuple",
+        "discription":"Tuples are immutable, meaning their contents cannot be changed after creation."
+    },
+
+    {
+        "id": 5,
+        "question":"How do you add an item to a list in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["list.append(item)",
+        "list.add(item)",
+        "list.insert(item)",
+        "list.push(item)"
+        ],
+        "answer":"list.append(item)",
+        "discription":"The append() method adds an item to the end of a list."
+    },
+
+    {
+        "id": 6,
+        "question":"How do you write a for loop in Python?",
+        "optionsText":[],                                                                                                
+        "optionsCode":["for item in iterable:",
+        "for (item; iterable; ++item)",
+        "for item in range(iterable):",
+        "foreach item in iterable:"
+        ],
+        "answer":"for item in iterable:",
+        "discription":"The for loop iterates over items of an iterable object."
+    },
+
+    {
+        "id": 7,
+        "question":"What is a default argument in a Python function?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["An argument that is given a default value if not provided.",
+        "An argument that must be provided by the caller.",
+        "An argument that changes the function’s behavior.",
+        "An argument used to handle exceptions."
+        ],
+        "answer":"An argument that is given a default value if not provided.",
+        "discription":"Default arguments have default values that are used if no value is provided by the caller."
+    },
+
+    {
+        "id": 8,
+        "question":"What is the purpose of the __init__.py file in a package?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To initialize the package and make it a proper package.",
+        "To store data about the package.",
+        "To define global variables.",
+        "To manage exceptions."
+        ],
+        "answer":"To initialize the package and make it a proper package.",
+        "discription":"The __init__.py file indicates that a directory is a Python package and can initialize package-level variables."
+    },
+
+    {
+        "id": 9,
+        "question":"What will be the output of the following code?\na, b, c = (1, 2, 3)\nprint(a, b, c)",
+        "optionsText":[],                                                                                                
+        "optionsCode":["(1, 2, 3)",
+        "1 2 3",
+        "SyntaxError",
+        "[1, 2, 3]"
+        ],
+        "answer":"1 2 3",
+        "discription":"The code demonstrates basic tuple unpacking in Python. The variables a, b, and c are assigned the values 1, 2, and 3 respectively, resulting in the output 1 2 3."
+    },
+
+    {
+        "id": 10,
+        "question":"What will be the output of the following code?\na, b, c = [10, 20, 30]\nprint(b)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["10",
+        "20",
+        "30",
+        "None"
+        ],
+        "answer":"20",
+        "discription":"The list [10, 20, 30] is unpacked into the variables a, b, and c, with b taking the value 20."
+    },
+
+    {
+        "id": 11,
+        "question":"What will be the output of the following code?\na, b, c = 'abc'\nprint(a, c)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["a b",
+        "a c",
+        "a b c",
+        "SyntaxError"
+        ],
+        "answer":"a c",
+        "discription":"The string 'abc' is unpacked into a, b, and c. The output shows the first and last characters, a and c."
+    },
+
+    {
+        "id": 12,
+        "question":"What will be the output of the following code?\na, (b, c), d = 1, (2, [3, 4]), 5\nprint(c)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["2",
+        "[3, 4]",
+        "4",
+        "3"
+        ],
+        "answer":"[3, 4]",
+        "discription":"The tuple (2, [3, 4]) is unpacked into b and c, with c being [3, 4]."
+    },
+
+    {
+        "id": 13,
+        "question":"What will be the output of the following code?\na, b = 1, 2\nc, d = a + b, a * b\nprint(c, d)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["1 2",
+        "3 2",
+        "3 4",
+        "2 4"
+        ],
+        "answer":"3 4",
+        "discription":"The variables c and d are calculated as c = a + b and d = a * b, resulting in 3 and 4."
+    },
+
+    {
+        "id": 14,
+        "question":"What will be the output of the following code?\nx = 5\ny = 2.5\nprint(type(y))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["<class 'int'>",
+        "<class 'float'>",
+        "<class 'str'>",
+        "<class 'complex'>"
+        ],
+        "answer":"<class 'float'>",
+        "discription":"The variable y is a floating-point number, so type(y) returns <class 'float'>."
+    },
+
+    {
+        "id": 15,
+        "question":"What will be the output of the following code?\ngreeting = 'Hello'\nname = 'World'\nprint(greeting + ' '' + name)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["HelloWorld",
+        "Hello World",
+        "Hello",
+        "World"
+        ],
+        "answer":"Hello World",
+        "discription":"The + operator concatenates the strings, and \" \" adds a space between them, resulting in Hello World."
+    },
+
+    {
+        "id": 16,
+        "question":"What will be the output of the following code?\nnumbers = [10, 20, 30, 40, 50]\nprint(numbers[2])",
+        "optionsCode":[],                                                                                                
+        "optionsText":["10",
+        "20",
+        "30",
+        "40"
+        ],
+        "answer":"30",
+        "discription":"List indexing starts at 0, so numbers[2] accesses the third element, which is 30."
+    },
+
+    {
+        "id": 17,
+        "question":"What will be the output of the following code?\nfor i in range(3):\n    print(i)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["0 1 2",
+        "1 2 3",
+        "0 1 2 3",
+        "1 2"
+        ],
+        "answer":"0 1 2",
+        "discription":"The range(3) function generates numbers from 0 to 2, so the loop prints 0, 1, and 2."
+    },
+
+    {
+        "id": 18,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(my_dict['b'])",
+        "optionsCode":[],                                                                                                
+        "optionsText":["1",
+        "2",
+        "3",
+        "None"
+        ],
+        "answer":"2",
+        "discription":"Accessing my_dict['b'] returns the value associated with the key 'b', which is 2."
+    },
+
+    {
+        "id": 19,
+        "question":"What will be the output of the following code?\ndef add(x, y):\n    return x + y\nprint(add(3, 4))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["7",
+        "34",
+        "12",
+        "Error"
+        ],
+        "answer":"7",
+        "discription":"The add function takes two arguments, adds them, and returns the result, which is 7."
+    },
+
+    {
+        "id": 20,
+        "question":"What will be the output of the following code?\nfruits = ['apple', 'banana', 'cherry']\nprint(len(fruits))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["2",
+        "3",
+        "4",
+        "5"
+        ],
+        "answer":"3",
+        "discription":"The len function returns the number of elements in the list, which is 3."
+    }
+
+]

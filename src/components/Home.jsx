@@ -21,7 +21,7 @@ const Home = () => {
       {loading && <Loading />}
 
       <div className="md:w-1/2 w-full">
-        <img src="/images/banner.png" alt="banner" className="w-full mx-auto" />
+        <img src="/images/banner.png" alt="banner" className="w-96 mx-auto" />
       </div>
 
       <div className="md:w-1/2 w-full">
@@ -34,7 +34,7 @@ const Home = () => {
         <div className="flex items-center">
           <button
             onClick={handleStartQuiz}
-            className={`bg-[#FCC822] px-6 py-2 text-white rounded ${loading ? "opacity-50 cursor-not-allowed" : ""}`}
+            className={`bg-[#004AAD] px-6 py-2 text-white rounded ${loading ? "opacity-50 cursor-not-allowed" : ""}`}
             id="startQuiz"
             type="button"
             disabled={loading}
@@ -43,7 +43,7 @@ const Home = () => {
           </button>
 
           <button
-            className="px-6 py-2 text-[#FCC822] hover:bg-[#FCC822] hover:text-white rounded inline-flex ml-3 transition-all duration-300"
+            className="px-6 py-2 text-[#004AAD] hover:bg-[#004AAD] hover:text-white rounded inline-flex ml-3 transition-all duration-300"
             type="button"
           >
             <svg

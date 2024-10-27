@@ -1,0 +1,298 @@
+[
+    {
+        "id": 1,
+        "question":"What is a list in Python?",
+        
+        "options": ["A collection of ordered and immutable items",
+        "A collection of unordered and mutable items",
+        "A collection of ordered and mutable items",
+        "A collection of unordered and immutable items"
+        ],
+        "answer": "A collection of ordered and mutable items",
+        "discription":"In Python, a list is an ordered collection of items that can be modified after creation."
+            
+
+    },
+
+    {
+        "id": 2,
+        "question":"What does the append() method do in a list?",
+        
+        "options": ["Removes the last element",
+        "Adds an element to the end of the list",
+        "Inserts an element at the beginning",
+        "Reverses the list"
+        ],
+        "answer": "Adds an element to the end of the list",
+        "discription":"The append() method adds a new element to the end of the list."
+            
+
+    },
+
+    {
+        "id": 3,
+        "question":"How do you access the third element in a list named my_list?",
+        
+        "options": ["my_list[3]",
+        "my_list[2]",
+        "my_list[-3]",
+        "my_list[1]"
+        ],
+        "answer": "my_list[2]",
+        "discription":"List indexing starts at 0, so my_list[2] returns the third element."
+            
+
+    },
+    
+    {
+        "id": 4,
+        "question":"What does the pop() method do in a list?",
+        
+        "options": ["Removes the first element",
+        "Removes the last elemen",
+        "Adds an element to the end",
+        "Sorts the list"
+        ],
+        "answer": "Removes the last elemen",
+        "discription":"The pop() method removes and returns the last element of the list."
+            
+
+    },
+
+    {
+        "id": 5,
+        "question":"What is the result of len([1, 2, 3, 4])?",
+        
+        "options": ["3",
+        "4",
+        "5",
+        "2"
+        ],
+        "answer": "4",
+        "discription":"The len() function returns the number of elements in the list."
+            
+
+    },
+
+    {
+        "id": 6,
+        "question":"How do you remove an element at index 2 from a list named my_list?",
+        
+        "options": ["my_list.remove(2)",
+        "my_list.pop(2)",
+        "my_list.delete(2)",
+        "my_list.clear(2)"
+        ],
+        "answer": "my_list.pop(2)",
+        "discription":"The pop(2) method removes the element at index 2."
+            
+
+    },
+
+    {
+        "id": 7,
+        "question":"What is the output of sorted([3, 1, 4, 1, 5, 9])?",
+        
+        "options": ["[9, 5, 4, 3, 1, 1]",
+        "[3, 1, 4, 1, 5, 9]",
+        "[1, 1, 3, 4, 5, 9]",
+        "[1, 3, 4, 1, 5, 9]"
+        ],
+        "answer": "[1, 1, 3, 4, 5, 9]",
+        "discription":"The sorted() function returns a new list sorted in ascending order."
+            
+
+    },
+
+    {
+        "id": 8,
+        "question":"What will be the output of the following code?\nmy_list = [5, 3, 8, 6]\nmy_list.remove(3)\nprint(my_list)",
+        
+        "options": ["[5, 8, 6]",
+        "[3, 8, 6]",
+        "[5, 3, 6]",
+        "[5, 3, 8]"
+        ],
+        "answer": "[5, 8, 6]",
+        "discription":"The remove() method removes the first occurrence of 3 from the list."
+    },
+
+    {
+        "id": 9,
+        "question":"What is the result of this code?\nlist1 = [1, 2, 3]\nlist2 = [4, 5]\nlist1.extend(list2)\nprint(list1)",
+        
+        "options": ["[1, 2, 3]",
+        "[4, 5, 1, 2, 3]",
+        "[1, 2, 3, 4, 5]",
+        "[1, 2, 3, [4, 5]]"
+        ],
+        "answer": "[1, 2, 3, 4, 5]",
+        "discription":"The extend() method adds the elements of list2 to the end of list1."         
+    },
+
+    {
+        "id": 10,
+        "question":"Which of the following is a correct way to create a list of squares of even numbers up to 10?",
+        
+        "options": ["[x**2 for x in range(1, 11) if x % 2 == 0]",
+        "[x**2 for x in range(1, 10, 2)]",
+        "[x**2 for x in range(2, 10, 2)]",
+        "[x for x in range(1, 11) if x % 2 == 0]"
+        ],
+        "answer": "[x**2 for x in range(1, 11) if x % 2 == 0]",
+        "discription":"This list comprehension generates squares of even numbers up to 10."
+            
+
+    },
+
+    {
+        "id": 11,
+        "question":"What will be the output of the following list comprehension: [x for x in 'Hello' if x in 'aeiou']?",
+        
+        "options": ["['H', 'e', 'l', 'l', 'o']",
+        "['a', 'e', 'i', 'o', 'u']",
+        "['e', 'o']",
+        "['a', 'i', 'o', 'u']"
+        ],
+        "answer": "['e', 'o']",
+        "discription":"The list comprehension filters vowels in the string 'Hello', resulting in ['e', 'o']."
+            
+
+    },
+
+    {
+        "id": 12,
+        "question":"Which of the following is a valid list comprehension?",
+        
+        "options": ["[x for x in range(5)]",
+        "{x for x in range(5)}",
+        "(x for x in range(5))",
+        "<x for x in range(5)>"
+        ],
+        "answer": "[x for x in range(5)]",
+        "discription":"Option A is a valid list comprehension that creates a list of numbers from 0 to 4."
+            
+
+    },
+
+    {
+        "id": 13,
+        "question":"Given the list strings = ['hello', '', 'world', '', 'python'], which of the following methods will correctly remove the empty strings from the list?",
+        
+        "options": ["strings.remove('')",
+        "filter(None, strings)",
+        "strings = [filter(None, strings)]",
+        "strings.pop('')"
+        ],
+        "answer": "filter(None, strings)",
+        "discription":"The filter(None, strings) function removes empty strings from the list by filtering out False values, which include empty strings."
+            
+
+    },
+
+    {
+        "id": 14,
+        "question":"What is the output of the following code?\nsampleList = [10, 20, 30, 40]\ndel sampleList[0:6]\nprint(sampleList)",
+        
+        "options": ["[10, 20, 30, 40]",
+        "[]",
+        "[30, 40]",
+        "[20, 30, 40]"
+        ],
+        "answer": "[]",
+        "discription":"The del sampleList[0:6] statement deletes all elements in the list since the slice [0:6] covers the entire list. Therefore, the list becomes empty, and print(sampleList) outputs []."
+            
+
+    },
+
+    {
+        "id": 15,
+        "question":"Select all the correct options to copy a list\naList = ['a', 'b', 'c', 'd']",
+        
+        "options": ["newList = aList",
+        "newList = aList + []",
+        "newList = aList[:2]",
+        "newList = aList.copy()"
+        ],
+        "answer": "newList = aList.copy()",
+        "discription":"The aList.copy() method creates a shallow copy of the list, meaning newList is a separate list with the same elements as aList."
+            
+
+    },
+
+    {
+        "id": 16,
+        "question":"What is the output of the following code?\naList = ['CodersIndia', [4, 8, 12, 16]]\nprint(aList[0][1])    \nprint(aList[1][3])",
+        
+        "options": ["C and 16",
+        "o and 16",
+        "o and 12",
+        "d and 8"
+        ],
+        "answer": "o and 16",
+        "discription":"aList[0][1] accesses the second character (o) in the string 'CodersIndia'.\naList[1][3] accesses the fourth element (16) in the sublist [4, 8, 12, 16]. Therefore, the output is o and 16."
+            
+
+    },
+
+    {
+        "id": 17,
+        "question":"What is the output of the following\nl = [None] * 10\nprint(len(l))",
+        
+        "options": ["0",
+        "10",
+        "None",
+        "Error"
+        ],
+        "answer": "10",
+        "discription":"The list l = [None] * 10 creates a list with 10 None elements. The len(l) function returns the length of the list, which is 10."
+            
+
+    },
+
+    {
+        "id": 18,
+        "question":"What is the output of the following code\nl = [[1, 2], [3, 4]]\nresult = [x for sublist in l for x in sublist]\nprint(result)",
+        
+        "options": ["[1, 2, 3, 4]",
+        "[[1, 2], [3, 4]]",
+        "[1, 2] [3, 4]",
+        "[1, [2, 3], 4]"
+        ],
+        "answer": "[1, 2, 3, 4]",
+        "discription":"This list comprehension flattens the nested list into a single list."
+            
+
+    },
+
+    {
+        "id": 19,
+        "question":"What is the output of the following code\nl = [[1, 2], [3, 4]]\nl[0].append(l[1])\nprint(l)",
+        
+        "options": ["[[1, 2, [3, 4]], [3, 4]]",
+        "[[1, 2, [3, 4]], [3, 4, [1, 2, [3, 4]]]]",
+        "[[1, 2], [3, 4, [1, 2, [3, 4]]]]",
+        "[[1, 2], [3, 4]]"
+        ],
+        "answer": "[[1, 2, [3, 4]], [3, 4]]",
+        "discription":"The code appends the reference to l[1] to l[0], resulting in [[1, 2, [3, 4]], [3, 4]]."
+            
+
+    },
+
+    {
+        "id": 20,
+        "question":"What is the output of the following code\nl = [1, 2, 3, 4]\nl[1:3] = [10, 20, 30]\nprint(l)",
+        
+        "options": ["[1, 10, 20, 30, 4]",
+        "[1, 10, 20, 30]",
+        "[1, 10, 20, 4]",
+        "[10, 20, 30, 4]"
+        ],
+        "answer": "[1, 10, 20, 30, 4]",
+        "discription":"The slice assignment [1:3] = [10, 20, 30] replaces the elements from index 1 to 2 with [10, 20, 30], extending the list."
+            
+
+    }
+
+]

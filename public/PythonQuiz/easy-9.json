@@ -1,0 +1,262 @@
+[
+
+    {
+        "id": 1,
+        "question":"What will be the output of the following code?\ndef add(x, y):\n    return x + y\nprint(add(2, 3))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["5",
+        "6",
+        "3",
+        "Error"
+        ],
+        "answer":"5",
+        "discription":"The add function takes two arguments x and y and returns their sum, which is 5."
+    },
+
+    {
+        "id": 2,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3, 4]\nlst.remove(3)\nprint(lst)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 2, 4]",
+        "[1, 2, 3]",
+        "[1, 2, 3, 4]",
+        "Error"
+        ],
+        "answer":"[1, 2, 4]",
+        "discription":"The remove method removes the first occurrence of 3 from the list, resulting in [1, 2, 4]."
+    },
+
+    {
+        "id": 3,
+        "question":"What will be the output of the following code?\ntext = 'python'\nprint(text.capitalize())",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Python",
+        "python",
+        "PYTHON",
+        "None"
+        ],
+        "answer":"Python",
+        "discription":"The capitalize method converts the first character to uppercase and the rest to lowercase, resulting in 'Python'."
+    },
+
+    {
+        "id": 4,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2}\nprint(my_dict.pop('b'))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["2",
+        "1",
+        "None",
+        "Error"
+        ],
+        "answer":"2",
+        "discription":"The pop method removes the key 'b' from the dictionary and returns its value, which is 2."
+    },
+
+    {
+        "id": 5,
+        "question":"What will be the output of the following code?\nset1 = {1, 2, 3}\nset2 = {2, 3, 4}\nprint(set1 - set2)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["{1}",
+        "{2, 3}",
+        "{4}",
+        "{}"
+        ],
+        "answer":"{1}",
+        "discription":"The - operator returns the difference between set1 and set2, which is {1}."
+    },
+
+    {
+        "id": 6,
+        "question":"What will be the output of the following code?\ndef greet(name='World'):\n    return 'Hello, ' + name\nprint(greet())",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Hello, World",
+        "Hello,",
+        "Hello, name",
+        "Error"
+        ],
+        "answer":"Hello, World",
+        "discription":"The greet function uses the default argument 'World' when no argument is passed."
+    },
+
+    {
+        "id": 7,
+        "question":"What will be the output of the following code?\ntext = 'Hello, World!'\nprint(text.count('l'))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["3",
+        "2",
+        "1",
+        "4"
+        ],
+        "answer":"3",
+        "discription":"The count method returns the number of occurrences of 'l' in the string, which is 3."
+    },
+
+    {
+        "id": 8,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3, 4]\nprint(3 in lst)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["True",
+        "False",
+        "None",
+        "Error"
+        ],
+        "answer":"True",
+        "discription":"The in operator checks if 3 is in the list, and it returns True."
+    },
+
+    {
+        "id": 9,
+        "question":"What will be the output of the following code?\ntext = 'Hello, {}!'\nprint(text.format('World'))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Hello, World!",
+        "Hello, {}!",
+        "Hello, World",
+        "Error"
+        ],
+        "answer":"Hello, World!",
+        "discription":"The format method replaces {} with the argument 'World', resulting in 'Hello, World!'."
+    },
+
+    {
+        "id": 10,
+        "question":"Which of these is a correct variable name in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["2var",
+        "var_name",
+        "var-name",
+        "@var"
+        ],
+        "answer":"var_name",
+        "discription":"Variable names can include letters, numbers, and underscores."
+    },
+
+    {
+        "id": 11,
+        "question":"How do you start a comment in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["/* comment */",
+        "// comment",
+        "# comment",
+        "-- comment"
+        ],
+        "answer":"# comment",
+        "discription":"Comments in Python start with #."
+    },
+
+    {
+        "id": 12,
+        "question":"Which method is used to add an item to the end of a list?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["append()",
+        "add()",
+        "insert()",
+        "extend()"
+        ],
+        "answer":"append()",
+        "discription":"append() adds an item to the end of the list."
+    },
+
+    {
+        "id": 13,
+        "question":"What is the correct syntax to create a function in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["def func[]:",
+        "function func():",
+        "def func():",
+        "create func():"
+        ],
+        "answer":"def func():",
+        "discription":"Functions are defined using def."
+    },
+
+    {
+        "id": 14,
+        "question":"What does == operator do in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Assigns a value",
+        "Compares two values",
+        "Adds two values",
+        "Multiplies two values"
+        ],
+        "answer":"Compares two values",
+        "discription":"== checks if two values are equal."
+    },
+
+    {
+        "id": 15,
+        "question":"Which of the following is a tuple?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 2, 3]",
+        "{1, 2, 3}",
+        "(1, 2, 3)",
+        "<1, 2, 3>"
+        ],
+        "answer":"(1, 2, 3)",
+        "discription":"Tuples are created using parentheses `()`."
+    },
+
+    {
+        "id": 16,
+        "question":"How do you check the data type of a variable in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["type(var)",
+        "dataType(var)",
+        "typeof(var)",
+        "checkType(var)"
+        ],
+        "answer":"type(var)",
+        "discription":"`type()` returns the data type of the variable."
+    },
+
+    {
+        "id": 17,
+        "question":"Which keyword is used to create a loop in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["repeat",
+        "loop",
+        "while",
+        "for"
+        ],
+        "answer":"for",
+        "discription":"`for` loops are used to iterate over sequences."
+    },
+
+    {
+        "id": 18,
+        "question":"What is the correct way to write an if statement in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["if x > 5:",
+        "if (x > 5):",
+        "if x > 5 then:",
+        "if x > 5;"
+        ],
+        "answer":"if x > 5:",
+        "discription":"`if` statements are followed by a colon and the condition."
+    },
+
+    {
+        "id": 19,
+        "question":"How do you handle exceptions in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["try/except",
+        "try/catch",
+        "handle/error",
+        "do/except"
+        ],
+        "answer":"try/except",
+        "discription":"Exceptions are handled using `try` and `except`."
+    },
+
+    {
+        "id": 20,
+        "question":"Which of these is a dictionary in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["{1: 'a', 2: 'b'}",
+        "{'a', 'b', 'c'}",
+        "['a', 'b', 'c']",
+        "(1, 2, 3)"
+        ],
+        "answer":"{1: 'a', 2: 'b'}",
+        "discription":"Dictionaries are key-value pairs inside curly braces `{}`."
+    }
+]

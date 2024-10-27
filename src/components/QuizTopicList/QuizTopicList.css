@@ -1,0 +1,13 @@
+.quiz-topic-list{
+    border: 1px solid red;
+    >ul{
+        border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        >li{
+            border: 1px solid green;
+        }
+    }
+}

@@ -1,0 +1,263 @@
+[
+
+{
+    "id": 1,
+    "question":"In C:\\bacon\\eggs\\spam.txt, which part is the directory name, and which part is the base name?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["C:\\bacon\\eggs is the dir name, and spam.txt is the base name.",
+    "C:\\bacon is the dir name, and eggs\\spam.txt is the base name.",
+    "C:\\bacon\\eggs\\spam is the dir name, and .txt is the base name.",
+    "eggs\\spam.txt is the dir name, and C:\\bacon is the base name."
+    ],
+    "answer":"C:\\bacon\\eggs is the dir name, and spam.txt is the base name.",
+    "discription":"In the path C:\\bacon\\eggs\\spam.txt, C:\\bacon\\eggs is the directory name (the folder path), and spam.txt is the base name (the file name)."
+},
+
+{
+    "id": 2,
+    "question":"How do you tell the difference between read() and readlines()?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["read() returns a list of lines, while readlines() returns a single string",
+    "read() returns a single string of the entire file, while readlines() returns a list of lines.",
+    "read() returns a string list of lines, while readlines() returns a list of characters.",
+    "read() reads the file character by character, while readlines() reads the file line by line."
+    ],
+    "answer":"read() returns a single string of the entire file, while readlines() returns a list of lines.",
+    "discription":"read() reads the entire file content into a single string, while readlines() reads the file and returns a list where each element is a line from the file."
+},
+
+{
+    "id": 3,
+    "question":"What function is used to rename files??",
+    "optionsCode":[],                                                                                                
+    "optionsText":["os.delete()",
+    "os.rename()",
+    "shutil.move()",
+    "os.copy()"
+    ],
+    "answer":"os.rename()",
+    "discription":"The os.rename() function is used to rename files or directories in Python."
+},
+
+{
+    "id": 4,
+    "question":"ZipFile objects have a close() method similar to File objects. What ZipFile method is equivalent to the open() method for File objects?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["ZipFile.create()",
+    "ZipFile.load()",
+    "ZipFile.open()",
+    "ZipFile.extract()"
+    ],
+    "answer":"ZipFile.open()",
+    "discription":"The ZipFile.open() method is used to open a file within a ZIP archive for reading or writing, analogous to how the open() method works for regular file objects."
+},
+
+{
+    "id": 5,
+    "question":"How would you write an assert statement to throw an AssertionError if the variable spam is a negative integer?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["assert spam < 0, 'spam is a negative integer'",
+    "assert spam >= 0, 'spam should not be negative'",
+    "assert spam > 0, 'spam is negative'",
+    "assert spam != 0, 'spam is negative'"
+    ],
+    "answer":"assert spam >= 0, 'spam should not be negative'",
+    "discription":"The assert statement assert spam >= 0, 'spam should not be negative' ensures that if spam is a negative integer, an AssertionError with the message 'spam should not be negative' is raised."
+},
+
+{
+    "id": 6,
+    "question":"How would you write an assert statement that triggers an AssertionError if the variables eggs and bacon contain strings that are the same as each other, even if their cases are different?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["assert eggs.lower() != bacon.lower(), 'eggs and bacon are the same'",
+    "assert eggs != bacon.lower(), 'eggs and bacon are the same'",
+    "assert eggs.lower() == bacon.lower(), 'eggs and bacon are the same'",
+    "assert eggs != bacon.upper(), 'eggs and bacon are the same'"
+    ],
+    "answer":"assert eggs.lower() != bacon.lower(), 'eggs and bacon are the same'",
+    "discription":"The assert statement assert eggs.lower() != bacon.lower(), 'eggs and bacon are the same' ensures that if the lowercase versions of eggs and bacon are identical, an AssertionError with the message 'eggs and bacon are the same' is raised."
+},
+
+{
+    "id": 7,
+    "question":"How would you write an assert statement that throws an AssertionError every time?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["assert False, 'This will always fail'",
+    "assert True, 'This will always succeed'",
+    "assert 1 + 1 == 3, 'This will always fail'",
+    "assert 1 == 1, 'This will always succeed'"
+    ],
+    "answer":"assert False, 'This will always fail'",
+    "discription":"The assert statement assert False, 'This will always fail' is designed to always trigger an AssertionError because the condition False is always false."
+},
+
+{
+    "id": 8,
+    "question":"How do you obtain a list of Paragraph objects for a Document object that’s stored in a variable named doc?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["doc.get_paragraphs()",
+    "doc.paragraph_list()",
+    "doc.paragraphs",
+    "doc.getParagraphs()"
+    ],
+    "answer":"doc.paragraphs",
+    "discription":"The paragraphs attribute of the Document object returns a list of all Paragraph objects in the document."
+},
+
+{
+    "id": 9,
+    "question":"What advantages do Excel spreadsheets have over CSV spreadsheets?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Excel spreadsheets can handle complex formulas, multiple sheets, and cell formatting, while CSV files are plain text and lack these features.",
+    "Excel spreadsheets are more compact and load faster than CSV files.",
+    "Excel spreadsheets are universally supported across all software, while CSV files are not.",
+    "Excel spreadsheets use less memory and are easier to work with than CSV files."
+    ],
+    "answer":"Excel spreadsheets can handle complex formulas, multiple sheets, and cell formatting, while CSV files are plain text and lack these features.",
+    "discription":"Excel spreadsheets support advanced features such as formulas, multiple worksheets, and formatting, whereas CSV files are simple text files with limited functionality."
+},
+
+{
+    "id": 10,
+    "question":"What do you pass to csv.reader() and csv.writer() to create reader and writer objects?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A file object opened in text mode",
+    "A file path as a string",
+    "A list of strings",
+    "A file object opened in binary mode"
+    ],
+    "answer":"A file object opened in text mode",
+    "discription":"You need to pass a file object opened in text mode to csv.reader() and csv.writer() to create reader and writer objects."
+},
+
+{
+    "id": 11,
+    "question":"What method takes a list argument and writes it to a CSV file?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["csv.writer().write_row()",
+    "csv.writer().writeall()",
+    "csv.writer().writerow()",
+    "csv.writer().write()"
+    ],
+    "answer":"csv.writer().writerow()",
+    "discription":"The writerow() method of the csv.writer object takes a list argument and writes it as a single row in the CSV file."
+},
+
+{
+    "id": 12,
+    "question":"What do the keyword arguments delimiter and lineterminator do in the csv module?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["delimiter specifies the file encoding, and lineterminator specifies the file mode.",
+    "delimiter sets the character used to separate fields, and lineterminator sets the character sequence to end rows.",
+    "delimiter determines the file name, and lineterminator determines the file path.",
+    "delimiter specifies the column width, and lineterminator specifies the number of rows to write."
+    ],
+    "answer":"delimiter sets the character used to separate fields, and lineterminator sets the character sequence to end rows.",
+    "discription":"delimiter defines the character used to separate fields in the CSV file, while lineterminator specifies the string that will terminate each row."
+},
+
+{
+    "id": 13,
+    "question":"What does RGBA stand for?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Red, Green, Blue, Alpha",
+    "Red, Gray, Blue, Alpha",
+    "Red, Green, Blue, Adjustment",
+    "Red, Green, Black, Alpha"
+    ],
+    "answer":"Red, Green, Blue, Alpha",
+    "discription":"RGBA represents color values where Red, Green, and Blue define the color, and Alpha specifies the transparency level."
+},
+
+{
+    "id": 14,
+    "question":"From the Pillow module, how do you get the RGBA value of any images?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["image.getpixel()",
+    "image.get_rgba()",
+    "image.get_color()",
+    "image.get_value()"
+    ],
+    "answer":"image.getpixel()",
+    "discription":"The getpixel() method retrieves the RGBA value of a specific pixel in an image using Pillow."
+},
+
+{
+    "id": 15,
+    "question":"Assign the result from the previous task (seconds in an hour) to a variable called seconds_per_hour.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["seconds_per_hour = 60 * 60",
+    "seconds_per_hour = 60 + 60",
+    "seconds_per_hour = 60 / 60",
+    "seconds_per_hour = 60 - 60"
+    ],
+    "answer":"seconds_per_hour = 60 * 60",
+    "discription":"To assign the number of seconds in an hour to the variable seconds_per_hour, use the expression 60 * 60, which multiplies the number of seconds in a minute by the number of minutes in an hour."
+},
+
+{
+    "id": 16,
+    "question":"How many seconds are there in a day? Use the variables seconds_per_hour and minutes_per_hour",
+    "optionsCode":[],                                                                                                
+    "optionsText":["seconds_per_hour * 24",
+    "seconds_per_hour * 12",
+    "seconds_per_hour * 30",
+    "seconds_per_hour * 60"
+    ],
+    "answer":"seconds_per_hour * 24",
+    "discription":"To find the number of seconds in a day, multiply the number of seconds in an hour (stored in seconds_per_hour) by the number of hours in a day (24)."
+},
+
+{
+    "id": 17,
+    "question":"Calculate seconds per day again, but this time save the result in a variable called seconds_per_day",
+    "optionsCode":[],                                                                                                
+    "optionsText":["seconds_per_day = seconds_per_hour * 24",
+    "seconds_per_day = seconds_per_hour + 24",
+    "seconds_per_day = 24 / seconds_per_hour",
+    "seconds_per_day = seconds_per_hour - 24"
+    ],
+    "answer":"seconds_per_day = seconds_per_hour * 24",
+    "discription":"To calculate the number of seconds in a day and store it in seconds_per_day, multiply the number of seconds in an hour (seconds_per_hour) by 24, which represents the number of hours in a day."
+},
+
+{
+    "id": 18,
+    "question":"How do you write a generator genPrimes that returns the sequence of prime numbers (2, 3, 5, 7, 11, ...) on successive calls to its next() method?",
+    "optionsText":[],                                                                                                
+    "optionsCode":["def genPrimes():\n    primes = []\n    n = 2\n    while True:\n        for p in primes:\n            if n % p == 0:\n                break\n        else:\n            primes.append(n)\n            yield n\n        n += 1\n",
+    "def genPrimes():\n    n = 2\n    while True:\n        if all(n % i != 0 for i in range(2, n)):\n            yield n\n        n += 1\n",
+    "def genPrimes():\n    primes = []\n    n = 1\n    while True:\n        if all(n % i != 0 for i in range(2, n)):\n            yield n\n        n += 1\n",
+    "def genPrimes():\n    primes = []\n    n = 2\n    while True:\n        if all(n % i != 0 for i in primes):\n            yield n\n        n += 1\n        primes.append(n)\n"
+    ],
+    "answer":"def genPrimes():\n    n = 2\n    while True:\n        if all(n % i != 0 for i in range(2, n)):\n            yield n\n        n += 1\n",
+    "discription":"The generator function genPrimes yields prime numbers by checking if each number is not divisible by any number in the range from 2 to just below itself. This method correctly generates an infinite sequence of prime numbers on successive calls to next()."
+},
+
+{
+    "id": 19,
+    "question":"How do you lowercase the last element of the surprise list, reverse it, and then capitalize it?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["surprise[-1] = surprise[-1].lower()[::-1].capitalize()",
+    "surprise[-1] = surprise[-1].capitalize()[::-1].lower()",
+    "surprise[-1] = surprise[-1].upper()[::-1].capitalize()",
+    "surprise[-1] = surprise[-1][::-1].capitalize().lower()"
+    ],
+    "answer":"surprise[-1] = surprise[-1].lower()[::-1].capitalize()",
+    "discription":"To transform the last element of the surprise list, you first lowercase it, then reverse the string using slicing ([::-1]), and finally capitalize the reversed string. This series of operations correctly modifies the last element of the list."
+},
+
+{
+    "id": 20,
+    "question":"Make a multilevel dictionary called life. Use these strings for the topmost keys: 'animals', 'plants', and 'other'. Make the 'animals' key refer to another dictionary with the keys 'cats', 'octopi', and 'emus'. Make the 'cats' key refer to a list of strings with the values 'Henri', 'Grumpy', and 'Lucy'. Make all the other keys refer to empty dictionaries.",
+    "optionsText":[],                                                                                                
+    "optionsCode":["life = {\n    'animals': {\n        'cats': ['Henri', 'Grumpy', 'Lucy'],\n        'octopi': {},\n        'emus': {}\n     },\n    'plants': {},\n    'other': {}}",
+    "life = {\n    'animals': {\n        'cats': ['Henri', 'Grumpy', 'Lucy'],\n        'octopi': {},\n        'emus': {}\n },\n    'plants': [],\n    'other': []\n}",
+    "life = {\n    'animals': ['cats', 'octopi', 'emus'],\n    'plants': {},\n    'other': {}\n}",
+    "life = {\n    'animals': {\n        'cats': 'Henri, Grumpy, Lucy',\n        'octopi': {},\n        'emus': {}\n    },\n    'plants': {},\n    'other': {}\n}"
+    ],
+    "answer":"life = {\n    'animals': {\n        'cats': ['Henri', 'Grumpy', 'Lucy'],\n        'octopi': {},\n        'emus': {}\n     },\n    'plants': {},\n    'other': {}}",
+    "discription":"To create a multilevel dictionary life, use nested dictionaries and lists. Set 'animals' to a dictionary with 'cats' pointing to a list of cat names and 'octopi' and 'emus' pointing to empty dictionaries. Set 'plants' and 'other' to empty dictionaries."
+}
+
+]

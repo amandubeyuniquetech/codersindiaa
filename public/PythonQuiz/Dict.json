@@ -1,0 +1,222 @@
+[
+    {"id": 1,
+"question":"How to create a dictionary",
+
+"options":["dict = [key1: value1, key2: value2]",
+"dict = (key1 = value1, key2 = value2)",
+"dict = {key1: value1, key2: value2}",
+"dict = <key1: value1, key2: value2>"],
+"answer":"dict = {key1: value1, key2: value2}",
+"description":"In Python, dictionaries are created using curly braces {} with key-value pairs separated by colons. Option C is the correct syntax for creating a dictionary."
+},
+
+{"id": 2,
+"question":"Are Python dictionaries mutable?",
+
+"options":["No, dictionaries are immutable and cannot be changed after creation.",
+"Yes, dictionaries are mutable; you can change their content after creation.",
+"Dictionaries are only mutable if they contain lists.",
+"Dictionaries are immutable only in Python 2.x."],
+"answer":"Yes, dictionaries are mutable; you can change their content after creation.",
+"description":"In Python, dictionaries are mutable data structures, meaning you can add, remove, or change key-value pairs after the dictionary has been created."
+},
+
+{"id": 3,
+"question":"What does the .items() method do when called on a dictionary in Python?",
+
+"options":["Returns a list of dictionary keys.",
+"Returns a list of dictionary values.",
+"Returns a list of tuples containing key-value pairs.",
+"Returns a list of tuples containing only values."],
+"answer":"Returns a list of tuples containing key-value pairs.",
+"description":"The .items() method of a dictionary returns a view object that displays a list of a dictionary's key-value tuple pairs."
+},
+
+{"id": 4,
+"question":"What is enumarate function inside a dictionary?\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nfor index, (key, value) in enumerate(my_dict.items()):\n    print(index, key, value)",
+
+"options":["The code will print the index, key, and value of each item in the dictionary.",
+"The code will print only the indices of the dictionary items.",
+"The code will print the keys and values of the dictionary without indices.",
+"The code will cause an error because enumerate cannot be used with dictionaries."],
+"answer":"The code will print the index, key, and value of each item in the dictionary.",
+"description":"The enumerate function adds a counter to the iterable (in this case, the items of the dictionary). The loop prints the index, key, and value of each item in the dictionary."
+},
+
+{"id": 5,
+"question":" What does the zip function do when applied to two lists and used to create a dictionary?\nkeys = ['a', 'b', 'c']\nvalues = [1, 2, 3]\nresult = dict(zip(keys, values))\nprint(result)",
+
+"options":["Combines two lists into a single list of lists.",
+"Creates a dictionary where the first list contains the keys and the second list contains the values.",
+"Creates a dictionary with keys as integers and values as strings.",
+"Zips two lists into a list of tuples and converts it into a list."],
+"answer":"Creates a dictionary where the first list contains the keys and the second list contains the values.",
+"description":"The zip function pairs elements from the keys and values lists together into tuples. The dict function then converts these tuples into key-value pairs to create a dictionary. In this example, result will be {'a': 1, 'b': 2, 'c': 3}."
+},
+
+{"id": 6,
+"question":"What will be the output of the following code?\n{ x: x**2 for x in (20, 40, 60) }",
+
+"options":["{20: 400, 40: 1600, 60: 3600}",
+"{20: 20, 40: 40, 60: 60}",
+"{20: 800, 40: 1600, 60: 3600}",
+"{20: 400, 40: 800, 60: 1200}"],
+"answer":"{20: 400, 40: 1600, 60: 3600}",
+"description":"This dictionary comprehension creates a dictionary where each key is an element from the tuple (20, 40, 60), and each value is the square of the key."
+},
+
+{"id": 7,
+"question":"What does the .pop() method do when used with a dictionary in Python?\ndict1 = {'name': 'Virat', 'age': 30, 'city': 'Delhi'}\nprint(dict1)\ndict1.pop('city')\nprint(dict1)",
+
+"options":["Removes the first item in the dictionary",
+"Removes the item with the specified key and returns its value",
+"Adds a new item to the dictionary",
+"Clears all items in the dictionary"],
+"answer":"Removes the item with the specified key and returns its value",
+"description":"The .pop() method in a dictionary removes the item with the specified key ('city' in this case) and returns its value. After the .pop() operation, the dictionary no longer contains the 'city' key."
+},
+
+{"id": 8,
+"question":"How can you create a dictionary with default values using the dict.fromkeys() method in Python?",
+
+"options":["d = dict.fromkeys(['a', 'b', 'c'], 0)",
+"d = dict.fromkeys(['a', 'b', 'c'], 'default')",
+"d = dict.fromkeys(['a', 'b', 'c'], True)",
+"d = dict.fromkeys(['a', 'b', 'c'], None)"],
+"answer":"d = dict.fromkeys(['a', 'b', 'c'], 'default')",
+"description":"The dict.fromkeys() method creates a dictionary with keys from the provided iterable and sets all values to the specified default value. In option B, d = dict.fromkeys(['a', 'b', 'c'], 'default'), the dictionary will have keys 'a', 'b', and 'c', all with the value 'default'."
+},
+
+{"id": 9,
+"question":"How can you count the number of occurrences of each character in a string using a dictionary in Python?",
+
+"options":["string = 'hello'\ncount = {}\nfor char in string:\n    count[char] = count.get(char, 0) + 1\nprint(count)",
+"string = 'hello'\ncount = {}\nfor char in string:\n    count[char] = count[char] + 1\nprint(count)",
+"string = 'hello'\ncount = {}\nfor char in string:\n    count[char] = 1\nprint(count)",
+"string = 'hello'\ncount = {char: string.count(char) for char in set(string)}\nprint(count)"],
+"answer":"string = 'hello'\ncount = {}\nfor char in string:\n    count[char] = count.get(char, 0) + 1\nprint(count)",
+"description":"Option A correctly initializes an empty dictionary and uses a for loop to count occurrences of each character in the string. The get() method is used to handle characters not yet in the dictionary."
+},
+
+{"id": 10,
+"question":"How can you merge two dictionaries in Python?",
+
+"options":["dict1.append(dict2)",
+"dict1 + dict2",
+"dict1.update(dict2)",
+"dict1.merge(dict2)"],
+"answer":"dict1.update(dict2)",
+"description":"The update() method merges the second dictionary into the first one. If there are duplicate keys, the values from the second dictionary will overwrite those in the first dictionary."
+},
+
+{"id": 11,
+"question":"How can you merge two dictionaries dict1 and dict2 in Python",
+
+"options":["merged_dict = dict1 + dict2",
+"merged_dict = dict1 & dict2",
+"merged_dict = {**dict1, **dict2}",
+"merged_dict = dict1 | dict2"],
+"answer":"merged_dict = {**dict1, **dict2}",
+"description":"In Python, you can merge two dictionaries using the ** operator inside a new dictionary. This creates a new dictionary with keys and values from both dict1 and dict2. If there are overlapping keys, the values from dict2 will overwrite those from dict1."
+},
+
+{"id": 12,
+"question":"How can you sort a dictionary by its keys in Python?",
+
+"options":["sorted_dict = {key: dictionary[key] for key in dictionary}",
+"sorted_dict = {k: dictionary[k] for k in sorted(dictionary.keys())}",
+"sorted_dict = sorted(dictionary.items())",
+"sorted_dict = {key: dictionary[key] for key in dictionary.values()}"],
+"answer":"sorted_dict = {k: dictionary[k] for k in sorted(dictionary.keys())}",
+"description":"Option b sorts the dictionary by its keys. It uses sorted(dictionary.keys()) to get the keys in sorted order and then creates a new dictionary with the sorted keys and their corresponding values."
+},
+
+{"id": 13,
+"question":"Which of the following code snippets correctly creates a nested dictionary in Python?",
+
+"options":["nested_dict = {'a': {'b': 1, 'c': 2}, 'd': 3}",
+"nested_dict = {'a': 'b': 1, 'c': 2}, 'd': 3}",
+"nested_dict = {'a': {'b': 1, 'c': 2}, 'd': {'e': 4}}",
+"nested_dict = {'a': [1, 2], 'b': {'c': 3, 'd': 4}}"],
+"answer":"nested_dict = {'a': {'b': 1, 'c': 2}, 'd': 3}",
+"description":"creates a nested dictionary with a structure where 'a' maps to another dictionary {'b': 1, 'c': 2} and 'd' maps to the value 3. The other options either have syntax errors or do not match the definition of a nested dictionary as closely."
+},
+
+{"id": 14,
+"question":"How can you get a list of all keys in a dictionary in Python?",
+
+"options":["list(dict.keys())",
+"dict.get_keys()",
+"dict.keys_list()",
+"list(dict.values())"],
+"answer":"list(dict.keys())",
+"description":"The keys() method returns a view object that displays a list of all the keys in the dictionary. To convert this view into a list, use list(dict.keys())."
+},
+
+{"id": 15,
+"question":"Which code correctly converts a list of tuples into a dictionary?",
+
+"options":["list_of_tuples = [('a', 1), ('b', 2)]\nresult = dict(list_of_tuples)",
+"list_of_tuples = [('a', 1), ('b', 2)]\nresult = list_of_tuples.to_dict()",
+"list_of_tuples = [('a', 1), ('b', 2)]\nresult = dict.from_tuples(list_of_tuples)",
+"list_of_tuples = [('a', 1), ('b', 2)]\nresult = dict(list_of_tuples.items())"],
+"answer":"list_of_tuples = [('a', 1), ('b', 2)]\nresult = dict(list_of_tuples)",
+"description":"converts a list of tuples into a dictionary using the dict() function. Each tuple should contain two elements where the first element is the key and the second element is the value. The other options are incorrect because they use non-existent methods or incorrect syntax."
+},
+
+{"id": 16,
+"question":"How can you create a dictionary where the keys are numbers from 1 to 5 and the values are their squares?",
+
+"options":["squares = {x: x**2 for x in range(1, 6)}",
+"squares = {x: x*2 for x in range(1, 6)}",
+"squares = dict(x**2 for x in range(1, 6))",
+"squares = dict.fromkeys(range(1, 6), lambda x: x**2)"],
+"answer":"squares = {x: x**2 for x in range(1, 6)}",
+"description":"creates a dictionary where each key is a number from 1 to 5 and each value is the square of that key."
+},
+
+{"id": 17,
+"question":"How can you reverse the keys and values of a dictionary using dictionary comprehension?",
+
+"options":["original = {'a': 1, 'b': 2}\nreversed_dict = {v: k for k, v in original.items()}",
+"original = {'a': 1, 'b': 2}\nreversed_dict = {k: v for k, v in original.items()}",
+"original = {'a': 1, 'b': 2}\nreversed_dict = dict((v, k) for k, v in original.items())",
+"original = {'a': 1, 'b': 2}\nreversed_dict = {v: k for k in original}"],
+"answer":"original = {'a': 1, 'b': 2}\nreversed_dict = {v: k for k, v in original.items()}",
+"description":"swaps the keys and values of the dictionary."
+},
+
+{"id": 18,
+"question":"How can you create a nested dictionary where each key is a number and its value is another dictionary with 'square' and 'cube'?",
+
+"options":["nested_dict = {x: {'square': x**2, 'cube': x**3} for x in range(1, 4)}",
+"nested_dict = dict(x: {'square': x**2, 'cube': x**3} for x in range(1, 4))",
+"nested_dict = {x: [x**2, x**3] for x in range(1, 4)}",
+"nested_dict = {x: {'square': x*2, 'cube': x*3} for x in range(1, 4)}"],
+"answer":"nested_dict = {x: {'square': x**2, 'cube': x**3} for x in range(1, 4)}",
+"description":"nested dictionary with 'square' and 'cube' for each key."
+},
+
+{"id": 19,
+"question":"How can you create a dictionary where the keys are indices and the values are elements from a list using enumeration?",
+
+"options":["items = ['a', 'b', 'c']\nindexed_dict = {i: item for i, item in enumerate(items)}",
+"items = ['a', 'b', 'c']\nindexed_dict = dict(enumerate(items))",
+"items = ['a', 'b', 'c']\nindexed_dict = {item: i for i, item in enumerate(items)}",
+"items = ['a', 'b', 'c']\nindexed_dict = {i: item for i in items}"],
+"answer":"items = ['a', 'b', 'c']\nindexed_dict = {i: item for i, item in enumerate(items)}",
+"description":"a dictionary where the keys are indices and the values are the elements from the list using enumerate()."
+},
+
+{"id": 20,
+"question":"How can you create a dictionary where keys are numbers and values are their descriptions ('even' or 'odd') based on whether they are even or odd?",
+
+"options":["numbers = [1, 2, 3, 4]\ndescription_dict = {x: ('even' if x % 2 == 0 else 'odd') for x in numbers}",
+"numbers = [1, 2, 3, 4]\ndescription_dict = {x: 'even' if x % 2 == 0 else 'odd' for x in numbers}",
+"numbers = [1, 2, 3, 4]\ndescription_dict = dict(x: 'even' if x % 2 == 0 else 'odd' for x in numbers)",
+"numbers = [1, 2, 3, 4]\ndescription_dict = {x: 'even' if x % 2 == 0 else 'odd' for x in numbers if x % 2 == 0}"],
+"answer":"numbers = [1, 2, 3, 4]\ndescription_dict = {x: ('even' if x % 2 == 0 else 'odd') for x in numbers}",
+"description":"Option A creates a dictionary with descriptions 'even' or 'odd' based on whether each number is even or odd."
+}
+
+]

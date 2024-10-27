@@ -1,0 +1,264 @@
+[
+
+    {
+        "id": 1,
+        "question":"Functions are said to be “first-class objects” in Python but not in most other languages, such as C++ or Java. What can you do in Python with a function (callable object) that you can't do in C or C++?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Call a function directly by its name",
+        "Store functions in data structures like lists or dictionaries",
+        "Define a function inside another function",
+        "Use a function as a return value from another function"
+        ],
+        "answer":"Store functions in data structures like lists or dictionaries",
+        "discription":"In Python, functions are first-class objects, allowing them to be stored in data structures like lists or dictionaries, a capability not typically available in C or C++."
+    },
+
+    {
+        "id": 2,
+        "question":"What is monkey patching in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A technique for changing the behavior of a module or class at runtime.",
+        "A method for optimizing Python code by rewriting it in C.",
+        "A process of securing Python code by adding encryption.",
+        "A debugging technique to track variable values during execution."
+        ],
+        "answer":"A technique for changing the behavior of a module or class at runtime.",
+        "discription":"Monkey patching refers to dynamically modifying or extending the behavior of modules or classes during runtime."
+    },
+
+    {
+        "id": 3,
+        "question":"What is the difference between a shallow copy and a deep copy?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A shallow copy creates a new object but references the same elements as the original object, while a deep copy creates a new object with new copies of all nested objects.",
+        "A shallow copy duplicates all nested objects, while a deep copy only duplicates the top-level object.",
+        "A shallow copy is faster because it avoids duplicating nested objects, while a deep copy is slower due to creating new copies of all nested objects.",
+        "A shallow copy creates a new object with unique references to all nested objects, while a deep copy creates a new object with references to the same nested objects."
+        ],
+        "answer":"A shallow copy creates a new object but references the same elements as the original object, while a deep copy creates a new object with new copies of all nested objects.",
+        "discription":"A shallow copy replicates the top-level object but shares references to nested objects, while a deep copy duplicates the entire object structure, including all nested objects."
+    },
+
+    {
+        "id": 4,
+        "question":"Describe the difference between the effects of '(ab)c+' and 'a(bc)+.' Which of these, if any, is the unqualified pattern 'abc+'?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["(ab)c+ matches a followed by b and then one or more c characters, whereas a(bc)+ matches a followed by one or more occurrences of bc. The pattern abc+ is not matched by either.",
+        "(ab)c+ matches one or more c characters preceded by ab, whereas a(bc)+ matches a followed by bc repeated one or more times. The pattern abc+ is matched by (ab)c+.",
+        "(ab)c+ matches a followed by b and then one or more c characters, whereas a(bc)+ matches a followed by one or more occurrences of bc. The pattern abc+ is matched by a(bc)+.",
+        "(ab)c+ matches zero or more c characters preceded by ab, whereas a(bc)+ matches a followed by zero or more occurrences of bc. The pattern abc+ is not matched by either."
+        ],
+        "answer":"(ab)c+ matches a followed by b and then one or more c characters, whereas a(bc)+ matches a followed by one or more occurrences of bc. The pattern abc+ is matched by a(bc)+.",
+        "discription":"(ab)c+ matches ab followed by one or more c characters, while a(bc)+ matches a followed by one or more occurrences of bc. The pattern abc+ is matched by a(bc)+."
+    },
+
+    {
+        "id": 5,
+        "question":"How does compiling a regular-expression object benefit you?",
+        "optionsCode":[],                                                                                                
+        "optionsText":[" It converts the regex pattern into a string for easier manipulation.",
+        "It allows the regex pattern to be used with multiple inputs more efficiently.",
+        "It simplifies the regex pattern by removing unnecessary characters.",
+        "It automatically detects and corrects errors in the regex pattern."
+        ],
+        "answer":"It allows the regex pattern to be used with multiple inputs more efficiently.",
+        "discription":"Compiling a regular-expression object improves efficiency by allowing the same pattern to be used multiple times without recompiling."
+    },
+
+
+
+    {
+        "id": 6,
+        "question":"In regular-expression search patterns, why is it necessary to use the raw-string indicator (r)? In   replacement strings?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["The raw-string indicator (r) prevents backslashes from being treated as escape characters.",
+        "The raw-string indicator (r) is needed to define the pattern as a regular expression.",
+        "The raw-string indicator (r) automatically formats the string for better readability.",
+        "The raw-string indicator (r) allows for variable substitution within the regex pattern."
+        ],
+        "answer":"The raw-string indicator (r) prevents backslashes from being treated as escape characters.",
+        "discription":"The raw-string indicator (r) ensures that backslashes in regular-expression patterns are treated as literal characters, avoiding the need to double them for escaping."
+    },
+
+    {
+        "id": 7,
+        "question":"What is the bare minimum effort required to transform a greedy pattern into a non-greedy one? What character(s) can you introduce or change?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Remove the asterisk (*) from the pattern.",
+        "Add a question mark (?) after the quantifier.",
+        "Replace the vertical bar (|) with a question mark (?).",
+        "Use square brackets ([]) instead of the asterisk (*)."
+        ],
+        "answer":"Add a question mark (?) after the quantifier.",
+        "discription":"To make a greedy pattern non-greedy, add a ? after the quantifier (*, +, or ?), so it matches the smallest possible portion."
+    },
+
+    {
+        "id": 8,
+        "question":"When does greedy versus non-greedy matching make a difference, and what happens if you're looking for a non-greedy match but only a greedy one is available?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Greedy matching tries to match as much text as possible, while non-greedy (or lazy) matching tries to match as little text as necessary. If only a greedy match is available, it will match the longest possible text instead of the shortest.",
+        "Greedy versus non-greedy matching affects only the performance of the regular expression, not the matched text. If a non-greedy match is needed but only a greedy pattern is available, the result will be the same as if a non-greedy match were used.",
+        "Greedy matching always finds the shortest possible match, while non-greedy matching finds the longest possible match. If a non-greedy match is needed but only a greedy pattern is available, it will still match the shortest text.",
+        "Greedy versus non-greedy matching affects only the start position of the match. If only a greedy pattern is available, it will match from the start but not extend beyond it."
+        ],
+        "answer":"Greedy matching tries to match as much text as possible, while non-greedy (or lazy) matching tries to match as little text as necessary. If only a greedy match is available, it will match the longest possible text instead of the shortest.",
+        "discription":"Greedy matching captures the longest possible text, while non-greedy matching captures the shortest. If only a greedy pattern is available, it will not find the shortest possible match."
+    },
+
+    {
+        "id": 9,
+        "question":"Unlike a normal regex pattern, a look-ahead condition does not consume the characters it examines. In what situation could this difference affect the results of your program?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["When you need to match a sequence of characters followed by a condition but want to ensure the condition is only checked and not included in the match.",
+        "When you want to replace all occurrences of a specific substring within a larger string.",
+        "When you need to capture and process the exact position of each character in a string.",
+        "When you want to ensure that a string starts with a specific pattern and does not include additional characters after that pattern."
+        ],
+        "answer":"When you need to match a sequence of characters followed by a condition but want to ensure the condition is only checked and not included in the match.",
+        "discription":"Look-aheads allow you to check for a condition following a pattern without consuming characters, which is useful when you need to match a pattern based on subsequent conditions without including those conditions in the match."
+    },
+
+    {
+        "id": 10,
+        "question":" In standard expressions, what is the difference between positive look-ahead and negative look-ahead?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Positive look-ahead asserts that a pattern is followed by another pattern, while negative look-ahead asserts that a pattern is not followed by another pattern.",
+        "Positive look-ahead matches a pattern if it is preceded by another pattern, while negative look-ahead matches if it is not preceded by another pattern.",
+        "Positive look-ahead requires a pattern to appear first, while negative look-ahead requires a pattern to appear last.",
+        "Positive look-ahead changes the position of the regex engine, while negative look-ahead keeps the engine in the same position."
+        ],
+        "answer":"Positive look-ahead asserts that a pattern is followed by another pattern, while negative look-ahead asserts that a pattern is not followed by another pattern.",
+        "discription":"Positive look-ahead checks if a pattern is followed by another pattern, while negative look-ahead checks if a pattern is not followed by another pattern."
+    },
+
+    {
+        "id": 11,
+        "question":"What is a key difference between text and binary files?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Text files store data in a human-readable format, while binary files store data in a compressed format.",
+        "Text files are used for storing characters, while binary files are used exclusively for storing images.",
+        "Text files store data in a readable format using characters, while binary files store data in a non-readable format using bytes.",
+        "Text files are platform-independent, while binary files can only be read on the system they were created on."
+        ],
+        "answer":"Text files store data in a readable format using characters, while binary files store data in a non-readable format using bytes.",
+        "discription":"Text files are human-readable and use characters, while binary files store data as bytes in a non-readable format."
+    },
+
+    {
+        "id": 12,
+        "question":"In which scenarios would using text files be a better option, and when would you prefer to use binary files instead?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Text files are better for storing large multimedia content, while binary files are preferable for human-readable data.",
+        "Text files are ideal for human-readable data and configuration files, while binary files are used for storing images, videos, and executable programs.",
+        "Text files are preferred when file size is a concern, whereas binary files are better for storing plain text.",
+        "Text files should be used when data needs to be encrypted, while binary files are used for unstructured data."
+        ],
+        "answer":"Text files are ideal for human-readable data and configuration files, while binary files are used for storing images, videos, and executable programs.",
+        "discription":"Use text files for storing readable data like logs and configuration files, while binary files are better for efficiently handling multimedia content and executable programs."
+    },
+
+    {
+        "id": 13,
+        "question":"What are some of the issues with using binary operations to read and write a Python integer directly to disk?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Python integers are always stored as 32-bit values, which can lead to data loss when using binary operations.",
+        "Binary operations can lead to endianness issues, where the byte order may not match between different systems.",
+        "Binary operations automatically convert Python integers to floating-point values, which may result in precision loss.",
+        "Python’s integer type does not support binary operations, making it impossible to write integers directly to disk."
+        ],
+        "answer":"Binary operations can lead to endianness issues, where the byte order may not match between different systems.",
+        "discription":"Binary operations can introduce endianness issues, where the byte order of the data may differ between systems, leading to potential compatibility problems when reading or writing Python integers directly to disk."
+    },
+
+    {
+        "id": 14,
+        "question":"What is a benefit of using the with keyword instead of explicitly opening a file in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["The with keyword automatically closes the file after its block of code is executed, reducing the risk of resource leaks.",
+        "The with keyword allows you to open multiple files simultaneously without needing nested code blocks.",
+        "The with keyword allows the file to remain open after the block is executed, making it easier to work with the file later.",
+        "The with keyword is only used for opening files in read mode and cannot be used for writing or appending."
+        ],
+        "answer":"The with keyword automatically closes the file after its block of code is executed, reducing the risk of resource leaks.",
+        "discription":"Using the with keyword in Python ensures that a file is automatically closed after its block is executed, helping to prevent resource leaks even if an error occurs."
+    },
+
+    {
+        "id": 15,
+        "question":"When is it best to use the shelve package in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["When you need to store and manipulate large amounts of numerical data efficiently.",
+        "When you need to store and retrieve complex Python objects, like dictionaries and lists, with minimal code.",
+        "When you need high-performance data processing and querying capabilities.",
+        "When you need to work with relational databases and perform complex queries."
+        ],
+        "answer":"When you need to store and retrieve complex Python objects, like dictionaries and lists, with minimal code.",
+        "discription":"The shelve package is best used when you want to easily store and retrieve complex Python objects, like dictionaries or lists, using a simple key-value storage mechanism."
+    },
+
+    {
+        "id": 16,
+        "question":"What is a special restriction when using the shelve package, as opposed to using other data dictionaries?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Keys in a shelve dictionary must be strings, unlike other dictionaries where keys can be of any immutable type.",
+        "The shelve package does not allow storing complex objects, whereas other dictionaries do.",
+        "The shelve package requires that all values be strings, unlike other dictionaries where values can be of any type.",
+        "The shelve package cannot be used for multi-threaded applications, unlike other dictionaries."
+        ],
+        "answer":"Keys in a shelve dictionary must be strings, unlike other dictionaries where keys can be of any immutable type.",
+        "discription":"The shelve package requires keys to be strings, as it uses these keys to map data to filenames in its underlying storage mechanism, which is a unique restriction compared to other dictionaries."
+    },
+
+    {
+        "id": 17,
+        "question":"When is it necessary to use a reflection method? When do you not need it, even though you support the operation in question?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Reflection is necessary when you need to dynamically access or modify an object's properties at runtime. It’s not needed if the operation is already known at compile-time.",
+        "Reflection is needed when you want to optimize performance. It’s not necessary if performance isn’t a concern.",
+        "Reflection must be used to handle any kind of data retrieval operation. It’s not needed for data manipulation.",
+        "Reflection is only necessary for error handling. It’s not required for regular operations."
+        ],
+        "answer":"Reflection is necessary when you need to dynamically access or modify an object's properties at runtime. It’s not needed if the operation is already known at compile-time.",
+        "discription":"Use reflection when you need to dynamically access or modify an object's properties at runtime; it’s unnecessary if the operation is determined at compile-time."
+    },
+
+    {
+        "id": 18,
+        "question":"What is the _ _iadd_ _ method called?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["In-place addition operator",
+        "Increment addition method",
+        "Addition assignment method",
+        "Instance addition operator"
+        ],
+        "answer":"In-place addition operator",
+        "discription":"The __iadd__ method is called the in-place addition operator and is used to define the behavior for the += operation."
+    },
+
+    {
+        "id": 19,
+        "question":"Set the variable test1 to the string 'This is a test of the emergency text system,' and save test1 to a file named test.txt",
+        "optionsCode":[],                                                                                                
+        "optionsText":["test1 = 'This is a test of the emergency text system,'\nsave('test.txt', test1)",
+        "test1 = 'This is a test of the emergency text system,'\nwith open('test.txt', 'w') as file:\n    file.write(test1)",
+        "test1 = 'This is a test of the emergency text system,'\nfile = open('test.txt', 'w')\nfile.save(test1)",
+        "test1 = 'This is a test of the emergency text system,'\nwrite('test.txt', test1)"
+        ],
+        "answer":"test1 = 'This is a test of the emergency text system,'\nwith open('test.txt', 'w') as file:\n    file.write(test1)",
+        "discription":" In Python, use with open('test.txt', 'w') as file: file.write(test1) to open a file in write mode and save the content of test1 to it."
+    },
+
+    {
+        "id": 20,
+        "question":"Read the contents of the file test.txt into the variable test2. Is there a difference between test 1 and test 2?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Yes, test2 will always be different from test1.",
+        "No, test1 and test2 will always be identical.",
+        "It depends on the file content, how test1 was obtained, and how test2 is read.",
+        "Yes, because file reading always introduces differences."
+        ],
+        "answer":"It depends on the file content, how test1 was obtained, and how test2 is read.",
+        "discription":"test1 and test2 could be identical or different based on how the contents are read and whether the file content has changed."
+    }
+]

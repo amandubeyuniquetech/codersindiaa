@@ -1,0 +1,276 @@
+[
+  {
+    "id": 1,
+    "question": "What kind of knowledge is stored in a class?",
+    "optionsCode": [],
+    "optionsText": [
+      "Procedural knowledge only",
+      "Declarative knowledge only",
+      "Both procedural and declarative knowledge",
+      "Instance-specific knowledge"
+    ],
+    "answer": "Both procedural and declarative knowledge",
+    "discription": "A class stores both declarative knowledge (attributes) and procedural knowledge (methods)."
+  },
+
+  {
+    "id": 2,
+    "question": "Is inheritance supported in Python, and if so, what is the syntax?",
+    "optionsCode": [],
+    "optionsText": [
+      "Yes, with the syntax class Child extends Parent:",
+      "Yes, with the syntax class Child(Parent):",
+      "No, Python does not support inheritance.",
+      "Yes, with the syntax class Child -> Parent:"
+    ],
+    "answer": "Yes, with the syntax class Child(Parent):",
+    "discription": "Python supports inheritance using the syntax class Child(Parent):, where Child inherits from Parent."
+  },
+
+  {
+    "id": 3,
+    "question": "How much encapsulation (making instance or class variables private) does Python support?",
+    "optionsCode": [],
+    "optionsText": [
+      "Full encapsulation with private variables enforced by the language.",
+      "No encapsulation; all variables are public.",
+      "Limited encapsulation using single or double underscores for variable names.",
+      "Encapsulation is only supported for methods, not variables."
+    ],
+    "answer": "Limited encapsulation using single or double underscores for variable names.",
+    "discription": "Python supports limited encapsulation by using underscores to indicate private variables, but it doesn’t strictly enforce privacy."
+  },
+
+  {
+    "id": 4,
+    "question": "How do you distinguish between a class variable and an instance variable?",
+    "optionsCode": [],
+    "optionsText": [
+      "Class variables are defined inside methods, while instance variables are defined outside any method.",
+      "Class variables are shared among all instances, while instance variables are unique to each instance.",
+      "Class variables are only accessible within the class, while instance variables are accessible outside the class.",
+      "Class variables can change value, but instance variables cannot."
+    ],
+    "answer": "Class variables are shared among all instances, while instance variables are unique to each instance.",
+    "discription": "Class variables are shared by all instances of a class, while instance variables are unique to each instance, holding data specific to that instance."
+  },
+
+  {
+    "id": 5,
+    "question": "When, if ever, can self be included in a class's method definitions?",
+    "optionsCode": [],
+    "optionsText": [
+      "Only in static methods",
+      "Only in class methods",
+      "In instance methods",
+      "Never, self is automatically included by Python"
+    ],
+    "answer": "In instance methods",
+    "discription": "self is used in instance methods to refer to the instance of the class that the method is acting upon."
+  },
+
+  {
+    "id": 6,
+    "question": "Using the Fraction class but not the Decimal class, give an example of a quantity that can be expressed with absolute precision.",
+    "optionsCode": [],
+    "optionsText": ["1/3", "0.1", "1/2", "π"],
+    "answer": "1/2",
+    "discription": "The fraction 1/2 can be expressed with absolute precision using the Fraction class."
+  },
+
+  {
+    "id": 7,
+    "question": "What are the benefits of the built-in array package, if any?",
+    "optionsCode": [],
+    "optionsText": [
+      " It supports dynamic resizing of arrays.",
+      "It provides efficient storage and manipulation of homogeneous data types.",
+      " It includes advanced array operations like matrix multiplication.",
+      "It supports multiple data types within the same array."
+    ],
+    "answer": "It provides efficient storage and manipulation of homogeneous data types.",
+    "discription": "The built-in array package in Python offers efficient storage and manipulation of arrays where all elements are of the same type."
+  },
+
+  {
+    "id": 8,
+    "question": "What are some of the array package's limitations?",
+    "optionsCode": [],
+    "optionsText": [
+      "Cannot handle multi-dimensional arrays.",
+      "Cannot store elements of different data types.",
+      "Does not support slicing of arrays.",
+      "Limited to only numerical data types."
+    ],
+    "answer": "Cannot store elements of different data types.",
+    "discription": "The array package in Python is limited to storing elements of the same data type, unlike more advanced libraries such as NumPy that can handle multi-dimensional arrays and different data types."
+  },
+
+  {
+    "id": 9,
+    "question": "Describe the main differences between the array and numpy packages.",
+    "optionsCode": [],
+    "optionsText": [
+      "array is a basic array module in Python, while numpy provides advanced array operations and numerical computations.",
+      "array is a more advanced package with better performance compared to numpy.",
+      "array supports multi-dimensional arrays, while numpy only supports one-dimensional arrays.",
+      "array and numpy are essentially the same with no significant differences."
+    ],
+    "answer": "array is a basic array module in Python, while numpy provides advanced array operations and numerical computations.",
+    "discription": "The array module provides basic array functionalities, while numpy offers advanced numerical operations and multi-dimensional array support."
+  },
+
+  {
+    "id": 10,
+    "question": "What is the dimensionality of an array generated by a Boolean mask in NumPy?",
+    "optionsCode": [],
+    "optionsText": [
+      "The same as the original array",
+      "Always 1D",
+      "Reduced by one dimension",
+      "Increased by one dimension"
+    ],
+    "answer": "The same as the original array",
+    "discription": "The dimensionality of an array generated by a Boolean mask remains the same as the original array, though the shape may change based on the mask's True values."
+  },
+
+  {
+    "id": 11,
+    "question": "What is the result of the following code, and why?\ndef func(a, b=6, c=8):\n    print(a, b, c)\nfunc(1, 2)",
+    "optionsCode": [],
+    "optionsText": [
+      "1 2 8 - The values 1 and 2 are assigned to a and b respectively, and c remains at its default value of 8.",
+      "1 6 8 - Only a is given a value, so b and c take their default values.",
+      "1 2 6 - The values 1 and 2 are assigned to a and b, but c is incorrectly assigned the value 6.",
+      "1 2 - Only a and b are printed, and c is ignored."
+    ],
+    "answer": "1 2 8 - The values 1 and 2 are assigned to a and b respectively, and c remains at its default value of 8.",
+    "discription": "1 2 8 - The arguments 1 and 2 are passed to a and b, while c retains its default value of 8."
+  },
+
+  {
+    "id": 12,
+    "question": "What is the result of this code, and why?\ndef func(a, b, c=5):\n    print(a, b, c)\n   func(1, c=3, b=2)",
+    "optionsCode": [],
+    "optionsText": [
+      "1 3 2 - Because the arguments are assigned in the order they appear.",
+      "1 2 5 - Because the default value of c is used when it's not passed.",
+      "1 2 3 - Because the named arguments b and c override the default value of c.",
+      "SyntaxError - Because the positional argument is placed after keyword arguments."
+    ],
+    "answer": "1 2 3 - Because the named arguments b and c override the default value of c.",
+    "discription": "Because the named arguments b and c override the default value of c."
+  },
+
+  {
+    "id": 13,
+    "question": "What will be the output of the code, and why?\ndef func(a, *pargs):\n    print(a, pargs)\nfunc(1, 2, 3)",
+    "optionsCode": [],
+    "optionsText": [
+      "1 (2, 3) - The first argument is a, and the remaining arguments are packed into pargs as a tuple.",
+      "1 [2, 3] - The first argument is a, and the remaining arguments are packed into pargs as a list.",
+      "1 2 3 - All arguments are printed separately.",
+      "1 {2, 3} - The first argument is a, and the remaining arguments are packed into pargs as a set."
+    ],
+    "answer": "1 (2, 3) - The first argument is a, and the remaining arguments are packed into pargs as a tuple.",
+    "discription": "The first argument (1) is assigned to a, while the rest of the arguments (2 and 3) are collected into pargs as a tuple. When printed, a is displayed as 1, and pargs is displayed as (2, 3)."
+  },
+
+  {
+    "id": 14,
+    "question": "What are some of a module's characteristics? (Name at least one.)",
+    "optionsCode": [],
+    "optionsText": [
+      "Encapsulation of code",
+      "Handling user input",
+      "Generating random numbers",
+      "Displaying graphical interfaces"
+    ],
+    "answer": "Encapsulation of code",
+    "discription": "Modules in programming often encapsulate code, meaning they group related functions and data into a single unit, making the code easier to manage and reuse."
+  },
+
+  {
+    "id": 15,
+    "question": "What is a lambda function in Python?",
+    "optionsCode": [],
+    "optionsText": [
+      "A function with a name and no parameters.",
+      "A function defined using the lambda keyword and can have any number of parameters but only one expression.",
+      "A function that can be used only inside classes.",
+      "A function that can only return a fixed value."
+    ],
+    "answer": "A function defined using the lambda keyword and can have any number of parameters but only one expression.",
+    "discription": "Lambda functions are anonymous functions created using the lambda keyword. They can have multiple parameters but only a single expression."
+  },
+
+  {
+    "id": 16,
+    "question": "How do you define a lambda function that adds two numbers?",
+    "optionsText": [],
+    "optionsCode": [
+      "lambda x, y: x + y",
+      "def add(x, y): return x + y",
+      "lambda x, y: return x + y",
+      "function add(x, y): return x + y"
+    ],
+    "answer": "lambda x, y: x + y",
+    "discription": "A lambda function that adds two numbers is defined with lambda x, y: x + y, where x and y are the parameters and x + y is the expression."
+  },
+
+  {
+    "id": 17,
+    "question": "What is a class in Python?",
+    "optionsCode": [],
+    "optionsText": [
+      "A blueprint for creating objects.",
+      "A function that returns an object.",
+      "A variable that holds data.",
+      "A method used to instantiate objects."
+    ],
+    "answer": "A blueprint for creating objects.",
+    "discription": "A class in Python serves as a blueprint for creating objects, defining their attributes and methods."
+  },
+
+  {
+    "id": 18,
+    "question": "How do you define a class in Python?",
+    "optionsCode": [],
+    "optionsText": [
+      "class ClassName:",
+      "define ClassName:",
+      "create ClassName:",
+      "class ClassName()"
+    ],
+    "answer": "class ClassName:",
+    "discription": "The syntax to define a class in Python starts with the class keyword followed by the class name and a colon."
+  },
+
+  {
+    "id": 19,
+    "question": "What is inheritance in Python?",
+    "optionsCode": [],
+    "optionsText": [
+      "A mechanism to create a new class based on an existing class.",
+      "A way to create multiple instances of a class.",
+      "A method for handling errors in classes.",
+      "A feature for deleting class attributes."
+    ],
+    "answer": "A mechanism to create a new class based on an existing class.",
+    "discription": "Inheritance allows a new class to inherit attributes and methods from an existing class, enabling code reuse and the creation of hierarchical class structures."
+  },
+
+  {
+    "id": 20,
+    "question": "What does the self keyword represent in a class method?",
+    "optionsCode": [],
+    "optionsText": [
+      "The class itself.",
+      "The instance of the class.",
+      "The parent class.",
+      "A static variable."
+    ],
+    "answer": "The instance of the class.",
+    "discription": "The self keyword in a class method represents the instance of the class on which the method is called, allowing access to instance attributes and other methods."
+  }
+]

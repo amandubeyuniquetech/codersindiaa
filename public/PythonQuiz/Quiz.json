@@ -1,0 +1,2758 @@
+[
+    {
+     "id": 1,
+     "question":"In the list below, which of them are values and which are expressions? A value can be an integer or string, while an expression involves mathematical operators." ,
+     
+     "options":["12, 'cat', 5 + 7, 'dog' + 'house'",
+     "3.14, 'apple', 50, 20 / 4",
+     "8 * 2, 100, 'hello', 7 - 3",
+     "'car' + 'pet', 42, 'tree', 15"],
+     
+     "answer":"3.14, 'apple', 50, 20 / 4",
+     "discription":"Option A: 12 and 'cat' are values; 5 + 7 and 'dog' + 'house' are expressions.\nOption B: 3.14, 'apple', and 50 are values; 20 / 4 is an expression.\nOption C: 100 and 'hello' are values; 8 * 2 and 7 - 3 are expressions.\nOption D: 42, 'tree', and 15 are values; 'car' + 'pet' is an expression."
+    },
+
+    {
+    "id": 2,
+    "question":"What is the difference between a string and a variable?" ,
+        
+    "options":["A string is a type of data representing text, while a variable is a storage location for data that can change.",
+    "A string is a storage location for data that can change, while a variable is a type of data representing text.",
+    "A string is a number, while a variable is a text.",
+    "A string is a number, while a variable is a text."
+    ],
+    "answer":"A string is a type of data representing text, while a variable is a storage location for data that can change.",
+    "discription":"A string represents textual data, while a variable is used to store data that can be updated or changed during program execution."
+       },
+
+    {
+    "id": 3,
+    "question":"Which of the following options correctly describes three different data types?" ,
+        
+    "options":["Integer, Float, and Boolean",
+    "String, Function, and Class",
+    "List, Dictionary, and Module",
+    "Operator, Loop, and Condition"
+    ],
+    "answer":"Integer, Float, and Boolean",
+    "discription":"Integer, Float, and Boolean are all fundamental data types. An integer represents whole numbers, a float represents decimal numbers, and a boolean represents true/false values."
+       },
+
+    {
+    "id": 4,
+    "question":"What is an expression made up of, and what do all expressions do?" ,
+            
+    "options":["An expression is made up of variables and functions, and all expressions store data.",
+    "An expression is made up of constants and keywords, and all expressions print output.",
+    "An expression is made up of variables, constants, and operators, and all expressions evaluate to a value.",
+    "An expression is made up of loops and conditions, and all expressions control the flow of the program."
+    ],
+    "answer":"An expression is made up of variables, constants, and operators, and all expressions evaluate to a value.",
+    "discription":"Expressions consist of variables, constants, and operators, and they always evaluate to a value, such as a number or a string."
+           },
+
+    {
+    "id": 5,
+    "question":"In assignment statements like spam = 10, what is the difference between an expression and a statement?" ,
+                    
+    "options":["An expression assigns a value, while a statement evaluates to a value.",
+    "An expression performs an action, while a statement represents a value.",
+    "An expression evaluates to a value, while a statement performs an action.",
+    "An expression and a statement are the same and can be used interchangeably."
+    ],
+    "answer":"An expression evaluates to a value, while a statement performs an action.",
+    "discription":"An expression produces a value, like 10, while a statement, such as an assignment (spam = 10), performs an action in the program."
+             },
+
+    {
+    "id": 6,
+    "question":"After running the following code, what does the variable bacon contain?\n bacon = 22\n bacon + 1",
+                                
+    "options":["22",
+    "23",
+    "24",
+    "21"
+    ],
+    "answer":"22",
+    "discription":"The statement bacon + 1 evaluates to 23, but it does not change the value of bacon. The value of bacon remains 22."
+                },
+
+    {            
+    "id": 7,
+    "question":"What should the values of the following two terms be?\n 'spam' + 'spamspam'\n 'spam' * 3",
+                                
+    "options":["spamspamspam and spamspamspam",
+    "spamspamspam and spam3",
+    "spamspam and spamspamspam",
+    "spamspamspam and spamspam"
+    ],
+    "answer":"spamspamspam and spamspamspam",
+    "discription":"spam + spamspam concatenates the two strings, resulting in spamspamspam.\nspam * 3 repeats the string 'spam' three times, also resulting in spamspamspam."
+                }, 
+                
+    {
+        "id": 8,
+        "question":"Why is eggs a valid variable name while 100 is invalid?",
+                                                
+        "options":["Variable names must be in lowercase, and 100 is not.",
+        "Variable names can only contain letters, and 100 is a number",
+        "Variable names must start with a letter or an underscore, and 100 starts with a number.",
+        "Variable names cannot contain numbers, and eggs does not."
+        ],
+        "answer":"Variable names must start with a letter or an underscore, and 100 starts with a number.",
+        "discription":"Variable names must start with a letter or an underscore."
+                    }, 
+                    
+    {
+        "id": 9,
+        "question":"What three functions can be used to get the integer, floating-point number, or string version of a value?",
+                                                                
+        "options":["int(), float(), str()",
+        "integer(), floating(), string()",
+        "getInt(), getFloat(), getString()",
+        "convertInt(), convertFloat(), convertString()"
+        ],
+        "answer":"int(), float(), str()",
+        "discription":"int() converts a value to an integer.\n float() converts a value to a floating-point number.\n str() converts a value to a string."
+                     }, 
+                     
+    {
+        "id": 10,
+        "question":"Why does this expression cause an error? How can you fix it?\n ' I have eaten '  + 99 + ' burritos.'",
+                                                                                
+        "options":["The expression causes an error because 99 is an integer, and you can fix it by converting 99 to a string.",
+        "The expression causes an error because there are no spaces, and you can fix it by adding spaces between the strings and the number.",
+        "The expression causes an error because it uses single quotes, and you can fix it by using double quotes.",
+        "The expression causes an error because the strings are too long, and you can fix it by shortening the strings."
+        ],
+        "answer":"The expression causes an error because 99 is an integer, and you can fix it by converting 99 to a string.",
+        "discription":"The error occurs because you cannot concatenate a string and an integer directly."
+                        },
+
+    {
+        "id": 11,
+        "question":"What are the two values of the Boolean data type? How do you write them?",
+                                                        
+        "options":["Yes and No; written as yes and no",
+        "True and False; written as True and False",
+        "1 and 0; written as one and zero",
+        "On and Off; written as on and off"
+        ],
+        "answer":"True and False; written as True and False",
+        "discription":"The Boolean data type has two values: True and False.\n These values are written with an initial capital letter in Python and many other programming languages."
+                    },
+
+    {
+        "id": 12,
+        "question":"What are the three different types of Boolean operators?",
+                                                                        
+        "options":["AND, OR, XOR",
+        "AND, OR, NOT",
+        "IF, ELSE, ELIF",
+        "TRUE, FALSE, NONE"
+        ],
+        "answer":"AND, OR, NOT",
+        "discription":"The three different types of Boolean operators are AND, OR, and NOT.\nAND returns True if both operands are true.\nOR returns True if at least one operand is true.\nNOT returns the opposite of the operand's boolean value."
+                    },
+
+    {
+        "id": 13,
+        "question":"What are the values of the following expressions?\n (5 > 4) and (3 == 5)\n not (5 > 4)\n (5 > 4) or (3 == 5)\n not ((5 > 4) or (3 == 5))\n (True and True) and (True == False)\n (not False) or (not True)",
+                                                                                        
+        "options":["True,False,True,False,False,True",
+        "False,True,False,True,True,False",
+        "False,False,True,False,False,True",
+        "True,True,False,True,True,False"
+        ],
+        "answer":"False,False,True,False,False,True",
+        "discription":"(5 > 4) and (3 == 5) evaluates to False because 3 == 5 is False.\nnot (5 > 4) evaluates to False because 5 > 4 is True.\n(5 > 4) or (3 == 5) evaluates to True because 5 > 4 is True.\nnot ((5 > 4) or (3 == 5)) evaluates to False because (5 > 4) or (3 == 5) is True.\n(True and True) and (True == False) evaluates to False because True == False is False.\n(not False) or (not True) evaluates to True because not False is True."
+                    },
+
+    {
+        "id": 14,
+        "question":"What are the six comparison operators?",
+                                                                                        
+        "options":["<, >, =, <=, >=, !=",
+        "==, !=, <, <=, >, >=",
+        "=, !=, <>, <=, >=, ><",
+        "==, !=, <>, <=, >=, ><"
+        ],
+        "answer":"==, !=, <, <=, >, >=",
+        "discription":"== : Equal to\n!= : Not equal to\n< : Less than\n<= : Less than or equal to\n> : Greater than\n>= : Greater than or equal to"
+                    },
+
+    {
+        "id": 15,
+        "question":"How do you tell the difference between the equal to and assignment operators? Describe a condition and when you would use one.",
+                                                                                                        
+        "options":["'==' is used for comparison; '=' is used for assignment. Example: if x == 5: to check if x is 5, x = 5 to set x to 5.",
+        "'=' is used for comparison; '==' is used for assignment. Example: if x = 5: to check if x is 5, x == 5 to set x to 5.",
+        "'==' and '=' are both used for comparison and assignment. Example: if x == 5: and x = 5 can be used interchangeably.",
+        "'==' is used for arithmetic operations; '=' is used for comparison. Example: if x == 5: to perform arithmetic, x = 5 to compare."
+        ],
+        "answer":"'==' is used for comparison; '=' is used for assignment. Example: if x == 5: to check if x is 5, x = 5 to set x to 5.",
+        "discription":"'==' is used to compare two values to see if they are equal.\n'=' is used to assign a value to a variable."
+    },
+
+    {
+        "id": 16,
+        "question":"Identify the three blocks in the following code:\n spam = 0\n if spam == 10:\n print('eggs')\n if spam > 5:\n print('bacon')\n else:\n print('ham')\n print('spam')\n print('spam')",
+                                                                                                        
+        "options":["spam = 0\n if spam == 10: print('eggs')\n if spam > 5: print('bacon') else: print('ham') and print('spam') print('spam')",
+        "spam = 0\n if spam == 10: print('eggs')\n if spam > 5: print('bacon') and else: print('ham') print('spam') print('spam')",
+        "spam = 0\n if spam == 10: print('eggs') if spam > 5: print('bacon') else: print('ham')\n print('spam') print('spam')",
+        "spam = 0\n if spam == 10: print('eggs') if spam > 5: print('bacon') else: print('ham')\n print('spam')"
+        ],
+        "answer":"spam = 0\n if spam == 10: print('eggs')\n if spam > 5: print('bacon') and else: print('ham') print('spam') print('spam')",
+        "discription":"The first block is the assignment statement: spam = 0.\n The second block includes the if statement: if spam == 10: print('eggs').\n The third block includes the if statement with else and the remaining print statements: if spam > 5: print('bacon') else: print('ham') and print('spam') print('spam')."
+    },
+
+    {
+        "id": 17,
+        "question":"Which code snippet correctly implements the following logic?\n Print Hello if 1 is stored in spam.\n Print Howdy if 2 is stored in spam.\n Print Greetings! if anything else is stored in spam.",
+                                                                                                        
+        "options":["spam = 3\n if spam == 1:\n     print('Hello')\n elif spam == 2:\n     print('Howdy')\n else:\n     print('Greetings!')",
+        "spam = 1\n if spam == 2:\n    print('Howdy')\n elif spam == 1:\n    print('Hello')\n else:\n    print('Greetings!')",
+        "spam = 2\n if spam == 1:\n    print('Hello')\n elif spam == 3:\n    print('Howdy')\n else:\n    print('Greetings!')",
+        "spam = 1\n if spam == 1:\n    print('Hello')\n if spam == 2:\n    print('Howdy')\n else:\n     print('Greetings!')"
+        ],
+        "answer":"spam = 3\n if spam == 1:\n     print('Hello')\n elif spam == 2:\n     print('Howdy')\n else:\n     print('Greetings!')",
+        "discription":"Option A correctly uses if, elif, and else to handle the three conditions: spam being 1, 2, or anything else."
+    },
+
+    {
+        "id": 18,
+        "question":"If your program is stuck in an endless loop, which keys should you press to stop it?",
+                                                                                                        
+        "options":["Ctrl + S",
+        "Ctrl + C",
+        "Alt + F4",
+        "Esc"
+        ],
+        "answer":"Ctrl + C",
+        "discription":"Ctrl + C is used to interrupt and stop a running program or command in many terminal environments."
+    },
+
+    {
+        "id": 19,
+        "question":"How can you tell the difference between break and continue?",
+                                                                                                        
+        "options":["break exits the current loop entirely; continue skips the current iteration and continues with the next iteration of the loop.",
+        "break skips the current iteration and continues with the next iteration; continue exits the current loop entirely.",
+        "break is used to pause the loop; continue is used to exit the loop.",
+        "break restarts the loop from the beginning; continue exits the loop."
+        ],
+        "answer":"break exits the current loop entirely; continue skips the current iteration and continues with the next iteration of the loop.",
+        "discription":"break is used to terminate the entire loop when a condition is met.\ncontinue is used to skip the rest of the current loop iteration and proceed with the next iteration."
+    },
+
+    {
+        "id": 20,
+        "question":"In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?",
+                                                                                                        
+        "options":["range(10) and range(0, 10) are the same, and range(0, 10, 1) includes an extra step in the sequence.",
+        "range(10) and range(0, 10) both generate numbers from 0 to 9; range(0, 10, 1) does the same but explicitly specifies a step of 1.",
+        "range(10) starts at 10 and goes to 0; range(0, 10) starts at 0 and goes to 10; range(0, 10, 1) is incorrect.",
+        "range(10) includes the number 10; range(0, 10) includes numbers from 0 to 10; range(0, 10, 1) skips every other number."
+        ],
+        "answer":"range(10) and range(0, 10) both generate numbers from 0 to 9; range(0, 10, 1) does the same but explicitly specifies a step of 1.",
+        "discription":"range(10) generates numbers from 0 to 9.\nrange(0, 10) also generates numbers from 0 to 9, specifying the start and stop values.\nrange(0, 10, 1) generates numbers from 0 to 9 with a step of 1, making it explicitly clear that the increment is 1."
+    },
+
+    {
+        "id": 21,
+        "question":"Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.",
+                                                                                                        
+        "options":["for i in range(1, 11):\n    print(i)\n i = 1\n while i < 11:\n    print(i)\n    i += 1",
+        "for i in range(10):\n    print(i + 1)\n i = 0\n while i < 10:\n    print(i)\n    i += 1",
+        "for i in range(1, 10):\n    print(i)\n i = 1\n while i <= 10:\n    print(i)\n    i += 1",
+        "for i in range(0, 10):\n    print(i + 1)\n i = 1\n while i < 10:\n    print(i)\n    i += 1"
+        ],
+        "answer":"for i in range(1, 11):\n    print(i)\n i = 1\n while i < 11:\n    print(i)\n    i += 1",
+        "discription":"The for loop in option A correctly uses range(1, 11) to print numbers from 1 to 10.\nThe while loop in option A correctly initializes i to 1 and continues to print until i reaches 10, incrementing i by 1 each time."
+    },
+
+    {
+        "id": 22,
+        "question":"If you had a function named bacon() inside a module named spam, how would you call it after importing spam?",
+                                                                                                        
+        "options":["bacon.spam()",
+        "spam.bacon()",
+        "call spam.bacon()",
+        "import spam.bacon()"
+        ],
+        "answer":"spam.bacon()",
+        "discription":"After importing the spam module, you call the bacon() function using the syntax module_name.function_name(). Therefore, you would call bacon() as spam.bacon()."
+    },
+
+    {
+        "id": 23,
+        "question":"Why are functions advantageous to have in your programs?",
+                                                                                                        
+        "options":["They allow you to write code that is syntactically incorrect.",
+        "They make your program run faster.",
+        "They help you avoid repetition, make the code more modular, and easier to understand and maintain.",
+        "They eliminate the need for variables in your program."
+        ],
+        "answer":"They help you avoid repetition, make the code more modular, and easier to understand and maintain.",
+        "discription":"Functions help in organizing code into manageable sections, making it reusable and reducing redundancy. This enhances code readability, maintainability, and overall structure."
+    },
+
+    {
+        "id": 24,
+        "question":"When does the code in a function run: when it's specified or when it's called?",
+                                                                                                        
+        "options":["When it's specified.",
+        "When it's called",
+        "When the program starts.",
+        "Continuously in a loop."
+        ],
+        "answer":"When it's called",
+        "discription":"The code inside a function executes only when the function is called, not when it is defined. Defining a function merely specifies what it does, but it doesn't run until you explicitly call it."
+    },
+
+    {
+        "id": 25,
+        "question":"What statement creates a function?",
+                                                                                                        
+        "options":["create function",
+        "function()",
+        "def",
+        "func"
+        ],
+        "answer":"def",
+        "discription":"The def keyword is used to define a function in Python"
+    },
+
+    {
+        "id": 26,
+        "question":"What is the difference between a function and a function call?",
+                                                                                                        
+        "options":["A function is the code that performs a task; a function call is how you define the function.",
+        "A function is how you use the function; a function call is the code that performs the task.",
+        "A function is the block of code that performs a task; a function call is the code that executes the function.",
+        "A function is an input to a program; a function call is the output of a program."
+        ],
+        "answer":"A function is the block of code that performs a task; a function call is the code that executes the function.",
+        "discription":"A function is a defined block of code that performs a specific task.\nA function call is when you execute the function to perform its task."
+    },
+
+    {
+        "id": 27,
+        "question":"How many global scopes are there in a Python program? How many local scopes?",
+                                                                                                        
+        "options":["There is one global scope and one local scope.",
+        "There are multiple global scopes and one local scope.",
+        "There is one global scope and multiple local scopes.",
+        "There are multiple global scopes and multiple local scopes."
+        ],
+        "answer":"There is one global scope and multiple local scopes.",
+        "discription":"In a Python program, there is only one global scope, which exists for the duration of the program.\nEach function call creates a new local scope, so there can be multiple local scopes in a program."
+    },
+
+    {
+        "id": 28,
+        "question":"What happens to variables in a local scope when the function call returns?",
+                                                                                                        
+        "options":["They are preserved and can be accessed outside the function.",
+        "They are deleted and cannot be accessed outside the function.",
+        "They are converted to global variables.",
+        "They are stored in memory until the program ends."
+        ],
+        "answer":"They are deleted and cannot be accessed outside the function.",
+        "discription":"When a function call returns, the local scope is destroyed, and all variables defined within that local scope are deleted. They cannot be accessed outside the function."
+    },
+
+    {
+        "id": 29,
+        "question":"What is the concept of a return value? Is it possible to have a return value in an expression?",
+                                                                                                        
+        "options":["A return value is the value that a function outputs. It is not possible to use a return value in an expression.",
+        "A return value is the value that a function receives as input. It is possible to use a return value in an expression.",
+        "A return value is the value that a function outputs. It is possible to use a return value in an expression.",
+        "A return value is the value that a function uses to determine its flow. It is not possible to use a return value in an expression."
+        ],
+        "answer":"A return value is the value that a function outputs. It is possible to use a return value in an expression.",
+        "discription":"A return value is the result that a function produces and sends back to the caller.\nThis return value can be used in expressions, allowing it to be further processed or utilized in the program."
+    },
+
+    {
+        "id": 30,
+        "question":"If a function does not have a return statement, what is the return value of a call to that function?",
+                                                                                                        
+        "options":["The function returns 0.",
+        "The function returns None.",
+        "The function returns an empty string' '.",
+        "The function returns an error."
+        ],
+        "answer":"The function returns None.",
+        "discription":"In Python, if a function does not have a return statement, it automatically returns None when called. This is the default return value for all functions that do not explicitly return a value."
+    },
+
+    {
+        "id": 31,
+        "question":"How do you make a function variable refer to the global variable?",
+                                                                                                        
+        "options":["Use the local keyword before the variable name.",
+        "Use the global keyword before the variable name.",
+        "Use the universal keyword before the variable name.",
+        "Use the extern keyword before the variable name."
+        ],
+        "answer":"Use the global keyword before the variable name.",
+        "discription":"In Python, the global keyword is used inside a function to refer to a variable that is defined in the global scope. This allows the function to modify the global variable."
+    },
+
+    {
+        "id": 32,
+        "question":"What is the data type of None?",
+                                                                                                        
+        "options":["str",
+        "int",
+        "NoneType",
+        "bool"
+        ],
+        "answer":"NoneType",
+        "discription":"In Python, None is a special constant that represents the absence of a value or a null value. The data type of None is NoneType."
+    },
+
+    {
+        "id": 33,
+        "question":"What does the statement import areallyourpetsnamederic do?",
+                                                                                                        
+        "options":["It imports a built-in Python module named areallyourpetsnamederic.",
+        "It creates a new module named areallyourpetsnamederic.",
+        "It imports a module named areallyourpetsnamederic, assuming such a module exists.",
+        "It causes a syntax error because areallyourpetsnamederic is not a valid module name."
+        ],
+        "answer":"It imports a module named areallyourpetsnamederic, assuming such a module exists.",
+        "discription":"The statement import areallyourpetsnamederic attempts to import a module with the name areallyourpetsnamederic. If such a module exists in the Python path, it will be imported without errors. Otherwise, an ImportError will occur."
+    },
+
+    {
+        "id": 34,
+        "question":"If you had a bacon() function in a spam module, how would you call it after importing spam?",
+                                                                                                        
+        "options":["bacon()",
+        "call spam.bacon()",
+        "spam.bacon()",
+        "spam::bacon()"
+        ],
+        "answer":"spam.bacon()",
+        "discription":"After importing the spam module, you call the bacon() function using the syntax module_name.function_name(), which in this case is spam.bacon()."
+    },
+
+    {
+        "id": 35,
+        "question":"What can you do to save a program from crashing if it encounters an error?",
+                                                                                                        
+        "options":["Use the pass statement in your code.",
+        "Use comments to skip over the error-prone code.",
+        "Use error handling with try and except blocks.",
+        "Use error handling with try and except blocks."
+        ],
+        "answer":"Use error handling with try and except blocks.",
+        "discription":"By using try and except blocks, you can catch exceptions and handle errors gracefully, preventing the program from crashing. This allows you to provide alternative behavior or informative messages when errors occur."
+    },
+
+    {
+        "id": 36,
+        "question":"What is the purpose of the try clause? What is the purpose of the except clause?",
+                                                                                                        
+        "options":["The try clause is used to test if a block of code has errors; the except clause is used to skip the error.",
+        "The try clause is used to define functions; the except clause is used to handle function arguments.",
+        "The try clause is used to execute code that might cause an exception; the except clause is used to handle the exception if one occurs.",
+        "The try clause is used to iterate over a sequence; the except clause is used to end the iteration."
+        ],
+        "answer":"The try clause is used to execute code that might cause an exception; the except clause is used to handle the exception if one occurs.",
+        "discription":"The try clause allows you to write code that might raise an exception. If an exception occurs, the code in the except clause is executed to handle the exception gracefully. This helps in preventing the program from crashing and allows for proper error handling."
+    },
+
+    {
+        "id": 37,
+        "question":"What exactly is []?",
+                                                                                                        
+        "options":["An empty tuple",
+        "An empty dictionary",
+        "An empty set",
+        "An empty list"
+        ],
+        "answer":"An empty list",
+        "discription":"In Python, [] represents an empty list. Lists are mutable sequences, typically used to store collections of homogeneous items."
+    },
+
+    {
+        "id": 38,
+        "question":"In a list of values stored in a variable called spam, how would you assign the value 'hello' as the third value? (Assume [2, 4, 6, 8, 10] are in spam.)",
+                                                                                                        
+        "options":["spam[2] = 'hello'",
+        "spam[3] = 'hello'",
+        "spam[1] = 'hello'",
+        "spam.insert(3, 'hello')"
+        ],
+        "answer":"spam[2] = 'hello'",
+        "discription":"Lists in Python are zero-indexed, meaning the first element is at index 0. To assign a new value to the third position (which is index 2), you use spam[2] = 'hello'."
+    },
+
+    {
+        "id": 39,
+        "question":"What is the value of spam[-1] if spam is a list?",
+                                                                                                        
+        "options":["The first element of the list",
+        "The last element of the list",
+        "The middle element of the list",
+        "An error occurs"
+        ],
+        "answer":"The last element of the list",
+        "discription":"In Python, negative indexing is used to access elements from the end of a list. spam[-1] refers to the last element of the list."
+    },
+
+    {
+        "id": 40,
+        "question":"What is the value of the expression spam[int(int('3' * 2) / 11)]?",
+                                                                                                        
+        "options":["The expression results in an error.",
+        "The expression evaluates to spam[2].",
+        "The expression evaluates to spam[1].",
+        "The expression evaluates to spam[0]."
+        ],
+        "answer":"The expression results in an error.",
+        "discription":"Evaluating the expression:\n '3' * 2 results in '33'.\n int('33') converts '33' to 33.\n 3 / 11 is 3.0.\n int(3.0) converts 3.0 to 3.\n If spam is not defined, attempting to use spam[3] will cause an error."
+    },
+
+    {
+        "id": 41,
+        "question":"What is the value of spam[:2]?\nLet's pretend bacon has the list [3.14, 'cat', 11, 'cat', True] for the next three questions.",
+                                                                                                        
+        "options":["[3.14, 'cat']",
+        "['cat', 11]",
+        "[3.14, 'cat', 11]",
+        "['cat', 11, 'cat']"
+        ],
+        "answer":"[3.14, 'cat']",
+        "discription":"The slice spam[:2] returns the elements from the start of the list up to, but not including, index 2. Therefore, the first two elements of bacon are [3.14, 'cat']."
+    },
+
+    {
+        "id": 43,
+        "question":"Given the list bacon = [3.14, 'cat', 11, 'cat', True], what is the value of bacon.index('cat')?",
+                                                                                                        
+        "options":["1",
+        "2",
+        "3",
+        "4"
+        ],
+        "answer":"1",
+        "discription":"The index() method returns the first occurrence of the specified value. In this case, the first occurrence of 'cat' in the list bacon is at index 1."
+    },
+
+    {
+        "id": 44,
+        "question":"Given the list bacon = [3.14, 'cat', 11, 'cat', True], how does bacon.append(99) change the look of the list value in bacon?",
+                                                                                                        
+        "options":["[99, 3.14, 'cat', 11, 'cat', True]",
+        "[3.14, 'cat', 11, 'cat', True, 99]",
+        "[3.14, 'cat', 11, 99, 'cat', True]",
+        "[3.14, 'cat', 11, 'cat']"
+        ],
+        "answer":"[3.14, 'cat', 11, 'cat', True, 99]",
+        "discription":"The append() method adds its argument to the end of the list. Thus, appending 99 to the list bacon results in [3.14, 'cat', 11, 'cat', True, 99]."
+    },
+
+    {
+        "id": 45,
+        "question":"Given the list bacon = [3.14, 'cat', 11, 'cat', True], how does bacon.remove('cat') change the look of the list value in bacon?",
+                                                                                                        
+        "options":["[3.14, 11, 'cat', True]",
+        "[3.14, 'cat', 'cat', True]",
+        "[3.14, 'cat', 11, 'cat']",
+        "['cat', 11, 'cat', True]"
+        ],
+        "answer":"[3.14, 11, 'cat', True]",
+        "discription":"The remove() method removes the first occurrence of the specified value. In this case, removing 'cat' from the list bacon results in [3.14, 11, 'cat', True]."
+    },
+
+    {
+        "id": 46,
+        "question":"What are the list concatenation and list replication operators in Python?",
+                                                                                                        
+        "options":["+ and *",
+        "& and |",
+        "- and ",
+        "@ and %"
+        ],
+        "answer":"+ and *",
+        "discription":"The + operator is used for list concatenation, which combines two lists into one.\nThe * operator is used for list replication, which repeats the elements of a list a specified number of times."
+    },
+
+    {
+        "id": 47,
+        "question":"What is the difference between the list methods append() and insert()?",
+                                                                                                        
+        "options":["append() adds an element to the beginning of the list, while insert() adds an element to the end of the list.",
+        "append() adds an element to the end of the list, while insert() adds an element at a specified position in the list.",
+        "append() adds an element to the end of the list, while insert() removes an element from a specified position in the list.",
+        "append() and insert() are both used to add elements to the list, but insert() can only be used with strings."
+        ],
+        "answer":"append() adds an element to the end of the list, while insert() adds an element at a specified position in the list.",
+        "discription":"The append() method adds a new element to the end of the list.\nThe insert() method adds a new element at a specified index in the list."
+    },
+
+    {
+        "id": 48,
+        "question":"What are the two methods for removing items from a list in Python?",
+                                                                                                        
+        "options":["delete() and pop()",
+        "remove() and pop()",
+        "discard() and delete()",
+        "erase() and remove()"
+        ],
+        "answer":"remove() and pop()",
+        "discription":"The remove() method removes the first occurrence of a specified value from the list.\nThe pop() method removes and returns the item at a given position (or the last item if no position is specified)."
+    },
+
+    {
+        "id": 49,
+        "question":"How are list values and string values identical in Python?",
+                                                                                                        
+        "options":["Both lists and strings are immutable.",
+        "Both lists and strings can be concatenated and replicated.",
+        "Both lists and strings can only contain characters.",
+        "Both lists and strings are created using square brackets."
+        ],
+        "answer":"Both lists and strings can be concatenated and replicated.",
+        "discription":"Both lists and strings support concatenation using the + operator and replication using the * operator. While strings are immutable and lists are mutable, these operations work similarly for both types."
+    },
+
+    {
+        "id": 50,
+        "question":"What's the difference between tuples and lists in Python?",
+                                                                                                        
+        "options":["Tuples are mutable, while lists are immutable",
+        "Tuples can contain only one data type, while lists can contain multiple data types.",
+        "Tuples are created using parentheses, while lists are created using square brackets.",
+        "Tuples support more methods than lists."
+        ],
+        "answer":"Tuples are created using parentheses, while lists are created using square brackets.",
+        "discription":"The main difference between tuples and lists is that tuples are created using parentheses () and are immutable, meaning their elements cannot be changed after creation. Lists are created using square brackets [] and are mutable, meaning their elements can be changed."
+    },
+
+    {
+        "id": 51,
+        "question":"How do you type a tuple value that only contains the integer 42?",
+                                                                                                        
+        "options":["(42)",
+        "42,",
+        "(42,)",
+        "[42]"
+        ],
+        "answer":"(42,)",
+        "discription":"To create a tuple with a single element, you need to include a comma after the element inside parentheses. (42,) is the correct syntax to create a tuple containing only the integer 42. (42) would be interpreted as just the integer 42, not a tuple."
+    },
+
+    {
+        "id": 52,
+        "question":"How do you get a list value's tuple form? How do you get a tuple value's list form?",
+                                                                                                        
+        "options":["Use list() for both conversions.",
+        "Use tuple() to convert a list to a tuple and list() to convert a tuple to a list.",
+        "Use list() to convert a list to a tuple and tuple() to convert a tuple to a list.",
+        "Use tuple() for both conversions."
+        ],
+        "answer":"Use tuple() to convert a list to a tuple and list() to convert a tuple to a list.",
+        "discription":"The tuple() function converts a list to a tuple, and the list() function converts a tuple to a list. These functions allow you to change the data type while preserving the elements."
+    },
+
+    {
+        "id": 53,
+        "question":"Variables that 'contain' list values are not necessarily lists themselves. Instead, what do they contain?",
+                                                                                                        
+        "options":["The list values themselves",
+        "References to the list values",
+        "Copies of the list values",
+        "The length of the list"
+        ],
+        "answer":"References to the list values",
+        "discription":"Variables that 'contain' list values actually contain references (or pointers) to the list values stored in memory, not the list values themselves. This means the variable points to the location where the list is stored."
+    },
+
+    {
+        "id": 54,
+        "question":"How do you distinguish between copy.copy() and copy.deepcopy() in Python?",
+                                                                                                        
+        "options":["copy.copy() creates a shallow copy, while copy.deepcopy() creates a deep copy.",
+        "copy.copy() copies the list, while copy.deepcopy() copies the tuple.",
+        "copy.copy() creates a deep copy, while copy.deepcopy() creates a shallow copy.",
+        "copy.copy() copies only the first level of elements, while copy.deepcopy() does not copy elements at all."
+        ],
+        "answer":"copy.copy() creates a shallow copy, while copy.deepcopy() creates a deep copy.",
+        "discription":"copy.copy() creates a shallow copy of an object, meaning it copies the object itself but not the nested objects. copy.deepcopy() creates a deep copy of an object, meaning it copies the object as well as all nested objects, resulting in a completely independent copy."
+    },
+    
+    {
+        "id": 55,
+        "question":"What does an empty dictionary's code look like in Python?",
+                                                                                                        
+        "options":["[]",
+        "{}",
+        "()",
+        "{:}"
+        ],
+        "answer":"{}",
+        "discription":"An empty dictionary in Python is represented by a pair of curly braces {}."
+    },
+
+    {
+        "id": 56,
+        "question":"What is the value of a dictionary entry with the key 'foo' and the value 42?",
+                                                                                                        
+        "options":["{'foo': 42}",
+        "{'foo', 42}",
+        "[foo: 42]",
+        "('foo', 42)"
+        ],
+        "answer":"{'foo': 42}",
+        "discription":"In Python, a dictionary entry with the key 'foo' and the value 42 is represented as {'foo': 42}. The key-value pair is written inside curly braces, with the key and value separated by a colon."
+    },
+
+    {
+        "id": 57,
+        "question":"What is the most significant distinction between a dictionary and a list in Python?",
+                                                                                                        
+        "options":["Lists are ordered, while dictionaries are unordered.",
+        "Lists are immutable, while dictionaries are mutable.",
+        "Lists can store multiple data types, while dictionaries can only store strings.",
+        "Lists use indices to access elements, while dictionaries use keys."
+        ],
+        "answer":"Lists use indices to access elements, while dictionaries use keys.",
+        "discription":"The most significant distinction between a list and a dictionary in Python is that lists use indices to access elements, whereas dictionaries use keys. Lists are ordered collections accessed by their position, while dictionaries are collections of key-value pairs accessed by keys."
+    },
+
+    {
+        "id": 58,
+        "question":"What happens if you try to access spam['foo'] if spam is {'bar': 100}?",
+                                                                                                        
+        "options":["It returns None.",
+        "It raises a KeyError.",
+        "It returns the value 100",
+        "It returns 0"
+        ],
+        "answer":"It raises a KeyError.",
+        "discription":"If you try to access a key in a dictionary that does not exist, Python raises a KeyError. In this case, 'foo' is not a key in the dictionary {'bar': 100}, so accessing spam['foo'] results in a KeyError."
+    },
+
+    {
+        "id": 59,
+        "question":"If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.keys()?",
+                                                                                                        
+        "options":["'cat' in spam checks if 'cat' is a key or a value in the dictionary, while 'cat' in spam.keys() checks if 'cat' is only a key.",
+        "Both expressions have the same effect and check if 'cat' is a key in the dictionary.",
+        "'cat' in spam checks if 'cat' is a value in the dictionary, while 'cat' in spam.keys() checks if 'cat' is a key.",
+        "'cat' in spam checks if 'cat' is a key in the dictionary, while 'cat' in spam.keys() is not a valid expression."
+        ],
+        "answer":"Both expressions have the same effect and check if 'cat' is a key in the dictionary.",
+        "discription":"Both 'cat' in spam and 'cat' in spam.keys() check whether 'cat' is a key in the dictionary spam. The in operator directly checks for membership in the dictionary keys, making .keys() redundant in this context."
+    },
+
+    {
+        "id": 60,
+        "question":"If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.values()?",
+                                                                                                        
+        "options":["'cat' in spam checks if 'cat' is a key in the dictionary, while 'cat' in spam.values() checks if 'cat' is a value in the dictionary.",
+        "'cat' in spam checks if 'cat' is a value in the dictionary, while 'cat' in spam.values() checks if 'cat' is a key.",
+        "Both expressions check if 'cat' is a key in the dictionary.",
+        "Both expressions check if 'cat' is a value in the dictionary."
+        ],
+        "answer":"'cat' in spam checks if 'cat' is a key in the dictionary, while 'cat' in spam.values() checks if 'cat' is a value in the dictionary.",
+        "discription":"'cat' in spam checks if 'cat' is one of the keys in the dictionary spam.\n'cat' in spam.values() checks if 'cat' is one of the values in the dictionary spam."
+    },
+
+    {
+        "id": 61,
+        "question":"What is a shortcut for the following code?\nif 'color' not in spam:\nspam['color'] = 'black'\n",
+                                                                                                        
+        "options":["spam['color'] = spam.get('color', 'black')",
+        "spam.setdefault('color', 'black')",
+        "spam.update({'color': 'black'})",
+        "spam['color'] == 'black'"
+        ],
+        "answer":"spam.setdefault('color', 'black')",
+        "discription":"The setdefault() method provides a shortcut for the given code. It checks if the key 'color' exists in the dictionary spam. If the key does not exist, it adds 'color' with the value 'black'. If the key already exists, it does nothing and leaves the existing value unchanged."
+    },
+
+    {
+        "id": 62,
+        "question":"How do you 'pretty print' dictionary values using which module and function in Python?",
+                                                                                                        
+        "options":["Using the print() function from the sys module.",
+        "Using the pprint() function from the pprint module.",
+        "Using the format() function from the string module.",
+        "Using the dump() function from the json module."
+        ],
+        "answer":"Using the pprint() function from the pprint module.",
+        "discription":"The pprint module provides the pprint() function, which is used to 'pretty print' dictionary values in a more readable format, especially when dealing with nested or large dictionaries."
+    },
+
+    {
+        "id": 63,
+        "question":"What are escape characters, and how do you use them in Python?",
+                                                                                                        
+        "options":["Escape characters are symbols that define the beginning and end of a string; they are used by enclosing text in single or double quotes.",
+        "Escape characters are special sequences starting with a backslash that allow you to include otherwise illegal characters in a string, like newlines or quotes.",
+        "Escape characters are functions that allow you to exit loops or functions early; they are used with the return or break statements",
+        "Escape characters are operators that escape from the execution of a program; they are used with the exit() function."
+        ],
+        "answer":"Escape characters are special sequences starting with a backslash that allow you to include otherwise illegal characters in a string, like newlines or quotes.",
+        "discription":"Escape characters in Python are used to include special characters in a string that would otherwise be difficult or impossible to include. For example, \n is used to insert a newline, \\ is used to include a single quote, and \" is used to include a double quote in a string."
+    },
+
+    {
+        "id": 64,
+        "question":"What do the escape characters \n and \t stand for in Python?",
+                                                                                                        
+        "options":["\n stands for a space, and \t stands for a comma.",
+        "\n stands for a newline, and \t stands for a tab.",
+        "\n stands for a null character, and \t stands for a tick mark.",
+        "\n stands for a backslash, and \t stands for a tilde."
+        ],
+        "answer":"\n stands for a newline, and \t stands for a tab.",
+        "discription":"In Python, the escape character \n is used to insert a newline in a string, while \t is used to insert a horizontal tab. These are commonly used to format text in a string."
+    },
+
+    {
+        "id": 65,
+        "question":"The string 'Howl's Moving Castle' is a correct value. Why isn't the single quote character in the word Howl's an escape problem?",
+                                                                                                        
+        "options":["Because the single quote is automatically escaped in all strings.",
+        "Because the string is enclosed in double quotes, allowing the single quote to be used without escaping.",
+        "Because Python ignores single quotes in strings.",
+        "Because the single quote is at the beginning of the word."
+        ],
+        "answer":"Because the string is enclosed in double quotes, allowing the single quote to be used without escaping.",
+        "discription":"In Python, if a string is enclosed in double quotes, you can include single quotes ('') inside the string without needing to escape them. Similarly, if a string is enclosed in single quotes, you can include double quotes without escaping them."
+    },
+
+    {
+        "id": 66,
+        "question":"How do you write a string of newlines in Python if you don't want to use the \n character?",
+                                                                                                        
+        "options":["Use multiple spaces between the lines.",
+        "Use a triple-quoted string (''').",
+        "Use the newline() function.",
+        "Use a semicolon (;) between the lines."
+        ],
+        "answer":"Use a triple-quoted string (''').",
+        "discription":"In Python, triple-quoted strings (''') can span multiple lines, allowing you to include newlines directly in the string without needing to use the \n escape character. This is useful for writing multi-line strings."
+    },
+
+    {
+        "id": 67,
+        "question":"What are the values of the given expressions?\n'Hello, world!'[1]\n'Hello, world!'[0:5]\n'Hello, world!'[:5]\n'Hello, world!'[3:]",
+                                                                                                        
+        "options":["'e', 'Hello', 'Hello', 'lo, world!'",
+        "'H', 'ello', 'Hello', 'lo, world!'",
+        "'e', 'Hell', 'Hell', 'lo, world!'",
+        "'l', 'Hello', 'Hell', 'o, world!'"
+        ],
+        "answer":"'e', 'Hello', 'Hello', 'lo, world!'",
+        "discription":"'Hello, world!'[1] returns the character at index 1, which is 'e'.\n'Hello, world!'[0:5] returns the substring from index 0 to 4 (5 is not included), which is 'Hello'.\n'Hello, world!'[:5] is a shorthand for 'Hello, world!'[0:5], so it also returns 'Hello'.\n'Hello, world!'[3:] returns the substring starting from index 3 to the end, which is 'lo, world!'."
+    },
+
+    {
+        "id": 68,
+        "question":"What are the values of the following expressions?\n'Hello'.upper()\n'Hello'.upper().isupper()\n'Hello'.upper().lower()",
+                                                                                                        
+        "options":["'HELLO', True, 'hello'",
+        "'hello', False, 'HELLO'",
+        "'HELLO', False, 'hello'",
+        "'HELLO', True, 'HELLO'"
+        ],
+        "answer":"'HELLO', True, 'hello'",
+        "discription":"'Hello'.upper() converts the string to uppercase, resulting in 'HELLO'.\n'Hello'.upper().isupper() checks if the result of 'Hello'.upper() is in uppercase, which it is, so it returns True.\n'Hello'.upper().lower() first converts the string to uppercase ('HELLO'), then converts it to lowercase, resulting in 'hello'."
+    },
+
+    {
+        "id": 69,
+        "question":"What are the values of the following expressions?\n'Remember, remember, the fifth of July.'.split()\n'-'.join('There can only one.'.split())",
+                                                                                                        
+        "options":["['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'], 'There-can-only-one.'",
+        "['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'], 'There-can-only-one.'",
+        "['Remember', 'remember', 'the', 'fifth', 'of', 'July.'], 'There-can-only-one.'",
+        "['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'], 'There can only one.'"
+        ],
+        "answer":"['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'], 'There-can-only-one.'",
+        "discription":"'Remember, remember, the fifth of July.'.split() splits the string into a list of words, resulting in ['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'].\n'-'.join('There can only one.'.split()) first splits 'There can only one.' into a list of words ['There', 'can', 'only', 'one.'] and then joins them with hyphens, resulting in 'There-can-only-one.'."
+    },
+
+    {
+        "id": 70,
+        "question":"What are the methods for right-justifying, left-justifying, and centering a string?",
+                                                                                                        
+        "options":["rjust(), ljust(), center()",
+        "right(), left(), center()",
+        "justify_right(), justify_left(), align_center()",
+        "right_justify(), left_justify(), center_align()"
+        ],
+        "answer":"rjust(), ljust(), center()",
+        "discription":"rjust(width) right-justifies a string in a field of a given width.\nljust(width) left-justifies a string in a field of a given width.\ncenter(width) centers a string in a field of a given width."
+    },
+
+    {
+        "id": 71,
+        "question":"What is the best way to remove whitespace characters from the start or end of a string in Python?",
+                                                                                                        
+        "options":["strip()",
+        "trim()",
+        "remove()",
+        "cut()"
+        ],
+        "answer":"strip()",
+        "discription":"strip() removes whitespace characters from both the start and end of a string."
+    },
+
+    {
+        "id": 72,
+        "question":"What is the name of the feature responsible for generating Regex objects in Python?",
+                                                                                                        
+        "options":["re.compile()",
+        "regex.create()",
+        "re.match()",
+        "re.build()"
+        ],
+        "answer":"re.compile()",
+        "discription":"re.compile() is used to generate Regex objects in Python. It compiles a regular expression pattern into a Regex object, which can then be used for matching and searching."
+    },
+
+    {
+        "id": 73,
+        "question":"Why do raw strings often appear in Regex objects in Python?",
+                                                                                                        
+        "options":["To prevent Python from interpreting backslashes as escape characters.",
+        "To automatically escape special characters in the string",
+        "To make the string lowercase.",
+        "To remove whitespace from the string."
+        ],
+        "answer":"To prevent Python from interpreting backslashes as escape characters.",
+        "discription":"Raw strings (e.g., r'pattern') are used in Regex objects to prevent Python from interpreting backslashes as escape characters. This allows the backslashes to be treated literally, which is essential when writing regular expressions."
+    },
+
+    {
+        "id": 74,
+        "question":"What is the return value of the search() method?",
+                                                                                                        
+        "options":["A Match object if the pattern is found; None if the pattern is not found.",
+        "A list of all matches.",
+        "A boolean value indicating whether the pattern was found.",
+        "The position of the first match as an integer."
+        ],
+        "answer":"A Match object if the pattern is found; None if the pattern is not found.",
+        "discription":"The search() method is typically used in contexts where a match for a pattern is sought. It returns a Match object if the pattern is found in the given string, and None if it is not. This behavior is consistent regardless of the specific module or library being used, as long as the method follows the same convention."
+    },
+
+    {
+        "id": 75,
+        "question":"From a Match item, how do you get the actual strings that match the pattern?",
+                                                                                                        
+        "options":["group()",
+        "find()",
+        "extract()",
+        "match()"
+        ],
+        "answer":"group()",
+        "discription":"The group() method of a Match object is used to retrieve the actual substring that matched the pattern. If the pattern contains groups, group() can be used with arguments to get specific groups."
+    },
+
+    {
+        "id": 76,
+        "question":"In the regex created from the pattern r'(\\d\\d\\d)-(\\d\\d\\d-\\d\\d\\d\\d)', what do the groups cover?",
+                                                                                                        
+        "options":["Group 0 covers the entire match, Group 1 covers the first three digits, and Group 2 covers the last seven digits.",
+        "Group 0 covers the first three digits, Group 1 covers the dash, and Group 2 covers the last seven digits.",
+        "Group 0 covers the first three digits, Group 1 covers the last seven digits, and Group 2 covers the entire match.",
+        "Group 0 covers the entire match, Group 1 covers the last seven digits, and Group 2 covers the first three digits."
+        ],
+        "answer":"Group 0 covers the entire match, Group 1 covers the first three digits, and Group 2 covers the last seven digits.",
+        "discription":"In a regular expression, Group 0 (group(0)) refers to the entire matched string.\nGroup 1 (group(1)) refers to the first set of parentheses (\\d\\d\\d), which matches the first three digits.\nGroup 2 (group(2)) refers to the second set of parentheses (\\d\\d\\d-\\d\\d\\d\\d), which matches the last seven digits."
+    },
+
+    {
+        "id": 77,
+        "question":"In standard regular expression syntax, parentheses and periods have distinct meanings. How can you tell a regex that you want it to match actual parentheses and periods?",
+                                                                                                        
+        "options":["Use backslashes before the parentheses and periods, like \\(, \\), and \\.",
+        "Use double parentheses and periods, like ((, )), and ..",
+        "Enclose the parentheses and periods in square brackets, like [(], [)], and [.]",
+        "Use curly braces around the parentheses and periods, like {(}, {)}, and {.}"
+        ],
+        "answer":"Use backslashes before the parentheses and periods, like \\(, \\), and \\.",
+        "discription":"In regular expressions, parentheses () are used for grouping, and periods . match any character except a newline. To match these characters literally, you must escape them with a backslash (\\). This tells the regex engine to interpret them as literal characters rather than special characters."
+    },
+
+    {
+        "id": 78,
+        "question":"The findall() method returns a list of strings or a list of string tuples. What determines whether it returns a list of strings or a list of string tuples?",
+                                                                                                        
+        "options":["Whether the search string contains numbers or letters.",
+        "Whether the pattern used in findall() contains capturing groups.",
+        "The length of the string being searched.",
+        "The number of times the findall() method is called."
+        ],
+        "answer":"Whether the pattern used in findall() contains capturing groups.",
+        "discription":"The findall() method returns a list of strings when the pattern contains no capturing groups (i.e., no parentheses). If the pattern includes one or more capturing groups, findall() returns a list of tuples, where each tuple contains the strings matched by each group in the order they appear in the pattern."
+    },
+
+    {
+        "id": 79,
+        "question":"In regular expressions, what does the | character signify?",
+                                                                                                        
+        "options":["It matches any single character except newline.",
+        "It is used to group patterns.",
+        "It represents an OR operation, matching patterns on either side of it.",
+        "It escapes special characters."
+        ],
+        "answer":"It represents an OR operation, matching patterns on either side of it.",
+        "discription":"The | character in regular expressions acts as a logical OR operator, allowing you to match one pattern or another. For example, the pattern cat|dog matches either 'cat' or 'dog'"
+    },
+
+    {
+        "id": 80,
+        "question":"In regular expressions, what does the . (dot) character stand for",
+                                                                                                        
+        "options":["It matches the start of a string",
+        "It matches any single character except newline.",
+        "It matches the end of a string.",
+        "It matches a literal period character."
+        ],
+        "answer":"It matches any single character except newline.",
+        "discription":"In regular expressions, the . (dot) is a wildcard character that matches any single character, except for newline characters"
+    },
+
+    {
+        "id": 81,
+        "question":"In regular expressions, what is the difference between the + and * characters?",
+                                                                                                        
+        "options":["+ matches one or more occurrences, while * matches zero or one occurrence.",
+        "+ matches one or more occurrences, while * matches zero or more occurrences.",
+        "+ matches exactly one occurrence, while * matches zero or more occurrences.",
+        "+ matches zero or more occurrences, while * matches one or more occurrences."
+        ],
+        "answer":"+ matches one or more occurrences, while * matches zero or more occurrences.",
+        "discription":"In regular expressions, the + character matches one or more occurrences of the preceding element, while the * character matches zero or more occurrences of the preceding element."
+    },
+
+    {
+        "id": 82,
+        "question":"What is the difference between {4} and {4,5} in regular expression?",
+                                                                                                        
+        "options":["{4} matches exactly 4 occurrences, while {4,5} matches exactly 5 occurrences.",
+        "{4} matches 4 or more occurrences, while {4,5} matches 4 or fewer occurrences.",
+        "{4} matches exactly 4 occurrences, while {4,5} matches between 4 and 5 occurrences.",
+        "{4} matches at least 4 occurrences, while {4,5} matches 5 or more occurrences."
+        ],
+        "answer":"{4} matches exactly 4 occurrences, while {4,5} matches between 4 and 5 occurrences.",
+        "discription":"In regular expressions, {4} specifies that the preceding element must appear exactly 4 times, while {4,5} specifies that the preceding element can appear between 4 and 5 times inclusively."
+    },
+
+    {
+        "id": 83,
+        "question":"What do you mean by the \\d, \\w, and \\s shorthand character classes signify in regular expressions?",
+                                                                                                        
+        "options":["\\d matches any whitespace character, \\w matches any non-digit character, and \\s matches any digit character.",
+        "\\d matches any digit, \\w matches any word character (letters, digits, and underscore), and \\s matches any whitespace character.",
+        "\\d matches any letter, \\w matches any whitespace character, and \\s matches any word character.",
+        "\\d matches any digit, \\w matches any special character, and \\s matches any space."
+        ],
+        "answer":"\\d matches any digit, \\w matches any word character (letters, digits, and underscore), and \\s matches any whitespace character.",
+        "discription":"\\d matches any digit (0-9).\n\\w matches any word character, which includes letters, digits, and underscores.\n\\s matches any whitespace character, such as spaces, tabs, and newlines."
+    },
+
+    {
+        "id": 84,
+        "question":"What do means by \\D, \\W, and \\S shorthand character classes signify in regular expressions?",
+                                                                                                        
+        "options":["They match any digit, word character, and whitespace character respectively.",
+        "They match any non-digit, non-word character, and non-whitespace character respectively.",
+        "They match any digit, whitespace character, and word character respectively.",
+        "They match any non-word character, digit, and whitespace character respectively."
+        ],
+        "answer":"They match any non-digit, non-word character, and non-whitespace character respectively.",
+        "discription":"\\D matches any character that is not a digit.\n\\W matches any character that is not a word character (anything other than letters, digits, and underscores).\n\\S matches any character that is not a whitespace character (spaces, tabs, etc.)."
+    },
+
+    {
+        "id": 85,
+        "question":"What is the difference between .* and .*? in regular expressions?",
+                                                                                                        
+        "options":[".* matches as few characters as possible, while .*? matches as many characters as possible.",
+        ".* matches as many characters as possible, while .*? matches as few characters as possible.",
+        "Both .* and .*? match the same number of characters.",
+        ".* is used for matching digits, while .*? is used for matching letters."
+        ],
+        "answer":".* matches as many characters as possible, while .*? matches as few characters as possible.",
+        "discription":".* is a greedy quantifier that matches the maximum number of characters possible.\n.*? is a non-greedy (or lazy) quantifier that matches the minimum number of characters necessary to satisfy the pattern."
+    },
+
+    {
+        "id": 86,
+        "question":"What is the syntax for matching both numbers and lowercase letters with a character class in regular expressions?",
+                                                                                                        
+        "options":["[0-9a-z]",
+        "[A-Z0-9]",
+        "[a-zA-Z]",
+        "[a-z0-9A-Z]"
+        ],
+        "answer":"[0-9a-z]",
+        "discription":"[0-9a-z] matches any digit (0-9) or lowercase letter (a-z).\nThe other options include uppercase letters or mix them incorrectly."
+    },
+
+    {
+        "id": 87,
+        "question":"What is the procedure for making a regular expression case insensitive in regex?",
+                                                                                                        
+        "options":["Add (?i) at the start of the pattern",
+        "Use ^ before the pattern",
+        "Use \\c before each character",
+        "Use {} brackets around the pattern"
+        ],
+        "answer":"Add (?i) at the start of the pattern",
+        "discription":"Adding (?i) at the beginning of a regex pattern makes the entire pattern case insensitive. This allows the pattern to match letters regardless of their case."
+    },
+
+    {
+        "id": 88,
+        "question":"What does the . character normally match? What does it match if re.DOTALL is passed as the second argument in re.compile()?",
+                                                                                                        
+        "options":["Normally matches any character except a newline; matches any character including a newline with re.DOTALL",
+        "Normally matches only digits; matches digits and letters with re.DOTALL",
+        "Normally matches spaces; matches all whitespace characters with re.DOTALL",
+        "Normally matches special characters; matches alphanumeric characters with re.DOTALL"
+        ],
+        "answer":"Normally matches any character except a newline; matches any character including a newline with re.DOTALL",
+        "discription":"The . character in regex matches any character except a newline by default. However, when re.DOTALL is passed as a second argument in re.compile(), the . character will match any character, including newline characters."
+    },
+
+    {
+        "id": 89,
+        "question":"If numRegex = re.compile(r'\\d+'), what will numRegex.sub('X', '11 drummers, 10 pipers, five rings, 4 hen') return?",
+                                                                                                        
+        "options":["'XX drummers, XX pipers, five rings, X hen'",
+        "'11 drummers, 10 pipers, five rings, 4 hen'",
+        "'X drummers, X pipers, five rings, X hen'",
+        "'drummers, pipers, five rings, hen'"
+        ],
+        "answer":"'X drummers, X pipers, five rings, X hen'",
+        "discription":"The re.compile(r'\\d+') creates a regex object that matches one or more digits.\nThe sub() method replaces all occurrences of the pattern with the string 'X'.\nTherefore, all numbers in the input string are replaced by 'X', resulting in 'X drummers, X pipers, five rings, X hen'."
+    },
+
+    {
+        "id": 90,
+        "question":"What does passing re.VERBOSE as the second argument to re.compile() allow you to do?",
+                                                                                                        
+        "options":["Ignore case when matching",
+        "Include comments and whitespace in the regex for readability",
+        "Match the pattern across multiple lines",
+        "Enable global matching of the pattern"
+        ],
+        "answer":"Include comments and whitespace in the regex for readability",
+        "discription":"re.VERBOSE allows you to write regular expressions that are more readable by allowing you to include whitespace and comments."
+    },
+
+    {
+        "id": 91,
+        "question":"How would you write a regex that matches a number with a comma for every three digits? It must match the following:\n'42'\n'1,234'\n'6,368,745'\nbut not the following:\n'12,34,567' (which has only two digits between the commas)\n'1234' (which lacks commas",
+                                                                                                        
+        "options":["\\d{1,3}(,\\d{3})*",
+        "\\d{3,}(,\\d{3})*",
+        "^\\d{1,3}(,\\d{3})*$",
+        "^\\d+(,\\d{3})*$"
+        ],
+        "answer":"^\\d{1,3}(,\\d{3})*$",
+        "discription":"The regex ^\\d{1,3}(,\\d{3})*$ matches a number with one to three digits, optionally followed by groups of three digits separated by commas. The ^ and $ ensure that the entire string must match this pattern."
+    },
+
+    {
+        "id": 92,
+        "question":"How would you write a regex that matches the full name of someone whose last name is Watanabe? You can assume that the first name that comes before it will always be one word that begins with a capital letter. The regex must match the following:\n'Haruto Watanabe'\n'Alice Watanabe'\n'RoboCop Watanabe'\nbut not the following:\n'haruto Watanabe' (where the first name is not capitalized)\n'Mr. Watanabe' (where the preceding word has a nonletter character)\n'Watanabe' (which has no first name)\n'Haruto watanabe' (where Watanabe is not capitalized)",
+                                                                                                        
+        "options":["[A-Z][a-z]* Watanabe",
+        "[A-Z]\\w+ Watanabe$",
+        "[A-Z]\\w+ watanabe",
+        "\b[A-Z]\\w*\b Watanabe"
+        ],
+        "answer":"[A-Z]\\w+ Watanabe$",
+        "discription":"The regex ^[A-Z]\\w+ Watanabe$ ensures that the first name starts with a capital letter ([A-Z]), is followed by one or more word characters (\\w+), and ends with 'Watanabe'. The ^ and $ anchor the pattern to the start and end of the string, ensuring the entire name matches the specified format."
+    },
+
+    {
+        "id": 93,
+        "question":"How would you write a regex that matches a sentence where the first word is either Alice, Bob, or Carol; the second word is either eats, pets, or throws; the third word is apples, cats, or baseballs; and the sentence ends with a period? This regex should be case-insensitive. It must match the following:\n 'Alice eats apples.'\n 'Bob pets cats.'\n 'Carol throws baseballs.'\n 'Alice throws Apples.'\n 'BOB EATS CATS.'\n but not the following:\n 'RoboCop eats apples.'\n 'ALICE THROWS FOOTBALLS.'\n 'Carol eats 7 cats.",
+                                                                                                        
+        "options":["r'^(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$'",
+        "r'^(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$' with re.IGNORECASE",
+        "r'(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$'",
+        "r'(alice|bob|carol) (eats|pets|throws) (apples|cats|baseballs)\\.$' with re.IGNORECASE"
+        ],
+        "answer":"r'^(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$' with re.IGNORECASE",
+        "discription":"The regex r'^(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$' ensures that the first word is one of 'Alice,' 'Bob,' or 'Carol,' the second word is one of 'eats,' 'pets,' or 'throws,' and the third word is one of 'apples,' 'cats,' or 'baseballs,' followed by a period at the end of the sentence. The re.IGNORECASE flag makes the regex case-insensitive, allowing it to match sentences regardless of case."
+    },
+
+    {
+        "id": 94,
+        "question":"Is the Python Standard Library included with PyInputPlus?",
+                                                                                                        
+        "options":["Yes, PyInputPlus includes the entire Python Standard Library.",
+        "No, PyInputPlus does not include the Python Standard Library; it is a separate library for input validation.",
+        "Yes, PyInputPlus includes some modules from the Python Standard Library.",
+        "No, PyInputPlus is part of the Python Standard Library."
+        ],
+        "answer":"No, PyInputPlus does not include the Python Standard Library; it is a separate library for input validation.",
+        "discription":"PyInputPlus is a third-party library used to validate user input in Python. It does not include the Python Standard Library but provides its own functions for handling and validating input."
+    },
+
+    {
+        "id": 95,
+        "question":"Why is PyInputPlus commonly imported with import pyinputplus as pypi?",
+                                                                                                        
+        "options":["To simplify the module name in the code and make it more convenient to use.",
+        "To access additional features that are not available with the standard import.",
+        "To avoid name conflicts with other libraries named pyinputplus.",
+        "To ensure compatibility with older versions of Python."
+        ],
+        "answer":"To simplify the module name in the code and make it more convenient to use.",
+        "discription":"Using import pyinputplus as pypi allows for a shorter and more convenient alias (pypi) when calling functions and methods from the PyInputPlus library. This practice helps in reducing code verbosity and enhancing readability."
+    },
+
+    {
+        "id": 96,
+        "question":"How do you distinguish between inputInt() and inputFloat()?",
+                                                                                                        
+        "options":["inputInt() accepts only integer values, while inputFloat() accepts only floating-point numbers.",
+        "inputInt() accepts both integer and floating-point values, while inputFloat() only accepts integer values.",
+        "inputInt() is used to validate string inputs, while inputFloat() validates integer inputs.",
+        "inputInt() accepts any numeric value, whereas inputFloat() accepts only string inputs."
+        ],
+        "answer":"inputInt() accepts only integer values, while inputFloat() accepts only floating-point numbers.",
+        "discription":"The inputInt() function is used to get and validate integer inputs, ensuring the input is a whole number. In contrast, inputFloat() is used to get and validate floating-point inputs, allowing for decimal numbers."
+    },
+
+    {
+        "id": 97,
+        "question":"Using PyInputPlus, how do you ensure that the user enters a whole number between 0 and 99?",
+                                                                                                        
+        "options":["Use inputInt() with parameters specifying the range of values allowed",
+        "Use inputFloat() with parameters specifying the range of values allowed.",
+        "Use inputStr() with a validation function to check if the input is a number within the range.",
+        "Use inputChoice() with a list of numbers from 0 to 99."
+        ],
+        "answer":"Use inputInt() with parameters specifying the range of values allowed",
+        "discription":"To ensure that the user enters a whole number within a specific range using PyInputPlus, you would use the inputInt() function and provide parameters for min and max to restrict the input to values between 0 and 99."
+    },
+
+    {
+        "id": 98,
+        "question":"What is transferred to the keyword arguments allowRegexes and blockRegexes in PyInputPlus?",
+                                                                                                        
+        "options":["A list of regular expressions that define allowed or blocked patterns",
+        "A list of strings specifying the valid and invalid input formats.",
+        "A list of integers specifying valid and invalid numeric ranges.",
+        "A list of functions that validate the input."
+        ],
+        "answer":"A list of regular expressions that define allowed or blocked patterns",
+        "discription":"In PyInputPlus, the allowRegexes and blockRegexes keyword arguments are used to specify lists of regular expressions. allowRegexes defines patterns that are permitted, while blockRegexes specifies patterns that are blocked or disallowed in the input."
+    },
+
+    {
+        "id": 99,
+        "question":"If a blank input is entered three times, what does inputStr(limit=3) do?",
+                                                                                                        
+        "options":["It allows the user to try entering a non-blank input again, without any restrictions.",
+        "It raises an error after three attempts and does not accept any further input.",
+        "It automatically accepts the third blank input without any restrictions.",
+        "It ignores the input and continues to prompt for a non-blank input indefinitely."
+        ],
+        "answer":"It raises an error after three attempts and does not accept any further input.",
+        "discription":"The limit parameter in inputStr(limit=3) specifies the maximum number of attempts allowed. If the user enters a blank input three times, the function raises an error and does not allow further attempts."
+    },
+
+    {
+        "id": 100,
+        "question":"If blank input is entered three times, what does inputStr(limit=3, default='hello') do?",
+                                                                                                        
+        "options":["It raises an error after three attempts and does not accept any further input.",
+        "It returns 'hello' after three blank inputs are entered.",
+        "It continues to prompt for input indefinitely until a non-blank input is provided.",
+        "It accepts the third blank input without any restrictions and ignores the default value."
+        ],
+        "answer":"It returns 'hello' after three blank inputs are entered.",
+        "discription":"When inputStr is used with limit=3 and default='hello', it allows up to three attempts. If all attempts are blank, it returns the default value 'hello'."
+    },
+
+    {
+        "id": 101,
+        "question":"To what does a relative path refer?",
+                                                                                                        
+        "options":["The absolute location of a file or folder in the file system.",
+        "A path that starts from the root directory of the file system.",
+        "A path that is relative to the current working directory.",
+        "A path that always refers to the home directory."
+        ],
+        "answer":"A path that is relative to the current working directory.",
+        "discription":"A relative path refers to the location of a file or directory relative to the current working directory. It doesn't start from the root directory but from wherever you are currently working in the file system. This makes it easier to navigate and access files without needing the full absolute path."
+    },
+
+    {
+        "id": 102,
+        "question":"What does an absolute path start with your operating system?",
+                                                                                                        
+        "options":["The current directory",
+        "A tilde (~)",
+        "A period (.)",
+        "A root directory or drive letter (like / on Unix-based systems or C:\\ on Windows)"
+        ],
+        "answer":"A root directory or drive letter (like / on Unix-based systems or C:\\ on Windows)",
+        "discription":"An absolute path starts from the root directory or drive letter, providing the full address to a file or folder in your operating system, regardless of the current working directory. For example, on Unix-based systems, it starts with /, and on Windows, it starts with a drive letter like C:\\."
+    },
+
+    {
+        "id": 103,
+        "question":"What do the functions os.getcwd() and os.chdir() do?",
+                                                                                                        
+        "options":["os.getcwd() changes the working directory, and os.chdir() prints the current directory.",
+        "os.getcwd() prints the current working directory, and os.chdir() changes the working directory.",
+        "Both os.getcwd() and os.chdir() change the working directory.",
+        "Both os.getcwd() and os.chdir() print the current working directory."
+        ],
+        "answer":"os.getcwd() prints the current working directory, and os.chdir() changes the working directory.",
+        "discription":"os.getcwd(): Returns the current working directory as a string.\nos.chdir(): Changes the current working directory to the path provided."
+    },
+
+    {
+        "id": 104,
+        "question":"What do the . and .. folders represent in a file system?",
+                                                                                                        
+        "options":[". represents the current directory, and .. represents the parent directory.",
+        ". represents the root directory, and .. represents the home directory.",
+        ". represents a hidden directory, and .. represents a backup directory.",
+        ". represents the home directory, and .. represents the root directory."
+        ],
+        "answer":". represents the current directory, and .. represents the parent directory.",
+        "discription":". (single dot) represents the current directory you are working in.\n.. (double dot) represents the parent directory, which is one level up from the current directory."
+    },
+
+    {
+        "id": 105,
+        "question":"In C:\\bacon\\eggs\\spam.txt, which part is the directory name, and which part is the base name?",
+                                                                                                        
+        "options":["C:\\bacon\\eggs is the dir name, and spam.txt is the base name.",
+        "C:\\bacon is the dir name, and eggs\\spam.txt is the base name.",
+        "C:\\bacon\\eggs\\spam is the dir name, and .txt is the base name.",
+        "eggs\\spam.txt is the dir name, and C:\\bacon is the base name."
+        ],
+        "answer":"C:\\bacon\\eggs is the dir name, and spam.txt is the base name.",
+        "discription":"In the path C:\\bacon\\eggs\\spam.txt, C:\\bacon\\eggs is the directory name (the folder path), and spam.txt is the base name (the file name)."
+    },
+
+    {
+        "id": 106,
+        "question":"What are the three “mode” arguments that can be passed to the open() function?",
+                                                                                                        
+        "options":["'r', 'w', 'a'",
+        "'read', 'write', 'append'",
+        "'open', 'close', 'update'",
+        "'read', 'append', 'modify'"
+        ],
+        "answer":"'r', 'w', 'a'",
+        "discription":"The open() function in Python can use 'r' for reading, 'w' for writing (which overwrites the file), and 'a' for appending data to the file."
+    },
+
+    {
+        "id": 107,
+        "question":"What happens if an existing file is opened in write mode?",
+                                                                                                        
+        "options":["The file's contents are preserved and new data is appended.",
+        "The file's contents are replaced with the new data.",
+        "The file's contents are read but not modified.",
+        "The file cannot be opened if it already exists."
+        ],
+        "answer":"The file's contents are replaced with the new data.",
+        "discription":"When a file is opened in write mode ('w'), its existing contents are erased, and new data will be written to the file."
+    },
+
+    {
+        "id": 108,
+        "question":"How do you tell the difference between read() and readlines()?",
+                                                                                                        
+        "options":["read() returns a list of lines, while readlines() returns a single string",
+        "read() returns a single string of the entire file, while readlines() returns a list of lines.",
+        "read() returns a string list of lines, while readlines() returns a list of characters.",
+        "read() reads the file character by character, while readlines() reads the file line by line."
+        ],
+        "answer":"read() returns a single string of the entire file, while readlines() returns a list of lines.",
+        "discription":"read() reads the entire file content into a single string, while readlines() reads the file and returns a list where each element is a line from the file."
+    },
+
+    {
+        "id": 109,
+        "question":"What data structure does a shelf value resemble?",
+                                                                                                        
+        "options":["List",
+        "Dictionary",
+        "Tuple",
+        "Set"
+        ],
+        "answer":"Dictionary",
+        "discription":"A shelf value in Python, provided by the shelve module, resembles a dictionary because it allows you to store key-value pairs in a persistent storage format."
+    },
+
+    {
+        "id": 110,
+        "question":"How do you distinguish between shutil.copy() and shutil.copytree()?",
+                                                                                                        
+        "options":["shutil.copy() copies an entire directory, while shutil.copytree() copies a single file.",
+        "shutil.copy() copies a single file, while shutil.copytree() copies an entire directory.",
+        "shutil.copy() renames files, while shutil.copytree() deletes files.",
+        "shutil.copy() and shutil.copytree() are functionally identical."
+        ],
+        "answer":"shutil.copy() copies a single file, while shutil.copytree() copies an entire directory.",
+        "discription":"shutil.copy() is used to copy individual files, whereas shutil.copytree() is used to recursively copy an entire directory and its contents."
+    },
+
+    {
+        "id": 111,
+        "question":"What function is used to rename files??",
+                                                                                                        
+        "options":["os.delete()",
+        "os.rename()",
+        "shutil.move()",
+        "os.copy()"
+        ],
+        "answer":"os.rename()",
+        "discription":"The os.rename() function is used to rename files or directories in Python."
+    },
+
+    {
+        "id": 112,
+        "question":"What is the difference between the delete functions in the send2trash and shutil modules?",
+                                                                                                        
+        "options":["send2trash permanently deletes files, while shutil moves files to the trash.",
+        "send2trash moves files to the trash, while shutil permanently deletes files.",
+        "Both send2trash and shutil move files to the trash.",
+        "Both send2trash and shutil permanently delete files."
+        ],
+        "answer":"send2trash moves files to the trash, while shutil permanently deletes files.",
+        "discription":"The send2trash module moves files or directories to the system's trash or recycle bin, allowing recovery, whereas shutil functions like shutil.rmtree() permanently delete files or directories"
+    },
+
+    {
+        "id": 113,
+        "question":"ZipFile objects have a close() method similar to File objects. What ZipFile method is equivalent to the open() method for File objects?",
+                                                                                                        
+        "options":["ZipFile.create()",
+        "ZipFile.load()",
+        "ZipFile.open()",
+        "ZipFile.extract()"
+        ],
+        "answer":"ZipFile.open()",
+        "discription":"The ZipFile.open() method is used to open a file within a ZIP archive for reading or writing, analogous to how the open() method works for regular file objects."
+    },
+
+    {
+        "id": 114,
+        "question":"How would you create a program to search a folder tree for files with a certain file extension (like .pdf or .jpg) and copy them to a new folder?",
+                                                                                                        
+        "options":["Use os.listdir() to get files, then use shutil.copy() to copy them.",
+        "Use os.walk() to traverse the folder tree, then use shutil.copy() to copy the matching files.",
+        "Use glob.glob() to find files, then use os.rename() to move them.",
+        "Use pathlib.Path().iterdir() to find files, then use pathlib.copy() to copy them."
+        ],
+        "answer":"Use os.walk() to traverse the folder tree, then use shutil.copy() to copy the matching files.",
+        "discription":"The os.walk() function allows you to traverse the directory tree to find files with specific extensions, and shutil.copy() can be used to copy these files to a new location."
+    },
+
+    {
+        "id": 115,
+        "question":"How would you write an assert statement to throw an AssertionError if the variable spam is a negative integer?",
+                                                                                                        
+        "options":["assert spam < 0, 'spam is a negative integer'",
+        "assert spam >= 0, 'spam should not be negative'",
+        "assert spam > 0, 'spam is negative'",
+        "assert spam != 0, 'spam is negative'"
+        ],
+        "answer":"assert spam >= 0, 'spam should not be negative'",
+        "discription":"The assert statement assert spam >= 0, 'spam should not be negative' ensures that if spam is a negative integer, an AssertionError with the message 'spam should not be negative' is raised."
+    },
+
+    {
+        "id": 116,
+        "question":"How would you write an assert statement that triggers an AssertionError if the variables eggs and bacon contain strings that are the same as each other, even if their cases are different?",
+                                                                                                        
+        "options":["assert eggs.lower() != bacon.lower(), 'eggs and bacon are the same'",
+        "assert eggs != bacon.lower(), 'eggs and bacon are the same'",
+        "assert eggs.lower() == bacon.lower(), 'eggs and bacon are the same'",
+        "assert eggs != bacon.upper(), 'eggs and bacon are the same'"
+        ],
+        "answer":"assert eggs.lower() != bacon.lower(), 'eggs and bacon are the same'",
+        "discription":"The assert statement assert eggs.lower() != bacon.lower(), 'eggs and bacon are the same' ensures that if the lowercase versions of eggs and bacon are identical, an AssertionError with the message 'eggs and bacon are the same' is raised."
+    },
+
+    {
+        "id": 117,
+        "question":"How would you write an assert statement that throws an AssertionError every time?",
+                                                                                                        
+        "options":["assert False, 'This will always fail'",
+        "assert True, 'This will always succeed'",
+        "assert 1 + 1 == 3, 'This will always fail'",
+        "assert 1 == 1, 'This will always succeed'"
+        ],
+        "answer":"assert False, 'This will always fail'",
+        "discription":"The assert statement assert False, 'This will always fail' is designed to always trigger an AssertionError because the condition False is always false."
+    },
+
+    {
+        "id": 118,
+        "question":"What are the two lines that must be present in your software in order to call logging.debug()?",
+                                                                                                        
+        "options":["import logging and logging.basicConfig(level=logging.DEBUG)",
+        "import log and log.basicConfig(level=log.DEBUG)",
+        "import logging and logging.basicConfig(level=logging.INFO)",
+        "import debug and debug.basicConfig(level=debug.DEBUG)"
+        ],
+        "answer":"import logging and logging.basicConfig(level=logging.DEBUG)",
+        "discription":"To use logging.debug(), you need to import the logging module and configure the logging level to DEBUG using logging.basicConfig(level=logging.DEBUG)."
+    },
+
+    {
+        "id": 119,
+        "question":"What are the two lines that your program must have in order to have logging.debug() send a logging message to a file named programLog.txt?",
+                                                                                                        
+        "options":["import logging and logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)",
+        "import log and log.basicConfig(file='programLog.txt', level=log.DEBUG)",
+        "import logging and logging.basicConfig(filename='programLog.txt', level=logging.INFO)",
+        "import debug and debug.basicConfig(file='programLog.txt', level=debug.DEBUG)"
+        ],
+        "answer":"import logging and logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)",
+        "discription":"To have logging.debug() send messages to a file, you need to import the logging module and configure it with logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)."
+    },
+
+    {
+        "id": 120,
+        "question":"What are the five levels of logging?",
+                                                                                                        
+        "options":["Debug, Info, Notice, Warning, Error",
+        "Trace, Debug, Info, Warning, Critical",
+        "Debug, Info, Warning, Error, Critical",
+        "Info, Notice, Warning, Error, Fatal"
+        ],
+        "answer":"Debug, Info, Warning, Error, Critical",
+        "discription":"The five standard levels of logging in Python are Debug, Info, Warning, Error, and Critical, in increasing order of severity."
+    },
+
+    {
+        "id": 121,
+        "question":"What line of code would you add to your software to disable all logging messages?",
+                                                                                                        
+        "options":["logging.disable(logging.INFO)",
+        "logging.disable(logging.WARNING)",
+        "logging.disable(logging.DEBUG)",
+        "logging.disable(logging.CRITICAL)"
+        ],
+        "answer":"logging.disable(logging.CRITICAL)",
+        "discription":"To disable all logging messages in a Python program, you can use the logging.disable(logging.CRITICAL) line. This will prevent any logging messages, including critical ones, from being displayed or recorded."
+    },
+
+    {
+        "id": 122,
+        "question":"Why is using logging messages better than using print() to display the same message?",
+                                                                                                        
+        "options":["Logging messages can be turned on or off, while print() cannot.",
+        "print() can only display messages to the console, but logging can be configured to write messages to a file.",
+        "Logging messages have different levels (e.g., debug, info, warning) that help in categorizing the importance of messages.",
+        "All of the above."
+        ],
+        "answer":"All of the above.",
+        "discription":"Using logging messages is better than using print() because logging offers more flexibility. You can easily turn logging on or off, write messages to files, and categorize messages by importance (e.g., debug, info, warning). This makes it a more powerful tool for tracking and debugging code."
+    },
+
+    {
+        "id": 123,
+        "question":"What are the differences between the Step Over, Step In, and Step Out buttons in the debugger?",
+                                                                                                        
+        "options":["Step Over executes the current function and moves to the next line; Step In moves into the function to debug it; Step Out exits the current function.",
+        "Step Over skips the current line; Step In skips the current function; Step Out restarts the debugging process.",
+        "Step Over moves to the previous line; Step In moves to the next line without executing the function; Step Out skips the rest of the code.",
+        "Step Over stops the debugging process; Step In saves the debug state; Step Out resumes normal execution."
+        ],
+        "answer":"Step Over executes the current function and moves to the next line; Step In moves into the function to debug it; Step Out exits the current function.",
+        "discription":"Step Over: Executes the current line of code and moves to the next line in the same function, skipping over function calls.\nStep In: Moves into the function call on the current line to debug its code line-by-line.\nStep Out: Exits the current function and returns to the calling function, resuming execution from there."
+    },
+
+    {
+        "id": 124,
+        "question":"After you click Continue in a debugger, when will it stop?",
+                                                                                                        
+        "options":["When it reaches a breakpoint.",
+        "After executing the next line of code.",
+        "When it finishes executing the current function.",
+        "When the program crashes."
+        ],
+        "answer":"When it reaches a breakpoint.",
+        "discription":"Clicking Continue allows the debugger to run the program normally until it encounters a breakpoint, at which point it will pause again."
+    },
+
+    {
+        "id": 125,
+        "question":"What is the concept of a breakpoint?",
+                                                                                                        
+        "options":["A point in the code where execution is paused for debugging.",
+        "A line of code that terminates the program.",
+        "A command that skips over a section of code.",
+        "A feature that automatically fixes errors in code."
+        ],
+        "answer":"A point in the code where execution is paused for debugging.",
+        "discription":"A feature that automatically fixes errors in code."
+    },
+
+    {
+        "id": 126,
+        "question":"In what modes should the PdfFileReader() and PdfFileWriter() file objects be opened in Python?",
+                                                                                                        
+        "options":["PdfFileReader() - 'r', PdfFileWriter() - 'w'",
+        "PdfFileReader() - 'rb', PdfFileWriter() - 'wb'",
+        "PdfFileReader() - 'rt', PdfFileWriter() - 'wt'",
+        "PdfFileReader() - 'rw', PdfFileWriter() - 'wr'"
+        ],
+        "answer":"PdfFileReader() - 'rb', PdfFileWriter() - 'wb'",
+        "discription":"'rb' and 'wb' - Opens files in binary mode, required for handling PDF files."
+    },
+
+    {
+        "id": 127,
+        "question":"From a PdfFileReader object in Python, how do you get a Page object for page 5?",
+                                                                                                        
+        "options":["reader.getPage(4)",
+        "reader.getPage(5)",
+        "reader.get_page(5)",
+        "reader.getPage(6)"
+        ],
+        "answer":"reader.getPage(4)",
+        "discription":"Pages are zero-indexed, so getPage(4) retrieves the 5th page."
+    },
+
+    {
+        "id": 128,
+        "question":"What PdfFileReader variable stores the number of pages in the PDF document?",
+                                                                                                        
+        "options":["reader.page_count",
+        "reader.numPages",
+        "reader.total_pages",
+        "reader.pages"
+        ],
+        "answer":"reader.numPages",
+        "discription":"The numPages attribute of PdfFileReader stores the total number of pages in the PDF."
+    },
+
+    {
+        "id": 129,
+        "question":"If a PdfFileReader object’s PDF is encrypted with the password swordfish, what must you do before you can obtain Page objects from it?",
+                                                                                                        
+        "options":["Call reader.decrypt('swordfish')",
+        "Call reader.decrypt('pdf')",
+        "Call reader.authenticate('swordfish')",
+        "Call reader.unlock('swordfish')"
+        ],
+        "answer":"Call reader.decrypt('swordfish')",
+        "discription":"You must call the decrypt() method with the correct password to decrypt the PDF before accessing Page objects."
+    },
+
+    {
+        "id": 130,
+        "question":"What methods do you use to rotate a page in a PDF using Python?",
+                                                                                                        
+        "options":["rotateClockwise() and rotateCounterClockwise()",
+        "rotateLeft() and rotateRight()",
+        "rotatePage() and flipPage()",
+        "turnLeft() and turnRight()"
+        ],
+        "answer":"rotateClockwise() and rotateCounterClockwise()",
+        "discription":"These methods rotate the page clockwise or counterclockwise by 90 degrees."
+    },
+
+    {
+        "id": 131,
+        "question":"What is the difference between a Run object and a Paragraph object in Python?",
+                                                                                                        
+        "options":["A Run object contains multiple paragraphs, while a Paragraph object contains text runs.",
+        "A Run object represents a single text style, while a Paragraph object represents a block of text.",
+        "A Run object is used for formatting images, while a Paragraph object is used for formatting tables.",
+        "A Run object handles the document structure, while a Paragraph object handles page layouts."
+        ],
+        "answer":"A Run object represents a single text style, while a Paragraph object represents a block of text.",
+        "discription":"A Run is a segment of text with a consistent style within a Paragraph, which is a block of text typically separated by line breaks."
+    },
+
+    {
+        "id": 132,
+        "question":"How do you obtain a list of Paragraph objects for a Document object that’s stored in a variable named doc?",
+                                                                                                        
+        "options":["doc.get_paragraphs()",
+        "doc.paragraph_list()",
+        "doc.paragraphs",
+        "doc.getParagraphs()"
+        ],
+        "answer":"doc.paragraphs",
+        "discription":"The paragraphs attribute of the Document object returns a list of all Paragraph objects in the document."
+    },
+
+    {
+        "id": 133,
+        "question":"What type of object has bold, underline, italic, strike, and outline variables in Python?",
+                                                                                                        
+        "options":["Document object",
+        "Paragraph object",
+        "Run object",
+        "Table object"
+        ],
+        "answer":"Run object",
+        "discription":"A Run object in a Paragraph represents a segment of text with specific formatting, including bold, underline, italic, strike, and outline options."
+    },
+
+    {
+        "id": 134,
+        "question":"What is the difference between False, True, and None for the bold variable in a Run object?",
+                                                                                                        
+        "options":["False turns bold on, True turns bold off, None leaves bold unchanged",
+        "False turns bold off, True turns bold on, None uses the style's default setting.",
+        "False uses the style's default setting, True turns bold on, None turns bold off.",
+        "False removes all formatting, True applies all formatting, None does nothing"
+        ],
+        "answer":"False turns bold off, True turns bold on, None uses the style's default setting.",
+        "discription":"False explicitly disables bold, True enables bold, and None applies the document's default style setting for bold."
+    },
+
+    {
+        "id": 135,
+        "question":"How do you create a Document object for a new Word document using Python's python-docx library?",
+                                                                                                        
+        "options":["Document.create()",
+        "Document()",
+        "Document.new()",
+        "Document.open()"
+        ],
+        "answer":"Document()",
+        "discription":"Instantiating the Document class with Document() creates a new Word document."
+    },
+
+    {
+        "id": 136,
+        "question":"How do you add a paragraph with the text 'Hello, there!' to a Document object stored in a variable named doc?",
+                                                                                                        
+        "options":["doc.add_paragraph('Hello, there!')",
+        "doc.append_paragraph('Hello, there!')",
+        "doc.paragraphs.add('Hello, there!')",
+        "doc.add('Hello, there!')"
+        ],
+        "answer":"doc.add_paragraph('Hello, there!')",
+        "discription":"The add_paragraph() method adds a new paragraph with the specified text to the Document object."
+    },
+
+    {
+        "id": 137,
+        "question":"What integers represent the levels of headings available in Word documents?",
+                                                                                                        
+        "options":["0, 1, 2, 3, 4, 5, 6",
+        "1, 2, 3, 4, 5, 6, 7",
+        "1, 2, 3, 4, 5, 6",
+        "0, 1, 2, 3, 4, 5"
+        ],
+        "answer":"1, 2, 3, 4, 5, 6",
+        "discription":"Headings in Word documents are typically represented by integers from 1 to 6, indicating the level of the heading."
+    },
+
+    {
+        "id": 138,
+        "question":"What advantages do Excel spreadsheets have over CSV spreadsheets?",
+                                                                                                        
+        "options":["Excel spreadsheets can handle complex formulas, multiple sheets, and cell formatting, while CSV files are plain text and lack these features.",
+        "Excel spreadsheets are more compact and load faster than CSV files.",
+        "Excel spreadsheets are universally supported across all software, while CSV files are not.",
+        "Excel spreadsheets use less memory and are easier to work with than CSV files."
+        ],
+        "answer":"Excel spreadsheets can handle complex formulas, multiple sheets, and cell formatting, while CSV files are plain text and lack these features.",
+        "discription":"Excel spreadsheets support advanced features such as formulas, multiple worksheets, and formatting, whereas CSV files are simple text files with limited functionality."
+    },
+
+    {
+        "id": 139,
+        "question":"What do you pass to csv.reader() and csv.writer() to create reader and writer objects?",
+                                                                                                        
+        "options":["A file object opened in text mode",
+        "A file path as a string",
+        "A list of strings",
+        "A file object opened in binary mode"
+        ],
+        "answer":"A file object opened in text mode",
+        "discription":"You need to pass a file object opened in text mode to csv.reader() and csv.writer() to create reader and writer objects."
+    },
+
+    {
+        "id": 140,
+        "question":"What modes do File objects for reader and writer objects need to be opened in?",
+                                                                                                        
+        "options":["'r' for reading and 'w' for writing",
+        "'rb' for reading and 'wb' for writing",
+        "'r' for reading and 'a' for appending",
+        "'rt' for reading and 'wt' for writing"
+        ],
+        "answer":"'rt' for reading and 'wt' for writing",
+        "discription":"File objects for csv.reader should be opened in text mode with 'rt' for reading, and for csv.writer, they should be opened in 'wt' for writing"
+    },
+
+    {
+        "id": 141,
+        "question":"What method takes a list argument and writes it to a CSV file?",
+                                                                                                        
+        "options":["csv.writer().write_row()",
+        "csv.writer().writeall()",
+        "csv.writer().writerow()",
+        "csv.writer().write()"
+        ],
+        "answer":"csv.writer().writerow()",
+        "discription":"The writerow() method of the csv.writer object takes a list argument and writes it as a single row in the CSV file."
+    },
+
+    {
+        "id": 142,
+        "question":"What do the keyword arguments delimiter and lineterminator do in the csv module?",
+                                                                                                        
+        "options":["delimiter specifies the file encoding, and lineterminator specifies the file mode.",
+        "delimiter sets the character used to separate fields, and lineterminator sets the character sequence to end rows.",
+        "delimiter determines the file name, and lineterminator determines the file path.",
+        "delimiter specifies the column width, and lineterminator specifies the number of rows to write."
+        ],
+        "answer":"delimiter sets the character used to separate fields, and lineterminator sets the character sequence to end rows.",
+        "discription":"delimiter defines the character used to separate fields in the CSV file, while lineterminator specifies the string that will terminate each row."
+    },
+
+    {
+        "id": 143,
+        "question":"What function takes a string of JSON data and returns a Python data structure?",
+                                                                                                        
+        "options":["json.parse()",
+        "json.decode()",
+        "json.load()",
+        "json.loads()"
+        ],
+        "answer":"json.loads()",
+        "discription":"The json.loads() function parses a JSON string and converts it into a corresponding Python data structure."
+    },
+
+    {
+        "id": 144,
+        "question":"What function takes a Python data structure and returns a string of JSON data?",
+                                                                                                        
+        "options":["json.dumps()",
+        "json.encode()",
+        "json.write()",
+        "json.dump("
+        ],
+        "answer":"json.dumps()",
+        "discription":"The json.dumps() function converts a Python data structure into a JSON-formatted string."
+    },
+
+    {
+        "id": 145,
+        "question":"What does RGBA stand for?",
+                                                                                                        
+        "options":["Red, Green, Blue, Alpha",
+        "Red, Gray, Blue, Alpha",
+        "Red, Green, Blue, Adjustment",
+        "Red, Green, Black, Alpha"
+        ],
+        "answer":"Red, Green, Blue, Alpha",
+        "discription":"RGBA represents color values where Red, Green, and Blue define the color, and Alpha specifies the transparency level."
+    },
+
+    {
+        "id": 146,
+        "question":"From the Pillow module, how do you get the RGBA value of any images?",
+                                                                                                        
+        "options":["image.getpixel()",
+        "image.get_rgba()",
+        "image.get_color()",
+        "image.get_value()"
+        ],
+        "answer":"image.getpixel()",
+        "discription":"The getpixel() method retrieves the RGBA value of a specific pixel in an image using Pillow."
+    },
+
+    {
+        "id": 147,
+        "question":"What is a box tuple, and how does it work?",
+                                                                                                        
+        "options":["A box tuple is a tuple representing the dimensions and coordinates of a rectangular area in an image, specified as (left, upper, right, lower).",
+        "A box tuple is a data structure for storing color values in an image, specified as (red, green, blue, alpha).",
+        "A box tuple is a method for resizing an image, specified as (width, height).",
+        "A box tuple is used for image filtering, specified as (filter_type, strength)."
+        ],
+        "answer":"A box tuple is a tuple representing the dimensions and coordinates of a rectangular area in an image, specified as (left, upper, right, lower).",
+        "discription":"A box tuple defines a rectangular region in an image with coordinates for the left, upper, right, and lower edges."
+    },
+
+    {
+        "id": 148,
+        "question":"Use your image and load in notebook then, How can you find out the width and height of an Image object?",
+                                                                                                        
+        "options":["image.size()",
+        "image.get_dimensions()",
+        "image.width and image.height",
+        "image.size"
+        ],
+        "answer":"image.size",
+        "discription":"The size attribute of an Image object returns a tuple containing the width and height of the image."
+    },
+
+    {
+        "id": 149,
+        "question":"What method would you call to get Image object for a 100×100 image, excluding the lower-left quarter of it?",
+                                                                                                        
+        "options":["image.crop((0, 0, 50, 50))",
+        "image.crop((50, 50, 100, 100))",
+        "image.crop((0, 0, 100, 100))",
+        "image.crop((25, 25, 75, 75))"
+        ],
+        "answer":"image.crop((50, 50, 100, 100))",
+        "discription":"The crop() method with coordinates (50, 50, 100, 100) extracts the upper-right quarter of a 100×100 image, effectively excluding the lower-left quarter."
+    },
+
+    {
+        "id": 150,
+        "question":"After making changes to an Image object, how could you save it as an image file?",
+                                                                                                        
+        "options":["image.save('filename.png')",
+        "image.write('filename.png')",
+        "image.save_as('filename.png')",
+        "image.export('filename.png')"
+        ],
+        "answer":"image.save('filename.png')",
+        "discription":"The save() method allows you to save the modified Image object to a file with the specified filename and format."
+    },
+
+    {
+        "id": 151,
+        "question":"What module contains Pillow’s shape-drawing code?",
+                                                                                                        
+        "options":["PIL.ImageDraw",
+        "PIL.ImageShape",
+        "PIL.DrawShapes",
+        "PIL.ShapeDraw"
+        ],
+        "answer":"PIL.ImageDraw",
+        "discription":"The PIL.ImageDraw module provides functions for drawing shapes and text on an Image object in Pillow."
+    },
+
+    {
+        "id": 152,
+        "question":"Image objects do not have drawing methods. What kind of object does, and how do you get this kind of object?",
+                                                                                                        
+        "options":["ImageDraw object, obtained using ImageDraw.Draw(image)",
+        "ShapeDraw object, obtained using ShapeDraw.create(image)",
+        "DrawTool object, obtained using DrawTool.get(image)",
+        "DrawObject object, obtained using DrawObject.create_for(image)"
+        ],
+        "answer":"ImageDraw object, obtained using ImageDraw.Draw(image)",
+        "discription":"To draw on an Image object, you need an ImageDraw object, which you obtain by calling ImageDraw.Draw(image)."
+    },
+
+    {
+        "id": 153,
+        "question":"How many seconds are in an hour? Use the interactive interpreter as a calculator and multiply the number of seconds in a minute (60) by the number of minutes in an hour (also 60)",
+                                                                                                        
+        "options":["3,600",
+        "3,000",
+        "1,800",
+        "6,000"
+        ],
+        "answer":"3,600",
+        "discription":"There are 60 seconds in a minute and 60 minutes in an hour. Multiplying these numbers (60 × 60) gives 3,600 seconds in an hour"
+    },
+
+    {
+        "id": 154,
+        "question":"Assign the result from the previous task (seconds in an hour) to a variable called seconds_per_hour.",
+                                                                                                        
+        "options":["seconds_per_hour = 60 * 60",
+        "seconds_per_hour = 60 + 60",
+        "seconds_per_hour = 60 / 60",
+        "seconds_per_hour = 60 - 60"
+        ],
+        "answer":"seconds_per_hour = 60 * 60",
+        "discription":"To assign the number of seconds in an hour to the variable seconds_per_hour, use the expression 60 * 60, which multiplies the number of seconds in a minute by the number of minutes in an hour."
+    },
+
+    {
+        "id": 155,
+        "question":"How many seconds are there in a day? Use the variables seconds_per_hour and minutes_per_hour",
+                                                                                                        
+        "options":["seconds_per_hour * 24",
+        "seconds_per_hour * 12",
+        "seconds_per_hour * 30",
+        "seconds_per_hour * 60"
+        ],
+        "answer":"seconds_per_hour * 24",
+        "discription":"To find the number of seconds in a day, multiply the number of seconds in an hour (stored in seconds_per_hour) by the number of hours in a day (24)."
+    },
+
+    {
+        "id": 156,
+        "question":"Calculate seconds per day again, but this time save the result in a variable called seconds_per_day",
+                                                                                                        
+        "options":["seconds_per_day = seconds_per_hour * 24",
+        "seconds_per_day = seconds_per_hour + 24",
+        "seconds_per_day = 24 / seconds_per_hour",
+        "seconds_per_day = seconds_per_hour - 24"
+        ],
+        "answer":"seconds_per_day = seconds_per_hour * 24",
+        "discription":"To calculate the number of seconds in a day and store it in seconds_per_day, multiply the number of seconds in an hour (seconds_per_hour) by 24, which represents the number of hours in a day."
+    },
+
+    {
+        "id": 157,
+        "question":"Divide seconds_per_day by seconds_per_hour. Use floating-point (/) division.",
+                                                                                                        
+        "options":["result = seconds_per_day / seconds_per_hour",
+        "result = seconds_per_day // seconds_per_hour",
+        "result = seconds_per_day % seconds_per_hour",
+        "result = seconds_per_day * seconds_per_hour"
+        ],
+        "answer":"result = seconds_per_day / seconds_per_hour",
+        "discription":"To perform floating-point division of seconds_per_day by seconds_per_hour, use the / operator, which provides a floating-point result."
+    },
+
+    {
+        "id": 158,
+        "question":"Divide seconds_per_day by seconds_per_hour, using integer (//) division. Did this number agree with the floating-point value from the previous question, aside from the final .0?",
+                                                                                                        
+        "options":["result = seconds_per_day // seconds_per_hour",
+        "result = seconds_per_day / seconds_per_hour",
+        "result = seconds_per_day % seconds_per_hour",
+        "result = seconds_per_day - seconds_per_hour"
+        ],
+        "answer":"result = seconds_per_day // seconds_per_hour",
+        "discription":"Using integer division (//) to divide seconds_per_day by seconds_per_hour will give you a whole number. This result should match the integer part of the floating-point division from the previous question, except for the decimal .0."
+    },
+
+    {
+        "id": 159,
+        "question":"How do you write a generator genPrimes that returns the sequence of prime numbers (2, 3, 5, 7, 11, ...) on successive calls to its next() method?",
+                                                                                                        
+        "options":["def genPrimes():\n    primes = []\n    n = 2\n    while True:\n        for p in primes:\n            if n % p == 0:\n                break\n        else:\n            primes.append(n)\n            yield n\n        n += 1\n",
+        "def genPrimes():\n    n = 2\n    while True:\n        if all(n % i != 0 for i in range(2, n)):\n            yield n\n        n += 1\n",
+        "def genPrimes():\n    primes = []\n    n = 1\n    while True:\n        if all(n % i != 0 for i in range(2, n)):\n            yield n\n        n += 1\n",
+        "def genPrimes():\n    primes = []\n    n = 2\n    while True:\n        if all(n % i != 0 for i in primes):\n            yield n\n        n += 1\n        primes.append(n)\n"
+        ],
+        "answer":"def genPrimes():\n    n = 2\n    while True:\n        if all(n % i != 0 for i in range(2, n)):\n            yield n\n        n += 1\n",
+        "discription":"The generator function genPrimes yields prime numbers by checking if each number is not divisible by any number in the range from 2 to just below itself. This method correctly generates an infinite sequence of prime numbers on successive calls to next()."
+    },
+
+    {
+        "id": 160,
+        "question":"How do you create a list called years_list, starting with the year of your birth and including each subsequent year until the year of your fifth birthday? For example, if you were born in 1980, the list would be [1980, 1981, 1982, 1983, 1984, 1985].",
+                                                                                                        
+        "options":["years_list = [year for year in range(1980, 1986)]",
+        "years_list = [1980, 1981, 1982, 1983, 1984]",
+        "years_list = list(range(1980, 1985))",
+        "years_list = list(range(1980, 1986))"
+        ],
+        "answer":"years_list = list(range(1980, 1986))",
+        "discription":"To create a list called years_list that starts with your birth year and ends with the year of your fifth birthday, use list(range(birth_year, birth_year + 6)), where birth_year is the year you were born. This includes all years from your birth year up to and including your fifth birthday."
+    },
+
+    {
+        "id": 161,
+        "question":"In which year in years_list was your third birthday? Remember, you were 0 years of age for your first year.",
+                                                                                                        
+        "options":["The first year in years_list",
+        "The second year in years_list",
+        "The third year in years_list",
+        "The fourth year in years_list"
+        ],
+        "answer":"The fourth year in years_list",
+        "discription":"Since you were 0 years old in your first year, your third birthday would occur in the fourth year of the years_list."
+    },
+
+    {
+        "id": 162,
+        "question":"In the years list, which year were you the oldest?",
+                                                                                                        
+        "options":["The first year in years_list",
+        "The second year in years_list",
+        "The fifth year in years_list",
+        "The last year in years_list"
+        ],
+        "answer":"The last year in years_list",
+        "discription":"You are the oldest in the last year of the years_list because it represents the most recent year in the sequence, which corresponds to the highest age."
+    },
+
+    {
+        "id": 163,
+        "question":"Make a list called things with these three strings as elements: 'mozzarella', 'cinderella', 'salmonella'.",
+                                                                                                        
+        "options":["things = ['mozzarella', 'cinderella', 'salmonella']",
+        "things = ['mozzarella' + 'cinderella' + 'salmonella']",
+        "things = ('mozzarella', 'inderella', 'salmonella')",
+        "things = ['mozzarella', 'cinderella', 'salmonella', 'pizza']"
+        ],
+        "answer":"things = ['mozzarella', 'cinderella', 'salmonella']",
+        "discription":"To create a list called things containing the three strings 'mozzarella', 'cinderella', and 'salmonella', you enclose the strings in square brackets, separated by commas."
+    },
+
+    {
+        "id": 164,
+        "question":"How do you capitalize the element in things that refers to a person and then print the list? Did it change the element in the list?",
+                                                                                                        
+        "options":["things[1] = things[1].capitalize(); print(things) — Yes, it changed the element in the list.",
+        "things[1].capitalize(); print(things) — No, it did not change the element in the list.",
+        "things[0] = things[0].capitalize(); print(things) — Yes, it changed the element in the list.",
+        "print(things[1].capitalize()); print(things) — No, it did not change the element in the list."
+        ],
+        "answer":"things[1] = things[1].capitalize(); print(things) — Yes, it changed the element in the list.",
+        "discription":"To capitalize the element in things that refers to a person (i.e., 'cinderella'), you assign the capitalized version back to the list (things[1]). This changes the element in the list itself."
+    },
+
+    {
+        "id": 165,
+        "question":"How do you create a list called surprise with the elements 'Groucho', 'Chico', and 'Harpo'?",
+                                                                                                        
+        "options":["surprise = ['Groucho', 'Chico', 'Harpo']",
+        "surprise = 'Groucho', 'Chico', 'Harpo'",
+        "surprise = ['Groucho' + 'Chico' + 'Harpo']",
+        "surprise = ('Groucho', 'Chico', 'Harpo')"
+        ],
+        "answer":"surprise = ['Groucho', 'Chico', 'Harpo']",
+        "discription":"To create a list called surprise with the elements 'Groucho', 'Chico', and 'Harpo', you enclose the strings in square brackets and separate them with commas."
+    },
+
+    {
+        "id": 166,
+        "question":"How do you lowercase the last element of the surprise list, reverse it, and then capitalize it?",
+                                                                                                        
+        "options":["surprise[-1] = surprise[-1].lower()[::-1].capitalize()",
+        "surprise[-1] = surprise[-1].capitalize()[::-1].lower()",
+        "surprise[-1] = surprise[-1].upper()[::-1].capitalize()",
+        "surprise[-1] = surprise[-1][::-1].capitalize().lower()"
+        ],
+        "answer":"surprise[-1] = surprise[-1].lower()[::-1].capitalize()",
+        "discription":"To transform the last element of the surprise list, you first lowercase it, then reverse the string using slicing ([::-1]), and finally capitalize the reversed string. This series of operations correctly modifies the last element of the list."
+    },
+
+    {
+        "id": 167,
+        "question":"Make an English-to-French dictionary called e2f and print it. Here are your starter words: dog is chien, cat is chat, and walrus is morse.",
+                                                                                                        
+        "options":["e2f = {'dog': 'chien', 'cat': 'chat', 'walrus': 'morse'}\nprint(e2f)",
+        "e2f = ['dog': 'chien', 'cat': 'chat', 'walrus': 'morse']\nprint(e2f)",
+        "e2f = {'chien': 'dog', 'chat': 'cat', 'morse': 'walrus'}\nprint(e2f)",
+        "e2f = (dog, chien, cat, chat, walrus, morse)\nprint(e2f)"
+        ],
+        "answer":"e2f = {'dog': 'chien', 'cat': 'chat', 'walrus': 'morse'}\nprint(e2f)",
+        "discription":"To create an English-to-French dictionary named e2f, use curly braces {} with key-value pairs, where the English word is the key and the French translation is the value. Printing e2f will display the dictionary."
+    },
+
+    {
+        "id": 168,
+        "question":"How do you retrieve the French word for 'walrus' from the e2f dictionary?",
+                                                                                                        
+        "options":["e2f['morse']",
+        "e2f['walrus']",
+        "e2f.get('walrus')",
+        "e2f['chat']"
+        ],
+        "answer":"e2f['walrus']",
+        "discription":"To get the French translation of 'walrus' from the e2f dictionary, you access it using the key 'walrus', which returns the value 'morse'."
+    },
+
+    {
+        "id": 169,
+        "question":"How do you create a French-to-English dictionary called f2e from the e2f dictionary using the items method?",
+                                                                                                        
+        "options":["f2e = {value: key for key, value in e2f.items()}",
+        "f2e = {key: value for value, key in e2f.items()}",
+        "f2e = dict(e2f.items())",
+        "f2e = {key: value for key, value in e2f.items()}"
+        ],
+        "answer":"f2e = {value: key for key, value in e2f.items()}",
+        "discription":"To create a French-to-English dictionary f2e from e2f, use a dictionary comprehension that reverses the key-value pairs. This swaps the keys and values, using e2f.items() to iterate over the original dictionary's items."
+    },
+
+    {
+        "id": 170,
+        "question":"How do you print the English word for the French word 'chien' using the f2e dictionary?",
+                                                                                                        
+        "options":["print(f2e['chien'])",
+        "print(f2e.get('chien'))",
+        "print(f2e['chat'])",
+        "print(f2e['morse'])"
+        ],
+        "answer":"print(f2e['chien'])",
+        "discription":"To print the English translation of the French word 'chien' using the f2e dictionary, access it with the key 'chien' and print the corresponding value."
+    },
+
+    {
+        "id": 171,
+        "question":"How do you create and print a set of English words from the keys in the e2f dictionary?",
+                                                                                                        
+        "options":["english_words = set(e2f.keys())\nprint(english_words)",
+        "english_words = {key for key in e2f.values()}\nprint(english_words)",
+        "english_words = list(e2f.keys())\nprint(english_words)",
+        "english_words = {value for key, value in e2f.items()}\nprint(english_words)"
+        ],
+        "answer":"english_words = set(e2f.keys())\nprint(english_words)",
+        "discription":"To create a set of English words from the keys in the e2f dictionary, use e2f.keys() to get the keys and convert them to a set. Printing the set will display all the English words."
+    },
+
+    {
+        "id": 172,
+        "question":"Make a multilevel dictionary called life. Use these strings for the topmost keys: 'animals', 'plants', and 'other'. Make the 'animals' key refer to another dictionary with the keys 'cats', 'octopi', and 'emus'. Make the 'cats' key refer to a list of strings with the values 'Henri', 'Grumpy', and 'Lucy'. Make all the other keys refer to empty dictionaries.",
+                                                                                                        
+        "options":["life = {\n    'animals': {\n        'cats': ['Henri', 'Grumpy', 'Lucy'],\n        'octopi': {},\n        'emus': {}\n     },\n    'plants': {},\n    'other': {}}",
+        "life = {\n    'animals': {\n        'cats': ['Henri', 'Grumpy', 'Lucy'],\n        'octopi': {},\n        'emus': {}\n },\n    'plants': [],\n    'other': []\n}",
+        "life = {\n    'animals': ['cats', 'octopi', 'emus'],\n    'plants': {},\n    'other': {}\n}",
+        "life = {\n    'animals': {\n        'cats': 'Henri, Grumpy, Lucy',\n        'octopi': {},\n        'emus': {}\n    },\n    'plants': {},\n    'other': {}\n}"
+        ],
+        "answer":"life = {\n    'animals': {\n        'cats': ['Henri', 'Grumpy', 'Lucy'],\n        'octopi': {},\n        'emus': {}\n     },\n    'plants': {},\n    'other': {}}",
+        "discription":"To create a multilevel dictionary life, use nested dictionaries and lists. Set 'animals' to a dictionary with 'cats' pointing to a list of cat names and 'octopi' and 'emus' pointing to empty dictionaries. Set 'plants' and 'other' to empty dictionaries."
+    },
+
+    {
+        "id": 173,
+        "question":"How do you print the top-level keys of the life dictionary?",
+                                                                                                        
+        "options":["print(life.keys())",
+        "print(life.top_keys())",
+        "print(list(life))",
+        "print(life.get_top_keys())"
+        ],
+        "answer":"print(life.keys())",
+        "discription":"To print the top-level keys of the life dictionary, use life.keys() which returns a view of the dictionary's keys. Converting this view to a list, if needed, will show the keys."
+    },
+
+    {
+        "id": 174,
+        "question":"Print the keys for life['animals'].",
+                                                                                                        
+        "options":["print(life['animals'].keys())",
+        "print(life['animals'].items())",
+        "print(life['animals'].values())",
+        "print(life['animals'].get_keys())"
+        ],
+        "answer":"print(life['animals'].keys())",
+        "discription":"To print the keys of the dictionary stored under life['animals'], use life['animals'].keys(). This will give a view of the keys for the nested dictionary."
+    },
+
+    {
+        "id": 175,
+        "question":"Print the values for life['animals']['cats']",
+                                                                                                        
+        "options":["print(life['animals']['cats'])",
+        "print(life['animals']['cats'].values())",
+        "print(life['animals']['cats'].items())",
+        "print(life['animals']['cats'].keys())"
+        ],
+        "answer":"print(life['animals']['cats'])",
+        "discription":"To print the values for life['animals']['cats'], you directly access life['animals']['cats'] which is a list of cat names. Using .values() or .items() is not applicable here since it's a list, not a dictionary."
+    },
+
+    {
+        "id": 176,
+        "question":"How do you write a set of conditional tests to print 'too low' if guess_me is less than 7, 'too high' if greater than 7, and 'just right' if equal to 7, after assigning the value 7 to guess_me?",
+                                                                                                        
+        "options":["guess_me = 7\nif guess_me < 7:\n    print('too low')\nelif guess_me > 7:\n    print('too high')\nelse:\n    print('just right')",
+        "guess_me = 7\nif guess_me > 7:\n    print('too low')\nelif guess_me < 7:\n    print('too high')\nelse:\n    print('just right')",
+        "guess_me = 7\nif guess_me == 7:\n    print('too low')\nelif guess_me < 7:\n    print('too high')\nelse:\n    print('just right')",
+        "guess_me = 7\nif guess_me < 7:\n    print('too high')\nelif guess_me == 7:\n    print('too high')\nelse:\n    print('just right')"
+        ],
+        "answer":"guess_me = 7\nif guess_me < 7:\n    print('too low')\nelif guess_me > 7:\n    print('too high')\nelse:\n    print('just right')",
+        "discription":"Assign the value 7 to guess_me, then use if, elif, and else statements to compare guess_me and print the appropriate message based on whether it's less than, greater than, or equal to 7."
+    },
+
+    {
+        "id": 177,
+        "question":"Assign the value 7 to the variable guess_me and the value 1 to the variable start. Write a while loop that compares start with guess_me. Print too low if start is less than guess me. If start equals guess_me, print 'found it!' and exit the loop. If start is greater than guess_me, print 'oops' and exit the loop. Increment start at the end of the loop.",
+                                                                                                        
+        "options":["guess_me = 7\nstart = 1\n while start <= guess_me:\n    if start < guess_me:\n        print('too low')\n    elif start == guess_me:\n        print('found it!')\n        break\n    start += 1\nelse:\n    print('oops')",
+        "guess_me = 7\nstart = 1\n while start <= guess_me:\n    if start > guess_me:\n        print('oops')\n        break\n    elif start == guess_me:\n        print('found it!')\n        break\n    else:\n        print('too low')\n    start += 1",
+        "guess_me = 7\nstart = 1\n  while start <= guess_me:\n    if start == guess_me:\n        print('found it!')\n        break\n    elif start > guess_me:\n        print('oops')\n        break\n    else:\n        print('too low')\n    start += 1",
+        "guess_me = 7\nstart = 1\n  while start <= guess_me:\n    if start == guess_me:\n        print('oops')\n        break\n    elif start > guess_me:\n        print('too low')\n        break\n    else:\n        print('found it!')\n    start += 1"
+        ],
+        "answer":"guess_me = 7\nstart = 1\n  while start <= guess_me:\n    if start == guess_me:\n        print('found it!')\n        break\n    elif start > guess_me:\n        print('oops')\n        break\n    else:\n        print('too low')\n    start += 1",
+        "discription":"Assign 7 to guess_me and 1 to start. The loop compares start with guess_me, printing 'too low' if start is less, 'found it!'' if they are equal (and exits the loop), or 'oops' if start exceeds guess_me (and exits the loop). The variable start is incremented at the end of each iteration."
+    },
+
+    {
+        "id": 178,
+        "question":"Print the following values of the list [3, 2, 1, 0] using a for loop.",
+                                                                                                        
+        "options":["my_list = [3, 2, 1, 0]\nfor i in my_list:\n    print(my_list)",
+        "my_list = [3, 2, 1, 0]\nfor i in my_list:\n    print(i)",
+        "my_list = [3, 2, 1, 0]\nfor i in range(4):\n    print(i)",
+        "my_list = [3, 2, 1, 0]\nfor i in range(len(my_list)):\n    print(i)"
+        ],
+        "answer":"my_list = [3, 2, 1, 0]\nfor i in my_list:\n    print(i)",
+        "discription":"This option correctly iterates through the list [3, 2, 1, 0] using a for loop and prints each element (i) of the list individually."
+    },
+
+    {
+        "id": 179,
+        "question":"Use a list comprehension to make a list of the even numbers in range(10)",
+                                                                                                        
+        "options":["even_numbers = [x for x in range(10) if x % 2 == 0]",
+        "even_numbers = [x for x in range(10) if x % 2 != 0]",
+        "even_numbers = [x for x in range(10)]",
+        "even_numbers = [x for x in range(10) if x % 3 == 0]"
+        ],
+        "answer":"even_numbers = [x for x in range(10) if x % 2 == 0]",
+        "discription":"This list comprehension iterates over the numbers in range(10) and includes only those that are even (x % 2 == 0), resulting in a list of even numbers [0, 2, 4, 6, 8]."
+    },
+
+    {
+        "id": 180,
+        "question":"How do you use a dictionary comprehension to create a dictionary called squares, where the keys are from range(10) and the values are the squares of the keys?",
+                                                                                                        
+        "options":["squares = {x: x + x for x in range(10)}",
+        "squares = {x: x ** 2 for x in range(10)}",
+        "squares = {x: x * 2 for x in range(10)}",
+        "squares = {x: x - x for x in range(10)}"
+        ],
+        "answer":"squares = {x: x ** 2 for x in range(10)}",
+        "discription":"This dictionary comprehension iterates over the numbers in range(10), creating keys from the range and assigning each key's square as its corresponding value, resulting in a dictionary like {0: 0, 1: 1, 2: 4, ..., 9: 81}."
+    },
+
+    {
+        "id": 181,
+        "question":"Construct the set odd from the odd numbers in the range using a set comprehension (10).",
+                                                                                                        
+        "options":["odd = {x for x in range(10) if x % 2 == 0}",
+        "odd = {x for x in range(10) if x % 2 != 0}",
+        "odd = {x for x in range(10) if x > 5}",
+        "odd = {x for x in range(10) if x % 3 == 0}"
+        ],
+        "answer":"odd = {x for x in range(10) if x % 2 != 0}",
+        "discription":"This set comprehension iterates over the numbers in range(10) and includes only the odd numbers (x % 2 != 0), creating a set containing {1, 3, 5, 7, 9}."
+    },
+
+    {
+        "id": 182,
+        "question":"Use a generator comprehension to return the string 'Got ' and a number for the numbers in range(10). Iterate through this by using a for loop.",
+                                                                                                        
+        "options":["gen = ('Got ' + str(x) for x in range(10))\nfor item in gen:\n    print(item)",
+        "gen = ['Got ' + str(x) for x in range(10)]\nfor item in gen:\n    print(item)",
+        "gen = {'Got ' + str(x) for x in range(10)}\nfor item in gen:\n    print(item)",
+        "gen = ('Got ' + str(x) for x in range(10))\nfor item in range(10):\n    print(gen)"
+        ],
+        "answer":"gen = ('Got ' + str(x) for x in range(10))\nfor item in gen:\n    print(item)",
+        "discription":"This generator comprehension creates a sequence that produces the string 'Got ' followed by each number in range(10). The for loop then iterates through the generator, printing each generated string, such as 'Got 0', 'Got 1', up to 'Got 9'."
+    },
+
+    {
+        "id": 183,
+        "question":"Define a function called good that returns the list ['Harry', 'Ron', 'Hermione'].",
+                                                                                                        
+        "options":["def good():\n    return 'Harry', 'Ron', 'Hermione'",
+        "def good():\n    return ['Harry', 'Ron', 'Hermione']",
+        "def good():\n    return {'Harry', 'Ron', 'Hermione'}",
+        "def good():\n    return 'Harry', 'Ron', 'Hermione'"
+        ],
+        "answer":"def good():\n    return ['Harry', 'Ron', 'Hermione']",
+        "discription":"The function good is defined to return a list containing the three elements 'Harry', 'Ron', and 'Hermione'. This is the correct way to return a list in Python."
+    },
+
+    {
+        "id": 184,
+        "question":"Define a generator function called get_odds that returns the odd numbers from range(10). Use a for loop to find and print the third value returned.",
+                                                                                                        
+        "options":["def get_odds():\n    for i in range(10):\n        if i % 2 != 0:\n            yield i\nthird_odd = list(get_odds())[2]\nprint(third_odd)",
+        "def get_odds():\n    for i in range(10):\n        if i % 2 != 0:\n            return i\nthird_odd = list(get_odds())[2]\nprint(third_odd)",
+        "def get_odds():\n    for i in range(10):\n        if i % 2 != 0:\n            yield i\nfor idx, value in enumerate(get_odds()):\n    if idx == 2:\n        print(value)",
+        "def get_odds():\n    for i in range(10):\n        if i % 2 != 0:\n            yield i\nfor idx, value in enumerate(get_odds()):\n    if idx == 3:\n        print(value)"
+        ],
+        "answer":"def get_odds():\n    for i in range(10):\n        if i % 2 != 0:\n            yield i\nfor idx, value in enumerate(get_odds()):\n    if idx == 2:\n        print(value)",
+        "discription":"The generator function get_odds yields odd numbers from range(10). The for loop with enumerate() is then used to iterate through the generator and print the third value returned by the generator."
+    },
+
+    {
+        "id": 185,
+        "question":"Define an exception called OopsException. Raise this exception to see what happens. Then write the code to catch this exception and print 'Caught an oops'.",
+                                                                                                        
+        "options":["class OopsException(Exception):\n    pass\n try:\n    raise OopsException\nexcept OopsException:\n    print('Caught an oops')",
+        "class OopsException(Exception):\n    pass\n    try:\n    raise OopsException()\nexcept OopsException:\n    print('Caught an oops')",
+        "class OopsException(BaseException):\n    pass\n    try:\n    raise OopsException\nexcept OopsException:\n    print('Caught an oops')",
+        "class OopsException(BaseException):\n    pass\n    try:\n    raise OopsException()\nexcept OopsException:\n    print('Caught an oops')"
+        ],
+        "answer":"class OopsException(Exception):\n    pass\n    try:\n    raise OopsException()\nexcept OopsException:\n    print('Caught an oops')",
+        "discription":"This code defines a custom exception called OopsException, raises it, and catches it using a try-except block. When the exception is caught, it prints 'Caught an oops'."
+    },
+
+    {
+        "id": 186,
+        "question":"Use zip() to make a dictionary called movies that pairs these lists: titles = ['Creature of Habit', 'Crewel Fate'] and plots = ['A nun turns into a monster', 'A haunted yarn shop'].",
+                                                                                                        
+        "options":["movies = dict(titles, plots)",
+        "movies = dict(zip(titles, plots))",
+        "movies = zip(titles, plots)",
+        "movies = list(zip(titles, plots))"
+        ],
+        "answer":"movies = dict(zip(titles, plots))",
+        "discription":"This code uses zip() to pair elements from the titles and plots lists and then converts the resulting pairs into a dictionary called movies."
+    },
+
+    {
+        "id": 187,
+        "question":"Create a zoo.py file first. Define the hours() function, which prints the string 'Open 9-5 daily'. Then, use the interactive interpreter to import the zoo module and call its hours() function.",
+                                                                                                        
+        "options":["In zoo.py:\n    python\ndef hours():\n    print('Open 9-5 daily')\nIn the interactive interpreter:\n python\nimport zoo\nzoo.hours()",
+        "In zoo.py:\n   python\ndef hours():\n    return 'Open 9-5 daily'\nIn the interactive interpreter:\n    python\nimport zoo\nprint(zoo.hours())",
+        "In zoo.py:\n   python\ndef hours():\n    'Open 9-5 daily'\nIn the interactive interpreter:\n   python\nimport zoo\nzoo.hours()",
+        "In zoo.py:\n   python\ndef hours():\n    print('Open 9-5 daily')\nIn the interactive interpreter:\npython\nfrom zoo import hours\nhours()"
+        ],
+        "answer":"In zoo.py:\n    python\ndef hours():\n    print('Open 9-5 daily')\nIn the interactive interpreter:\n python\nimport zoo\nzoo.hours()",
+        "discription":"This option shows how to define the hours() function in a file named zoo.py and then import the module in the interactive interpreter to call the function and print the message 'Open 9-5 daily'."
+    },
+
+    {
+        "id": 188,
+        "question":"How would you import the zoo module as menagerie in the interactive interpreter and call its hours() function?",
+                                                                                                        
+        "options":["import zoo as menagerie\nmenagerie.hours()",
+        "from zoo import hours as menagerie\nmenagerie()",
+        "import menagerie as zoo\nzoo.hours()",
+        "from zoo import menagerie\nmenagerie.hours()"
+        ],
+        "answer":"import zoo as menagerie\nmenagerie.hours()",
+        "discription":"This option correctly demonstrates how to import the zoo module under the alias menagerie and call its hours() function in the interactive interpreter."
+    },
+
+    {
+        "id": 189,
+        "question":"How would you explicitly import and call the hours() function from the zoo module using the interpreter?",
+                                                                                                        
+        "options":["import zoo\nzoo.hours()",
+        "from zoo import hours\nhours()",
+        "import zoo.hours\nzoo.hours()",
+        "from zoo import hours\nzoo.hours()"
+        ],
+        "answer":"from zoo import hours\nhours()",
+        "discription":"This option correctly demonstrates how to explicitly import the hours() function directly from the zoo module and then call it in the interpreter."
+    },
+
+    {
+        "id": 190,
+        "question":"How would you import the hours() function from the zoo module as info and call it?",
+                                                                                                        
+        "options":["import zoo.hours as info\ninfo()",
+        "from zoo import hours as info\ninfo()",
+        "from zoo.hours import info\ninfo()",
+        "import zoo as info\ninfo.hours()"
+        ],
+        "answer":"from zoo import hours as info\ninfo()",
+        "discription":"This option shows the correct way to import the hours() function from the zoo module and rename it as info, then call it in the interpreter."
+    },
+
+    {
+        "id": 191,
+        "question":"How would you create a plain dictionary with the key-value pairs 'a': 1, 'b': 2, and 'c': 3, and print it out?",
+                                                                                                        
+        "options":["my_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(my_dict)",
+        "my_dict = dict('a' = 1, 'b' = 2, 'c' = 3)\nprint(my_dict)",
+        "my_dict = ['a': 1, 'b': 2, 'c': 3]\nprint(my_dict)",
+        "my_dict = ('a': 1, 'b': 2, 'c': 3)\nprint(my_dict)"
+        ],
+        "answer":"my_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(my_dict)",
+        "discription":"This option correctly creates a dictionary with the specified key-value pairs and prints it out. The syntax {} is used to define a dictionary in Python."
+    },
+
+    {
+        "id": 192,
+        "question":"How would you make an OrderedDict called fancy from the key-value pairs 'a': 1, 'b': 2, and 'c': 3, and print it? Did it print in the same order as a plain dictionary?",
+                                                                                                        
+        "options":["from collections import OrderedDict\nfancy = OrderedDict([('a', 1), ('b', 2), ('c', 3)])\nprint(fancy)",
+        "from collections import OrderedDict\nfancy = OrderedDict('a': 1, 'b': 2, 'c': 3)\nprint(fancy)",
+        "fancy = {'a': 1, 'b': 2, 'c': 3}\nprint(fancy)",
+        "from collections import OrderedDict\nfancy = OrderedDict({'a': 1, 'b': 2, 'c': 3})\nprint(fancy)"
+        ],
+        "answer":"from collections import OrderedDict\nfancy = OrderedDict([('a', 1), ('b', 2), ('c', 3)])\nprint(fancy)",
+        "discription":"This option correctly creates an OrderedDict with the specified key-value pairs and prints it. An OrderedDict preserves the order of items as they are added, so it prints in the same order as a plain dictionary (from Python 3.7+)."
+    },
+
+    {
+        "id": 193,
+        "question":"How would you make a defaultdict called dict_of_lists, pass it the argument list, and then append the value 'something for a' to the list dict_of_lists['a'] in one assignment? How would you print dict_of_lists['a']?",
+                                                                                                        
+        "options":["from collections import defaultdict\ndict_of_lists = defaultdict(list)\ndict_of_lists['a'].append('something for a')\nprint(dict_of_lists['a'])",
+        "dict_of_lists = defaultdict(list)\ndict_of_lists['a'] = 'something for a'\nprint(dict_of_lists['a'])",
+        "from collections import defaultdict\ndict_of_lists = defaultdict(list)\ndict_of_lists['a'] = list('something for a')\nprint(dict_of_lists['a'])",
+        "from collections import defaultdict\ndict_of_lists = defaultdict(list)\ndict_of_lists.append('something for a')\nprint(dict_of_lists['a'])"
+        ],
+        "answer":"from collections import defaultdict\ndict_of_lists = defaultdict(list)\ndict_of_lists['a'].append('something for a')\nprint(dict_of_lists['a'])",
+        "discription":"This option correctly creates a defaultdict with list as the default factory, allowing you to append 'something for a' to dict_of_lists['a'] in a single step. The output will be ['something for a'] when printed."
+    },
+
+    {
+        "id": 194,
+        "question":"You have created a class called Thing with no contents and printed it. Then, you created an object called example from this class and printed it as well. Are the printed values of the class and the object the same or different?",
+                                                                                                        
+        "options":["The printed values are the same because both the class and the object have no contents.",
+        "The printed values are different because the class and the object are different entities in memory.",
+        "The printed values are the same because the object is a direct instance of the class.",
+        "The printed values are different because the class has no contents, but the object is an instance of that class."
+        ],
+        "answer":"The printed values are different because the class and the object are different entities in memory.",
+        "discription":"The class Thing and the object example are different entities, so their printed values will reflect their unique memory addresses, making them different."
+    },
+
+    {
+        "id": 195,
+        "question":"You created a new class called Thing2 and added the value 'abc' to the letters class attribute. What should happen when you print Thing2.letters?",
+                                                                                                        
+        "options":["It will raise an error because letters is not a valid attribute.",
+        "It will print None because letters was not assigned correctly.",
+        "It will print abc because letters is a class attribute with the value 'abc'.",
+        "It will print an empty string because the attribute was not initialized."
+        ],
+        "answer":"It will print abc because letters is a class attribute with the value 'abc'.",
+        "discription":"The letters class attribute was correctly assigned the value 'abc', so printing Thing2.letters will output 'abc'."
+    },
+
+    {
+        "id": 196,
+        "question":"You created a class called Thing3 and assigned the value 'xyz' to an instance (object) attribute called letters. How can you print letters, and do you need to create an object from the class to do so?",
+                                                                                                        
+        "options":["No, you can print Thing3.letters directly because letters is a class attribute.",
+        "Yes, you must create an object from Thing3 and print object_name.letters because letters is an instance attribute.",
+        "No, letters is a global variable, so it can be printed directly.",
+        "Yes, but you need to use the class name directly with Thing3.letters."
+        ],
+        "answer":"Yes, you must create an object from Thing3 and print object_name.letters because letters is an instance attribute.",
+        "discription":"Instance attributes like letters in Thing3 require creating an object from the class to access and print their values using object_name.letters."
+    },
+
+    {
+        "id": 197,
+        "question":"You created an Element class with the instance attributes name, symbol, and number. How do you create an object of this class with the values 'Hydrogen', 'H', and 1?",
+                                                                                                        
+        "options":["element = Element['Hydrogen', 'H', 1]",
+        "element = Element('Hydrogen', 'H', 1)",
+        "element = Element.name('Hydrogen').symbol('H').number(1)",
+        "element = Element.create('Hydrogen', 'H', 1)"
+        ],
+        "answer":"element = Element('Hydrogen', 'H', 1)",
+        "discription":"To create an object of the Element class with specific values for name, symbol, and number, you call the class with these values as arguments like Element('Hydrogen', 'H', 1)."
+    },
+
+    {
+        "id": 198,
+        "question":"You have a dictionary with the keys and values 'name': 'Hydrogen', 'symbol': 'H', and 'number': 1. How do you create an object called hydrogen from the Element class using this dictionary?",
+                                                                                                        
+        "options":["hydrogen = Element(name='Hydrogen', symbol='H', number=1)",
+        "hydrogen = Element(**{'name': 'Hydrogen', 'symbol': 'H', 'number': 1})",
+        "hydrogen = Element('Hydrogen', 'H', 1)",
+        "hydrogen = Element.create({'name': 'Hydrogen', 'symbol': 'H', 'number': 1})"
+        ],
+        "answer":"hydrogen = Element(**{'name': 'Hydrogen', 'symbol': 'H', 'number': 1})",
+        "discription":"To create an object from the Element class using a dictionary, you use the ** unpacking operator to pass the dictionary as keyword arguments, like Element(**{'name': 'Hydrogen', 'symbol': 'H', 'number': 1})."
+    },
+
+    {
+        "id": 199,
+        "question":"For the Element class, you need to define a method called dump() that prints the values of the object's attributes (name, symbol, and number). How do you define this method and use it to print the attributes of an object called hydrogen?",
+                                                                                                        
+        "options":["Define dump() as def dump(self): print(self.name, self.symbol, self.number) and call hydrogen.dump().",
+        "Define dump() as def dump(): print(self.name, self.symbol, self.number) and call hydrogen.dump().",
+        "Define dump() as def dump(self): print(name, symbol, number) and call Element.dump(hydrogen).",
+        "Define dump() as def dump(self): print(self['name'], self['symbol'], self['number']) and call hydrogen.dump()."
+        ],
+        "answer":"Define dump() as def dump(self): print(self.name, self.symbol, self.number) and call hydrogen.dump().",
+        "discription":"To define a method dump() in the Element class that prints the object's attributes, use def dump(self): print(self.name, self.symbol, self.number) and then call hydrogen.dump() to display the attributes."
+    },
+
+    {
+        "id": 200,
+        "question":"Call print(hydrogen). In the definition of Element, change the name of method dump to __str__, create a new hydrogen object, and call print(hydrogen) again.",
+                                                                                                        
+        "options":["Change dump() to __str__ as def __str__(self): return f'{self.name}, {self.symbol}, {self.number}' and then call print(hydrogen).",
+        "Change dump() to __str__ as def __str__(self): print(self.name, self.symbol, self.number) and then call print(hydrogen).",
+        "Keep dump() as it is and call print(hydrogen.dump()).",
+        "Define __str__ as def __str__(self): return self.dump() and call print(hydrogen)."
+        ],
+        "answer":"Change dump() to __str__ as def __str__(self): return f'{self.name}, {self.symbol}, {self.number}' and then call print(hydrogen).",
+        "discription":"To customize the output of print(hydrogen), you should redefine the dump() method as __str__. The method __str__ should return a formatted string with the attribute values. After updating the method, calling print(hydrogen) will use __str__ to display the object's attributes."
+    },
+
+    {
+        "id": 201,
+        "question":"Modify Element to make the attributes name, symbol, and number private. Define a getter property for each to return its value.",
+                                                                                                        
+        "options":["Change name, symbol, and number to _name, _symbol, and _number and define properties as @property def name(self): return self._name, @property def symbol(self): return self._symbol, and @property def number(self): return self._number.",
+        "Change name, symbol, and number to _name, _symbol, and _number and define methods get_name(), get_symbol(), and get_number() to return their values.",
+        "Keep name, symbol, and number public and define properties as @property def name(self): return self.name, @property def symbol(self): return self.symbol, and @property def number(self): return self.number.",
+        "Change name, symbol, and number to private attributes and use def get_name(self): return self.name, def get_symbol(self): return self.symbol, and def get_number(self): return self.number."
+        ],
+        "answer":"Change name, symbol, and number to _name, _symbol, and _number and define properties as @property def name(self): return self._name, @property def symbol(self): return self._symbol, and @property def number(self): return self._number.",
+        "discription":"To make attributes private and define getter properties, first rename name, symbol, and number to _name, _symbol, and _number. Then, use the @property decorator to create getter methods that return the values of these private attributes. This approach maintains encapsulation and allows controlled access to the attribute values."
+    },
+
+    {
+        "id": 202,
+        "question":"To define the classes Bear, Rabbit, and Octothorpe, each with a method eats() that returns different strings, how should you implement these classes and use them?",
+                                                                                                        
+        "options":["Define each class with the eats() method returning the specified string. Instantiate each class, call the eats() method on each object, and print the results.",
+        "Define each class with a single eats() method returning None. Instantiate each class, and manually assign the values 'berries', 'clover', and 'campers' to each object before printing.",
+        "Define a single class with an eats() method that takes a parameter. Instantiate this class three times with different parameters and print the results.",
+        "Define each class with the eats() method returning a constant value 'food'. Instantiate each class, call the eats() method on each object, and print the results."
+        ],
+        "answer":"Define each class with the eats() method returning the specified string. Instantiate each class, call the eats() method on each object, and print the results.",
+        "discription":"To implement the classes Bear, Rabbit, and Octothorpe, define an eats() method in each class that returns the specific string ('berries', 'clover', or 'campers'). After creating an instance of each class, call the eats() method on these instances and print the result. This approach ensures each class has a distinct behavior as specified."
+    },
+
+    {
+        "id": 203,
+        "question":"To define the classes Laser, Claw, SmartPhone, and Robot, where each has a method does() returning a specific action and the Robot class aggregates these components, how should you implement the Robot class's does() method?",
+                                                                                                        
+        "options":["Define Laser, Claw, and SmartPhone each with a does() method returning 'disintegrate', 'crush', and 'ring', respectively. In the Robot class, instantiate these objects and call their does() methods within the Robot's does() method, printing the results.",
+        "Define Laser, Claw, and SmartPhone with an action() method instead of does(). In the Robot class, call these methods from the does() method and print the results.",
+        "Define Laser, Claw, and SmartPhone each with a perform() method returning 'disintegrate', 'crush', and 'ring', respectively. In the Robot class, use a single perform() method to print the actions of each component.",
+        "Define Laser, Claw, and SmartPhone each with a does() method returning 'disintegrate', 'crush', and 'ring'. In the Robot class, create a list of these objects and iterate through the list to call and print each does() method result."
+        ],
+        "answer":"Define Laser, Claw, and SmartPhone each with a does() method returning 'disintegrate', 'crush', and 'ring', respectively. In the Robot class, instantiate these objects and call their does() methods within the Robot's does() method, printing the results.",
+        "discription":"To implement the Robot class with components Laser, Claw, and SmartPhone, each having a does() method returning specific actions, you should instantiate these components in the Robot class. Then, within the Robot's does() method, call each component's does() method and print their results to show what each component does. This setup allows the Robot class to utilize and display the functionality of its components."
+    },
+
+    {
+        "id": 204,
+        "question":"To set the variable test1 to the string 'This is a test of the emergency text system,' and save it to a file named test.txt, which of the following methods is correct?",
+                                                                                                        
+        "options":["Open the file test.txt in write mode, write test1 to it, and then close the file.",
+        "Use open('test.txt', 'w') to create the file, and then use write(test1) to save the content, without closing the file.",
+        "Use open('test.txt', 'w') to create the file, write test1 to it with write(), and then use close() on test1.",
+        "Use file('test.txt', 'w').write(test1) to create and write to the file in a single line."
+        ],
+        "answer":"Open the file test.txt in write mode, write test1 to it, and then close the file.",
+        "discription":"To save the string stored in test1 to a file named test.txt, you should open the file in write mode using open('test.txt', 'w'), write the content using write(test1), and then close the file using close(). This ensures that the string is properly written to the file and that resources are released after writing."
+    },
+
+    {
+        "id": 205,
+        "question":"To read the contents of the file test.txt into the variable test2, and determine if there is a difference between test1 and test2, which of the following methods is correct?",
+                                                                                                        
+        "options":["Open test.txt in read mode, read the contents into test2, and then compare test1 and test2.",
+        "Open test.txt in write mode, read the contents into test2, and compare test1 and test2.",
+        "Open test.txt in append mode, read the contents into test2, and then compare test1 and test2.",
+        "Use read('test.txt') to get the contents into test2 and compare it directly with test1."
+        ],
+        "answer":"Open test.txt in read mode, read the contents into test2, and then compare test1 and test2.",
+        "discription":"To read the contents of test.txt into test2, you should open the file in read mode using open('test.txt', 'r'), read the contents into test2 using read(), and then compare test1 and test2. This method ensures that the file is correctly read and its contents are compared as expected."
+    },
+
+    {
+        "id": 206,
+        "question":"Create a CSV file called books.csv by using these lines:\ntitle,author,year\nThe Weirdstone of Brisingamen,Alan Garner,1960\nPerdido Street Station,China Miéville,2000\nThud!,Terry Pratchett,2005\nThe Spellman Files,Lisa Lutz,2007\nSmall Gods,Terry Pratchett,1992",
+                                                                                                        
+        "options":["Open books.csv in write mode, use the write() method to add the lines, and then close the file.",
+        "Use csv.writer to write the header and rows to books.csv by iterating through each line and writing them.",
+        "Use pandas to create a DataFrame with the data and save it as books.csv.",
+        "Open books.csv in append mode, use the write() method to add the lines, and then close the file."
+        ],
+        "answer":"Use csv.writer to write the header and rows to books.csv by iterating through each line and writing them.",
+        "discription":"To create a CSV file, you should use the csv.writer object to handle writing the header and rows correctly. Opening the file in write mode, then using csv.writer to write each row to the file, ensures that the CSV file is formatted correctly with the specified content."
+    },
+
+    {
+        "id": 207,
+        "question":"Use the sqlite3 module to create a SQLite database called books.db, and a table called books with these fields: title (text), author (text), and year (integer).",
+                                                                                                        
+        "options":["import sqlite3\n    conn = sqlite3.connect('books.db')\ncursor = conn.cursor()\ncursor.execute('''\n    CREATE TABLE books (\n        title TEXT,\n        author TEXT,\n        year INTEGER\n    )\n''')\nconn.commit()\nconn.close()",
+        "import sqlite3\n   conn = sqlite3.connect('books.db')\ncursor = conn.cursor()\ncursor.execute('''\n    CREATE DATABASE books.db\n    CREATE TABLE books (\n        title TEXT,\n        author TEXT,\n        year INTEGER\n    )\n''')\nconn.commit()\nconn.close()",
+        "import sqlite3\n   conn = sqlite3.connect('books.db')\ncursor = conn.cursor()\ncursor.execute('''\n    CREATE TABLE books (\n        title TEXT,\n        author TEXT,\n        year TEXT\n    )\n''')\nconn.commit()\nconn.close()",
+        "import sqlite3\n   conn = sqlite3.connect('books.db')\ncursor = conn.cursor()\ncursor.execute('''\n    CREATE TABLE books (\n        title TEXT,\n        author TEXT,\n        year INTEGER\n    )\n''')\nconn.commit()\nconn.disconnect()"
+        ],
+        "answer":"import sqlite3\n    conn = sqlite3.connect('books.db')\ncursor = conn.cursor()\ncursor.execute('''\n    CREATE TABLE books (\n        title TEXT,\n        author TEXT,\n        year INTEGER\n    )\n''')\nconn.commit()\nconn.close()",
+        "discription":"To create a SQLite database and a table using the sqlite3 module, you need to connect to the database, execute a CREATE TABLE statement with the correct field types, commit the changes, and close the connection. Option A correctly performs these steps."
+    },
+
+    {
+        "id": 208,
+        "question":"To read books.csv and insert its data into the book table, which of the following methods is correct?",
+                                                                                                        
+        "options":["Use pandas to read books.csv into a DataFrame and then use df.to_sql('book', connection, if_exists='append') to insert the data into the book table.",
+        "Open books.csv using the csv module, read the contents into a list, and then use INSERT INTO book VALUES(...) for each row to insert the data into the book table.",
+        "Use sqlite3 to read books.csv and use csv.reader() to insert the data into the book table directly.",
+        "Use json to read books.csv and json.load() to insert the data into the book table."
+        ],
+        "answer":"Use pandas to read books.csv into a DataFrame and then use df.to_sql('book', connection, if_exists='append') to insert the data into the book table.",
+        "discription":"Using pandas to read books.csv into a DataFrame and then using the to_sql method to insert the data into the book table is an efficient and straightforward way to handle CSV data and perform database operations."
+    },
+
+    {
+        "id": 209,
+        "question":"To select and print the title column from the book table in alphabetical order, which SQL query would you use?",
+                                                                                                        
+        "options":["SELECT title FROM book ORDER BY title ASC;",
+        "SELECT title FROM book WHERE ORDER BY title;",
+        "SELECT title FROM book ORDER BY title DESC;",
+        "SELECT title FROM book;"
+        ],
+        "answer":"SELECT title FROM book ORDER BY title ASC;",
+        "discription":"To get the title column from the book table in alphabetical order, use the query SELECT title FROM book ORDER BY title ASC;. The ORDER BY title ASC clause sorts the titles in ascending alphabetical order, which is the default sorting order."
+    },
+
+    {
+        "id": 210,
+        "question":"To select and print all columns from the book table in the order of publication, which SQL query should you use?",
+                                                                                                        
+        "options":["SELECT * FROM book ORDER BY publication;",
+        "SELECT * FROM book WHERE publication;",
+        "SELECT * FROM book SORT BY publication;",
+        "SELECT all FROM book ORDER BY publication;"
+        ],
+        "answer":"SELECT * FROM book ORDER BY publication;",
+        "discription":"Option A is correct because it uses the SQL ORDER BY clause to sort all columns (*) of the book table by the publication column. This ensures that the results are displayed in the order of publication."
+    },
+
+    {
+        "id": 211,
+        "question":"How can you use the sqlalchemy module to connect to the sqlite3 database books.db?",
+                                                                                                        
+        "options":["engine = create_engine('sqlite:///books.db')",
+        "engine = create_engine('sqlite3://books.db')",
+        "engine = create_engine('sqlite:///books.db', echo=True)",
+        "engine = connect('sqlite:///books.db')"
+        ],
+        "answer":"engine = create_engine('sqlite:///books.db')",
+        "discription":"To connect to the books.db SQLite database using SQLAlchemy, use create_engine('sqlite:///books.db'). This command initializes the connection to the SQLite database, specifying the path to the database file."
+    },
+
+    {
+        "id": 212,
+        "question":"To install the Redis server and the Python redis library, create a Redis hash called test with fields count (1) and name ('Fester Bestertester'), and then print all the fields for test, which of the following steps is correct?",
+                                                                                                        
+        "options":[" Install Redis and redis library, connect to Redis using Python, create the hash, and use hgetall() to print all fields.",
+        "Install Redis and redis library, create the hash using the Redis CLI, and use redis-cli to print all fields.",
+        "Install Redis and redis library, create the hash using Python print() function, and use print() to display all fields.",
+        " Install Redis and redis library, connect to Redis using Python, create the hash using hset(), and use hkeys() to print all fields."
+        ],
+        "answer":" Install Redis and redis library, connect to Redis using Python, create the hash, and use hgetall() to print all fields.",
+        "discription":"To complete the task, first install the Redis server and Python redis library. Connect to Redis using the Python redis library, create a hash named test with fields count and name using hset(), and then use hgetall() to retrieve and print all fields of the hash."
+    },
+
+    {
+        "id": 213,
+        "question":"To increment the count field of an object named test and print the updated value, which of the following approaches is correct?",
+                                                                                                        
+        "options":["test.count += 1 and then print(test.count)",
+        "test.increment(count) and then print(test.count)",
+        "test.count = test.count + 1 and then print(test.count)",
+        "test.update(count + 1) and then print(test.count)"
+        ],
+        "answer":"test.count += 1 and then print(test.count)",
+        "discription":"To increment the count field of an object, you can use the shorthand operator += to increase the value by 1 and then print it. This is the most straightforward and commonly used method to update and display an object's attribute."
+    }
+    
+]

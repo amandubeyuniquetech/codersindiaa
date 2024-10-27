@@ -1,0 +1,234 @@
+[
+    {"id": 1,
+"question":"What are the two main types of functions in Python?",
+
+"options":["Built-in functions and user-defined functions",
+"Lambda functions and built-in functions",
+"Recursive functions and anonymous functions",
+"Synchronous functions and asynchronous functions"],
+"answer":"Built-in functions and user-defined functions",
+"description":"In Python, functions are primarily categorized into two types: built-in functions (provided by Python, like len() and print()) and user-defined functions (created by the user to perform specific tasks)."
+},
+
+{"id": 2,
+"question":"What is the primary purpose of a function in Python?",
+
+"options":["To store data in a variable",
+"To perform a specific task and improve code reuse",
+"To define a new data type",
+"To create a loop for iteration"],
+"answer":"To perform a specific task and improve code reuse",
+"description":"The primary purpose of a function in Python is to perform a specific task or set of tasks and to improve code reuse by allowing you to define a block of code that can be executed multiple times throughout a program."
+},
+
+{"id": 3,
+"question":"How do you define a function?",
+
+"options":["def function_name(parameters):",
+"function function_name(parameters):",
+"create function_name(parameters):",
+"function_name(parameters):"],
+"answer":"def function_name(parameters):",
+"description":"In Python, a function is defined using the def keyword followed by the function name, parentheses for parameters, and a colon. The function body follows on the next line with proper indentation."
+},
+
+{"id": 4,
+"question":"What is the purpose of the return statement in a function in Python?",
+
+"options":["To stop the execution of a function and return a value to the caller",
+"To display a value on the screen",
+"To define the function’s name",
+"To import a module"],
+"answer":"To stop the execution of a function and return a value to the caller",
+"description":"The return statement is used in a function to stop its execution and send a specified value back to the caller. If no value is provided, it returns None by default."
+},
+
+{"id": 5,
+"question":"Which of the following statements about function arguments in Python is true?",
+
+"options":["All arguments must have default values",
+"Functions cannot have more than one argument",
+"Arguments are passed by value",
+"Arguments can have default values"],
+"answer":"Arguments can have default values",
+"description":"In Python, arguments can have default values, allowing them to be optional when calling the function."
+},
+
+{"id": 6,
+"question":"What will be the output of the following code snippet?\ndef greet(name):\n    print('Hello, ' + name + '!')\ngreet('Alice')",
+
+"options":["Hello, Alice!",
+"Hello, name!",
+"Hello, greet(name)!",
+"Error: greet() missing 1 required positional argument"],
+"answer":"Hello, Alice!",
+"description":"The function greet takes a single argument name and prints a greeting message that includes the value of name. When greet('Alice') is called, it outputs Hello, Alice!."
+},
+
+{"id": 7,
+"question":"What will be the output of the following code snippet?\ndef multiply(*args):\n    result = 1\n    for num in args:\n        result *= num\n    return result\nprint(multiply(2, 3, 4))",
+
+"options":["24",
+"9",
+"6",
+"12"],
+"answer":"24",
+"description":"The multiply function takes a variable number of arguments (*args), multiplies them together, and returns the result. For the input 2, 3, 4, the multiplication is 2 * 3 * 4 = 24."
+},
+
+{"id": 8,
+"question":"How do you define a function that takes one argument and returns its square?",
+
+"options":["def square(x):\n    return x * x",
+"def square(x):\n    return x ** 2",
+"def square(x):\n    return x * x * x",
+"def square(x):\n    return x ^ 2"],
+"answer":"def square(x):\n    return x ** 2",
+"description":"returns the square of the input argument x."
+},
+
+{"id": 9,
+"question":"How can you call a function with keyword arguments?",
+
+"options":["def info(name, age):\n    return f'{name} is {age} years old'\ninfo(name='Alice', age=30)",
+"def info(name, age):\n    return f'{name} is {age} years old'\ninfo('Alice', 30)",
+"def info(name, age=30):\n    return f'{name} is {age} years old'\ninfo('Alice', 30)",
+"def info(name, age):\n    return f'{name} is {age} years old'\ninfo(name='Alice')"],
+"answer":"def info(name, age):\n    return f'{name} is {age} years old'\ninfo(name='Alice', age=30)",
+"description":"correctly demonstrates calling a function with keyword arguments."
+},
+
+{"id": 10,
+"question":"How do you define a function that accepts a variable number of positional arguments?",
+
+"options":["def concat(*args):\n    return ''.join(args)",
+"def concat(args):\n    return ''.join(args)",
+"def concat(args*):\n    return ''.join(args)",
+"def concat(*args):\n    return args"],
+"answer":"def concat(*args):\n    return ''.join(args)",
+"description":"defines a function that accepts a variable number of positional arguments using *args."
+},
+
+{"id": 11,
+"question":"How do you create an anonymous function that returns the double of a number?",
+
+"options":["double = lambda x: x * 2",
+"double = def x * 2",
+"double = lambda x: return x * 2",
+"double = def(x): x * 2"],
+"answer":"double = lambda x: x * 2",
+"description":"defines a lambda function that returns twice the value of x."
+},
+
+{"id": 12,
+"question":"How do you define a recursive function to compute the factorial of a number?",
+
+"options":["def factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)",
+"def factorial(n):\n    if n == 0:\n        return 1\n    return n + factorial(n - 1)",
+"def factorial(n):\n    if n == 1:\n        return 1\n    return n * factorial(n + 1)",
+"def factorial(n):\n    if n == 0:\n        return 1\n    return n / factorial(n - 1)"],
+"answer":"def factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)",
+"description":"defines a recursive function to compute the factorial of a number."
+},
+
+{"id": 13,
+"question":"How do you define a function that returns another function?",
+
+"options":["def outer():\n    def inner():\n        return 'Hello'\n    return inner",
+"def outer():\n    return def inner():\n        return 'Hello'",
+"def outer():\n    def inner():\n        return 'Hello'\n    return inner()",
+"def outer():\n    return 'Hello'"],
+"answer":"def outer():\n    def inner():\n        return 'Hello'\n    return inner",
+"description":"defines a function outer that returns another function inner."
+},
+
+{"id": 14,
+"question":"How should a function be defined if it has both default and non-default arguments?",
+
+"options":["def example(a, b=2):\n    return a + b",
+"def example(a=2, b):\n    return a + b",
+"def example(a=2, b=3, c):\n    return a + b + c",
+"def example(a, b):\n    return a + b"],
+"answer":"def example(a, b=2):\n    return a + b",
+"description":"defines a function with a non-default argument (a) before a default argument (b)."
+},
+
+{"id": 15,
+"question":"What will be the output of the following code?\ndef append_to_list(value, lst=[]):\n    lst.append(value)\n    return lst\nprint(append_to_list(1))\nprint(append_to_list(2))",
+
+"options":["[1]\n[2]",
+"[1]\n[1, 2]",
+"[1]\n[2]",
+"[2]\n[2]"],
+"answer":"[1]\n[1, 2]",
+"description":"where the default mutable argument lst retains changes across function calls."
+},
+
+{"id": 16,
+"question":"How do you define a function that takes both variable positional and keyword arguments?",
+
+"options":["def example(*args, **kwargs):\n    pass",
+"def example(*args):\n    pass\ndef example(**kwargs):\n    pass",
+"def example(args, kwargs):\n    pass",
+"def example(*args):\n    def inner(**kwargs):\n        pass"],
+"answer":"def example(*args, **kwargs):\n    pass",
+"description":"defines a function that accepts both variable positional (*args) and keyword (**kwargs) arguments."
+},
+
+{"id": 17,
+"question":"What will be the output of the following code?\ndef add(a, b):\n    return a + b\ndef multiply(a, b):\n    return add(a, b) * 2\nprint(multiply(2, 3))",
+
+"options":["10",
+"12",
+"6",
+"8"],
+"answer":"12",
+"description":"The multiply function calls add(2, 3) which returns 5, and then multiplies it by 2 to get 10."
+},
+
+{"id": 18,
+"question":"What is the return value of a function that does not explicitly use a return statement?",
+
+"options":["None",
+"0",
+"''",
+"False"],
+"answer":"None",
+"description":"a function without an explicit return statement returns None."
+},
+
+{"id": 18,
+"question":"What is the scope of a variable defined inside a function?",
+
+"options":["Local to the function",
+"Global",
+"Class-level",
+"Module-level"],
+"answer":"Local to the function",
+"description":"Variables defined inside a function are local to that function and cannot be accessed outside it."
+},
+
+
+{"id": 19,
+"question":"How do you modify a global variable inside a function?",
+
+"options":["global_var = 10\ndef modify_global():\n    global global_var\n    global_var = 20",
+"global_var = 10\ndef modify_global():    global_var = 20",
+"global_var = 10\ndef modify_global():\n    global global_var\n    global_var += 10",
+"def modify_global():\n    global global_var\n    global_var = global_var + 10"],
+"answer":"global_var = 10\ndef modify_global():\n    global global_var\n    global_var = 20",
+"description":"uses the global keyword to modify a global variable inside the function."
+},
+
+{"id": 20,
+"question":"How do you define a function that takes both variable positional and keyword arguments?",
+
+"options":["def example(*args, **kwargs):\n    pass",
+"def example(*args):\n    pass\ndef example(**kwargs):\n    pass",
+"def example(args, kwargs):\n    pass",
+"def example(*args):\n    def inner(**kwargs):\n        pass"],
+"answer":"def example(*args, **kwargs):\n    pass",
+"description":"A correctly defines a function that accepts both variable positional (*args) and keyword (**kwargs) arguments."
+}
+
+]

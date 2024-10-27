@@ -1,0 +1,271 @@
+[
+  {
+    "id": 1,
+    "question": "What is the purpose of the try statement in Python?",
+    "optionsCode": [],
+    "optionsText": [
+      "To loop through a sequence of items.",
+      "To define functions and methods.",
+      "To handle exceptions and errors in code.",
+      "To import modules from external libraries."
+    ],
+    "answer": "To handle exceptions and errors in code.",
+    "discription": "The try statement in Python is used to handle exceptions and errors that may occur during the execution of a program. It allows you to test a block of code for errors and provides a way to handle them gracefully, preventing the program from crashing. If an error occurs, the code in the except block is executed."
+  },
+
+  {
+    "id": 2,
+    "question": "In 3.X, how do you put non-ASCII Unicode characters in a string?",
+    "optionsCode": [],
+    "optionsText": [
+      "Prefix the string with u",
+      "Prefix the string with b",
+      "Use double quotes ' '",
+      "Use backslashes \\ before each non-ASCII character"
+    ],
+    "answer": "Prefix the string with u",
+    "discription": "In Python 3.x, you can include non-ASCII Unicode characters directly in a string without needing any special prefixes. However, prefixing with u (e.g., u'string') is a legacy from Python 2.x and is still valid in Python 3.x for Unicode strings."
+  },
+
+  {
+    "id": 3,
+    "question": "In Python 3.X, what are the key differences between text-mode and binary-mode files?",
+    "optionsCode": [],
+    "optionsText": [
+      "Text-mode files handle strings as sequences of bytes, while binary-mode files handle strings as sequences of characters.",
+      "Text-mode files automatically handle newline conversions, while binary-mode files do not.",
+      "Binary-mode files automatically encode and decode text, while text-mode files require manual encoding.",
+      "Text-mode files can only read data, while binary-mode files can only write data."
+    ],
+    "answer": "Text-mode files automatically handle newline conversions, while binary-mode files do not.",
+    "discription": "In Python 3.X, when working with text-mode files ('t' mode), the system automatically handles newline characters, converting them to '\n' in text mode. In contrast, binary-mode files ('b' mode) read and write data as raw bytes, without any newline or encoding conversions."
+  },
+
+  {
+    "id": 4,
+    "question": "How much of an effect does the change in string types in Python 3.X have on your code?",
+    "optionsCode": [],
+    "optionsText": [
+      "No effect, all string handling is the same.",
+      "Minimal effect, only a few minor adjustments needed.",
+      "Significant effect, especially in handling text vs. binary data.",
+      "It makes Python incompatible with older versions."
+    ],
+    "answer": "Significant effect, especially in handling text vs. binary data.",
+    "discription": "In Python 3.X, strings are Unicode by default, which leads to significant changes when handling text and binary data. This requires careful handling, especially when interacting with external data sources, to avoid encoding/decoding errors."
+  },
+
+  {
+    "id": 5,
+    "question": "Does using the += operator to concatenate strings violate Python's string immutability? Why or why not?",
+    "optionsCode": [],
+    "optionsText": [
+      "Yes, because += changes the original string in place.",
+      "No, because += creates a new string each time it is used.",
+      "Yes, because += modifies the string object directly, which is allowed with immutable types.",
+      "No, because += is a special case that allows modification of immutable objects."
+    ],
+    "answer": "No, because += creates a new string each time it is used.",
+    "discription": " In Python, strings are immutable, so using += to concatenate strings creates a new string rather than modifying the original one."
+  },
+
+  {
+    "id": 6,
+    "question": "In Python, how many different ways are there to index a character?",
+    "optionsCode": [],
+    "optionsText": [
+      "One way: using positive indices.",
+      "Two ways: using positive and negative indices.",
+      "Three ways: using positive, negative, and zero-based indices.",
+      "Four ways: using positive, negative, zero-based, and string slicing."
+    ],
+    "answer": "Two ways: using positive and negative indices.",
+    "discription": "Python allows indexing characters in a string using both positive and negative indices, providing two different ways to access characters."
+  },
+
+  {
+    "id": 7,
+    "question": "What is the relationship between indexing and slicing?",
+    "optionsCode": [],
+    "optionsText": [
+      "Indexing retrieves a single element, while slicing retrieves a sub-sequence of elements.",
+      "Indexing and slicing are interchangeable methods for retrieving data from sequences.",
+      "Indexing modifies elements, while slicing only reads data.",
+      "Indexing retrieves a sub-sequence, while slicing retrieves a single element."
+    ],
+    "answer": "Indexing retrieves a single element, while slicing retrieves a sub-sequence of elements.",
+    "discription": "Indexing retrieves a single element from a sequence, while slicing retrieves a range of elements."
+  },
+
+  {
+    "id": 8,
+    "question": "What is the relationship between string and character 'types' in Python?",
+    "optionsCode": [],
+    "optionsText": [
+      "A string is a sequence of characters, but there is no distinct character type in Python.",
+      "A character is a special type of string with only one character, while a string can contain multiple characters.",
+      "Characters in Python are represented as a distinct type, and strings are collections of these characters.",
+      "Strings are a collection of numbers, while characters are treated as separate data types in Python."
+    ],
+    "answer": "A string is a sequence of characters, but there is no distinct character type in Python.",
+    "discription": "In Python, a string is a sequence of characters, and individual characters are just strings of length 1; there is no separate character type."
+  },
+
+  {
+    "id": 9,
+    "question": "How do you slice a list to get every other element, like the first, third, fifth, seventh, and so on?",
+    "optionsCode": [],
+    "optionsText": ["list[1::2]", "list[::2]", "list[::-2]", "list[2::2]"],
+    "answer": "list[::2]",
+    "discription": "Using list[::2] slices the list to include every other element, starting from the first element."
+  },
+
+  {
+    "id": 10,
+    "question": "Explain the distinctions between indexing and slicing",
+    "optionsCode": [],
+    "optionsText": [
+      "Indexing retrieves a single element, while slicing returns a sequence of elements.",
+      "Indexing can only be used with lists, but slicing works with all sequences.",
+      "Indexing modifies elements directly, while slicing creates a copy of the sequence.",
+      "Indexing requires a start and end position, while slicing requires only an index."
+    ],
+    "answer": "Indexing retrieves a single element, while slicing returns a sequence of elements.",
+    "discription": "Indexing retrieves one specific element from a sequence, while slicing returns a portion of the sequence, which can include multiple elements."
+  },
+
+  {
+    "id": 11,
+    "question": "What happens if one of the slicing expression's indexes is out of range?",
+    "optionsCode": [],
+    "optionsText": [
+      "An IndexError is raised immediately.",
+      "The slice operation returns an empty list.",
+      "The slice adjusts the index to the nearest valid position.",
+      "The slice operation returns None."
+    ],
+    "answer": "The slice adjusts the index to the nearest valid position.",
+    "discription": "Slicing with out-of-range indexes is adjusted to the nearest valid position, preventing errors."
+  },
+
+  {
+    "id": 12,
+    "question": "If you pass a list to a function, and if you want the function to be able to change the values of the list—so that the list is different after the function returns—what action should you avoid?",
+    "optionsCode": [],
+    "optionsText": [
+      "Avoid modifying the list elements directly within the function.",
+      "Avoid passing the list as an argument to the function.",
+      "Avoid reassigning the list to a new list inside the function.",
+      "Avoid using list comprehension within the function."
+    ],
+    "answer": "Avoid reassigning the list to a new list inside the function.",
+    "discription": "Reassigning the list inside the function creates a local copy, preventing changes to the original list."
+  },
+
+  {
+    "id": 13,
+    "question": "Is an assignment operator like += only for show? Is it possible that it would lead to faster results at the runtime?",
+    "optionsCode": [],
+    "optionsText": [
+      "+= is only for show and does not impact runtime performance.",
+      "+= can lead to faster results at runtime because it can reduce the number of operations needed compared to using = with addition.",
+      "+= is slower than using = because it involves extra steps in the computation.",
+      "+= has no impact on performance and is purely a syntactical convenience."
+    ],
+    "answer": "+= can lead to faster results at runtime because it can reduce the number of operations needed compared to using = with addition.",
+    "discription": "+= can be faster at runtime because it combines addition and assignment into a single operation, reducing the number of steps compared to separate addition and assignment."
+  },
+
+  {
+    "id": 14,
+    "question": "In Python, what is the most effective way to set a list of 100 integers to 0?",
+    "optionsCode": [],
+    "optionsText": [
+      "Using a loop: for i in range(100): my_list[i] = 0",
+      "Using list comprehension: [0 for _ in range(100)]",
+      "Using map: list(map(lambda x: 0, range(100)))",
+      "Using append method in a loop: my_list = []; for _ in range(100): my_list.append(0)"
+    ],
+    "answer": "Using list comprehension: [0 for _ in range(100)]",
+    "discription": "List comprehension is the most effective way to create a list of 100 integers set to 0 in Python, offering both conciseness and efficiency."
+  },
+
+  {
+    "id": 15,
+    "question": "What is the most effective way to initialise a list of 99 integers that repeats the sequence 1, 2, 3? S If necessary, show step-by-step instructions on how to accomplish this",
+    "optionsCode": [],
+    "optionsText": [
+      "Use a for loop to append the sequence 1, 2, 3 33 times.",
+      "Manually type out the sequence 1, 2, 3 33 times.",
+      "Use list comprehension with the expression [1, 2, 3] * 33.",
+      "Initialize an empty list and use while loop to append values."
+    ],
+    "answer": "Use list comprehension with the expression [1, 2, 3] * 33.",
+    "discription": "The expression [1, 2, 3] * 33 effectively initializes a list by repeating the sequence 1, 2, 3 33 times, resulting in a concise and efficient solution."
+  },
+
+  {
+    "id": 16,
+    "question": "What is the one improvement that must be made to a function in order for it to become a generator function in the Python language?",
+    "optionsCode": [],
+    "optionsText": [
+      "Add a return statement",
+      "Add the yield keyword",
+      "Change the function name to include 'gen'",
+      "Include a for loop inside the function"
+    ],
+    "answer": "Add the yield keyword",
+    "discription": "To make a function a generator in Python, you must use the yield keyword instead of return."
+  },
+
+  {
+    "id": 17,
+    "question": "What is the maximum possible length of an identifier in most programming languages?",
+    "optionsCode": [],
+    "optionsText": [
+      "32 characters",
+      "64 characters",
+      "128 characters",
+      "No fixed limit"
+    ],
+    "answer": "No fixed limit",
+    "discription": "Most modern programming languages do not have a fixed limit on identifier length, allowing identifiers to be very long, although practical limits may be imposed by compilers or language standards."
+  },
+
+  {
+    "id": 18,
+    "question": " What is the benefit of regular expressions?",
+    "optionsCode": [],
+    "optionsText": [
+      "They allow for the creation of complex data structures.",
+      "They simplify file I/O operations.",
+      "They provide a powerful way to search and manipulate text based on patterns.",
+      "They optimize algorithm performance for numerical calculations."
+    ],
+    "answer": "They provide a powerful way to search and manipulate text based on patterns.",
+    "discription": "Regular expressions offer a powerful method for searching and manipulating text by using pattern-based matching."
+  },
+
+  {
+    "id": 19,
+    "question": "Define the relationship between a class and its instances. Is it a one-to-one or a one-to-many partnership, for example?",
+    "optionsCode": [],
+    "optionsText": ["One-to-one", "One-to-many", "Many-to-many", "Many-to-one"],
+    "answer": "One-to-many",
+    "discription": "The relationship between a class and its instances is one-to-many, meaning a single class can create multiple unique instances."
+  },
+
+  {
+    "id": 20,
+    "question": "What kind of data is held only in an instance?",
+    "optionsCode": [],
+    "optionsText": [
+      "Class variables",
+      "Instance variables",
+      "Global variables",
+      "Static variables"
+    ],
+    "answer": "Instance variables",
+    "discription": "Instance variables store data that is unique to each individual instance of a class, differentiating them from other types of variables."
+  }
+]

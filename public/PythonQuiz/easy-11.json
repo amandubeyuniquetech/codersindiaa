@@ -1,0 +1,273 @@
+[
+  {
+    "id": 1,
+    "question": "In the list below, which of them are values and which are expressions?\nA value can be an integer or string, while an expression involves mathematical operators.",
+    "optionsCode": [],
+    "optionsText": [
+      "\"Hello\" and 42 are values, 7 + 3 and 9 * 5 are expressions.",
+      "42 and 9 * 5 are values, \"Hello\" and 7 + 3 are expressions.",
+      "7 + 3 and \"Hello\" are values, 42 and 9 * 5 are expressions.",
+      "42 and 7 + 3 are values, \"Hello\" and 9 * 5 are expressions]"
+    ],
+
+    "answer": "\"Hello\" and 42 are values, 7 + 3 and 9 * 5 are expressions.",
+    "discription": "Option A: 12 and 'cat' are values; 5 + 7 and 'dog' + 'house' are expressions.\nOption B: 3.14, 'apple', and 50 are values; 20 / 4 is an expression.\nOption C: 100 and 'hello' are values; 8 * 2 and 7 - 3 are expressions.\nOption D: 42, 'tree', and 15 are values; 'car' + 'pet' is an expression."
+  },
+
+  {
+    "id": 2,
+    "question": "What is the difference between a string and a variable?",
+    "optionsCode": [],
+    "optionsText": [
+      "A string is a type of data representing text, while a variable is a storage location for data that can change.",
+      "A string is a storage location for data that can change, while a variable is a type of data representing text.",
+      "A string is a number, while a variable is a text.",
+      "A string is a number, while a variable is a text."
+    ],
+    "answer": "A string is a type of data representing text, while a variable is a storage location for data that can change.",
+    "discription": "A string represents textual data, while a variable is used to store data that can be updated or changed during program execution."
+  },
+
+  {
+    "id": 3,
+    "question": "Which of the following options correctly describes three different data types?",
+    "optionsCode": [],
+    "optionsText": [
+      "Integer, Float, and Boolean",
+      "String, Function, and Class",
+      "List, Dictionary, and Module",
+      "Operator, Loop, and Condition"
+    ],
+    "answer": "Integer, Float, and Boolean",
+    "discription": "Integer, Float, and Boolean are all fundamental data types. An integer represents whole numbers, a float represents decimal numbers, and a boolean represents true/false values."
+  },
+
+  {
+    "id": 4,
+    "question": "What is an expression made up of, and what do all expressions do?",
+    "optionsCode": [],
+    "optionsText": [
+      "An expression is made up of variables and functions, and all expressions store data.",
+      "An expression is made up of constants and keywords, and all expressions print output.",
+      "An expression is made up of variables, constants, and operators, and all expressions evaluate to a value.",
+      "An expression is made up of loops and conditions, and all expressions control the flow of the program."
+    ],
+    "answer": "An expression is made up of variables, constants, and operators, and all expressions evaluate to a value.",
+    "discription": "Expressions consist of variables, constants, and operators, and they always evaluate to a value, such as a number or a string."
+  },
+
+  {
+    "id": 5,
+    "question": "In assignment statements like spam = 10, what is the difference between an expression and a statement?",
+    "optionsCode": [],
+    "optionsText": [
+      "An expression assigns a value, while a statement evaluates to a value.",
+      "An expression performs an action, while a statement represents a value.",
+      "An expression evaluates to a value, while a statement performs an action.",
+      "An expression and a statement are the same and can be used interchangeably."
+    ],
+    "answer": "An expression evaluates to a value, while a statement performs an action.",
+    "discription": "An expression produces a value, like 10, while a statement, such as an assignment (spam = 10), performs an action in the program."
+  },
+
+  {
+    "id": 6,
+    "question": "After running the following code, what does the variable bacon contain?\n bacon = 22\n bacon + 1",
+    "optionsCode": [],
+    "optionsText": ["22", "23", "24", "21"],
+    "answer": "22",
+    "discription": "The statement bacon + 1 evaluates to 23, but it does not change the value of bacon. The value of bacon remains 22."
+  },
+
+  {
+    "id": 7,
+    "question": "What should the values of the following two terms be?\n 'spam' + 'spamspam'\n 'spam' * 3",
+    "optionsCode": [],
+    "optionsText": [
+      "spamspamspam and spamspamspam",
+      "spamspamspam and spam3",
+      "spamspam and spamspamspam",
+      "spamspamspam and spamspam"
+    ],
+    "answer": "spamspamspam and spamspamspam",
+    "discription": "spam + spamspam concatenates the two strings, resulting in spamspamspam.\nspam * 3 repeats the string 'spam' three times, also resulting in spamspamspam."
+  },
+
+  {
+    "id": 8,
+    "question": "Why is eggs a valid variable name while 100 is invalid?",
+    "optionsCode": [],
+    "optionsText": [
+      "Variable names must be in lowercase, and 100 is not.",
+      "Variable names can only contain letters, and 100 is a number",
+      "Variable names must start with a letter or an underscore, and 100 starts with a number.",
+      "Variable names cannot contain numbers, and eggs does not."
+    ],
+    "answer": "Variable names must start with a letter or an underscore, and 100 starts with a number.",
+    "discription": "Variable names must start with a letter or an underscore."
+  },
+
+  {
+    "id": 9,
+    "question": "What three functions can be used to get the integer, floating-point number, or string version of a value?",
+    "optionsCode": [],
+    "optionsText": [
+      "int(), float(), str()",
+      "integer(), floating(), string()",
+      "getInt(), getFloat(), getString()",
+      "convertInt(), convertFloat(), convertString()"
+    ],
+    "answer": "int(), float(), str()",
+    "discription": "int() converts a value to an integer.\n float() converts a value to a floating-point number.\n str() converts a value to a string."
+  },
+
+  {
+    "id": 10,
+    "question": "Why does this expression cause an error? How can you fix it?\n ' I have eaten '  + 99 + ' burritos.'",
+    "optionsCode": [],
+    "optionsText": [
+      "The expression causes an error because 99 is an integer, and you can fix it by converting 99 to a string.",
+      "The expression causes an error because there are no spaces, and you can fix it by adding spaces between the strings and the number.",
+      "The expression causes an error because it uses single quotes, and you can fix it by using double quotes.",
+      "The expression causes an error because the strings are too long, and you can fix it by shortening the strings."
+    ],
+    "answer": "The expression causes an error because 99 is an integer, and you can fix it by converting 99 to a string.",
+    "discription": "The error occurs because you cannot concatenate a string and an integer directly."
+  },
+
+  {
+    "id": 11,
+    "question": "What are the two values of the Boolean data type? How do you write them?",
+    "optionsCode": [],
+    "optionsText": [
+      "Yes and No; written as yes and no",
+      "True and False; written as True and False",
+      "1 and 0; written as one and zero",
+      "On and Off; written as on and off"
+    ],
+    "answer": "True and False; written as True and False",
+    "discription": "The Boolean data type has two values: True and False.\n These values are written with an initial capital letter in Python and many other programming languages."
+  },
+
+  {
+    "id": 12,
+    "question": "What are the three different types of Boolean operators?",
+    "optionsCode": [],
+    "optionsText": [
+      "AND, OR, XOR",
+      "AND, OR, NOT",
+      "IF, ELSE, ELIF",
+      "TRUE, FALSE, NONE"
+    ],
+    "answer": "AND, OR, NOT",
+    "discription": "The three different types of Boolean operators are AND, OR, and NOT.\nAND returns True if both operands are true.\nOR returns True if at least one operand is true.\nNOT returns the opposite of the operand's boolean value."
+  },
+
+  {
+    "id": 13,
+    "question": "What are the values of the following expressions?\n (5 > 4) and (3 == 5)\n not (5 > 4)\n (5 > 4) or (3 == 5)\n not ((5 > 4) or (3 == 5))\n (True and True) and (True == False)\n (not False) or (not True)",
+    "optionsCode": [],
+    "optionsText": [
+      "True,False,True,False,False,True",
+      "False,True,False,True,True,False",
+      "False,False,True,False,False,True",
+      "True,True,False,True,True,False"
+    ],
+    "answer": "False,False,True,False,False,True",
+    "discription": "(5 > 4) and (3 == 5) evaluates to False because 3 == 5 is False.\nnot (5 > 4) evaluates to False because 5 > 4 is True.\n(5 > 4) or (3 == 5) evaluates to True because 5 > 4 is True.\nnot ((5 > 4) or (3 == 5)) evaluates to False because (5 > 4) or (3 == 5) is True.\n(True and True) and (True == False) evaluates to False because True == False is False.\n(not False) or (not True) evaluates to True because not False is True."
+  },
+
+  {
+    "id": 14,
+    "question": "What are the six comparison operators?",
+    "optionsCode": [],
+    "optionsText": [
+      "<, >, =, <=, >=, !=",
+      "==, !=, <, <=, >, >=",
+      "=, !=, <>, <=, >=, ><",
+      "==, !=, <>, <=, >=, ><"
+    ],
+    "answer": "==, !=, <, <=, >, >=",
+    "discription": "== : Equal to\n!= : Not equal to\n< : Less than\n<= : Less than or equal to\n> : Greater than\n>= : Greater than or equal to"
+  },
+
+  {
+    "id": 15,
+    "question": "How do you tell the difference between the equal to and assignment operators?\nDescribe a condition and when you would use one.",
+    "optionsCode": [],
+    "optionsText": [
+      "'==' is used for comparison; '=' is used for assignment. Example: if x == 5: to check if x is 5, x = 5 to set x to 5.",
+      "'=' is used for comparison; '==' is used for assignment. Example: if x = 5: to check if x is 5, x == 5 to set x to 5.",
+      "'==' and '=' are both used for comparison and assignment. Example: if x == 5: and x = 5 can be used interchangeably.",
+      "'==' is used for arithmetic operations; '=' is used for comparison. Example: if x == 5: to perform arithmetic, x = 5 to compare."
+    ],
+    "answer": "'==' is used for comparison; '=' is used for assignment. Example: if x == 5: to check if x is 5, x = 5 to set x to 5.",
+    "discription": "'==' is used to compare two values to see if they are equal.\n'=' is used to assign a value to a variable."
+  },
+
+  {
+    "id": 16,
+    "question": "Identify the three blocks in the following code:\nspam = 0\nif spam == 10:\nprint('eggs')\nif spam > 5:\nprint('bacon')\nelse:\nprint('ham')\nprint('spam')",
+    "optionsText": [],
+    "optionsCode": [
+      "spam = 0\nif spam == 11:\n    print('eggs')\nif spam > 5:\n    print('bacon')\nelse:\n    print('ham')\nprint('spam')",
+      "spam = 0\nif spam == 1:\n    print('eggs')\nif spam > 5:\n    print('bacon')\nelse:\n    print('ham')\nprint('spam')",
+      "spam = 0\nif spam == 10:\n    print('eggs')\nif spam > 5:\n    print('bacon')\nelse:\nprint('ham')\nprint('spam')",
+      "spam = 0\nif spam == 10:\n    print('eggs')\nif spam > 5:\n    print('bacon')\nelse:\n    print('ham')\nprint('spam')"
+    ],
+    "answer": "spam = 0\nif spam == 10:\n    print('eggs')\nif spam > 5:\n    print('bacon')\nelse:\n    print('ham')\nprint('spam')",
+    "discription": "The first block is the assignment statement: spam = 0.\nThe second block includes the if statement: if spam == 10: print('eggs').\nThe third block includes the if statement with else and the remaining print statements: if spam > 5: print('bacon')\nelse: print('ham') and\nprint('spam')\nprint('spam')."
+  }
+  ,
+
+  {
+    "id": 17,
+    "question": "Which code snippet correctly implements the following logic?\n Print Hello if 1 is stored in spam.\n Print Howdy if 2 is stored in spam.\n Print Greetings! if anything else is stored in spam.",
+    "optionsText": [],
+    "optionsCode": [
+     "spam = 3\nif spam == 1:\n    print('Hello')\nelif spam == 2:\n    print('Howdy')\nelse:\n    print('Greetings!')",
+    "spam = 1\nif spam == 2:\n    print('Howdy')\nelif spam == 1:\n    print('Hello')\nelse:\n    print('Greetings!')",
+    "spam = 2\nif spam == 1:\n    print('Hello')\nelif spam == 3:\n    print('Howdy')\nelse:\n    print('Greetings!')",
+    "spam = 1\nif spam == 1:\n    print('Hello')\nif spam == 2:\n    print('Howdy')\nelse:\n    print('Greetings!')"
+    ],
+    "answer": "spam = 3\nif spam == 1:\n    print('Hello')\nelif spam == 2:\n    print('Howdy')\nelse:\n    print('Greetings!')",
+    "discription": "Option A correctly uses if, elif, and else to handle the three conditions: spam being 1, 2, or anything else."
+  },
+
+  {
+    "id": 18,
+    "question": "If your program is stuck in an endless loop, which keys should you press to stop it?",
+    "optionsCode": [],
+    "optionsText": ["Ctrl + S", "Ctrl + C", "Alt + F4", "Esc"],
+    "answer": "Ctrl + C",
+    "discription": "Ctrl + C is used to interrupt and stop a running program or command in many terminal environments."
+  },
+
+  {
+    "id": 19,
+    "question": "How can you tell the difference between break and continue?",
+    "optionsCode": [],
+    "optionsText": [
+      "break exits the current loop entirely; continue skips the current iteration and continues with the next iteration of the loop.",
+      "break skips the current iteration and continues with the next iteration; continue exits the current loop entirely.",
+      "break is used to pause the loop; continue is used to exit the loop.",
+      "break restarts the loop from the beginning; continue exits the loop."
+    ],
+    "answer": "break exits the current loop entirely; continue skips the current iteration and continues with the next iteration of the loop.",
+    "discription": "break is used to terminate the entire loop when a condition is met.\ncontinue is used to skip the rest of the current loop iteration and proceed with the next iteration."
+  },
+
+  {
+    "id": 20,
+    "question": "In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?",
+    "optionsCode": [],
+    "optionsText": [
+      "range(10) and range(0, 10) are the same, and range(0, 10, 1) includes an extra step in the sequence.",
+      "range(10) and range(0, 10) both generate numbers from 0 to 9; range(0, 10, 1) does the same but explicitly specifies a step of 1.",
+      "range(10) starts at 10 and goes to 0; range(0, 10) starts at 0 and goes to 10; range(0, 10, 1) is incorrect.",
+      "range(10) includes the number 10; range(0, 10) includes numbers from 0 to 10; range(0, 10, 1) skips every other number."
+    ],
+    "answer": "range(10) and range(0, 10) both generate numbers from 0 to 9; range(0, 10, 1) does the same but explicitly specifies a step of 1.",
+    "discription": "range(10) generates numbers from 0 to 9.\nrange(0, 10) also generates numbers from 0 to 9, specifying the start and stop values.\nrange(0, 10, 1) generates numbers from 0 to 9 with a step of 1, making it explicitly clear that the increment is 1."
+  }
+]

@@ -1,0 +1,2619 @@
+[
+    {
+        "id": 1,
+        "question":"What happens to variables in a local scope when the function call returns?",
+                                                                                                        
+        "options":["They are preserved and can be accessed outside the function.",
+        "They are deleted and cannot be accessed outside the function.",
+        "They are converted to global variables.",
+        "They are stored in memory until the program ends."
+        ],
+        "answer":"They are deleted and cannot be accessed outside the function.",
+        "discription":"When a function call returns, the local scope is destroyed, and all variables defined within that local scope are deleted. They cannot be accessed outside the function."
+    },
+    
+    
+    {
+        "id": 2,
+        "question":"What is the concept of a return value? Is it possible to have a return value in an expression?",
+                                                                                                        
+        "options":["A return value is the value that a function outputs. It is not possible to use a return value in an expression.",
+        "A return value is the value that a function receives as input. It is possible to use a return value in an expression.",
+        "A return value is the value that a function outputs. It is possible to use a return value in an expression.",
+        "A return value is the value that a function uses to determine its flow. It is not possible to use a return value in an expression."
+        ],
+        "answer":"A return value is the value that a function outputs. It is possible to use a return value in an expression.",
+        "discription":"A return value is the result that a function produces and sends back to the caller.\nThis return value can be used in expressions, allowing it to be further processed or utilized in the program."
+    },
+
+    {
+        "id": 3,
+        "question":"What does the statement import areallyourpetsnamederic do?",
+                                                                                                        
+        "options":["It imports a built-in Python module named areallyourpetsnamederic.",
+        "It creates a new module named areallyourpetsnamederic.",
+        "It imports a module named areallyourpetsnamederic, assuming such a module exists.",
+        "It causes a syntax error because areallyourpetsnamederic is not a valid module name."
+        ],
+        "answer":"It imports a module named areallyourpetsnamederic, assuming such a module exists.",
+        "discription":"The statement import areallyourpetsnamederic attempts to import a module with the name areallyourpetsnamederic. If such a module exists in the Python path, it will be imported without errors. Otherwise, an ImportError will occur."
+    },
+
+    {
+        "id": 4,
+        "question":"What can you do to save a program from crashing if it encounters an error?",
+                                                                                                        
+        "options":["Use the pass statement in your code.",
+        "Use comments to skip over the error-prone code.",
+        "Use error handling with try and except blocks.",
+        "Use error handling with try and except blocks."
+        ],
+        "answer":"Use error handling with try and except blocks.",
+        "discription":"By using try and except blocks, you can catch exceptions and handle errors gracefully, preventing the program from crashing. This allows you to provide alternative behavior or informative messages when errors occur."
+    },
+
+    {
+        "id": 5,
+        "question":"How do you distinguish between copy.copy() and copy.deepcopy() in Python?",
+                                                                                                        
+        "options":["copy.copy() creates a shallow copy, while copy.deepcopy() creates a deep copy.",
+        "copy.copy() copies the list, while copy.deepcopy() copies the tuple.",
+        "copy.copy() creates a deep copy, while copy.deepcopy() creates a shallow copy.",
+        "copy.copy() copies only the first level of elements, while copy.deepcopy() does not copy elements at all."
+        ],
+        "answer":"copy.copy() creates a shallow copy, while copy.deepcopy() creates a deep copy.",
+        "discription":"copy.copy() creates a shallow copy of an object, meaning it copies the object itself but not the nested objects. copy.deepcopy() creates a deep copy of an object, meaning it copies the object as well as all nested objects, resulting in a completely independent copy."
+    },
+
+    {
+        "id": 6,
+        "question":"What is a shortcut for the following code?\nif 'color' not in spam:\nspam['color'] = 'black'\n",
+                                                                                                        
+        "options":["spam['color'] = spam.get('color', 'black')",
+        "spam.setdefault('color', 'black')",
+        "spam.update({'color': 'black'})",
+        "spam['color'] == 'black'"
+        ],
+        "answer":"spam.setdefault('color', 'black')",
+        "discription":"The setdefault() method provides a shortcut for the given code. It checks if the key 'color' exists in the dictionary spam. If the key does not exist, it adds 'color' with the value 'black'. If the key already exists, it does nothing and leaves the existing value unchanged."
+    },
+
+    {
+        "id": 7,
+        "question":"How do you 'pretty print' dictionary values using which module and function in Python?",
+                                                                                                        
+        "options":["Using the print() function from the sys module.",
+        "Using the pprint() function from the pprint module.",
+        "Using the format() function from the string module.",
+        "Using the dump() function from the json module."
+        ],
+        "answer":"Using the pprint() function from the pprint module.",
+        "discription":"The pprint module provides the pprint() function, which is used to 'pretty print' dictionary values in a more readable format, especially when dealing with nested or large dictionaries."
+    },
+
+    {
+        "id": 8,
+        "question":"What are the methods for right-justifying, left-justifying, and centering a string?",
+                                                                                                        
+        "options":["rjust(), ljust(), center()",
+        "right(), left(), center()",
+        "justify_right(), justify_left(), align_center()",
+        "right_justify(), left_justify(), center_align()"
+        ],
+        "answer":"rjust(), ljust(), center()",
+        "discription":"rjust(width) right-justifies a string in a field of a given width.\nljust(width) left-justifies a string in a field of a given width.\ncenter(width) centers a string in a field of a given width."
+    },
+
+    {
+        "id": 9,
+        "question":"What is the name of the feature responsible for generating Regex objects in Python?",
+                                                                                                        
+        "options":["re.compile()",
+        "regex.create()",
+        "re.match()",
+        "re.build()"
+        ],
+        "answer":"re.compile()",
+        "discription":"re.compile() is used to generate Regex objects in Python. It compiles a regular expression pattern into a Regex object, which can then be used for matching and searching."
+    },
+
+    {
+        "id": 10,
+        "question":"Why do raw strings often appear in Regex objects in Python?",
+                                                                                                        
+        "options":["To prevent Python from interpreting backslashes as escape characters.",
+        "To automatically escape special characters in the string",
+        "To make the string lowercase.",
+        "To remove whitespace from the string."
+        ],
+        "answer":"To prevent Python from interpreting backslashes as escape characters.",
+        "discription":"Raw strings (e.g., r'pattern') are used in Regex objects to prevent Python from interpreting backslashes as escape characters. This allows the backslashes to be treated literally, which is essential when writing regular expressions."
+    },
+
+    {
+        "id": 11,
+        "question":"In the regex created from the pattern r'(\\d\\d\\d)-(\\d\\d\\d-\\d\\d\\d\\d)', what do the groups cover?",
+                                                                                                        
+        "options":["Group 0 covers the entire match, Group 1 covers the first three digits, and Group 2 covers the last seven digits.",
+        "Group 0 covers the first three digits, Group 1 covers the dash, and Group 2 covers the last seven digits.",
+        "Group 0 covers the first three digits, Group 1 covers the last seven digits, and Group 2 covers the entire match.",
+        "Group 0 covers the entire match, Group 1 covers the last seven digits, and Group 2 covers the first three digits."
+        ],
+        "answer":"Group 0 covers the entire match, Group 1 covers the first three digits, and Group 2 covers the last seven digits.",
+        "discription":"In a regular expression, Group 0 (group(0)) refers to the entire matched string.\nGroup 1 (group(1)) refers to the first set of parentheses (\\d\\d\\d), which matches the first three digits.\nGroup 2 (group(2)) refers to the second set of parentheses (\\d\\d\\d-\\d\\d\\d\\d), which matches the last seven digits."
+    },
+
+    {
+        "id": 12,
+        "question":"In standard regular expression syntax, parentheses and periods have distinct meanings. How can you tell a regex that you want it to match actual parentheses and periods?",
+                                                                                                        
+        "options":["Use backslashes before the parentheses and periods, like \\(, \\), and \\.",
+        "Use double parentheses and periods, like ((, )), and ..",
+        "Enclose the parentheses and periods in square brackets, like [(], [)], and [.]",
+        "Use curly braces around the parentheses and periods, like {(}, {)}, and {.}"
+        ],
+        "answer":"Use backslashes before the parentheses and periods, like \\(, \\), and \\.",
+        "discription":"In regular expressions, parentheses () are used for grouping, and periods . match any character except a newline. To match these characters literally, you must escape them with a backslash (\\). This tells the regex engine to interpret them as literal characters rather than special characters."
+    },
+
+    {
+        "id": 13,
+        "question":"In regular expressions, what does the | character signify?",
+                                                                                                        
+        "options":["It matches any single character except newline.",
+        "It is used to group patterns.",
+        "It represents an OR operation, matching patterns on either side of it.",
+        "It escapes special characters."
+        ],
+        "answer":"It represents an OR operation, matching patterns on either side of it.",
+        "discription":"The | character in regular expressions acts as a logical OR operator, allowing you to match one pattern or another. For example, the pattern cat|dog matches either 'cat' or 'dog'"
+    },
+
+    {
+        "id": 14,
+        "question":"In regular expressions, what does the . (dot) character stand for",
+                                                                                                        
+        "options":["It matches the start of a string",
+        "It matches any single character except newline.",
+        "It matches the end of a string.",
+        "It matches a literal period character."
+        ],
+        "answer":"It matches any single character except newline.",
+        "discription":"In regular expressions, the . (dot) is a wildcard character that matches any single character, except for newline characters"
+    },
+
+    {
+        "id": 15,
+        "question":"What is the difference between {4} and {4,5} in regular expression?",
+                                                                                                        
+        "options":["{4} matches exactly 4 occurrences, while {4,5} matches exactly 5 occurrences.",
+        "{4} matches 4 or more occurrences, while {4,5} matches 4 or fewer occurrences.",
+        "{4} matches exactly 4 occurrences, while {4,5} matches between 4 and 5 occurrences.",
+        "{4} matches at least 4 occurrences, while {4,5} matches 5 or more occurrences."
+        ],
+        "answer":"{4} matches exactly 4 occurrences, while {4,5} matches between 4 and 5 occurrences.",
+        "discription":"In regular expressions, {4} specifies that the preceding element must appear exactly 4 times, while {4,5} specifies that the preceding element can appear between 4 and 5 times inclusively."
+    },
+
+    {
+        "id": 16,
+        "question":"What do you mean by the \\d, \\w, and \\s shorthand character classes signify in regular expressions?",
+                                                                                                        
+        "options":["\\d matches any whitespace character, \\w matches any non-digit character, and \\s matches any digit character.",
+        "\\d matches any digit, \\w matches any word character (letters, digits, and underscore), and \\s matches any whitespace character.",
+        "\\d matches any letter, \\w matches any whitespace character, and \\s matches any word character.",
+        "\\d matches any digit, \\w matches any special character, and \\s matches any space."
+        ],
+        "answer":"\\d matches any digit, \\w matches any word character (letters, digits, and underscore), and \\s matches any whitespace character.",
+        "discription":"\\d matches any digit (0-9).\n\\w matches any word character, which includes letters, digits, and underscores.\n\\s matches any whitespace character, such as spaces, tabs, and newlines."
+    },
+
+    {
+        "id": 17,
+        "question":"What do means by \\D, \\W, and \\S shorthand character classes signify in regular expressions?",
+                                                                                                        
+        "options":["They match any digit, word character, and whitespace character respectively.",
+        "They match any non-digit, non-word character, and non-whitespace character respectively.",
+        "They match any digit, whitespace character, and word character respectively.",
+        "They match any non-word character, digit, and whitespace character respectively."
+        ],
+        "answer":"They match any non-digit, non-word character, and non-whitespace character respectively.",
+        "discription":"\\D matches any character that is not a digit.\n\\W matches any character that is not a word character (anything other than letters, digits, and underscores).\n\\S matches any character that is not a whitespace character (spaces, tabs, etc.)."
+    },
+
+    {
+        "id": 18,
+        "question":"What is the procedure for making a regular expression case insensitive in regex?",
+                                                                                                        
+        "options":["Add (?i) at the start of the pattern",
+        "Use ^ before the pattern",
+        "Use \\c before each character",
+        "Use {} brackets around the pattern"
+        ],
+        "answer":"Add (?i) at the start of the pattern",
+        "discription":"Adding (?i) at the beginning of a regex pattern makes the entire pattern case insensitive. This allows the pattern to match letters regardless of their case."
+    },
+
+    {
+        "id": 19,
+        "question":"What does the . character normally match? What does it match if re.DOTALL is passed as the second argument in re.compile()?",
+                                                                                                        
+        "options":["Normally matches any character except a newline; matches any character including a newline with re.DOTALL",
+        "Normally matches only digits; matches digits and letters with re.DOTALL",
+        "Normally matches spaces; matches all whitespace characters with re.DOTALL",
+        "Normally matches special characters; matches alphanumeric characters with re.DOTALL"
+        ],
+        "answer":"Normally matches any character except a newline; matches any character including a newline with re.DOTALL",
+        "discription":"The . character in regex matches any character except a newline by default. However, when re.DOTALL is passed as a second argument in re.compile(), the . character will match any character, including newline characters."
+    },
+
+    {
+        "id": 20,
+        "question":"What does passing re.VERBOSE as the second argument to re.compile() allow you to do?",
+                                                                                                        
+        "options":["Ignore case when matching",
+        "Include comments and whitespace in the regex for readability",
+        "Match the pattern across multiple lines",
+        "Enable global matching of the pattern"
+        ],
+        "answer":"Include comments and whitespace in the regex for readability",
+        "discription":"re.VERBOSE allows you to write regular expressions that are more readable by allowing you to include whitespace and comments."
+    },
+
+    {
+        "id": 21,
+        "question":"How would you write a regex that matches a number with a comma for every three digits? It must match the following:\n'42'\n'1,234'\n'6,368,745'\nbut not the following:\n'12,34,567' (which has only two digits between the commas)\n'1234' (which lacks commas",
+                                                                                                        
+        "options":["\\d{1,3}(,\\d{3})*",
+        "\\d{3,}(,\\d{3})*",
+        "^\\d{1,3}(,\\d{3})*$",
+        "^\\d+(,\\d{3})*$"
+        ],
+        "answer":"^\\d{1,3}(,\\d{3})*$",
+        "discription":"The regex ^\\d{1,3}(,\\d{3})*$ matches a number with one to three digits, optionally followed by groups of three digits separated by commas. The ^ and $ ensure that the entire string must match this pattern."
+    },
+
+    {
+        "id": 22,
+        "question":"Is the Python Standard Library included with PyInputPlus?",
+                                                                                                        
+        "options":["Yes, PyInputPlus includes the entire Python Standard Library.",
+        "No, PyInputPlus does not include the Python Standard Library; it is a separate library for input validation.",
+        "Yes, PyInputPlus includes some modules from the Python Standard Library.",
+        "No, PyInputPlus is part of the Python Standard Library."
+        ],
+        "answer":"No, PyInputPlus does not include the Python Standard Library; it is a separate library for input validation.",
+        "discription":"PyInputPlus is a third-party library used to validate user input in Python. It does not include the Python Standard Library but provides its own functions for handling and validating input."
+    },
+
+    {
+        "id": 23,
+        "question":"What is transferred to the keyword arguments allowRegexes and blockRegexes in PyInputPlus?",
+                                                                                                        
+        "options":["A list of regular expressions that define allowed or blocked patterns",
+        "A list of strings specifying the valid and invalid input formats.",
+        "A list of integers specifying valid and invalid numeric ranges.",
+        "A list of functions that validate the input."
+        ],
+        "answer":"A list of regular expressions that define allowed or blocked patterns",
+        "discription":"In PyInputPlus, the allowRegexes and blockRegexes keyword arguments are used to specify lists of regular expressions. allowRegexes defines patterns that are permitted, while blockRegexes specifies patterns that are blocked or disallowed in the input."
+    },
+
+    {
+        "id": 24,
+        "question":"To what does a relative path refer?",
+                                                                                                        
+        "options":["The absolute location of a file or folder in the file system.",
+        "A path that starts from the root directory of the file system.",
+        "A path that is relative to the current working directory.",
+        "A path that always refers to the home directory."
+        ],
+        "answer":"A path that is relative to the current working directory.",
+        "discription":"A relative path refers to the location of a file or directory relative to the current working directory. It doesn't start from the root directory but from wherever you are currently working in the file system. This makes it easier to navigate and access files without needing the full absolute path."
+    },
+
+    {
+        "id": 25,
+        "question":"What does an absolute path start with your operating system?",
+                                                                                                        
+        "options":["The current directory",
+        "A tilde (~)",
+        "A period (.)",
+        "A root directory or drive letter (like / on Unix-based systems or C:\\ on Windows)"
+        ],
+        "answer":"A root directory or drive letter (like / on Unix-based systems or C:\\ on Windows)",
+        "discription":"An absolute path starts from the root directory or drive letter, providing the full address to a file or folder in your operating system, regardless of the current working directory. For example, on Unix-based systems, it starts with /, and on Windows, it starts with a drive letter like C:\\."
+    },
+
+    {
+        "id": 26,
+        "question":"What do the functions os.getcwd() and os.chdir() do?",
+                                                                                                        
+        "options":["os.getcwd() changes the working directory, and os.chdir() prints the current directory.",
+        "os.getcwd() prints the current working directory, and os.chdir() changes the working directory.",
+        "Both os.getcwd() and os.chdir() change the working directory.",
+        "Both os.getcwd() and os.chdir() print the current working directory."
+        ],
+        "answer":"os.getcwd() prints the current working directory, and os.chdir() changes the working directory.",
+        "discription":"os.getcwd(): Returns the current working directory as a string.\nos.chdir(): Changes the current working directory to the path provided."
+    },
+
+    {
+        "id": 27,
+        "question":"What do the . and .. folders represent in a file system?",
+                                                                                                        
+        "options":[". represents the current directory, and .. represents the parent directory.",
+        ". represents the root directory, and .. represents the home directory.",
+        ". represents a hidden directory, and .. represents a backup directory.",
+        ". represents the home directory, and .. represents the root directory."
+        ],
+        "answer":". represents the current directory, and .. represents the parent directory.",
+        "discription":". (single dot) represents the current directory you are working in.\n.. (double dot) represents the parent directory, which is one level up from the current directory."
+    },
+
+    {
+        "id": 28,
+        "question":"What are the three “mode” arguments that can be passed to the open() function?",
+                                                                                                        
+        "options":["'r', 'w', 'a'",
+        "'read', 'write', 'append'",
+        "'open', 'close', 'update'",
+        "'read', 'append', 'modify'"
+        ],
+        "answer":"'r', 'w', 'a'",
+        "discription":"The open() function in Python can use 'r' for reading, 'w' for writing (which overwrites the file), and 'a' for appending data to the file."
+    },
+
+    {
+        "id": 29,
+        "question":"What happens if an existing file is opened in write mode?",
+                                                                                                        
+        "options":["The file's contents are preserved and new data is appended.",
+        "The file's contents are replaced with the new data.",
+        "The file's contents are read but not modified.",
+        "The file cannot be opened if it already exists."
+        ],
+        "answer":"The file's contents are replaced with the new data.",
+        "discription":"When a file is opened in write mode ('w'), its existing contents are erased, and new data will be written to the file."
+    },
+
+    {
+        "id": 30,
+        "question":"What data structure does a shelf value resemble?",
+                                                                                                        
+        "options":["List",
+        "Dictionary",
+        "Tuple",
+        "Set"
+        ],
+        "answer":"Dictionary",
+        "discription":"A shelf value in Python, provided by the shelve module, resembles a dictionary because it allows you to store key-value pairs in a persistent storage format."
+    },
+
+    {
+        "id": 31,
+        "question":"How do you distinguish between shutil.copy() and shutil.copytree()?",
+                                                                                                        
+        "options":["shutil.copy() copies an entire directory, while shutil.copytree() copies a single file.",
+        "shutil.copy() copies a single file, while shutil.copytree() copies an entire directory.",
+        "shutil.copy() renames files, while shutil.copytree() deletes files.",
+        "shutil.copy() and shutil.copytree() are functionally identical."
+        ],
+        "answer":"shutil.copy() copies a single file, while shutil.copytree() copies an entire directory.",
+        "discription":"shutil.copy() is used to copy individual files, whereas shutil.copytree() is used to recursively copy an entire directory and its contents."
+    },
+
+    {
+        "id": 32,
+        "question":"What is the difference between the delete functions in the send2trash and shutil modules?",
+                                                                                                        
+        "options":["send2trash permanently deletes files, while shutil moves files to the trash.",
+        "send2trash moves files to the trash, while shutil permanently deletes files.",
+        "Both send2trash and shutil move files to the trash.",
+        "Both send2trash and shutil permanently delete files."
+        ],
+        "answer":"send2trash moves files to the trash, while shutil permanently deletes files.",
+        "discription":"The send2trash module moves files or directories to the system's trash or recycle bin, allowing recovery, whereas shutil functions like shutil.rmtree() permanently delete files or directories"
+    },
+
+    {
+        "id": 33,
+        "question":"How would you create a program to search a folder tree for files with a certain file extension (like .pdf or .jpg) and copy them to a new folder?",
+                                                                                                        
+        "options":["Use os.listdir() to get files, then use shutil.copy() to copy them.",
+        "Use os.walk() to traverse the folder tree, then use shutil.copy() to copy the matching files.",
+        "Use glob.glob() to find files, then use os.rename() to move them.",
+        "Use pathlib.Path().iterdir() to find files, then use pathlib.copy() to copy them."
+        ],
+        "answer":"Use os.walk() to traverse the folder tree, then use shutil.copy() to copy the matching files.",
+        "discription":"The os.walk() function allows you to traverse the directory tree to find files with specific extensions, and shutil.copy() can be used to copy these files to a new location."
+    },
+
+    {
+        "id": 34,
+        "question":"What are the two lines that must be present in your software in order to call logging.debug()?",
+                                                                                                        
+        "options":["import logging and logging.basicConfig(level=logging.DEBUG)",
+        "import log and log.basicConfig(level=log.DEBUG)",
+        "import logging and logging.basicConfig(level=logging.INFO)",
+        "import debug and debug.basicConfig(level=debug.DEBUG)"
+        ],
+        "answer":"import logging and logging.basicConfig(level=logging.DEBUG)",
+        "discription":"To use logging.debug(), you need to import the logging module and configure the logging level to DEBUG using logging.basicConfig(level=logging.DEBUG)."
+    },
+
+    {
+        "id": 35,
+        "question":"What are the two lines that your program must have in order to have logging.debug() send a logging message to a file named programLog.txt?",
+                                                                                                        
+        "options":["import logging and logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)",
+        "import log and log.basicConfig(file='programLog.txt', level=log.DEBUG)",
+        "import logging and logging.basicConfig(filename='programLog.txt', level=logging.INFO)",
+        "import debug and debug.basicConfig(file='programLog.txt', level=debug.DEBUG)"
+        ],
+        "answer":"import logging and logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)",
+        "discription":"To have logging.debug() send messages to a file, you need to import the logging module and configure it with logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)."
+    },
+
+    {
+        "id": 36,
+        "question":"What are the five levels of logging?",
+                                                                                                        
+        "options":["Debug, Info, Notice, Warning, Error",
+        "Trace, Debug, Info, Warning, Critical",
+        "Debug, Info, Warning, Error, Critical",
+        "Info, Notice, Warning, Error, Fatal"
+        ],
+        "answer":"Debug, Info, Warning, Error, Critical",
+        "discription":"The five standard levels of logging in Python are Debug, Info, Warning, Error, and Critical, in increasing order of severity."
+    },
+
+    {
+        "id": 37,
+        "question":"What line of code would you add to your software to disable all logging messages?",
+                                                                                                        
+        "options":["logging.disable(logging.INFO)",
+        "logging.disable(logging.WARNING)",
+        "logging.disable(logging.DEBUG)",
+        "logging.disable(logging.CRITICAL)"
+        ],
+        "answer":"logging.disable(logging.CRITICAL)",
+        "discription":"To disable all logging messages in a Python program, you can use the logging.disable(logging.CRITICAL) line. This will prevent any logging messages, including critical ones, from being displayed or recorded."
+    },
+
+    {
+        "id": 38,
+        "question":"Why is using logging messages better than using print() to display the same message?",
+                                                                                                        
+        "options":["Logging messages can be turned on or off, while print() cannot.",
+        "print() can only display messages to the console, but logging can be configured to write messages to a file.",
+        "Logging messages have different levels (e.g., debug, info, warning) that help in categorizing the importance of messages.",
+        "All of the above."
+        ],
+        "answer":"All of the above.",
+        "discription":"Using logging messages is better than using print() because logging offers more flexibility. You can easily turn logging on or off, write messages to files, and categorize messages by importance (e.g., debug, info, warning). This makes it a more powerful tool for tracking and debugging code."
+    },
+
+    {
+        "id": 39,
+        "question":"What are the differences between the Step Over, Step In, and Step Out buttons in the debugger?",
+                                                                                                        
+        "options":["Step Over executes the current function and moves to the next line; Step In moves into the function to debug it; Step Out exits the current function.",
+        "Step Over skips the current line; Step In skips the current function; Step Out restarts the debugging process.",
+        "Step Over moves to the previous line; Step In moves to the next line without executing the function; Step Out skips the rest of the code.",
+        "Step Over stops the debugging process; Step In saves the debug state; Step Out resumes normal execution."
+        ],
+        "answer":"Step Over executes the current function and moves to the next line; Step In moves into the function to debug it; Step Out exits the current function.",
+        "discription":"Step Over: Executes the current line of code and moves to the next line in the same function, skipping over function calls.\nStep In: Moves into the function call on the current line to debug its code line-by-line.\nStep Out: Exits the current function and returns to the calling function, resuming execution from there."
+    },
+
+    {
+        "id": 40,
+        "question":"After you click Continue in a debugger, when will it stop?",
+                                                                                                        
+        "options":["When it reaches a breakpoint.",
+        "After executing the next line of code.",
+        "When it finishes executing the current function.",
+        "When the program crashes."
+        ],
+        "answer":"When it reaches a breakpoint.",
+        "discription":"Clicking Continue allows the debugger to run the program normally until it encounters a breakpoint, at which point it will pause again."
+    },
+
+    {
+        "id": 41,
+        "question":"What is the concept of a breakpoint?",
+                                                                                                        
+        "options":["A point in the code where execution is paused for debugging.",
+        "A line of code that terminates the program.",
+        "A command that skips over a section of code.",
+        "A feature that automatically fixes errors in code."
+        ],
+        "answer":"A point in the code where execution is paused for debugging.",
+        "discription":"A feature that automatically fixes errors in code."
+    },
+
+    {
+        "id": 42,
+        "question":"In what modes should the PdfFileReader() and PdfFileWriter() file objects be opened in Python?",
+                                                                                                        
+        "options":["PdfFileReader() - 'r', PdfFileWriter() - 'w'",
+        "PdfFileReader() - 'rb', PdfFileWriter() - 'wb'",
+        "PdfFileReader() - 'rt', PdfFileWriter() - 'wt'",
+        "PdfFileReader() - 'rw', PdfFileWriter() - 'wr'"
+        ],
+        "answer":"PdfFileReader() - 'rb', PdfFileWriter() - 'wb'",
+        "discription":"'rb' and 'wb' - Opens files in binary mode, required for handling PDF files."
+    },
+
+    {
+        "id": 43,
+        "question":"From a PdfFileReader object in Python, how do you get a Page object for page 5?",
+                                                                                                        
+        "options":["reader.getPage(4)",
+        "reader.getPage(5)",
+        "reader.get_page(5)",
+        "reader.getPage(6)"
+        ],
+        "answer":"reader.getPage(4)",
+        "discription":"Pages are zero-indexed, so getPage(4) retrieves the 5th page."
+    },
+
+    {
+        "id": 44,
+        "question":"From a PdfFileReader object in Python, how do you get a Page object for page 5?",
+                                                                                                        
+        "options":["reader.getPage(4)",
+        "reader.getPage(5)",
+        "reader.get_page(5)",
+        "reader.getPage(6)"
+        ],
+        "answer":"reader.getPage(4)",
+        "discription":"Pages are zero-indexed, so getPage(4) retrieves the 5th page."
+    },
+
+    {
+        "id": 45,
+        "question":"If a PdfFileReader object’s PDF is encrypted with the password swordfish, what must you do before you can obtain Page objects from it?",
+                                                                                                        
+        "options":["Call reader.decrypt('swordfish')",
+        "Call reader.decrypt('pdf')",
+        "Call reader.authenticate('swordfish')",
+        "Call reader.unlock('swordfish')"
+        ],
+        "answer":"Call reader.decrypt('swordfish')",
+        "discription":"You must call the decrypt() method with the correct password to decrypt the PDF before accessing Page objects."
+    },
+
+    {
+        "id": 46,
+        "question":"What methods do you use to rotate a page in a PDF using Python?",
+                                                                                                        
+        "options":["rotateClockwise() and rotateCounterClockwise()",
+        "rotateLeft() and rotateRight()",
+        "rotatePage() and flipPage()",
+        "turnLeft() and turnRight()"
+        ],
+        "answer":"rotateClockwise() and rotateCounterClockwise()",
+        "discription":"These methods rotate the page clockwise or counterclockwise by 90 degrees."
+    },
+
+    {
+        "id": 47,
+        "question":"What is the difference between a Run object and a Paragraph object in Python?",
+                                                                                                        
+        "options":["A Run object contains multiple paragraphs, while a Paragraph object contains text runs.",
+        "A Run object represents a single text style, while a Paragraph object represents a block of text.",
+        "A Run object is used for formatting images, while a Paragraph object is used for formatting tables.",
+        "A Run object handles the document structure, while a Paragraph object handles page layouts."
+        ],
+        "answer":"A Run object represents a single text style, while a Paragraph object represents a block of text.",
+        "discription":"A Run is a segment of text with a consistent style within a Paragraph, which is a block of text typically separated by line breaks."
+    },
+
+    {
+        "id": 48,
+        "question":"What type of object has bold, underline, italic, strike, and outline variables in Python?",
+                                                                                                        
+        "options":["Document object",
+        "Paragraph object",
+        "Run object",
+        "Table object"
+        ],
+        "answer":"Run object",
+        "discription":"A Run object in a Paragraph represents a segment of text with specific formatting, including bold, underline, italic, strike, and outline options."
+    },
+
+    {
+        "id": 49,
+        "question":"What is the difference between False, True, and None for the bold variable in a Run object?",
+                                                                                                        
+        "options":["False turns bold on, True turns bold off, None leaves bold unchanged",
+        "False turns bold off, True turns bold on, None uses the style's default setting.",
+        "False uses the style's default setting, True turns bold on, None turns bold off.",
+        "False removes all formatting, True applies all formatting, None does nothing"
+        ],
+        "answer":"False turns bold off, True turns bold on, None uses the style's default setting.",
+        "discription":"False explicitly disables bold, True enables bold, and None applies the document's default style setting for bold."
+    },
+
+    {
+        "id": 50,
+        "question":"How do you create a Document object for a new Word document using Python's python-docx library?",
+                                                                                                        
+        "options":["Document.create()",
+        "Document()",
+        "Document.new()",
+        "Document.open()"
+        ],
+        "answer":"Document()",
+        "discription":"Instantiating the Document class with Document() creates a new Word document."
+    },
+
+    {
+        "id": 51,
+        "question":"How do you add a paragraph with the text 'Hello, there!' to a Document object stored in a variable named doc?",
+                                                                                                        
+        "options":["doc.add_paragraph('Hello, there!')",
+        "doc.append_paragraph('Hello, there!')",
+        "doc.paragraphs.add('Hello, there!')",
+        "doc.add('Hello, there!')"
+        ],
+        "answer":"doc.add_paragraph('Hello, there!')",
+        "discription":"The add_paragraph() method adds a new paragraph with the specified text to the Document object."
+    },
+
+    {
+        "id": 52,
+        "question":"What modes do File objects for reader and writer objects need to be opened in?",
+                                                                                                        
+        "options":["'r' for reading and 'w' for writing",
+        "'rb' for reading and 'wb' for writing",
+        "'r' for reading and 'a' for appending",
+        "'rt' for reading and 'wt' for writing"
+        ],
+        "answer":"'rt' for reading and 'wt' for writing",
+        "discription":"File objects for csv.reader should be opened in text mode with 'rt' for reading, and for csv.writer, they should be opened in 'wt' for writing"
+    },
+
+    {
+        "id": 53,
+        "question":"What function takes a string of JSON data and returns a Python data structure?",
+                                                                                                        
+        "options":["json.parse()",
+        "json.decode()",
+        "json.load()",
+        "json.loads()"
+        ],
+        "answer":"json.loads()",
+        "discription":"The json.loads() function parses a JSON string and converts it into a corresponding Python data structure."
+    },
+
+    {
+        "id": 54,
+        "question":"What function takes a Python data structure and returns a string of JSON data?",
+                                                                                                        
+        "options":["json.dumps()",
+        "json.encode()",
+        "json.write()",
+        "json.dump("
+        ],
+        "answer":"json.dumps()",
+        "discription":"The json.dumps() function converts a Python data structure into a JSON-formatted string."
+    },
+
+    {
+        "id": 55,
+        "question":"What is a box tuple, and how does it work?",
+                                                                                                        
+        "options":["A box tuple is a tuple representing the dimensions and coordinates of a rectangular area in an image, specified as (left, upper, right, lower).",
+        "A box tuple is a data structure for storing color values in an image, specified as (red, green, blue, alpha).",
+        "A box tuple is a method for resizing an image, specified as (width, height).",
+        "A box tuple is used for image filtering, specified as (filter_type, strength)."
+        ],
+        "answer":"A box tuple is a tuple representing the dimensions and coordinates of a rectangular area in an image, specified as (left, upper, right, lower).",
+        "discription":"A box tuple defines a rectangular region in an image with coordinates for the left, upper, right, and lower edges."
+    },
+
+    {
+        "id": 56,
+        "question":"Use your image and load in notebook then, How can you find out the width and height of an Image object?",
+                                                                                                        
+        "options":["image.size()",
+        "image.get_dimensions()",
+        "image.width and image.height",
+        "image.size"
+        ],
+        "answer":"image.size",
+        "discription":"The size attribute of an Image object returns a tuple containing the width and height of the image."
+    },
+
+    {
+        "id": 57,
+        "question":"What method would you call to get Image object for a 100×100 image, excluding the lower-left quarter of it?",
+                                                                                                        
+        "options":["image.crop((0, 0, 50, 50))",
+        "image.crop((50, 50, 100, 100))",
+        "image.crop((0, 0, 100, 100))",
+        "image.crop((25, 25, 75, 75))"
+        ],
+        "answer":"image.crop((50, 50, 100, 100))",
+        "discription":"The crop() method with coordinates (50, 50, 100, 100) extracts the upper-right quarter of a 100×100 image, effectively excluding the lower-left quarter."
+    },
+
+    {
+        "id": 58,
+        "question":"After making changes to an Image object, how could you save it as an image file?",
+                                                                                                        
+        "options":["image.save('filename.png')",
+        "image.write('filename.png')",
+        "image.save_as('filename.png')",
+        "image.export('filename.png')"
+        ],
+        "answer":"image.save('filename.png')",
+        "discription":"The save() method allows you to save the modified Image object to a file with the specified filename and format."
+    },
+
+    {
+        "id": 59,
+        "question":"What module contains Pillow’s shape-drawing code?",
+                                                                                                        
+        "options":["PIL.ImageDraw",
+        "PIL.ImageShape",
+        "PIL.DrawShapes",
+        "PIL.ShapeDraw"
+        ],
+        "answer":"PIL.ImageDraw",
+        "discription":"The PIL.ImageDraw module provides functions for drawing shapes and text on an Image object in Pillow."
+    },
+
+    {
+        "id": 60,
+        "question":"Image objects do not have drawing methods. What kind of object does, and how do you get this kind of object?",
+                                                                                                        
+        "options":["ImageDraw object, obtained using ImageDraw.Draw(image)",
+        "ShapeDraw object, obtained using ShapeDraw.create(image)",
+        "DrawTool object, obtained using DrawTool.get(image)",
+        "DrawObject object, obtained using DrawObject.create_for(image)"
+        ],
+        "answer":"ImageDraw object, obtained using ImageDraw.Draw(image)",
+        "discription":"To draw on an Image object, you need an ImageDraw object, which you obtain by calling ImageDraw.Draw(image)."
+    },
+
+    {
+        "id": 61,
+        "question":"Define an exception called OopsException. Raise this exception to see what happens. Then write the code to catch this exception and print 'Caught an oops'.",
+                                                                                                        
+        "options":["class OopsException(Exception):\n    pass\n try:\n    raise OopsException\nexcept OopsException:\n    print('Caught an oops')",
+        "class OopsException(Exception):\n    pass\n    try:\n    raise OopsException()\nexcept OopsException:\n    print('Caught an oops')",
+        "class OopsException(BaseException):\n    pass\n    try:\n    raise OopsException\nexcept OopsException:\n    print('Caught an oops')",
+        "class OopsException(BaseException):\n    pass\n    try:\n    raise OopsException()\nexcept OopsException:\n    print('Caught an oops')"
+        ],
+        "answer":"class OopsException(Exception):\n    pass\n    try:\n    raise OopsException()\nexcept OopsException:\n    print('Caught an oops')",
+        "discription":"This code defines a custom exception called OopsException, raises it, and catches it using a try-except block. When the exception is caught, it prints 'Caught an oops'."
+    },
+
+    {
+        "id": 62,
+        "question":"Create a zoo.py file first. Define the hours() function, which prints the string 'Open 9-5 daily'. Then, use the interactive interpreter to import the zoo module and call its hours() function.",
+                                                                                                        
+        "options":["In zoo.py:\n    python\ndef hours():\n    print('Open 9-5 daily')\nIn the interactive interpreter:\n python\nimport zoo\nzoo.hours()",
+        "In zoo.py:\n   python\ndef hours():\n    return 'Open 9-5 daily'\nIn the interactive interpreter:\n    python\nimport zoo\nprint(zoo.hours())",
+        "In zoo.py:\n   python\ndef hours():\n    'Open 9-5 daily'\nIn the interactive interpreter:\n   python\nimport zoo\nzoo.hours()",
+        "In zoo.py:\n   python\ndef hours():\n    print('Open 9-5 daily')\nIn the interactive interpreter:\npython\nfrom zoo import hours\nhours()"
+        ],
+        "answer":"In zoo.py:\n    python\ndef hours():\n    print('Open 9-5 daily')\nIn the interactive interpreter:\n python\nimport zoo\nzoo.hours()",
+        "discription":"This option shows how to define the hours() function in a file named zoo.py and then import the module in the interactive interpreter to call the function and print the message 'Open 9-5 daily'."
+    },
+
+    {
+        "id": 63,
+        "question":"How would you import the zoo module as menagerie in the interactive interpreter and call its hours() function?",
+                                                                                                        
+        "options":["import zoo as menagerie\nmenagerie.hours()",
+        "from zoo import hours as menagerie\nmenagerie()",
+        "import menagerie as zoo\nzoo.hours()",
+        "from zoo import menagerie\nmenagerie.hours()"
+        ],
+        "answer":"import zoo as menagerie\nmenagerie.hours()",
+        "discription":"This option correctly demonstrates how to import the zoo module under the alias menagerie and call its hours() function in the interactive interpreter."
+    },
+
+    {
+        "id": 64,
+        "question":"How would you explicitly import and call the hours() function from the zoo module using the interpreter?",
+                                                                                                        
+        "options":["import zoo\nzoo.hours()",
+        "from zoo import hours\nhours()",
+        "import zoo.hours\nzoo.hours()",
+        "from zoo import hours\nzoo.hours()"
+        ],
+        "answer":"from zoo import hours\nhours()",
+        "discription":"This option correctly demonstrates how to explicitly import the hours() function directly from the zoo module and then call it in the interpreter."
+    },
+
+    {
+        "id": 65,
+        "question":"How would you make a defaultdict called dict_of_lists, pass it the argument list, and then append the value 'something for a' to the list dict_of_lists['a'] in one assignment? How would you print dict_of_lists['a']?",
+                                                                                                        
+        "options":["from collections import defaultdict\ndict_of_lists = defaultdict(list)\ndict_of_lists['a'].append('something for a')\nprint(dict_of_lists['a'])",
+        "dict_of_lists = defaultdict(list)\ndict_of_lists['a'] = 'something for a'\nprint(dict_of_lists['a'])",
+        "from collections import defaultdict\ndict_of_lists = defaultdict(list)\ndict_of_lists['a'] = list('something for a')\nprint(dict_of_lists['a'])",
+        "from collections import defaultdict\ndict_of_lists = defaultdict(list)\ndict_of_lists.append('something for a')\nprint(dict_of_lists['a'])"
+        ],
+        "answer":"from collections import defaultdict\ndict_of_lists = defaultdict(list)\ndict_of_lists['a'].append('something for a')\nprint(dict_of_lists['a'])",
+        "discription":"This option correctly creates a defaultdict with list as the default factory, allowing you to append 'something for a' to dict_of_lists['a'] in a single step. The output will be ['something for a'] when printed."
+    },
+
+    {
+        "id": 67,
+        "question":"You created a new class called Thing2 and added the value 'abc' to the letters class attribute. What should happen when you print Thing2.letters?",
+                                                                                                        
+        "options":["It will raise an error because letters is not a valid attribute.",
+        "It will print None because letters was not assigned correctly.",
+        "It will print abc because letters is a class attribute with the value 'abc'.",
+        "It will print an empty string because the attribute was not initialized."
+        ],
+        "answer":"It will print abc because letters is a class attribute with the value 'abc'.",
+        "discription":"The letters class attribute was correctly assigned the value 'abc', so printing Thing2.letters will output 'abc'."
+    },
+
+    {
+        "id": 66,
+        "question":"You created a class called Thing3 and assigned the value 'xyz' to an instance (object) attribute called letters. How can you print letters, and do you need to create an object from the class to do so?",
+                                                                                                        
+        "options":["No, you can print Thing3.letters directly because letters is a class attribute.",
+        "Yes, you must create an object from Thing3 and print object_name.letters because letters is an instance attribute.",
+        "No, letters is a global variable, so it can be printed directly.",
+        "Yes, but you need to use the class name directly with Thing3.letters."
+        ],
+        "answer":"Yes, you must create an object from Thing3 and print object_name.letters because letters is an instance attribute.",
+        "discription":"Instance attributes like letters in Thing3 require creating an object from the class to access and print their values using object_name.letters."
+    },
+
+    {
+        "id": 67,
+        "question":"You have a dictionary with the keys and values 'name': 'Hydrogen', 'symbol': 'H', and 'number': 1. How do you create an object called hydrogen from the Element class using this dictionary?",
+                                                                                                        
+        "options":["hydrogen = Element(name='Hydrogen', symbol='H', number=1)",
+        "hydrogen = Element(**{'name': 'Hydrogen', 'symbol': 'H', 'number': 1})",
+        "hydrogen = Element('Hydrogen', 'H', 1)",
+        "hydrogen = Element.create({'name': 'Hydrogen', 'symbol': 'H', 'number': 1})"
+        ],
+        "answer":"hydrogen = Element(**{'name': 'Hydrogen', 'symbol': 'H', 'number': 1})",
+        "discription":"To create an object from the Element class using a dictionary, you use the ** unpacking operator to pass the dictionary as keyword arguments, like Element(**{'name': 'Hydrogen', 'symbol': 'H', 'number': 1})."
+    },
+
+    {
+        "id": 68,
+        "question":"Call print(hydrogen). In the definition of Element, change the name of method dump to __str__, create a new hydrogen object, and call print(hydrogen) again.",
+                                                                                                        
+        "options":["Change dump() to __str__ as def __str__(self): return f'{self.name}, {self.symbol}, {self.number}' and then call print(hydrogen).",
+        "Change dump() to __str__ as def __str__(self): print(self.name, self.symbol, self.number) and then call print(hydrogen).",
+        "Keep dump() as it is and call print(hydrogen.dump()).",
+        "Define __str__ as def __str__(self): return self.dump() and call print(hydrogen)."
+        ],
+        "answer":"Change dump() to __str__ as def __str__(self): return f'{self.name}, {self.symbol}, {self.number}' and then call print(hydrogen).",
+        "discription":"To customize the output of print(hydrogen), you should redefine the dump() method as __str__. The method __str__ should return a formatted string with the attribute values. After updating the method, calling print(hydrogen) will use __str__ to display the object's attributes."
+    },
+
+    {
+        "id": 69,
+        "question":"Modify Element to make the attributes name, symbol, and number private. Define a getter property for each to return its value.",
+                                                                                                        
+        "options":["Change name, symbol, and number to _name, _symbol, and _number and define properties as @property def name(self): return self._name, @property def symbol(self): return self._symbol, and @property def number(self): return self._number.",
+        "Change name, symbol, and number to _name, _symbol, and _number and define methods get_name(), get_symbol(), and get_number() to return their values.",
+        "Keep name, symbol, and number public and define properties as @property def name(self): return self.name, @property def symbol(self): return self.symbol, and @property def number(self): return self.number.",
+        "Change name, symbol, and number to private attributes and use def get_name(self): return self.name, def get_symbol(self): return self.symbol, and def get_number(self): return self.number."
+        ],
+        "answer":"Change name, symbol, and number to _name, _symbol, and _number and define properties as @property def name(self): return self._name, @property def symbol(self): return self._symbol, and @property def number(self): return self._number.",
+        "discription":"To make attributes private and define getter properties, first rename name, symbol, and number to _name, _symbol, and _number. Then, use the @property decorator to create getter methods that return the values of these private attributes. This approach maintains encapsulation and allows controlled access to the attribute values."
+    },
+
+    {
+        "id": 70,
+        "question":"To define the classes Laser, Claw, SmartPhone, and Robot, where each has a method does() returning a specific action and the Robot class aggregates these components, how should you implement the Robot class's does() method?",
+                                                                                                        
+        "options":["Define Laser, Claw, and SmartPhone each with a does() method returning 'disintegrate', 'crush', and 'ring', respectively. In the Robot class, instantiate these objects and call their does() methods within the Robot's does() method, printing the results.",
+        "Define Laser, Claw, and SmartPhone with an action() method instead of does(). In the Robot class, call these methods from the does() method and print the results.",
+        "Define Laser, Claw, and SmartPhone each with a perform() method returning 'disintegrate', 'crush', and 'ring', respectively. In the Robot class, use a single perform() method to print the actions of each component.",
+        "Define Laser, Claw, and SmartPhone each with a does() method returning 'disintegrate', 'crush', and 'ring'. In the Robot class, create a list of these objects and iterate through the list to call and print each does() method result."
+        ],
+        "answer":"Define Laser, Claw, and SmartPhone each with a does() method returning 'disintegrate', 'crush', and 'ring', respectively. In the Robot class, instantiate these objects and call their does() methods within the Robot's does() method, printing the results.",
+        "discription":"To implement the Robot class with components Laser, Claw, and SmartPhone, each having a does() method returning specific actions, you should instantiate these components in the Robot class. Then, within the Robot's does() method, call each component's does() method and print their results to show what each component does. This setup allows the Robot class to utilize and display the functionality of its components."
+    },
+
+    {
+        "id": 71,
+        "question":"Create a CSV file called books.csv by using these lines:\ntitle,author,year\nThe Weirdstone of Brisingamen,Alan Garner,1960\nPerdido Street Station,China Miéville,2000\nThud!,Terry Pratchett,2005\nThe Spellman Files,Lisa Lutz,2007\nSmall Gods,Terry Pratchett,1992",
+                                                                                                        
+        "options":["Open books.csv in write mode, use the write() method to add the lines, and then close the file.",
+        "Use csv.writer to write the header and rows to books.csv by iterating through each line and writing them.",
+        "Use pandas to create a DataFrame with the data and save it as books.csv.",
+        "Open books.csv in append mode, use the write() method to add the lines, and then close the file."
+        ],
+        "answer":"Use csv.writer to write the header and rows to books.csv by iterating through each line and writing them.",
+        "discription":"To create a CSV file, you should use the csv.writer object to handle writing the header and rows correctly. Opening the file in write mode, then using csv.writer to write each row to the file, ensures that the CSV file is formatted correctly with the specified content."
+    },
+
+    {
+        "id": 72,
+        "question":"To read books.csv and insert its data into the book table, which of the following methods is correct?",
+                                                                                                        
+        "options":["Use pandas to read books.csv into a DataFrame and then use df.to_sql('book', connection, if_exists='append') to insert the data into the book table.",
+        "Open books.csv using the csv module, read the contents into a list, and then use INSERT INTO book VALUES(...) for each row to insert the data into the book table.",
+        "Use sqlite3 to read books.csv and use csv.reader() to insert the data into the book table directly.",
+        "Use json to read books.csv and json.load() to insert the data into the book table."
+        ],
+        "answer":"Use pandas to read books.csv into a DataFrame and then use df.to_sql('book', connection, if_exists='append') to insert the data into the book table.",
+        "discription":"Using pandas to read books.csv into a DataFrame and then using the to_sql method to insert the data into the book table is an efficient and straightforward way to handle CSV data and perform database operations."
+    },
+
+    {
+        "id": 73,
+        "question":"To select and print all columns from the book table in the order of publication, which SQL query should you use?",
+                                                                                                        
+        "options":["SELECT * FROM book ORDER BY publication;",
+        "SELECT * FROM book WHERE publication;",
+        "SELECT * FROM book SORT BY publication;",
+        "SELECT all FROM book ORDER BY publication;"
+        ],
+        "answer":"SELECT * FROM book ORDER BY publication;",
+        "discription":"Option A is correct because it uses the SQL ORDER BY clause to sort all columns (*) of the book table by the publication column. This ensures that the results are displayed in the order of publication."
+    },
+
+    {
+        "id": 74,
+        "question":"To install the Redis server and the Python redis library, create a Redis hash called test with fields count (1) and name ('Fester Bestertester'), and then print all the fields for test, which of the following steps is correct?",
+                                                                                                        
+        "options":[" Install Redis and redis library, connect to Redis using Python, create the hash, and use hgetall() to print all fields.",
+        "Install Redis and redis library, create the hash using the Redis CLI, and use redis-cli to print all fields.",
+        "Install Redis and redis library, create the hash using Python print() function, and use print() to display all fields.",
+        " Install Redis and redis library, connect to Redis using Python, create the hash using hset(), and use hkeys() to print all fields."
+        ],
+        "answer":" Install Redis and redis library, connect to Redis using Python, create the hash, and use hgetall() to print all fields.",
+        "discription":"To complete the task, first install the Redis server and Python redis library. Connect to Redis using the Python redis library, create a hash named test with fields count and name using hset(), and then use hgetall() to retrieve and print all fields of the hash."
+    },
+
+    {
+        "id": 75,
+        "question":"What makes the first argument in a class’s method function special in Python?",
+                                                                                                        
+        "options":["It must always be named 'self.'",
+        "It refers to the class itself.",
+        "It automatically receives the instance object.",
+        "It can be omitted if the method is static."
+        ],
+        "answer":"It automatically receives the instance object.",
+        "discription":"The first argument in a class's method, often named 'self,'' automatically receives the instance object when the method is called. This allows the method to access the attributes and other methods of the specific instance."
+    },
+
+    {
+        "id": 76,
+        "question":"What is the relationship between classes and modules?",
+                                                                                                        
+        "options":["A module can only contain one class.",
+        "A class defines modules, while modules define functions.",
+        "A module is a collection of classes, functions, and variables.",
+        "A class must inherit from a module to function."
+        ],
+        "answer":"A module is a collection of classes, functions, and variables.",
+        "discription":"In Python, a module is a file that can contain multiple classes, functions, and variables. Modules help organize code into reusable and manageable components, while classes within modules define specific behaviors and data structures."
+    },
+
+    {
+        "id": 77,
+        "question":"How does a Python class handle operator overloading?",
+                                                                                                        
+        "options":["By defining a special method that matches the operator.",
+        "By using the operator module.",
+        "By inheriting from a special Overload class.",
+        "By using the def keyword with the operator symbol."
+        ],
+        "answer":"By defining a special method that matches the operator.",
+        "discription":"In Python, operator overloading is handled by defining special methods in a class that correspond to specific operators. For example, the __add__ method is used to overload the + operator. When you perform an operation using the + operator on class instances, Python will call the __add__ method to determine the result."
+    },
+
+    {
+        "id": 78,
+        "question":"When do you consider allowing operator overloading of your classes?",
+                                                                                                        
+        "options":["When you need to change the behavior of built-in functions.",
+        "When your class represents a concept where operators have a natural meaning.",
+        "When you want to prevent users from using certain operators.",
+        "When you want to create new operators for your class."
+        ],
+        "answer":"When your class represents a concept where operators have a natural meaning.",
+        "discription":"Operator overloading should be considered when your class represents a concept, like a mathematical structure or custom data type, where using operators (like +, -, *, etc.) makes sense and enhances code readability. For example, in a Vector class, overloading the + operator to add two vectors together would be intuitive."
+    },
+
+    {
+        "id": 79,
+        "question":"What happens when a class statement's top level contains a basic assignment statement?",
+                                                                                                        
+        "options":["The assignment is ignored when creating instances of the class.",
+        "The assigned value becomes a class attribute shared by all instances.",
+        "The assignment creates an instance attribute for each object.",
+        "The assigned value is stored as a private attribute."
+        ],
+        "answer":"The assigned value becomes a class attribute shared by all instances.",
+        "discription":"When a basic assignment statement is made at the top level of a class, the assigned value becomes a class attribute. This attribute is shared by all instances of the class, meaning each instance can access the same value."
+    },
+
+    {
+        "id": 80,
+        "question":"Why does a class need to manually call a superclass's __init__ method?",
+                                                                                                        
+        "options":["To avoid overriding the superclass's methods.",
+        "To initialize attributes defined in the superclass.",
+        "To prevent the superclass from being inherited.",
+        "To automatically import modules used in the superclass."
+        ],
+        "answer":"To initialize attributes defined in the superclass.",
+        "discription":"When a subclass in Python overrides the __init__ method, it doesn't automatically call the superclass's __init__ method. Therefore, to ensure that the attributes and behaviors defined in the superclass are initialized, the subclass must manually call the superclass's __init__ method using super().__init__()."
+    },
+
+    {
+        "id": 81,
+        "question":"How can you augment, instead of completely replacing, an inherited method?",
+                                                                                                        
+        "options":["By redefining the method in the subclass without using the superclass method.",
+        "By calling the superclass method using super() within the subclass method.",
+        "By using the @augment decorator on the method in the subclass.",
+        "By defining the method twice in the subclass."
+        ],
+        "answer":"By calling the superclass method using super() within the subclass method.",
+        "discription":"In Python, you can augment an inherited method by calling the superclass method using super() within the subclass method. This allows you to extend the behavior of the inherited method rather than completely replacing it."
+    },
+
+    {
+        "id": 82,
+        "question":"Which two operator overloading methods can you use in your classes to support iteration in Python?",
+                                                                                                        
+        "options":["__getitem__ and __iter__",
+        "__next__ and __contains__",
+        "__len__ and __iter__",
+        "__iter__ and __next__"
+        ],
+        "answer":"__iter__ and __next__",
+        "discription":"To support iteration in a Python class, you need to define __iter__ and __next__ methods. The __iter__ method returns an iterator object, while the __next__ method returns the next item in the sequence and raises StopIteration when there are no more items."
+    },
+
+    {
+        "id": 83,
+        "question":"In what contexts do the two operator overloading methods __str__ and __repr__ manage printing in Python?",
+                                                                                                        
+        "options":["__str__ is used for debugging, and __repr__ is used for user-friendly output.",
+        "__str__ is used for user-friendly output, and __repr__ is used for debugging.",
+        "Both __str__ and __repr__ are used interchangeably for all types of output.",
+        "__str__ is used for internal data representation, and __repr__ is used for external data representation."
+        ],
+        "answer":"__str__ is used for user-friendly output, and __repr__ is used for debugging.",
+        "discription":"In Python, __str__ provides a human-readable string representation of an object, which is useful for end-user output, while __repr__ provides a detailed string representation that is helpful for debugging and can be used to recreate the object."
+    },
+
+    {
+        "id": 84,
+        "question":"In a class, how do you intercept slice operations?",
+                                                                                                        
+        "options":["By defining the __slice__ method in the class.",
+        "By implementing the __getitem__ and __setitem__ methods.",
+        "By using the slice() function inside the class.",
+        "By overriding the __iter__ method."
+        ],
+        "answer":"By implementing the __getitem__ and __setitem__ methods.",
+        "discription":"To intercept slice operations in a class, you need to implement the __getitem__ method for retrieving items and the __setitem__ method for setting items. For example, if you define __getitem__(self, key) and __setitem__(self, key, value) in your class, you can handle slice operations on instances of the class."
+    },
+
+    {
+        "id": 85,
+        "question":"In a class, how do you capture in-place addition?",
+                                                                                                        
+        "options":["By defining the __add__ method.",
+        "By defining the __iadd__ method.",
+        "By defining the __setitem__ method.",
+        "By defining the __getitem__ method."
+        ],
+        "answer":"By defining the __iadd__ method.",
+        "discription":"To capture in-place addition (using the += operator) in a class, you define the __iadd__ method. This method allows you to specify the behavior of the in-place addition operation, modifying the object directly. For example, def __iadd__(self, other): would handle obj += other."
+    },
+
+    {
+        "id": 86,
+        "question":"When is it appropriate to use operator overloading?",
+                                                                                                        
+        "options":["When you want to use standard operators with custom objects.",
+        "When you want to create multiple methods with the same name.",
+        "When you need to create an abstract class.",
+        "When you want to change the default behavior of loops."
+        ],
+        "answer":"When you want to use standard operators with custom objects.",
+        "discription":"Operator overloading in Python is appropriate when you want to define how standard operators (like +, -, *) work with instances of your custom classes. By overloading operators, you can customize their behavior to perform specific actions on objects of your class."
+    },
+
+    {
+        "id": 87,
+        "question":"What is the purpose of pseudoprivate attributes in Python?",
+                                                                                                        
+        "options":["To make attributes inaccessible from outside the class.",
+        "To create a new class dynamically.",
+        "To ensure attributes are read-only.",
+        "To indicate that attributes are for internal use only."
+        ],
+        "answer":"To indicate that attributes are for internal use only.",
+        "discription":"Pseudoprivate attributes, prefixed with a single underscore (e.g., _attribute), are used in Python to indicate that they are intended for internal use within a class or module. While they are not strictly private, this convention helps signal to developers that these attributes should not be accessed or modified directly from outside the class."
+    },
+
+    {
+        "id": 88,
+        "question":"Identify two methods for specifying actions to be executed at termination time, regardless of whether or not an exception exists in Python.",
+                                                                                                        
+        "options":["Using try and finally blocks.",
+        "Using try and except blocks.",
+        "Using if and else statements.",
+        "Using while and break statements."
+        ],
+        "answer":"Using try and finally blocks.",
+        "discription":"In Python, the finally block is used alongside the try block to specify actions that should be executed at termination time, regardless of whether an exception occurred. The code inside the finally block will always run after the try block, ensuring that cleanup or finalization code is executed."
+    },
+
+    {
+        "id": 89,
+        "question":"What does the assert statement do in Python, and what other statement is it like?",
+                                                                                                        
+        "options":["It checks if a condition is true and raises an AssertionError if it is false, similar to the if statement.",
+        "It prints a message to the console if a condition is true, similar to the print statement.",
+        "It stops the execution of a program, similar to the break statement.",
+        "It assigns a value to a variable if a condition is true, similar to the if-else statement."
+        ],
+        "answer":"It checks if a condition is true and raises an AssertionError if it is false, similar to the if statement.",
+        "discription":"The assert statement in Python is used to test if a condition is true. If the condition is false, it raises an AssertionError and stops the program. It's similar to an if statement, but it's mainly used for debugging purposes to ensure certain conditions hold true during execution."
+    },
+
+    {
+        "id": 90,
+        "question":"What is the purpose of the with/as statement in Python, and what other statement is it similar to?",
+                                                                                                        
+        "options":["It handles file I/O operations and is similar to a for loop.",
+        "It manages exceptions and is similar to a try/except block.",
+        "It ensures proper resource management and is similar to a try/finally block.",
+        "It imports modules and is similar to the import statement."
+        ],
+        "answer":"It ensures proper resource management and is similar to a try/finally block.",
+        "discription":"The with/as statement in Python is used to ensure that resources like files or network connections are properly managed. It is similar to a try/finally block because it automatically handles the setup and cleanup of resources, ensuring that they are released after use, even if an error occurs."
+    },
+
+    {
+        "id": 91,
+        "question":"What are the two latest user-defined exception constraints in Python 3.X?",
+                                                                                                        
+        "options":["Exceptions must be derived from the BaseException class and must include a custom __init__ method.",
+        "Exceptions must be derived from the Exception class and can include custom attributes.",
+        "Exceptions must be derived from the Error class and must include a custom error message.",
+        "Exceptions must be derived from the StandardError class and must override the __str__ method."
+        ],
+        "answer":"Exceptions must be derived from the Exception class and can include custom attributes.",
+        "discription":"In Python 3.X, user-defined exceptions must be derived from the Exception class. This allows the creation of custom exceptions that can include specific attributes and methods tailored to the needs of the program."
+    },
+
+    {
+        "id": 92,
+        "question":"How are class-based exceptions that have been raised matched to handlers in Python?",
+                                                                                                        
+        "options":["By matching the exception name exactly.",
+        "By the order in which exceptions are defined in the code.",
+        "By checking the type of the exception and matching it to the nearest superclass.",
+        "By matching the line number where the exception occurred."
+        ],
+        "answer":"By checking the type of the exception and matching it to the nearest superclass.",
+        "discription":"In Python, when a class-based exception is raised, the exception handling mechanism checks the type of the exception and matches it to the nearest superclass defined in the except blocks. If the exact exception type is not found, the handler for a parent class of that exception will be used, following the class hierarchy."
+    },
+
+    {
+        "id": 93,
+        "question":"Which two methods can be used to attach context information to exception artifacts in Python?",
+                                                                                                        
+        "options":["Using raise with a custom exception message and logging.",
+        "Using assert statements and custom exception messages.",
+        "Using try-except blocks with print statements.",
+        "Using raise with a custom exception class and args attribute."
+        ],
+        "answer":"Using raise with a custom exception message and logging.",
+        "discription":"To attach context information to exception artifacts, you can use raise with a custom exception message to provide detailed information about the error, and you can use logging to record additional context information for debugging purposes."
+    },
+
+    {
+        "id": 94,
+        "question":"What is the difference between __getattr__ and __getattribute__?",
+                                                                                                        
+        "options":["__getattr__ is called when an attribute is accessed, while __getattribute__ is called only if the attribute does not exist.",
+        "__getattribute__ is called when an attribute is accessed, while __getattr__ is called only if the attribute does not exist.",
+        "__getattr__ and __getattribute__ are interchangeable and function the same way.",
+        "__getattr__ is used for method attributes only, while __getattribute__ is used for all attributes."
+        ],
+        "answer":"__getattribute__ is called when an attribute is accessed, while __getattr__ is called only if the attribute does not exist.",
+        "discription":"__getattribute__ is called whenever an attribute is accessed, whether it exists or not. In contrast, __getattr__ is only called when the attribute being accessed is not found in the usual places (i.e., it's not an existing attribute)."
+    },
+
+    {
+        "id": 95,
+        "question":"What is the key difference between properties and descriptors in Python?",
+                                                                                                        
+        "options":["Properties are methods, while descriptors are functions.",
+        "Properties are used to manage attributes with getter/setter methods, while descriptors define how attributes are accessed and managed.",
+        "Properties can only be used in classes, while descriptors can be used in functions.",
+        "Properties allow dynamic attribute assignment, while descriptors provide static attribute management."
+        ],
+        "answer":"Properties are used to manage attributes with getter/setter methods, while descriptors define how attributes are accessed and managed.",
+        "discription":"Properties in Python provide a way to manage attribute access through getter and setter methods. Descriptors, on the other hand, are a more general mechanism that allows you to customize how attributes are accessed, set, or deleted by defining methods in a class (like __get__, __set__, and __delete__)."
+    },
+
+    {
+        "id": 96,
+        "question":"What are the key differences in functionality between __getattr__ and __getattribute__, as well as properties and descriptors?",
+                                                                                                        
+        "options":["__getattr__ is called for existing attributes, while __getattribute__ is used for non-existing attributes; properties are used to manage attributes dynamically, and descriptors provide additional control over attribute access.",
+        "__getattribute__ is called for all attribute access, whereas __getattr__ is called only when the attribute is not found; properties simplify attribute access, and descriptors offer more control over how attributes are accessed and modified.",
+        "__getattr__ is only used for class attributes, while __getattribute__ is used for instance attributes; properties are used to define class-level attributes, and descriptors are used to manage instance-level attributes.",
+        "Both __getattr__ and __getattribute__ handle attribute access equally, properties are used only in built-in types, and descriptors are a type of Python decorator."
+        ],
+        "answer":"__getattribute__ is called for all attribute access, whereas __getattr__ is called only when the attribute is not found; properties simplify attribute access, and descriptors offer more control over how attributes are accessed and modified.",
+        "discription":"__getattribute__ is called for all attribute access (both existing and non-existing attributes), while __getattr__ is invoked only when the attribute is not found. Properties are used to simplify access to attributes by defining getter, setter, and deleter methods, while descriptors provide more control by defining methods for getting, setting, and deleting attributes."
+    },
+
+    {
+        "id": 97,
+        "question":"What is the best way to declare a class's metaclass?",
+                                                                                                        
+        "options":["class MyClass(metaclass=Meta):",
+        "class MyClass(metaclass='Meta'):",
+        "class MyClass(metaclass=MetaClass()):",
+        "class MyClass(Meta):"
+        ],
+        "answer":"class MyClass(metaclass=Meta):",
+        "discription":"The correct way to declare a class's metaclass in Python is by using the metaclass keyword in the class definition. This specifies that Meta is the metaclass for MyClass."
+    },
+
+    {
+        "id": 98,
+        "question":"How do class decorators overlap with metaclasses for handling classes?",
+                                                                                                        
+        "options":["Class decorators modify instance behavior, while metaclasses handle class-level behavior.",
+        "Both class decorators and metaclasses can modify class attributes and methods during class creation.",
+        "Class decorators change how methods are called, whereas metaclasses are used for handling instance methods.",
+        "Metaclasses are used to modify instances of a class, whereas class decorators are only applied to the class definition itself."
+        ],
+        "answer":"Both class decorators and metaclasses can modify class attributes and methods during class creation.",
+        "discription":"Class decorators and metaclasses can both be used to modify class-level attributes and methods. Class decorators are applied to the class definition after it is created, while metaclasses are involved in the class creation process itself. Both techniques allow for customization of how classes behave."
+    },
+
+    {
+        "id": 99,
+        "question":"How do class decorators overlap with metaclasses for handling instances?",
+                                                                                                        
+        "options":["Class decorators modify instance attributes directly, while metaclasses handle instance creation and initialization.",
+        "Class decorators can only be used to add methods, whereas metaclasses only affect class inheritance.",
+        "Class decorators and metaclasses both handle instance creation and can modify instance attributes.",
+        "Class decorators are used for altering class methods and attributes, whereas metaclasses focus on class structure and instance handling."
+        ],
+        "answer":"Class decorators are used for altering class methods and attributes, whereas metaclasses focus on class structure and instance handling.",
+        "discription":"Class decorators modify class methods and attributes, while metaclasses handle the creation and management of class instances."
+    },
+
+    {
+        "id": 100,
+        "question":"If you're using IDLE to run a Python application, explain how to print a multidimensional list as efficiently?",
+                                                                                                        
+        "options":["Use nested loops to print each element manually.",
+        "Use the print() function directly on the list.",
+        "Use the pprint module’s pprint() function.",
+        "Convert the list to a string with str() and then print it."
+        ],
+        "answer":"Use the pprint module’s pprint() function.",
+        "discription":"The pprint module’s pprint() function is designed to efficiently print nested structures, such as multidimensional lists, in a readable format."
+    },
+
+    {
+        "id": 101,
+        "question":"Functions are said to be “first-class objects” in Python but not in most other languages, such as C++ or Java. What can you do in Python with a function (callable object) that you can't do in C or C++?",
+                                                                                                        
+        "options":["Call a function directly by its name",
+        "Store functions in data structures like lists or dictionaries",
+        "Define a function inside another function",
+        "Use a function as a return value from another function"
+        ],
+        "answer":"Store functions in data structures like lists or dictionaries",
+        "discription":"In Python, functions are first-class objects, allowing them to be stored in data structures like lists or dictionaries, a capability not typically available in C or C++."
+    },
+
+    {
+        "id": 102,
+        "question":"What is monkey patching in Python?",
+                                                                                                        
+        "options":["A technique for changing the behavior of a module or class at runtime.",
+        "A method for optimizing Python code by rewriting it in C.",
+        "A process of securing Python code by adding encryption.",
+        "A debugging technique to track variable values during execution."
+        ],
+        "answer":"A technique for changing the behavior of a module or class at runtime.",
+        "discription":"Monkey patching refers to dynamically modifying or extending the behavior of modules or classes during runtime."
+    },
+
+    {
+        "id": 103,
+        "question":"What is the difference between a shallow copy and a deep copy?",
+                                                                                                        
+        "options":["A shallow copy creates a new object but references the same elements as the original object, while a deep copy creates a new object with new copies of all nested objects.",
+        "A shallow copy duplicates all nested objects, while a deep copy only duplicates the top-level object.",
+        "A shallow copy is faster because it avoids duplicating nested objects, while a deep copy is slower due to creating new copies of all nested objects.",
+        "A shallow copy creates a new object with unique references to all nested objects, while a deep copy creates a new object with references to the same nested objects."
+        ],
+        "answer":"A shallow copy creates a new object but references the same elements as the original object, while a deep copy creates a new object with new copies of all nested objects.",
+        "discription":"A shallow copy replicates the top-level object but shares references to nested objects, while a deep copy duplicates the entire object structure, including all nested objects."
+    },
+
+    {
+        "id": 104,
+        "question":"Describe the difference between the effects of '(ab)c+' and 'a(bc)+.' Which of these, if any, is the unqualified pattern 'abc+'?",
+                                                                                                        
+        "options":["(ab)c+ matches a followed by b and then one or more c characters, whereas a(bc)+ matches a followed by one or more occurrences of bc. The pattern abc+ is not matched by either.",
+        "(ab)c+ matches one or more c characters preceded by ab, whereas a(bc)+ matches a followed by bc repeated one or more times. The pattern abc+ is matched by (ab)c+.",
+        "(ab)c+ matches a followed by b and then one or more c characters, whereas a(bc)+ matches a followed by one or more occurrences of bc. The pattern abc+ is matched by a(bc)+.",
+        "(ab)c+ matches zero or more c characters preceded by ab, whereas a(bc)+ matches a followed by zero or more occurrences of bc. The pattern abc+ is not matched by either."
+        ],
+        "answer":"(ab)c+ matches a followed by b and then one or more c characters, whereas a(bc)+ matches a followed by one or more occurrences of bc. The pattern abc+ is matched by a(bc)+.",
+        "discription":"(ab)c+ matches ab followed by one or more c characters, while a(bc)+ matches a followed by one or more occurrences of bc. The pattern abc+ is matched by a(bc)+."
+    },
+
+    {
+        "id": 105,
+        "question":"How does compiling a regular-expression object benefit you?",
+                                                                                                        
+        "options":[" It converts the regex pattern into a string for easier manipulation.",
+        "It allows the regex pattern to be used with multiple inputs more efficiently.",
+        "It simplifies the regex pattern by removing unnecessary characters.",
+        "It automatically detects and corrects errors in the regex pattern."
+        ],
+        "answer":"It allows the regex pattern to be used with multiple inputs more efficiently.",
+        "discription":"Compiling a regular-expression object improves efficiency by allowing the same pattern to be used multiple times without recompiling."
+    },
+
+
+
+    {
+        "id": 106,
+        "question":"In regular-expression search patterns, why is it necessary to use the raw-string indicator (r)? In   replacement strings?",
+                                                                                                        
+        "options":["The raw-string indicator (r) prevents backslashes from being treated as escape characters.",
+        "The raw-string indicator (r) is needed to define the pattern as a regular expression.",
+        "The raw-string indicator (r) automatically formats the string for better readability.",
+        "The raw-string indicator (r) allows for variable substitution within the regex pattern."
+        ],
+        "answer":"The raw-string indicator (r) prevents backslashes from being treated as escape characters.",
+        "discription":"The raw-string indicator (r) ensures that backslashes in regular-expression patterns are treated as literal characters, avoiding the need to double them for escaping."
+    },
+
+    {
+        "id": 107,
+        "question":"What is the bare minimum effort required to transform a greedy pattern into a non-greedy one? What character(s) can you introduce or change?",
+                                                                                                        
+        "options":["Remove the asterisk (*) from the pattern.",
+        "Add a question mark (?) after the quantifier.",
+        "Replace the vertical bar (|) with a question mark (?).",
+        "Use square brackets ([]) instead of the asterisk (*)."
+        ],
+        "answer":"Add a question mark (?) after the quantifier.",
+        "discription":"To make a greedy pattern non-greedy, add a ? after the quantifier (*, +, or ?), so it matches the smallest possible portion."
+    },
+
+    {
+        "id": 108,
+        "question":"When does greedy versus non-greedy matching make a difference, and what happens if you're looking for a non-greedy match but only a greedy one is available?",
+                                                                                                        
+        "options":["Greedy matching tries to match as much text as possible, while non-greedy (or lazy) matching tries to match as little text as necessary. If only a greedy match is available, it will match the longest possible text instead of the shortest.",
+        "Greedy versus non-greedy matching affects only the performance of the regular expression, not the matched text. If a non-greedy match is needed but only a greedy pattern is available, the result will be the same as if a non-greedy match were used.",
+        "Greedy matching always finds the shortest possible match, while non-greedy matching finds the longest possible match. If a non-greedy match is needed but only a greedy pattern is available, it will still match the shortest text.",
+        "Greedy versus non-greedy matching affects only the start position of the match. If only a greedy pattern is available, it will match from the start but not extend beyond it."
+        ],
+        "answer":"Greedy matching tries to match as much text as possible, while non-greedy (or lazy) matching tries to match as little text as necessary. If only a greedy match is available, it will match the longest possible text instead of the shortest.",
+        "discription":"Greedy matching captures the longest possible text, while non-greedy matching captures the shortest. If only a greedy pattern is available, it will not find the shortest possible match."
+    },
+
+    {
+        "id": 109,
+        "question":"Unlike a normal regex pattern, a look-ahead condition does not consume the characters it examines. In what situation could this difference affect the results of your program?",
+                                                                                                        
+        "options":["When you need to match a sequence of characters followed by a condition but want to ensure the condition is only checked and not included in the match.",
+        "When you want to replace all occurrences of a specific substring within a larger string.",
+        "When you need to capture and process the exact position of each character in a string.",
+        "When you want to ensure that a string starts with a specific pattern and does not include additional characters after that pattern."
+        ],
+        "answer":"When you need to match a sequence of characters followed by a condition but want to ensure the condition is only checked and not included in the match.",
+        "discription":"Look-aheads allow you to check for a condition following a pattern without consuming characters, which is useful when you need to match a pattern based on subsequent conditions without including those conditions in the match."
+    },
+
+    {
+        "id": 110,
+        "question":" In standard expressions, what is the difference between positive look-ahead and negative look-ahead?",
+                                                                                                        
+        "options":["Positive look-ahead asserts that a pattern is followed by another pattern, while negative look-ahead asserts that a pattern is not followed by another pattern.",
+        "Positive look-ahead matches a pattern if it is preceded by another pattern, while negative look-ahead matches if it is not preceded by another pattern.",
+        "Positive look-ahead requires a pattern to appear first, while negative look-ahead requires a pattern to appear last.",
+        "Positive look-ahead changes the position of the regex engine, while negative look-ahead keeps the engine in the same position."
+        ],
+        "answer":"Positive look-ahead asserts that a pattern is followed by another pattern, while negative look-ahead asserts that a pattern is not followed by another pattern.",
+        "discription":"Positive look-ahead checks if a pattern is followed by another pattern, while negative look-ahead checks if a pattern is not followed by another pattern."
+    },
+
+    {
+        "id": 111,
+        "question":"What is a key difference between text and binary files?",
+                                                                                                        
+        "options":["Text files store data in a human-readable format, while binary files store data in a compressed format.",
+        "Text files are used for storing characters, while binary files are used exclusively for storing images.",
+        "Text files store data in a readable format using characters, while binary files store data in a non-readable format using bytes.",
+        "Text files are platform-independent, while binary files can only be read on the system they were created on."
+        ],
+        "answer":"Text files store data in a readable format using characters, while binary files store data in a non-readable format using bytes.",
+        "discription":"Text files are human-readable and use characters, while binary files store data as bytes in a non-readable format."
+    },
+
+    {
+        "id": 112,
+        "question":"In which scenarios would using text files be a better option, and when would you prefer to use binary files instead?",
+                                                                                                        
+        "options":["Text files are better for storing large multimedia content, while binary files are preferable for human-readable data.",
+        "Text files are ideal for human-readable data and configuration files, while binary files are used for storing images, videos, and executable programs.",
+        "Text files are preferred when file size is a concern, whereas binary files are better for storing plain text.",
+        "Text files should be used when data needs to be encrypted, while binary files are used for unstructured data."
+        ],
+        "answer":"Text files are ideal for human-readable data and configuration files, while binary files are used for storing images, videos, and executable programs.",
+        "discription":"Use text files for storing readable data like logs and configuration files, while binary files are better for efficiently handling multimedia content and executable programs."
+    },
+
+    {
+        "id": 113,
+        "question":"What are some of the issues with using binary operations to read and write a Python integer directly to disk?",
+                                                                                                        
+        "options":["Python integers are always stored as 32-bit values, which can lead to data loss when using binary operations.",
+        "Binary operations can lead to endianness issues, where the byte order may not match between different systems.",
+        "Binary operations automatically convert Python integers to floating-point values, which may result in precision loss.",
+        "Python’s integer type does not support binary operations, making it impossible to write integers directly to disk."
+        ],
+        "answer":"Binary operations can lead to endianness issues, where the byte order may not match between different systems.",
+        "discription":"Binary operations can introduce endianness issues, where the byte order of the data may differ between systems, leading to potential compatibility problems when reading or writing Python integers directly to disk."
+    },
+
+    {
+        "id": 114,
+        "question":"What is a benefit of using the with keyword instead of explicitly opening a file in Python?",
+                                                                                                        
+        "options":["The with keyword automatically closes the file after its block of code is executed, reducing the risk of resource leaks.",
+        "The with keyword allows you to open multiple files simultaneously without needing nested code blocks.",
+        "The with keyword allows the file to remain open after the block is executed, making it easier to work with the file later.",
+        "The with keyword is only used for opening files in read mode and cannot be used for writing or appending."
+        ],
+        "answer":"The with keyword automatically closes the file after its block of code is executed, reducing the risk of resource leaks.",
+        "discription":"Using the with keyword in Python ensures that a file is automatically closed after its block is executed, helping to prevent resource leaks even if an error occurs."
+    },
+
+    {
+        "id": 115,
+        "question":"When is it best to use the shelve package in Python?",
+                                                                                                        
+        "options":["When you need to store and manipulate large amounts of numerical data efficiently.",
+        "When you need to store and retrieve complex Python objects, like dictionaries and lists, with minimal code.",
+        "When you need high-performance data processing and querying capabilities.",
+        "When you need to work with relational databases and perform complex queries."
+        ],
+        "answer":"When you need to store and retrieve complex Python objects, like dictionaries and lists, with minimal code.",
+        "discription":"The shelve package is best used when you want to easily store and retrieve complex Python objects, like dictionaries or lists, using a simple key-value storage mechanism."
+    },
+
+    {
+        "id": 116,
+        "question":"What is a special restriction when using the shelve package, as opposed to using other data dictionaries?",
+                                                                                                        
+        "options":["Keys in a shelve dictionary must be strings, unlike other dictionaries where keys can be of any immutable type.",
+        "The shelve package does not allow storing complex objects, whereas other dictionaries do.",
+        "The shelve package requires that all values be strings, unlike other dictionaries where values can be of any type.",
+        "The shelve package cannot be used for multi-threaded applications, unlike other dictionaries."
+        ],
+        "answer":"Keys in a shelve dictionary must be strings, unlike other dictionaries where keys can be of any immutable type.",
+        "discription":"The shelve package requires keys to be strings, as it uses these keys to map data to filenames in its underlying storage mechanism, which is a unique restriction compared to other dictionaries."
+    },
+
+    {
+        "id": 117,
+        "question":"When is it necessary to use a reflection method? When do you not need it, even though you support the operation in question?",
+                                                                                                        
+        "options":["Reflection is necessary when you need to dynamically access or modify an object's properties at runtime. It’s not needed if the operation is already known at compile-time.",
+        "Reflection is needed when you want to optimize performance. It’s not necessary if performance isn’t a concern.",
+        "Reflection must be used to handle any kind of data retrieval operation. It’s not needed for data manipulation.",
+        "Reflection is only necessary for error handling. It’s not required for regular operations."
+        ],
+        "answer":"Reflection is necessary when you need to dynamically access or modify an object's properties at runtime. It’s not needed if the operation is already known at compile-time.",
+        "discription":"Use reflection when you need to dynamically access or modify an object's properties at runtime; it’s unnecessary if the operation is determined at compile-time."
+    },
+
+    {
+        "id": 118,
+        "question":"What is the _ _iadd_ _ method called?",
+                                                                                                        
+        "options":["In-place addition operator",
+        "Increment addition method",
+        "Addition assignment method",
+        "Instance addition operator"
+        ],
+        "answer":"In-place addition operator",
+        "discription":"The __iadd__ method is called the in-place addition operator and is used to define the behavior for the += operation."
+    },
+
+    {
+        "id": 119,
+        "question":"Set the variable test1 to the string 'This is a test of the emergency text system,' and save test1 to a file named test.txt",
+                                                                                                        
+        "options":["test1 = 'This is a test of the emergency text system,'\nsave('test.txt', test1)",
+        "test1 = 'This is a test of the emergency text system,'\nwith open('test.txt', 'w') as file:\n    file.write(test1)",
+        "test1 = 'This is a test of the emergency text system,'\nfile = open('test.txt', 'w')\nfile.save(test1)",
+        "test1 = 'This is a test of the emergency text system,'\nwrite('test.txt', test1)"
+        ],
+        "answer":"test1 = 'This is a test of the emergency text system,'\nwith open('test.txt', 'w') as file:\n    file.write(test1)",
+        "discription":" In Python, use with open('test.txt', 'w') as file: file.write(test1) to open a file in write mode and save the content of test1 to it."
+    },
+
+    {
+        "id": 120,
+        "question":"Read the contents of the file test.txt into the variable test2. Is there a difference between test 1 and test 2?",
+                                                                                                        
+        "options":["Yes, test2 will always be different from test1.",
+        "No, test1 and test2 will always be identical.",
+        "It depends on the file content, how test1 was obtained, and how test2 is read.",
+        "Yes, because file reading always introduces differences."
+        ],
+        "answer":"It depends on the file content, how test1 was obtained, and how test2 is read.",
+        "discription":"test1 and test2 could be identical or different based on how the contents are read and whether the file content has changed."
+    },
+
+    {
+        "id": 121,
+        "question":"Create a CSV file called books.csv by using these lines:\ntitle,author,year\nThe Weirdstone of Brisingamen,Alan Garner,1960\nPerdido Street Station,China Miéville,2000\nThud!,Terry Pratchett,2005\nThe Spellman Files,Lisa Lutz,2007\nSmall Gods,Terry Pratchett,1992\n",
+                                                                                                        
+        "options":["Use open('books.csv', 'w') to create the file, then manually write each line.",
+        "Use csv.writer to create the file and write rows as lists.",
+        "Use with open('books.csv', 'w') as file: followed by file.write() for each line.",
+        "Use pandas library with DataFrame.to_csv() to create the file."
+        ],
+        "answer":"Use with open('books.csv', 'w') as file: followed by file.write() for each line.",
+        "discription":"Using with open('books.csv', 'w') as file: and file.write() for each line is a straightforward method to create and write the specified content to a CSV file in Python."
+    },
+
+    {
+        "id": 122,
+        "question":"Use the sqlite3 module to create a SQLite database called books.db, and a table called books with these fields: title (text), author (text), and year (integer).",
+                                                                                                        
+        "options":["import sqlite3\n    conn = sqlite3.connect('books.db')\nc = conn.cursor()\nc.execute('CREATE DATABASE books.db')\nc.execute('CREATE TABLE books (title TEXT, author TEXT, year INTEGER)')\nconn.commit()\nconn.close()",
+        "import sqlite3\n   conn = sqlite3.connect('books.db')\nc = conn.cursor()\nc.execute('CREATE TABLE books (title TEXT, author TEXT, year INTEGER)')\nconn.commit()\nconn.close()",
+        "import sqlite3\n   conn = sqlite3.connect('books')\nc = conn.cursor()\nc.execute('CREATE TABLE books (title TEXT, author TEXT, year INTEGER)')\nconn.commit()\nconn.close()",
+        "import sqlite3\n   conn = sqlite3.connect('books.db')\nc = conn.cursor()\nc.execute('CREATE TABLE books (title VARCHAR, author VARCHAR, year INT)')\nconn.commit()\nconn.close()"
+        ],
+        "answer":"import sqlite3\n   conn = sqlite3.connect('books.db')\nc = conn.cursor()\nc.execute('CREATE TABLE books (title TEXT, author TEXT, year INTEGER)')\nconn.commit()\nconn.close()",
+        "discription":"The correct code snippet connects to books.db, creates the books table with fields for title, author, and year, and then closes the connection."
+    },
+        
+    {
+        "id": 123,
+        "question":"Read books.csv and insert its data into the book table.",
+                                                                                                        
+        "options":["Use the SQL command COPY book FROM 'books.csv'",
+        "Use Python's pandas library to read the CSV and then execute SQL insert statements",
+        "Use the SQL command INSERT INTO book VALUES ('books.csv')",
+        "Use the SQL command LOAD DATA INFILE 'books.csv' INTO TABLE book"
+        ],
+        "answer":"Use Python's pandas library to read the CSV and then execute SQL insert statements",
+        "discription":"You can read books.csv using Python’s pandas library and then use SQL insert statements to add the data to the book table."
+    },
+
+    {
+        "id": 124,
+        "question":"Select and print the title column from the book table in alphabetical order.",
+                                                                                                        
+        "options":["SELECT title FROM book ORDER BY title DESC;",
+        "SELECT title FROM book;",
+        "SELECT title FROM book ORDER BY title;",
+        "SELECT title FROM book ORDER BY book.title;"
+        ],
+        "answer":"SELECT title FROM book ORDER BY title;",
+        "discription":"Use SELECT title FROM book ORDER BY title; to select and sort the title column in alphabetical order."
+    },
+
+    {
+        "id": 125,
+        "question":"From the book table, how do you select and print all columns in the order of publication?",
+                                                                                                        
+        "options":["SELECT * FROM book ORDER BY publication;",
+        "SELECT * FROM book ORDER BY publication DESC;",
+        "SELECT ALL FROM book ORDER BY publication;",
+        "SELECT book.* FROM book ORDER BY publication;"
+        ],
+        "answer":"SELECT * FROM book ORDER BY publication;",
+        "discription":"The query SELECT * FROM book ORDER BY publication; selects all columns from the book table and orders the results by the publication column."
+    },
+
+    {
+        "id": 126,
+        "question":"How do you use the sqlalchemy module to connect to the sqlite3 database books.db?",
+                                                                                                        
+        "options":["engine = create_engine('sqlite:///books.db')",
+        "engine = connect('sqlite3://books.db')",
+        "engine = open_connection('sqlite:///books.db')",
+        "engine = Database('sqlite3://books.db')"
+        ],
+        "answer":"engine = create_engine('sqlite:///books.db')",
+        "discription":"Use create_engine('sqlite:///books.db') from SQLAlchemy to connect to the books.db SQLite database."
+    },
+
+    {
+        "id": 127,
+        "question":"After installing the Redis server and the Python redis library, and creating a Redis hash called test with the fields count (1) and name ('Fester Bestertester'), how do you print all the fields for test in Python?",
+                                                                                                        
+        "options":["import redis\nr = redis.Redis()\nr.hset('test', 'count', 1)\nr.hset('test', 'name', 'Fester Bestertester')\nprint(r.hgetall('test'))",
+        "import redis\nr = redis.Redis()\nr.hset('test', 'count', 1)\nr.hset('test', 'name', 'Fester Bestertester')\nprint(r.hkeys('test'))",
+        "import redis\nr = redis.Redis()\nr.hmset('test', {'count': 1, 'name': 'Fester Bestertester'})\nprint(r.hget('test', 'count'))",
+        "import redis\nr = redis.Redis()\nr.hset('test', 'count', 1)\nr.hset('test', 'name', 'Fester Bestertester')\nprint(r.hgetall())"
+        ],
+        "answer":"import redis\nr = redis.Redis()\nr.hset('test', 'count', 1)\nr.hset('test', 'name', 'Fester Bestertester')\nprint(r.hgetall('test'))",
+        "discription":"Use `r.hgetall('test')` to print all fields and their values for the Redis hash `test`."
+    },
+
+    {
+        "id": 128,
+        "question":"What is a probability distribution, and how can you predict values if they are meant to be random?",
+                                                                                                        
+        "options":["A probability distribution is a function that maps each possible outcome to a specific value. You can predict exact values from it.",
+        "A probability distribution is a way to model the likelihood of different outcomes. You predict values based on their probabilities.",
+        "A probability distribution predicts outcomes with absolute certainty, so randomness is not involved.",
+        "A probability distribution is a fixed set of outcomes that are guaranteed to occur."
+        ],
+        "answer":"A probability distribution is a way to model the likelihood of different outcomes. You predict values based on their probabilities.",
+        "discription":"A probability distribution models the likelihood of different outcomes, allowing predictions based on the probability of each outcome, not exact values."
+    },
+
+    {
+        "id": 129,
+        "question":"Is there a distinction between true random numbers and pseudo-random numbers, if there is one? Why are the latter considered “good enough”?",
+                                                                                                        
+        "options":["Yes, true random numbers are generated by physical processes, while pseudo-random numbers are generated by algorithms. Pseudo-random numbers are considered good enough because they are statistically similar to true random numbers for most applications.",
+        "No, there is no distinction; they are the same. Pseudo-random numbers are not used in practice because they are less reliable.",
+        "Yes, true random numbers are always more accurate than pseudo-random numbers. Pseudo-random numbers are not considered good enough.",
+        "Yes, true random numbers can only be used in cryptography, while pseudo-random numbers can be used in all applications."
+        ],
+        "answer":"Yes, true random numbers are generated by physical processes, while pseudo-random numbers are generated by algorithms. Pseudo-random numbers are considered good enough because they are statistically similar to true random numbers for most applications.",
+        "discription":"True random numbers come from physical processes, while pseudo-random numbers are algorithmically generated. Pseudo-random numbers are often “good enough” because they are statistically similar to true random numbers for most practical uses."
+    },
+
+    {
+        "id": 130,
+        "question":"What are the two main factors that influence the behaviour of a 'normal' probability distribution?",
+                                                                                                        
+        "options":["Mean and variance",
+        "Mean and mode",
+        "Mean and skewness",
+        "Variance and kurtosis"
+        ],
+        "answer":"Mean and variance",
+        "discription":"The behavior of a normal probability distribution is mainly influenced by the mean (which determines the center) and the variance (which determines the spread)."
+    },
+
+    {
+        "id": 131,
+        "question":"What is the relationship between exponentiation and logarithms?",
+                                                                                                        
+        "options":["Exponentiation is the inverse operation of logarithms, and vice versa.",
+        "Exponentiation and logarithms are unrelated mathematical operations.",
+        "Exponentiation is a type of logarithm operation.",
+        "Logarithms are used to simplify exponentiation calculations, but they are not related."
+        ],
+        "answer":"Exponentiation is the inverse operation of logarithms, and vice versa.",
+        "discription":"Exponentiation and logarithms are inverse operations: 𝑏𝑥=𝑦b x =y implies log  𝑏(𝑦)=𝑥log b ​ (y)=x."
+    },
+
+    {
+        "id": 132,
+        "question":"What are the three logarithmic functions that Python supports?",
+                                                                                                        
+        "options":["log10(), log2(), and log(), where log() is the natural logarithm",
+        "log(), ln(), and lg()",
+        "log(), exp(), and sqrt()",
+        "log(), log1p(), and log2()"
+        ],
+        "answer":"log10(), log2(), and log(), where log() is the natural logarithm",
+        "discription":"Python supports log10() for base-10 logarithms, log2() for base-2 logarithms, and log() for natural logarithms."
+    },
+
+    {
+        "id": 133,
+        "question":"How can you list the files in your current directory using Python?",
+                                                                                                        
+        "options":["os.list_files()",
+        "os.listdir()",
+        "glob.get_files()",
+        "pathlib.list()"
+        ],
+        "answer":"os.listdir()",
+        "discription":"Use os.listdir() to list the files and directories in your current directory in Python."
+    },
+
+    {
+        "id": 134,
+        "question":"How can you create a list of all the files in your parent directory using Python?",
+                                                                                                        
+        "options":["import os; files = os.listdir('..')",
+        "import shutil; files = shutil.get_files('..')",
+        "import glob; files = glob.glob('..')",
+        "import pathlib; files = pathlib.Path('..').files()"
+        ],
+        "answer":"import os; files = os.listdir('..')",
+        "discription":"Use os.listdir('..') to list all files and directories in the parent directory."
+    },
+
+    {
+        "id": 135,
+        "question":"How can you use multiprocessing to create three separate processes in Python, where each process waits a random number of seconds between one and five, prints the current time, and then exits?",
+                                                                                                        
+        "options":["Create three processes, each calling worker which waits randomly, prints the time, then exits.",
+        "Create three processes without ensuring they all complete.",
+        "Create three processes that wait a fixed 3 seconds and print the time.",
+        "Create three processes where each waits for a random time, but prints the epoch time."
+        ],
+        "answer":"Create three processes, each calling worker which waits randomly, prints the time, then exits.",
+        "discription":"Use three processes with multiprocessing, where each process waits a random time between one and five seconds, prints the current time, and exits."
+    },
+
+    {
+        "id": 136,
+        "question":"In the fromfunction function, which is used to construct new arrays, what is the role of the callable argument?",
+                                                                                                        
+        "options":["To specify the shape of the new array",
+        "To define the data type of the array elements",
+        "To provide a function that generates array values based on indices",
+        "To indicate whether the array should be one-dimensional or multi-dimensional"
+        ],
+        "answer":"To provide a function that generates array values based on indices",
+        "discription":"In the fromfunction function, the callable argument is a function that generates the values of the array based on the indices of the array."
+    },
+
+    {
+        "id": 137,
+        "question":"What happens when a NumPy array is combined with a single-value operand (a scalar, such as an int or a floating-point value) through addition, as in the expression A + n?",
+                                                                                                        
+        "options":["The scalar is added to each element of the array.",
+        "The scalar replaces each element of the array.",
+        "The scalar is ignored, and only the array is retained.",
+        "The scalar is multiplied by each element of the array."
+        ],
+        "answer":"The scalar is added to each element of the array.",
+        "discription":"When a scalar is added to a NumPy array, the scalar is broadcasted and added to each element of the array."
+    },
+
+    {
+        "id": 138,
+        "question":"Can array-to-scalar operations use combined operation-assign operators (such as += or *=)? What is the outcome?",
+                                                                                                        
+        "options":["No, combined operation-assign operators cannot be used with arrays and scalars.",
+        "Yes, combined operation-assign operators can be used, and they apply the operation element-wise between the array and the scalar.",
+        "Yes, combined operation-assign operators are used, but they produce an error if the scalar is zero.",
+        "Yes, combined operation-assign operators can be used, but they only update the scalar value and not the array."
+        ],
+        "answer":"Yes, combined operation-assign operators can be used, and they apply the operation element-wise between the array and the scalar.",
+        "discription":"Combined operation-assign operators (such as += or *=) can be used with arrays and scalars, applying the operation element-wise to each element of the array."
+    },
+
+    {
+        "id": 139,
+        "question":"What is the best way to use a Boolean array to mask another array in Python?",
+                                                                                                        
+        "options":["Using the numpy.where function",
+        "Using the & (bitwise AND) operator",
+        "Using indexing with the Boolean array",
+        "Using the numpy.select function"
+        ],
+        "answer":"Using indexing with the Boolean array",
+        "discription":"The best way to mask another array using a Boolean array is by directly indexing the array with the Boolean array, which filters the array to include only elements where the Boolean array is True."
+    },
+
+    {
+        "id": 140,
+        "question":"What are three different ways to get the standard deviation of a large collection of data using standard Python and its packages? Sort the three of them by how quickly they execute.",
+                                                                                                        
+        "options":["numpy.std(), statistics.stdev(), and manual calculation with a loop (fastest to slowest)",
+        "statistics.stdev(), numpy.std(), and manual calculation with a loop (fastest to slowest)",
+        "manual calculation with a loop, numpy.std(), and statistics.stdev() (fastest to slowest)",
+        "manual calculation with a loop, statistics.stdev(), and numpy.std() (fastest to slowest)"
+        ],
+        "answer":"numpy.std(), statistics.stdev(), and manual calculation with a loop (fastest to slowest)",
+        "discription":"numpy.std() is the fastest due to its optimized implementation in C, followed by statistics.stdev(), and lastly, manual calculation with a loop, which is the slowest due to Python's iteration overhead."
+    },
+
+    {
+        "id": 141,
+        "question":"If you have any, what are your choices for increasing the comparison between different figures on the same graph?",
+                                                                                                        
+        "options":["Use different colors or patterns for each figure",
+        "Increase the size of all figures.",
+        "Use the same color for all figures.",
+        "Place the figures on separate graphs."
+        ],
+        "answer":"Use different colors or patterns for each figure",
+        "discription":"To enhance comparison between different figures on the same graph, using different colors or patterns is effective in making them visually distinct."
+    },
+
+    {
+        "id": 142,
+        "question":"Can you explain the benefit of compound interest over a higher rate of interest that does not compound?",
+                                                                                                        
+        "options":["Compound interest always results in a lower final amount compared to a higher non-compounding rate.",
+        "Compound interest allows for interest to be calculated on previously earned interest, leading to potentially higher growth over time compared to a higher non-compounding rate.",
+        "Non-compounding interest provides more frequent updates to the principal than compound interest.",
+        "Compound interest is less beneficial because it results in less total interest compared to a single high-rate non-compounding interest."
+        ],
+        "answer":"Compound interest allows for interest to be calculated on previously earned interest, leading to potentially higher growth over time compared to a higher non-compounding rate.",
+        "discription":"Compound interest benefits from earning interest on previously earned interest, which can lead to greater growth over time compared to a higher non-compounding interest rate."
+    },
+
+    {
+        "id": 143,
+        "question":"Is it permissible to use several import statements to import the same module in Python? What would the goal be? Can you think of a situation where it would be beneficial?",
+                                                                                                        
+        "options":["No, it's not permissible and will cause an error.",
+        "Yes, but it will slow down the program significantly.",
+        "Yes, it's permissible to import the same module multiple times, and it can be useful in conditional imports or reloading a module.",
+        "No, but it will lead to unexpected behavior in the code."
+        ],
+        "answer":"Yes, it's permissible to import the same module multiple times, and it can be useful in conditional imports or reloading a module.",
+        "discription":"In Python, you can use several import statements for the same module without causing errors. The module will only be loaded once, but re-importing it can be helpful in specific scenarios like conditional imports or reloading a module after making changes."
+    },
+
+    {
+        "id": 144,
+        "question":"How can you avoid issues with circular importing in Python, where two modules import each other?",
+                                                                                                        
+        "options":["Use import statements inside functions instead of at the top of the module.",
+        "Import all required modules in a single module to prevent circular references.",
+        "Use try and except blocks to handle import errors.",
+        "Combine all modules into a single file to avoid imports."
+        ],
+        "answer":"Use import statements inside functions instead of at the top of the module.",
+        "discription":"Circular importing can create hidden dependencies and bugs. To avoid this, place import statements inside functions rather than at the top level of the module. This limits the scope of the import and can prevent circular import issues by delaying the import until it's actually needed."
+    },
+
+    {
+        "id": 145,
+        "question":"Why is  _ _all_ _ in Python?",
+                                                                                                        
+        "options":["To define a list of public objects to be exported when using from module import *",
+        "To declare private variables in a class",
+        "To automatically generate documentation for a module",
+        "To handle exceptions in a module"
+        ],
+        "answer":"To define a list of public objects to be exported when using from module import *",
+        "discription":"The __all__ attribute in a Python module is used to specify which objects (e.g., functions, classes) should be exposed when a user imports everything from the module using from module import *. This helps control which parts of the module's API are public and accessible."
+    },
+
+    {
+        "id": 146,
+        "question":"In what situation is it useful to refer to the _ _name_ _ attribute or the string '_ _main_ _'?",
+                                                                                                        
+        "options":["To import modules in a Python script",
+        "To check if a Python script is being run directly or imported as a module",
+        "To define global variables in a Python script",
+        "To declare a function in a Python script"
+        ],
+        "answer":"To check if a Python script is being run directly or imported as a module",
+        "discription":"The __name__ attribute is used in Python to determine if a script is being run directly or imported as a module. When a script is run directly, __name__ is set to '__main__'. This allows you to include code that should only execute when the script is run directly, not when it is imported elsewhere."
+    },
+
+    {
+        "id": 147,
+        "question":"What are some of the benefits of attaching a program counter to the RPN interpreter application, which interprets an RPN script line by line?",
+                                                                                                        
+        "options":["It allows the interpreter to execute multiple scripts simultaneously.",
+        "It helps in tracking the current position in the script, facilitating debugging and flow control.",
+        "It increases the overall speed of the RPN calculation process.",
+        "It simplifies the process of converting RPN scripts into other programming languages."
+        ],
+        "answer":"It helps in tracking the current position in the script, facilitating debugging and flow control.",
+        "discription":"Attaching a program counter to an RPN interpreter helps in tracking the current position within the script, making it easier to manage the execution flow and debug any issues by pinpointing where errors occur."
+    },
+
+    {
+        "id": 148,
+        "question":"What are the minimum expressions or statements needed to render a basic programming language like RPN (Reverse Polish Notation) primitive but complete, capable of carrying out any computerized task theoretically possible?",
+                                                                                                        
+        "options":["Addition, multiplication, and subtraction operators",
+        "A stack-based memory model and conditional branching",
+        "Basic arithmetic operators and a stack-based memory model",
+        "Input/output operations and a memory management system"
+        ],
+        "answer":"Basic arithmetic operators and a stack-based memory model",
+        "discription":"To create a primitive but complete programming language capable of performing any computable task, a stack-based memory model and basic arithmetic operators (addition, subtraction, multiplication, and division) are sufficient. This combination allows for the manipulation of data and execution of a wide range of operations."
+    },
+
+    {
+        "id": 149,
+        "question":"What is the distinction between a NumPy array and a Pandas DataFrame, and is there a way to convert between the two?",
+                                                                                                        
+        "options":["A NumPy array is a multi-dimensional array for numerical data, while a Pandas DataFrame is a 2D table with labeled axes. You can convert a NumPy array to a DataFrame using pd.DataFrame().",
+        "A NumPy array can only handle numerical data, while a Pandas DataFrame can handle any data type. You can convert a DataFrame to a NumPy array using df.to_array().",
+        "A Pandas DataFrame is only used for numerical computations, while a NumPy array is used for data analysis. You can’t convert between them.",
+        "A NumPy array is a data structure for handling labeled data, while a Pandas DataFrame is a multi-dimensional array. You convert a DataFrame to a NumPy array with np.array()."
+        ],
+        "answer":"A NumPy array is a multi-dimensional array for numerical data, while a Pandas DataFrame is a 2D table with labeled axes. You can convert a NumPy array to a DataFrame using pd.DataFrame().",
+        "discription":"A NumPy array is a multi-dimensional array primarily for numerical data, while a Pandas DataFrame is a 2D table that supports labeled axes and different data types. You can convert a NumPy array to a DataFrame using pd.DataFrame()."
+    },
+
+    {
+        "id": 150,
+        "question":"What can go wrong when a user enters a stock ticker symbol, and how do you handle it?",
+                                                                                                        
+        "options":["The ticker symbol may be invalid or not exist.",
+        "The ticker symbol might have too many characters.",
+        "The ticker symbol may be case-sensitive.",
+        "The ticker symbol could be misaligned with the current date."
+        ],
+        "answer":"The ticker symbol may be invalid or not exist.",
+        "discription":"Users might enter an invalid or non-existent stock ticker symbol, which can lead to errors or failures in retrieving stock information. To handle this, you should validate the ticker symbol before making a request, providing a helpful error message if the symbol is invalid."
+    },
+
+    {
+        "id": 151,
+        "question":"Identify some of the plotting techniques that are used to produce a stock-market chart.",
+                                                                                                        
+        "options":["Line Chart",
+        "Scatter Plot",
+        "Heatmap",
+        "Pie Chart"
+        ],
+        "answer":"Line Chart",
+        "discription":"A line chart is commonly used to represent stock-market data by showing price changes over time, making it easy to visualize trends and patterns."
+    },
+
+    {
+        "id": 152,
+        "question":"Why is it essential to print a legend on a stock market chart?",
+                                                                                                        
+        "options":["To decorate the chart with colors",
+        "To provide information on different data series",
+        "To reduce the number of data points",
+        "To hide the chart's details"
+        ],
+        "answer":"To provide information on different data series",
+        "discription":"A legend on a stock market chart is crucial because it explains what each line or symbol represents, helping viewers understand which data series corresponds to which information, such as different stocks or indices."
+    },
+
+    {
+        "id": 153,
+        "question":"What is the best way to limit the length of a pandas data frame to less than a year?",
+                                                                                                        
+        "options":["Use df[df['date_column'] < (pd.Timestamp.now() - pd.DateOffset(years=1))]",
+        "Apply df.query('date_column < pd.Timestamp.now() - pd.DateOffset(years=1)')",
+        "Use df[df['date_column'] > pd.Timestamp.now() - pd.DateOffset(years=1)]",
+        "Apply df.loc[df['date_column'] > pd.Timestamp.now() - pd.DateOffset(years=1)]"
+        ],
+        "answer":"Use df[df['date_column'] > pd.Timestamp.now() - pd.DateOffset(years=1)]",
+        "discription":"To limit the length of a pandas DataFrame to data from less than a year ago, filter the DataFrame to include only rows where the 'date_column' is greater than the current date minus one year."
+    },
+
+    {
+        "id": 154,
+        "question":"What will be the result of this code snippet? sorted([3, 1, 2], key=lambda x: -x)",
+                                                                                                        
+        "options":["[1, 2, 3]",
+        "[3, 2, 1]",
+        "[2, 1, 3]",
+        "[1, 3, 2]"
+        ],
+        "answer":"[3, 2, 1]",
+        "discription":"The lambda function lambda x: -x is used as the key argument in sorted(), which sorts the list in descending order by negating each element."
+    },
+
+    {
+        "id": 155,
+        "question":"Which of the following statements about lambda functions is true?",
+                                                                                                        
+        "options":["Lambda functions can have multiple expressions.",
+        "Lambda functions cannot be assigned to a variable.",
+        "Lambda functions are limited to a single expression but can be used wherever function objects are required.",
+        "Lambda functions can only be used as arguments to other functions."
+        ],
+        "answer":"Lambda functions are limited to a single expression but can be used wherever function objects are required.",
+        "discription":"Lambda functions are restricted to a single expression but can be used in any context where a function object is expected."
+    },
+    
+    {
+        "id": 156,
+        "question":"What will be the output of the following code?\ndef my_decorator(func):\n    def wrapper():\n        print('Something is happening before the function.')\n        func()\n        print('Something is happening after the function.')\n    return wrapper\n @my_decorator\ndef say_hello():\n    print('Hello!')\n say_hello()",
+                                                                                                        
+        "options":["Hello!",
+        "Something is happening before the function.\nHello!\nSomething is happening after the function.",
+        "Something is happening before the function.",
+        "Hello!\nSomething is happening after the function."
+        ],
+        "answer":"Something is happening before the function.\nHello!\nSomething is happening after the function.",
+        "discription":"The my_decorator function wraps say_hello, so it adds messages before and after the original function call."
+    },
+
+    {
+        "id": 157,
+        "question":"What is the purpose of using functools.wraps in decorators?",
+                                                                                                        
+        "options":["To automatically document the decorated function.",
+        "To ensure that the decorated function maintains its original metadata.",
+        "To speed up the execution of the decorated function.",
+        "To prevent the decorated function from being called."
+        ],
+        "answer":"To ensure that the decorated function maintains its original metadata.",
+        "discription":"functools.wraps is used in decorators to preserve the original function's metadata, such as its name and docstring."
+    },
+
+    {
+        "id": 158,
+        "question":" Which of the following best describes the use of @staticmethod in a class?",
+                                                                                                        
+        "options":["To allow a method to be called on an instance of the class.",
+        "To define a method that does not require access to the instance or class itself.",
+        "To create a method that can access and modify class attributes.",
+        "To automatically add a class-level attribute to the method."
+        ],
+        "answer":"To define a method that does not require access to the instance or class itself.",
+        "discription":"@staticmethod is used to define a method that does not operate on an instance of the class or modify class state, making it accessible directly from the class itself."
+    },
+
+    {
+        "id": 159,
+        "question":"What is the purpose of the __del__ method in a class?",
+                                                                                                        
+        "options":["To initialize instance attributes.",
+        "To destroy an instance of the class when it is no longer in use.",
+        "To create a new instance of the class.",
+        "To define a class-level attribute."
+        ],
+        "answer":"To destroy an instance of the class when it is no longer in use.",
+        "discription":"The __del__ method is a special method in Python classes that is called when an instance is about to be destroyed, allowing for cleanup of resources."
+    },
+
+    {
+        "id": 160,
+        "question":"What is the Global Interpreter Lock (GIL) in Python?",
+                                                                                                        
+        "options":["A lock that prevents multiple threads from executing Python bytecodes simultaneously.",
+        "A method that manages memory allocation in Python.",
+        "A lock that prevents multiple instances of Python from running at the same time.",
+        "A security feature to protect Python code."
+        ],
+        "answer":"A lock that prevents multiple threads from executing Python bytecodes simultaneously.",
+        "discription":"The GIL is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes simultaneously."
+    },
+
+    {
+        "id": 161,
+        "question":"How do you implement a context manager in Python?",
+                                                                                                        
+        "options":["By defining __enter__ and __exit__ methods in a class.",
+        "By using the contextlib module.",
+        "By defining start and end methods in a class.",
+        "By using try...finally blocks."
+        ],
+        "answer":"By defining __enter__ and __exit__ methods in a class.",
+        "discription":"Context managers are implemented by defining __enter__ and __exit__ methods in a class."
+    },
+
+    {
+        "id": 162,
+        "question":"What is the difference between @staticmethod and @classmethod decorators?",
+                                                                                                        
+        "options":["@staticmethod does not access class or instance data; @classmethod accesses class data.",
+        "@staticmethod is used to create class methods; @classmethod is used for instance methods.",
+        "@staticmethod can be called on an instance; @classmethod cannot.",
+        "@staticmethod and @classmethod are interchangeable."
+        ],
+        "answer":"@staticmethod does not access class or instance data; @classmethod accesses class data.",
+        "discription":"@staticmethod defines a method that does not access class or instance data, while @classmethod accesses class data but not instance data."
+    },
+
+    {
+        "id": 163,
+        "question":"What does the join() method do in the context of threading?",
+                                                                                                        
+        "options":["It terminates a thread.",
+        "It blocks the calling thread until the thread whose join() method is called terminates.",
+        "It creates a new thread.",
+        "It pauses the thread’s execution."
+        ],
+        "answer":"It blocks the calling thread until the thread whose join() method is called terminates.",
+        "discription":"The join() method waits for the thread to complete its execution before proceeding with the rest of the program."
+    },
+
+    {
+        "id": 164,
+        "question":"What is a Lock in threading?",
+                                                                                                        
+        "options":["A mechanism to prevent data corruption by ensuring that only one thread can access a resource at a time.",
+        "A method to speed up thread execution.",
+        "A technique to synchronize thread creation.",
+        "A type of exception handling in threads."
+        ],
+        "answer":"A mechanism to prevent data corruption by ensuring that only one thread can access a resource at a time.",
+        "discription":"Lock is used to ensure mutual exclusion, preventing multiple threads from accessing shared resources simultaneously."
+    },
+
+    {
+        "id": 165,
+        "question":"How do you use a Lock in Python?",
+                                                                                                        
+        "options":["lock = threading.Lock()",
+        "lock = threading.create_lock()",
+        "lock = threading.set_lock()",
+        "lock = threading.acquire_lock()"
+        ],
+        "answer":"lock = threading.Lock()",
+        "discription":"A Lock is created using threading.Lock(), and you use lock.acquire() to lock and lock.release() to unlock."
+    },
+
+    {
+        "id": 166,
+        "question":"What is a Condition object used for in threading?",
+                                                                                                        
+        "options":["To manage thread synchronization with additional control over the thread execution.",
+        "To create new threads.",
+        "To handle exceptions in threads.",
+        "To speed up thread execution."
+        ],
+        "answer":"To manage thread synchronization with additional control over the thread execution.",
+        "discription":"Condition objects are used for more complex thread synchronization scenarios, allowing threads to wait for some condition to be met."
+    },
+
+    {
+        "id": 167,
+        "question":"What is the purpose of Semaphore in Python threading?",
+                                                                                                        
+        "options":["To limit the number of threads that can access a resource simultaneously.",
+        "To create and start new threads.",
+        "To prevent deadlocks between threads.",
+        "To provide a thread-safe way to execute code."
+        ],
+        "answer":"To limit the number of threads that can access a resource simultaneously.",
+        "discription":"Semaphore is used to control access to a resource by limiting the number of threads that can access it concurrently."
+    },
+
+    {
+        "id": 168,
+        "question":"What is a ThreadPoolExecutor?",
+                                                                                                        
+        "options":["A class in concurrent.futures that manages a pool of threads to execute tasks asynchronously.",
+        "A class that provides thread synchronization.",
+        "A method for manually managing thread creation.",
+        "A tool for debugging thread execution."
+        ],
+        "answer":"A class in concurrent.futures that manages a pool of threads to execute tasks asynchronously.",
+        "discription":"ThreadPoolExecutor from the concurrent.futures module provides a high-level interface for asynchronously executing tasks using a pool of threads."
+    },
+
+    {
+        "id": 169,
+        "question":"What are ThreadLocal objects used for in Python?",
+                                                                                                        
+        "options":["To store data that is unique to each thread.",
+        "To manage global variables across threads.",
+        "To synchronize access to shared resources.",
+        "To control the execution order of threads."
+        ],
+        "answer":"To store data that is unique to each thread.",
+        "discription":"ThreadLocal objects allow you to store data that is specific to a thread and not shared among threads."
+    },
+
+    {
+        "id": 170,
+        "question":"What will be the output of the following code?\na, *b, c = [1, 2, 3, 4, 5]\nprint(b)",
+                                                                                                        
+        "options":["[2, 3, 4]",
+        "[1, 2, 3, 4, 5]",
+        "2 3 4",
+        "(2, 3, 4)"
+        ],
+        "answer":"[2, 3, 4]",
+        "discription":"The star operator (*) allows us to capture multiple elements in a list. In this example, b captures the middle elements [2, 3, 4], while a and c capture the first and last elements, respectively."
+    },
+
+    {
+        "id": 171,
+        "question":"What will be the result of the following code?\ndef func(x, y, z):\n    return x + y + z\n d = {'x': 1, 'y': 2, 'z': 3}\nresult = func(**d)\nprint(result)",
+                                                                                                        
+        "options":["{'x': 1, 'y': 2, 'z': 3}",
+        "SyntaxError",
+        "6",
+        "(1, 2, 3)"
+        ],
+        "answer":"6",
+        "discription":"The code uses dictionary unpacking (**d) to pass the values of the dictionary d as arguments to the function func. The function adds up the values 1 + 2 + 3, resulting in 6."
+    },
+
+    {
+        "id": 172,
+        "question":"What will be the output of the following code?\n(a, (b, c)) = (1, (2, 3))\nprint(b)",
+                                                                                                        
+        "options":["1",
+        "2",
+        "3",
+        "TypeError"
+        ],
+        "answer":"2",
+        "discription":"The code demonstrates nested unpacking. The variable b is assigned the value 2, which is part of the inner tuple (2, 3)."
+    },
+
+    {
+        "id": 173,
+        "question":"What will be the output of the following code?\na, b = 5, 10\na, b = b, a\nprint(a, b)",
+                                                                                                        
+        "options":["5 10",
+        "10 5",
+        "5 5",
+        "10 10"
+        ],
+        "answer":"10 5",
+        "discription":"The code shows how to swap the values of two variables using tuple unpacking. The values of a and b are swapped, so the output is 10 5."
+    },
+
+    {
+        "id": 174,
+        "question":"How can you ignore the second value in the following unpacking?\na, _, c = (1, 2, 3)\nprint(c)",
+                                                                                                        
+        "options":["1",
+        "2",
+        "3",
+        "SyntaxError"
+        ],
+        "answer":"3",
+        "discription":"The underscore (_) is often used as a placeholder to ignore values during unpacking. Here, a gets 1, _ (ignored) gets 2, and c gets 3."
+    },
+
+    {
+        "id": 175,
+        "question":"What will be the output of the following code?\na, *b, c, *d = [1, 2, 3, 4, 5, 6, 7]\nprint(b, d)",
+                                                                                                        
+        "options":["[2, 3, 4, 5] []",
+        "[2, 3, 4, 5] [6, 7]",
+        "[] [2, 3, 4, 5, 6, 7]",
+        "SyntaxError"
+        ],
+        "answer":"SyntaxError",
+        "discription":"Python only allows one starred expression in unpacking, so this code raises a SyntaxError."
+    },
+
+    {
+        "id": 176,
+        "question":"What will be the output of the following code?\ndef func(**kwargs):\n    return kwargs['a'] + kwargs['b']\n data = {'a': 1, 'b': 2, 'c': 3}\nresult = func(**data)\nprint(result)",
+                                                                                                        
+        "options":["1",
+        "2",
+        "6",
+        "3"
+        ],
+        "answer":"3",
+        "discription":"The dictionary data is unpacked into keyword arguments for func, which returns 1 + 2 = 3."
+    },
+    
+    {
+        "id": 177,
+        "question":"What will be the output of the following code?\ndef func(*args):\n    a, *b, c = args\n    return b\n   result = func(1, 2, 3, 4, 5)\nprint(result)",
+                                                                                                        
+        "options":["[2, 3, 4]",
+        "[1, 2, 3, 4]",
+        "[2, 3, 4, 5]",
+        "[3,4]"
+        ],
+        "answer":"[2, 3, 4]",
+        "discription":"The star operator captures the middle elements [2, 3, 4] in b."
+    },
+    
+    {
+        "id": 178,
+        "question":"What will be the output of the following code?\ndef func(a, b, c):\n    return a + b + c\nvalues = (1, 2, 3)\nresult = func(*values)\nprint(result)",
+                                                                                                        
+        "options":["(1, 2, 3)",
+        "6",
+        "[1, 2, 3]",
+        "SyntaxError"
+        ],
+        "answer":"6",
+        "discription":"The tuple values is unpacked into arguments for func, resulting in 1 + 2 + 3 = 6."
+    },
+    
+    {
+        "id": 179,
+        "question":"What will be the output of the following code?\nclass MyClass:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\nobj = MyClass(1, 2)\na, b = obj.x, obj.y\nprint(a, b)",
+                                                                                                        
+        "options":["1 2",
+        "2 1",
+        "(1, 2)",
+        "SyntaxError"
+        ],
+        "answer":"1 2",
+        "discription":"The attributes x and y of obj are unpacked into a and b, resulting in 1 2."
+    },
+    
+    {
+        "id": 180,
+        "question":"What will be the output of the following code?\na, b = [1, 2, 3][1:]\nprint(a, b)",
+                                                                                                        
+        "options":["1 2",
+        "2 3",
+        "[2, 3]",
+        "SyntaxError"
+        ],
+        "answer":"2 3",
+        "discription":"The list slice [1:] returns [2, 3], which is unpacked into a and b."
+    },
+    
+    {
+        "id": 181,
+        "question":"What will be the output of the following code?\ndef func():\n    return 1, [2, 3], (4, 5)\na, (b, c), d = func()\nprint(b, d)",
+                                                                                                        
+        "options":["2 4",
+        "2 5",
+        "3 4",
+        "2 (4, 5)"
+        ],
+        "answer":"2 5",
+        "discription":"The function func returns a tuple, which is unpacked into a, b, c, and d, with b being 2 and d being 5."
+    },
+
+    {
+        "id": 182,
+        "question":"What will be the output of the following code?\ndef decorator_func(func):\n    def wrapper():\n        print('Before function call')\n        func()\n        print('After function call')\n    return wrapper\n@decorator_func\ndef say_hello():\n    print('Hello!')\nsay_hello()",
+                                                                                                        
+        "options":["Hello!",
+        "Before function call",
+        "Before function call Hello! After function call",
+        "SyntaxError"
+        ],
+        "answer":"Before function call Hello! After function call",
+        "discription":"The say_hello function is wrapped by decorator_func, which adds functionality before and after the function call."
+    },
+
+    {
+        "id": 183,
+        "question":"What will be the output of the following code?\ndef gen():\n    yield 1\n    yield 2\n    yield 3\nresult = list(gen())\nprint(result)",
+                                                                                                        
+        "options":["[1, 2, 3]",
+        "(1, 2, 3)",
+        "1 2 3",
+        "None"
+        ],
+        "answer":"[1, 2, 3]",
+        "discription":"The gen function is a generator that yields values. When converted to a list, it produces [1, 2, 3]."
+    },
+
+    {
+        "id": 184,
+        "question":"What will be the output of the following code?\nresult = [x**2 for x in range(5) if x % 2 == 0]\nprint(result)",
+                                                                                                        
+        "options":["[1, 4, 9, 16]",
+        "[0, 4, 16]",
+        "[1, 9]",
+        "[0, 1, 4]"
+        ],
+        "answer":"[0, 4, 16]",
+        "discription":"The list comprehension squares only even numbers in the range [0, 1, 2, 3, 4]."
+    },
+
+    {
+        "id": 185,
+        "question":"What will be the output of the following code?\nadd = lambda x, y: x + y\nprint(add(2, 3))",
+                                                                                                        
+        "options":["2",
+        "5",
+        "23",
+        "None"
+        ],
+        "answer":"5",
+        "discription":"The lambda function add takes two arguments and returns their sum, 2 + 3 = 5."
+    },
+
+    {
+        "id": 186,
+        "question":"What will be the output of the following code?\nwith open('file.txt', 'w') as f:\n    f.write('Hello, World!')\nwith open('file.txt', 'r') as f:\n    print(f.read())",
+                                                                                                        
+        "options":["Hello, World!",
+        "``",
+        "None",
+        "SyntaxError"
+        ],
+        "answer":"Hello, World!",
+        "discription":"The with statement is used as a context manager to handle files, ensuring they are properly opened and closed."
+    },
+
+    {
+        "id": 187,
+        "question":"What will be the output of the following code?\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\nprint(factorial(3)",
+                                                                                                        
+        "options":["3",
+        "6",
+        "9",
+        "None"
+        ],
+        "answer":"6",
+        "discription":"The factorial function uses recursion to calculate 3!, which is 3 * 2 * 1 = 6."
+    },
+
+    {
+        "id": 188,
+        "question":"What will be the output of the following code?\nclass Parent:\n    def __init__(self):\n        self.value = 'Parent'\nclass Child(Parent):\n    def __init__(self):\n        super().__init__()\n        self.value = 'Child'\nobj = Child()\nprint(obj.value)",
+                                                                                                        
+        "options":["Parent",
+        "Child",
+        "None",
+        "Error"
+        ],
+        "answer":"Child",
+        "discription":"The Child class overrides the value attribute from Parent during initialization."
+    },
+
+    {
+        "id": 189,
+        "question":"What will be the output of the following code?\nclass A:\n    def greet(self):\n        return 'Hello from A'\nclass B:\n    def greet(self):\n        return 'Hello from B'\nclass C(A, B):\n    pass",
+                                                                                                        
+        "options":["Hello from A",
+        "Hello from B",
+        "Error",
+        "None"
+        ],
+        "answer":"Hello from A",
+        "discription":"The class C inherits from both A and B, but the method resolution order (MRO) leads to A.greet being called first."
+    },
+
+    {
+        "id": 190,
+        "question":"What will be the output of the following code?\nclass MyClass:\n    def __init__(self, value):\n        self._value = value\n    @property\n    def value(self):\n        return self._value + 1\nobj = MyClass(10)\nprint(obj.value)",
+                                                                                                        
+        "options":["10",
+        "11",
+        "12",
+        "None"
+        ],
+        "answer":"11",
+        "discription":"The @property decorator allows value to be accessed like an attribute, but the getter method adds 1 to the internal _value."
+    },
+
+    {
+        "id": 191,
+        "question":"What will be the output of the following code?\ntry:\n    x = 1 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')\nelse:\n    print('Division successful')\nfinally:\n    print('End of computation')",
+                                                                                                        
+        "options":["Cannot divide by zero",
+        "Division successful",
+        "Cannot divide by zero End of computation",
+        "End of computation"
+        ],
+        "answer":"Cannot divide by zero End of computation",
+        "discription":"The except block catches the ZeroDivisionError, and the finally block always executes."
+    },
+
+    {
+        "id": 192,
+        "question":"What will be the output of the following code?\nclass MyIterator:\n    def __init__(self):\n        self.data = [1, 2, 3]\n        self.index = 0\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.index >= len(self.data):\n            raise StopIteration\n        result = self.data[self.index]\n        self.index += 1\n        return result\niterator = MyIterator()\nprint(next(iterator), next(iterator))",
+                                                                                                        
+        "options":["1 2",
+        "1 3",
+        "2 3",
+        "StopIteration"
+        ],
+        "answer":"1 2",
+        "discription":"The custom iterator yields 1 and 2 when next is called twice."
+    },
+
+    {
+        "id": 193,
+        "question":"What will be the output of the following code?\nimport itertools\nresult = list(itertools.product([1, 2], ['a', 'b']))\nprint(result)",
+                                                                                                        
+        "options":["[(1, 'a'), (1, 'b'), (2, 'a'), (2, 'b')]",
+        "[1, 2, 'a', 'b']",
+        "[(1, 2), ('a', 'b')]",
+        "[('a', 1), ('b', 2)]"
+        ],
+        "answer":"[(1, 'a'), (1, 'b'), (2, 'a'), (2, 'b')]",
+        "discription":"The itertools.product function returns the Cartesian product of the input iterables."
+    },
+
+    {
+        "id": 194,
+        "question":"What will be the output of the following code?\nfrom enum import Enum\nclass Color(Enum):\n    RED = 1\n    GREEN = 2\n    BLUE = 3\nprint(Color.RED.name)",
+                                                                                                        
+        "options":["RED",
+        "1",
+        "Color.RED",
+        "SyntaxError"
+        ],
+        "answer":"RED",
+        "discription":"The Enum class allows creating enumerations, with Color.RED.name returning 'RED'."
+    },
+
+    {
+        "id": 195,
+        "question":"What will be the output of the following code?\nmatrix = [[1, 2], [3, 4]]\ntranspose = [[row[i] for row in matrix] for i in range(2)]\nprint(transpose)",
+                                                                                                        
+        "options":["[[1, 2], [3, 4]]",
+        "[[1, 3], [2, 4]]",
+        "[[1, 4], [2, 3]]",
+        "[[3, 4], [1, 2]]"
+        ],
+        "answer":"[[1, 3], [2, 4]]",
+        "discription":"The nested list comprehension transposes the matrix."
+    },
+
+    {
+        "id": 196,
+        "question":"What will be the output of the following code?\ndef add_five(x):\n    return x + 5\nresult = list(map(add_five, [1, 2, 3]))\nprint(result)",
+                                                                                                        
+        "options":["[1, 2, 3]",
+        "[5, 10, 15]",
+        "[6, 7, 8]",
+        "[None, None, None]"
+        ],
+        "answer":"[6, 7, 8]",
+        "discription":"The map function applies add_five to each element in the list, resulting in [6, 7, 8]."
+    },
+
+    {
+        "id": 197,
+        "question":"What will be the output of the following code?\nimport re\nresult = re.findall(r'\d+', 'abc123def456')\nprint(result)",
+                                                                                                        
+        "options":["['abc', 'def']",
+        "['123', '456']",
+        "['123456']",
+        "['123', 'def456']"
+        ],
+        "answer":"['123', '456']",
+        "discription":"The regular expression '\d'+ matches one or more digits, returning the sequences 123 and 456."
+    },
+
+    {
+        "id": 198,
+        "question":"What will be the output of the following code?\ndef my_decorator(func):\n    def wrapper(*args, **kwargs):\n        return func(*args, **kwargs) * 2\n    return wrapper\n@my_decorator\ndef multiply(x, y):\n    return x * y\nresult = multiply(3, 5)\nprint(result)",
+                                                                                                        
+        "options":["15",
+        "30",
+        "9",
+        "25"
+        ],
+        "answer":"30",
+        "discription":"The decorator my_decorator wraps the multiply function, doubling its return value. The multiply(3, 5) call normally returns 15, but the decorator causes the result to be 30."
+    },
+
+    {
+        "id": 199,
+        "question":"What will be the output of the following code?\nmatrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nflattened = [x for row in matrix for x in row if x % 2 == 0]\nprint(flattened)",
+                                                                                                        
+        "options":["[2, 4, 6, 8]",
+        "[2, 6, 4, 8]",
+        "[4, 8]",
+        "[2, 4, 8]"
+        ],
+        "answer":"[2, 4, 6, 8]",
+        "discription":"The list comprehension flattens the matrix and filters out odd numbers, resulting in [2, 4, 6, 8]."
+    },
+
+    {
+        "id": 200,
+        "question":"What will be the output of the following code?\nclass CustomError(Exception):\n    pass\ntry:\n    raise CustomError('Something went wrong')\nexcept CustomError as e:\n    print('Caught:', e)\nfinally:\n    print('Finally block executed')",
+                                                                                                        
+        "options":["Caught: Something went wrong",
+        "Caught: Something went wrong Finally block executed",
+        "Finally block executed",
+        "SyntaxError"
+        ],
+        "answer":"Caught: Something went wrong Finally block executed",
+        "discription":"The custom exception CustomError is raised and caught, displaying the error message. The finally block then executes, leading to the combined output."
+    }
+
+    
+]

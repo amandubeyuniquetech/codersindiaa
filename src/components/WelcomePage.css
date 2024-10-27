@@ -1,0 +1,10 @@
+.content-body{
+    display: flex;
+    flex-direction: column;
+    
+    >.welcome-heading{
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,49 @@
+#quizes-mode{
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >.modes-wrapper{
+     display: flex;
+     width: 90vw;
+     justify-content: space-around;
+     
+     >.mode{
+        display: flex;
+        flex-direction: column;
+        
+        width: max-content;
+        padding: 0.5rem 2rem;
+        border: 1px solid gray;
+        border-radius: 10px;
+        /* background-color: var(--main-color); */
+        
+        >h1{
+            color: var(--main-color);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-block: 1rem;
+            border-bottom: 5px solid var(--main-color);
+        }
+        >.test-link{
+            padding: 0.2rem 0rem;
+        }
+     }
+     >.mode:hover{
+        background-color: var(--main-color);
+        box-shadow: 0 0 5px 5px gainsboro;
+        >h1{
+            color: white;
+            border-bottom: 5px solid white;
+        }
+        >.test-link{
+            color: white;
+            cursor: pointer;
+            
+        }
+        >.test-link:hover{
+            font-weight: 500;
+        }
+     }
+    }
+}

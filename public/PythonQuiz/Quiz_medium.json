@@ -1,0 +1,2621 @@
+[
+    {
+    "id": 1,
+    "question":"If you had a function named bacon() inside a module named spam, how would you call it after importing spam?",
+                                                                                                    
+    "options":["bacon.spam()",
+    "spam.bacon()",
+    "call spam.bacon()",
+    "import spam.bacon()"
+    ],
+    "answer":"spam.bacon()",
+    "discription":"After importing the spam module, you call the bacon() function using the syntax module_name.function_name(). Therefore, you would call bacon() as spam.bacon()."
+},
+
+{
+    "id": 2,
+    "question":"Why are functions advantageous to have in your programs?",
+                                                                                                    
+    "options":["They allow you to write code that is syntactically incorrect.",
+    "They make your program run faster.",
+    "They help you avoid repetition, make the code more modular, and easier to understand and maintain.",
+    "They eliminate the need for variables in your program."
+    ],
+    "answer":"They help you avoid repetition, make the code more modular, and easier to understand and maintain.",
+    "discription":"Functions help in organizing code into manageable sections, making it reusable and reducing redundancy. This enhances code readability, maintainability, and overall structure."
+},
+
+{
+    "id": 3,
+    "question":"When does the code in a function run: when it's specified or when it's called?",
+                                                                                                    
+    "options":["When it's specified.",
+    "When it's called",
+    "When the program starts.",
+    "Continuously in a loop."
+    ],
+    "answer":"When it's called",
+    "discription":"The code inside a function executes only when the function is called, not when it is defined. Defining a function merely specifies what it does, but it doesn't run until you explicitly call it."
+},
+
+
+{
+    "id": 4,
+    "question":"What is the difference between a function and a function call?",
+                                                                                                    
+    "options":["A function is the code that performs a task; a function call is how you define the function.",
+    "A function is how you use the function; a function call is the code that performs the task.",
+    "A function is the block of code that performs a task; a function call is the code that executes the function.",
+    "A function is an input to a program; a function call is the output of a program."
+    ],
+    "answer":"A function is the block of code that performs a task; a function call is the code that executes the function.",
+    "discription":"A function is a defined block of code that performs a specific task.\nA function call is when you execute the function to perform its task."
+},
+
+{
+    "id": 5,
+    "question":"How many global scopes are there in a Python program? How many local scopes?",
+                                                                                                    
+    "options":["There is one global scope and one local scope.",
+    "There are multiple global scopes and one local scope.",
+    "There is one global scope and multiple local scopes.",
+    "There are multiple global scopes and multiple local scopes."
+    ],
+    "answer":"There is one global scope and multiple local scopes.",
+    "discription":"In a Python program, there is only one global scope, which exists for the duration of the program.\nEach function call creates a new local scope, so there can be multiple local scopes in a program."
+},
+
+{
+    "id": 6,
+    "question":"What happens to variables in a local scope when the function call returns?",
+                                                                                                    
+    "options":["They are preserved and can be accessed outside the function.",
+    "They are deleted and cannot be accessed outside the function.",
+    "They are converted to global variables.",
+    "They are stored in memory until the program ends."
+    ],
+    "answer":"They are deleted and cannot be accessed outside the function.",
+    "discription":"When a function call returns, the local scope is destroyed, and all variables defined within that local scope are deleted. They cannot be accessed outside the function."
+},
+
+{
+    "id": 7,
+    "question":"If a function does not have a return statement, what is the return value of a call to that function?",
+                                                                                                    
+    "options":["The function returns 0.",
+    "The function returns None.",
+    "The function returns an empty string' '.",
+    "The function returns an error."
+    ],
+    "answer":"The function returns None.",
+    "discription":"In Python, if a function does not have a return statement, it automatically returns None when called. This is the default return value for all functions that do not explicitly return a value."
+},
+
+{
+    "id": 8,
+    "question":"How do you make a function variable refer to the global variable?",
+                                                                                                    
+    "options":["Use the local keyword before the variable name.",
+    "Use the global keyword before the variable name.",
+    "Use the universal keyword before the variable name.",
+    "Use the extern keyword before the variable name."
+    ],
+    "answer":"Use the global keyword before the variable name.",
+    "discription":"In Python, the global keyword is used inside a function to refer to a variable that is defined in the global scope. This allows the function to modify the global variable."
+},
+
+{
+    "id": 9,
+    "question":"If you had a bacon() function in a spam module, how would you call it after importing spam?",
+                                                                                                    
+    "options":["bacon()",
+    "call spam.bacon()",
+    "spam.bacon()",
+    "spam::bacon()"
+    ],
+    "answer":"spam.bacon()",
+    "discription":"After importing the spam module, you call the bacon() function using the syntax module_name.function_name(), which in this case is spam.bacon()."
+},
+
+{
+    "id": 10,
+    "question":"What is the purpose of the try clause? What is the purpose of the except clause?",
+                                                                                                    
+    "options":["The try clause is used to test if a block of code has errors; the except clause is used to skip the error.",
+    "The try clause is used to define functions; the except clause is used to handle function arguments.",
+    "The try clause is used to execute code that might cause an exception; the except clause is used to handle the exception if one occurs.",
+    "The try clause is used to iterate over a sequence; the except clause is used to end the iteration."
+    ],
+    "answer":"The try clause is used to execute code that might cause an exception; the except clause is used to handle the exception if one occurs.",
+    "discription":"The try clause allows you to write code that might raise an exception. If an exception occurs, the code in the except clause is executed to handle the exception gracefully. This helps in preventing the program from crashing and allows for proper error handling."
+},
+
+
+{
+    "id": 11,
+    "question":"What is the value of the expression spam[int(int('3' * 2) / 11)]?",
+                                                                                                    
+    "options":["The expression results in an error.",
+    "The expression evaluates to spam[2].",
+    "The expression evaluates to spam[1].",
+    "The expression evaluates to spam[0]."
+    ],
+    "answer":"The expression results in an error.",
+    "discription":"Evaluating the expression:\n '3' * 2 results in '33'.\n int('33') converts '33' to 33.\n 3 / 11 is 3.0.\n int(3.0) converts 3.0 to 3.\n If spam is not defined, attempting to use spam[3] will cause an error."
+},
+
+{
+    "id": 12,
+    "question":"What is the value of spam[:2]?\nLet's pretend bacon has the list [3.14, 'cat', 11, 'cat', True] for the next three questions.",
+                                                                                                    
+    "options":["[3.14, 'cat']",
+    "['cat', 11]",
+    "[3.14, 'cat', 11]",
+    "['cat', 11, 'cat']"
+    ],
+    "answer":"[3.14, 'cat']",
+    "discription":"The slice spam[:2] returns the elements from the start of the list up to, but not including, index 2. Therefore, the first two elements of bacon are [3.14, 'cat']."
+},
+
+{
+    "id": 13,
+    "question":"Given the list bacon = [3.14, 'cat', 11, 'cat', True], what is the value of bacon.index('cat')?",
+                                                                                                    
+    "options":["1",
+    "2",
+    "3",
+    "4"
+    ],
+    "answer":"1",
+    "discription":"The index() method returns the first occurrence of the specified value. In this case, the first occurrence of 'cat' in the list bacon is at index 1."
+},
+
+{
+    "id": 14,
+    "question":"Given the list bacon = [3.14, 'cat', 11, 'cat', True], how does bacon.append(99) change the look of the list value in bacon?",
+                                                                                                    
+    "options":["[99, 3.14, 'cat', 11, 'cat', True]",
+    "[3.14, 'cat', 11, 'cat', True, 99]",
+    "[3.14, 'cat', 11, 99, 'cat', True]",
+    "[3.14, 'cat', 11, 'cat']"
+    ],
+    "answer":"[3.14, 'cat', 11, 'cat', True, 99]",
+    "discription":"The append() method adds its argument to the end of the list. Thus, appending 99 to the list bacon results in [3.14, 'cat', 11, 'cat', True, 99]."
+},
+
+{
+    "id": 15,
+    "question":"Given the list bacon = [3.14, 'cat', 11, 'cat', True], how does bacon.remove('cat') change the look of the list value in bacon?",
+                                                                                                    
+    "options":["[3.14, 11, 'cat', True]",
+    "[3.14, 'cat', 'cat', True]",
+    "[3.14, 'cat', 11, 'cat']",
+    "['cat', 11, 'cat', True]"
+    ],
+    "answer":"[3.14, 11, 'cat', True]",
+    "discription":"The remove() method removes the first occurrence of the specified value. In this case, removing 'cat' from the list bacon results in [3.14, 11, 'cat', True]."
+},
+
+{
+    "id": 16,
+    "question":"What are the list concatenation and list replication operators in Python?",
+                                                                                                    
+    "options":["+ and *",
+    "& and |",
+    "- and ",
+    "@ and %"
+    ],
+    "answer":"+ and *",
+    "discription":"The + operator is used for list concatenation, which combines two lists into one.\nThe * operator is used for list replication, which repeats the elements of a list a specified number of times."
+},
+
+{
+    "id": 17,
+    "question":"How are list values and string values identical in Python?",
+                                                                                                    
+    "options":["Both lists and strings are immutable.",
+    "Both lists and strings can be concatenated and replicated.",
+    "Both lists and strings can only contain characters.",
+    "Both lists and strings are created using square brackets."
+    ],
+    "answer":"Both lists and strings can be concatenated and replicated.",
+    "discription":"Both lists and strings support concatenation using the + operator and replication using the * operator. While strings are immutable and lists are mutable, these operations work similarly for both types."
+},
+
+{
+    "id": 18,
+    "question":"How do you get a list value's tuple form? How do you get a tuple value's list form?",
+                                                                                                    
+    "options":["Use list() for both conversions.",
+    "Use tuple() to convert a list to a tuple and list() to convert a tuple to a list.",
+    "Use list() to convert a list to a tuple and tuple() to convert a tuple to a list.",
+    "Use tuple() for both conversions."
+    ],
+    "answer":"Use tuple() to convert a list to a tuple and list() to convert a tuple to a list.",
+    "discription":"The tuple() function converts a list to a tuple, and the list() function converts a tuple to a list. These functions allow you to change the data type while preserving the elements."
+},
+
+{
+    "id": 19,
+    "question":"Variables that 'contain' list values are not necessarily lists themselves. Instead, what do they contain?",
+                                                                                                    
+    "options":["The list values themselves",
+    "References to the list values",
+    "Copies of the list values",
+    "The length of the list"
+    ],
+    "answer":"References to the list values",
+    "discription":"Variables that 'contain' list values actually contain references (or pointers) to the list values stored in memory, not the list values themselves. This means the variable points to the location where the list is stored."
+},
+
+{
+    "id": 20,
+    "question":"What is the value of a dictionary entry with the key 'foo' and the value 42?",
+                                                                                                    
+    "options":["{'foo': 42}",
+    "{'foo', 42}",
+    "[foo: 42]",
+    "('foo', 42)"
+    ],
+    "answer":"{'foo': 42}",
+    "discription":"In Python, a dictionary entry with the key 'foo' and the value 42 is represented as {'foo': 42}. The key-value pair is written inside curly braces, with the key and value separated by a colon."
+},
+
+{
+    "id": 21,
+    "question":"What happens if you try to access spam['foo'] if spam is {'bar': 100}?",
+                                                                                                    
+    "options":["It returns None.",
+    "It raises a KeyError.",
+    "It returns the value 100",
+    "It returns 0"
+    ],
+    "answer":"It raises a KeyError.",
+    "discription":"If you try to access a key in a dictionary that does not exist, Python raises a KeyError. In this case, 'foo' is not a key in the dictionary {'bar': 100}, so accessing spam['foo'] results in a KeyError."
+},
+
+{
+    "id": 22,
+    "question":"If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.keys()?",
+                                                                                                    
+    "options":["'cat' in spam checks if 'cat' is a key or a value in the dictionary, while 'cat' in spam.keys() checks if 'cat' is only a key.",
+    "Both expressions have the same effect and check if 'cat' is a key in the dictionary.",
+    "'cat' in spam checks if 'cat' is a value in the dictionary, while 'cat' in spam.keys() checks if 'cat' is a key.",
+    "'cat' in spam checks if 'cat' is a key in the dictionary, while 'cat' in spam.keys() is not a valid expression."
+    ],
+    "answer":"Both expressions have the same effect and check if 'cat' is a key in the dictionary.",
+    "discription":"Both 'cat' in spam and 'cat' in spam.keys() check whether 'cat' is a key in the dictionary spam. The in operator directly checks for membership in the dictionary keys, making .keys() redundant in this context."
+},
+
+{
+    "id": 23,
+    "question":"If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.values()?",
+                                                                                                    
+    "options":["'cat' in spam checks if 'cat' is a key in the dictionary, while 'cat' in spam.values() checks if 'cat' is a value in the dictionary.",
+    "'cat' in spam checks if 'cat' is a value in the dictionary, while 'cat' in spam.values() checks if 'cat' is a key.",
+    "Both expressions check if 'cat' is a key in the dictionary.",
+    "Both expressions check if 'cat' is a value in the dictionary."
+    ],
+    "answer":"'cat' in spam checks if 'cat' is a key in the dictionary, while 'cat' in spam.values() checks if 'cat' is a value in the dictionary.",
+    "discription":"'cat' in spam checks if 'cat' is one of the keys in the dictionary spam.\n'cat' in spam.values() checks if 'cat' is one of the values in the dictionary spam."
+},
+
+{
+    "id": 24,
+    "question":"What are escape characters, and how do you use them in Python?",
+                                                                                                    
+    "options":["Escape characters are symbols that define the beginning and end of a string; they are used by enclosing text in single or double quotes.",
+    "Escape characters are special sequences starting with a backslash that allow you to include otherwise illegal characters in a string, like newlines or quotes.",
+    "Escape characters are functions that allow you to exit loops or functions early; they are used with the return or break statements",
+    "Escape characters are operators that escape from the execution of a program; they are used with the exit() function."
+    ],
+    "answer":"Escape characters are special sequences starting with a backslash that allow you to include otherwise illegal characters in a string, like newlines or quotes.",
+    "discription":"Escape characters in Python are used to include special characters in a string that would otherwise be difficult or impossible to include. For example, \n is used to insert a newline, \\ is used to include a single quote, and \" is used to include a double quote in a string."
+},
+
+{
+    "id": 25,
+    "question":"The string 'Howl's Moving Castle' is a correct value. Why isn't the single quote character in the word Howl's an escape problem?",
+                                                                                                    
+    "options":["Because the single quote is automatically escaped in all strings.",
+    "Because the string is enclosed in double quotes, allowing the single quote to be used without escaping.",
+    "Because Python ignores single quotes in strings.",
+    "Because the single quote is at the beginning of the word."
+    ],
+    "answer":"Because the string is enclosed in double quotes, allowing the single quote to be used without escaping.",
+    "discription":"In Python, if a string is enclosed in double quotes, you can include single quotes ('') inside the string without needing to escape them. Similarly, if a string is enclosed in single quotes, you can include double quotes without escaping them."
+},
+
+{
+    "id": 26,
+    "question":"What are the values of the given expressions?\n'Hello, world!'[1]\n'Hello, world!'[0:5]\n'Hello, world!'[:5]\n'Hello, world!'[3:]",
+                                                                                                    
+    "options":["'e', 'Hello', 'Hello', 'lo, world!'",
+    "'H', 'ello', 'Hello', 'lo, world!'",
+    "'e', 'Hell', 'Hell', 'lo, world!'",
+    "'l', 'Hello', 'Hell', 'o, world!'"
+    ],
+    "answer":"'e', 'Hello', 'Hello', 'lo, world!'",
+    "discription":"'Hello, world!'[1] returns the character at index 1, which is 'e'.\n'Hello, world!'[0:5] returns the substring from index 0 to 4 (5 is not included), which is 'Hello'.\n'Hello, world!'[:5] is a shorthand for 'Hello, world!'[0:5], so it also returns 'Hello'.\n'Hello, world!'[3:] returns the substring starting from index 3 to the end, which is 'lo, world!'."
+},
+
+{
+    "id": 27,
+    "question":"What are the values of the following expressions?\n'Hello'.upper()\n'Hello'.upper().isupper()\n'Hello'.upper().lower()",
+                                                                                                    
+    "options":["'HELLO', True, 'hello'",
+    "'hello', False, 'HELLO'",
+    "'HELLO', False, 'hello'",
+    "'HELLO', True, 'HELLO'"
+    ],
+    "answer":"'HELLO', True, 'hello'",
+    "discription":"'Hello'.upper() converts the string to uppercase, resulting in 'HELLO'.\n'Hello'.upper().isupper() checks if the result of 'Hello'.upper() is in uppercase, which it is, so it returns True.\n'Hello'.upper().lower() first converts the string to uppercase ('HELLO'), then converts it to lowercase, resulting in 'hello'."
+},
+
+{
+    "id": 28,
+    "question":"What are the values of the following expressions?\n'Remember, remember, the fifth of July.'.split()\n'-'.join('There can only one.'.split())",
+                                                                                                    
+    "options":["['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'], 'There-can-only-one.'",
+    "['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'], 'There-can-only-one.'",
+    "['Remember', 'remember', 'the', 'fifth', 'of', 'July.'], 'There-can-only-one.'",
+    "['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'], 'There can only one.'"
+    ],
+    "answer":"['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'], 'There-can-only-one.'",
+    "discription":"'Remember, remember, the fifth of July.'.split() splits the string into a list of words, resulting in ['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'].\n'-'.join('There can only one.'.split()) first splits 'There can only one.' into a list of words ['There', 'can', 'only', 'one.'] and then joins them with hyphens, resulting in 'There-can-only-one.'."
+},
+
+{
+    "id": 29,
+    "question":"What is the best way to remove whitespace characters from the start or end of a string in Python?",
+                                                                                                    
+    "options":["strip()",
+    "trim()",
+    "remove()",
+    "cut()"
+    ],
+    "answer":"strip()",
+    "discription":"strip() removes whitespace characters from both the start and end of a string."
+},
+
+{
+    "id": 30,
+    "question":"What is the return value of the search() method?",
+                                                                                                    
+    "options":["A Match object if the pattern is found; None if the pattern is not found.",
+    "A list of all matches.",
+    "A boolean value indicating whether the pattern was found.",
+    "The position of the first match as an integer."
+    ],
+    "answer":"A Match object if the pattern is found; None if the pattern is not found.",
+    "discription":"The search() method is typically used in contexts where a match for a pattern is sought. It returns a Match object if the pattern is found in the given string, and None if it is not. This behavior is consistent regardless of the specific module or library being used, as long as the method follows the same convention."
+},
+
+{
+    "id": 31,
+    "question":"From a Match item, how do you get the actual strings that match the pattern?",
+                                                                                                    
+    "options":["group()",
+    "find()",
+    "extract()",
+    "match()"
+    ],
+    "answer":"group()",
+    "discription":"The group() method of a Match object is used to retrieve the actual substring that matched the pattern. If the pattern contains groups, group() can be used with arguments to get specific groups."
+},
+
+{
+    "id": 32,
+    "question":"The findall() method returns a list of strings or a list of string tuples. What determines whether it returns a list of strings or a list of string tuples?",
+                                                                                                    
+    "options":["Whether the search string contains numbers or letters.",
+    "Whether the pattern used in findall() contains capturing groups.",
+    "The length of the string being searched.",
+    "The number of times the findall() method is called."
+    ],
+    "answer":"Whether the pattern used in findall() contains capturing groups.",
+    "discription":"The findall() method returns a list of strings when the pattern contains no capturing groups (i.e., no parentheses). If the pattern includes one or more capturing groups, findall() returns a list of tuples, where each tuple contains the strings matched by each group in the order they appear in the pattern."
+},
+
+{
+    "id": 33,
+    "question":"In regular expressions, what is the difference between the + and * characters?",
+                                                                                                    
+    "options":["+ matches one or more occurrences, while * matches zero or one occurrence.",
+    "+ matches one or more occurrences, while * matches zero or more occurrences.",
+    "+ matches exactly one occurrence, while * matches zero or more occurrences.",
+    "+ matches zero or more occurrences, while * matches one or more occurrences."
+    ],
+    "answer":"+ matches one or more occurrences, while * matches zero or more occurrences.",
+    "discription":"In regular expressions, the + character matches one or more occurrences of the preceding element, while the * character matches zero or more occurrences of the preceding element."
+},
+
+{
+    "id": 34,
+    "question":"What is the difference between .* and .*? in regular expressions?",
+                                                                                                    
+    "options":[".* matches as few characters as possible, while .*? matches as many characters as possible.",
+    ".* matches as many characters as possible, while .*? matches as few characters as possible.",
+    "Both .* and .*? match the same number of characters.",
+    ".* is used for matching digits, while .*? is used for matching letters."
+    ],
+    "answer":".* matches as many characters as possible, while .*? matches as few characters as possible.",
+    "discription":".* is a greedy quantifier that matches the maximum number of characters possible.\n.*? is a non-greedy (or lazy) quantifier that matches the minimum number of characters necessary to satisfy the pattern."
+},
+
+{
+    "id": 35,
+    "question":"What is the syntax for matching both numbers and lowercase letters with a character class in regular expressions?",
+                                                                                                    
+    "options":["[0-9a-z]",
+    "[A-Z0-9]",
+    "[a-zA-Z]",
+    "[a-z0-9A-Z]"
+    ],
+    "answer":"[0-9a-z]",
+    "discription":"[0-9a-z] matches any digit (0-9) or lowercase letter (a-z).\nThe other options include uppercase letters or mix them incorrectly."
+},
+
+{
+    "id": 36,
+    "question":"If numRegex = re.compile(r'\\d+'), what will numRegex.sub('X', '11 drummers, 10 pipers, five rings, 4 hen') return?",
+                                                                                                    
+    "options":["'XX drummers, XX pipers, five rings, X hen'",
+    "'11 drummers, 10 pipers, five rings, 4 hen'",
+    "'X drummers, X pipers, five rings, X hen'",
+    "'drummers, pipers, five rings, hen'"
+    ],
+    "answer":"'X drummers, X pipers, five rings, X hen'",
+    "discription":"The re.compile(r'\\d+') creates a regex object that matches one or more digits.\nThe sub() method replaces all occurrences of the pattern with the string 'X'.\nTherefore, all numbers in the input string are replaced by 'X', resulting in 'X drummers, X pipers, five rings, X hen'."
+},
+
+{
+    "id": 37,
+    "question":"How would you write a regex that matches the full name of someone whose last name is Watanabe? You can assume that the first name that comes before it will always be one word that begins with a capital letter. The regex must match the following:\n'Haruto Watanabe'\n'Alice Watanabe'\n'RoboCop Watanabe'\nbut not the following:\n'haruto Watanabe' (where the first name is not capitalized)\n'Mr. Watanabe' (where the preceding word has a nonletter character)\n'Watanabe' (which has no first name)\n'Haruto watanabe' (where Watanabe is not capitalized)",
+                                                                                                    
+    "options":["[A-Z][a-z]* Watanabe",
+    "[A-Z]\\w+ Watanabe$",
+    "[A-Z]\\w+ watanabe",
+    "\b[A-Z]\\w*\b Watanabe"
+    ],
+    "answer":"[A-Z]\\w+ Watanabe$",
+    "discription":"The regex ^[A-Z]\\w+ Watanabe$ ensures that the first name starts with a capital letter ([A-Z]), is followed by one or more word characters (\\w+), and ends with 'Watanabe'. The ^ and $ anchor the pattern to the start and end of the string, ensuring the entire name matches the specified format."
+},
+
+{
+    "id": 38,
+    "question":"How would you write a regex that matches a sentence where the first word is either Alice, Bob, or Carol; the second word is either eats, pets, or throws; the third word is apples, cats, or baseballs; and the sentence ends with a period? This regex should be case-insensitive. It must match the following:\n 'Alice eats apples.'\n 'Bob pets cats.'\n 'Carol throws baseballs.'\n 'Alice throws Apples.'\n 'BOB EATS CATS.'\n but not the following:\n 'RoboCop eats apples.'\n 'ALICE THROWS FOOTBALLS.'\n 'Carol eats 7 cats.",
+                                                                                                    
+    "options":["r'^(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$'",
+    "r'^(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$' with re.IGNORECASE",
+    "r'(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$'",
+    "r'(alice|bob|carol) (eats|pets|throws) (apples|cats|baseballs)\\.$' with re.IGNORECASE"
+    ],
+    "answer":"r'^(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$' with re.IGNORECASE",
+    "discription":"The regex r'^(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$' ensures that the first word is one of 'Alice,' 'Bob,' or 'Carol,' the second word is one of 'eats,' 'pets,' or 'throws,' and the third word is one of 'apples,' 'cats,' or 'baseballs,' followed by a period at the end of the sentence. The re.IGNORECASE flag makes the regex case-insensitive, allowing it to match sentences regardless of case."
+},
+
+{
+    "id": 39,
+    "question":"Why is PyInputPlus commonly imported with import pyinputplus as pypi?",
+                                                                                                    
+    "options":["To simplify the module name in the code and make it more convenient to use.",
+    "To access additional features that are not available with the standard import.",
+    "To avoid name conflicts with other libraries named pyinputplus.",
+    "To ensure compatibility with older versions of Python."
+    ],
+    "answer":"To simplify the module name in the code and make it more convenient to use.",
+    "discription":"Using import pyinputplus as pypi allows for a shorter and more convenient alias (pypi) when calling functions and methods from the PyInputPlus library. This practice helps in reducing code verbosity and enhancing readability."
+},
+
+{
+    "id": 40,
+    "question":"Using PyInputPlus, how do you ensure that the user enters a whole number between 0 and 99?",
+                                                                                                    
+    "options":["Use inputInt() with parameters specifying the range of values allowed",
+    "Use inputFloat() with parameters specifying the range of values allowed.",
+    "Use inputStr() with a validation function to check if the input is a number within the range.",
+    "Use inputChoice() with a list of numbers from 0 to 99."
+    ],
+    "answer":"Use inputInt() with parameters specifying the range of values allowed",
+    "discription":"To ensure that the user enters a whole number within a specific range using PyInputPlus, you would use the inputInt() function and provide parameters for min and max to restrict the input to values between 0 and 99."
+},
+
+{
+    "id": 41,
+    "question":"In C:\\bacon\\eggs\\spam.txt, which part is the directory name, and which part is the base name?",
+                                                                                                    
+    "options":["C:\\bacon\\eggs is the dir name, and spam.txt is the base name.",
+    "C:\\bacon is the dir name, and eggs\\spam.txt is the base name.",
+    "C:\\bacon\\eggs\\spam is the dir name, and .txt is the base name.",
+    "eggs\\spam.txt is the dir name, and C:\\bacon is the base name."
+    ],
+    "answer":"C:\\bacon\\eggs is the dir name, and spam.txt is the base name.",
+    "discription":"In the path C:\\bacon\\eggs\\spam.txt, C:\\bacon\\eggs is the directory name (the folder path), and spam.txt is the base name (the file name)."
+},
+
+{
+    "id": 42,
+    "question":"How do you tell the difference between read() and readlines()?",
+                                                                                                    
+    "options":["read() returns a list of lines, while readlines() returns a single string",
+    "read() returns a single string of the entire file, while readlines() returns a list of lines.",
+    "read() returns a string list of lines, while readlines() returns a list of characters.",
+    "read() reads the file character by character, while readlines() reads the file line by line."
+    ],
+    "answer":"read() returns a single string of the entire file, while readlines() returns a list of lines.",
+    "discription":"read() reads the entire file content into a single string, while readlines() reads the file and returns a list where each element is a line from the file."
+},
+
+{
+    "id": 43,
+    "question":"What function is used to rename files??",
+                                                                                                    
+    "options":["os.delete()",
+    "os.rename()",
+    "shutil.move()",
+    "os.copy()"
+    ],
+    "answer":"os.rename()",
+    "discription":"The os.rename() function is used to rename files or directories in Python."
+},
+
+{
+    "id": 44,
+    "question":"ZipFile objects have a close() method similar to File objects. What ZipFile method is equivalent to the open() method for File objects?",
+                                                                                                    
+    "options":["ZipFile.create()",
+    "ZipFile.load()",
+    "ZipFile.open()",
+    "ZipFile.extract()"
+    ],
+    "answer":"ZipFile.open()",
+    "discription":"The ZipFile.open() method is used to open a file within a ZIP archive for reading or writing, analogous to how the open() method works for regular file objects."
+},
+
+{
+    "id": 45,
+    "question":"How would you write an assert statement to throw an AssertionError if the variable spam is a negative integer?",
+                                                                                                    
+    "options":["assert spam < 0, 'spam is a negative integer'",
+    "assert spam >= 0, 'spam should not be negative'",
+    "assert spam > 0, 'spam is negative'",
+    "assert spam != 0, 'spam is negative'"
+    ],
+    "answer":"assert spam >= 0, 'spam should not be negative'",
+    "discription":"The assert statement assert spam >= 0, 'spam should not be negative' ensures that if spam is a negative integer, an AssertionError with the message 'spam should not be negative' is raised."
+},
+
+{
+    "id": 46,
+    "question":"How would you write an assert statement that triggers an AssertionError if the variables eggs and bacon contain strings that are the same as each other, even if their cases are different?",
+                                                                                                    
+    "options":["assert eggs.lower() != bacon.lower(), 'eggs and bacon are the same'",
+    "assert eggs != bacon.lower(), 'eggs and bacon are the same'",
+    "assert eggs.lower() == bacon.lower(), 'eggs and bacon are the same'",
+    "assert eggs != bacon.upper(), 'eggs and bacon are the same'"
+    ],
+    "answer":"assert eggs.lower() != bacon.lower(), 'eggs and bacon are the same'",
+    "discription":"The assert statement assert eggs.lower() != bacon.lower(), 'eggs and bacon are the same' ensures that if the lowercase versions of eggs and bacon are identical, an AssertionError with the message 'eggs and bacon are the same' is raised."
+},
+
+{
+    "id": 47,
+    "question":"How would you write an assert statement that throws an AssertionError every time?",
+                                                                                                    
+    "options":["assert False, 'This will always fail'",
+    "assert True, 'This will always succeed'",
+    "assert 1 + 1 == 3, 'This will always fail'",
+    "assert 1 == 1, 'This will always succeed'"
+    ],
+    "answer":"assert False, 'This will always fail'",
+    "discription":"The assert statement assert False, 'This will always fail' is designed to always trigger an AssertionError because the condition False is always false."
+},
+
+{
+    "id": 48,
+    "question":"How do you obtain a list of Paragraph objects for a Document object that’s stored in a variable named doc?",
+                                                                                                    
+    "options":["doc.get_paragraphs()",
+    "doc.paragraph_list()",
+    "doc.paragraphs",
+    "doc.getParagraphs()"
+    ],
+    "answer":"doc.paragraphs",
+    "discription":"The paragraphs attribute of the Document object returns a list of all Paragraph objects in the document."
+},
+
+{
+    "id": 49,
+    "question":"What advantages do Excel spreadsheets have over CSV spreadsheets?",
+                                                                                                    
+    "options":["Excel spreadsheets can handle complex formulas, multiple sheets, and cell formatting, while CSV files are plain text and lack these features.",
+    "Excel spreadsheets are more compact and load faster than CSV files.",
+    "Excel spreadsheets are universally supported across all software, while CSV files are not.",
+    "Excel spreadsheets use less memory and are easier to work with than CSV files."
+    ],
+    "answer":"Excel spreadsheets can handle complex formulas, multiple sheets, and cell formatting, while CSV files are plain text and lack these features.",
+    "discription":"Excel spreadsheets support advanced features such as formulas, multiple worksheets, and formatting, whereas CSV files are simple text files with limited functionality."
+},
+
+{
+    "id": 50,
+    "question":"What do you pass to csv.reader() and csv.writer() to create reader and writer objects?",
+                                                                                                    
+    "options":["A file object opened in text mode",
+    "A file path as a string",
+    "A list of strings",
+    "A file object opened in binary mode"
+    ],
+    "answer":"A file object opened in text mode",
+    "discription":"You need to pass a file object opened in text mode to csv.reader() and csv.writer() to create reader and writer objects."
+},
+
+{
+    "id": 51,
+    "question":"What method takes a list argument and writes it to a CSV file?",
+                                                                                                    
+    "options":["csv.writer().write_row()",
+    "csv.writer().writeall()",
+    "csv.writer().writerow()",
+    "csv.writer().write()"
+    ],
+    "answer":"csv.writer().writerow()",
+    "discription":"The writerow() method of the csv.writer object takes a list argument and writes it as a single row in the CSV file."
+},
+
+{
+    "id": 52,
+    "question":"What do the keyword arguments delimiter and lineterminator do in the csv module?",
+                                                                                                    
+    "options":["delimiter specifies the file encoding, and lineterminator specifies the file mode.",
+    "delimiter sets the character used to separate fields, and lineterminator sets the character sequence to end rows.",
+    "delimiter determines the file name, and lineterminator determines the file path.",
+    "delimiter specifies the column width, and lineterminator specifies the number of rows to write."
+    ],
+    "answer":"delimiter sets the character used to separate fields, and lineterminator sets the character sequence to end rows.",
+    "discription":"delimiter defines the character used to separate fields in the CSV file, while lineterminator specifies the string that will terminate each row."
+},
+
+{
+    "id": 53,
+    "question":"What does RGBA stand for?",
+                                                                                                    
+    "options":["Red, Green, Blue, Alpha",
+    "Red, Gray, Blue, Alpha",
+    "Red, Green, Blue, Adjustment",
+    "Red, Green, Black, Alpha"
+    ],
+    "answer":"Red, Green, Blue, Alpha",
+    "discription":"RGBA represents color values where Red, Green, and Blue define the color, and Alpha specifies the transparency level."
+},
+
+{
+    "id": 54,
+    "question":"From the Pillow module, how do you get the RGBA value of any images?",
+                                                                                                    
+    "options":["image.getpixel()",
+    "image.get_rgba()",
+    "image.get_color()",
+    "image.get_value()"
+    ],
+    "answer":"image.getpixel()",
+    "discription":"The getpixel() method retrieves the RGBA value of a specific pixel in an image using Pillow."
+},
+
+{
+    "id": 55,
+    "question":"Assign the result from the previous task (seconds in an hour) to a variable called seconds_per_hour.",
+                                                                                                    
+    "options":["seconds_per_hour = 60 * 60",
+    "seconds_per_hour = 60 + 60",
+    "seconds_per_hour = 60 / 60",
+    "seconds_per_hour = 60 - 60"
+    ],
+    "answer":"seconds_per_hour = 60 * 60",
+    "discription":"To assign the number of seconds in an hour to the variable seconds_per_hour, use the expression 60 * 60, which multiplies the number of seconds in a minute by the number of minutes in an hour."
+},
+
+{
+    "id": 56,
+    "question":"How many seconds are there in a day? Use the variables seconds_per_hour and minutes_per_hour",
+                                                                                                    
+    "options":["seconds_per_hour * 24",
+    "seconds_per_hour * 12",
+    "seconds_per_hour * 30",
+    "seconds_per_hour * 60"
+    ],
+    "answer":"seconds_per_hour * 24",
+    "discription":"To find the number of seconds in a day, multiply the number of seconds in an hour (stored in seconds_per_hour) by the number of hours in a day (24)."
+},
+
+{
+    "id": 57,
+    "question":"Calculate seconds per day again, but this time save the result in a variable called seconds_per_day",
+                                                                                                    
+    "options":["seconds_per_day = seconds_per_hour * 24",
+    "seconds_per_day = seconds_per_hour + 24",
+    "seconds_per_day = 24 / seconds_per_hour",
+    "seconds_per_day = seconds_per_hour - 24"
+    ],
+    "answer":"seconds_per_day = seconds_per_hour * 24",
+    "discription":"To calculate the number of seconds in a day and store it in seconds_per_day, multiply the number of seconds in an hour (seconds_per_hour) by 24, which represents the number of hours in a day."
+},
+
+{
+    "id": 58,
+    "question":"How do you write a generator genPrimes that returns the sequence of prime numbers (2, 3, 5, 7, 11, ...) on successive calls to its next() method?",
+                                                                                                    
+    "options":["def genPrimes():\n    primes = []\n    n = 2\n    while True:\n        for p in primes:\n            if n % p == 0:\n                break\n        else:\n            primes.append(n)\n            yield n\n        n += 1\n",
+    "def genPrimes():\n    n = 2\n    while True:\n        if all(n % i != 0 for i in range(2, n)):\n            yield n\n        n += 1\n",
+    "def genPrimes():\n    primes = []\n    n = 1\n    while True:\n        if all(n % i != 0 for i in range(2, n)):\n            yield n\n        n += 1\n",
+    "def genPrimes():\n    primes = []\n    n = 2\n    while True:\n        if all(n % i != 0 for i in primes):\n            yield n\n        n += 1\n        primes.append(n)\n"
+    ],
+    "answer":"def genPrimes():\n    n = 2\n    while True:\n        if all(n % i != 0 for i in range(2, n)):\n            yield n\n        n += 1\n",
+    "discription":"The generator function genPrimes yields prime numbers by checking if each number is not divisible by any number in the range from 2 to just below itself. This method correctly generates an infinite sequence of prime numbers on successive calls to next()."
+},
+
+{
+    "id": 59,
+    "question":"How do you lowercase the last element of the surprise list, reverse it, and then capitalize it?",
+                                                                                                    
+    "options":["surprise[-1] = surprise[-1].lower()[::-1].capitalize()",
+    "surprise[-1] = surprise[-1].capitalize()[::-1].lower()",
+    "surprise[-1] = surprise[-1].upper()[::-1].capitalize()",
+    "surprise[-1] = surprise[-1][::-1].capitalize().lower()"
+    ],
+    "answer":"surprise[-1] = surprise[-1].lower()[::-1].capitalize()",
+    "discription":"To transform the last element of the surprise list, you first lowercase it, then reverse the string using slicing ([::-1]), and finally capitalize the reversed string. This series of operations correctly modifies the last element of the list."
+},
+
+{
+    "id": 60,
+    "question":"Make a multilevel dictionary called life. Use these strings for the topmost keys: 'animals', 'plants', and 'other'. Make the 'animals' key refer to another dictionary with the keys 'cats', 'octopi', and 'emus'. Make the 'cats' key refer to a list of strings with the values 'Henri', 'Grumpy', and 'Lucy'. Make all the other keys refer to empty dictionaries.",
+                                                                                                    
+    "options":["life = {\n    'animals': {\n        'cats': ['Henri', 'Grumpy', 'Lucy'],\n        'octopi': {},\n        'emus': {}\n     },\n    'plants': {},\n    'other': {}}",
+    "life = {\n    'animals': {\n        'cats': ['Henri', 'Grumpy', 'Lucy'],\n        'octopi': {},\n        'emus': {}\n },\n    'plants': [],\n    'other': []\n}",
+    "life = {\n    'animals': ['cats', 'octopi', 'emus'],\n    'plants': {},\n    'other': {}\n}",
+    "life = {\n    'animals': {\n        'cats': 'Henri, Grumpy, Lucy',\n        'octopi': {},\n        'emus': {}\n    },\n    'plants': {},\n    'other': {}\n}"
+    ],
+    "answer":"life = {\n    'animals': {\n        'cats': ['Henri', 'Grumpy', 'Lucy'],\n        'octopi': {},\n        'emus': {}\n     },\n    'plants': {},\n    'other': {}}",
+    "discription":"To create a multilevel dictionary life, use nested dictionaries and lists. Set 'animals' to a dictionary with 'cats' pointing to a list of cat names and 'octopi' and 'emus' pointing to empty dictionaries. Set 'plants' and 'other' to empty dictionaries."
+},
+
+{
+    "id": 61,
+    "question":"How do you print the top-level keys of the life dictionary?",
+                                                                                                    
+    "options":["print(life.keys())",
+    "print(life.top_keys())",
+    "print(list(life))",
+    "print(life.get_top_keys())"
+    ],
+    "answer":"print(life.keys())",
+    "discription":"To print the top-level keys of the life dictionary, use life.keys() which returns a view of the dictionary's keys. Converting this view to a list, if needed, will show the keys."
+},
+
+{
+    "id": 62,
+    "question":"Print the keys for life['animals'].",
+                                                                                                    
+    "options":["print(life['animals'].keys())",
+    "print(life['animals'].items())",
+    "print(life['animals'].values())",
+    "print(life['animals'].get_keys())"
+    ],
+    "answer":"print(life['animals'].keys())",
+    "discription":"To print the keys of the dictionary stored under life['animals'], use life['animals'].keys(). This will give a view of the keys for the nested dictionary."
+},
+
+{
+    "id": 63,
+    "question":"Print the values for life['animals']['cats']",
+                                                                                                    
+    "options":["print(life['animals']['cats'])",
+    "print(life['animals']['cats'].values())",
+    "print(life['animals']['cats'].items())",
+    "print(life['animals']['cats'].keys())"
+    ],
+    "answer":"print(life['animals']['cats'])",
+    "discription":"To print the values for life['animals']['cats'], you directly access life['animals']['cats'] which is a list of cat names. Using .values() or .items() is not applicable here since it's a list, not a dictionary."
+},
+
+{
+    "id": 64,
+    "question":"How do you write a set of conditional tests to print 'too low' if guess_me is less than 7, 'too high' if greater than 7, and 'just right' if equal to 7, after assigning the value 7 to guess_me?",
+                                                                                                    
+    "options":["guess_me = 7\nif guess_me < 7:\n    print('too low')\nelif guess_me > 7:\n    print('too high')\nelse:\n    print('just right')",
+    "guess_me = 7\nif guess_me > 7:\n    print('too low')\nelif guess_me < 7:\n    print('too high')\nelse:\n    print('just right')",
+    "guess_me = 7\nif guess_me == 7:\n    print('too low')\nelif guess_me < 7:\n    print('too high')\nelse:\n    print('just right')",
+    "guess_me = 7\nif guess_me < 7:\n    print('too high')\nelif guess_me == 7:\n    print('too high')\nelse:\n    print('just right')"
+    ],
+    "answer":"guess_me = 7\nif guess_me < 7:\n    print('too low')\nelif guess_me > 7:\n    print('too high')\nelse:\n    print('just right')",
+    "discription":"Assign the value 7 to guess_me, then use if, elif, and else statements to compare guess_me and print the appropriate message based on whether it's less than, greater than, or equal to 7."
+},
+
+{
+    "id": 65,
+    "question":"Assign the value 7 to the variable guess_me and the value 1 to the variable start. Write a while loop that compares start with guess_me. Print too low if start is less than guess me. If start equals guess_me, print 'found it!' and exit the loop. If start is greater than guess_me, print 'oops' and exit the loop. Increment start at the end of the loop.",
+                                                                                                    
+    "options":["guess_me = 7\nstart = 1\n while start <= guess_me:\n    if start < guess_me:\n        print('too low')\n    elif start == guess_me:\n        print('found it!')\n        break\n    start += 1\nelse:\n    print('oops')",
+    "guess_me = 7\nstart = 1\n while start <= guess_me:\n    if start > guess_me:\n        print('oops')\n        break\n    elif start == guess_me:\n        print('found it!')\n        break\n    else:\n        print('too low')\n    start += 1",
+    "guess_me = 7\nstart = 1\n  while start <= guess_me:\n    if start == guess_me:\n        print('found it!')\n        break\n    elif start > guess_me:\n        print('oops')\n        break\n    else:\n        print('too low')\n    start += 1",
+    "guess_me = 7\nstart = 1\n  while start <= guess_me:\n    if start == guess_me:\n        print('oops')\n        break\n    elif start > guess_me:\n        print('too low')\n        break\n    else:\n        print('found it!')\n    start += 1"
+    ],
+    "answer":"guess_me = 7\nstart = 1\n  while start <= guess_me:\n    if start == guess_me:\n        print('found it!')\n        break\n    elif start > guess_me:\n        print('oops')\n        break\n    else:\n        print('too low')\n    start += 1",
+    "discription":"Assign 7 to guess_me and 1 to start. The loop compares start with guess_me, printing 'too low' if start is less, 'found it!'' if they are equal (and exits the loop), or 'oops' if start exceeds guess_me (and exits the loop). The variable start is incremented at the end of each iteration."
+},
+
+{
+    "id": 66,
+    "question":"Use a list comprehension to make a list of the even numbers in range(10)",
+                                                                                                    
+    "options":["even_numbers = [x for x in range(10) if x % 2 == 0]",
+    "even_numbers = [x for x in range(10) if x % 2 != 0]",
+    "even_numbers = [x for x in range(10)]",
+    "even_numbers = [x for x in range(10) if x % 3 == 0]"
+    ],
+    "answer":"even_numbers = [x for x in range(10) if x % 2 == 0]",
+    "discription":"This list comprehension iterates over the numbers in range(10) and includes only those that are even (x % 2 == 0), resulting in a list of even numbers [0, 2, 4, 6, 8]."
+},
+
+{
+    "id": 67,
+    "question":"How do you use a dictionary comprehension to create a dictionary called squares, where the keys are from range(10) and the values are the squares of the keys?",
+                                                                                                    
+    "options":["squares = {x: x + x for x in range(10)}",
+    "squares = {x: x ** 2 for x in range(10)}",
+    "squares = {x: x * 2 for x in range(10)}",
+    "squares = {x: x - x for x in range(10)}"
+    ],
+    "answer":"squares = {x: x ** 2 for x in range(10)}",
+    "discription":"This dictionary comprehension iterates over the numbers in range(10), creating keys from the range and assigning each key's square as its corresponding value, resulting in a dictionary like {0: 0, 1: 1, 2: 4, ..., 9: 81}."
+},
+
+{
+    "id": 68,
+    "question":"Construct the set odd from the odd numbers in the range using a set comprehension (10).",
+                                                                                                    
+    "options":["odd = {x for x in range(10) if x % 2 == 0}",
+    "odd = {x for x in range(10) if x % 2 != 0}",
+    "odd = {x for x in range(10) if x > 5}",
+    "odd = {x for x in range(10) if x % 3 == 0}"
+    ],
+    "answer":"odd = {x for x in range(10) if x % 2 != 0}",
+    "discription":"This set comprehension iterates over the numbers in range(10) and includes only the odd numbers (x % 2 != 0), creating a set containing {1, 3, 5, 7, 9}."
+},
+
+{
+    "id": 69,
+    "question":"Use a generator comprehension to return the string 'Got ' and a number for the numbers in range(10). Iterate through this by using a for loop.",
+                                                                                                    
+    "options":["gen = ('Got ' + str(x) for x in range(10))\nfor item in gen:\n    print(item)",
+    "gen = ['Got ' + str(x) for x in range(10)]\nfor item in gen:\n    print(item)",
+    "gen = {'Got ' + str(x) for x in range(10)}\nfor item in gen:\n    print(item)",
+    "gen = ('Got ' + str(x) for x in range(10))\nfor item in range(10):\n    print(gen)"
+    ],
+    "answer":"gen = ('Got ' + str(x) for x in range(10))\nfor item in gen:\n    print(item)",
+    "discription":"This generator comprehension creates a sequence that produces the string 'Got ' followed by each number in range(10). The for loop then iterates through the generator, printing each generated string, such as 'Got 0', 'Got 1', up to 'Got 9'."
+},
+
+{
+    "id": 70,
+    "question":"Define a generator function called get_odds that returns the odd numbers from range(10). Use a for loop to find and print the third value returned.",
+                                                                                                    
+    "options":["def get_odds():\n    for i in range(10):\n        if i % 2 != 0:\n            yield i\nthird_odd = list(get_odds())[2]\nprint(third_odd)",
+    "def get_odds():\n    for i in range(10):\n        if i % 2 != 0:\n            return i\nthird_odd = list(get_odds())[2]\nprint(third_odd)",
+    "def get_odds():\n    for i in range(10):\n        if i % 2 != 0:\n            yield i\nfor idx, value in enumerate(get_odds()):\n    if idx == 2:\n        print(value)",
+    "def get_odds():\n    for i in range(10):\n        if i % 2 != 0:\n            yield i\nfor idx, value in enumerate(get_odds()):\n    if idx == 3:\n        print(value)"
+    ],
+    "answer":"def get_odds():\n    for i in range(10):\n        if i % 2 != 0:\n            yield i\nfor idx, value in enumerate(get_odds()):\n    if idx == 2:\n        print(value)",
+    "discription":"The generator function get_odds yields odd numbers from range(10). The for loop with enumerate() is then used to iterate through the generator and print the third value returned by the generator."
+},
+
+{
+    "id": 70,
+    "question":"Use zip() to make a dictionary called movies that pairs these lists: titles = ['Creature of Habit', 'Crewel Fate'] and plots = ['A nun turns into a monster', 'A haunted yarn shop'].",
+                                                                                                    
+    "options":["movies = dict(titles, plots)",
+    "movies = dict(zip(titles, plots))",
+    "movies = zip(titles, plots)",
+    "movies = list(zip(titles, plots))"
+    ],
+    "answer":"movies = dict(zip(titles, plots))",
+    "discription":"This code uses zip() to pair elements from the titles and plots lists and then converts the resulting pairs into a dictionary called movies."
+},
+
+{
+    "id": 71,
+    "question":"How would you import the hours() function from the zoo module as info and call it?",
+                                                                                                    
+    "options":["import zoo.hours as info\ninfo()",
+    "from zoo import hours as info\ninfo()",
+    "from zoo.hours import info\ninfo()",
+    "import zoo as info\ninfo.hours()"
+    ],
+    "answer":"from zoo import hours as info\ninfo()",
+    "discription":"This option shows the correct way to import the hours() function from the zoo module and rename it as info, then call it in the interpreter."
+},
+
+{
+    "id": 72,
+    "question":"How would you make an OrderedDict called fancy from the key-value pairs 'a': 1, 'b': 2, and 'c': 3, and print it? Did it print in the same order as a plain dictionary?",
+                                                                                                    
+    "options":["from collections import OrderedDict\nfancy = OrderedDict([('a', 1), ('b', 2), ('c', 3)])\nprint(fancy)",
+    "from collections import OrderedDict\nfancy = OrderedDict('a': 1, 'b': 2, 'c': 3)\nprint(fancy)",
+    "fancy = {'a': 1, 'b': 2, 'c': 3}\nprint(fancy)",
+    "from collections import OrderedDict\nfancy = OrderedDict({'a': 1, 'b': 2, 'c': 3})\nprint(fancy)"
+    ],
+    "answer":"from collections import OrderedDict\nfancy = OrderedDict([('a', 1), ('b', 2), ('c', 3)])\nprint(fancy)",
+    "discription":"This option correctly creates an OrderedDict with the specified key-value pairs and prints it. An OrderedDict preserves the order of items as they are added, so it prints in the same order as a plain dictionary (from Python 3.7+)."
+},
+
+{
+    "id": 73,
+    "question":"You have created a class called Thing with no contents and printed it. Then, you created an object called example from this class and printed it as well. Are the printed values of the class and the object the same or different?",
+                                                                                                    
+    "options":["The printed values are the same because both the class and the object have no contents.",
+    "The printed values are different because the class and the object are different entities in memory.",
+    "The printed values are the same because the object is a direct instance of the class.",
+    "The printed values are different because the class has no contents, but the object is an instance of that class."
+    ],
+    "answer":"The printed values are different because the class and the object are different entities in memory.",
+    "discription":"The class Thing and the object example are different entities, so their printed values will reflect their unique memory addresses, making them different."
+},
+
+{
+    "id": 74,
+    "question":"You created an Element class with the instance attributes name, symbol, and number. How do you create an object of this class with the values 'Hydrogen', 'H', and 1?",
+                                                                                                    
+    "options":["element = Element['Hydrogen', 'H', 1]",
+    "element = Element('Hydrogen', 'H', 1)",
+    "element = Element.name('Hydrogen').symbol('H').number(1)",
+    "element = Element.create('Hydrogen', 'H', 1)"
+    ],
+    "answer":"element = Element('Hydrogen', 'H', 1)",
+    "discription":"To create an object of the Element class with specific values for name, symbol, and number, you call the class with these values as arguments like Element('Hydrogen', 'H', 1)."
+},
+
+{
+    "id": 75,
+    "question":"For the Element class, you need to define a method called dump() that prints the values of the object's attributes (name, symbol, and number). How do you define this method and use it to print the attributes of an object called hydrogen?",
+                                                                                                    
+    "options":["Define dump() as def dump(self): print(self.name, self.symbol, self.number) and call hydrogen.dump().",
+    "Define dump() as def dump(): print(self.name, self.symbol, self.number) and call hydrogen.dump().",
+    "Define dump() as def dump(self): print(name, symbol, number) and call Element.dump(hydrogen).",
+    "Define dump() as def dump(self): print(self['name'], self['symbol'], self['number']) and call hydrogen.dump()."
+    ],
+    "answer":"Define dump() as def dump(self): print(self.name, self.symbol, self.number) and call hydrogen.dump().",
+    "discription":"To define a method dump() in the Element class that prints the object's attributes, use def dump(self): print(self.name, self.symbol, self.number) and then call hydrogen.dump() to display the attributes."
+},
+
+{
+    "id": 76,
+    "question":"To define the classes Bear, Rabbit, and Octothorpe, each with a method eats() that returns different strings, how should you implement these classes and use them?",
+                                                                                                    
+    "options":["Define each class with the eats() method returning the specified string. Instantiate each class, call the eats() method on each object, and print the results.",
+    "Define each class with a single eats() method returning None. Instantiate each class, and manually assign the values 'berries', 'clover', and 'campers' to each object before printing.",
+    "Define a single class with an eats() method that takes a parameter. Instantiate this class three times with different parameters and print the results.",
+    "Define each class with the eats() method returning a constant value 'food'. Instantiate each class, call the eats() method on each object, and print the results."
+    ],
+    "answer":"Define each class with the eats() method returning the specified string. Instantiate each class, call the eats() method on each object, and print the results.",
+    "discription":"To implement the classes Bear, Rabbit, and Octothorpe, define an eats() method in each class that returns the specific string ('berries', 'clover', or 'campers'). After creating an instance of each class, call the eats() method on these instances and print the result. This approach ensures each class has a distinct behavior as specified."
+},
+
+{
+    "id": 77,
+    "question":"To set the variable test1 to the string 'This is a test of the emergency text system,' and save it to a file named test.txt, which of the following methods is correct?",
+                                                                                                    
+    "options":["Open the file test.txt in write mode, write test1 to it, and then close the file.",
+    "Use open('test.txt', 'w') to create the file, and then use write(test1) to save the content, without closing the file.",
+    "Use open('test.txt', 'w') to create the file, write test1 to it with write(), and then use close() on test1.",
+    "Use file('test.txt', 'w').write(test1) to create and write to the file in a single line."
+    ],
+    "answer":"Open the file test.txt in write mode, write test1 to it, and then close the file.",
+    "discription":"To save the string stored in test1 to a file named test.txt, you should open the file in write mode using open('test.txt', 'w'), write the content using write(test1), and then close the file using close(). This ensures that the string is properly written to the file and that resources are released after writing."
+},
+
+{
+    "id": 78,
+    "question":"To read the contents of the file test.txt into the variable test2, and determine if there is a difference between test1 and test2, which of the following methods is correct?",
+                                                                                                    
+    "options":["Open test.txt in read mode, read the contents into test2, and then compare test1 and test2.",
+    "Open test.txt in write mode, read the contents into test2, and compare test1 and test2.",
+    "Open test.txt in append mode, read the contents into test2, and then compare test1 and test2.",
+    "Use read('test.txt') to get the contents into test2 and compare it directly with test1."
+    ],
+    "answer":"Open test.txt in read mode, read the contents into test2, and then compare test1 and test2.",
+    "discription":"To read the contents of test.txt into test2, you should open the file in read mode using open('test.txt', 'r'), read the contents into test2 using read(), and then compare test1 and test2. This method ensures that the file is correctly read and its contents are compared as expected."
+},
+
+{
+    "id": 79,
+    "question":"Use the sqlite3 module to create a SQLite database called books.db, and a table called books with these fields: title (text), author (text), and year (integer).",
+                                                                                                    
+    "options":["import sqlite3\n    conn = sqlite3.connect('books.db')\ncursor = conn.cursor()\ncursor.execute('''\n    CREATE TABLE books (\n        title TEXT,\n        author TEXT,\n        year INTEGER\n    )\n''')\nconn.commit()\nconn.close()",
+    "import sqlite3\n   conn = sqlite3.connect('books.db')\ncursor = conn.cursor()\ncursor.execute('''\n    CREATE DATABASE books.db\n    CREATE TABLE books (\n        title TEXT,\n        author TEXT,\n        year INTEGER\n    )\n''')\nconn.commit()\nconn.close()",
+    "import sqlite3\n   conn = sqlite3.connect('books.db')\ncursor = conn.cursor()\ncursor.execute('''\n    CREATE TABLE books (\n        title TEXT,\n        author TEXT,\n        year TEXT\n    )\n''')\nconn.commit()\nconn.close()",
+    "import sqlite3\n   conn = sqlite3.connect('books.db')\ncursor = conn.cursor()\ncursor.execute('''\n    CREATE TABLE books (\n        title TEXT,\n        author TEXT,\n        year INTEGER\n    )\n''')\nconn.commit()\nconn.disconnect()"
+    ],
+    "answer":"import sqlite3\n    conn = sqlite3.connect('books.db')\ncursor = conn.cursor()\ncursor.execute('''\n    CREATE TABLE books (\n        title TEXT,\n        author TEXT,\n        year INTEGER\n    )\n''')\nconn.commit()\nconn.close()",
+    "discription":"To create a SQLite database and a table using the sqlite3 module, you need to connect to the database, execute a CREATE TABLE statement with the correct field types, commit the changes, and close the connection. Option A correctly performs these steps."
+},
+
+{
+    "id": 80,
+    "question":"To select and print the title column from the book table in alphabetical order, which SQL query would you use?",
+                                                                                                    
+    "options":["SELECT title FROM book ORDER BY title ASC;",
+    "SELECT title FROM book WHERE ORDER BY title;",
+    "SELECT title FROM book ORDER BY title DESC;",
+    "SELECT title FROM book;"
+    ],
+    "answer":"SELECT title FROM book ORDER BY title ASC;",
+    "discription":"To get the title column from the book table in alphabetical order, use the query SELECT title FROM book ORDER BY title ASC;. The ORDER BY title ASC clause sorts the titles in ascending alphabetical order, which is the default sorting order."
+},
+
+{
+    "id": 81,
+    "question":"How can you use the sqlalchemy module to connect to the sqlite3 database books.db?",
+                                                                                                    
+    "options":["engine = create_engine('sqlite:///books.db')",
+    "engine = create_engine('sqlite3://books.db')",
+    "engine = create_engine('sqlite:///books.db', echo=True)",
+    "engine = connect('sqlite:///books.db')"
+    ],
+    "answer":"engine = create_engine('sqlite:///books.db')",
+    "discription":"To connect to the books.db SQLite database using SQLAlchemy, use create_engine('sqlite:///books.db'). This command initializes the connection to the SQLite database, specifying the path to the database file."
+},
+
+{
+    "id": 82,
+    "question":"To increment the count field of an object named test and print the updated value, which of the following approaches is correct?",
+                                                                                                    
+    "options":["test.count += 1 and then print(test.count)",
+    "test.increment(count) and then print(test.count)",
+    "test.count = test.count + 1 and then print(test.count)",
+    "test.update(count + 1) and then print(test.count)"
+    ],
+    "answer":"test.count += 1 and then print(test.count)",
+    "discription":"To increment the count field of an object, you can use the shorthand operator += to increase the value by 1 and then print it. This is the most straightforward and commonly used method to update and display an object's attribute."
+},
+
+{
+    "id": 83,
+    "question":"Where does an inheritance search look for an attribute in Python?",
+                                                                                                    
+    "options":["Only in the child class.",
+    "Only in the parent class.",
+    "First in the child class, then in the parent class.",
+    "In all classes simultaneously."
+    ],
+    "answer":"First in the child class, then in the parent class.",
+    "discription":"In Python, when an attribute is accessed in an object, the inheritance search first looks in the child class. If the attribute isn't found there, the search continues in the parent class, following the method resolution order (MRO)."
+},
+
+{
+    "id": 84,
+    "question":"How would you define the superclasses of a class?",
+                                                                                                    
+    "options":["By using the super() function inside the class.",
+    "By listing the superclasses inside the class definition's parentheses.",
+    "By importing the superclass before defining the class.",
+    "By using the inherit() method in the class."
+    ],
+    "answer":"By listing the superclasses inside the class definition's parentheses.",
+    "discription":"In Python, to define the superclasses of a class, you list them inside the parentheses in the class definition. For example, class ChildClass(ParentClass1, ParentClass2): indicates that ChildClass inherits from ParentClass1 and ParentClass2."
+},
+
+{
+    "id": 85,
+    "question":"How do you make instances and classes?",
+                                                                                                    
+    "options":["Define a function for a class and call it for an instance",
+    "Use the class keyword for a class and call the class for an instance.",
+    "Use the instance keyword for instances and the class keyword for classes.",
+    "Define a method for a class and use super() to create an instance."
+    ],
+    "answer":"Use the class keyword for a class and call the class for an instance.",
+    "discription":"In Python, you create a class using the class keyword followed by the class name. To create an instance, you call the class using its name followed by parentheses. For example, class Car: defines a class, and my_car = Car() creates an instance of that class."
+},
+
+{
+    "id": 86,
+    "question":"Where and how are instance attributes created in Python?",
+                                                                                                    
+    "options":["Inside the __init__ method, using the self keyword.",
+    "Inside any method, using the class keyword.",
+    "Outside the class definition, by assigning values directly.",
+    "Inside the __main__ block, using the init keyword."
+    ],
+    "answer":"Inside the __init__ method, using the self keyword.",
+    "discription":"Instance attributes in Python are created inside the __init__ method using the self keyword. This allows each instance of the class to have its own unique set of attributes."
+},
+
+{
+    "id": 87,
+    "question":"What does the term 'self' in a Python class mean?",
+                                                                                                    
+    "options":["The class itself.",
+    "A global variable.",
+    "A reference to the instance of the class",
+    "A method that must be defined."
+    ],
+    "answer":"A reference to the instance of the class",
+    "discription":"In Python, self is a reference to the current instance of the class. It is used to access variables and methods associated with the object that is created from the class. The self parameter is always the first parameter in instance methods."
+},
+
+{
+    "id": 88,
+    "question":"What is the most popular form of operator overloading?",
+                                                                                                    
+    "options":["Overloading the + operator for string concatenation.",
+    "Overloading the * operator for list multiplication.",
+    "Overloading the == operator for object comparison.",
+    "Overloading the / operator for division."
+    ],
+    "answer":"Overloading the + operator for string concatenation.",
+    "discription":"The + operator is commonly overloaded in Python to allow the concatenation of strings. By defining a special method like __add__ in a class, you can customize how the + operator behaves for objects of that class."
+},
+
+{
+    "id": 89,
+    "question":"What is the concept of an abstract superclass?",
+                                                                                                    
+    "options":["A superclass that can be directly instantiated.",
+    "A class that does not contain any methods.",
+    "A class that provides a template with methods to be implemented by subclasses.",
+    "A superclass that cannot have any subclasses."
+    ],
+    "answer":"A class that provides a template with methods to be implemented by subclasses.",
+    "discription":"An abstract superclass in Python defines methods that are meant to be overridden in subclasses, providing a template for subclasses to implement specific behaviors. It cannot be instantiated directly and is often used to enforce a certain structure in the derived classes."
+},
+
+{
+    "id": 90,
+    "question":"How is the local scope of a class different from that of a function?",
+                                                                                                    
+    "options":["A class's local scope can access global variables, but a function's local scope cannot.",
+    "A function's local scope is only accessible within the function, while a class's local scope is accessible across all its methods.",
+    "A class's local scope is reset after each method call, while a function's local scope is persistent.",
+    "A function's local scope can be accessed by any class, but a class's local scope is restricted to the class itself."
+    ],
+    "answer":"A function's local scope is only accessible within the function, while a class's local scope is accessible across all its methods.",
+    "discription":"In Python, the local scope of a function is confined to that function, meaning variables defined within it are not accessible outside. In contrast, the local scope of a class encompasses all its methods, allowing variables defined within the class to be accessed across its methods."
+},
+
+{
+    "id": 91,
+    "question":"What is the concept of delegation in object-oriented programming?",
+                                                                                                    
+    "options":["Assigning a method to a class instead of an instance.",
+    "Allowing an object to pass tasks to another object.",
+    "Making a class a subclass of another class.",
+    "Hiding methods of a class from outside access."
+    ],
+    "answer":"Allowing an object to pass tasks to another object.",
+    "discription":"Delegation is a design principle where an object passes responsibility for a task to another object. Instead of performing the task itself, the original object delegates the task to another object, which handles the request. This allows for more flexible and modular code by separating responsibilities among objects."
+},
+
+{
+    "id": 92,
+    "question":"What is the concept of composition in Python?",
+                                                                                                    
+    "options":["A class inherits from multiple superclasses.",
+    "A class is used as an attribute in another class.",
+    "A class overrides methods of its superclass.",
+    "A class combines multiple methods into a single method."
+    ],
+    "answer":"A class is used as an attribute in another class.",
+    "discription":"Composition in Python refers to the design principle where a class is composed of one or more objects of other classes as its attributes. This allows for building complex functionality by combining simpler, reusable components. For example, a Car class might use Engine and Transmission classes as attributes."
+},
+
+{
+    "id": 93,
+    "question":"What are bound methods in Python and how do we use them?",
+                                                                                                    
+    "options":["Methods that are tied to a function rather than an object.",
+    "Methods that are called with a class name but not an object.",
+    "Methods that are bound to an instance of a class and can access its attributes.",
+    "Methods that are used to create new classes."
+    ],
+    "answer":"Methods that are bound to an instance of a class and can access its attributes.",
+    "discription":"Bound methods are functions that are associated with an instance of a class. They are called on an object and have access to the instance's attributes and other methods. For example, if obj is an instance of class MyClass and method is a method defined in MyClass, then obj.method() is a bound method, and it operates in the context of obj."
+},
+
+{
+    "id": 94,
+    "question":"Describe three applications for exception processing in Python.",
+                                                                                                    
+    "options":["To handle unexpected errors, manage user input, and log application events.",
+    "To improve code execution speed, perform calculations, and validate data types.",
+    "To format output, perform data encryption, and sort data.",
+    "To debug code, update libraries, and create new classes."
+    ],
+    "answer":"To handle unexpected errors, manage user input, and log application events.",
+    "discription":"Exception processing in Python is used to manage and handle unexpected errors during program execution, ensure proper handling of user input to avoid crashes, and log application events for troubleshooting and monitoring."
+},
+
+{
+    "id": 95,
+    "question":"What happens if you don't handle an exception in Python?",
+                                                                                                    
+    "options":["The program will continue running normally.",
+    "The exception will be ignored and not affect the program.",
+    "The program will terminate and display an error message.",
+    "The exception will be automatically corrected by Python."
+    ],
+    "answer":"The program will terminate and display an error message.",
+    "discription":"If you don't handle an exception in Python, the program will terminate and display an error message, showing the type of exception and where it occurred. Handling exceptions with try-except blocks allows the program to manage errors gracefully without crashing."
+},
+
+{
+    "id": 96,
+    "question":"Which two methods can be used to trigger exceptions in your Python script?",
+                                                                                                    
+    "options":["Using the raise statement and creating syntax errors.",
+    "Using the try block and calling undefined variables.",
+    "Using the assert statement and importing non-existent modules.",
+    "Using the raise statement and the assert statement."
+    ],
+    "answer":"Using the raise statement and the assert statement.",
+    "discription":"In Python, exceptions can be triggered using the raise statement, which allows you to manually raise an exception, and the assert statement, which raises an AssertionError if a given condition is not true. Both methods are useful for handling and debugging errors in your script."
+},
+
+{
+    "id": 97,
+    "question":"What are the two most popular try statement variations in Python?",
+                                                                                                    
+    "options":["try-finally and try-else",
+    "try-catch and try-finally",
+    "try-except and try-finally",
+    "try-assert and try-raise"
+    ],
+    "answer":"try-except and try-finally",
+    "discription":"In Python, the two most popular variations of the try statement are try-except and try-finally. The try-except block is used to catch and handle exceptions, while the try-finally block ensures that some code runs no matter what, even if an exception occurs."
+},
+
+{
+    "id": 98,
+    "question":"What is the purpose of the raise statement in Python?",
+                                                                                                    
+    "options":["To catch an exception in the code",
+    "To trigger an exception intentionally",
+    "To stop the execution of a loop.",
+    "To declare a variable as global."
+    ],
+    "answer":"To trigger an exception intentionally",
+    "discription":"The raise statement in Python is used to intentionally trigger an exception. This can be useful when you want to flag an error condition and handle it using exception handling mechanisms, ensuring that your program behaves predictably in unexpected situations."
+},
+
+{
+    "id": 99,
+    "question":"Describe two methods for specifying the text of an exception object's error message.",
+                                                                                                    
+    "options":["Using the raise statement with a string message or a custom exception class.",
+    "Assigning a string message directly to the exception object's attribute.",
+    "Using the assert statement with a string message.",
+    "Defining a custom method in the class for error messages."
+    ],
+    "answer":"Using the raise statement with a string message or a custom exception class.",
+    "discription":"In Python, you can specify the text of an exception object's error message by using the raise statement with a string message, such as raise ValueError('Invalid value'), or by defining and raising a custom exception class with its own message, such as raise MyCustomError('Custom error message')."
+},
+
+{
+    "id": 100,
+    "question":"Why is it recommended not to use string-based exceptions in Python?",
+                                                                                                    
+    "options":["String-based exceptions are less readable.",
+    "String-based exceptions do not provide stack trace information.",
+    "String-based exceptions are deprecated in Python 3.",
+    "String-based exceptions do not work with the try and except block."
+    ],
+    "answer":"String-based exceptions do not provide stack trace information.",
+    "discription":"String-based exceptions are discouraged because they do not carry stack trace information, which is crucial for debugging. Instead, Python encourages using classes derived from the Exception class, which provide more detailed error reporting and stack traces, making it easier to diagnose and fix issues."
+},
+
+{
+    "id": 101,
+    "question":"In Python 3.X, what are the names and functions of string object types?",
+                                                                                                    
+    "options":["str - Represents a sequence of Unicode characters.",
+    "string - Represents a sequence of bytes.",
+    "char - Represents a single character object.",
+    "text - Represents a text-based file object."
+    ],
+    "answer":"str - Represents a sequence of Unicode characters.",
+    "discription":"In Python 3.X, str is the built-in type for string objects, which are sequences of Unicode characters. The other options either do not exist or do not correctly describe string types in Python."
+},
+
+{
+    "id": 102,
+    "question":"How do the string forms in Python 3.X vary in terms of operations?",
+                                                                                                    
+    "options":["Raw strings can be concatenated using the + operator.",
+    "Raw strings automatically escape special characters like \n.",
+    "Unicode strings only support ASCII characters.",
+    "Byte strings require encoding and decoding for certain operations."
+    ],
+    "answer":"Byte strings require encoding and decoding for certain operations.",
+    "discription":"In Python 3.X, byte strings (b'...') are used to handle binary data and must be encoded to and decoded from specific character sets (like UTF-8) when performing certain operations, especially when converting between text and binary data forms."
+},
+
+{
+    "id": 103,
+    "question":"How can you interpret a Unicode text file containing text encoded in a different encoding than your platform's default?",
+                                                                                                    
+    "options":["Open the file using the default encoding of your platform.",
+    "Open the file with an encoding that matches the file's actual encoding.",
+    "Convert the file to a binary format before reading it.",
+    "Rename the file extension to match the desired encoding."
+    ],
+    "answer":"Open the file with an encoding that matches the file's actual encoding.",
+    "discription":"To correctly interpret a Unicode text file, you need to specify the encoding that matches the file's actual encoding when opening it. This ensures that the text is read and displayed correctly."
+},
+
+{
+    "id": 104,
+    "question":"What is the best way to make a Unicode text file in a particular encoding format?",
+                                                                                                    
+    "options":["Use a plain text editor and manually specify the encoding.",
+    "Convert an existing file using a web-based tool.",
+    "Write a script in a programming language like Python to save the file in the desired encoding.",
+    "Copy and paste the text into a Word document and save it as Unicode."
+    ],
+    "answer":"Write a script in a programming language like Python to save the file in the desired encoding.",
+    "discription":"Writing a script provides precise control over the encoding process, allowing you to ensure that the file is saved in the exact Unicode format needed."
+},
+
+{
+    "id": 105,
+    "question":"What qualifies ASCII text as a form of Unicode text?",
+                                                                                                    
+    "options":["ASCII text is encoded using a 16-bit standard.",
+    "ASCII text is a subset of Unicode.",
+    "ASCII text supports all languages.",
+    "ASCII text uses special symbols from the Unicode standard."
+    ],
+    "answer":"ASCII text is a subset of Unicode.",
+    "discription":"ASCII text qualifies as Unicode because ASCII is included within the Unicode standard as a subset, meaning every ASCII character has a corresponding Unicode code point"
+},
+
+{
+    "id": 106,
+    "question":"What is the concept of a metaclass?",
+                                                                                                    
+    "options":["A metaclass is a class used to define other classes.",
+    "A metaclass is a special type of function that operates on objects.",
+    "A metaclass is a library for managing class instances.",
+    "A metaclass is a design pattern for creating multiple classes."
+    ],
+    "answer":"A metaclass is a class used to define other classes.",
+    "discription":"A metaclass is a class that defines how other classes behave. In programming languages like Python, a metaclass can control the creation and initialization of classes, allowing for customization of class behavior and structure."
+},
+
+{
+    "id": 107,
+    "question":"Does assigning a value to a string's indexed character violate Python's string immutability?",
+                                                                                                    
+    "options":["Yes, because strings in Python are mutable and can be modified directly.",
+    "No, because strings in Python are immutable, and trying to assign a value to an indexed character will raise an error.",
+    "Yes, but only if the string is defined as a global variable.",
+    "No, because strings can be modified by converting them to a list first."
+    ],
+    "answer":"No, because strings in Python are immutable, and trying to assign a value to an indexed character will raise an error.",
+    "discription":"Strings in Python are immutable, so attempting to assign a value to an indexed character will result in an error."
+},
+
+{
+    "id": 108,
+    "question":"What is an indexed character's exact data type? What is the data form of a slicing-generated substring?",
+                                                                                                    
+    "options":["Indexed characters are strings, and slicing-generated substrings are also strings.",
+    "Indexed characters are integers, and slicing-generated substrings are lists.",
+    "Indexed characters are bytes, and slicing-generated substrings are bytes.",
+    "Indexed characters are strings, and slicing-generated substrings are tuples."
+    ],
+    "answer":"Indexed characters are strings, and slicing-generated substrings are also strings.",
+    "discription":"Indexed characters are individual characters of a string (strings themselves), and slicing-generated substrings are also strings."
+},
+
+{
+    "id": 109,
+    "question":"Identify at least two operators and one method that allow you to combine one or more smaller strings to create a larger string.",
+                                                                                                    
+    "options":["+ operator, * operator, and strip() method",
+    "+ operator, * operator, and join() method",
+    "+ operator, - operator, and append() method",
+    "* operator, & operator, and concat() method"
+    ],
+    "answer":"+ operator, * operator, and join() method",
+    "discription":"The + operator concatenates strings, the * operator repeats them, and the join() method combines multiple strings into one."
+},
+
+{
+    "id": 110,
+    "question":"What is the benefit of first checking the target string with in or not in before using the index method to find a substring?",
+                                                                                                    
+    "options":["It reduces the execution time by avoiding a potential ValueError if the substring is not found.",
+    "It increases the overall memory usage of the program.",
+    "It simplifies the code by eliminating the need for exception handling.",
+    "It makes the index method faster by pre-sorting the target string."
+    ],
+    "answer":"It reduces the execution time by avoiding a potential ValueError if the substring is not found.",
+    "discription":"Checking with in or not in first avoids a ValueError and ensures the index method is only used when the substring is present, improving efficiency."
+},
+
+{
+    "id": 111,
+    "question":"Which operators and built-in string methods produce simple Boolean (true/false) results?",
+                                                                                                    
+    "options":["+ operator and replace() method",
+    "in operator and startswith() method",
+    "* operator and strip() method",
+    "/ operator and upper() method"
+    ],
+    "answer":"in operator and startswith() method",
+    "discription":"in operator and startswith() method both produce Boolean results: in checks for substring presence, and startswith() checks if a string starts with a given prefix."
+},
+
+{
+    "id": 112,
+    "question":"Can you create a programme or function that employs both positive and negative indexing? Is there any repercussion if you do so?",
+                                                                                                    
+    "options":["Yes, you can use both positive and negative indexing without any issues; they function independently.",
+    "Yes, but using both positive and negative indexing can lead to confusion and errors if not handled carefully.",
+    "No, using both positive and negative indexing is not allowed in Python; you must choose one type.",
+    "No, using both positive and negative indexing will result in a syntax error in your program."
+    ],
+    "answer":"Yes, but using both positive and negative indexing can lead to confusion and errors if not handled carefully.",
+    "discription":"Using both positive and negative indexing in a program is allowed, but it can be confusing and may lead to errors if not carefully managed."
+},
+
+{
+    "id": 113,
+    "question":"What is the most effective way of starting with 1,000 elements in a Python list? Assume that all elements should be set to the same value.",
+                                                                                                    
+    "options":["Using a for loop to append the value 1,000 times",
+    "Using a list comprehension",
+    "Using the multiplication operator with a list",
+    "Using the append() method within a while loop"
+    ],
+    "answer":"Using the multiplication operator with a list",
+    "discription":"Using the multiplication operator with a list, like [value] * 1000, is the most efficient way to create a list with 1,000 identical elements in Python."
+},
+
+{
+    "id": 114,
+    "question":"What is the concept of an unbalanced matrix?",
+                                                                                                    
+    "options":["A matrix with more columns than rows.",
+    "A matrix where the sum of elements in each row is not equal.",
+    "A matrix with different numbers of elements in each row.",
+    "A matrix where the distribution of data or elements is uneven."
+    ],
+    "answer":"A matrix where the distribution of data or elements is uneven.",
+    "discription":"An unbalanced matrix refers to a matrix where the distribution of data or elements is uneven, potentially affecting analysis."
+},
+
+{
+    "id": 115,
+    "question":"Why is it necessary to use either list comprehension or a loop to create arbitrarily large matrices?",
+                                                                                                    
+    "options":["To ensure matrix size remains constant across operations.",
+    "To optimize memory usage by avoiding large-scale data storage.",
+    "To handle dynamic matrix dimensions and generate matrix elements efficiently.",
+    "To enforce data type consistency within the matrix elements."
+    ],
+    "answer":"To handle dynamic matrix dimensions and generate matrix elements efficiently.",
+    "discription":"List comprehensions and loops are used to create matrices with dynamic dimensions and efficiently generate their elements."
+},
+
+{
+    "id": 116,
+    "question":"What is the smallest number of statements you'd have to write in most programming languages to replace the Python expression a, b = a + b, a?",
+                                                                                                    
+    "options":["1",
+    "2",
+    "3",
+    "4"
+    ],
+    "answer":"3",
+    "discription":"In most programming languages, you would need three statements to replace a, b = a + b, a: one for a temporary variable, and two for assigning the new values to a and b."
+},
+
+{
+    "id": 117,
+    "question":"Is it possible to use list comprehension with a string? If so, how can you go about doing it?",
+                                                                                                    
+    "options":["No, list comprehension only works with lists.",
+    "Yes, but only if the string is first converted into a list of characters.",
+    "Yes, you can iterate over each character of the string directly in the list comprehension.",
+    "Yes, but you can only use list comprehension on strings of a fixed length."
+    ],
+    "answer":"Yes, you can iterate over each character of the string directly in the list comprehension.",
+    "discription":"List comprehension can be applied directly to a string by iterating over each character, treating the string as an iterable."
+},
+
+{
+    "id": 118,
+    "question":"From the command line, how do you get support with a user-written Python programme? Is this possible from inside IDLE?",
+                                                                                                    
+    "options":["Use the python --help command; it works both in the command line and inside IDLE.",
+    "Run the program with the --help argument; this may work if the program is designed to handle it, and it is possible inside IDLE.",
+    "Use the help() function in the command line or IDLE to get help with any user-written Python program.",
+    "It's not possible to get help with a user-written Python program from the command line or IDLE."
+    ],
+    "answer":"Run the program with the --help argument; this may work if the program is designed to handle it, and it is possible inside IDLE.",
+    "discription":"You can get help with a user-written Python program by running it with the --help argument, provided the program is designed to handle this. This works both from the command line and inside IDLE."
+},
+
+{
+    "id": 119,
+    "question":"How do you distinguish between a wrapper, a wrapped feature, and a decorator?",
+                                                                                                    
+    "options":["A wrapper is the original function, a wrapped feature is an added functionality, and a decorator is a technique to apply the wrapper.",
+    "A wrapper is the code that adds new behavior, a wrapped feature is the original function, and a decorator is the syntax used to apply the wrapper.",
+    "A wrapper is a special type of decorator, a wrapped feature is the result of applying the wrapper, and a decorator is an optional syntax for wrapping.",
+    "A wrapper is the original function, a wrapped feature is the result, and a decorator is a specific implementation of the wrapper."
+    ],
+    "answer":"A wrapper is the code that adds new behavior, a wrapped feature is the original function, and a decorator is the syntax used to apply the wrapper.",
+    "discription":"The wrapper adds new behavior, the wrapped feature is the original function, and a decorator is the syntax used to apply the wrapper to the function."
+},
+
+{
+    "id": 120,
+    "question":". If a function is a generator function, what does it return?",
+                                                                                                    
+    "options":["An iterator",
+    "A list",
+    "A tuple",
+    "A function"
+    ],
+    "answer":"An iterator",
+    "discription":"A generator function returns an iterator, which yields values one at a time when iterated over."
+},
+
+{
+    "id": 121,
+    "question":"Identify at least one benefit of generators.",
+                                                                                                    
+    "options":["Generators automatically handle memory management for large datasets.",
+    "Generators provide a way to iterate over large sequences without loading the entire sequence into memory.",
+    "Generators allow for multi-threaded execution of code.",
+    "Generators execute all code at once for faster performance."
+    ],
+    "answer":"Generators provide a way to iterate over large sequences without loading the entire sequence into memory.",
+    "discription":"Generators allow iteration over large sequences by yielding items one at a time, which conserves memory."
+},
+
+{
+    "id": 122,
+    "question":"What are the new features added in Python 3.8 version?",
+                                                                                                    
+    "options":["Type Hinting and f-strings",
+    "Assignment Expressions and Positional-only Parameters",
+    "Async Generators and Data Classes",
+    "Enhanced Debugging and New Data Types"
+    ],
+    "answer":"Assignment Expressions and Positional-only Parameters",
+    "discription":"Python 3.8 introduced the walrus operator (:=) for assignment expressions and allowed for positional-only parameters in function definitions."
+},
+
+{
+    "id": 123,
+    "question":"What is a generator comprehension?",
+                                                                                                    
+    "options":["A method to generate lists in a more memory-efficient way than lists.",
+    "A concise way to create generators using a similar syntax to list comprehensions.",
+    "A way to create dictionaries with a compact syntax similar to list comprehensions.",
+    "A function that returns a generator object by yielding values one at a time."
+    ],
+    "answer":"A concise way to create generators using a similar syntax to list comprehensions.",
+    "discription":"A generator comprehension is a compact syntax for creating generators, similar to list comprehensions but producing a generator object."
+},
+
+{
+    "id": 124,
+    "question":"How much do you need to use the following sentence while using regular expressions?\nimport re",
+                                                                                                    
+    "options":["Not needed; regular expressions work without importing anything.",
+    "Only if using advanced regex features; basic features do not require it.",
+    "Always; it is necessary to import the re module to work with regular expressions in Python.",
+    "Only in interactive sessions; scripts do not need this import."
+    ],
+    "answer":"Always; it is necessary to import the re module to work with regular expressions in Python.",
+    "discription":"The import re statement is always necessary to use regular expressions in Python, regardless of the context."
+},
+
+{
+    "id": 125,
+    "question":"Which characters have special significance in square brackets when expressing a range, and under what circumstances?",
+                                                                                                    
+    "options":["Colon (:) and hyphen (-)",
+    "Asterisk (*) and question mark (?)",
+    "Hyphen (-) and comma (,)",
+    "Hyphen (-) and caret (^)"
+    ],
+    "answer":"Hyphen (-) and comma (,)",
+    "discription":"In square brackets, the hyphen is used to denote a range of characters (e.g., [a-z]), while the comma is used to separate individual characters or ranges (e.g., [a-z,0-9])."
+},
+
+{
+    "id": 126,
+    "question":"What are some examples of how to use the match object returned by re.match and re.search?",
+                                                                                                    
+    "options":["To get the position of the match within the string using match.start() and match.end().",
+    "To extract all occurrences of the pattern from the string using match.group() and match.groups().",
+    "To replace matched substrings in the original string using match.replace().",
+    "To determine if a match is found using match.is_match()."
+    ],
+    "answer":"To get the position of the match within the string using match.start() and match.end().",
+    "discription":"The match object provides methods like match.start() and match.end() to find the positions of the match in the original string."
+},
+
+{
+    "id": 127,
+    "question":"What is the difference between using a vertical bar (|) as an alteration and using square brackets as a character set?",
+                                                                                                    
+    "options":["The vertical bar (|) matches any one of several possible strings, while square brackets ([]) match any one character within a set.",
+    "The vertical bar (|) matches a single character, while square brackets ([]) are used for matching multiple characters.",
+    "The vertical bar (|) is used to define ranges, while square brackets ([]) are for literal matching.",
+    "The vertical bar (|) is used for grouping patterns, while square brackets ([]) are used for specifying repetitions."
+    ],
+    "answer":"The vertical bar (|) matches any one of several possible strings, while square brackets ([]) match any one character within a set.",
+    "discription":"The vertical bar (|) in regular expressions denotes alternation between patterns, whereas square brackets ([]) define a set of characters from which a single character is matched."
+},
+
+{
+    "id": 128,
+    "question":"In a simple match of a string, which looks only for one match and does not do any replacement, is the use of a non-tagged group likely to make any practical difference?",
+                                                                                                    
+    "options":["Yes, because non-tagged groups alter the way the string is matched.",
+    "Yes, because non-tagged groups can speed up the matching process.",
+    "No, because non-tagged groups do not affect the outcome of the match.",
+    "No, because non-tagged groups are not supported in most regex engines."
+    ],
+    "answer":"No, because non-tagged groups do not affect the outcome of the match.",
+    "discription":"In a simple match that doesn’t involve replacement, using non-tagged groups does not change the result, as they are used only for grouping without capturing."
+},
+
+{
+    "id": 129,
+    "question":"In which scenario would using a non-tagged category have a significant impact on a program's outcomes?",
+                                                                                                    
+    "options":["When categorizing data for a machine learning model, leading to incorrect classification of data points.",
+    "When storing data in a relational database, causing slower query performance.",
+    "When organizing files in a file system, leading to more complex file retrieval operations.",
+    "When creating a user interface, leading to visual inconsistencies across the application."
+    ],
+    "answer":"When categorizing data for a machine learning model, leading to incorrect classification of data points.",
+    "discription":"Using a non-tagged category in a machine learning model can result in incorrect data classification, significantly impacting the model's performance and accuracy."
+},
+
+{
+    "id": 130,
+    "question":"What is the benefit of referring to groups by name rather than by number in a regular expression?",
+                                                                                                    
+    "options":["It allows for faster execution of the regular expression.",
+    "It improves the readability and maintainability of the code, especially in complex expressions.",
+    "It automatically optimizes the regular expression for memory usage.",
+    "It ensures that the regular expression can be used across different programming languages."
+    ],
+    "answer":"It improves the readability and maintainability of the code, especially in complex expressions.",
+    "discription":"Referring to groups by name enhances code readability and maintainability, making it easier to understand and work with complex regular expressions."
+},
+
+{
+    "id": 131,
+    "question":"Can you identify repeated items within a target string using named groups, as in 'The cow jumped over the moon'?",
+                                                                                                    
+    "options":["No, named groups can only be used for capturing individual patterns, not for identifying repeated items.",
+    "Yes, named groups allow you to capture and reference repeated patterns within the same string.",
+    "No, named groups are only used for labeling captures, not for finding repetitions.",
+    "Yes, but only if the repeated items are adjacent to each other in the string."
+    ],
+    "answer":"Yes, named groups allow you to capture and reference repeated patterns within the same string.",
+    "discription":"Named groups in regular expressions can be used to identify and reference repeated items within a target string, allowing for more complex pattern matching."
+},
+
+{
+    "id": 132,
+    "question":"When parsing a string, what is one thing that the Scanner interface does for you that re.findall does not?",
+                                                                                                    
+    "options":["Scanner allows you to process the string iteratively, matching patterns one by one.",
+    "Scanner can return all matches at once without iteration.",
+    "Scanner provides named groups, whereas re.findall does not.",
+    "Scanner is used exclusively for simple text parsing, while re.findall can handle complex regular expressions."
+    ],
+    "answer":"Scanner allows you to process the string iteratively, matching patterns one by one.",
+    "discription":"The Scanner interface allows for iterative processing of strings, matching and handling one pattern at a time, which is something re.findall does not offer, as it returns all matches at once."
+},
+
+{
+    "id": 133,
+    "question":"Does a Scanner object in programming have to be named scanner?",
+                                                                                                    
+    "options":["Yes, a Scanner object must be named scanner as it is a reserved keyword.",
+    "No, a Scanner object can have any valid variable name, not just scanner.",
+    "Yes, using any other name will cause a syntax error in most programming languages.",
+    "No, but naming it scanner is mandatory for proper functionality."
+    ],
+    "answer":"No, a Scanner object can have any valid variable name, not just scanner.",
+    "discription":"A Scanner object in programming can be named using any valid variable name; scanner is just a common naming convention, not a requirement."
+},
+
+{
+    "id": 134,
+    "question":"How does Python handle newlines when reading and writing lines of text?",
+                                                                                                    
+    "options":["Python removes the trailing newline when reading a line and appends a newline when writing a line.",
+    "Python retains the trailing newline when reading a line but does not append a newline when writing a line.",
+    "Python removes the trailing newline when reading a line and does not append a newline when writing a line.",
+    "Python retains the trailing newline when reading a line and appends a newline when writing a line."
+    ],
+    "answer":"Python retains the trailing newline when reading a line but does not append a newline when writing a line.",
+    "discription":"Python keeps the trailing newline when reading a line of text and does not automatically add a newline when writing a line."
+},
+
+{
+    "id": 135,
+    "question":"Which file operations enable random-access operation?",
+                                                                                                    
+    "options":["write() and read()",
+    "seek() and tell()",
+    "open() and close()",
+    "flush() and sync()"
+    ],
+    "answer":"seek() and tell()",
+    "discription":"The seek() operation allows you to move to a specific file position, and tell() returns the current position, enabling random-access operation within a file."
+},
+
+{
+    "id": 136,
+    "question":"When are you most likely to use the struct package in Python?",
+                                                                                                    
+    "options":["When working with strings and text manipulation.",
+    "When dealing with binary data, such as reading from or writing to files with specific binary formats.",
+    "When processing large datasets in pandas.",
+    "When creating complex graphical user interfaces (GUIs)."
+    ],
+    "answer":"When dealing with binary data, such as reading from or writing to files with specific binary formats.",
+    "discription":"The struct package is mainly used for packing and unpacking binary data, making it essential when handling files with specific binary formats."
+},
+
+{
+    "id": 137,
+    "question":"When is pickling the best option?",
+                                                                                                    
+    "options":["When you need to store complex data types, like custom objects, in a human-readable format.",
+    "When you want to transfer Python objects between programs or save them to a file for later use.",
+    "When you need the fastest method to save data to a database.",
+    "When you need to ensure that data is stored securely with encryption."
+    ],
+    "answer":"When you want to transfer Python objects between programs or save them to a file for later use.",
+    "discription":"Pickling is best when you need to serialize Python objects for storage or transfer between programs, allowing them to be restored later."
+},
+
+{
+    "id": 138,
+    "question":"What exactly is a method, and how is it different from a regular function?",
+                                                                                                    
+    "options":["A method is a function that belongs to a class and operates on instances of that class, while a regular function is not associated with any class and operates independently.",
+    "A method is a function that is defined outside of a class, while a regular function is defined inside a class.",
+    "A method is a special type of function that cannot take arguments, while a regular function can.",
+    "A method and a regular function are essentially the same, with no difference in their usage or behavior."
+    ],
+    "answer":"A method is a function that belongs to a class and operates on instances of that class, while a regular function is not associated with any class and operates independently.",
+    "discription":"A method is a function that is part of a class and operates on class instances, while a regular function is independent and not tied to any class."
+},
+
+{
+    "id": 139,
+    "question":"What is the difference between the _ _add_ _ and the _ _radd_ _ methods?",
+                                                                                                    
+    "options":["__add__ is for addition, and __radd__ is for subtraction.",
+    "__add__ is called when the left operand supports the operation, and __radd__ is called when the right operand supports it.",
+    "__add__ is for integer addition, and __radd__ is for floating-point addition.",
+    "__add__ modifies the left operand, and __radd__ modifies the right operand."
+    ],
+    "answer":"__add__ is called when the left operand supports the operation, and __radd__ is called when the right operand supports it.",
+    "discription":"__add__ handles addition when the left operand supports it, while __radd__ is used if the left operand doesn’t support the addition, allowing the right operand to handle it."
+},
+
+{
+    "id": 140,
+    "question":"Is the _ _init_ _ method inherited by subclasses? What do you do if you need to customize its behavior within a subclass?",
+                                                                                                    
+    "options":["No, the __init__ method is not inherited by subclasses. You must always define a new one in each subclass.",
+    "Yes, the __init__ method is inherited, and you can customize its behavior in a subclass by overriding it.",
+    "Yes, the __init__ method is inherited, but it cannot be customized in subclasses.",
+    "No, the __init__ method is not inherited by subclasses, but you can call the parent class's __init__ method from the subclass."
+    ],
+    "answer":"Yes, the __init__ method is inherited, and you can customize its behavior in a subclass by overriding it.",
+    "discription":"The __init__ method is inherited by subclasses in Python, and you can customize it by overriding the method within the subclass."
+},
+
+{
+    "id": 141,
+    "question":"How do you increment the count field of an object test and print it in Python?",
+                                                                                                    
+    "options":["test.count++ and print(test.count)",
+    "test.count = test.count + 1 and print(test.count)",
+    "test.count += 1 and print(test.count)",
+    "test.count = increment(test.count) and print(test.count)"
+    ],
+    "answer":"test.count = test.count + 1 and print(test.count)",
+    "discription":"To increment the count field and print it, use test.count += 1 to increment and print(test.count) to display the value."
+},
+
+{
+    "id": 142,
+    "question":"Compare and contrast the float and Decimal classes' benefits and drawbacks.",
+                                                                                                    
+    "options":["float is more precise but slower than Decimal, which is used for financial calculations.",
+    "float provides arbitrary precision, while Decimal has limited precision but is faster.",
+    "float is suitable for high-precision calculations and Decimal is used for general-purpose arithmetic.",
+    "float is faster and has limited precision, while Decimal offers arbitrary precision but is slower."
+    ],
+    "answer":"float is faster and has limited precision, while Decimal offers arbitrary precision but is slower.",
+    "discription":"float is fast but has limited precision, suitable for most general calculations. Decimal provides high precision and is better for financial and exact calculations but is slower."
+},
+
+{
+    "id": 143,
+    "question":"Decimal('1.200') and Decimal('1.2') are two objects to consider. In what sense are these the same object? Are these just two ways of representing the exact same value, or do they correspond to different internal states?",
+                                                                                                    
+    "options":["They are different objects with different internal states, even though they represent the same value.",
+    "They are the same object with the same internal state, as Decimal maintains exact precision.",
+    "They are different objects with different values, so their internal states are different.",
+    "They are the same object but with different precision levels."
+    ],
+    "answer":"They are the same object with the same internal state, as Decimal maintains exact precision.",
+    "discription":"Decimal('1.200') and Decimal('1.2') represent the same exact value and have the same internal state, as Decimal maintains precise values regardless of their textual representation."
+},
+
+{
+    "id": 144,
+    "question":"What happens if the equality of Decimal('1.200') and Decimal('1.2') is checked?",
+                                                                                                    
+    "options":["They are considered equal because trailing zeros are ignored.",
+    "They are considered unequal because trailing zeros matter.",
+    "They are considered equal because they represent the same value.",
+    "An error occurs because Decimal does not support comparison."
+    ],
+    "answer":"They are considered unequal because trailing zeros matter.",
+    "discription":"In Python's Decimal, Decimal('1.200') and Decimal('1.2') are not equal due to the precision difference, so trailing zeros are considered."
+},
+
+{
+    "id": 145,
+    "question":"Why is it preferable to start a Decimal object with a string rather than a floating-point value?",
+                                                                                                    
+    "options":["String input avoids precision issues inherent in floating-point representation.",
+    "Strings are more memory-efficient than floating-point values.",
+    "Floating-point values are not supported by the Decimal class.",
+    "String input is faster for creating Decimal objects than floating-point values."
+    ],
+    "answer":"String input avoids precision issues inherent in floating-point representation.",
+    "discription":"Using a string to create a Decimal object avoids precision errors that can occur with floating-point values."
+},
+
+{
+    "id": 146,
+    "question":"In an arithmetic phrase, how simple is it to combine Decimal objects with integers?",
+                                                                                                    
+    "options":["Not possible; you must convert integers to Decimal objects first.",
+    "Very simple; Decimal objects automatically convert integers.",
+    "Moderately simple; use a specific method to combine them.",
+    "Simple; Python handles the conversion automatically."
+    ],
+    "answer":"Simple; Python handles the conversion automatically.",
+    "discription":"In Python, Decimal objects and integers can be combined directly in arithmetic expressions, with Python automatically handling the conversion."
+},
+
+{
+    "id": 147,
+    "question":"Can Decimal objects and floating-point values be combined easily?",
+                                                                                                    
+    "options":["Yes, Decimal and float can be combined directly without issues.",
+    "No, you must convert one type to the other before combining.",
+    "Yes, Python automatically handles the conversion between Decimal and float.",
+    "No, Decimal objects cannot be combined with floating-point values at all."
+    ],
+    "answer":"No, you must convert one type to the other before combining.",
+    "discription":"Combining Decimal and float directly can cause precision issues, so explicit conversion is needed to ensure accurate results"
+},
+
+{
+    "id": 148,
+    "question":"Describe a quantity that can be accurately expressed by the Decimal or Fraction classes but not by a floating-point value.",
+                                                                                                    
+    "options":["1/3",
+    "0.25",
+    "√2",
+    "1/4"
+    ],
+    "answer":"1/3",
+    "discription":"The fraction 1/3 cannot be precisely expressed by floating-point values due to their binary representation but can be accurately represented using the Decimal or Fraction classes."
+},
+
+
+{
+    "id": 149,
+    "question":"Consider the following two fraction objects: Fraction(1, 2) and Fraction(1, 2). (5, 10). Is the internal state of these two objects the same? Why do you think that is?",
+                                                                                                    
+    "options":["Yes, the internal state is the same because both fractions are equivalent and automatically reduced to their simplest form.",
+    "No, the internal state is different because Fraction(1, 2) and Fraction(5, 10) have different numerators and denominators.",
+    "Yes, the internal state is different because Fraction(5, 10) needs more memory.",
+    "No, the internal state is different because Fraction(5, 10) is a decimal and not a fraction."
+    ],
+    "answer":"Yes, the internal state is the same because both fractions are equivalent and automatically reduced to their simplest form.",
+    "discription":"Both Fraction(1, 2) and Fraction(5, 10) are equivalent and automatically reduced to their simplest form, so their internal states are the same."
+},
+
+{
+    "id": 150,
+    "question":"How do the Fraction class and the integer type (int) relate to each other? Containment or inheritance?",
+                                                                                                    
+    "options":["Containment",
+    "Inheritance",
+    "Composition",
+    "Aggregation"
+    ],
+    "answer":"Inheritance",
+    "discription":"The Fraction class does not inherit from int; instead, it uses int values for its numerator and denominator."
+},
+
+{
+    "id": 151,
+    "question":"Provide a real-life example of a normal distribution.",
+                                                                                                    
+    "options":["The number of cars in a parking lot at different times of the day",
+    "The heights of adult humans",
+    "The number of pages in books in a library",
+    "The time it takes for a computer to run a specific software application"
+    ],
+    "answer":"The heights of adult humans",
+    "discription":"The heights of adult humans typically follow a normal distribution, where most people are near the average height and fewer people are at the extremes."
+},
+
+{
+    "id": 152,
+    "question":"In the short term, how can you expect a probability distribution to behave? What do you think will happen as the number of trials grows?",
+                                                                                                    
+    "options":["In the short term, the distribution will always be perfectly uniform, and as trials increase, it will become random.",
+    "In the short term, the distribution might show significant variation, but as the number of trials grows, it will approximate the theoretical probability distribution.",
+    "In the short term, the distribution will exactly match the theoretical distribution, and it will remain the same as the number of trials grows.",
+    "In the short term, the distribution will show no variation, and as the number of trials increases, it will become less predictable."
+    ],
+    "answer":"In the short term, the distribution might show significant variation, but as the number of trials grows, it will approximate the theoretical probability distribution.",
+    "discription":"Initially, a probability distribution can vary widely, but as the number of trials increases, it will more closely match the theoretical distribution."
+},
+
+{
+    "id": 153,
+    "question":"What kind of object can be shuffled by using random.shuffle?",
+                                                                                                    
+    "options":["Strings",
+    "Dictionaries",
+    "Lists",
+    "Tuples"
+    ],
+    "answer":"Lists",
+    "discription":"random.shuffle can shuffle mutable sequences like lists, but not immutable objects like strings or tuples."
+},
+
+{
+    "id": 154,
+    "question":"Describe the math package's general categories of functions.",
+                                                                                                    
+    "options":["String manipulation, file handling, and mathematical operations",
+    "Arithmetic, trigonometric, logarithmic, and constant functions",
+    "Data analysis, machine learning, and statistical calculations",
+    "Input/output operations, error handling, and numerical methods"
+    ],
+    "answer":"Arithmetic, trigonometric, logarithmic, and constant functions",
+    "discription":"The math package includes functions for arithmetic operations, trigonometric calculations, logarithmic functions, and mathematical constants."
+},
+
+{
+    "id": 155,
+    "question":"How would you add the current date to the text file today.txt as a string in Python?",
+                                                                                                    
+    "options":["with open('today.txt', 'w') as f: f.write(str(datetime.date.today()))",
+    "import datetime; with open('today.txt', 'a') as f: f.write(str(datetime.date.today()))",
+    "import datetime; open('today.txt', 'w').write(str(datetime.date.today()))",
+    "with open('today.txt', 'a') as f: f.write(datetime.date.today())"
+    ],
+    "answer":"import datetime; with open('today.txt', 'a') as f: f.write(str(datetime.date.today()))",
+    "discription":"This code imports the datetime module, opens today.txt in append mode, and writes the current date as a string to the file."
+},
+
+{
+    "id": 156,
+    "question":"How do you read the text file today.txt into the string today_string in Python?",
+                                                                                                    
+    "options":["today_string = read('today.txt')",
+    "today_string = open('today.txt').read()",
+    "today_string = file('today.txt').read()",
+    "today_string = read_file('today.txt')"
+    ],
+    "answer":"today_string = open('today.txt').read()",
+    "discription":"To read the contents of today.txt into the string today_string, use open('today.txt').read(), which opens the file and reads its entire content into the variable."
+},
+
+{
+    "id": 157,
+    "question":"How can you parse the date from the string today_string using Python?",
+                                                                                                    
+    "options":["datetime.datetime.strptime(today_string, '%Y-%m-%d')",
+    "datetime.date(today_string)",
+    "date.parse(today_string)",
+    "today_string.to_date()"
+    ],
+    "answer":"datetime.datetime.strptime(today_string, '%Y-%m-%d')",
+    "discription":"Use datetime.datetime.strptime(today_string, '%Y-%m-%d') to parse the date from the string today_string using the specified format."
+},
+
+{
+    "id": 158,
+    "question":"How can you create a date object for your day of birth in Python?",
+                                                                                                    
+    "options":["datetime.date(year, month, day)",
+    "date.create(year, month, day)",
+    "datetime.create_date(year, month, day)",
+    "datetime.datetime(year, month, day)"
+    ],
+    "answer":"datetime.date(year, month, day)",
+    "discription":"To create a date object for your day of birth, use datetime.date(year, month, day) specifying the year, month, and day."
+},
+
+{
+    "id": 159,
+    "question":"How can you find out what day of the week your date of birth was?",
+                                                                                                    
+    "options":["Using datetime.datetime.weekday() method",
+    "Using datetime.datetime.strftime('%A') method",
+    "Using datetime.date.isoformat() method",
+    "Using time.time() function"
+    ],
+    "answer":"Using datetime.datetime.weekday() method",
+    "discription":"Use datetime.datetime.weekday() to determine the day of the week for a given date, with Monday as 0 and Sunday as 6."
+},
+
+{
+    "id": 160,
+    "question":"When will you be (or when were you) 10,000 days old?",
+                                                                                                    
+    "options":["On your 27th birthday",
+    "On your 27th birthday, exactly 10 years after your 18th birthday",
+    "On the day exactly 10,000 days after your birthdate",
+    "On the day exactly 10,000 days before your birthdate"
+    ],
+    "answer":"On the day exactly 10,000 days after your birthdate",
+    "discription":"You will be 10,000 days old exactly 10,000 days after your birthdate."
+},
+
+{
+    "id": 161,
+    "question":"What are the distinctions between the empty, ones, and zeros functions in NumPy?",
+                                                                                                    
+    "options":["empty creates an array with uninitialized values, ones creates an array filled with 1s, and zeros creates an array filled with 0s.",
+    "empty and zeros create arrays with initialized values, while ones creates an array with random values.",
+    "empty creates an array with a specified shape but no values, ones creates an array with a shape and value of 0, and zeros creates an array with a shape and value of 1.",
+    "empty creates a list, ones creates a tuple, and zeros creates a NumPy array."
+    ],
+    "answer":"empty creates an array with uninitialized values, ones creates an array filled with 1s, and zeros creates an array filled with 0s.",
+    "discription":"empty creates an array with uninitialized values, ones creates an array filled with 1s, and zeros creates an array filled with 0s."
+},
+
+{
+    "id": 162,
+    "question":"Does a NumPy array contain fixed-length strings? What happens if you allocate a longer string to one of these arrays?",
+                                                                                                    
+    "options":["Yes, NumPy arrays contain fixed-length strings, and allocating a longer string will result in an error.",
+    "No, NumPy arrays do not support fixed-length strings; they automatically adjust to string length.",
+    "Yes, NumPy arrays contain fixed-length strings, and a longer string will be truncated to fit the fixed length.",
+    "No, NumPy arrays with strings do not enforce length constraints and can hold strings of any length."
+    ],
+    "answer":"Yes, NumPy arrays contain fixed-length strings, and a longer string will be truncated to fit the fixed length.",
+    "discription":"In NumPy arrays with fixed-length strings, longer strings are truncated to fit the allocated space."
+},
+
+{
+    "id": 163,
+    "question":"What happens when you combine two NumPy arrays using an operation like addition (+) or multiplication (*)? What are the conditions for combining two NumPy arrays?",
+                                                                                                    
+    "options":["The arrays are combined element-wise, and they must have the same shape or be broadcastable to the same shape.",
+    "The arrays are concatenated along the last axis, and their shapes don't need to match.",
+    "The arrays are multiplied together into a single scalar value, and they must have identical shapes.",
+    "The arrays are combined element-wise only if they have identical shapes; otherwise, an error is raised."
+    ],
+    "answer":"The arrays are combined element-wise, and they must have the same shape or be broadcastable to the same shape.",
+    "discription":"NumPy combines two arrays element-wise for operations like addition and multiplication, requiring the arrays to have the same shape or be broadcastable to a common shape."
+},
+
+{
+    "id": 164,
+    "question":"What is a histogram, exactly? Name a NumPy method for creating such a graph.",
+                                                                                                    
+    "options":["A histogram is a plot that shows the distribution of numerical data, and the NumPy method for creating it is numpy.hist()",
+    "A histogram is a bar graph representing the frequency of data within intervals, and the NumPy method for creating it is numpy.histogram()",
+    "A histogram is a scatter plot showing data points, and the NumPy method for creating it is numpy.scatter()",
+    "A histogram is a line graph of data trends, and the NumPy method for creating it is numpy.lineplot()"
+    ],
+    "answer":"A histogram is a bar graph representing the frequency of data within intervals, and the NumPy method for creating it is numpy.histogram()",
+    "discription":"A histogram shows the distribution of numerical data as a bar graph, and you can create it using the numpy.histogram() method in NumPy."
+},
+
+{
+    "id": 165,
+    "question":"If necessary, how do you change the aspect ratios between the X and Y axes?",
+                                                                                                    
+    "options":["By using the 'Resize' tool and adjusting the width and height independently.",
+    "By applying a filter that adjusts the aspect ratio automatically.",
+    "By setting the X and Y axes to be equal in the properties menu.",
+    "By rotating the image to change the aspect ratio."
+    ],
+    "answer":"By using the 'Resize' tool and adjusting the width and height independently.",
+    "discription":"To change the aspect ratio between the X and Y axes, use the 'Resize' tool to independently adjust the width and height of the image."
+},
+
+{
+    "id": 166,
+    "question":"Compare and contrast the three types of array multiplication between two NumPy arrays: dot product, outer product, and regular multiplication.",
+                                                                                                    
+    "options":["Dot product returns an array of the same shape as the inputs, outer product creates a scalar, and regular multiplication adds corresponding elements.",
+    "Dot product multiplies corresponding elements, outer product sums elements, and regular multiplication creates a matrix product.",
+    "Dot product results in a scalar or matrix depending on the input, outer product results in a matrix of pairwise products, and regular multiplication multiplies corresponding elements element-wise.",
+    "Dot product creates a matrix of pairwise products, outer product multiplies corresponding elements, and regular multiplication sums corresponding elements."
+    ],
+    "answer":"Dot product results in a scalar or matrix depending on the input, outer product results in a matrix of pairwise products, and regular multiplication multiplies corresponding elements element-wise.",
+    "discription":"The dot product gives a scalar or matrix based on the inputs, the outer product forms a matrix with all possible pairwise products, and regular multiplication performs element-wise multiplication."
+},
+
+{
+    "id": 167,
+    "question":"Before you buy a home, which NumPy function will you use to measure your monthly mortgage payment?",
+                                                                                                    
+    "options":["numpy.sum()",
+    "numpy.mean()",
+    "numpy.pmt()",
+    "numpy.median()"
+    ],
+    "answer":"numpy.pmt()",
+    "discription":"The numpy.pmt() function calculates the monthly payment on a mortgage based on interest rate, number of periods, and loan principal."
+},
+
+{
+    "id": 168,
+    "question":"Can string data be stored in numpy arrays? If so, list at least one restriction that applies to this data.",
+                                                                                                    
+    "options":["No, NumPy arrays cannot store string data.",
+    "Yes, but the strings must be of equal length within the array.",
+    "Yes, but only ASCII characters can be used in the strings.",
+    "Yes, but the strings must be stored as individual arrays within the main array."
+    ],
+    "answer":"Yes, but the strings must be of equal length within the array.",
+    "discription":"NumPy arrays can store string data, but all strings must be of equal length within the array, which may involve truncation or padding."
+},
+
+{
+    "id": 169,
+    "question":"What does the following code print, and why?\ndef func(a, **kargs):\n    print(a, kargs)\n func(a=1, c=3, b=2)",
+                                                                                                    
+    "options":["1 {'c': 3, 'b': 2}",
+    "{'a': 1, 'c': 3, 'b': 2}",
+    "1 {'a': 1, 'c': 3, 'b': 2}",
+    "{'c': 3, 'b': 2} 1"
+    ],
+    "answer":"1 {'c': 3, 'b': 2}",
+    "discription":"The function func takes a required positional argument a and any number of keyword arguments captured in kargs. The code prints a followed by kargs, where kargs contains all keyword arguments except a."
+},
+
+
+{
+    "id": 170,
+    "question":"What gets printed by the following code?\ndef func(a, b, c=8, d=5):\n    print(a, b, c, d)\n    func(1, *(5, 6))",
+                                                                                                    
+    "options":["1 5 6 5",
+    "1 5 6 8",
+    "1 5 8 6",
+    "1 6 5 6"
+    ],
+    "answer":"1 5 6 5",
+    "discription":"In this code, * unpacks the tuple (5, 6) into the parameters b and c, respectively. The function is called with a=1, b=5, c=6, and since d is not provided, it defaults to 5. Therefore, the output is 1 5 6 5."
+},
+
+{
+    "id": 171,
+    "question":"What is the result of the following code?\ndef func(a, b, c):\n    a = 2\n    b[0] = 'x'\n    c['a'] = 'y'\n    l = 1\nm = [1]\nn = {'a': 0}\n  func(l, m, n)\nl, m, n",
+                                                                                                    
+    "options":["(1, [1], {'a': 0})",
+    "(1, ['x'], {'a': 'y'})",
+    "(2, [1], {'a': 'y'})",
+    "(2, ['x'], {'a': 0})"
+    ],
+    "answer":"(1, ['x'], {'a': 'y'})",
+    "discription":"The variable l remains unchanged because integers are passed by value in Python.\nThe list m and the dictionary n are modified because lists and dictionaries are mutable, meaning changes within the function affect the original objects."
+},
+
+{
+    "id": 172,
+    "question":"What is the definition of a 180-day moving average?",
+                                                                                                    
+    "options":["The average of a data set over the past 180 months.",
+    "The average of a data set calculated daily over the past 180 days.",
+    "The average of a data set over the past 180 weeks.",
+    "The average of a data set calculated yearly over the past 180 days."
+    ],
+    "answer":"The average of a data set calculated daily over the past 180 days.",
+    "discription":" A 180-day moving average is a statistical calculation that averages a data set's values over the past 180 days, updating daily as new data points become available."
+},
+
+{
+    "id": 173,
+    "question":"Did the chapter's final example use 'indirect' importing? If so, how exactly do you do it?",
+                                                                                                    
+    "options":["By using import statements within a function or method.",
+    "By importing a module in a different file and then using it.",
+    "By importing modules dynamically at runtime using importlib.",
+    "By using from module import * to import all functions and classes."
+    ],
+    "answer":"By importing modules dynamically at runtime using importlib.",
+    "discription":"Indirect importing involves importing a module dynamically at runtime rather than statically in the file's top-level code. This can be achieved using the importlib module, which allows for more flexible and runtime-dependent imports."
+},
+
+{
+    "id": 174,
+    "question":"How do you use a lambda function with the map() function?",
+                                                                                                    
+    "options":["map(lambda x: x * 2, [1, 2, 3])",
+    "lambda map(x * 2, [1, 2, 3])",
+    "map(lambda x * 2: x, [1, 2, 3])",
+    "map(x: lambda x * 2, [1, 2, 3])"
+    ],
+    "answer":"map(lambda x: x * 2, [1, 2, 3])",
+    "discription":"To use a lambda function with map(), you pass the lambda function as the first argument and the iterable (e.g., a list) as the second argument."
+},
+
+{
+    "id": 175,
+    "question":"What is a decorator in Python?",
+                                                                                                    
+    "options":["A function that modifies the behavior of another function or method.",
+    "A special type of class that decorates an instance.",
+    "A built-in function that enhances Python's syntax.",
+    "A method that is used to create a new class."
+    ],
+    "answer":"A function that modifies the behavior of another function or method.",
+    "discription":"Decorators are functions that allow you to modify the behavior of another function or method without changing its code."
+},
+
+{
+    "id": 176,
+    "question":"How do you apply a decorator to a function in Python?",
+                                                                                                    
+    "options":["@decorator_name placed above the function definition.",
+    "decorator_name(function_name) placed inside the function definition.",
+    "function_name(decorator_name) placed inside the function body.",
+    "function_name = decorator_name inside the function body."
+    ],
+    "answer":"@decorator_name placed above the function definition.",
+    "discription":"To apply a decorator, you use the @decorator_name syntax above the function definition."
+},
+
+{
+    "id": 177,
+    "question":"What is the purpose of the __init__ method in a class?",
+                                                                                                    
+    "options":["To initialize class attributes with default values.",
+    "To create an instance of the class.",
+    "To define a method that is called when an instance is created.",
+    "To destroy an instance of the class."
+    ],
+    "answer":"To define a method that is called when an instance is created.",
+    "discription":"The __init__ method is a special method in Python classes that is automatically called when a new instance of the class is created, allowing for initial setup."
+},
+
+{
+    "id": 178,
+    "question":"How do you create an instance of a class?",
+                                                                                                    
+    "options":["instance = ClassName()",
+    "instance = ClassName.create()",
+    "instance = new ClassName()",
+    "instance = ClassName.make()"
+    ],
+    "answer":"instance = ClassName()",
+    "discription":"An instance of a class is created by calling the class name followed by parentheses."
+},
+
+{
+    "id": 179,
+    "question":"How do you define a method in a class that is not bound to an instance?",
+                                                                                                    
+    "options":["By using the @staticmethod decorator.",
+    "By using the @classmethod decorator.",
+    "By defining the method without any parameters.",
+    "By defining the method with a single parameter."
+    ],
+    "answer":"By using the @staticmethod decorator.",
+    "discription":"The @staticmethod decorator is used to define a method that does not depend on instance or class attributes, making it callable on the class itself."
+},
+
+{
+    "id": 180,
+    "question":"What is the purpose of the super() function in Python classes?",
+                                                                                                    
+    "options":["To call a method from the parent class.",
+    "To initialize static methods in a class",
+    "To create a new instance of a parent class.",
+    "To override methods in the parent class"
+    ],
+    "answer":"To call a method from the parent class.",
+    "discription":"The super() function is used to call methods from a parent class, enabling access to inherited methods that have been overridden in the child class."
+},
+
+{
+    "id": 181,
+    "question":"How do you define a class attribute in Python?",
+                                                                                                    
+    "options":["By defining it inside a method.",
+    "By defining it outside any method, directly within the class.",
+    "By using the @classmethod decorator.",
+    "By initializing it in the __init__ method."
+    ],
+    "answer":"By defining it outside any method, directly within the class.",
+    "discription":"Class attributes are defined directly within the class body, outside of any methods, and are shared among all instances of the class."
+},
+
+{
+    "id": 182,
+    "question":"What is method overriding in Python?",
+                                                                                                    
+    "options":["Creating a method with the same name in the base class.",
+    "Changing the method's implementation in a derived class.",
+    "Defining multiple methods with different names in the same class.",
+    "Removing a method from the base class."
+    ],
+    "answer":"Changing the method's implementation in a derived class.",
+    "discription":"Method overriding occurs when a derived class provides a specific implementation of a method that is already defined in its base class."
+},
+
+{
+    "id": 183,
+    "question":"What is a Python generator?",
+                                                                                                    
+    "options":["A function that returns a value.",
+    "A special type of iterator that generates values on the fly.",
+    "A class method that returns a new instance.",
+    "A function that generates random numbers."
+    ],
+    "answer":"A special type of iterator that generates values on the fly.",
+    "discription":"Generators are iterators that generate values lazily, using yield instead of return."
+},
+
+{
+    "id": 184,
+    "question":"How do you optimize Python code for performance?",
+                                                                                                    
+    "options":["By using built-in functions, minimizing the use of global variables, and employing efficient algorithms.",
+    "By avoiding the use of functions and classes.",
+    "By writing all code in a single file.",
+    "By using only one data structure throughout the code."
+    ],
+    "answer":"By using built-in functions, minimizing the use of global variables, and employing efficient algorithms.",
+    "discription":"Performance optimization involves using efficient algorithms, built-in functions, and avoiding global variables."
+},
+
+
+
+{
+    "id": 185,
+    "question":"What is threading in Python?",
+                                                                                                    
+    "options":["A way to execute code simultaneously in separate threads.",
+    "A method to handle file operations.",
+    "A technique to manage memory allocation.",
+    "A process for handling network communication."
+    ],
+    "answer":"A way to execute code simultaneously in separate threads.",
+    "discription":"Threading allows multiple threads to run concurrently within a single process, sharing the same memory space."
+},
+
+{
+    "id": 186,
+    "question":"How do you create a thread in Python using the threading module?",
+                                                                                                    
+    "options":["By subclassing Thread and overriding the run() method.",
+    "By using threading.create_thread().",
+    "By defining a function and passing it to threading.run().",
+    "By calling threading.start() directly."
+    ],
+    "answer":"By subclassing Thread and overriding the run() method.",
+    "discription":"You create a thread by subclassing Thread and defining the run() method, which contains the code to be executed in the thread."
+},
+
+{
+    "id": 187,
+    "question":"How do you start a thread in Python?",
+                                                                                                    
+    "options":["thread.start()",
+    "thread.run()",
+    "thread.execute()",
+    "thread.begin()"
+    ],
+    "answer":"thread.start()",
+    "discription":"To start a thread, you call the start() method on the thread object, which invokes the run() method in a new thread."
+},
+
+{
+    "id": 188,
+    "question":"What is multithreading in Python?",
+                                                                                                    
+    "options":["Running multiple threads concurrently within a single process.",
+    "Running multiple processes concurrently.",
+    "A technique to execute code on multiple CPUs.",
+    "A method to manage large data files."
+    ],
+    "answer":"Running multiple threads concurrently within a single process.",
+    "discription":"Multithreading allows multiple threads to run concurrently within the same process, sharing the same memory space."
+},
+
+{
+    "id": 189,
+    "question":"What is the difference between threading.Lock and threading.RLock?",
+                                                                                                    
+    "options":["Lock is a simple mutex; RLock allows a thread to acquire it multiple times without blocking.",
+    "Lock is a recursive lock; RLock is a non-recursive lock.",
+    "Lock is used for synchronization; RLock is used for thread creation.",
+    "Lock allows for thread signaling; RLock does not."
+    ],
+    "answer":"Lock is a simple mutex; RLock allows a thread to acquire it multiple times without blocking.",
+    "discription":"RLock (reentrant lock) allows a thread to acquire the same lock multiple times, whereas Lock is a standard mutex."
+},
+
+{
+    "id": 190,
+    "question":"What is the purpose of threading.Event?",
+                                                                                                    
+    "options":["To allow threads to wait for certain conditions or events to occur.",
+    "To create new threads.",
+    "To signal the termination of a thread.",
+    "To manage thread priorities."
+    ],
+    "answer":"To allow threads to wait for certain conditions or events to occur.",
+    "discription":"threading.Event is used for communication between threads, allowing one thread to signal an event to others."
+},
+
+{
+    "id": 191,
+    "question":"What is threading.Condition used for?",
+                                                                                                    
+    "options":["To allow threads to wait until a certain condition is met, with the ability to notify other threads.",
+    "To create new threads with specific conditions.",
+    "To handle thread execution priorities.",
+    "To automatically terminate threads."
+    ],
+    "answer":"To allow threads to wait until a certain condition is met, with the ability to notify other threads.",
+    "discription":"threading.Condition is used for more advanced thread synchronization where threads can wait for specific conditions and notify each other when conditions change."
+},
+
+{
+    "id": 192,
+    "question":"What is a closure in Python?",
+                                                                                                    
+    "options":["A function that can be called without arguments.",
+    "A function object that has access to variables in its lexical scope, even when the function is called outside that scope.",
+    "A way to define a class with private attributes.",
+    "A method to handle exceptions in a function."
+    ],
+    "answer":"A function object that has access to variables in its lexical scope, even when the function is called outside that scope.",
+    "discription":"A closure is a function that retains access to variables from its enclosing scope, allowing it to remember the environment in which it was created, even when called outside that environment. This enables powerful patterns like creating function factories and decorators."
+},
+
+{
+    "id": 193,
+    "question":"What does the map() function do in Python?",
+                                                                                                    
+    "options":["It sorts a list in ascending order.",
+    "It applies a given function to each item of an iterable (like a list) and returns a list of the results.",
+    "It filters elements in a list based on a condition.",
+    "It combines multiple lists into a single list."
+    ],
+    "answer":"It applies a given function to each item of an iterable (like a list) and returns a list of the results.",
+    "discription":"The map() function in Python takes a function and an iterable as arguments. It applies the function to each item of the iterable, returning a map object, which can be converted to a list if needed."
+},
+
+{
+    "id": 194,
+    "question":"Which of the following is a valid use of the map() function with multiple iterables?",
+                                                                                                    
+    "options":["map(lambda x, y: x + y, [1, 2, 3], [4, 5, 6])",
+    "map(lambda x: x * 2, [1, 2, 3], [4, 5, 6])",
+    "map(lambda x, y: x - y, [1, 2, 3])",
+    "map(lambda x: x / 2, [4, 5, 6], [7, 8, 9])"
+    ],
+    "answer":"map(lambda x, y: x + y, [1, 2, 3], [4, 5, 6])",
+    "discription":"The map() function can take multiple iterables as arguments. The lambda function lambda x, y: x + y is applied to corresponding elements from both lists [1, 2, 3] and [4, 5, 6], resulting in [5, 7, 9]."
+},
+
+{
+    "id": 195,
+    "question":"What type of object does the map() function return in Python 3?",
+                                                                                                    
+    "options":["A list",
+    "A tuple",
+    "A map object",
+    "A dictionary"
+    ],
+    "answer":"A map object",
+    "discription":"In Python 3, the map() function returns a map object, which is an iterator. This map object can be converted to a list, tuple, or other iterable if needed."
+},
+
+{
+    "id": 196,
+    "question":"How can you use the map() function to convert a list of strings to integers?",
+                                                                                                    
+    "options":["map(str, ['1', 2', '3'])",
+    "map(int, ['1', '2', '3'])",
+    "map(float, ['1', '2', '3'])",
+    "map(lambda x: x, ['1', '2', '3'])"
+    ],
+    "answer":"map(int, ['1', '2', '3'])",
+    "discription":"The map(int, ['1', '2', '3]) function converts each string in the list to an integer, resulting in [1, 2, 3]."
+},
+
+{
+    "id": 197,
+    "question":"What does the reduce() function do in Python?",
+                                                                                                    
+    "options":[" It filters elements from a list based on a condition.",
+    "It reduces a list to a single value by applying a binary function cumulatively.",
+    "It maps a function to all elements of a list.",
+    "It sorts a list in ascending order."
+    ],
+    "answer":"It reduces a list to a single value by applying a binary function cumulatively.",
+    "discription":"The reduce() function applies a binary function (a function that takes two arguments) cumulatively to the elements of an iterable, reducing it to a single value. This function is part of the functools module."
+},
+
+{
+    "id": 198,
+    "question":"Which module do you need to import to use the reduce() function in Python?",
+                                                                                                    
+    "options":["itertools",
+    "functools",
+    "operator",
+    "collections"
+    ],
+    "answer":"functools",
+    "discription":"The reduce() function is located in the functools module in Python, so you need to import functools to use reduce()."
+},
+
+{
+    "id": 199,
+    "question":"How would you use reduce() to sum all the elements in a list numbers = [1, 2, 3, 4]?",
+                                                                                                    
+    "options":["reduce(lambda x, y: x + y, numbers)",
+    "reduce(lambda x, y: x * y, numbers)",
+    "reduce(lambda x, y: x - y, numbers)",
+    "reduce(lambda x, y: x / y, numbers)"
+    ],
+    "answer":"reduce(lambda x, y: x + y, numbers)",
+    "discription":"This code uses reduce() with a lambda function to sum the elements of the list. The lambda function takes two arguments, adds them, and reduce() applies this function cumulatively across the list."
+},
+
+{
+    "id": 200,
+    "question":"What will happen if you use reduce() on an empty list without providing an initial value?",
+                                                                                                    
+    "options":["It will return None.",
+    "It will return an empty list.",
+    "It will raise a TypeError.",
+    "It will return 0."
+    ],
+    "answer":"It will raise a TypeError.",
+    "discription":"If you use reduce() on an empty list without providing an initial value, Python will raise a TypeError because there are no items to apply the function to."
+}
+
+]

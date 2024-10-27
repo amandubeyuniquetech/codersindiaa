@@ -1,0 +1,250 @@
+[
+
+    {
+        "id": 1,
+        "question":"Define an exception called OopsException. Raise this exception to see what happens. Then write the code to catch this exception and print 'Caught an oops'.",
+        "optionsText":[],                                                                                                
+        "optionsCode":["class OopsException(Exception):\n    pass\n try:\n    raise OopsException\nexcept OopsException:\n    print('Caught an oops')",
+        "class OopsException(Exception):\n    pass\n    try:\n    raise OopsException()\nexcept OopsException:\n    print('Caught an oops')",
+        "class OopsException(BaseException):\n    pass\n    try:\n    raise OopsException\nexcept OopsException:\n    print('Caught an oops')",
+        "class OopsException(BaseException):\n    pass\n    try:\n    raise OopsException()\nexcept OopsException:\n    print('Caught an oops')"
+        ],
+        "answer":"class OopsException(Exception):\n    pass\n    try:\n    raise OopsException()\nexcept OopsException:\n    print('Caught an oops')",
+        "discription":"This code defines a custom exception called OopsException, raises it, and catches it using a try-except block. When the exception is caught, it prints 'Caught an oops'."
+    },
+
+    {
+        "id": 2,
+        "question":"Create a zoo.py file first. Define the hours() function, which prints the string 'Open 9-5 daily'. Then, use the interactive interpreter to import the zoo module and call its hours() function.",
+        "optionsText":[],                                                                                                
+        "optionsCode":["In zoo.py:\n    python\ndef hours():\n    print('Open 9-5 daily')\nIn the interactive interpreter:\n python\nimport zoo\nzoo.hours()",
+        "In zoo.py:\n   python\ndef hours():\n    return 'Open 9-5 daily'\nIn the interactive interpreter:\n    python\nimport zoo\nprint(zoo.hours())",
+        "In zoo.py:\n   python\ndef hours():\n    'Open 9-5 daily'\nIn the interactive interpreter:\n   python\nimport zoo\nzoo.hours()",
+        "In zoo.py:\n   python\ndef hours():\n    print('Open 9-5 daily')\nIn the interactive interpreter:\npython\nfrom zoo import hours\nhours()"
+        ],
+        "answer":"In zoo.py:\n    python\ndef hours():\n    print('Open 9-5 daily')\nIn the interactive interpreter:\n python\nimport zoo\nzoo.hours()",
+        "discription":"This option shows how to define the hours() function in a file named zoo.py and then import the module in the interactive interpreter to call the function and print the message 'Open 9-5 daily'."
+    },
+
+    {
+        "id": 3,
+        "question":"How would you import the zoo module as menagerie in the interactive interpreter and call its hours() function?",
+        "optionsText":[],                                                                                                
+        "optionsCode":["import zoo as menagerie\nmenagerie.hours()",
+        "from zoo import hours as menagerie\nmenagerie()",
+        "import menagerie as zoo\nzoo.hours()",
+        "from zoo import menagerie\nmenagerie.hours()"
+        ],
+        "answer":"import zoo as menagerie\nmenagerie.hours()",
+        "discription":"This option correctly demonstrates how to import the zoo module under the alias menagerie and call its hours() function in the interactive interpreter."
+    },
+
+    {
+        "id": 4,
+        "question":"How would you explicitly import and call the hours() function from the zoo module using the interpreter?",
+        "optionsText":[],                                                                                                
+        "optionsCode":["import zoo\nzoo.hours()",
+        "from zoo import hours\nhours()",
+        "import zoo.hours\nzoo.hours()",
+        "from zoo import hours\nzoo.hours()"
+        ],
+        "answer":"from zoo import hours\nhours()",
+        "discription":"This option correctly demonstrates how to explicitly import the hours() function directly from the zoo module and then call it in the interpreter."
+    },
+
+    {
+        "id": 5,
+        "question":"How would you make a defaultdict called dict_of_lists, pass it the argument list, and then append the value 'something for a' to the list dict_of_lists['a'] in one assignment? How would you print dict_of_lists['a']?",
+        "optionsText":[],                                                                                                
+        "optionsCode":["from collections import defaultdict\ndict_of_lists = defaultdict(list)\ndict_of_lists['a'].append('something for a')\nprint(dict_of_lists['a'])",
+        "dict_of_lists = defaultdict(list)\ndict_of_lists['a'] = 'something for a'\nprint(dict_of_lists['a'])",
+        "from collections import defaultdict\ndict_of_lists = defaultdict(list)\ndict_of_lists['a'] = list('something for a')\nprint(dict_of_lists['a'])",
+        "from collections import defaultdict\ndict_of_lists = defaultdict(list)\ndict_of_lists.append('something for a')\nprint(dict_of_lists['a'])"
+        ],
+        "answer":"from collections import defaultdict\ndict_of_lists = defaultdict(list)\ndict_of_lists['a'].append('something for a')\nprint(dict_of_lists['a'])",
+        "discription":"This option correctly creates a defaultdict with list as the default factory, allowing you to append 'something for a' to dict_of_lists['a'] in a single step. The output will be ['something for a'] when printed."
+    },
+
+    {
+        "id": 7,
+        "question":"You created a new class called Thing2 and added the value 'abc' to the letters class attribute. What should happen when you print Thing2.letters?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["It will raise an error because letters is not a valid attribute.",
+        "It will print None because letters was not assigned correctly.",
+        "It will print abc because letters is a class attribute with the value 'abc'.",
+        "It will print an empty string because the attribute was not initialized."
+        ],
+        "answer":"It will print abc because letters is a class attribute with the value 'abc'.",
+        "discription":"The letters class attribute was correctly assigned the value 'abc', so printing Thing2.letters will output 'abc'."
+    },
+
+    {
+        "id": 8,
+        "question":"You created a class called Thing3 and assigned the value 'xyz' to an instance (object) attribute called letters. How can you print letters, and do you need to create an object from the class to do so?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["No, you can print Thing3.letters directly because letters is a class attribute.",
+        "Yes, you must create an object from Thing3 and print object_name.letters because letters is an instance attribute.",
+        "No, letters is a global variable, so it can be printed directly.",
+        "Yes, but you need to use the class name directly with Thing3.letters."
+        ],
+        "answer":"Yes, you must create an object from Thing3 and print object_name.letters because letters is an instance attribute.",
+        "discription":"Instance attributes like letters in Thing3 require creating an object from the class to access and print their values using object_name.letters."
+    },
+
+    {
+        "id": 9,
+        "question":"You have a dictionary with the keys and values 'name': 'Hydrogen', 'symbol': 'H', and 'number': 1. How do you create an object called hydrogen from the Element class using this dictionary?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["hydrogen = Element(name='Hydrogen', symbol='H', number=1)",
+        "hydrogen = Element(**{'name': 'Hydrogen', 'symbol': 'H', 'number': 1})",
+        "hydrogen = Element('Hydrogen', 'H', 1)",
+        "hydrogen = Element.create({'name': 'Hydrogen', 'symbol': 'H', 'number': 1})"
+        ],
+        "answer":"hydrogen = Element(**{'name': 'Hydrogen', 'symbol': 'H', 'number': 1})",
+        "discription":"To create an object from the Element class using a dictionary, you use the ** unpacking operator to pass the dictionary as keyword arguments, like Element(**{'name': 'Hydrogen', 'symbol': 'H', 'number': 1})."
+    },
+
+    {
+        "id": 10,
+        "question":"Call print(hydrogen). In the definition of Element, change the name of method dump to __str__, create a new hydrogen object, and call print(hydrogen) again.",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Change dump() to __str__ as def __str__(self): return f'{self.name}, {self.symbol}, {self.number}' and then call print(hydrogen).",
+        "Change dump() to __str__ as def __str__(self): print(self.name, self.symbol, self.number) and then call print(hydrogen).",
+        "Keep dump() as it is and call print(hydrogen.dump()).",
+        "Define __str__ as def __str__(self): return self.dump() and call print(hydrogen)."
+        ],
+        "answer":"Change dump() to __str__ as def __str__(self): return f'{self.name}, {self.symbol}, {self.number}' and then call print(hydrogen).",
+        "discription":"To customize the output of print(hydrogen), you should redefine the dump() method as __str__. The method __str__ should return a formatted string with the attribute values. After updating the method, calling print(hydrogen) will use __str__ to display the object's attributes."
+    },
+
+    {
+        "id": 11,
+        "question":"Create a CSV file called books.csv by using these lines:\ntitle,author,year\nThe Weirdstone of Brisingamen,Alan Garner,1960\nPerdido Street Station,China Miéville,2000\nThud!,Terry Pratchett,2005\nThe Spellman Files,Lisa Lutz,2007\nSmall Gods,Terry Pratchett,1992",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Open books.csv in write mode, use the write() method to add the lines, and then close the file.",
+        "Use csv.writer to write the header and rows to books.csv by iterating through each line and writing them.",
+        "Use pandas to create a DataFrame with the data and save it as books.csv.",
+        "Open books.csv in append mode, use the write() method to add the lines, and then close the file."
+        ],
+        "answer":"Use csv.writer to write the header and rows to books.csv by iterating through each line and writing them.",
+        "discription":"To create a CSV file, you should use the csv.writer object to handle writing the header and rows correctly. Opening the file in write mode, then using csv.writer to write each row to the file, ensures that the CSV file is formatted correctly with the specified content."
+    },
+
+    {
+        "id": 12,
+        "question":"To read books.csv and insert its data into the book table, which of the following methods is correct?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Use pandas to read books.csv into a DataFrame and then use df.to_sql('book', connection, if_exists='append') to insert the data into the book table.",
+        "Open books.csv using the csv module, read the contents into a list, and then use INSERT INTO book VALUES(...) for each row to insert the data into the book table.",
+        "Use sqlite3 to read books.csv and use csv.reader() to insert the data into the book table directly.",
+        "Use json to read books.csv and json.load() to insert the data into the book table."
+        ],
+        "answer":"Use pandas to read books.csv into a DataFrame and then use df.to_sql('book', connection, if_exists='append') to insert the data into the book table.",
+        "discription":"Using pandas to read books.csv into a DataFrame and then using the to_sql method to insert the data into the book table is an efficient and straightforward way to handle CSV data and perform database operations."
+    },
+
+    {
+        "id": 13,
+        "question":"To select and print all columns from the book table in the order of publication, which SQL query should you use?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["SELECT * FROM book ORDER BY publication;",
+        "SELECT * FROM book WHERE publication;",
+        "SELECT * FROM book SORT BY publication;",
+        "SELECT all FROM book ORDER BY publication;"
+        ],
+        "answer":"SELECT * FROM book ORDER BY publication;",
+        "discription":"Option A is correct because it uses the SQL ORDER BY clause to sort all columns (*) of the book table by the publication column. This ensures that the results are displayed in the order of publication."
+    },
+
+    {
+        "id": 14,
+        "question":"To install the Redis server and the Python redis library, create a Redis hash called test with fields count (1) and name ('Fester Bestertester'), and then print all the fields for test, which of the following steps is correct?",
+        "optionsCode":[],                                                                                                
+        "optionsText":[" Install Redis and redis library, connect to Redis using Python, create the hash, and use hgetall() to print all fields.",
+        "Install Redis and redis library, create the hash using the Redis CLI, and use redis-cli to print all fields.",
+        "Install Redis and redis library, create the hash using Python print() function, and use print() to display all fields.",
+        " Install Redis and redis library, connect to Redis using Python, create the hash using hset(), and use hkeys() to print all fields."
+        ],
+        "answer":" Install Redis and redis library, connect to Redis using Python, create the hash, and use hgetall() to print all fields.",
+        "discription":"To complete the task, first install the Redis server and Python redis library. Connect to Redis using the Python redis library, create a hash named test with fields count and name using hset(), and then use hgetall() to retrieve and print all fields of the hash."
+    },
+
+    {
+        "id": 15,
+        "question":"What makes the first argument in a class’s method function special in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["It must always be named 'self.'",
+        "It refers to the class itself.",
+        "It automatically receives the instance object.",
+        "It can be omitted if the method is static."
+        ],
+        "answer":"It automatically receives the instance object.",
+        "discription":"The first argument in a class's method, often named 'self,'' automatically receives the instance object when the method is called. This allows the method to access the attributes and other methods of the specific instance."
+    },
+
+    {
+        "id": 16,
+        "question":"What is the relationship between classes and modules?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A module can only contain one class.",
+        "A class defines modules, while modules define functions.",
+        "A module is a collection of classes, functions, and variables.",
+        "A class must inherit from a module to function."
+        ],
+        "answer":"A module is a collection of classes, functions, and variables.",
+        "discription":"In Python, a module is a file that can contain multiple classes, functions, and variables. Modules help organize code into reusable and manageable components, while classes within modules define specific behaviors and data structures."
+    },
+
+    {
+        "id": 17,
+        "question":"How does a Python class handle operator overloading?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["By defining a special method that matches the operator.",
+        "By using the operator module.",
+        "By inheriting from a special Overload class.",
+        "By using the def keyword with the operator symbol."
+        ],
+        "answer":"By defining a special method that matches the operator.",
+        "discription":"In Python, operator overloading is handled by defining special methods in a class that correspond to specific operators. For example, the __add__ method is used to overload the + operator. When you perform an operation using the + operator on class instances, Python will call the __add__ method to determine the result."
+    },
+
+    {
+        "id": 18,
+        "question":"When do you consider allowing operator overloading of your classes?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["When you need to change the behavior of built-in functions.",
+        "When your class represents a concept where operators have a natural meaning.",
+        "When you want to prevent users from using certain operators.",
+        "When you want to create new operators for your class."
+        ],
+        "answer":"When your class represents a concept where operators have a natural meaning.",
+        "discription":"Operator overloading should be considered when your class represents a concept, like a mathematical structure or custom data type, where using operators (like +, -, *, etc.) makes sense and enhances code readability. For example, in a Vector class, overloading the + operator to add two vectors together would be intuitive."
+    },
+
+    {
+        "id": 19,
+        "question":"What happens when a class statement's top level contains a basic assignment statement?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["The assignment is ignored when creating instances of the class.",
+        "The assigned value becomes a class attribute shared by all instances.",
+        "The assignment creates an instance attribute for each object.",
+        "The assigned value is stored as a private attribute."
+        ],
+        "answer":"The assigned value becomes a class attribute shared by all instances.",
+        "discription":"When a basic assignment statement is made at the top level of a class, the assigned value becomes a class attribute. This attribute is shared by all instances of the class, meaning each instance can access the same value."
+    },
+
+    {
+        "id": 20,
+        "question":"Why does a class need to manually call a superclass's __init__ method?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To avoid overriding the superclass's methods.",
+        "To initialize attributes defined in the superclass.",
+        "To prevent the superclass from being inherited.",
+        "To automatically import modules used in the superclass."
+        ],
+        "answer":"To initialize attributes defined in the superclass.",
+        "discription":"When a subclass in Python overrides the __init__ method, it doesn't automatically call the superclass's __init__ method. Therefore, to ensure that the attributes and behaviors defined in the superclass are initialized, the subclass must manually call the superclass's __init__ method using super().__init__()."
+    }
+    
+]

@@ -1,0 +1,261 @@
+[
+{
+    "id": 1,
+    "question":"In Python 3.X, what are the names and functions of string object types?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["str - Represents a sequence of Unicode characters.",
+    "string - Represents a sequence of bytes.",
+    "char - Represents a single character object.",
+    "text - Represents a text-based file object."
+    ],
+    "answer":"str - Represents a sequence of Unicode characters.",
+    "discription":"In Python 3.X, str is the built-in type for string objects, which are sequences of Unicode characters. The other options either do not exist or do not correctly describe string types in Python."
+},
+
+{
+    "id": 2,
+    "question":"How do the string forms in Python 3.X vary in terms of operations?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Raw strings can be concatenated using the + operator.",
+    "Raw strings automatically escape special characters like \n.",
+    "Unicode strings only support ASCII characters.",
+    "Byte strings require encoding and decoding for certain operations."
+    ],
+    "answer":"Byte strings require encoding and decoding for certain operations.",
+    "discription":"In Python 3.X, byte strings (b'...') are used to handle binary data and must be encoded to and decoded from specific character sets (like UTF-8) when performing certain operations, especially when converting between text and binary data forms."
+},
+
+{
+    "id": 3,
+    "question":"How can you interpret a Unicode text file containing text encoded in a different encoding than your platform's default?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Open the file using the default encoding of your platform.",
+    "Open the file with an encoding that matches the file's actual encoding.",
+    "Convert the file to a binary format before reading it.",
+    "Rename the file extension to match the desired encoding."
+    ],
+    "answer":"Open the file with an encoding that matches the file's actual encoding.",
+    "discription":"To correctly interpret a Unicode text file, you need to specify the encoding that matches the file's actual encoding when opening it. This ensures that the text is read and displayed correctly."
+},
+
+{
+    "id": 4,
+    "question":"What is the best way to make a Unicode text file in a particular encoding format?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Use a plain text editor and manually specify the encoding.",
+    "Convert an existing file using a web-based tool.",
+    "Write a script in a programming language like Python to save the file in the desired encoding.",
+    "Copy and paste the text into a Word document and save it as Unicode."
+    ],
+    "answer":"Write a script in a programming language like Python to save the file in the desired encoding.",
+    "discription":"Writing a script provides precise control over the encoding process, allowing you to ensure that the file is saved in the exact Unicode format needed."
+},
+
+{
+    "id": 5,
+    "question":"What qualifies ASCII text as a form of Unicode text?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["ASCII text is encoded using a 16-bit standard.",
+    "ASCII text is a subset of Unicode.",
+    "ASCII text supports all languages.",
+    "ASCII text uses special symbols from the Unicode standard."
+    ],
+    "answer":"ASCII text is a subset of Unicode.",
+    "discription":"ASCII text qualifies as Unicode because ASCII is included within the Unicode standard as a subset, meaning every ASCII character has a corresponding Unicode code point"
+},
+
+{
+    "id": 6,
+    "question":"What is the concept of a metaclass?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A metaclass is a class used to define other classes.",
+    "A metaclass is a special type of function that operates on objects.",
+    "A metaclass is a library for managing class instances.",
+    "A metaclass is a design pattern for creating multiple classes."
+    ],
+    "answer":"A metaclass is a class used to define other classes.",
+    "discription":"A metaclass is a class that defines how other classes behave. In programming languages like Python, a metaclass can control the creation and initialization of classes, allowing for customization of class behavior and structure."
+},
+
+{
+    "id": 7,
+    "question":"Does assigning a value to a string's indexed character violate Python's string immutability?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Yes, because strings in Python are mutable and can be modified directly.",
+    "No, because strings in Python are immutable, and trying to assign a value to an indexed character will raise an error.",
+    "Yes, but only if the string is defined as a global variable.",
+    "No, because strings can be modified by converting them to a list first."
+    ],
+    "answer":"No, because strings in Python are immutable, and trying to assign a value to an indexed character will raise an error.",
+    "discription":"Strings in Python are immutable, so attempting to assign a value to an indexed character will result in an error."
+},
+
+{
+    "id": 8,
+    "question":"What is an indexed character's exact data type? What is the data form of a slicing-generated substring?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Indexed characters are strings, and slicing-generated substrings are also strings.",
+    "Indexed characters are integers, and slicing-generated substrings are lists.",
+    "Indexed characters are bytes, and slicing-generated substrings are bytes.",
+    "Indexed characters are strings, and slicing-generated substrings are tuples."
+    ],
+    "answer":"Indexed characters are strings, and slicing-generated substrings are also strings.",
+    "discription":"Indexed characters are individual characters of a string (strings themselves), and slicing-generated substrings are also strings."
+},
+
+{
+    "id": 9,
+    "question":"Identify at least two operators and one method that allow you to combine one or more smaller strings to create a larger string.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["+ operator, * operator, and strip() method",
+    "+ operator, * operator, and join() method",
+    "+ operator, - operator, and append() method",
+    "* operator, & operator, and concat() method"
+    ],
+    "answer":"+ operator, * operator, and join() method",
+    "discription":"The + operator concatenates strings, the * operator repeats them, and the join() method combines multiple strings into one."
+},
+
+{
+    "id": 10,
+    "question":"What is the benefit of first checking the target string with in or not in before using the index method to find a substring?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["It reduces the execution time by avoiding a potential ValueError if the substring is not found.",
+    "It increases the overall memory usage of the program.",
+    "It simplifies the code by eliminating the need for exception handling.",
+    "It makes the index method faster by pre-sorting the target string."
+    ],
+    "answer":"It reduces the execution time by avoiding a potential ValueError if the substring is not found.",
+    "discription":"Checking with in or not in first avoids a ValueError and ensures the index method is only used when the substring is present, improving efficiency."
+},
+
+{
+    "id": 11,
+    "question":"Which operators and built-in string methods produce simple Boolean (true/false) results?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["+ operator and replace() method",
+    "in operator and startswith() method",
+    "* operator and strip() method",
+    "/ operator and upper() method"
+    ],
+    "answer":"in operator and startswith() method",
+    "discription":"in operator and startswith() method both produce Boolean results: in checks for substring presence, and startswith() checks if a string starts with a given prefix."
+},
+
+{
+    "id": 12,
+    "question":"Can you create a programme or function that employs both positive and negative indexing? Is there any repercussion if you do so?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Yes, you can use both positive and negative indexing without any issues; they function independently.",
+    "Yes, but using both positive and negative indexing can lead to confusion and errors if not handled carefully.",
+    "No, using both positive and negative indexing is not allowed in Python; you must choose one type.",
+    "No, using both positive and negative indexing will result in a syntax error in your program."
+    ],
+    "answer":"Yes, but using both positive and negative indexing can lead to confusion and errors if not handled carefully.",
+    "discription":"Using both positive and negative indexing in a program is allowed, but it can be confusing and may lead to errors if not carefully managed."
+},
+
+{
+    "id": 13,
+    "question":"What is the most effective way of starting with 1,000 elements in a Python list? Assume that all elements should be set to the same value.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Using a for loop to append the value 1,000 times",
+    "Using a list comprehension",
+    "Using the multiplication operator with a list",
+    "Using the append() method within a while loop"
+    ],
+    "answer":"Using the multiplication operator with a list",
+    "discription":"Using the multiplication operator with a list, like [value] * 1000, is the most efficient way to create a list with 1,000 identical elements in Python."
+},
+
+{
+    "id": 14,
+    "question":"What is the concept of an unbalanced matrix?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A matrix with more columns than rows.",
+    "A matrix where the sum of elements in each row is not equal.",
+    "A matrix with different numbers of elements in each row.",
+    "A matrix where the distribution of data or elements is uneven."
+    ],
+    "answer":"A matrix where the distribution of data or elements is uneven.",
+    "discription":"An unbalanced matrix refers to a matrix where the distribution of data or elements is uneven, potentially affecting analysis."
+},
+
+{
+    "id": 15,
+    "question":"Why is it necessary to use either list comprehension or a loop to create arbitrarily large matrices?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["To ensure matrix size remains constant across operations.",
+    "To optimize memory usage by avoiding large-scale data storage.",
+    "To handle dynamic matrix dimensions and generate matrix elements efficiently.",
+    "To enforce data type consistency within the matrix elements."
+    ],
+    "answer":"To handle dynamic matrix dimensions and generate matrix elements efficiently.",
+    "discription":"List comprehensions and loops are used to create matrices with dynamic dimensions and efficiently generate their elements."
+},
+
+{
+    "id": 16,
+    "question":"What is the smallest number of statements you'd have to write in most programming languages to replace the Python expression a, b = a + b, a?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["1",
+    "2",
+    "3",
+    "4"
+    ],
+    "answer":"3",
+    "discription":"In most programming languages, you would need three statements to replace a, b = a + b, a: one for a temporary variable, and two for assigning the new values to a and b."
+},
+
+{
+    "id": 17,
+    "question":"Is it possible to use list comprehension with a string? If so, how can you go about doing it?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["No, list comprehension only works with lists.",
+    "Yes, but only if the string is first converted into a list of characters.",
+    "Yes, you can iterate over each character of the string directly in the list comprehension.",
+    "Yes, but you can only use list comprehension on strings of a fixed length."
+    ],
+    "answer":"Yes, you can iterate over each character of the string directly in the list comprehension.",
+    "discription":"List comprehension can be applied directly to a string by iterating over each character, treating the string as an iterable."
+},
+
+{
+    "id": 18,
+    "question":"From the command line, how do you get support with a user-written Python programme? Is this possible from inside IDLE?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Use the python --help command; it works both in the command line and inside IDLE.",
+    "Run the program with the --help argument; this may work if the program is designed to handle it, and it is possible inside IDLE.",
+    "Use the help() function in the command line or IDLE to get help with any user-written Python program.",
+    "It's not possible to get help with a user-written Python program from the command line or IDLE."
+    ],
+    "answer":"Run the program with the --help argument; this may work if the program is designed to handle it, and it is possible inside IDLE.",
+    "discription":"You can get help with a user-written Python program by running it with the --help argument, provided the program is designed to handle this. This works both from the command line and inside IDLE."
+},
+
+{
+    "id": 19,
+    "question":"How do you distinguish between a wrapper, a wrapped feature, and a decorator?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A wrapper is the original function, a wrapped feature is an added functionality, and a decorator is a technique to apply the wrapper.",
+    "A wrapper is the code that adds new behavior, a wrapped feature is the original function, and a decorator is the syntax used to apply the wrapper.",
+    "A wrapper is a special type of decorator, a wrapped feature is the result of applying the wrapper, and a decorator is an optional syntax for wrapping.",
+    "A wrapper is the original function, a wrapped feature is the result, and a decorator is a specific implementation of the wrapper."
+    ],
+    "answer":"A wrapper is the code that adds new behavior, a wrapped feature is the original function, and a decorator is the syntax used to apply the wrapper.",
+    "discription":"The wrapper adds new behavior, the wrapped feature is the original function, and a decorator is the syntax used to apply the wrapper to the function."
+},
+
+{
+    "id": 20,
+    "question":". If a function is a generator function, what does it return?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["An iterator",
+    "A list",
+    "A tuple",
+    "A function"
+    ],
+    "answer":"An iterator",
+    "discription":"A generator function returns an iterator, which yields values one at a time when iterated over."
+}
+]

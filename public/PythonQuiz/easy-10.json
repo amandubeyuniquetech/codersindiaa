@@ -1,0 +1,264 @@
+[
+
+    {
+        "id": 1,
+        "question":"What is the output of print(type([]))?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["<class 'tuple'>",
+        "<class 'list'>",
+        "<class 'dict'>",
+        "<class 'set'>"
+        ],
+        "answer":"<class 'list'>",
+        "discription":"An empty list is of type `list`."
+    },
+
+    {
+        "id": 2,
+        "question":"Which method is used to remove whitespace from the start and end of a string?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["strip()",
+        "trim()",
+        "cut()",
+        "remove()"
+        ],
+        "answer":"strip()",
+        "discription":"`strip()` removes whitespace from both ends of a string."
+    },
+
+    {
+        "id": 3,
+        "question":"What is the output of print(bool(0))?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["True",
+        "False",
+        "0",
+        "None"
+        ],
+        "answer":"False",
+        "discription":"0` is considered `False` in Python."
+    },
+
+    {
+        "id": 4,
+        "question":"Which operator is used to check if two values are not equal?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["<>",
+        "!==",
+        "!=",
+        "not"
+        ],
+        "answer":"!=",
+        "discription":"`!=` checks if two values are not equal."
+    },
+
+    {
+        "id": 5,
+        "question":"How do you create a set in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["set = []",
+        "set = {}",
+        "set = set()",
+        "set = ()"
+        ],
+        "answer":"set = set()",
+        "discription":"Sets are created using `set()`."
+    },
+
+    {
+        "id": 6,
+        "question":"What is the output of print('hello'.upper())?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Hello",
+        "HELLO",
+        "hello",
+        "hElLo"
+        ],
+        "answer":"HELLO",
+        "discription":"The `upper()` method converts a string to uppercase."
+    },
+
+    {
+        "id": 7,
+        "question":"Which of the following is used to install external libraries in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["install",
+        "pip",
+        "get",
+        "download"
+        ],
+        "answer":"pip",
+        "discription":"`pip` is the package manager for Python."
+    },
+
+    {
+        "id": 8,
+        "question":"What is the output of print(2 ** 3)?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["6",
+        "8",
+        "9",
+        "5"
+        ],
+        "answer":"8",
+        "discription":"`**` is the exponentiation operator."
+    },
+
+    {
+        "id": 9,
+        "question":"Which method can be used to convert a string to a list?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["split()",
+        "list()",
+        "convert()",
+        "join()"
+        ],
+        "answer":"split()",
+        "discription":"`split()` splits a string into a list."
+    },
+
+    {
+        "id": 10,
+        "question":"How do you create an infinite loop in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["while True:",
+        "while 1:",
+        "while False:",
+        "for True:"
+        ],
+        "answer":"while True:",
+        "discription":"while True:` creates an infinite loop."
+    },
+
+    {
+        "id": 11,
+        "question":"Which of the following is a valid way to open a file for reading?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["open('file.txt', 'r')",
+        "open('file.txt')",
+        "open('file.txt', 'w')",
+        "open('file.txt', 'a')"
+        ],
+        "answer":"open('file.txt', 'r')",
+        "discription":"'r' mode opens a file for reading."
+    },
+
+    {
+        "id": 12,
+        "question":"Which function is used to read all lines of a file into a list?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["readlines()",
+        "readline()",
+        "read()",
+        "getlines()"
+        ],
+        "answer":"readlines()",
+        "discription":"`readlines()` reads all lines of a file into a list."
+    },
+
+    {
+        "id": 13,
+        "question":"What is the output of print(3 + 2 * 2)?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["10",
+        "7",
+        "8",
+        "5"
+        ],
+        "answer":"7",
+        "discription":"Multiplication is performed before addition."
+    },
+
+    {
+        "id": 14,
+        "question":"How do you create a new line in a string?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["\n",
+        "\t",
+        "\r",
+        "\b"
+        ],
+        "answer":"\n",
+        "discription":"`\n` is the newline character."
+    },
+
+    {
+        "id": 15,
+        "question":"Which of the following methods is used to remove an item from a list?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["remove()",
+        "delete()",
+        "pop()",
+        "discard()"
+        ],
+        "answer":"remove()",
+        "discription":"`remove()` deletes a specific item from a list."
+    },
+
+    {
+        "id": 16,
+        "question":"What will print(int('5') + 3) output?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["53",
+        "8",
+        "5+3",
+        "TypeError"
+        ],
+        "answer":"8",
+        "discription":"The string `'5'` is converted to an integer before addition."
+    },
+
+    {
+        "id": 17,
+        "question":"Which keyword is used to create an anonymous function in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["def",
+        "lambda",
+        "function",
+        "anon"
+        ],
+        "answer":"lambda",
+        "discription":"`lambda` is used to create anonymous functions."
+    },
+
+    {
+        "id": 18,
+        "question":"What will be the output of print(bool('False'))?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["False",
+        "True",
+        "Error",
+        "None"
+        ],
+        "answer":"True",
+        "discription":"Non-empty strings are considered True in Python."
+    },
+
+    {
+        "id": 19,
+        "question":"Which function is used to convert a number to a string in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["str()",
+        "int()",
+        "float()",
+        "string()"
+        ],
+        "answer":"str()",
+        "discription":"str() converts a number to a string."
+    },
+
+    {
+        "id": 20,
+        "question":"What is the output of print(10 // 3)?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["3.33",
+        "3",
+        "4",
+        "0"
+        ],
+        "answer":"3",
+        "discription":"// is the floor division operator, which returns the quotient without the remainder."
+    }
+
+
+]

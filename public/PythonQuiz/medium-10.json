@@ -1,0 +1,265 @@
+[
+
+{
+    "id": 1,
+    "question":"How do you define a class attribute in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["By defining it inside a method.",
+    "By defining it outside any method, directly within the class.",
+    "By using the @classmethod decorator.",
+    "By initializing it in the __init__ method."
+    ],
+    "answer":"By defining it outside any method, directly within the class.",
+    "discription":"Class attributes are defined directly within the class body, outside of any methods, and are shared among all instances of the class."
+},
+
+{
+    "id": 2,
+    "question":"What is method overriding in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Creating a method with the same name in the base class.",
+    "Changing the method's implementation in a derived class.",
+    "Defining multiple methods with different names in the same class.",
+    "Removing a method from the base class."
+    ],
+    "answer":"Changing the method's implementation in a derived class.",
+    "discription":"Method overriding occurs when a derived class provides a specific implementation of a method that is already defined in its base class."
+},
+
+{
+    "id": 3,
+    "question":"What is a Python generator?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A function that returns a value.",
+    "A special type of iterator that generates values on the fly.",
+    "A class method that returns a new instance.",
+    "A function that generates random numbers."
+    ],
+    "answer":"A special type of iterator that generates values on the fly.",
+    "discription":"Generators are iterators that generate values lazily, using yield instead of return."
+},
+
+{
+    "id": 4,
+    "question":"How do you optimize Python code for performance?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["By using built-in functions, minimizing the use of global variables, and employing efficient algorithms.",
+    "By avoiding the use of functions and classes.",
+    "By writing all code in a single file.",
+    "By using only one data structure throughout the code."
+    ],
+    "answer":"By using built-in functions, minimizing the use of global variables, and employing efficient algorithms.",
+    "discription":"Performance optimization involves using efficient algorithms, built-in functions, and avoiding global variables."
+},
+
+
+
+{
+    "id": 5,
+    "question":"What is threading in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A way to execute code simultaneously in separate threads.",
+    "A method to handle file operations.",
+    "A technique to manage memory allocation.",
+    "A process for handling network communication."
+    ],
+    "answer":"A way to execute code simultaneously in separate threads.",
+    "discription":"Threading allows multiple threads to run concurrently within a single process, sharing the same memory space."
+},
+
+{
+    "id": 6,
+    "question":"How do you create a thread in Python using the threading module?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["By subclassing Thread and overriding the run() method.",
+    "By using threading.create_thread().",
+    "By defining a function and passing it to threading.run().",
+    "By calling threading.start() directly."
+    ],
+    "answer":"By subclassing Thread and overriding the run() method.",
+    "discription":"You create a thread by subclassing Thread and defining the run() method, which contains the code to be executed in the thread."
+},
+
+{
+    "id": 7,
+    "question":"How do you start a thread in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["thread.start()",
+    "thread.run()",
+    "thread.execute()",
+    "thread.begin()"
+    ],
+    "answer":"thread.start()",
+    "discription":"To start a thread, you call the start() method on the thread object, which invokes the run() method in a new thread."
+},
+
+{
+    "id": 8,
+    "question":"What is multithreading in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Running multiple threads concurrently within a single process.",
+    "Running multiple processes concurrently.",
+    "A technique to execute code on multiple CPUs.",
+    "A method to manage large data files."
+    ],
+    "answer":"Running multiple threads concurrently within a single process.",
+    "discription":"Multithreading allows multiple threads to run concurrently within the same process, sharing the same memory space."
+},
+
+{
+    "id": 9,
+    "question":"What is the difference between threading.Lock and threading.RLock?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Lock is a simple mutex; RLock allows a thread to acquire it multiple times without blocking.",
+    "Lock is a recursive lock; RLock is a non-recursive lock.",
+    "Lock is used for synchronization; RLock is used for thread creation.",
+    "Lock allows for thread signaling; RLock does not."
+    ],
+    "answer":"Lock is a simple mutex; RLock allows a thread to acquire it multiple times without blocking.",
+    "discription":"RLock (reentrant lock) allows a thread to acquire the same lock multiple times, whereas Lock is a standard mutex."
+},
+
+{
+    "id": 10,
+    "question":"What is the purpose of threading.Event?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["To allow threads to wait for certain conditions or events to occur.",
+    "To create new threads.",
+    "To signal the termination of a thread.",
+    "To manage thread priorities."
+    ],
+    "answer":"To allow threads to wait for certain conditions or events to occur.",
+    "discription":"threading.Event is used for communication between threads, allowing one thread to signal an event to others."
+},
+
+{
+    "id": 11,
+    "question":"What is threading.Condition used for?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["To allow threads to wait until a certain condition is met, with the ability to notify other threads.",
+    "To create new threads with specific conditions.",
+    "To handle thread execution priorities.",
+    "To automatically terminate threads."
+    ],
+    "answer":"To allow threads to wait until a certain condition is met, with the ability to notify other threads.",
+    "discription":"threading.Condition is used for more advanced thread synchronization where threads can wait for specific conditions and notify each other when conditions change."
+},
+
+{
+    "id": 12,
+    "question":"What is a closure in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A function that can be called without arguments.",
+    "A function object that has access to variables in its lexical scope, even when the function is called outside that scope.",
+    "A way to define a class with private attributes.",
+    "A method to handle exceptions in a function."
+    ],
+    "answer":"A function object that has access to variables in its lexical scope, even when the function is called outside that scope.",
+    "discription":"A closure is a function that retains access to variables from its enclosing scope, allowing it to remember the environment in which it was created, even when called outside that environment. This enables powerful patterns like creating function factories and decorators."
+},
+
+{
+    "id": 13,
+    "question":"What does the map() function do in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["It sorts a list in ascending order.",
+    "It applies a given function to each item of an iterable (like a list) and returns a list of the results.",
+    "It filters elements in a list based on a condition.",
+    "It combines multiple lists into a single list."
+    ],
+    "answer":"It applies a given function to each item of an iterable (like a list) and returns a list of the results.",
+    "discription":"The map() function in Python takes a function and an iterable as arguments. It applies the function to each item of the iterable, returning a map object, which can be converted to a list if needed."
+},
+
+{
+    "id": 14,
+    "question":"Which of the following is a valid use of the map() function with multiple iterables?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["map(lambda x, y: x + y, [1, 2, 3], [4, 5, 6])",
+    "map(lambda x: x * 2, [1, 2, 3], [4, 5, 6])",
+    "map(lambda x, y: x - y, [1, 2, 3])",
+    "map(lambda x: x / 2, [4, 5, 6], [7, 8, 9])"
+    ],
+    "answer":"map(lambda x, y: x + y, [1, 2, 3], [4, 5, 6])",
+    "discription":"The map() function can take multiple iterables as arguments. The lambda function lambda x, y: x + y is applied to corresponding elements from both lists [1, 2, 3] and [4, 5, 6], resulting in [5, 7, 9]."
+},
+
+{
+    "id": 15,
+    "question":"What type of object does the map() function return in Python 3?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A list",
+    "A tuple",
+    "A map object",
+    "A dictionary"
+    ],
+    "answer":"A map object",
+    "discription":"In Python 3, the map() function returns a map object, which is an iterator. This map object can be converted to a list, tuple, or other iterable if needed."
+},
+
+{
+    "id": 16,
+    "question":"How can you use the map() function to convert a list of strings to integers?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["map(str, ['1', 2', '3'])",
+    "map(int, ['1', '2', '3'])",
+    "map(float, ['1', '2', '3'])",
+    "map(lambda x: x, ['1', '2', '3'])"
+    ],
+    "answer":"map(int, ['1', '2', '3'])",
+    "discription":"The map(int, ['1', '2', '3]) function converts each string in the list to an integer, resulting in [1, 2, 3]."
+},
+
+{
+    "id": 17,
+    "question":"What does the reduce() function do in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":[" It filters elements from a list based on a condition.",
+    "It reduces a list to a single value by applying a binary function cumulatively.",
+    "It maps a function to all elements of a list.",
+    "It sorts a list in ascending order."
+    ],
+    "answer":"It reduces a list to a single value by applying a binary function cumulatively.",
+    "discription":"The reduce() function applies a binary function (a function that takes two arguments) cumulatively to the elements of an iterable, reducing it to a single value. This function is part of the functools module."
+},
+
+{
+    "id": 18,
+    "question":"Which module do you need to import to use the reduce() function in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["itertools",
+    "functools",
+    "operator",
+    "collections"
+    ],
+    "answer":"functools",
+    "discription":"The reduce() function is located in the functools module in Python, so you need to import functools to use reduce()."
+},
+
+{
+    "id": 19,
+    "question":"How would you use reduce() to sum all the elements in a list numbers = [1, 2, 3, 4]?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["reduce(lambda x, y: x + y, numbers)",
+    "reduce(lambda x, y: x * y, numbers)",
+    "reduce(lambda x, y: x - y, numbers)",
+    "reduce(lambda x, y: x / y, numbers)"
+    ],
+    "answer":"reduce(lambda x, y: x + y, numbers)",
+    "discription":"This code uses reduce() with a lambda function to sum the elements of the list. The lambda function takes two arguments, adds them, and reduce() applies this function cumulatively across the list."
+},
+
+{
+    "id": 20,
+    "question":"What will happen if you use reduce() on an empty list without providing an initial value?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["It will return None.",
+    "It will return an empty list.",
+    "It will raise a TypeError.",
+    "It will return 0."
+    ],
+    "answer":"It will raise a TypeError.",
+    "discription":"If you use reduce() on an empty list without providing an initial value, Python will raise a TypeError because there are no items to apply the function to."
+}
+
+]

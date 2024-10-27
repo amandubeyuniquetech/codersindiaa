@@ -1,0 +1,2602 @@
+[
+    {
+        "id": 1,
+        "question":"In the list below, which of them are values and which are expressions? A value can be an integer or string, while an expression involves mathematical operators." ,
+        
+        "options":["12, 'cat', 5 + 7, 'dog' + 'house'",
+        "3.14, 'apple', 50, 20 / 4",
+        "8 * 2, 100, 'hello', 7 - 3",
+        "'car' + 'pet', 42, 'tree', 15"],
+        
+        "answer":"3.14, 'apple', 50, 20 / 4",
+        "discription":"Option A: 12 and 'cat' are values; 5 + 7 and 'dog' + 'house' are expressions.\nOption B: 3.14, 'apple', and 50 are values; 20 / 4 is an expression.\nOption C: 100 and 'hello' are values; 8 * 2 and 7 - 3 are expressions.\nOption D: 42, 'tree', and 15 are values; 'car' + 'pet' is an expression."
+       },
+
+    {
+        "id": 2,
+        "question":"What is the difference between a string and a variable?" ,
+            
+        "options":["A string is a type of data representing text, while a variable is a storage location for data that can change.",
+        "A string is a storage location for data that can change, while a variable is a type of data representing text.",
+        "A string is a number, while a variable is a text.",
+        "A string is a number, while a variable is a text."
+        ],
+        "answer":"A string is a type of data representing text, while a variable is a storage location for data that can change.",
+        "discription":"A string represents textual data, while a variable is used to store data that can be updated or changed during program execution."
+        },
+
+    {
+            "id": 3,
+            "question":"Which of the following options correctly describes three different data types?" ,
+                
+            "options":["Integer, Float, and Boolean",
+            "String, Function, and Class",
+            "List, Dictionary, and Module",
+            "Operator, Loop, and Condition"
+            ],
+            "answer":"Integer, Float, and Boolean",
+            "discription":"Integer, Float, and Boolean are all fundamental data types. An integer represents whole numbers, a float represents decimal numbers, and a boolean represents true/false values."
+    },
+
+    {
+            "id": 4,
+            "question":"What is an expression made up of, and what do all expressions do?" ,
+                    
+            "options":["An expression is made up of variables and functions, and all expressions store data.",
+            "An expression is made up of constants and keywords, and all expressions print output.",
+            "An expression is made up of variables, constants, and operators, and all expressions evaluate to a value.",
+            "An expression is made up of loops and conditions, and all expressions control the flow of the program."
+            ],
+            "answer":"An expression is made up of variables, constants, and operators, and all expressions evaluate to a value.",
+            "discription":"Expressions consist of variables, constants, and operators, and they always evaluate to a value, such as a number or a string."
+    },
+
+    {
+            "id": 5,
+            "question":"In assignment statements like spam = 10, what is the difference between an expression and a statement?" ,
+                            
+            "options":["An expression assigns a value, while a statement evaluates to a value.",
+            "An expression performs an action, while a statement represents a value.",
+            "An expression evaluates to a value, while a statement performs an action.",
+            "An expression and a statement are the same and can be used interchangeably."
+            ],
+            "answer":"An expression evaluates to a value, while a statement performs an action.",
+            "discription":"An expression produces a value, like 10, while a statement, such as an assignment (spam = 10), performs an action in the program."
+    },   
+    
+    {
+        "id": 6,
+        "question":"After running the following code, what does the variable bacon contain?\n bacon = 22\n bacon + 1",
+                                    
+        "options":["22",
+        "23",
+        "24",
+        "21"
+        ],
+        "answer":"22",
+        "discription":"The statement bacon + 1 evaluates to 23, but it does not change the value of bacon. The value of bacon remains 22."
+    },
+
+    {            
+    "id": 7,
+    "question":"What should the values of the following two terms be?\n 'spam' + 'spamspam'\n 'spam' * 3",
+                                
+    "options":["spamspamspam and spamspamspam",
+    "spamspamspam and spam3",
+    "spamspam and spamspamspam",
+    "spamspamspam and spamspam"
+    ],
+    "answer":"spamspamspam and spamspamspam",
+    "discription":"spam + spamspam concatenates the two strings, resulting in spamspamspam.\nspam * 3 repeats the string 'spam' three times, also resulting in spamspamspam."
+    },
+
+    {
+        "id": 8,
+        "question":"Why is eggs a valid variable name while 100 is invalid?",
+                                                
+        "options":["Variable names must be in lowercase, and 100 is not.",
+        "Variable names can only contain letters, and 100 is a number",
+        "Variable names must start with a letter or an underscore, and 100 starts with a number.",
+        "Variable names cannot contain numbers, and eggs does not."
+        ],
+        "answer":"Variable names must start with a letter or an underscore, and 100 starts with a number.",
+        "discription":"Variable names must start with a letter or an underscore."
+    }, 
+
+    {
+        "id": 9,
+        "question":"What three functions can be used to get the integer, floating-point number, or string version of a value?",
+                                                                
+        "options":["int(), float(), str()",
+        "integer(), floating(), string()",
+        "getInt(), getFloat(), getString()",
+        "convertInt(), convertFloat(), convertString()"
+        ],
+        "answer":"int(), float(), str()",
+        "discription":"int() converts a value to an integer.\n float() converts a value to a floating-point number.\n str() converts a value to a string."
+                     },
+
+    {
+        "id": 10,
+        "question":"Why does this expression cause an error? How can you fix it?\n ' I have eaten '  + 99 + ' burritos.'",
+                                                                                                
+        "options":["The expression causes an error because 99 is an integer, and you can fix it by converting 99 to a string.",
+        "The expression causes an error because there are no spaces, and you can fix it by adding spaces between the strings and the number.",
+        "The expression causes an error because it uses single quotes, and you can fix it by using double quotes.",
+        "The expression causes an error because the strings are too long, and you can fix it by shortening the strings."
+        ],
+        "answer":"The expression causes an error because 99 is an integer, and you can fix it by converting 99 to a string.",
+        "discription":"The error occurs because you cannot concatenate a string and an integer directly."
+    },
+
+    {
+        "id": 11,
+        "question":"What are the two values of the Boolean data type? How do you write them?",
+                                                        
+        "options":["Yes and No; written as yes and no",
+        "True and False; written as True and False",
+        "1 and 0; written as one and zero",
+        "On and Off; written as on and off"
+        ],
+        "answer":"True and False; written as True and False",
+        "discription":"The Boolean data type has two values: True and False.\n These values are written with an initial capital letter in Python and many other programming languages."
+                    },
+
+    {
+        "id": 12,
+        "question":"What are the three different types of Boolean operators?",
+                                                                                        
+        "options":["AND, OR, XOR",
+        "AND, OR, NOT",
+        "IF, ELSE, ELIF",
+        "TRUE, FALSE, NONE"
+        ],
+        "answer":"AND, OR, NOT",
+        "discription":"The three different types of Boolean operators are AND, OR, and NOT.\nAND returns True if both operands are true.\nOR returns True if at least one operand is true.\nNOT returns the opposite of the operand's boolean value."
+                    },  
+                    
+    {
+        "id": 13,
+        "question":"What are the values of the following expressions?\n (5 > 4) and (3 == 5)\n not (5 > 4)\n (5 > 4) or (3 == 5)\n not ((5 > 4) or (3 == 5))\n (True and True) and (True == False)\n (not False) or (not True)",
+                                                                                                        
+        "options":["True,False,True,False,False,True",
+        "False,True,False,True,True,False",
+        "False,False,True,False,False,True",
+        "True,True,False,True,True,False"
+        ],
+        "answer":"False,False,True,False,False,True",
+        "discription":"(5 > 4) and (3 == 5) evaluates to False because 3 == 5 is False.\nnot (5 > 4) evaluates to False because 5 > 4 is True.\n(5 > 4) or (3 == 5) evaluates to True because 5 > 4 is True.\nnot ((5 > 4) or (3 == 5)) evaluates to False because (5 > 4) or (3 == 5) is True.\n(True and True) and (True == False) evaluates to False because True == False is False.\n(not False) or (not True) evaluates to True because not False is True."
+    },
+
+    {
+        "id": 14,
+        "question":"What are the six comparison operators?",
+                                                                                        
+        "options":["<, >, =, <=, >=, !=",
+        "==, !=, <, <=, >, >=",
+        "=, !=, <>, <=, >=, ><",
+        "==, !=, <>, <=, >=, ><"
+        ],
+        "answer":"==, !=, <, <=, >, >=",
+        "discription":"== : Equal to\n!= : Not equal to\n< : Less than\n<= : Less than or equal to\n> : Greater than\n>= : Greater than or equal to"
+    },
+
+    {
+        "id": 15,
+        "question":"How do you tell the difference between the equal to and assignment operators? Describe a condition and when you would use one.",
+                                                                                                        
+        "options":["'==' is used for comparison; '=' is used for assignment. Example: if x == 5: to check if x is 5, x = 5 to set x to 5.",
+        "'=' is used for comparison; '==' is used for assignment. Example: if x = 5: to check if x is 5, x == 5 to set x to 5.",
+        "'==' and '=' are both used for comparison and assignment. Example: if x == 5: and x = 5 can be used interchangeably.",
+        "'==' is used for arithmetic operations; '=' is used for comparison. Example: if x == 5: to perform arithmetic, x = 5 to compare."
+        ],
+        "answer":"'==' is used for comparison; '=' is used for assignment. Example: if x == 5: to check if x is 5, x = 5 to set x to 5.",
+        "discription":"'==' is used to compare two values to see if they are equal.\n'=' is used to assign a value to a variable."
+    },
+
+    {
+        "id": 16,
+        "question":"Identify the three blocks in the following code:\n spam = 0\n if spam == 10:\n print('eggs')\n if spam > 5:\n print('bacon')\n else:\n print('ham')\n print('spam')\n print('spam')",
+                                                                                                        
+        "options":["spam = 0\n if spam == 10: print('eggs')\n if spam > 5: print('bacon') else: print('ham') and print('spam') print('spam')",
+        "spam = 0\n if spam == 10: print('eggs')\n if spam > 5: print('bacon') and else: print('ham') print('spam') print('spam')",
+        "spam = 0\n if spam == 10: print('eggs') if spam > 5: print('bacon') else: print('ham')\n print('spam') print('spam')",
+        "spam = 0\n if spam == 10: print('eggs') if spam > 5: print('bacon') else: print('ham')\n print('spam')"
+        ],
+        "answer":"spam = 0\n if spam == 10: print('eggs')\n if spam > 5: print('bacon') and else: print('ham') print('spam') print('spam')",
+        "discription":"The first block is the assignment statement: spam = 0.\n The second block includes the if statement: if spam == 10: print('eggs').\n The third block includes the if statement with else and the remaining print statements: if spam > 5: print('bacon') else: print('ham') and print('spam') print('spam')."
+    },
+
+    {
+        "id": 17,
+        "question":"Which code snippet correctly implements the following logic?\n Print Hello if 1 is stored in spam.\n Print Howdy if 2 is stored in spam.\n Print Greetings! if anything else is stored in spam.",
+                                                                                                        
+        "options":["spam = 3\n if spam == 1:\n     print('Hello')\n elif spam == 2:\n     print('Howdy')\n else:\n     print('Greetings!')",
+        "spam = 1\n if spam == 2:\n    print('Howdy')\n elif spam == 1:\n    print('Hello')\n else:\n    print('Greetings!')",
+        "spam = 2\n if spam == 1:\n    print('Hello')\n elif spam == 3:\n    print('Howdy')\n else:\n    print('Greetings!')",
+        "spam = 1\n if spam == 1:\n    print('Hello')\n if spam == 2:\n    print('Howdy')\n else:\n     print('Greetings!')"
+        ],
+        "answer":"spam = 3\n if spam == 1:\n     print('Hello')\n elif spam == 2:\n     print('Howdy')\n else:\n     print('Greetings!')",
+        "discription":"Option A correctly uses if, elif, and else to handle the three conditions: spam being 1, 2, or anything else."
+    },
+
+    {
+        "id": 18,
+        "question":"If your program is stuck in an endless loop, which keys should you press to stop it?",
+                                                                                                        
+        "options":["Ctrl + S",
+        "Ctrl + C",
+        "Alt + F4",
+        "Esc"
+        ],
+        "answer":"Ctrl + C",
+        "discription":"Ctrl + C is used to interrupt and stop a running program or command in many terminal environments."
+    },
+
+    {
+        "id": 19,
+        "question":"How can you tell the difference between break and continue?",
+                                                                                                        
+        "options":["break exits the current loop entirely; continue skips the current iteration and continues with the next iteration of the loop.",
+        "break skips the current iteration and continues with the next iteration; continue exits the current loop entirely.",
+        "break is used to pause the loop; continue is used to exit the loop.",
+        "break restarts the loop from the beginning; continue exits the loop."
+        ],
+        "answer":"break exits the current loop entirely; continue skips the current iteration and continues with the next iteration of the loop.",
+        "discription":"break is used to terminate the entire loop when a condition is met.\ncontinue is used to skip the rest of the current loop iteration and proceed with the next iteration."
+    },
+
+    {
+        "id": 20,
+        "question":"In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?",
+                                                                                                        
+        "options":["range(10) and range(0, 10) are the same, and range(0, 10, 1) includes an extra step in the sequence.",
+        "range(10) and range(0, 10) both generate numbers from 0 to 9; range(0, 10, 1) does the same but explicitly specifies a step of 1.",
+        "range(10) starts at 10 and goes to 0; range(0, 10) starts at 0 and goes to 10; range(0, 10, 1) is incorrect.",
+        "range(10) includes the number 10; range(0, 10) includes numbers from 0 to 10; range(0, 10, 1) skips every other number."
+        ],
+        "answer":"range(10) and range(0, 10) both generate numbers from 0 to 9; range(0, 10, 1) does the same but explicitly specifies a step of 1.",
+        "discription":"range(10) generates numbers from 0 to 9.\nrange(0, 10) also generates numbers from 0 to 9, specifying the start and stop values.\nrange(0, 10, 1) generates numbers from 0 to 9 with a step of 1, making it explicitly clear that the increment is 1."
+    },
+
+    {
+        "id": 21,
+        "question":"Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.",
+                                                                                                        
+        "options":["for i in range(1, 11):\n    print(i)\n i = 1\n while i < 11:\n    print(i)\n    i += 1",
+        "for i in range(10):\n    print(i + 1)\n i = 0\n while i < 10:\n    print(i)\n    i += 1",
+        "for i in range(1, 10):\n    print(i)\n i = 1\n while i <= 10:\n    print(i)\n    i += 1",
+        "for i in range(0, 10):\n    print(i + 1)\n i = 1\n while i < 10:\n    print(i)\n    i += 1"
+        ],
+        "answer":"for i in range(1, 11):\n    print(i)\n i = 1\n while i < 11:\n    print(i)\n    i += 1",
+        "discription":"The for loop in option A correctly uses range(1, 11) to print numbers from 1 to 10.\nThe while loop in option A correctly initializes i to 1 and continues to print until i reaches 10, incrementing i by 1 each time."
+    },
+
+    {
+        "id": 22,
+        "question":"What statement creates a function?",
+                                                                                                        
+        "options":["create function",
+        "function()",
+        "def",
+        "func"
+        ],
+        "answer":"def",
+        "discription":"The def keyword is used to define a function in Python"
+    },
+
+    {
+        "id": 23,
+        "question":"What is the data type of None?",
+                                                                                                        
+        "options":["str",
+        "int",
+        "NoneType",
+        "bool"
+        ],
+        "answer":"NoneType",
+        "discription":"In Python, None is a special constant that represents the absence of a value or a null value. The data type of None is NoneType."
+    },
+
+    {
+        "id": 24,
+        "question":"What exactly is []?",
+                                                                                                        
+        "options":["An empty tuple",
+        "An empty dictionary",
+        "An empty set",
+        "An empty list"
+        ],
+        "answer":"An empty list",
+        "discription":"In Python, [] represents an empty list. Lists are mutable sequences, typically used to store collections of homogeneous items."
+    },
+
+    {
+        "id": 25,
+        "question":"In a list of values stored in a variable called spam, how would you assign the value 'hello' as the third value? (Assume [2, 4, 6, 8, 10] are in spam.)",
+                                                                                                        
+        "options":["spam[2] = 'hello'",
+        "spam[3] = 'hello'",
+        "spam[1] = 'hello'",
+        "spam.insert(3, 'hello')"
+        ],
+        "answer":"spam[2] = 'hello'",
+        "discription":"Lists in Python are zero-indexed, meaning the first element is at index 0. To assign a new value to the third position (which is index 2), you use spam[2] = 'hello'."
+    },
+
+    {
+        "id": 26,
+        "question":"What is the value of spam[-1] if spam is a list?",
+                                                                                                        
+        "options":["The first element of the list",
+        "The last element of the list",
+        "The middle element of the list",
+        "An error occurs"
+        ],
+        "answer":"The last element of the list",
+        "discription":"In Python, negative indexing is used to access elements from the end of a list. spam[-1] refers to the last element of the list."
+    },
+
+    {
+        "id": 27,
+        "question":"What is the difference between the list methods append() and insert()?",
+                                                                                                        
+        "options":["append() adds an element to the beginning of the list, while insert() adds an element to the end of the list.",
+        "append() adds an element to the end of the list, while insert() adds an element at a specified position in the list.",
+        "append() adds an element to the end of the list, while insert() removes an element from a specified position in the list.",
+        "append() and insert() are both used to add elements to the list, but insert() can only be used with strings."
+        ],
+        "answer":"append() adds an element to the end of the list, while insert() adds an element at a specified position in the list.",
+        "discription":"The append() method adds a new element to the end of the list.\nThe insert() method adds a new element at a specified index in the list."
+    },
+
+    {
+        "id": 28,
+        "question":"What's the difference between tuples and lists in Python?",
+                                                                                                        
+        "options":["Tuples are mutable, while lists are immutable",
+        "Tuples can contain only one data type, while lists can contain multiple data types.",
+        "Tuples are created using parentheses, while lists are created using square brackets.",
+        "Tuples support more methods than lists."
+        ],
+        "answer":"Tuples are created using parentheses, while lists are created using square brackets.",
+        "discription":"The main difference between tuples and lists is that tuples are created using parentheses () and are immutable, meaning their elements cannot be changed after creation. Lists are created using square brackets [] and are mutable, meaning their elements can be changed."
+    },
+
+    {
+        "id": 29,
+        "question":"How do you type a tuple value that only contains the integer 42?",
+                                                                                                        
+        "options":["(42)",
+        "42,",
+        "(42,)",
+        "[42]"
+        ],
+        "answer":"(42,)",
+        "discription":"To create a tuple with a single element, you need to include a comma after the element inside parentheses. (42,) is the correct syntax to create a tuple containing only the integer 42. (42) would be interpreted as just the integer 42, not a tuple."
+    },
+
+    {
+        "id": 30,
+        "question":"What does an empty dictionary's code look like in Python?",
+                                                                                                        
+        "options":["[]",
+        "{}",
+        "()",
+        "{:}"
+        ],
+        "answer":"{}",
+        "discription":"An empty dictionary in Python is represented by a pair of curly braces {}."
+    },
+
+    {
+        "id": 31,
+        "question":"What is the most significant distinction between a dictionary and a list in Python?",
+                                                                                                        
+        "options":["Lists are ordered, while dictionaries are unordered.",
+        "Lists are immutable, while dictionaries are mutable.",
+        "Lists can store multiple data types, while dictionaries can only store strings.",
+        "Lists use indices to access elements, while dictionaries use keys."
+        ],
+        "answer":"Lists use indices to access elements, while dictionaries use keys.",
+        "discription":"The most significant distinction between a list and a dictionary in Python is that lists use indices to access elements, whereas dictionaries use keys. Lists are ordered collections accessed by their position, while dictionaries are collections of key-value pairs accessed by keys."
+    },
+
+    {
+        "id": 32,
+        "question":"How do you write a string of newlines in Python if you don't want to use the \n character?",
+                                                                                                        
+        "options":["Use multiple spaces between the lines.",
+        "Use a triple-quoted string (''').",
+        "Use the newline() function.",
+        "Use a semicolon (;) between the lines."
+        ],
+        "answer":"Use a triple-quoted string (''').",
+        "discription":"In Python, triple-quoted strings (''') can span multiple lines, allowing you to include newlines directly in the string without needing to use the \n escape character. This is useful for writing multi-line strings."
+    },
+
+    {
+        "id": 33,
+        "question":"How do you distinguish between inputInt() and inputFloat()?",
+                                                                                                        
+        "options":["inputInt() accepts only integer values, while inputFloat() accepts only floating-point numbers.",
+        "inputInt() accepts both integer and floating-point values, while inputFloat() only accepts integer values.",
+        "inputInt() is used to validate string inputs, while inputFloat() validates integer inputs.",
+        "inputInt() accepts any numeric value, whereas inputFloat() accepts only string inputs."
+        ],
+        "answer":"inputInt() accepts only integer values, while inputFloat() accepts only floating-point numbers.",
+        "discription":"The inputInt() function is used to get and validate integer inputs, ensuring the input is a whole number. In contrast, inputFloat() is used to get and validate floating-point inputs, allowing for decimal numbers."
+    },
+
+    {
+        "id": 34,
+        "question":"If a blank input is entered three times, what does inputStr(limit=3) do?",
+                                                                                                        
+        "options":["It allows the user to try entering a non-blank input again, without any restrictions.",
+        "It raises an error after three attempts and does not accept any further input.",
+        "It automatically accepts the third blank input without any restrictions.",
+        "It ignores the input and continues to prompt for a non-blank input indefinitely."
+        ],
+        "answer":"It raises an error after three attempts and does not accept any further input.",
+        "discription":"The limit parameter in inputStr(limit=3) specifies the maximum number of attempts allowed. If the user enters a blank input three times, the function raises an error and does not allow further attempts."
+    },
+
+    {
+        "id": 35,
+        "question":"If blank input is entered three times, what does inputStr(limit=3, default='hello') do?",
+                                                                                                        
+        "options":["It raises an error after three attempts and does not accept any further input.",
+        "It returns 'hello' after three blank inputs are entered.",
+        "It continues to prompt for input indefinitely until a non-blank input is provided.",
+        "It accepts the third blank input without any restrictions and ignores the default value."
+        ],
+        "answer":"It returns 'hello' after three blank inputs are entered.",
+        "discription":"When inputStr is used with limit=3 and default='hello', it allows up to three attempts. If all attempts are blank, it returns the default value 'hello'."
+    },
+
+    {
+        "id": 36,
+        "question":"What integers represent the levels of headings available in Word documents?",
+                                                                                                        
+        "options":["0, 1, 2, 3, 4, 5, 6",
+        "1, 2, 3, 4, 5, 6, 7",
+        "1, 2, 3, 4, 5, 6",
+        "0, 1, 2, 3, 4, 5"
+        ],
+        "answer":"1, 2, 3, 4, 5, 6",
+        "discription":"Headings in Word documents are typically represented by integers from 1 to 6, indicating the level of the heading."
+    },
+
+    {
+        "id": 37,
+        "question":"How many seconds are in an hour? Use the interactive interpreter as a calculator and multiply the number of seconds in a minute (60) by the number of minutes in an hour (also 60)",
+                                                                                                        
+        "options":["3,600",
+        "3,000",
+        "1,800",
+        "6,000"
+        ],
+        "answer":"3,600",
+        "discription":"There are 60 seconds in a minute and 60 minutes in an hour. Multiplying these numbers (60 × 60) gives 3,600 seconds in an hour"
+    },
+
+    {
+        "id": 38,
+        "question":"Divide seconds_per_day by seconds_per_hour. Use floating-point (/) division.",
+                                                                                                        
+        "options":["result = seconds_per_day / seconds_per_hour",
+        "result = seconds_per_day // seconds_per_hour",
+        "result = seconds_per_day % seconds_per_hour",
+        "result = seconds_per_day * seconds_per_hour"
+        ],
+        "answer":"result = seconds_per_day / seconds_per_hour",
+        "discription":"To perform floating-point division of seconds_per_day by seconds_per_hour, use the / operator, which provides a floating-point result."
+    },
+
+    {
+        "id": 39,
+        "question":"How do you create a list called years_list, starting with the year of your birth and including each subsequent year until the year of your fifth birthday? For example, if you were born in 1980, the list would be [1980, 1981, 1982, 1983, 1984, 1985].",
+                                                                                                        
+        "options":["years_list = [year for year in range(1980, 1986)]",
+        "years_list = [1980, 1981, 1982, 1983, 1984]",
+        "years_list = list(range(1980, 1985))",
+        "years_list = list(range(1980, 1986))"
+        ],
+        "answer":"years_list = list(range(1980, 1986))",
+        "discription":"To create a list called years_list that starts with your birth year and ends with the year of your fifth birthday, use list(range(birth_year, birth_year + 6)), where birth_year is the year you were born. This includes all years from your birth year up to and including your fifth birthday."
+    },
+
+    {
+        "id": 40,
+        "question":"In which year in years_list was your third birthday? Remember, you were 0 years of age for your first year.",
+                                                                                                        
+        "options":["The first year in years_list",
+        "The second year in years_list",
+        "The third year in years_list",
+        "The fourth year in years_list"
+        ],
+        "answer":"The fourth year in years_list",
+        "discription":"Since you were 0 years old in your first year, your third birthday would occur in the fourth year of the years_list."
+    },
+
+    {
+        "id": 41,
+        "question":"In the years list, which year were you the oldest?",
+                                                                                                        
+        "options":["The first year in years_list",
+        "The second year in years_list",
+        "The fifth year in years_list",
+        "The last year in years_list"
+        ],
+        "answer":"The last year in years_list",
+        "discription":"You are the oldest in the last year of the years_list because it represents the most recent year in the sequence, which corresponds to the highest age."
+    },
+
+    {
+        "id": 42,
+        "question":"Make a list called things with these three strings as elements: 'mozzarella', 'cinderella', 'salmonella'.",
+                                                                                                        
+        "options":["things = ['mozzarella', 'cinderella', 'salmonella']",
+        "things = ['mozzarella' + 'cinderella' + 'salmonella']",
+        "things = ('mozzarella', 'inderella', 'salmonella')",
+        "things = ['mozzarella', 'cinderella', 'salmonella', 'pizza']"
+        ],
+        "answer":"things = ['mozzarella', 'cinderella', 'salmonella']",
+        "discription":"To create a list called things containing the three strings 'mozzarella', 'cinderella', and 'salmonella', you enclose the strings in square brackets, separated by commas."
+    },
+
+    {
+        "id": 43,
+        "question":"How do you capitalize the element in things that refers to a person and then print the list? Did it change the element in the list?",
+                                                                                                        
+        "options":["things[1] = things[1].capitalize(); print(things) — Yes, it changed the element in the list.",
+        "things[1].capitalize(); print(things) — No, it did not change the element in the list.",
+        "things[0] = things[0].capitalize(); print(things) — Yes, it changed the element in the list.",
+        "print(things[1].capitalize()); print(things) — No, it did not change the element in the list."
+        ],
+        "answer":"things[1] = things[1].capitalize(); print(things) — Yes, it changed the element in the list.",
+        "discription":"To capitalize the element in things that refers to a person (i.e., 'cinderella'), you assign the capitalized version back to the list (things[1]). This changes the element in the list itself."
+    },
+
+    {
+        "id": 44,
+        "question":"How do you create a list called surprise with the elements 'Groucho', 'Chico', and 'Harpo'?",
+                                                                                                        
+        "options":["surprise = ['Groucho', 'Chico', 'Harpo']",
+        "surprise = 'Groucho', 'Chico', 'Harpo'",
+        "surprise = ['Groucho' + 'Chico' + 'Harpo']",
+        "surprise = ('Groucho', 'Chico', 'Harpo')"
+        ],
+        "answer":"surprise = ['Groucho', 'Chico', 'Harpo']",
+        "discription":"To create a list called surprise with the elements 'Groucho', 'Chico', and 'Harpo', you enclose the strings in square brackets and separate them with commas."
+    },
+
+    {
+        "id": 45,
+        "question":"Make an English-to-French dictionary called e2f and print it. Here are your starter words: dog is chien, cat is chat, and walrus is morse.",
+                                                                                                        
+        "options":["e2f = {'dog': 'chien', 'cat': 'chat', 'walrus': 'morse'}\nprint(e2f)",
+        "e2f = ['dog': 'chien', 'cat': 'chat', 'walrus': 'morse']\nprint(e2f)",
+        "e2f = {'chien': 'dog', 'chat': 'cat', 'morse': 'walrus'}\nprint(e2f)",
+        "e2f = (dog, chien, cat, chat, walrus, morse)\nprint(e2f)"
+        ],
+        "answer":"e2f = {'dog': 'chien', 'cat': 'chat', 'walrus': 'morse'}\nprint(e2f)",
+        "discription":"To create an English-to-French dictionary named e2f, use curly braces {} with key-value pairs, where the English word is the key and the French translation is the value. Printing e2f will display the dictionary."
+    },
+
+    {
+        "id": 46,
+        "question":"How do you retrieve the French word for 'walrus' from the e2f dictionary?",
+                                                                                                        
+        "options":["e2f['morse']",
+        "e2f['walrus']",
+        "e2f.get('walrus')",
+        "e2f['chat']"
+        ],
+        "answer":"e2f['walrus']",
+        "discription":"To get the French translation of 'walrus' from the e2f dictionary, you access it using the key 'walrus', which returns the value 'morse'."
+    },
+
+    {
+        "id": 47,
+        "question":"How do you create a French-to-English dictionary called f2e from the e2f dictionary using the items method?",
+                                                                                                        
+        "options":["f2e = {value: key for key, value in e2f.items()}",
+        "f2e = {key: value for value, key in e2f.items()}",
+        "f2e = dict(e2f.items())",
+        "f2e = {key: value for key, value in e2f.items()}"
+        ],
+        "answer":"f2e = {value: key for key, value in e2f.items()}",
+        "discription":"To create a French-to-English dictionary f2e from e2f, use a dictionary comprehension that reverses the key-value pairs. This swaps the keys and values, using e2f.items() to iterate over the original dictionary's items."
+    },
+
+    {
+        "id": 48,
+        "question":"How do you print the English word for the French word 'chien' using the f2e dictionary?",
+                                                                                                        
+        "options":["print(f2e['chien'])",
+        "print(f2e.get('chien'))",
+        "print(f2e['chat'])",
+        "print(f2e['morse'])"
+        ],
+        "answer":"print(f2e['chien'])",
+        "discription":"To print the English translation of the French word 'chien' using the f2e dictionary, access it with the key 'chien' and print the corresponding value."
+    },
+
+    {
+        "id": 49,
+        "question":"Print the following values of the list [3, 2, 1, 0] using a for loop.",
+                                                                                                        
+        "options":["my_list = [3, 2, 1, 0]\nfor i in my_list:\n    print(my_list)",
+        "my_list = [3, 2, 1, 0]\nfor i in my_list:\n    print(i)",
+        "my_list = [3, 2, 1, 0]\nfor i in range(4):\n    print(i)",
+        "my_list = [3, 2, 1, 0]\nfor i in range(len(my_list)):\n    print(i)"
+        ],
+        "answer":"my_list = [3, 2, 1, 0]\nfor i in my_list:\n    print(i)",
+        "discription":"This option correctly iterates through the list [3, 2, 1, 0] using a for loop and prints each element (i) of the list individually."
+    },
+
+    {
+        "id": 50,
+        "question":"Define a function called good that returns the list ['Harry', 'Ron', 'Hermione'].",
+                                                                                                        
+        "options":["def good():\n    return 'Harry', 'Ron', 'Hermione'",
+        "def good():\n    return ['Harry', 'Ron', 'Hermione']",
+        "def good():\n    return {'Harry', 'Ron', 'Hermione'}",
+        "def good():\n    return 'Harry', 'Ron', 'Hermione'"
+        ],
+        "answer":"def good():\n    return ['Harry', 'Ron', 'Hermione']",
+        "discription":"The function good is defined to return a list containing the three elements 'Harry', 'Ron', and 'Hermione'. This is the correct way to return a list in Python."
+    },
+
+    {
+        "id": 51,
+        "question":"How would you create a plain dictionary with the key-value pairs 'a': 1, 'b': 2, and 'c': 3, and print it out?",
+                                                                                                        
+        "options":["my_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(my_dict)",
+        "my_dict = dict('a' = 1, 'b' = 2, 'c' = 3)\nprint(my_dict)",
+        "my_dict = ['a': 1, 'b': 2, 'c': 3]\nprint(my_dict)",
+        "my_dict = ('a': 1, 'b': 2, 'c': 3)\nprint(my_dict)"
+        ],
+        "answer":"my_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(my_dict)",
+        "discription":"This option correctly creates a dictionary with the specified key-value pairs and prints it out. The syntax {} is used to define a dictionary in Python."
+    },
+
+    {
+        "id": 52,
+        "question":"What is the purpose of Object-Oriented Programming (OOP) in Python?",
+                                                                                                        
+        "options":["To increase the speed of the program.",
+        "To organize code using objects and classes.",
+        "To simplify writing loops.",
+        "To make code harder to read."
+        ],
+        "answer":"To organize code using objects and classes.",
+        "discription":"Python's OOP is used to structure programs by bundling related properties and behaviors into objects and classes, making the code more modular and easier to manage"
+    },
+
+    {
+        "id": 53,
+        "question":"How do you distinguish between a class object and an instance object in Python?",
+                                                                                                        
+        "options":["A class object is created using the __init__ method, while an instance object is not.",
+        "A class object holds methods and attributes, while an instance object holds specific data.",
+        "A class object can only be created once, while an instance object can be created multiple times.",
+        "A class object is a template, while an instance object is the data stored in variables."
+        ],
+        "answer":"A class object holds methods and attributes, while an instance object holds specific data.",
+        "discription":"In Python, a class object defines methods and attributes common to all instances, while an instance object contains the actual data specific to that instance, created based on the class."
+    },
+
+    {
+        "id": 54,
+        "question":"What is the purpose of the __init__ method in Python?",
+                                                                                                        
+        "options":["To destroy an object after it is used.",
+        "To initialize the class and define its attributes.",
+        "To override built-in Python functions.",
+        "To create a copy of an object."
+        ],
+        "answer":"To initialize the class and define its attributes.",
+        "discription":"The __init__ method in Python is a special method used to initialize newly created objects. It allows you to set the initial state of an object by assigning values to its attributes when the object is created."
+    },
+
+    {
+        "id": 55,
+        "question":"What is the process for creating a class instance in Python?",
+                                                                                                        
+        "options":["Assign the class name directly to a variable.",
+        "Call the class by name, followed by parentheses.",
+        "Use the import statement to create an instance.",
+        "Define a new function to generate an instance."
+        ],
+        "answer":"Call the class by name, followed by parentheses.",
+        "discription":"To create a class instance in Python, you call the class name followed by parentheses, which triggers the __init__ method if defined. For example, if you have a class named Dog, you can create an instance with my_dog = Dog(). This creates an object of the class Dog and assigns it to the variable my_dog"
+    },
+    {
+        "id": 56,
+        "question":"What is the process for creating a class?",
+                                                                                                        
+        "options":["Use the def keyword followed by the class name.",
+        "Use the create keyword followed by the class name.",
+        "Use the class keyword followed by the class name.",
+        "Use the init keyword to start the class definition."
+        ],
+        "answer":"Use the class keyword followed by the class name.",
+        "discription":"In Python, you create a class by using the class keyword followed by the class name and a colon. Inside the class, you define methods and attributes."
+    },
+
+    {
+        "id": 57,
+        "question":"Where and how should be class attributes created?",
+                                                                                                        
+        "options":["Inside the __init__ method, using the self keyword.",
+        "Inside any method, without the self keyword.",
+        "Directly within the class body, outside of any methods.",
+        "Inside the __main__ block, using the class name."
+        ],
+        "answer":"Directly within the class body, outside of any methods.",
+        "discription":"Class attributes are created directly within the class body, outside of any methods. These attributes are shared among all instances of the class and are defined at the class level"
+    },
+
+    {
+        "id": 58,
+        "question":"What are the two most important concepts to grasp in order to comprehend Python OOP code?",
+                                                                                                        
+        "options":["Lists and Dictionaries.",
+        "Loops and Conditionals.",
+        "Classes and Objects.",
+        "Functions and Modules"
+        ],
+        "answer":"Classes and Objects.",
+        "discription":"Understanding classes and objects is essential for grasping Python OOP code. Classes serve as blueprints that define the structure and behavior of objects, while objects are instances of classes that encapsulate data and functionality."
+    },
+
+    {
+        "id": 59,
+        "question":"What is the meaning of multiple inheritance?",
+                                                                                                        
+        "options":["A class inherits from a single superclass.",
+        "A class can inherit from more than one superclass.",
+        "A class inherits methods from a superclass only.",
+        "A class cannot inherit from any superclass."
+        ],
+        "answer":"A class can inherit from more than one superclass.",
+        "discription":"Multiple inheritance in Python allows a class to inherit attributes and methods from more than one superclass. This means a class can combine features from multiple parent classes. For example, class DerivedClass(Base1, Base2): indicates that DerivedClass inherits from both Base1 and Base2."
+    },
+
+    {
+        "id": 60,
+        "question":"What are your options for recovering from an exception in your Python script?",
+                                                                                                        
+        "options":["Stop the script immediately.",
+        "Ignore the exception and continue.",
+        "Use a try-except block to handle the exception.",
+        "Restart the script from the beginning."
+        ],
+        "answer":"Use a try-except block to handle the exception.",
+        "discription":"In Python, you can recover from exceptions using a try-except block. This allows you to catch and handle exceptions gracefully without crashing the script. By placing the code that might cause an exception inside a try block and writing an appropriate response in the except block, you can manage errors and continue the program's execution."
+    },
+
+    {
+        "id": 61,
+        "question":"What is the purpose of the try statement in Python?",
+                                                                                                        
+        "options":["To loop through a sequence of items.",
+        "To define functions and methods.",
+        "To handle exceptions and errors in code.",
+        "To import modules from external libraries."
+        ],
+        "answer":"To handle exceptions and errors in code.",
+        "discription":"The try statement in Python is used to handle exceptions and errors that may occur during the execution of a program. It allows you to test a block of code for errors and provides a way to handle them gracefully, preventing the program from crashing. If an error occurs, the code in the except block is executed."
+    },
+
+    {
+        "id": 62,
+        "question":"In 3.X, how do you put non-ASCII Unicode characters in a string?",
+                                                                                                        
+        "options":["Prefix the string with u",
+        "Prefix the string with b",
+        "Use double quotes ' '",
+        "Use backslashes \\ before each non-ASCII character"
+        ],
+        "answer":"Prefix the string with u",
+        "discription":"In Python 3.x, you can include non-ASCII Unicode characters directly in a string without needing any special prefixes. However, prefixing with u (e.g., u'string') is a legacy from Python 2.x and is still valid in Python 3.x for Unicode strings."
+    },
+
+    {
+        "id": 63,
+        "question":"In Python 3.X, what are the key differences between text-mode and binary-mode files?",
+                                                                                                        
+        "options":["Text-mode files handle strings as sequences of bytes, while binary-mode files handle strings as sequences of characters.",
+        "Text-mode files automatically handle newline conversions, while binary-mode files do not.",
+        "Binary-mode files automatically encode and decode text, while text-mode files require manual encoding.",
+        "Text-mode files can only read data, while binary-mode files can only write data."
+        ],
+        "answer":"Text-mode files automatically handle newline conversions, while binary-mode files do not.",
+        "discription":"In Python 3.X, when working with text-mode files ('t' mode), the system automatically handles newline characters, converting them to '\n' in text mode. In contrast, binary-mode files ('b' mode) read and write data as raw bytes, without any newline or encoding conversions."
+    },
+
+    {
+        "id": 64,
+        "question":"How much of an effect does the change in string types in Python 3.X have on your code?",
+                                                                                                        
+        "options":["No effect, all string handling is the same.",
+        "Minimal effect, only a few minor adjustments needed.",
+        "Significant effect, especially in handling text vs. binary data.",
+        "It makes Python incompatible with older versions."
+        ],
+        "answer":"Significant effect, especially in handling text vs. binary data.",
+        "discription":"In Python 3.X, strings are Unicode by default, which leads to significant changes when handling text and binary data. This requires careful handling, especially when interacting with external data sources, to avoid encoding/decoding errors."
+    },
+
+    {
+        "id": 65,
+        "question":"Does using the += operator to concatenate strings violate Python's string immutability? Why or why not?",
+                                                                                                        
+        "options":["Yes, because += changes the original string in place.",
+        "No, because += creates a new string each time it is used.",
+        "Yes, because += modifies the string object directly, which is allowed with immutable types.",
+        "No, because += is a special case that allows modification of immutable objects."
+        ],
+        "answer":"No, because += creates a new string each time it is used.",
+        "discription":" In Python, strings are immutable, so using += to concatenate strings creates a new string rather than modifying the original one."
+    },
+
+    {
+        "id": 66,
+        "question":"In Python, how many different ways are there to index a character?",
+                                                                                                        
+        "options":["One way: using positive indices.",
+        "Two ways: using positive and negative indices.",
+        "Three ways: using positive, negative, and zero-based indices.",
+        "Four ways: using positive, negative, zero-based, and string slicing."
+        ],
+        "answer":"Two ways: using positive and negative indices.",
+        "discription":"Python allows indexing characters in a string using both positive and negative indices, providing two different ways to access characters."
+    },
+
+    {
+        "id": 67,
+        "question":"What is the relationship between indexing and slicing?",
+                                                                                                        
+        "options":["Indexing retrieves a single element, while slicing retrieves a sub-sequence of elements.",
+        "Indexing and slicing are interchangeable methods for retrieving data from sequences.",
+        "Indexing modifies elements, while slicing only reads data.",
+        "Indexing retrieves a sub-sequence, while slicing retrieves a single element."
+        ],
+        "answer":"Indexing retrieves a single element, while slicing retrieves a sub-sequence of elements.",
+        "discription":"Indexing retrieves a single element from a sequence, while slicing retrieves a range of elements."
+    },
+
+    {
+        "id": 68,
+        "question":"What is the relationship between string and character 'types' in Python?",
+                                                                                                        
+        "options":["A string is a sequence of characters, but there is no distinct character type in Python.",
+        "A character is a special type of string with only one character, while a string can contain multiple characters.",
+        "Characters in Python are represented as a distinct type, and strings are collections of these characters.",
+        "Strings are a collection of numbers, while characters are treated as separate data types in Python."
+        ],
+        "answer":"A string is a sequence of characters, but there is no distinct character type in Python.",
+        "discription":"In Python, a string is a sequence of characters, and individual characters are just strings of length 1; there is no separate character type."
+    },
+
+    {
+        "id": 69,
+        "question":"How do you slice a list to get every other element, like the first, third, fifth, seventh, and so on?",
+                                                                                                        
+        "options":["list[1::2]",
+        "list[::2]",
+        "list[::-2]",
+        "list[2::2]"
+        ],
+        "answer":"list[::2]",
+        "discription":"Using list[::2] slices the list to include every other element, starting from the first element."
+    },
+
+    {
+        "id": 70,
+        "question":"Explain the distinctions between indexing and slicing",
+                                                                                                        
+        "options":["Indexing retrieves a single element, while slicing returns a sequence of elements.",
+        "Indexing can only be used with lists, but slicing works with all sequences.",
+        "Indexing modifies elements directly, while slicing creates a copy of the sequence.",
+        "Indexing requires a start and end position, while slicing requires only an index."
+        ],
+        "answer":"Indexing retrieves a single element, while slicing returns a sequence of elements.",
+        "discription":"Indexing retrieves one specific element from a sequence, while slicing returns a portion of the sequence, which can include multiple elements."
+    },
+
+    {
+        "id": 71,
+        "question":"What happens if one of the slicing expression's indexes is out of range?",
+                                                                                                        
+        "options":["An IndexError is raised immediately.",
+        "The slice operation returns an empty list.",
+        "The slice adjusts the index to the nearest valid position.",
+        "The slice operation returns None."
+        ],
+        "answer":"The slice adjusts the index to the nearest valid position.",
+        "discription":"Slicing with out-of-range indexes is adjusted to the nearest valid position, preventing errors."
+    },
+
+    {
+        "id": 72,
+        "question":"If you pass a list to a function, and if you want the function to be able to change the values of the list—so that the list is different after the function returns—what action should you avoid?",
+                                                                                                        
+        "options":["Avoid modifying the list elements directly within the function.",
+        "Avoid passing the list as an argument to the function.",
+        "Avoid reassigning the list to a new list inside the function.",
+        "Avoid using list comprehension within the function."
+        ],
+        "answer":"Avoid reassigning the list to a new list inside the function.",
+        "discription":"Reassigning the list inside the function creates a local copy, preventing changes to the original list."
+    },
+
+    {
+        "id": 73,
+        "question":"Is an assignment operator like += only for show? Is it possible that it would lead to faster results at the runtime?",
+                                                                                                        
+        "options":["+= is only for show and does not impact runtime performance.",
+        "+= can lead to faster results at runtime because it can reduce the number of operations needed compared to using = with addition.",
+        "+= is slower than using = because it involves extra steps in the computation.",
+        "+= has no impact on performance and is purely a syntactical convenience."
+        ],
+        "answer":"+= can lead to faster results at runtime because it can reduce the number of operations needed compared to using = with addition.",
+        "discription":"+= can be faster at runtime because it combines addition and assignment into a single operation, reducing the number of steps compared to separate addition and assignment."
+    },
+
+    {
+        "id": 74,
+        "question":"In Python, what is the most effective way to set a list of 100 integers to 0?",
+                                                                                                        
+        "options":["Using a loop: for i in range(100): my_list[i] = 0",
+        "Using list comprehension: [0 for _ in range(100)]",
+        "Using map: list(map(lambda x: 0, range(100)))",
+        "Using append method in a loop: my_list = []; for _ in range(100): my_list.append(0)"
+        ],
+        "answer":"Using list comprehension: [0 for _ in range(100)]",
+        "discription":"List comprehension is the most effective way to create a list of 100 integers set to 0 in Python, offering both conciseness and efficiency."
+    },
+
+    {
+        "id": 75,
+        "question":"What is the most effective way to initialise a list of 99 integers that repeats the sequence 1, 2, 3? S If necessary, show step-by-step instructions on how to accomplish this",
+                                                                                                        
+        "options":["Use a for loop to append the sequence 1, 2, 3 33 times.",
+        "Manually type out the sequence 1, 2, 3 33 times.",
+        "Use list comprehension with the expression [1, 2, 3] * 33.",
+        "Initialize an empty list and use while loop to append values."
+        ],
+        "answer":"Use list comprehension with the expression [1, 2, 3] * 33.",
+        "discription":"The expression [1, 2, 3] * 33 effectively initializes a list by repeating the sequence 1, 2, 3 33 times, resulting in a concise and efficient solution."
+    },
+
+    {
+        "id": 76,
+        "question":"What is the one improvement that must be made to a function in order for it to become a generator function in the Python language?",
+                                                                                                        
+        "options":["Add a return statement",
+        "Add the yield keyword",
+        "Change the function name to include 'gen'",
+        "Include a for loop inside the function"
+        ],
+        "answer":"Add the yield keyword",
+        "discription":"To make a function a generator in Python, you must use the yield keyword instead of return."
+    },
+
+    {
+        "id": 77,
+        "question":"What is the maximum possible length of an identifier in most programming languages?",
+                                                                                                        
+        "options":["32 characters",
+        "64 characters",
+        "128 characters",
+        "No fixed limit"
+        ],
+        "answer":"No fixed limit",
+        "discription":"Most modern programming languages do not have a fixed limit on identifier length, allowing identifiers to be very long, although practical limits may be imposed by compilers or language standards."
+    },
+
+    {
+        "id": 78,
+        "question":" What is the benefit of regular expressions?",
+                                                                                                        
+        "options":["They allow for the creation of complex data structures.",
+        "They simplify file I/O operations.",
+        "They provide a powerful way to search and manipulate text based on patterns.",
+        "They optimize algorithm performance for numerical calculations."
+        ],
+        "answer":"They provide a powerful way to search and manipulate text based on patterns.",
+        "discription":"Regular expressions offer a powerful method for searching and manipulating text by using pattern-based matching."
+    },
+
+    {
+        "id": 79,
+        "question":"Define the relationship between a class and its instances. Is it a one-to-one or a one-to-many partnership, for example?",
+                                                                                                        
+        "options":["One-to-one",
+        "One-to-many",
+        "Many-to-many",
+        "Many-to-one"
+        ],
+        "answer":"One-to-many",
+        "discription":"The relationship between a class and its instances is one-to-many, meaning a single class can create multiple unique instances."
+    },
+
+    {
+        "id": 80,
+        "question":"What kind of data is held only in an instance?",
+                                                                                                        
+        "options":["Class variables",
+        "Instance variables",
+        "Global variables",
+        "Static variables"
+        ],
+        "answer":"Instance variables",
+        "discription":"Instance variables store data that is unique to each individual instance of a class, differentiating them from other types of variables."
+    },
+
+    {
+        "id": 81,
+        "question":"What kind of knowledge is stored in a class?",
+                                                                                                        
+        "options":["Procedural knowledge only",
+        "Declarative knowledge only",
+        "Both procedural and declarative knowledge",
+        "Instance-specific knowledge"
+        ],
+        "answer":"Both procedural and declarative knowledge",
+        "discription":"A class stores both declarative knowledge (attributes) and procedural knowledge (methods)."
+    },
+
+    {
+        "id": 82,
+        "question":"Is inheritance supported in Python, and if so, what is the syntax?",
+                                                                                                        
+        "options":["Yes, with the syntax class Child extends Parent:",
+        "Yes, with the syntax class Child(Parent):",
+        "No, Python does not support inheritance.",
+        "Yes, with the syntax class Child -> Parent:"
+        ],
+        "answer":"Yes, with the syntax class Child(Parent):",
+        "discription":"Python supports inheritance using the syntax class Child(Parent):, where Child inherits from Parent."
+    },
+
+    {
+        "id": 83,
+        "question":"How much encapsulation (making instance or class variables private) does Python support?",
+                                                                                                        
+        "options":["Full encapsulation with private variables enforced by the language.",
+        "No encapsulation; all variables are public.",
+        "Limited encapsulation using single or double underscores for variable names.",
+        "Encapsulation is only supported for methods, not variables."
+        ],
+        "answer":"Limited encapsulation using single or double underscores for variable names.",
+        "discription":"Python supports limited encapsulation by using underscores to indicate private variables, but it doesn’t strictly enforce privacy."
+    },
+
+    {
+        "id": 84,
+        "question":"How do you distinguish between a class variable and an instance variable?",
+                                                                                                        
+        "options":["Class variables are defined inside methods, while instance variables are defined outside any method.",
+        "Class variables are shared among all instances, while instance variables are unique to each instance.",
+        "Class variables are only accessible within the class, while instance variables are accessible outside the class.",
+        "Class variables can change value, but instance variables cannot."
+        ],
+        "answer":"Class variables are shared among all instances, while instance variables are unique to each instance.",
+        "discription":"Class variables are shared by all instances of a class, while instance variables are unique to each instance, holding data specific to that instance."
+    },
+
+    {
+        "id": 85,
+        "question":"When, if ever, can self be included in a class's method definitions?",
+                                                                                                        
+        "options":["Only in static methods",
+        "Only in class methods",
+        "In instance methods",
+        "Never, self is automatically included by Python"
+        ],
+        "answer":"In instance methods",
+        "discription":"self is used in instance methods to refer to the instance of the class that the method is acting upon."
+    },
+
+    {
+        "id": 86,
+        "question":"Using the Fraction class but not the Decimal class, give an example of a quantity that can be expressed with absolute precision.",
+                                                                                                        
+        "options":["1/3",
+        "0.1",
+        "1/2",
+        "π"
+        ],
+        "answer":"1/2",
+        "discription":"The fraction 1/2 can be expressed with absolute precision using the Fraction class."
+    },
+
+    {
+        "id": 87,
+        "question":"What are the benefits of the built-in array package, if any?",
+                                                                                                        
+        "options":[" It supports dynamic resizing of arrays.",
+        "It provides efficient storage and manipulation of homogeneous data types.",
+        " It includes advanced array operations like matrix multiplication.",
+        "It supports multiple data types within the same array."
+        ],
+        "answer":"It provides efficient storage and manipulation of homogeneous data types.",
+        "discription":"The built-in array package in Python offers efficient storage and manipulation of arrays where all elements are of the same type."
+    },
+
+    {
+        "id": 88,
+        "question":"What are some of the array package's limitations?",
+                                                                                                        
+        "options":["Cannot handle multi-dimensional arrays.",
+        "Cannot store elements of different data types.",
+        "Does not support slicing of arrays.",
+        "Limited to only numerical data types."
+        ],
+        "answer":"Cannot store elements of different data types.",
+        "discription":"The array package in Python is limited to storing elements of the same data type, unlike more advanced libraries such as NumPy that can handle multi-dimensional arrays and different data types."
+    },
+
+    {
+        "id": 89,
+        "question":"Describe the main differences between the array and numpy packages.",
+                                                                                                        
+        "options":["array is a basic array module in Python, while numpy provides advanced array operations and numerical computations.",
+        "array is a more advanced package with better performance compared to numpy.",
+        "array supports multi-dimensional arrays, while numpy only supports one-dimensional arrays.",
+        "array and numpy are essentially the same with no significant differences."
+        ],
+        "answer":"array is a basic array module in Python, while numpy provides advanced array operations and numerical computations.",
+        "discription":"The array module provides basic array functionalities, while numpy offers advanced numerical operations and multi-dimensional array support."
+    },
+
+    {
+        "id": 90,
+        "question":"What is the dimensionality of an array generated by a Boolean mask in NumPy?",
+                                                                                                        
+        "options":["The same as the original array",
+        "Always 1D",
+        "Reduced by one dimension",
+        "Increased by one dimension"
+        ],
+        "answer":"The same as the original array",
+        "discription":"The dimensionality of an array generated by a Boolean mask remains the same as the original array, though the shape may change based on the mask's True values."
+    },
+
+    {
+        "id": 91,
+        "question":"What is the result of the following code, and why?\ndef func(a, b=6, c=8):\n    print(a, b, c)\n    func(1, 2)",
+                                                                                                        
+        "options":["1 2 8 - The values 1 and 2 are assigned to a and b respectively, and c remains at its default value of 8.",
+        "1 6 8 - Only a is given a value, so b and c take their default values.",
+        "1 2 6 - The values 1 and 2 are assigned to a and b, but c is incorrectly assigned the value 6.",
+        "1 2 - Only a and b are printed, and c is ignored."
+        ],
+        "answer":"1 2 8 - The values 1 and 2 are assigned to a and b respectively, and c remains at its default value of 8.",
+        "discription":"1 2 8 - The arguments 1 and 2 are passed to a and b, while c retains its default value of 8."
+    },
+
+    {
+        "id": 92,
+        "question":"What is the result of this code, and why?\ndef func(a, b, c=5):\n    print(a, b, c)\n   func(1, c=3, b=2)",
+                                                                                                        
+        "options":["1 3 2 - Because the arguments are assigned in the order they appear.",
+        "1 2 5 - Because the default value of c is used when it's not passed.",
+        "1 2 3 - Because the named arguments b and c override the default value of c.",
+        "SyntaxError - Because the positional argument is placed after keyword arguments."
+        ],
+        "answer":"1 2 3 - Because the named arguments b and c override the default value of c.",
+        "discription":"Because the named arguments b and c override the default value of c."
+    },
+
+    {
+        "id": 93,
+        "question":"What will be the output of the code, and why?\ndef func(a, *pargs):\n    print(a, pargs)\n  func(1, 2, 3)",
+                                                                                                        
+        "options":["1 (2, 3) - The first argument is a, and the remaining arguments are packed into pargs as a tuple.",
+        "1 [2, 3] - The first argument is a, and the remaining arguments are packed into pargs as a list.",
+        "1 2 3 - All arguments are printed separately.",
+        "1 {2, 3} - The first argument is a, and the remaining arguments are packed into pargs as a set."
+        ],
+        "answer":"1 (2, 3) - The first argument is a, and the remaining arguments are packed into pargs as a tuple.",
+        "discription":"The first argument (1) is assigned to a, while the rest of the arguments (2 and 3) are collected into pargs as a tuple. When printed, a is displayed as 1, and pargs is displayed as (2, 3)."
+    },
+
+    {
+        "id": 94,
+        "question":"What are some of a module's characteristics? (Name at least one.)",
+                                                                                                        
+        "options":["Encapsulation of code",
+        "Handling user input",
+        "Generating random numbers",
+        "Displaying graphical interfaces"
+        ],
+        "answer":"Encapsulation of code",
+        "discription":"Modules in programming often encapsulate code, meaning they group related functions and data into a single unit, making the code easier to manage and reuse."
+    },
+
+    {
+        "id": 95,
+        "question":"What is a lambda function in Python?",
+                                                                                                        
+        "options":["A function with a name and no parameters.",
+        "A function defined using the lambda keyword and can have any number of parameters but only one expression.",
+        "A function that can be used only inside classes.",
+        "A function that can only return a fixed value."
+        ],
+        "answer":"A function defined using the lambda keyword and can have any number of parameters but only one expression.",
+        "discription":"Lambda functions are anonymous functions created using the lambda keyword. They can have multiple parameters but only a single expression."
+    },
+
+    {
+        "id": 96,
+        "question":"How do you define a lambda function that adds two numbers?",
+                                                                                                        
+        "options":["lambda x, y: x + y",
+        "def add(x, y): return x + y",
+        "lambda x, y: return x + y",
+        "function add(x, y): return x + y"
+        ],
+        "answer":"lambda x, y: x + y",
+        "discription":"A lambda function that adds two numbers is defined with lambda x, y: x + y, where x and y are the parameters and x + y is the expression."
+    },
+
+    {
+        "id": 97,
+        "question":"What is a class in Python?",
+                                                                                                        
+        "options":["A blueprint for creating objects.",
+        "A function that returns an object.",
+        "A variable that holds data.",
+        "A method used to instantiate objects."
+        ],
+        "answer":"A blueprint for creating objects.",
+        "discription":"A class in Python serves as a blueprint for creating objects, defining their attributes and methods."
+    },
+
+    {
+        "id": 98,
+        "question":"How do you define a class in Python?",
+                                                                                                        
+        "options":["class ClassName:",
+        "define ClassName:",
+        "create ClassName:",
+        "class ClassName()"
+        ],
+        "answer":"class ClassName:",
+        "discription":"The syntax to define a class in Python starts with the class keyword followed by the class name and a colon."
+    },
+
+    {
+        "id": 99,
+        "question":"What is inheritance in Python?",
+                                                                                                        
+        "options":["A mechanism to create a new class based on an existing class.",
+        "A way to create multiple instances of a class.",
+        "A method for handling errors in classes.",
+        "A feature for deleting class attributes."
+        ],
+        "answer":"A mechanism to create a new class based on an existing class.",
+        "discription":"Inheritance allows a new class to inherit attributes and methods from an existing class, enabling code reuse and the creation of hierarchical class structures."
+    },
+
+    {
+        "id": 100,
+        "question":"What does the self keyword represent in a class method?",
+                                                                                                        
+        "options":["The class itself.",
+        "The instance of the class.",
+        "The parent class.",
+        "A static variable."
+        ],
+        "answer":"The instance of the class.",
+        "discription":"The self keyword in a class method represents the instance of the class on which the method is called, allowing access to instance attributes and other methods."
+    },
+
+    {
+        "id": 101,
+        "question":"How do you inherit from a base class in Python?",
+                                                                                                        
+        "options":["class DerivedClass(BaseClass):",
+        "class DerivedClass inherits BaseClass:",
+        "class DerivedClass extends BaseClass:",
+        "class DerivedClass(BaseClass) ->"
+        ],
+        "answer":"class DerivedClass(BaseClass):",
+        "discription":"Inheritance is specified by placing the base class in parentheses after the derived class name."
+    },
+
+    {
+        "id": 102,
+        "question":"How do you declare a variable in Python?",
+                                                                                                        
+        "options":["var x = 10",
+        "int x = 10",
+        "x = 10",
+        "declare x = 10"
+        ],
+        "answer":"x = 10",
+        "discription":" In Python, you simply assign a value to a variable using the = operator."
+    },
+
+    {
+        "id": 103,
+        "question":"What is a list in Python?",
+                                                                                                        
+        "options":["An immutable sequence of values.",
+        "A mutable sequence of values.",
+        "A type of set",
+        "A dictionary of values."
+        ],
+        "answer":"An immutable sequence of values.",
+        "discription":"Lists in Python are mutable sequences that can store multiple items of different types."
+    },
+
+    {
+        "id": 104,
+        "question":"Which of the following is an immutable data type in Python?",
+                                                                                                        
+        "options":["List",
+        "Dictionary",
+        "Tuple",
+        "Set"
+        ],
+        "answer":"Tuple",
+        "discription":"Tuples are immutable, meaning their contents cannot be changed after creation."
+    },
+
+    {
+        "id": 105,
+        "question":"How do you add an item to a list in Python?",
+                                                                                                        
+        "options":["list.append(item)",
+        "list.add(item)",
+        "list.insert(item)",
+        "list.push(item)"
+        ],
+        "answer":"list.append(item)",
+        "discription":"The append() method adds an item to the end of a list."
+    },
+
+    {
+        "id": 106,
+        "question":"How do you write a for loop in Python?",
+                                                                                                        
+        "options":["for item in iterable:",
+        "for (item; iterable; ++item)",
+        "for item in range(iterable):",
+        "foreach item in iterable:"
+        ],
+        "answer":"for item in iterable:",
+        "discription":"The for loop iterates over items of an iterable object."
+    },
+
+    {
+        "id": 107,
+        "question":"What is a default argument in a Python function?",
+                                                                                                        
+        "options":["An argument that is given a default value if not provided.",
+        "An argument that must be provided by the caller.",
+        "An argument that changes the function’s behavior.",
+        "An argument used to handle exceptions."
+        ],
+        "answer":"An argument that is given a default value if not provided.",
+        "discription":"Default arguments have default values that are used if no value is provided by the caller."
+    },
+
+    {
+        "id": 108,
+        "question":"What is the purpose of the __init__.py file in a package?",
+                                                                                                        
+        "options":["To initialize the package and make it a proper package.",
+        "To store data about the package.",
+        "To define global variables.",
+        "To manage exceptions."
+        ],
+        "answer":"To initialize the package and make it a proper package.",
+        "discription":"The __init__.py file indicates that a directory is a Python package and can initialize package-level variables."
+    },
+
+    {
+        "id": 109,
+        "question":"What will be the output of the following code?\na, b, c = (1, 2, 3)\nprint(a, b, c)",
+                                                                                                        
+        "options":["(1, 2, 3)",
+        "1 2 3",
+        "SyntaxError",
+        "[1, 2, 3]"
+        ],
+        "answer":"1 2 3",
+        "discription":"The code demonstrates basic tuple unpacking in Python. The variables a, b, and c are assigned the values 1, 2, and 3 respectively, resulting in the output 1 2 3."
+    },
+
+    {
+        "id": 110,
+        "question":"What will be the output of the following code?\na, b, c = [10, 20, 30]\nprint(b)",
+                                                                                                        
+        "options":["10",
+        "20",
+        "30",
+        "None"
+        ],
+        "answer":"20",
+        "discription":"The list [10, 20, 30] is unpacked into the variables a, b, and c, with b taking the value 20."
+    },
+
+    {
+        "id": 111,
+        "question":"What will be the output of the following code?\na, b, c = 'abc'\nprint(a, c)",
+                                                                                                        
+        "options":["a b",
+        "a c",
+        "a b c",
+        "SyntaxError"
+        ],
+        "answer":"a c",
+        "discription":"The string 'abc' is unpacked into a, b, and c. The output shows the first and last characters, a and c."
+    },
+
+    {
+        "id": 112,
+        "question":"What will be the output of the following code?\na, (b, c), d = 1, (2, [3, 4]), 5\nprint(c)",
+                                                                                                        
+        "options":["2",
+        "[3, 4]",
+        "4",
+        "3"
+        ],
+        "answer":"[3, 4]",
+        "discription":"The tuple (2, [3, 4]) is unpacked into b and c, with c being [3, 4]."
+    },
+
+    {
+        "id": 113,
+        "question":"What will be the output of the following code?\na, b = 1, 2\nc, d = a + b, a * b\nprint(c, d)",
+                                                                                                        
+        "options":["1 2",
+        "3 2",
+        "3 4",
+        "2 4"
+        ],
+        "answer":"3 4",
+        "discription":"The variables c and d are calculated as c = a + b and d = a * b, resulting in 3 and 4."
+    },
+
+    {
+        "id": 114,
+        "question":"What will be the output of the following code?\nx = 5\ny = 2.5\nprint(type(y))",
+                                                                                                        
+        "options":["<class 'int'>",
+        "<class 'float'>",
+        "<class 'str'>",
+        "<class 'complex'>"
+        ],
+        "answer":"<class 'float'>",
+        "discription":"The variable y is a floating-point number, so type(y) returns <class 'float'>."
+    },
+
+    {
+        "id": 115,
+        "question":"What will be the output of the following code?\ngreeting = 'Hello'\nname = 'World'\nprint(greeting + ' '' + name)",
+                                                                                                        
+        "options":["HelloWorld",
+        "Hello World",
+        "Hello",
+        "World"
+        ],
+        "answer":"Hello World",
+        "discription":"The + operator concatenates the strings, and " " adds a space between them, resulting in Hello World."
+    },
+
+    {
+        "id": 116,
+        "question":"What will be the output of the following code?\nnumbers = [10, 20, 30, 40, 50]\nprint(numbers[2])",
+                                                                                                        
+        "options":["10",
+        "20",
+        "30",
+        "40"
+        ],
+        "answer":"30",
+        "discription":"List indexing starts at 0, so numbers[2] accesses the third element, which is 30."
+    },
+
+    {
+        "id": 117,
+        "question":"What will be the output of the following code?\nfor i in range(3):\n    print(i)",
+                                                                                                        
+        "options":["0 1 2",
+        "1 2 3",
+        "0 1 2 3",
+        "1 2"
+        ],
+        "answer":"0 1 2",
+        "discription":"The range(3) function generates numbers from 0 to 2, so the loop prints 0, 1, and 2."
+    },
+
+    {
+        "id": 118,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(my_dict['b'])",
+                                                                                                        
+        "options":["1",
+        "2",
+        "3",
+        "None"
+        ],
+        "answer":"2",
+        "discription":"Accessing my_dict['b'] returns the value associated with the key 'b', which is 2."
+    },
+
+    {
+        "id": 119,
+        "question":"What will be the output of the following code?\ndef add(x, y):\n    return x + y\nprint(add(3, 4))",
+                                                                                                        
+        "options":["7",
+        "34",
+        "12",
+        "Error"
+        ],
+        "answer":"7",
+        "discription":"The add function takes two arguments, adds them, and returns the result, which is 7."
+    },
+
+    {
+        "id": 120,
+        "question":"What will be the output of the following code?\nfruits = ['apple', 'banana', 'cherry']\nprint(len(fruits))",
+                                                                                                        
+        "options":["2",
+        "3",
+        "4",
+        "5"
+        ],
+        "answer":"3",
+        "discription":"The len function returns the number of elements in the list, which is 3."
+    },
+
+    {
+        "id": 121,
+        "question":"What will be the output of the following code?\nprint(5 > 3)",
+                                                                                                        
+        "options":["True",
+        "False",
+        "None",
+        "Error"
+        ],
+        "answer":"True",
+        "discription":"The expression 5 > 3 evaluates to True because 5 is greater than 3."
+    },
+
+    {
+        "id": 122,
+        "question":"What will be the output of the following code?\ntext = 'Python'\nprint(text[1:4])",
+                                                                                                        
+        "options":["Pyt",
+        "yth",
+        "tho",
+        "ytho"
+        ],
+        "answer":"yth",
+        "discription":"The slice text[1:4] returns the substring from index 1 to 3, which is yth."
+    },
+
+    {
+        "id": 123,
+        "question":"What will be the output of the following code?\ni = 0\nwhile i < 3:\n    print(i)\n    i += 1",
+                                                                                                        
+        "options":["0 1 2",
+        "1 2 3",
+        "0 1 2 3",
+        "1 2"
+        ],
+        "answer":"0 1 2",
+        "discription":"The while loop continues as long as i is less than 3, printing 0, 1, and 2."
+    },
+
+    {
+        "id": 124,
+        "question":"What will be the output of the following code?\nnumbers = [1, 2, 3, 4, 5]\nprint(numbers[0])",
+                                                                                                        
+        "options":["1",
+        "2",
+        "5",
+        "4"
+        ],
+        "answer":"1",
+        "discription":"List indexing starts at 0, so numbers[0] accesses the first element, which is 1."
+    },
+
+    {
+        "id": 125,
+        "question":"What will be the output of the following code?\nprint('Hello' * 3)",
+                                                                                                        
+        "options":["HelloHelloHello",
+        "Hello Hello Hello",
+        "Hello3",
+        "Error"
+        ],
+        "answer":"HelloHelloHello",
+        "discription":"The * operator repeats the string 3 times, resulting in HelloHelloHello."
+    },
+
+    {
+        "id": 126,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(list(my_dict.keys()))",
+                                                                                                        
+        "options":["['1', '2', '3']",
+        "['a', 'b', 'c']",
+        "['a', '1', 'b']",
+        "['a', 'b', '3']"
+        ],
+        "answer":"['a', 'b', 'c']",
+        "discription":"The keys method returns a list of the dictionary's keys, which are 'a', 'b', and 'c'."
+    },
+
+    {
+        "id": 127,
+        "question":"What will be the output of the following code?\nx = 10\nif x > 5:\n    print('Greater')\nelse:\n    print('Smaller')",
+                                                                                                        
+        "options":["Greater",
+        "Smaller",
+        "Error",
+        "None"
+        ],
+        "answer":"Greater",
+        "discription":"Since x is greater than 5, the if condition is true, and Greater is printed."
+    },
+
+    {
+        "id": 128,
+        "question":"What will be the output of the following code?\ntup = (1, 2, 3)\nprint(tup[1])",
+                                                                                                        
+        "options":["1",
+        "2",
+        "3",
+        "Error"
+        ],
+        "answer":"2",
+        "discription":"Tuple indexing starts at 0, so tup[1] accesses the second element, which is 2."
+    },
+
+    {
+        "id": 129,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3]\nlst.append(4)\nprint(lst)",
+                                                                                                        
+        "options":["[1, 2, 3, 4]",
+        "[1, 2, 3]",
+        "[4, 1, 2, 3]",
+        "[1, 2, 3, [4]]"
+        ],
+        "answer":"[1, 2, 3, 4]",
+        "discription":"The append method adds 4 to the end of the list, resulting in [1, 2, 3, 4]."
+    },
+
+    {
+        "id": 130,
+        "question":"What will be the output of the following code?\ndef greet():\n    return 'Hello'\nprint(greet())",
+                                                                                                        
+        "options":["Hello",
+        "None",
+        "Error",
+        "greet"
+        ],
+        "answer":"Hello",
+        "discription":"The greet function returns the string 'Hello', which is then printed."
+    },
+
+    {
+        "id": 131,
+        "question":"What will be the output of the following code?\nprint(True and False)",
+                                                                                                        
+        "options":["True",
+        "False",
+        "None",
+        "Error"
+        ],
+        "answer":"False",
+        "discription":"The and operator returns True only if both operands are True; otherwise, it returns False."
+    },
+
+    {
+        "id": 132,
+        "question":"What will be the output of the following code?\ntext = 'HELLO'\nprint(text.lower())",
+                                                                                                        
+        "options":["hello",
+        "HELLO",
+        "Hello",
+        "None"
+        ],
+        "answer":"hello",
+        "discription":"The lower method converts all characters in the string to lowercase."
+    },
+
+    {
+        "id": 133,
+        "question":"What will be the output of the following code?\nnumbers = [10, 20, 30, 40, 50]\nprint(numbers[1:4])",
+                                                                                                        
+        "options":["[10, 20, 30",
+        "[20, 30, 40]",
+        "[30, 40, 50]",
+        "[20, 30]"
+        ],
+        "answer":"[20, 30, 40]",
+        "discription":"The slice numbers[1:4] returns the elements from index 1 to 3, which are [20, 30, 40]."
+    },
+
+    {
+        "id": 134,
+        "question":"What will be the output of the following code?\nlst = [3, 1, 4, 2]\nlst.sort()\nprint(lst)",
+                                                                                                        
+        "options":["[1, 2, 3, 4]",
+        "[3, 1, 4, 2]",
+        "[4, 3, 2, 1]",
+        "[2, 4, 1, 3]"
+        ],
+        "answer":"[1, 2, 3, 4]",
+        "discription":"The sort method sorts the list in ascending order."
+    },
+
+    {
+        "id": 135,
+        "question":"What will be the output of the following code?\nresult = 10 % 3\nprint(result)",
+                                                                                                        
+        "options":["1",
+        "2",
+        "3",
+        "4"
+        ],
+        "answer":"1",
+        "discription":"The modulus operator % returns the remainder of the division, so 10 % 3 results in 1."
+    },
+
+    {
+        "id": 136,
+        "question":"What will be the output of the following code?\ntext = 'Python'\nprint(text[-1])",
+                                                                                                        
+        "options":["'p'",
+        "'n'",
+        "'o'",
+        "'t'"
+        ],
+        "answer":"'n'",
+        "discription":"Negative indexing starts from the end, so text[-1] accesses the last character, which is n."
+    },
+
+    {
+        "id": 137,
+        "question":"What will be the output of the following code?\nlst = [1, 2] * 3\nprint(lst)",
+                                                                                                        
+        "options":["[1, 2, 1, 2, 1, 2]",
+        "[1, 2, 3, 1, 2, 3]",
+        "[1, 2, 3, 4, 5, 6]",
+        "[3, 1, 2, 3, 1, 2]"
+        ],
+        "answer":"[1, 2, 1, 2, 1, 2]",
+        "discription":"The * operator repeats the list 3 times, resulting in [1, 2, 1, 2, 1, 2]."
+    },
+
+    {
+        "id": 138,
+        "question":"What will be the output of the following code?\nresult = '3' + '4'\nprint(result)",
+                                                                                                        
+        "options":["'7'",
+        "'34'",
+        "'3 4'",
+        "Error"
+        ],
+        "answer":"'34'",
+        "discription":"The + operator concatenates the strings '3' and '4', resulting in '34'."
+    },
+
+    {
+        "id": 139,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(list(my_dict.values()))",
+                                                                                                        
+        "options":["[1, 2, 3]",
+        "['a', 'b', 'c']",
+        "['1', '2', '3']",
+        "['a', '1', 'b']"
+        ],
+        "answer":"[1, 2, 3]",
+        "discription":"The values method returns a list of the dictionary's values, which are [1, 2, 3]."
+    },
+
+    {
+        "id": 140,
+        "question":"What will be the output of the following code?\ntext = 'Hello, World!'\nprint(text.replace('World', 'Python'))",
+                                                                                                        
+        "options":["Hello, Python!",
+        "Hello, World!",
+        "Hello,",
+        "None"
+        ],
+        "answer":"Hello, Python!",
+        "discription":"The replace method substitutes 'World' with 'Python', resulting in Hello, Python!."
+    },
+
+    {
+        "id": 141,
+        "question":"What will be the output of the following code?\nlst = [1, 2]\nlst.extend([3, 4])\nprint(lst)",
+                                                                                                        
+        "options":["[1, 2, 3, 4]",
+        "[1, 2, [3, 4]]",
+        "[3, 4, 1, 2]",
+        "[1, 2]"
+        ],
+        "answer":"[1, 2, 3, 4]",
+        "discription":"The extend method adds all elements from the list [3, 4] to lst, resulting in [1, 2, 3, 4]."
+    },
+
+    {
+        "id": 142,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3, 4]\nlst.pop()\nprint(lst)",
+                                                                                                        
+        "options":["[1, 2, 3]",
+        "[1, 2, 3, 4]",
+        "[4, 3, 2, 1]",
+        "[]"
+        ],
+        "answer":"[1, 2, 3]",
+        "discription":"The pop method removes the last element from the list, so lst becomes [1, 2, 3]."
+    },
+
+    {
+        "id": 143,
+        "question":"What will be the output of the following code?\ntext = 'Hello, Python!'\nprint(text.find('Python'))",
+                                                                                                        
+        "options":["7",
+        "6",
+        "5",
+        "'Error'"
+        ],
+        "answer":"7",
+        "discription":"The find method returns the index of the first occurrence of 'Python', which starts at index 7."
+    },
+
+    {
+        "id": 144,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(my_dict['c'])",
+                                                                                                        
+        "options":["3",
+        "2",
+        "1",
+        "Error"
+        ],
+        "answer":"3",
+        "discription":"Accessing my_dict['c'] returns the value associated with the key 'c', which is 3."
+    },
+
+    {
+        "id": 145,
+        "question":"What will be the output of the following code?\ntext = 'Hello, Python!'\nprint(text.startswith('Hello'))",
+                                                                                                        
+        "options":["True",
+        "False",
+        "None",
+        "Error"
+        ],
+        "answer":"True",
+        "discription":"The startswith method returns True if the string starts with the specified prefix 'Hello'."
+    },
+
+    {
+        "id": 146,
+        "question":"What will be the output of the following code?\nfor i in range(1, 4):\n    print(i)",
+                                                                                                        
+        "options":["1 2 3",
+        "0 1 2",
+        "1 2 3 4",
+        "Error"
+        ],
+        "answer":"1 2 3",
+        "discription":"The range(1, 4) generates numbers from 1 to 3, so the loop prints 1, 2, and 3."
+    },
+
+    {
+        "id": 147,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3]\nlst.reverse()\nprint(lst)",
+                                                                                                        
+        "options":["[3, 2, 1]",
+        "[1, 2, 3]",
+        "[2, 1, 3]",
+        "[1, 3, 2]"
+        ],
+        "answer":"[3, 2, 1]",
+        "discription":"The reverse method reverses the elements of the list, resulting in [3, 2, 1]."
+    },
+
+    {
+        "id": 148,
+        "question":"What will be the output of the following code?\nwords = ['Hello', 'World']\nprint(' '.join(words))",
+                                                                                                        
+        "options":["Hello World",
+        "HelloWorld",
+        "['Hello', 'World']",
+        "Error"
+        ],
+        "answer":"Hello World",
+        "discription":"The join method concatenates the elements of the list words with a space, resulting in 'Hello World'."
+    },
+
+    {
+        "id": 149,
+        "question":"What will be the output of the following code?\ni = 1\nwhile i < 4:\n    print(i)\n    i += 1",
+                                                                                                        
+        "options":["1 2 3",
+        "1 2",
+        "1 2 3 4",
+        "Error"
+        ],
+        "answer":"1 2 3",
+        "discription":"The while loop continues as long as i is less than 4, printing 1, 2, and 3."
+    },
+
+    {
+        "id": 150,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2}\nmy_dict['b'] = 3\nprint(my_dict)",
+                                                                                                        
+        "options":["{'a': 1, 'b': 3}",
+        "{'a': 1, 'b': 2}",
+        "{'a': 1}",
+        "Error"
+        ],
+        "answer":"{'a': 1, 'b': 3}",
+        "discription":"The value associated with the key 'b' is updated to 3, resulting in {'a': 1, 'b': 3}."
+    },
+
+    {
+        "id": 151,
+        "question":"What will be the output of the following code?\ntext = '  Hello, World!  '\nprint(text.strip())",
+                                                                                                        
+        "options":["Hello, World!",
+        "Hello, World!",
+        "Hello,World!",
+        "Error"
+        ],
+        "answer":"Hello, World!",
+        "discription":"The strip method removes leading and trailing whitespace from the string."
+    },
+
+    {
+        "id": 152,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2}\nprint(my_dict.get('c', 0))",
+                                                                                                        
+        "options":["0",
+        "1",
+        "2",
+        "None"
+        ],
+        "answer":"0",
+        "discription":"The get method returns the value for the key 'c' if it exists; otherwise, it returns the default value 0."
+    },
+
+    {
+        "id": 153,
+        "question":"What will be the output of the following code?\nlst = [x for x in range(3)]\nprint(lst)",
+                                                                                                        
+        "options":["[0, 1, 2]",
+        "[1, 2, 3]",
+        "[1, 2]",
+        "[]"
+        ],
+        "answer":"[0, 1, 2]",
+        "discription":"The list comprehension creates a list of numbers from 0 to 2."
+    },
+
+    {
+        "id": 154,
+        "question":"What will be the output of the following code?\nlst = [1, 3, 4]\nlst.insert(1, 2)\nprint(lst)",
+                                                                                                        
+        "options":["[1, 2, 3, 4]",
+        "[1, 3, 4, 2]",
+        "[1, 3, 2, 4]",
+        "[2, 1, 3, 4]"
+        ],
+        "answer":"[1, 2, 3, 4]",
+        "discription":"The insert method inserts 2 at index 1, resulting in [1, 2, 3, 4]."
+    },
+
+    {
+        "id": 155,
+        "question":"What will be the output of the following code?\nfor i in range(2):\n    for j in range(2):\n        print(i, j)",
+                                                                                                        
+        "options":["0 0, 0 1, 1 0, 1 1",
+        "0 1, 1 0, 1 1",
+        "0 0, 1 1",
+        "0 1, 1 2"
+        ],
+        "answer":"0 0, 0 1, 1 0, 1 1",
+        "discription":"The nested loops iterate through all combinations of i and j, resulting in 0 0, 0 1, 1 0, 1 1."
+    },
+
+    {
+        "id": 156,
+        "question":"What will be the output of the following code?\nset1 = {1, 2, 3}\nset2 = {2, 3, 4}\nprint(set1 & set2)",
+                                                                                                        
+        "options":["{2, 3}",
+        "{1, 4}",
+        "{1, 2, 3, 4}",
+        "{}"
+        ],
+        "answer":"{2, 3}",
+        "discription":"The & operator returns the intersection of set1 and set2, which contains elements common to both sets."
+    },
+
+    {
+        "id": 157,
+        "question":"What will be the output of the following code?\ntext = 'Hello,World'\nprint(text.split(','))",
+                                                                                                        
+        "options":["['Hello', 'World']",
+        "['Hello World']",
+        "['Hello', 'World']",
+        "['Hello,World']"
+        ],
+        "answer":"['Hello', 'World']",
+        "discription":"The split method divides the string at each comma, returning a list of substrings."
+    },
+
+    {
+        "id": 158,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3]\nlst.clear()\nprint(lst)",
+                                                                                                        
+        "options":["[]",
+        "[1, 2, 3]",
+        "[None]",
+        "Error"
+        ],
+        "answer":"[]",
+        "discription":"The clear method removes all elements from the list, resulting in an empty list []."
+    },
+
+    {
+        "id": 159,
+        "question":"What will be the output of the following code?\nlst1 = [1, 2, 3]\nlst2 = lst1.copy()\nlst2.append(4)\nprint(lst1)",
+                                                                                                        
+        "options":["[1, 2, 3]",
+        "[1, 2, 3, 4]",
+        "[4]",
+        "Error"
+        ],
+        "answer":"[1, 2, 3]",
+        "discription":"The copy method creates a shallow copy of the list, so changes to lst2 do not affect lst1."
+    },
+
+    {
+        "id": 160,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3, 4]\nprint(lst.index(3))",
+                                                                                                        
+        "options":["2",
+        "3",
+        "1",
+        "0"
+        ],
+        "answer":"2",
+        "discription":"The index method returns the index of the first occurrence of 3, which is 2."
+    },
+
+    {
+        "id": 161,
+        "question":"What will be the output of the following code?\ndef add(x, y):\n    return x + y\nprint(add(2, 3))",
+                                                                                                        
+        "options":["5",
+        "6",
+        "3",
+        "Error"
+        ],
+        "answer":"5",
+        "discription":"The add function takes two arguments x and y and returns their sum, which is 5."
+    },
+
+    {
+        "id": 162,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3, 4]\nlst.remove(3)\nprint(lst)",
+                                                                                                        
+        "options":["[1, 2, 4]",
+        "[1, 2, 3]",
+        "[1, 2, 3, 4]",
+        "Error"
+        ],
+        "answer":"[1, 2, 4]",
+        "discription":"The remove method removes the first occurrence of 3 from the list, resulting in [1, 2, 4]."
+    },
+
+    {
+        "id": 163,
+        "question":"What will be the output of the following code?\ntext = 'python'\nprint(text.capitalize())",
+                                                                                                        
+        "options":["Python",
+        "python",
+        "PYTHON",
+        "None"
+        ],
+        "answer":"Python",
+        "discription":"The capitalize method converts the first character to uppercase and the rest to lowercase, resulting in 'Python'."
+    },
+
+    {
+        "id": 164,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2}\nprint(my_dict.pop('b'))",
+                                                                                                        
+        "options":["2",
+        "1",
+        "None",
+        "Error"
+        ],
+        "answer":"2",
+        "discription":"The pop method removes the key 'b' from the dictionary and returns its value, which is 2."
+    },
+
+    {
+        "id": 165,
+        "question":"What will be the output of the following code?\nset1 = {1, 2, 3}\nset2 = {2, 3, 4}\nprint(set1 - set2)",
+                                                                                                        
+        "options":["{1}",
+        "{2, 3}",
+        "{4}",
+        "{}"
+        ],
+        "answer":"{1}",
+        "discription":"The - operator returns the difference between set1 and set2, which is {1}."
+    },
+
+    {
+        "id": 166,
+        "question":"What will be the output of the following code?\ndef greet(name='World'):\n    return 'Hello, ' + name\nprint(greet())",
+                                                                                                        
+        "options":["Hello, World",
+        "Hello,",
+        "Hello, name",
+        "Error"
+        ],
+        "answer":"Hello, World",
+        "discription":"The greet function uses the default argument 'World' when no argument is passed."
+    },
+
+    {
+        "id": 167,
+        "question":"What will be the output of the following code?\ntext = 'Hello, World!'\nprint(text.count('l'))",
+                                                                                                        
+        "options":["3",
+        "2",
+        "1",
+        "4"
+        ],
+        "answer":"3",
+        "discription":"The count method returns the number of occurrences of 'l' in the string, which is 3."
+    },
+
+    {
+        "id": 168,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3, 4]\nprint(3 in lst)",
+                                                                                                        
+        "options":["True",
+        "False",
+        "None",
+        "Error"
+        ],
+        "answer":"True",
+        "discription":"The in operator checks if 3 is in the list, and it returns True."
+    },
+
+    {
+        "id": 169,
+        "question":"What will be the output of the following code?\ntext = 'Hello, {}!'\nprint(text.format('World'))",
+                                                                                                        
+        "options":["Hello, World!",
+        "Hello, {}!",
+        "Hello, World",
+        "Error"
+        ],
+        "answer":"Hello, World!",
+        "discription":"The format method replaces {} with the argument 'World', resulting in 'Hello, World!'."
+    },
+
+    {
+        "id": 170,
+        "question":"Which of these is a correct variable name in Python?",
+                                                                                                        
+        "options":["2var",
+        "var_name",
+        "var-name",
+        "@var"
+        ],
+        "answer":"var_name",
+        "discription":"Variable names can include letters, numbers, and underscores."
+    },
+
+    {
+        "id": 171,
+        "question":"How do you start a comment in Python?",
+                                                                                                        
+        "options":["/* comment */",
+        "// comment",
+        "# comment",
+        "-- comment"
+        ],
+        "answer":"# comment",
+        "discription":"Comments in Python start with #."
+    },
+
+    {
+        "id": 172,
+        "question":"Which method is used to add an item to the end of a list?",
+                                                                                                        
+        "options":["append()",
+        "add()",
+        "insert()",
+        "extend()"
+        ],
+        "answer":"append()",
+        "discription":"append() adds an item to the end of the list."
+    },
+
+    {
+        "id": 173,
+        "question":"What is the correct syntax to create a function in Python?",
+                                                                                                        
+        "options":["def func[]:",
+        "function func():",
+        "def func():",
+        "create func():"
+        ],
+        "answer":"def func():",
+        "discription":"Functions are defined using def."
+    },
+
+    {
+        "id": 174,
+        "question":"What does == operator do in Python?",
+                                                                                                        
+        "options":["Assigns a value",
+        "Compares two values",
+        "Adds two values",
+        "Multiplies two values"
+        ],
+        "answer":"Compares two values",
+        "discription":"== checks if two values are equal."
+    },
+
+    {
+        "id": 175,
+        "question":"Which of the following is a tuple?",
+                                                                                                        
+        "options":["[1, 2, 3]",
+        "{1, 2, 3}",
+        "(1, 2, 3)",
+        "<1, 2, 3>"
+        ],
+        "answer":"(1, 2, 3)",
+        "discription":"Tuples are created using parentheses `()`."
+    },
+
+    {
+        "id": 176,
+        "question":"How do you check the data type of a variable in Python?",
+                                                                                                        
+        "options":["type(var)",
+        "dataType(var)",
+        "typeof(var)",
+        "checkType(var)"
+        ],
+        "answer":"type(var)",
+        "discription":"`type()` returns the data type of the variable."
+    },
+
+    {
+        "id": 177,
+        "question":"Which keyword is used to create a loop in Python?",
+                                                                                                        
+        "options":["repeat",
+        "loop",
+        "while",
+        "for"
+        ],
+        "answer":"for",
+        "discription":"`for` loops are used to iterate over sequences."
+    },
+
+    {
+        "id": 178,
+        "question":"What is the correct way to write an if statement in Python?",
+                                                                                                        
+        "options":["if x > 5:",
+        "if (x > 5):",
+        "if x > 5 then:",
+        "if x > 5;"
+        ],
+        "answer":"if x > 5:",
+        "discription":"`if` statements are followed by a colon and the condition."
+    },
+
+    {
+        "id": 179,
+        "question":"How do you handle exceptions in Python?",
+                                                                                                        
+        "options":["try/except",
+        "try/catch",
+        "handle/error",
+        "do/except"
+        ],
+        "answer":"try/except",
+        "discription":"Exceptions are handled using `try` and `except`."
+    },
+
+    {
+        "id": 180,
+        "question":"Which of these is a dictionary in Python?",
+                                                                                                        
+        "options":["{1: 'a', 2: 'b'}",
+        "{'a', 'b', 'c'}",
+        "['a', 'b', 'c']",
+        "(1, 2, 3)"
+        ],
+        "answer":"{1: 'a', 2: 'b'}",
+        "discription":"Dictionaries are key-value pairs inside curly braces `{}`."
+    },
+
+    {
+        "id": 181,
+        "question":"What is the output of print(type([]))?",
+                                                                                                        
+        "options":["<class 'tuple'>",
+        "<class 'list'>",
+        "<class 'dict'>",
+        "<class 'set'>"
+        ],
+        "answer":"<class 'list'>",
+        "discription":"An empty list is of type `list`."
+    },
+
+    {
+        "id": 182,
+        "question":"Which method is used to remove whitespace from the start and end of a string?",
+                                                                                                        
+        "options":["strip()",
+        "trim()",
+        "cut()",
+        "remove()"
+        ],
+        "answer":"strip()",
+        "discription":"`strip()` removes whitespace from both ends of a string."
+    },
+
+    {
+        "id": 183,
+        "question":"What is the output of print(bool(0))?",
+                                                                                                        
+        "options":["True",
+        "False",
+        "0",
+        "None"
+        ],
+        "answer":"False",
+        "discription":"0` is considered `False` in Python."
+    },
+
+    {
+        "id": 184,
+        "question":"Which operator is used to check if two values are not equal?",
+                                                                                                        
+        "options":["<>",
+        "!==",
+        "!=",
+        "not"
+        ],
+        "answer":"!=",
+        "discription":"`!=` checks if two values are not equal."
+    },
+
+    {
+        "id": 185,
+        "question":"How do you create a set in Python?",
+                                                                                                        
+        "options":["set = []",
+        "set = {}",
+        "set = set()",
+        "set = ()"
+        ],
+        "answer":"set = set()",
+        "discription":"Sets are created using `set()`."
+    },
+
+    {
+        "id": 186,
+        "question":"What is the output of print('hello'.upper())?",
+                                                                                                        
+        "options":["Hello",
+        "HELLO",
+        "hello",
+        "hElLo"
+        ],
+        "answer":"HELLO",
+        "discription":"The `upper()` method converts a string to uppercase."
+    },
+
+    {
+        "id": 187,
+        "question":"Which of the following is used to install external libraries in Python?",
+                                                                                                        
+        "options":["install",
+        "pip",
+        "get",
+        "download"
+        ],
+        "answer":"pip",
+        "discription":"`pip` is the package manager for Python."
+    },
+
+    {
+        "id": 188,
+        "question":"What is the output of print(2 ** 3)?",
+                                                                                                        
+        "options":["6",
+        "8",
+        "9",
+        "5"
+        ],
+        "answer":"8",
+        "discription":"`**` is the exponentiation operator."
+    },
+
+    {
+        "id": 189,
+        "question":"Which method can be used to convert a string to a list?",
+                                                                                                        
+        "options":["split()",
+        "list()",
+        "convert()",
+        "join()"
+        ],
+        "answer":"split()",
+        "discription":"`split()` splits a string into a list."
+    },
+
+    {
+        "id": 190,
+        "question":"How do you create an infinite loop in Python?",
+                                                                                                        
+        "options":["while True:",
+        "while 1:",
+        "while False:",
+        "for True:"
+        ],
+        "answer":"while True:",
+        "discription":"while True:` creates an infinite loop."
+    },
+
+    {
+        "id": 191,
+        "question":"Which of the following is a valid way to open a file for reading?",
+                                                                                                        
+        "options":["open('file.txt', 'r')",
+        "open('file.txt')",
+        "open('file.txt', 'w')",
+        "open('file.txt', 'a')"
+        ],
+        "answer":"open('file.txt', 'r')",
+        "discription":"'r' mode opens a file for reading."
+    },
+
+    {
+        "id": 192,
+        "question":"Which function is used to read all lines of a file into a list?",
+                                                                                                        
+        "options":["readlines()",
+        "readline()",
+        "read()",
+        "getlines()"
+        ],
+        "answer":"readlines()",
+        "discription":"`readlines()` reads all lines of a file into a list."
+    },
+
+    {
+        "id": 193,
+        "question":"What is the output of print(3 + 2 * 2)?",
+                                                                                                        
+        "options":["10",
+        "7",
+        "8",
+        "5"
+        ],
+        "answer":"7",
+        "discription":"Multiplication is performed before addition."
+    },
+
+    {
+        "id": 194,
+        "question":"How do you create a new line in a string?",
+                                                                                                        
+        "options":["\n",
+        "\t",
+        "\r",
+        "\b"
+        ],
+        "answer":"\n",
+        "discription":"`\n` is the newline character."
+    },
+
+    {
+        "id": 195,
+        "question":"Which of the following methods is used to remove an item from a list?",
+                                                                                                        
+        "options":["remove()",
+        "delete()",
+        "pop()",
+        "discard()"
+        ],
+        "answer":"remove()",
+        "discription":"`remove()` deletes a specific item from a list."
+    },
+
+    {
+        "id": 196,
+        "question":"What will print(int('5') + 3) output?",
+                                                                                                        
+        "options":["53",
+        "8",
+        "5+3",
+        "TypeError"
+        ],
+        "answer":"8",
+        "discription":"The string `'5'` is converted to an integer before addition."
+    },
+
+    {
+        "id": 197,
+        "question":"Which keyword is used to create an anonymous function in Python?",
+                                                                                                        
+        "options":["def",
+        "lambda",
+        "function",
+        "anon"
+        ],
+        "answer":"lambda",
+        "discription":"`lambda` is used to create anonymous functions."
+    },
+
+    {
+        "id": 198,
+        "question":"What will be the output of print(bool('False'))?",
+                                                                                                        
+        "options":["False",
+        "True",
+        "Error",
+        "None"
+        ],
+        "answer":"True",
+        "discription":"Non-empty strings are considered True in Python."
+    },
+
+    {
+        "id": 199,
+        "question":"Which function is used to convert a number to a string in Python?",
+                                                                                                        
+        "options":["str()",
+        "int()",
+        "float()",
+        "string()"
+        ],
+        "answer":"str()",
+        "discription":"str() converts a number to a string."
+    },
+
+    {
+        "id": 200,
+        "question":"What is the output of print(10 // 3)?",
+                                                                                                        
+        "options":["3.33",
+        "3",
+        "4",
+        "0"
+        ],
+        "answer":"3",
+        "discription":"// is the floor division operator, which returns the quotient without the remainder."
+    }
+
+
+]

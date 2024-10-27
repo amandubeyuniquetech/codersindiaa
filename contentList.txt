@@ -1,0 +1,38 @@
+################Python########################
+Python Intro
+Installation
+what is PEP8?
+What is PIP?
+Python Variable
+Python Keywords
+Python Datatypes
+Type Casting
+Python String
+Python Comments
+Python Operators
+Python Array
+Python List
+List Comprehension
+Python Tuple
+Python Set
+Python Dictionary
+If Else Statements
+Match
+For Loop 
+While Loop
+Function
+Lambda function
+Map filter Reduce
+Python OOPs
+
+
+
+
+
+
+
+
+
+
+
+

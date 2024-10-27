@@ -1,0 +1,265 @@
+[
+
+    
+    {
+        "id": 1,
+        "question":"What will be the output of the following code?\ndef func():\n    return 1, [2, 3], (4, 5)\na, (b, c), d = func()\nprint(b, d)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["2 4",
+        "2 5",
+        "3 4",
+        "2 (4, 5)"
+        ],
+        "answer":"2 5",
+        "discription":"The function func returns a tuple, which is unpacked into a, b, c, and d, with b being 2 and d being 5."
+    },
+
+    {
+        "id": 2,
+        "question":"What will be the output of the following code?\ndef decorator_func(func):\n    def wrapper():\n        print('Before function call')\n        func()\n        print('After function call')\n    return wrapper\n@decorator_func\ndef say_hello():\n    print('Hello!')\nsay_hello()",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Hello!",
+        "Before function call",
+        "Before function call Hello! After function call",
+        "SyntaxError"
+        ],
+        "answer":"Before function call Hello! After function call",
+        "discription":"The say_hello function is wrapped by decorator_func, which adds functionality before and after the function call."
+    },
+
+    {
+        "id": 3,
+        "question":"What will be the output of the following code?\ndef gen():\n    yield 1\n    yield 2\n    yield 3\nresult = list(gen())\nprint(result)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 2, 3]",
+        "(1, 2, 3)",
+        "1 2 3",
+        "None"
+        ],
+        "answer":"[1, 2, 3]",
+        "discription":"The gen function is a generator that yields values. When converted to a list, it produces [1, 2, 3]."
+    },
+
+    {
+        "id": 4,
+        "question":"What will be the output of the following code?\nresult = [x**2 for x in range(5) if x % 2 == 0]\nprint(result)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 4, 9, 16]",
+        "[0, 4, 16]",
+        "[1, 9]",
+        "[0, 1, 4]"
+        ],
+        "answer":"[0, 4, 16]",
+        "discription":"The list comprehension squares only even numbers in the range [0, 1, 2, 3, 4]."
+    },
+
+    {
+        "id": 5,
+        "question":"What will be the output of the following code?\nadd = lambda x, y: x + y\nprint(add(2, 3))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["2",
+        "5",
+        "23",
+        "None"
+        ],
+        "answer":"5",
+        "discription":"The lambda function add takes two arguments and returns their sum, 2 + 3 = 5."
+    },
+
+    {
+        "id": 6,
+        "question":"What will be the output of the following code?\nwith open('file.txt', 'w') as f:\n    f.write('Hello, World!')\nwith open('file.txt', 'r') as f:\n    print(f.read())",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Hello, World!",
+        "``",
+        "None",
+        "SyntaxError"
+        ],
+        "answer":"Hello, World!",
+        "discription":"The with statement is used as a context manager to handle files, ensuring they are properly opened and closed."
+    },
+
+    {
+        "id": 7,
+        "question":"What will be the output of the following code?\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\nprint(factorial(3)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["3",
+        "6",
+        "9",
+        "None"
+        ],
+        "answer":"6",
+        "discription":"The factorial function uses recursion to calculate 3!, which is 3 * 2 * 1 = 6."
+    },
+
+    {
+        "id": 8,
+        "question":"What will be the output of the following code?\nclass Parent:\n    def __init__(self):\n        self.value = 'Parent'\nclass Child(Parent):\n    def __init__(self):\n        super().__init__()\n        self.value = 'Child'\nobj = Child()\nprint(obj.value)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Parent",
+        "Child",
+        "None",
+        "Error"
+        ],
+        "answer":"Child",
+        "discription":"The Child class overrides the value attribute from Parent during initialization."
+    },
+
+    {
+        "id": 9,
+        "question":"What will be the output of the following code?\nclass A:\n    def greet(self):\n        return 'Hello from A'\nclass B:\n    def greet(self):\n        return 'Hello from B'\nclass C(A, B):\n    pass",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Hello from A",
+        "Hello from B",
+        "Error",
+        "None"
+        ],
+        "answer":"Hello from A",
+        "discription":"The class C inherits from both A and B, but the method resolution order (MRO) leads to A.greet being called first."
+    },
+
+    {
+        "id": 10,
+        "question":"What will be the output of the following code?\nclass MyClass:\n    def __init__(self, value):\n        self._value = value\n    @property\n    def value(self):\n        return self._value + 1\nobj = MyClass(10)\nprint(obj.value)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["10",
+        "11",
+        "12",
+        "None"
+        ],
+        "answer":"11",
+        "discription":"The @property decorator allows value to be accessed like an attribute, but the getter method adds 1 to the internal _value."
+    },
+
+    {
+        "id": 11,
+        "question":"What will be the output of the following code?\ntry:\n    x = 1 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')\nelse:\n    print('Division successful')\nfinally:\n    print('End of computation')",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Cannot divide by zero",
+        "Division successful",
+        "Cannot divide by zero End of computation",
+        "End of computation"
+        ],
+        "answer":"Cannot divide by zero End of computation",
+        "discription":"The except block catches the ZeroDivisionError, and the finally block always executes."
+    },
+
+    {
+        "id": 12,
+        "question":"What will be the output of the following code?\nclass MyIterator:\n    def __init__(self):\n        self.data = [1, 2, 3]\n        self.index = 0\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.index >= len(self.data):\n            raise StopIteration\n        result = self.data[self.index]\n        self.index += 1\n        return result\niterator = MyIterator()\nprint(next(iterator), next(iterator))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["1 2",
+        "1 3",
+        "2 3",
+        "StopIteration"
+        ],
+        "answer":"1 2",
+        "discription":"The custom iterator yields 1 and 2 when next is called twice."
+    },
+
+    {
+        "id": 13,
+        "question":"What will be the output of the following code?\nimport itertools\nresult = list(itertools.product([1, 2], ['a', 'b']))\nprint(result)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[(1, 'a'), (1, 'b'), (2, 'a'), (2, 'b')]",
+        "[1, 2, 'a', 'b']",
+        "[(1, 2), ('a', 'b')]",
+        "[('a', 1), ('b', 2)]"
+        ],
+        "answer":"[(1, 'a'), (1, 'b'), (2, 'a'), (2, 'b')]",
+        "discription":"The itertools.product function returns the Cartesian product of the input iterables."
+    },
+
+    {
+        "id": 14,
+        "question":"What will be the output of the following code?\nfrom enum import Enum\nclass Color(Enum):\n    RED = 1\n    GREEN = 2\n    BLUE = 3\nprint(Color.RED.name)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["RED",
+        "1",
+        "Color.RED",
+        "SyntaxError"
+        ],
+        "answer":"RED",
+        "discription":"The Enum class allows creating enumerations, with Color.RED.name returning 'RED'."
+    },
+
+    {
+        "id": 15,
+        "question":"What will be the output of the following code?\nmatrix = [[1, 2], [3, 4]]\ntranspose = [[row[i] for row in matrix] for i in range(2)]\nprint(transpose)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[[1, 2], [3, 4]]",
+        "[[1, 3], [2, 4]]",
+        "[[1, 4], [2, 3]]",
+        "[[3, 4], [1, 2]]"
+        ],
+        "answer":"[[1, 3], [2, 4]]",
+        "discription":"The nested list comprehension transposes the matrix."
+    },
+
+    {
+        "id": 16,
+        "question":"What will be the output of the following code?\ndef add_five(x):\n    return x + 5\nresult = list(map(add_five, [1, 2, 3]))\nprint(result)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 2, 3]",
+        "[5, 10, 15]",
+        "[6, 7, 8]",
+        "[None, None, None]"
+        ],
+        "answer":"[6, 7, 8]",
+        "discription":"The map function applies add_five to each element in the list, resulting in [6, 7, 8]."
+    },
+
+    {
+        "id": 17,
+        "question":"What will be the output of the following code?\nimport re\nresult = re.findall(r/'d+/', 'abc123def456')\nprint(result)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["['abc', 'def']",
+        "['123', '456']",
+        "['123456']",
+        "['123', 'def456']"
+        ],
+        "answer":"['123', '456']",
+        "discription":"The regular expression ''+ matches one or more digits, returning the sequences 123 and 456."
+    },
+
+    {
+        "id": 18,
+        "question":"What will be the output of the following code?\ndef my_decorator(func):\n    def wrapper(*args, **kwargs):\n        return func(*args, **kwargs) * 2\n    return wrapper\n@my_decorator\ndef multiply(x, y):\n    return x * y\nresult = multiply(3, 5)\nprint(result)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["15",
+        "30",
+        "9",
+        "25"
+        ],
+        "answer":"30",
+        "discription":"The decorator my_decorator wraps the multiply function, doubling its return value. The multiply(3, 5) call normally returns 15, but the decorator causes the result to be 30."
+    },
+
+    {
+        "id": 19,
+        "question":"What will be the output of the following code?\nmatrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nflattened = [x for row in matrix for x in row if x % 2 == 0]\nprint(flattened)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[2, 4, 6, 8]",
+        "[2, 6, 4, 8]",
+        "[4, 8]",
+        "[2, 4, 8]"
+        ],
+        "answer":"[2, 4, 6, 8]",
+        "discription":"The list comprehension flattens the matrix and filters out odd numbers, resulting in [2, 4, 6, 8]."
+    },
+
+    {
+        "id": 20,
+        "question":"What will be the output of the following code?\nclass CustomError(Exception):\n    pass\ntry:\n    raise CustomError('Something went wrong')\nexcept CustomError as e:\n    print('Caught:', e)\nfinally:\n    print('Finally block executed')",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Caught: Something went wrong",
+        "Caught: Something went wrong Finally block executed",
+        "Finally block executed",
+        "SyntaxError"
+        ],
+        "answer":"Caught: Something went wrong Finally block executed",
+        "discription":"The custom exception CustomError is raised and caught, displaying the error message. The finally block then executes, leading to the combined output."
+    }
+
+    
+]

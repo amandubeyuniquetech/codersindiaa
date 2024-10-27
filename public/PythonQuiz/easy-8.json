@@ -1,0 +1,263 @@
+[
+
+    {
+        "id": 1,
+        "question":"What will be the output of the following code?\nlst = [1, 2]\nlst.extend([3, 4])\nprint(lst)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 2, 3, 4]",
+        "[1, 2, [3, 4]]",
+        "[3, 4, 1, 2]",
+        "[1, 2]"
+        ],
+        "answer":"[1, 2, 3, 4]",
+        "discription":"The extend method adds all elements from the list [3, 4] to lst, resulting in [1, 2, 3, 4]."
+    },
+
+    {
+        "id": 2,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3, 4]\nlst.pop()\nprint(lst)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 2, 3]",
+        "[1, 2, 3, 4]",
+        "[4, 3, 2, 1]",
+        "[]"
+        ],
+        "answer":"[1, 2, 3]",
+        "discription":"The pop method removes the last element from the list, so lst becomes [1, 2, 3]."
+    },
+
+    {
+        "id": 3,
+        "question":"What will be the output of the following code?\ntext = 'Hello, Python!'\nprint(text.find('Python'))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["7",
+        "6",
+        "5",
+        "'Error'"
+        ],
+        "answer":"7",
+        "discription":"The find method returns the index of the first occurrence of 'Python', which starts at index 7."
+    },
+
+    {
+        "id": 4,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(my_dict['c'])",
+        "optionsCode":[],                                                                                                
+        "optionsText":["3",
+        "2",
+        "1",
+        "Error"
+        ],
+        "answer":"3",
+        "discription":"Accessing my_dict['c'] returns the value associated with the key 'c', which is 3."
+    },
+
+    {
+        "id": 5,
+        "question":"What will be the output of the following code?\ntext = 'Hello, Python!'\nprint(text.startswith('Hello'))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["True",
+        "False",
+        "None",
+        "Error"
+        ],
+        "answer":"True",
+        "discription":"The startswith method returns True if the string starts with the specified prefix 'Hello'."
+    },
+
+    {
+        "id": 6,
+        "question":"What will be the output of the following code?\nfor i in range(1, 4):\n    print(i)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["1 2 3",
+        "0 1 2",
+        "1 2 3 4",
+        "Error"
+        ],
+        "answer":"1 2 3",
+        "discription":"The range(1, 4) generates numbers from 1 to 3, so the loop prints 1, 2, and 3."
+    },
+
+    {
+        "id": 7,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3]\nlst.reverse()\nprint(lst)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[3, 2, 1]",
+        "[1, 2, 3]",
+        "[2, 1, 3]",
+        "[1, 3, 2]"
+        ],
+        "answer":"[3, 2, 1]",
+        "discription":"The reverse method reverses the elements of the list, resulting in [3, 2, 1]."
+    },
+
+    {
+        "id":8,
+        "question":"What will be the output of the following code?\nwords = ['Hello', 'World']\nprint(' '.join(words))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Hello World",
+        "HelloWorld",
+        "['Hello', 'World']",
+        "Error"
+        ],
+        "answer":"Hello World",
+        "discription":"The join method concatenates the elements of the list words with a space, resulting in 'Hello World'."
+    },
+
+    {
+        "id": 9,
+        "question":"What will be the output of the following code?\ni = 1\nwhile i < 4:\n    print(i)\n    i += 1",
+        "optionsCode":[],                                                                                                
+        "optionsText":["1 2 3",
+        "1 2",
+        "1 2 3 4",
+        "Error"
+        ],
+        "answer":"1 2 3",
+        "discription":"The while loop continues as long as i is less than 4, printing 1, 2, and 3."
+    },
+
+    {
+        "id": 10,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2}\nmy_dict['b'] = 3\nprint(my_dict)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["{'a': 1, 'b': 3}",
+        "{'a': 1, 'b': 2}",
+        "{'a': 1}",
+        "Error"
+        ],
+        "answer":"{'a': 1, 'b': 3}",
+        "discription":"The value associated with the key 'b' is updated to 3, resulting in {'a': 1, 'b': 3}."
+    },
+
+    {
+        "id": 11,
+        "question":"What will be the output of the following code?\ntext = '  Hello, World!  '\nprint(text.strip())",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Hello, World!",
+        "Hello, World!",
+        "Hello,World!",
+        "Error"
+        ],
+        "answer":"Hello, World!",
+        "discription":"The strip method removes leading and trailing whitespace from the string."
+    },
+
+    {
+        "id": 12,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2}\nprint(my_dict.get('c', 0))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["0",
+        "1",
+        "2",
+        "None"
+        ],
+        "answer":"0",
+        "discription":"The get method returns the value for the key 'c' if it exists; otherwise, it returns the default value 0."
+    },
+
+    {
+        "id": 13,
+        "question":"What will be the output of the following code?\nlst = [x for x in range(3)]\nprint(lst)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[0, 1, 2]",
+        "[1, 2, 3]",
+        "[1, 2]",
+        "[]"
+        ],
+        "answer":"[0, 1, 2]",
+        "discription":"The list comprehension creates a list of numbers from 0 to 2."
+    },
+
+    {
+        "id": 14,
+        "question":"What will be the output of the following code?\nlst = [1, 3, 4]\nlst.insert(1, 2)\nprint(lst)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 2, 3, 4]",
+        "[1, 3, 4, 2]",
+        "[1, 3, 2, 4]",
+        "[2, 1, 3, 4]"
+        ],
+        "answer":"[1, 2, 3, 4]",
+        "discription":"The insert method inserts 2 at index 1, resulting in [1, 2, 3, 4]."
+    },
+
+    {
+        "id": 15,
+        "question":"What will be the output of the following code?\nfor i in range(2):\n    for j in range(2):\n        print(i, j)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["0 0, 0 1, 1 0, 1 1",
+        "0 1, 1 0, 1 1",
+        "0 0, 1 1",
+        "0 1, 1 2"
+        ],
+        "answer":"0 0, 0 1, 1 0, 1 1",
+        "discription":"The nested loops iterate through all combinations of i and j, resulting in 0 0, 0 1, 1 0, 1 1."
+    },
+
+    {
+        "id": 16,
+        "question":"What will be the output of the following code?\nset1 = {1, 2, 3}\nset2 = {2, 3, 4}\nprint(set1 & set2)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["{2, 3}",
+        "{1, 4}",
+        "{1, 2, 3, 4}",
+        "{}"
+        ],
+        "answer":"{2, 3}",
+        "discription":"The & operator returns the intersection of set1 and set2, which contains elements common to both sets."
+    },
+
+    {
+        "id": 17,
+        "question":"What will be the output of the following code?\ntext = 'Hello,World'\nprint(text.split(','))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["['Hello', 'World']",
+        "['Hello World']",
+        "['Hello', 'World']",
+        "['Hello,World']"
+        ],
+        "answer":"['Hello', 'World']",
+        "discription":"The split method divides the string at each comma, returning a list of substrings."
+    },
+
+    {
+        "id": 18,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3]\nlst.clear()\nprint(lst)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[]",
+        "[1, 2, 3]",
+        "[None]",
+        "Error"
+        ],
+        "answer":"[]",
+        "discription":"The clear method removes all elements from the list, resulting in an empty list []."
+    },
+
+    {
+        "id": 19,
+        "question":"What will be the output of the following code?\nlst1 = [1, 2, 3]\nlst2 = lst1.copy()\nlst2.append(4)\nprint(lst1)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 2, 3]",
+        "[1, 2, 3, 4]",
+        "[4]",
+        "Error"
+        ],
+        "answer":"[1, 2, 3]",
+        "discription":"The copy method creates a shallow copy of the list, so changes to lst2 do not affect lst1."
+    },
+
+    {
+        "id": 20,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3, 4]\nprint(lst.index(3))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["2",
+        "3",
+        "1",
+        "0"
+        ],
+        "answer":"2",
+        "discription":"The index method returns the index of the first occurrence of 3, which is 2."
+    }
+
+]

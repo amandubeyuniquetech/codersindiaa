@@ -1,0 +1,263 @@
+[
+    {
+        "id": 1,
+        "question":"What is the concept of a breakpoint?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A point in the code where execution is paused for debugging.",
+        "A line of code that terminates the program.",
+        "A command that skips over a section of code.",
+        "A feature that automatically fixes errors in code."
+        ],
+        "answer":"A point in the code where execution is paused for debugging.",
+        "discription":"A feature that automatically fixes errors in code."
+    },
+
+    {
+        "id": 2,
+        "question":"In what modes should the PdfFileReader() and PdfFileWriter() file objects be opened in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["PdfFileReader() - 'r', PdfFileWriter() - 'w'",
+        "PdfFileReader() - 'rb', PdfFileWriter() - 'wb'",
+        "PdfFileReader() - 'rt', PdfFileWriter() - 'wt'",
+        "PdfFileReader() - 'rw', PdfFileWriter() - 'wr'"
+        ],
+        "answer":"PdfFileReader() - 'rb', PdfFileWriter() - 'wb'",
+        "discription":"'rb' and 'wb' - Opens files in binary mode, required for handling PDF files."
+    },
+
+    {
+        "id": 3,
+        "question":"From a PdfFileReader object in Python, how do you get a Page object for page 5?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["reader.getPage(4)",
+        "reader.getPage(5)",
+        "reader.get_page(5)",
+        "reader.getPage(6)"
+        ],
+        "answer":"reader.getPage(4)",
+        "discription":"Pages are zero-indexed, so getPage(4) retrieves the 5th page."
+    },
+
+    {
+        "id": 4,
+        "question":"From a PdfFileReader object in Python, how do you get a Page object for page 5?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["reader.getPage(4)",
+        "reader.getPage(5)",
+        "reader.get_page(5)",
+        "reader.getPage(6)"
+        ],
+        "answer":"reader.getPage(4)",
+        "discription":"Pages are zero-indexed, so getPage(4) retrieves the 5th page."
+    },
+
+    {
+        "id": 5,
+        "question":"If a PdfFileReader object’s PDF is encrypted with the password swordfish, what must you do before you can obtain Page objects from it?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Call reader.decrypt('swordfish')",
+        "Call reader.decrypt('pdf')",
+        "Call reader.authenticate('swordfish')",
+        "Call reader.unlock('swordfish')"
+        ],
+        "answer":"Call reader.decrypt('swordfish')",
+        "discription":"You must call the decrypt() method with the correct password to decrypt the PDF before accessing Page objects."
+    },
+
+    {
+        "id": 6,
+        "question":"What methods do you use to rotate a page in a PDF using Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["rotateClockwise() and rotateCounterClockwise()",
+        "rotateLeft() and rotateRight()",
+        "rotatePage() and flipPage()",
+        "turnLeft() and turnRight()"
+        ],
+        "answer":"rotateClockwise() and rotateCounterClockwise()",
+        "discription":"These methods rotate the page clockwise or counterclockwise by 90 degrees."
+    },
+
+    {
+        "id": 7,
+        "question":"What is the difference between a Run object and a Paragraph object in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A Run object contains multiple paragraphs, while a Paragraph object contains text runs.",
+        "A Run object represents a single text style, while a Paragraph object represents a block of text.",
+        "A Run object is used for formatting images, while a Paragraph object is used for formatting tables.",
+        "A Run object handles the document structure, while a Paragraph object handles page layouts."
+        ],
+        "answer":"A Run object represents a single text style, while a Paragraph object represents a block of text.",
+        "discription":"A Run is a segment of text with a consistent style within a Paragraph, which is a block of text typically separated by line breaks."
+    },
+
+    {
+        "id": 8,
+        "question":"What type of object has bold, underline, italic, strike, and outline variables in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Document object",
+        "Paragraph object",
+        "Run object",
+        "Table object"
+        ],
+        "answer":"Run object",
+        "discription":"A Run object in a Paragraph represents a segment of text with specific formatting, including bold, underline, italic, strike, and outline options."
+    },
+
+    {
+        "id": 9,
+        "question":"What is the difference between False, True, and None for the bold variable in a Run object?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["False turns bold on, True turns bold off, None leaves bold unchanged",
+        "False turns bold off, True turns bold on, None uses the style's default setting.",
+        "False uses the style's default setting, True turns bold on, None turns bold off.",
+        "False removes all formatting, True applies all formatting, None does nothing"
+        ],
+        "answer":"False turns bold off, True turns bold on, None uses the style's default setting.",
+        "discription":"False explicitly disables bold, True enables bold, and None applies the document's default style setting for bold."
+    },
+
+    {
+        "id": 10,
+        "question":"How do you create a Document object for a new Word document using Python's python-docx library?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Document.create()",
+        "Document()",
+        "Document.new()",
+        "Document.open()"
+        ],
+        "answer":"Document()",
+        "discription":"Instantiating the Document class with Document() creates a new Word document."
+    },
+
+    {
+        "id": 11,
+        "question":"How do you add a paragraph with the text 'Hello, there!' to a Document object stored in a variable named doc?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["doc.add_paragraph('Hello, there!')",
+        "doc.append_paragraph('Hello, there!')",
+        "doc.paragraphs.add('Hello, there!')",
+        "doc.add('Hello, there!')"
+        ],
+        "answer":"doc.add_paragraph('Hello, there!')",
+        "discription":"The add_paragraph() method adds a new paragraph with the specified text to the Document object."
+    },
+
+    {
+        "id": 12,
+        "question":"What modes do File objects for reader and writer objects need to be opened in?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["'r' for reading and 'w' for writing",
+        "'rb' for reading and 'wb' for writing",
+        "'r' for reading and 'a' for appending",
+        "'rt' for reading and 'wt' for writing"
+        ],
+        "answer":"'rt' for reading and 'wt' for writing",
+        "discription":"File objects for csv.reader should be opened in text mode with 'rt' for reading, and for csv.writer, they should be opened in 'wt' for writing"
+    },
+
+    {
+        "id": 13,
+        "question":"What function takes a string of JSON data and returns a Python data structure?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["json.parse()",
+        "json.decode()",
+        "json.load()",
+        "json.loads()"
+        ],
+        "answer":"json.loads()",
+        "discription":"The json.loads() function parses a JSON string and converts it into a corresponding Python data structure."
+    },
+
+    {
+        "id": 14,
+        "question":"What function takes a Python data structure and returns a string of JSON data?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["json.dumps()",
+        "json.encode()",
+        "json.write()",
+        "json.dump("
+        ],
+        "answer":"json.dumps()",
+        "discription":"The json.dumps() function converts a Python data structure into a JSON-formatted string."
+    },
+
+    {
+        "id": 15,
+        "question":"What is a box tuple, and how does it work?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A box tuple is a tuple representing the dimensions and coordinates of a rectangular area in an image, specified as (left, upper, right, lower).",
+        "A box tuple is a data structure for storing color values in an image, specified as (red, green, blue, alpha).",
+        "A box tuple is a method for resizing an image, specified as (width, height).",
+        "A box tuple is used for image filtering, specified as (filter_type, strength)."
+        ],
+        "answer":"A box tuple is a tuple representing the dimensions and coordinates of a rectangular area in an image, specified as (left, upper, right, lower).",
+        "discription":"A box tuple defines a rectangular region in an image with coordinates for the left, upper, right, and lower edges."
+    },
+
+    {
+        "id": 16,
+        "question":"Use your image and load in notebook then, How can you find out the width and height of an Image object?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["image.size()",
+        "image.get_dimensions()",
+        "image.width and image.height",
+        "image.size"
+        ],
+        "answer":"image.size",
+        "discription":"The size attribute of an Image object returns a tuple containing the width and height of the image."
+    },
+
+    {
+        "id": 17,
+        "question":"What method would you call to get Image object for a 100×100 image, excluding the lower-left quarter of it?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["image.crop((0, 0, 50, 50))",
+        "image.crop((50, 50, 100, 100))",
+        "image.crop((0, 0, 100, 100))",
+        "image.crop((25, 25, 75, 75))"
+        ],
+        "answer":"image.crop((50, 50, 100, 100))",
+        "discription":"The crop() method with coordinates (50, 50, 100, 100) extracts the upper-right quarter of a 100×100 image, effectively excluding the lower-left quarter."
+    },
+
+    {
+        "id": 18,
+        "question":"After making changes to an Image object, how could you save it as an image file?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["image.save('filename.png')",
+        "image.write('filename.png')",
+        "image.save_as('filename.png')",
+        "image.export('filename.png')"
+        ],
+        "answer":"image.save('filename.png')",
+        "discription":"The save() method allows you to save the modified Image object to a file with the specified filename and format."
+    },
+
+    {
+        "id": 19,
+        "question":"What module contains Pillow’s shape-drawing code?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["PIL.ImageDraw",
+        "PIL.ImageShape",
+        "PIL.DrawShapes",
+        "PIL.ShapeDraw"
+        ],
+        "answer":"PIL.ImageDraw",
+        "discription":"The PIL.ImageDraw module provides functions for drawing shapes and text on an Image object in Pillow."
+    },
+
+    {
+        "id": 20,
+        "question":"Image objects do not have drawing methods. What kind of object does, and how do you get this kind of object?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["ImageDraw object, obtained using ImageDraw.Draw(image)",
+        "ShapeDraw object, obtained using ShapeDraw.create(image)",
+        "DrawTool object, obtained using DrawTool.get(image)",
+        "DrawObject object, obtained using DrawObject.create_for(image)"
+        ],
+        "answer":"ImageDraw object, obtained using ImageDraw.Draw(image)",
+        "discription":"To draw on an Image object, you need an ImageDraw object, which you obtain by calling ImageDraw.Draw(image)."
+    }
+
+    
+]

@@ -1,0 +1,68 @@
+[
+    {
+      "id": 1,
+      "question": "How do you print the top-level keys of the life dictionary?",
+      "optionsCode": [],
+      "optionsText": [
+        "print(life.keys())",
+        "print(life.top_keys())",
+        "print(list(life))",
+        "print(life.get_top_keys())"
+      ],
+      "answer": "print(life.keys())",
+      "description": "To print the top-level keys of the life dictionary, use life.keys() which returns a view of the dictionary's keys. Converting this view to a list, if needed, will show the keys."
+    },
+    {
+      "id": 2,
+      "question": "Print the keys for life['animals'].",
+      "optionsCode": [],
+      "optionsText": [
+        "print(life['animals'].keys())",
+        "print(life['animals'].items())",
+        "print(life['animals'].values())",
+        "print(life['animals'].get_keys())"
+      ],
+      "answer": "print(life['animals'].keys())",
+      "description": "To print the keys of the dictionary stored under life['animals'], use life['animals'].keys(). This will give a view of the keys for the nested dictionary."
+    },
+    {
+      "id": 3,
+      "question": "Print the values for life['animals']['cats']",
+      "optionsCode": [],
+      "optionsText": [
+        "print(life['animals']['cats'])",
+        "print(life['animals']['cats'].values())",
+        "print(life['animals']['cats'].items())",
+        "print(life['animals']['cats'].keys())"
+      ],
+      "answer": "print(life['animals']['cats'])",
+      "description": "To print the values for life['animals']['cats'], you directly access life['animals']['cats'] which is a list of cat names. Using .values() or .items() is not applicable here since it's a list, not a dictionary."
+    },
+    {
+      "id": 4,
+      "question": "How do you write a set of conditional tests to print 'too low' if guess_me is less than 7, 'too high' if greater than 7, and 'just right' if equal to 7, after assigning the value 7 to guess_me?",
+      "optionsText": [],
+      "optionsCode": [
+        "guess_me = 7\nif guess_me < 7:\n    print('too low')\nelif guess_me > 7:\n    print('too high')\nelse:\n    print('just right')",
+        "guess_me = 7\nif guess_me > 7:\n    print('too low')\nelif guess_me < 7:\n    print('too high')\nelse:\n    print('just right')",
+        "guess_me = 7\nif guess_me == 7:\n    print('too low')\nelif guess_me < 7:\n    print('too high')\nelse:\n    print('just right')",
+        "guess_me = 7\nif guess_me < 7:\n    print('too high')\nelif guess_me == 7:\n    print('too high')\nelse:\n    print('just right')"
+      ],
+      "answer": "guess_me = 7\nif guess_me < 7:\n    print('too low')\nelif guess_me > 7:\n    print('too high')\nelse:\n    print('just right')",
+      "description": "Assign the value 7 to guess_me, then use if, elif, and else statements to compare guess_me and print the appropriate message based on whether it's less than, greater than, or equal to 7."
+    },
+    {
+      "id": 5,
+      "question": "Assign the value 7 to the variable guess_me and the value 1 to the variable start. Write a while loop that compares start with guess_me. Print too low if start is less than guess_me. If start equals guess_me, print 'found it!' and exit the loop. If start is greater than guess_me, print 'oops' and exit the loop. Increment start at the end of the loop.",
+      "optionsText": [],
+      "optionsCode": [
+        "guess_me = 7\nstart = 1\nwhile start <= guess_me:\n    if start < guess_me:\n        print('too low')\n    elif start == guess_me:\n        print('found it!')\n        break\n    start += 1\nelse:\n    print('oops')",
+        "guess_me = 7\nstart = 1\nwhile start <= guess_me:\n    if start > guess_me:\n        print('oops')\n        break\n    elif start == guess_me:\n        print('found it!')\n        break\n    else:\n        print('too low')\n    start += 1",
+        "guess_me = 7\nstart = 1\nwhile start <= guess_me:\n    if start == guess_me:\n        print('found it!')\n        break\n    elif start > guess_me:\n        print('oops')\n        break\n    else:\n        print('too low')\n    start += 1",
+        "guess_me = 7\nstart = 1\nwhile start <= guess_me:\n    if start == guess_me:\n        print('oops')\n        break\n    elif start > guess_me:\n        print('too low')\n        break\n    else:\n        print('found it!')\n    start += 1"
+      ],
+      "answer": "guess_me = 7\nstart = 1\nwhile start <= guess_me:\n    if start == guess_me:\n        print('found it!')\n        break\n    elif start > guess_me:\n        print('oops')\n        break\n    else:\n        print('too low')\n    start += 1",
+      "description": "Assign 7 to guess_me and 1 to start. The loop compares start with guess_me, printing 'too low' if start is less, 'found it!' if they are equal (and exits the loop), or 'oops' if start exceeds guess_me (and exits the loop). The variable start is incremented at the end of each iteration."
+    }
+  ]
+  

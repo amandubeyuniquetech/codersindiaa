@@ -1,0 +1,263 @@
+[
+{
+    "id": 1,
+    "question":"What are the distinctions between the empty, ones, and zeros functions in NumPy?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["empty creates an array with uninitialized values, ones creates an array filled with 1s, and zeros creates an array filled with 0s.",
+    "empty and zeros create arrays with initialized values, while ones creates an array with random values.",
+    "empty creates an array with a specified shape but no values, ones creates an array with a shape and value of 0, and zeros creates an array with a shape and value of 1.",
+    "empty creates a list, ones creates a tuple, and zeros creates a NumPy array."
+    ],
+    "answer":"empty creates an array with uninitialized values, ones creates an array filled with 1s, and zeros creates an array filled with 0s.",
+    "discription":"empty creates an array with uninitialized values, ones creates an array filled with 1s, and zeros creates an array filled with 0s."
+},
+
+{
+    "id": 2,
+    "question":"Does a NumPy array contain fixed-length strings? What happens if you allocate a longer string to one of these arrays?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Yes, NumPy arrays contain fixed-length strings, and allocating a longer string will result in an error.",
+    "No, NumPy arrays do not support fixed-length strings; they automatically adjust to string length.",
+    "Yes, NumPy arrays contain fixed-length strings, and a longer string will be truncated to fit the fixed length.",
+    "No, NumPy arrays with strings do not enforce length constraints and can hold strings of any length."
+    ],
+    "answer":"Yes, NumPy arrays contain fixed-length strings, and a longer string will be truncated to fit the fixed length.",
+    "discription":"In NumPy arrays with fixed-length strings, longer strings are truncated to fit the allocated space."
+},
+
+{
+    "id": 3,
+    "question":"What happens when you combine two NumPy arrays using an operation like addition (+) or multiplication (*)? What are the conditions for combining two NumPy arrays?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["The arrays are combined element-wise, and they must have the same shape or be broadcastable to the same shape.",
+    "The arrays are concatenated along the last axis, and their shapes don't need to match.",
+    "The arrays are multiplied together into a single scalar value, and they must have identical shapes.",
+    "The arrays are combined element-wise only if they have identical shapes; otherwise, an error is raised."
+    ],
+    "answer":"The arrays are combined element-wise, and they must have the same shape or be broadcastable to the same shape.",
+    "discription":"NumPy combines two arrays element-wise for operations like addition and multiplication, requiring the arrays to have the same shape or be broadcastable to a common shape."
+},
+
+{
+    "id": 4,
+    "question":"What is a histogram, exactly? Name a NumPy method for creating such a graph.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A histogram is a plot that shows the distribution of numerical data, and the NumPy method for creating it is numpy.hist()",
+    "A histogram is a bar graph representing the frequency of data within intervals, and the NumPy method for creating it is numpy.histogram()",
+    "A histogram is a scatter plot showing data points, and the NumPy method for creating it is numpy.scatter()",
+    "A histogram is a line graph of data trends, and the NumPy method for creating it is numpy.lineplot()"
+    ],
+    "answer":"A histogram is a bar graph representing the frequency of data within intervals, and the NumPy method for creating it is numpy.histogram()",
+    "discription":"A histogram shows the distribution of numerical data as a bar graph, and you can create it using the numpy.histogram() method in NumPy."
+},
+
+{
+    "id": 5,
+    "question":"If necessary, how do you change the aspect ratios between the X and Y axes?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["By using the 'Resize' tool and adjusting the width and height independently.",
+    "By applying a filter that adjusts the aspect ratio automatically.",
+    "By setting the X and Y axes to be equal in the properties menu.",
+    "By rotating the image to change the aspect ratio."
+    ],
+    "answer":"By using the 'Resize' tool and adjusting the width and height independently.",
+    "discription":"To change the aspect ratio between the X and Y axes, use the 'Resize' tool to independently adjust the width and height of the image."
+},
+
+{
+    "id": 6,
+    "question":"Compare and contrast the three types of array multiplication between two NumPy arrays: dot product, outer product, and regular multiplication.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Dot product returns an array of the same shape as the inputs, outer product creates a scalar, and regular multiplication adds corresponding elements.",
+    "Dot product multiplies corresponding elements, outer product sums elements, and regular multiplication creates a matrix product.",
+    "Dot product results in a scalar or matrix depending on the input, outer product results in a matrix of pairwise products, and regular multiplication multiplies corresponding elements element-wise.",
+    "Dot product creates a matrix of pairwise products, outer product multiplies corresponding elements, and regular multiplication sums corresponding elements."
+    ],
+    "answer":"Dot product results in a scalar or matrix depending on the input, outer product results in a matrix of pairwise products, and regular multiplication multiplies corresponding elements element-wise.",
+    "discription":"The dot product gives a scalar or matrix based on the inputs, the outer product forms a matrix with all possible pairwise products, and regular multiplication performs element-wise multiplication."
+},
+
+{
+    "id": 7,
+    "question":"Before you buy a home, which NumPy function will you use to measure your monthly mortgage payment?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["numpy.sum()",
+    "numpy.mean()",
+    "numpy.pmt()",
+    "numpy.median()"
+    ],
+    "answer":"numpy.pmt()",
+    "discription":"The numpy.pmt() function calculates the monthly payment on a mortgage based on interest rate, number of periods, and loan principal."
+},
+
+{
+    "id": 8,
+    "question":"Can string data be stored in numpy arrays? If so, list at least one restriction that applies to this data.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["No, NumPy arrays cannot store string data.",
+    "Yes, but the strings must be of equal length within the array.",
+    "Yes, but only ASCII characters can be used in the strings.",
+    "Yes, but the strings must be stored as individual arrays within the main array."
+    ],
+    "answer":"Yes, but the strings must be of equal length within the array.",
+    "discription":"NumPy arrays can store string data, but all strings must be of equal length within the array, which may involve truncation or padding."
+},
+
+{
+    "id": 9,
+    "question":"What does the following code print, and why?\ndef func(a, **kargs):\n    print(a, kargs)\n func(a=1, c=3, b=2)",
+    "optionsCode":[],                                                                                                
+    "optionsText":["1 {'c': 3, 'b': 2}",
+    "{'a': 1, 'c': 3, 'b': 2}",
+    "1 {'a': 1, 'c': 3, 'b': 2}",
+    "{'c': 3, 'b': 2} 1"
+    ],
+    "answer":"1 {'c': 3, 'b': 2}",
+    "discription":"The function func takes a required positional argument a and any number of keyword arguments captured in kargs. The code prints a followed by kargs, where kargs contains all keyword arguments except a."
+},
+
+
+{
+    "id": 10,
+    "question":"What gets printed by the following code?\ndef func(a, b, c=8, d=5):\n    print(a, b, c, d)\n    func(1, *(5, 6))",
+    "optionsCode":[],                                                                                                
+    "optionsText":["1 5 6 5",
+    "1 5 6 8",
+    "1 5 8 6",
+    "1 6 5 6"
+    ],
+    "answer":"1 5 6 5",
+    "discription":"In this code, * unpacks the tuple (5, 6) into the parameters b and c, respectively. The function is called with a=1, b=5, c=6, and since d is not provided, it defaults to 5. Therefore, the output is 1 5 6 5."
+},
+
+{
+    "id": 11,
+    "question":"What is the result of the following code?\ndef func(a, b, c):\n    a = 2\n    b[0] = 'x'\n    c['a'] = 'y'\n    l = 1\nm = [1]\nn = {'a': 0}\n  func(l, m, n)\nl, m, n",
+    "optionsCode":[],                                                                                                
+    "optionsText":["(1, [1], {'a': 0})",
+    "(1, ['x'], {'a': 'y'})",
+    "(2, [1], {'a': 'y'})",
+    "(2, ['x'], {'a': 0})"
+    ],
+    "answer":"(1, ['x'], {'a': 'y'})",
+    "discription":"The variable l remains unchanged because integers are passed by value in Python.\nThe list m and the dictionary n are modified because lists and dictionaries are mutable, meaning changes within the function affect the original objects."
+},
+
+{
+    "id": 12,
+    "question":"What is the definition of a 180-day moving average?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["The average of a data set over the past 180 months.",
+    "The average of a data set calculated daily over the past 180 days.",
+    "The average of a data set over the past 180 weeks.",
+    "The average of a data set calculated yearly over the past 180 days."
+    ],
+    "answer":"The average of a data set calculated daily over the past 180 days.",
+    "discription":" A 180-day moving average is a statistical calculation that averages a data set's values over the past 180 days, updating daily as new data points become available."
+},
+
+{
+    "id": 13,
+    "question":"Did the chapter's final example use 'indirect' importing? If so, how exactly do you do it?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["By using import statements within a function or method.",
+    "By importing a module in a different file and then using it.",
+    "By importing modules dynamically at runtime using importlib.",
+    "By using from module import * to import all functions and classes."
+    ],
+    "answer":"By importing modules dynamically at runtime using importlib.",
+    "discription":"Indirect importing involves importing a module dynamically at runtime rather than statically in the file's top-level code. This can be achieved using the importlib module, which allows for more flexible and runtime-dependent imports."
+},
+
+{
+    "id": 14,
+    "question":"How do you use a lambda function with the map() function?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["map(lambda x: x * 2, [1, 2, 3])",
+    "lambda map(x * 2, [1, 2, 3])",
+    "map(lambda x * 2: x, [1, 2, 3])",
+    "map(x: lambda x * 2, [1, 2, 3])"
+    ],
+    "answer":"map(lambda x: x * 2, [1, 2, 3])",
+    "discription":"To use a lambda function with map(), you pass the lambda function as the first argument and the iterable (e.g., a list) as the second argument."
+},
+
+{
+    "id": 15,
+    "question":"What is a decorator in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A function that modifies the behavior of another function or method.",
+    "A special type of class that decorates an instance.",
+    "A built-in function that enhances Python's syntax.",
+    "A method that is used to create a new class."
+    ],
+    "answer":"A function that modifies the behavior of another function or method.",
+    "discription":"Decorators are functions that allow you to modify the behavior of another function or method without changing its code."
+},
+
+{
+    "id": 16,
+    "question":"How do you apply a decorator to a function in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["@decorator_name placed above the function definition.",
+    "decorator_name(function_name) placed inside the function definition.",
+    "function_name(decorator_name) placed inside the function body.",
+    "function_name = decorator_name inside the function body."
+    ],
+    "answer":"@decorator_name placed above the function definition.",
+    "discription":"To apply a decorator, you use the @decorator_name syntax above the function definition."
+},
+
+{
+    "id": 17,
+    "question":"What is the purpose of the __init__ method in a class?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["To initialize class attributes with default values.",
+    "To create an instance of the class.",
+    "To define a method that is called when an instance is created.",
+    "To destroy an instance of the class."
+    ],
+    "answer":"To define a method that is called when an instance is created.",
+    "discription":"The __init__ method is a special method in Python classes that is automatically called when a new instance of the class is created, allowing for initial setup."
+},
+
+{
+    "id": 18,
+    "question":"How do you create an instance of a class?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["instance = ClassName()",
+    "instance = ClassName.create()",
+    "instance = new ClassName()",
+    "instance = ClassName.make()"
+    ],
+    "answer":"instance = ClassName()",
+    "discription":"An instance of a class is created by calling the class name followed by parentheses."
+},
+
+{
+    "id": 19,
+    "question":"How do you define a method in a class that is not bound to an instance?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["By using the @staticmethod decorator.",
+    "By using the @classmethod decorator.",
+    "By defining the method without any parameters.",
+    "By defining the method with a single parameter."
+    ],
+    "answer":"By using the @staticmethod decorator.",
+    "discription":"The @staticmethod decorator is used to define a method that does not depend on instance or class attributes, making it callable on the class itself."
+},
+
+{
+    "id": 20,
+    "question":"What is the purpose of the super() function in Python classes?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["To call a method from the parent class.",
+    "To initialize static methods in a class",
+    "To create a new instance of a parent class.",
+    "To override methods in the parent class"
+    ],
+    "answer":"To call a method from the parent class.",
+    "discription":"The super() function is used to call methods from a parent class, enabling access to inherited methods that have been overridden in the child class."
+}
+
+]

@@ -9,19 +9,18 @@ const formatTime = (timeInSeconds) => {
 const QuizHeader = ({ timer }) => {
     
   return (
-    <section className="shadow-sm my-5 py-2 sticky top-0 bg-white z-10 " id="alertContainer">
+    <section className="shadow-sm my-5 py-2 sticky top-0 bg-white z-1000 w-max h-max" id="alertContainer">
       <div className="w-9/12 mx-auto flex md:flex-row flex-col justify-between items-center">
-        <div className="font-normal">
-          <span className="text-red-700">Attention!</span> You have 60 seconds to
-          answer 6 questions.
+        {/* <div className="font-normal">
+          <span className="text-red-700">Attention!</span> You have 4 minutes to
+          answer 20 questions.
           <br />
-          Please keep an eye on the timer and make sure to answer all questions
-          before time runs out.
-        </div>
+          Please watch the timer and ensure you complete all questions before time runs out.
+        </div> */}
         <div className="flex items-center">
-          <p className="mr-2 text-xl text-gray-700">
+          {/* <p className="mr-2 text-xl text-gray-700">
             <i className="fa-solid fa-clock-rotate-left"></i>
-          </p>
+          </p> */}
           <div className="text-left">
             <h1 className="text-green-700 text-xl" id="count">
               {formatTime(timer)}

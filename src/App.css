@@ -1,0 +1,81 @@
+/***************Navbar********************/
+#alertContainer{
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid gray; */
+    border-radius: 3px;
+}
+#codersIndia-logo{
+    height: 6rem;
+}
+#navbar{
+    /* box-shadow: 0 0 3px 3px gray; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    
+}
+.app{
+    padding-top: 64px;
+    overflow:hidden;
+}
+/* *{
+    box-sizing: border-box;
+} */
+
+:root{
+    --main-color:#004AAD;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    position: absolute;
+    background-color:var(--main-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    list-style: none;
+    padding: 0;
+    color:white;
+    height: max-content;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-item{
+    /* height: max-content; */
+    transition: all 0.5s;
+    height: 40px;
+    border-bottom:1px solid white;
+    line-height: 40px;
+
+}
+.dropdown-item:hover{
+    border-left: 5px solid white;
+    padding-right: -5px;
+}
+
+
+
+
+.nav-item{
+    /* border: 1px solid red; */
+    height: 63px;
+    text-align: center;
+    line-height: 63px;
+    transition: all 0.3s;
+}
+.nav-item:hover{
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+

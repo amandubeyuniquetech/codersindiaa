@@ -1,0 +1,261 @@
+[
+{
+    "id": 1,
+    "question":"Identify at least one benefit of generators.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Generators automatically handle memory management for large datasets.",
+    "Generators provide a way to iterate over large sequences without loading the entire sequence into memory.",
+    "Generators allow for multi-threaded execution of code.",
+    "Generators execute all code at once for faster performance."
+    ],
+    "answer":"Generators provide a way to iterate over large sequences without loading the entire sequence into memory.",
+    "discription":"Generators allow iteration over large sequences by yielding items one at a time, which conserves memory."
+},
+
+{
+    "id": 2,
+    "question":"What are the new features added in Python 3.8 version?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Type Hinting and f-strings",
+    "Assignment Expressions and Positional-only Parameters",
+    "Async Generators and Data Classes",
+    "Enhanced Debugging and New Data Types"
+    ],
+    "answer":"Assignment Expressions and Positional-only Parameters",
+    "discription":"Python 3.8 introduced the walrus operator (:=) for assignment expressions and allowed for positional-only parameters in function definitions."
+},
+
+{
+    "id": 3,
+    "question":"What is a generator comprehension?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A method to generate lists in a more memory-efficient way than lists.",
+    "A concise way to create generators using a similar syntax to list comprehensions.",
+    "A way to create dictionaries with a compact syntax similar to list comprehensions.",
+    "A function that returns a generator object by yielding values one at a time."
+    ],
+    "answer":"A concise way to create generators using a similar syntax to list comprehensions.",
+    "discription":"A generator comprehension is a compact syntax for creating generators, similar to list comprehensions but producing a generator object."
+},
+
+{
+    "id": 4,
+    "question":"How much do you need to use the following sentence while using regular expressions?\nimport re",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Not needed; regular expressions work without importing anything.",
+    "Only if using advanced regex features; basic features do not require it.",
+    "Always; it is necessary to import the re module to work with regular expressions in Python.",
+    "Only in interactive sessions; scripts do not need this import."
+    ],
+    "answer":"Always; it is necessary to import the re module to work with regular expressions in Python.",
+    "discription":"The import re statement is always necessary to use regular expressions in Python, regardless of the context."
+},
+
+{
+    "id": 5,
+    "question":"Which characters have special significance in square brackets when expressing a range, and under what circumstances?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Colon (:) and hyphen (-)",
+    "Asterisk (*) and question mark (?)",
+    "Hyphen (-) and comma (,)",
+    "Hyphen (-) and caret (^)"
+    ],
+    "answer":"Hyphen (-) and comma (,)",
+    "discription":"In square brackets, the hyphen is used to denote a range of characters (e.g., [a-z]), while the comma is used to separate individual characters or ranges (e.g., [a-z,0-9])."
+},
+
+{
+    "id": 6,
+    "question":"What are some examples of how to use the match object returned by re.match and re.search?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["To get the position of the match within the string using match.start() and match.end().",
+    "To extract all occurrences of the pattern from the string using match.group() and match.groups().",
+    "To replace matched substrings in the original string using match.replace().",
+    "To determine if a match is found using match.is_match()."
+    ],
+    "answer":"To get the position of the match within the string using match.start() and match.end().",
+    "discription":"The match object provides methods like match.start() and match.end() to find the positions of the match in the original string."
+},
+
+{
+    "id": 7,
+    "question":"What is the difference between using a vertical bar (|) as an alteration and using square brackets as a character set?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["The vertical bar (|) matches any one of several possible strings, while square brackets ([]) match any one character within a set.",
+    "The vertical bar (|) matches a single character, while square brackets ([]) are used for matching multiple characters.",
+    "The vertical bar (|) is used to define ranges, while square brackets ([]) are for literal matching.",
+    "The vertical bar (|) is used for grouping patterns, while square brackets ([]) are used for specifying repetitions."
+    ],
+    "answer":"The vertical bar (|) matches any one of several possible strings, while square brackets ([]) match any one character within a set.",
+    "discription":"The vertical bar (|) in regular expressions denotes alternation between patterns, whereas square brackets ([]) define a set of characters from which a single character is matched."
+},
+
+{
+    "id": 8,
+    "question":"In a simple match of a string, which looks only for one match and does not do any replacement, is the use of a non-tagged group likely to make any practical difference?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Yes, because non-tagged groups alter the way the string is matched.",
+    "Yes, because non-tagged groups can speed up the matching process.",
+    "No, because non-tagged groups do not affect the outcome of the match.",
+    "No, because non-tagged groups are not supported in most regex engines."
+    ],
+    "answer":"No, because non-tagged groups do not affect the outcome of the match.",
+    "discription":"In a simple match that doesn’t involve replacement, using non-tagged groups does not change the result, as they are used only for grouping without capturing."
+},
+
+{
+    "id": 9,
+    "question":"In which scenario would using a non-tagged category have a significant impact on a program's outcomes?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["When categorizing data for a machine learning model, leading to incorrect classification of data points.",
+    "When storing data in a relational database, causing slower query performance.",
+    "When organizing files in a file system, leading to more complex file retrieval operations.",
+    "When creating a user interface, leading to visual inconsistencies across the application."
+    ],
+    "answer":"When categorizing data for a machine learning model, leading to incorrect classification of data points.",
+    "discription":"Using a non-tagged category in a machine learning model can result in incorrect data classification, significantly impacting the model's performance and accuracy."
+},
+
+{
+    "id": 10,
+    "question":"What is the benefit of referring to groups by name rather than by number in a regular expression?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["It allows for faster execution of the regular expression.",
+    "It improves the readability and maintainability of the code, especially in complex expressions.",
+    "It automatically optimizes the regular expression for memory usage.",
+    "It ensures that the regular expression can be used across different programming languages."
+    ],
+    "answer":"It improves the readability and maintainability of the code, especially in complex expressions.",
+    "discription":"Referring to groups by name enhances code readability and maintainability, making it easier to understand and work with complex regular expressions."
+},
+
+{
+    "id": 11,
+    "question":"Can you identify repeated items within a target string using named groups, as in 'The cow jumped over the moon'?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["No, named groups can only be used for capturing individual patterns, not for identifying repeated items.",
+    "Yes, named groups allow you to capture and reference repeated patterns within the same string.",
+    "No, named groups are only used for labeling captures, not for finding repetitions.",
+    "Yes, but only if the repeated items are adjacent to each other in the string."
+    ],
+    "answer":"Yes, named groups allow you to capture and reference repeated patterns within the same string.",
+    "discription":"Named groups in regular expressions can be used to identify and reference repeated items within a target string, allowing for more complex pattern matching."
+},
+
+{
+    "id": 12,
+    "question":"When parsing a string, what is one thing that the Scanner interface does for you that re.findall does not?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Scanner allows you to process the string iteratively, matching patterns one by one.",
+    "Scanner can return all matches at once without iteration.",
+    "Scanner provides named groups, whereas re.findall does not.",
+    "Scanner is used exclusively for simple text parsing, while re.findall can handle complex regular expressions."
+    ],
+    "answer":"Scanner allows you to process the string iteratively, matching patterns one by one.",
+    "discription":"The Scanner interface allows for iterative processing of strings, matching and handling one pattern at a time, which is something re.findall does not offer, as it returns all matches at once."
+},
+
+{
+    "id": 13,
+    "question":"Does a Scanner object in programming have to be named scanner?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Yes, a Scanner object must be named scanner as it is a reserved keyword.",
+    "No, a Scanner object can have any valid variable name, not just scanner.",
+    "Yes, using any other name will cause a syntax error in most programming languages.",
+    "No, but naming it scanner is mandatory for proper functionality."
+    ],
+    "answer":"No, a Scanner object can have any valid variable name, not just scanner.",
+    "discription":"A Scanner object in programming can be named using any valid variable name; scanner is just a common naming convention, not a requirement."
+},
+
+{
+    "id": 14,
+    "question":"How does Python handle newlines when reading and writing lines of text?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Python removes the trailing newline when reading a line and appends a newline when writing a line.",
+    "Python retains the trailing newline when reading a line but does not append a newline when writing a line.",
+    "Python removes the trailing newline when reading a line and does not append a newline when writing a line.",
+    "Python retains the trailing newline when reading a line and appends a newline when writing a line."
+    ],
+    "answer":"Python retains the trailing newline when reading a line but does not append a newline when writing a line.",
+    "discription":"Python keeps the trailing newline when reading a line of text and does not automatically add a newline when writing a line."
+},
+
+{
+    "id": 15,
+    "question":"Which file operations enable random-access operation?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["write() and read()",
+    "seek() and tell()",
+    "open() and close()",
+    "flush() and sync()"
+    ],
+    "answer":"seek() and tell()",
+    "discription":"The seek() operation allows you to move to a specific file position, and tell() returns the current position, enabling random-access operation within a file."
+},
+
+{
+    "id": 16,
+    "question":"When are you most likely to use the struct package in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["When working with strings and text manipulation.",
+    "When dealing with binary data, such as reading from or writing to files with specific binary formats.",
+    "When processing large datasets in pandas.",
+    "When creating complex graphical user interfaces (GUIs)."
+    ],
+    "answer":"When dealing with binary data, such as reading from or writing to files with specific binary formats.",
+    "discription":"The struct package is mainly used for packing and unpacking binary data, making it essential when handling files with specific binary formats."
+},
+
+{
+    "id": 17,
+    "question":"When is pickling the best option?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["When you need to store complex data types, like custom objects, in a human-readable format.",
+    "When you want to transfer Python objects between programs or save them to a file for later use.",
+    "When you need the fastest method to save data to a database.",
+    "When you need to ensure that data is stored securely with encryption."
+    ],
+    "answer":"When you want to transfer Python objects between programs or save them to a file for later use.",
+    "discription":"Pickling is best when you need to serialize Python objects for storage or transfer between programs, allowing them to be restored later."
+},
+
+{
+    "id": 18,
+    "question":"What exactly is a method, and how is it different from a regular function?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A method is a function that belongs to a class and operates on instances of that class, while a regular function is not associated with any class and operates independently.",
+    "A method is a function that is defined outside of a class, while a regular function is defined inside a class.",
+    "A method is a special type of function that cannot take arguments, while a regular function can.",
+    "A method and a regular function are essentially the same, with no difference in their usage or behavior."
+    ],
+    "answer":"A method is a function that belongs to a class and operates on instances of that class, while a regular function is not associated with any class and operates independently.",
+    "discription":"A method is a function that is part of a class and operates on class instances, while a regular function is independent and not tied to any class."
+},
+
+{
+    "id": 19,
+    "question":"What is the difference between the _ _add_ _ and the _ _radd_ _ methods?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["__add__ is for addition, and __radd__ is for subtraction.",
+    "__add__ is called when the left operand supports the operation, and __radd__ is called when the right operand supports it.",
+    "__add__ is for integer addition, and __radd__ is for floating-point addition.",
+    "__add__ modifies the left operand, and __radd__ modifies the right operand."
+    ],
+    "answer":"__add__ is called when the left operand supports the operation, and __radd__ is called when the right operand supports it.",
+    "discription":"__add__ handles addition when the left operand supports it, while __radd__ is used if the left operand doesn’t support the addition, allowing the right operand to handle it."
+},
+
+{
+    "id": 20,
+    "question":"Is the _ _init_ _ method inherited by subclasses? What do you do if you need to customize its behavior within a subclass?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["No, the __init__ method is not inherited by subclasses. You must always define a new one in each subclass.",
+    "Yes, the __init__ method is inherited, and you can customize its behavior in a subclass by overriding it.",
+    "Yes, the __init__ method is inherited, but it cannot be customized in subclasses.",
+    "No, the __init__ method is not inherited by subclasses, but you can call the parent class's __init__ method from the subclass."
+    ],
+    "answer":"Yes, the __init__ method is inherited, and you can customize its behavior in a subclass by overriding it.",
+    "discription":"The __init__ method is inherited by subclasses in Python, and you can customize it by overriding the method within the subclass."
+}
+]

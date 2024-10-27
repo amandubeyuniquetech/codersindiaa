@@ -1,0 +1,254 @@
+[
+    {
+      "id": 1,
+      "question": "What is Python?",
+      "optionsCode":[],
+      "optionsText": [
+         "A web browser",
+        "A database management system",
+        "A high-level programming language",
+        "A type of snake"
+        
+      ],
+      "answer": "A high-level programming language"
+    },
+    {
+      "id": 2,
+      "question": "What is an interpreted language?",
+      "optionsCode":[],
+      "optionsText": [
+        "A language that is executed line by line by an interpreter",
+        "A language that only runs on Windows",
+        "A language that is compiled into machine code",
+        "A low-level language"
+      ],
+      "answer": "A language that is executed line by line by an interpreter"
+    },
+    {
+      "id": 3,
+      "question": "What is a compiled language?",
+      "optionsCode":[],
+      "optionsText": [
+        
+        "A language that cannot be interpreted",
+        "A language used for web design",
+        "A language that only works with databases",
+        "A language that is compiled directly into machine code"
+      ],
+      "answer": "A language that is compiled directly into machine code"
+    },
+    {
+      "id": 4,
+      "question": "What is a statically typed language?",
+      "optionsCode":[],
+      "optionsText": [
+        "A language that only works with integers",
+        "A language used for scripting",
+        "A language where variable types are known at compile time",
+        "A language that does not require variable declarations"
+        
+      ],
+      "answer": "A language where variable types are known at compile time"
+    },
+    {
+      "id": 5,
+      "question": "What is a dynamically typed language?",
+      "optionsCode":[],
+      "optionsText": [
+        
+        "A language that uses XML for its syntax",
+        "A language where variable types are known at runtime",
+        "A language used for system programming",
+        "A language that requires pre-compilation"
+      ],
+      "answer": "A language where variable types are known at runtime"
+    },
+    {
+      "id": 6,
+      "question": "What is weakly typed language?",
+      "optionsCode":[],
+      "optionsText": [
+        "A language that does not allow type casting",
+        "A low-level programming language",
+        "A language used for AI programming",
+        "A language where types are implicit and can change"
+      ],
+      "answer": "A language where types are implicit and can change"
+    },
+    {
+      "id": 7,
+      "question": "What is a strongly typed language?",
+      "optionsCode":[],
+      "optionsText": [
+        "A language used for web development",
+        "A language that is platform-specific",
+        "A language that enforces strict type compatibility",
+        "A language with no type restrictions"
+      ],
+      "answer": "A language that enforces strict type compatibility"
+    },
+    {
+      "id": 8,
+      "question": "What is a .PYC file?",
+      "optionsCode":[],
+      "optionsText": [
+        "A text file used in Python projects",
+        "A database file used by Python",
+        "A compiled Python file",
+        "A compressed Python file"
+        
+      ],
+      "answer": "A compiled Python file"
+    },
+    {
+      "id": 9,
+      "question": "What is PVM?",
+      "optionsCode":[],
+      "optionsText": [
+        "Python Version Manager",
+        "Python Virtual Machine",
+        "Python Video Module",
+        "Python Value Mapper"
+      ],
+      "answer": "Python Virtual Machine"
+    },
+    {
+      "id": 10,
+      "question": "What do you mean by high-level language?",
+      "optionsCode":[],
+      "optionsText": [
+        "A language that is only used for system programming",
+        "A language that requires direct memory management",
+        "A language with abstraction from machine-level details",
+        "A language directly executed by the CPU"
+        
+      ],
+      "answer": "A language with abstraction from machine-level details"
+    },
+    {
+      "id": 11,
+      "question": "What is Python known for?",
+      "optionsCode":[],
+      "optionsText": [
+        "Its usage only in system-level programming",
+        "Its simple syntax and readability",
+        "Its complexity and speed",
+        "Being a low-level language"
+        
+      ],
+      "answer": "Its simple syntax and readability"
+    },
+    {
+      "id": 12,
+      "question": "How does Python internally work?",
+      "optionsCode":[],
+      "optionsText": [
+        "It converts Python code directly to machine code",
+        "It compiles code to bytecode which runs on the Python Virtual Machine",
+        "It translates Python code to Java",
+        "It uses C++ to run all Python code"
+      ],
+      "answer": "It compiles code to bytecode which runs on the Python Virtual Machine"
+    },
+    {
+      "id": 13,
+      "question": "What is PEP 8?",
+      "optionsCode":[],
+      "optionsText": [
+        "A module used for database connectivity",
+        "Python's style guide for code formatting",
+        "A Python interpreter",
+        "A debugging tool in Python"
+      ],
+      "answer": "Python's style guide for code formatting"
+    },
+    {
+      "id": 14,
+      "question": "What is PIP and its use?",
+      "optionsCode":[],
+
+      "optionsText": [
+        "A Python debugger",
+        "A tool for compiling Python programs",
+        "A package manager for installing Python libraries",
+        "A tool for testing Python code"
+      ],
+      "answer": "A package manager for installing Python libraries"
+    },
+    {
+      "id": 15,
+      "question": "What is bytecode in Python?",
+      "optionsCode":[],
+      "optionsText": [
+        "A file format used for data storage in Python",
+        "An intermediate code created after Python source code is compiled",
+        "The final machine code executed by the CPU",
+        "The syntax used in Python"
+        
+      ],
+      "answer": "An intermediate code created after Python source code is compiled"
+    },
+    {
+      "id": 16,
+      "question": "What is indentation in Python?",
+      "optionsCode":[],
+      "optionsText": [
+        "The way comments are written",
+        "A method for formatting strings",
+        "The use of whitespace to define code blocks",
+        "A tool for debugging code"
+      ],
+      "answer": "The use of whitespace to define code blocks"
+    },
+    {
+      "id": 17,
+      "question": "Does Python rely on indentation?",
+      "optionsCode":[],
+      "optionsText": [
+        "Only for function definitions",
+        "Yes, for defining code blocks",
+        "No, it's optional",
+        "Only for comments"
+        
+      ],
+      "answer": "Yes, for defining code blocks"
+    },
+    {
+      "id": 18,
+      "question": "What does 'len()' function in Python do?",
+      "optionsCode":[],
+      "optionsText": [
+        "Returns the type of an object",
+        "Returns the number of items in an object",
+        "Calculates the sum of a list",
+        "Deletes an object"
+      ],
+      "answer": "Returns the number of items in an object"
+    },
+    {
+      "id": 19,
+      "question": "What is the correct way to create a list in Python?",
+      "optionsCode":[],
+      "optionsText": [
+        "my_list = (1, 2, 3)",
+        "my_list = {1, 2, 3}",
+        "my_list = [1, 2, 3]",
+        "my_list = '1, 2, 3'"
+      ],
+      "answer": "my_list = [1, 2, 3]"
+    },
+    {
+      "id": 20,
+      "question": "Which of the following is a mutable data type in Python?",
+      "optionsCode":[],
+      "optionsText": [
+        "List",
+        "String",
+        "Integer",
+        "Tuple"
+        
+      ],
+      "answer": "List"
+    }
+  ]
+  

@@ -1,0 +1,263 @@
+[
+{
+    "id": 1,
+    "question":"How do you increment the count field of an object test and print it in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["test.count++ and print(test.count)",
+    "test.count = test.count + 1 and print(test.count)",
+    "test.count += 1 and print(test.count)",
+    "test.count = increment(test.count) and print(test.count)"
+    ],
+    "answer":"test.count = test.count + 1 and print(test.count)",
+    "discription":"To increment the count field and print it, use test.count += 1 to increment and print(test.count) to display the value."
+},
+
+{
+    "id": 2,
+    "question":"Compare and contrast the float and Decimal classes' benefits and drawbacks.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["float is more precise but slower than Decimal, which is used for financial calculations.",
+    "float provides arbitrary precision, while Decimal has limited precision but is faster.",
+    "float is suitable for high-precision calculations and Decimal is used for general-purpose arithmetic.",
+    "float is faster and has limited precision, while Decimal offers arbitrary precision but is slower."
+    ],
+    "answer":"float is faster and has limited precision, while Decimal offers arbitrary precision but is slower.",
+    "discription":"float is fast but has limited precision, suitable for most general calculations. Decimal provides high precision and is better for financial and exact calculations but is slower."
+},
+
+{
+    "id": 3,
+    "question":"Decimal('1.200') and Decimal('1.2') are two objects to consider. In what sense are these the same object? Are these just two ways of representing the exact same value, or do they correspond to different internal states?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["They are different objects with different internal states, even though they represent the same value.",
+    "They are the same object with the same internal state, as Decimal maintains exact precision.",
+    "They are different objects with different values, so their internal states are different.",
+    "They are the same object but with different precision levels."
+    ],
+    "answer":"They are the same object with the same internal state, as Decimal maintains exact precision.",
+    "discription":"Decimal('1.200') and Decimal('1.2') represent the same exact value and have the same internal state, as Decimal maintains precise values regardless of their textual representation."
+},
+
+{
+    "id": 4,
+    "question":"What happens if the equality of Decimal('1.200') and Decimal('1.2') is checked?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["They are considered equal because trailing zeros are ignored.",
+    "They are considered unequal because trailing zeros matter.",
+    "They are considered equal because they represent the same value.",
+    "An error occurs because Decimal does not support comparison."
+    ],
+    "answer":"They are considered unequal because trailing zeros matter.",
+    "discription":"In Python's Decimal, Decimal('1.200') and Decimal('1.2') are not equal due to the precision difference, so trailing zeros are considered."
+},
+
+{
+    "id": 5,
+    "question":"Why is it preferable to start a Decimal object with a string rather than a floating-point value?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["String input avoids precision issues inherent in floating-point representation.",
+    "Strings are more memory-efficient than floating-point values.",
+    "Floating-point values are not supported by the Decimal class.",
+    "String input is faster for creating Decimal objects than floating-point values."
+    ],
+    "answer":"String input avoids precision issues inherent in floating-point representation.",
+    "discription":"Using a string to create a Decimal object avoids precision errors that can occur with floating-point values."
+},
+
+{
+    "id": 6,
+    "question":"In an arithmetic phrase, how simple is it to combine Decimal objects with integers?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Not possible; you must convert integers to Decimal objects first.",
+    "Very simple; Decimal objects automatically convert integers.",
+    "Moderately simple; use a specific method to combine them.",
+    "Simple; Python handles the conversion automatically."
+    ],
+    "answer":"Simple; Python handles the conversion automatically.",
+    "discription":"In Python, Decimal objects and integers can be combined directly in arithmetic expressions, with Python automatically handling the conversion."
+},
+
+{
+    "id": 7,
+    "question":"Can Decimal objects and floating-point values be combined easily?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Yes, Decimal and float can be combined directly without issues.",
+    "No, you must convert one type to the other before combining.",
+    "Yes, Python automatically handles the conversion between Decimal and float.",
+    "No, Decimal objects cannot be combined with floating-point values at all."
+    ],
+    "answer":"No, you must convert one type to the other before combining.",
+    "discription":"Combining Decimal and float directly can cause precision issues, so explicit conversion is needed to ensure accurate results"
+},
+
+{
+    "id": 8,
+    "question":"Describe a quantity that can be accurately expressed by the Decimal or Fraction classes but not by a floating-point value.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["1/3",
+    "0.25",
+    "√2",
+    "1/4"
+    ],
+    "answer":"1/3",
+    "discription":"The fraction 1/3 cannot be precisely expressed by floating-point values due to their binary representation but can be accurately represented using the Decimal or Fraction classes."
+},
+
+
+{
+    "id": 9,
+    "question":"Consider the following two fraction objects: Fraction(1, 2) and Fraction(1, 2). (5, 10). Is the internal state of these two objects the same? Why do you think that is?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Yes, the internal state is the same because both fractions are equivalent and automatically reduced to their simplest form.",
+    "No, the internal state is different because Fraction(1, 2) and Fraction(5, 10) have different numerators and denominators.",
+    "Yes, the internal state is different because Fraction(5, 10) needs more memory.",
+    "No, the internal state is different because Fraction(5, 10) is a decimal and not a fraction."
+    ],
+    "answer":"Yes, the internal state is the same because both fractions are equivalent and automatically reduced to their simplest form.",
+    "discription":"Both Fraction(1, 2) and Fraction(5, 10) are equivalent and automatically reduced to their simplest form, so their internal states are the same."
+},
+
+{
+    "id": 10,
+    "question":"How do the Fraction class and the integer type (int) relate to each other? Containment or inheritance?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Containment",
+    "Inheritance",
+    "Composition",
+    "Aggregation"
+    ],
+    "answer":"Inheritance",
+    "discription":"The Fraction class does not inherit from int; instead, it uses int values for its numerator and denominator."
+},
+
+{
+    "id": 11,
+    "question":"Provide a real-life example of a normal distribution.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["The number of cars in a parking lot at different times of the day",
+    "The heights of adult humans",
+    "The number of pages in books in a library",
+    "The time it takes for a computer to run a specific software application"
+    ],
+    "answer":"The heights of adult humans",
+    "discription":"The heights of adult humans typically follow a normal distribution, where most people are near the average height and fewer people are at the extremes."
+},
+
+{
+    "id": 12,
+    "question":"In the short term, how can you expect a probability distribution to behave? What do you think will happen as the number of trials grows?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["In the short term, the distribution will always be perfectly uniform, and as trials increase, it will become random.",
+    "In the short term, the distribution might show significant variation, but as the number of trials grows, it will approximate the theoretical probability distribution.",
+    "In the short term, the distribution will exactly match the theoretical distribution, and it will remain the same as the number of trials grows.",
+    "In the short term, the distribution will show no variation, and as the number of trials increases, it will become less predictable."
+    ],
+    "answer":"In the short term, the distribution might show significant variation, but as the number of trials grows, it will approximate the theoretical probability distribution.",
+    "discription":"Initially, a probability distribution can vary widely, but as the number of trials increases, it will more closely match the theoretical distribution."
+},
+
+{
+    "id": 13,
+    "question":"What kind of object can be shuffled by using random.shuffle?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Strings",
+    "Dictionaries",
+    "Lists",
+    "Tuples"
+    ],
+    "answer":"Lists",
+    "discription":"random.shuffle can shuffle mutable sequences like lists, but not immutable objects like strings or tuples."
+},
+
+{
+    "id": 14,
+    "question":"Describe the math package's general categories of functions.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["String manipulation, file handling, and mathematical operations",
+    "Arithmetic, trigonometric, logarithmic, and constant functions",
+    "Data analysis, machine learning, and statistical calculations",
+    "Input/output operations, error handling, and numerical methods"
+    ],
+    "answer":"Arithmetic, trigonometric, logarithmic, and constant functions",
+    "discription":"The math package includes functions for arithmetic operations, trigonometric calculations, logarithmic functions, and mathematical constants."
+},
+
+{
+    "id": 15,
+    "question":"How would you add the current date to the text file today.txt as a string in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["with open('today.txt', 'w') as f: f.write(str(datetime.date.today()))",
+    "import datetime; with open('today.txt', 'a') as f: f.write(str(datetime.date.today()))",
+    "import datetime; open('today.txt', 'w').write(str(datetime.date.today()))",
+    "with open('today.txt', 'a') as f: f.write(datetime.date.today())"
+    ],
+    "answer":"import datetime; with open('today.txt', 'a') as f: f.write(str(datetime.date.today()))",
+    "discription":"This code imports the datetime module, opens today.txt in append mode, and writes the current date as a string to the file."
+},
+
+{
+    "id": 16,
+    "question":"How do you read the text file today.txt into the string today_string in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["today_string = read('today.txt')",
+    "today_string = open('today.txt').read()",
+    "today_string = file('today.txt').read()",
+    "today_string = read_file('today.txt')"
+    ],
+    "answer":"today_string = open('today.txt').read()",
+    "discription":"To read the contents of today.txt into the string today_string, use open('today.txt').read(), which opens the file and reads its entire content into the variable."
+},
+
+{
+    "id": 17,
+    "question":"How can you parse the date from the string today_string using Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["datetime.datetime.strptime(today_string, '%Y-%m-%d')",
+    "datetime.date(today_string)",
+    "date.parse(today_string)",
+    "today_string.to_date()"
+    ],
+    "answer":"datetime.datetime.strptime(today_string, '%Y-%m-%d')",
+    "discription":"Use datetime.datetime.strptime(today_string, '%Y-%m-%d') to parse the date from the string today_string using the specified format."
+},
+
+{
+    "id": 18,
+    "question":"How can you create a date object for your day of birth in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["datetime.date(year, month, day)",
+    "date.create(year, month, day)",
+    "datetime.create_date(year, month, day)",
+    "datetime.datetime(year, month, day)"
+    ],
+    "answer":"datetime.date(year, month, day)",
+    "discription":"To create a date object for your day of birth, use datetime.date(year, month, day) specifying the year, month, and day."
+},
+
+{
+    "id": 19,
+    "question":"How can you find out what day of the week your date of birth was?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Using datetime.datetime.weekday() method",
+    "Using datetime.datetime.strftime('%A') method",
+    "Using datetime.date.isoformat() method",
+    "Using time.time() function"
+    ],
+    "answer":"Using datetime.datetime.weekday() method",
+    "discription":"Use datetime.datetime.weekday() to determine the day of the week for a given date, with Monday as 0 and Sunday as 6."
+},
+
+{
+    "id": 20,
+    "question":"When will you be (or when were you) 10,000 days old?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["On your 27th birthday",
+    "On your 27th birthday, exactly 10 years after your 18th birthday",
+    "On the day exactly 10,000 days after your birthdate",
+    "On the day exactly 10,000 days before your birthdate"
+    ],
+    "answer":"On the day exactly 10,000 days after your birthdate",
+    "discription":"You will be 10,000 days old exactly 10,000 days after your birthdate."
+}
+
+]

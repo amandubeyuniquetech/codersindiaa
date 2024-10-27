@@ -1,0 +1,142 @@
+
+.tutorials-layout{
+    
+    width: 99vw;
+    position: relative;
+    
+    display: flex;
+    
+    margin-top: -30px;
+  
+    overflow: hidden;
+    display: flex;
+    margin-right: -50px;
+    padding-right: 3rem;
+    
+    
+   >.content-body{
+    width: 100vw;
+    /* border: 10px solid black; */
+    margin-left:25%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items:stretch;
+    overflow-x: hidden;
+    /* margin-right: 3rem; */
+    /* overflow-x: hidden; */
+    margin-bottom: -34px;
+    margin-right: -50px;
+    margin-top: 50px;
+    /* overflow-y: scroll; */
+    
+    
+   }
+    >.tutorials-sidebar-main{
+        /* border: 10px solid green; */
+        overflow: hidden;
+        overflow-x: hidden;
+        position: fixed;
+        margin-left: -30px;
+
+    }
+    >.content-body>.main-wrapper{
+        margin-inline: 2rem;
+        padding-inline: 2rem;
+        
+    }
+    >.tuorials-layout-footer{
+        width: max-content;
+        /* overflow-x: unset; */
+        /* margin-right: -50px; */
+        
+    }
+
+    
+   
+}
+.main-heading{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(252, 252, 252);
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+}
+.tutorials-layout>.main-wrapper{
+    border: 10px solid blue;
+    padding: 1rem 1rem;
+    height: max-content;
+    /* >.main-heading{
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: white;
+    } */
+    /* box-shadow: 15px 5px  20px 2px gray; */
+}
+.sub-wrapper{
+    /* background-color: white; */
+    /* box-shadow: inset gray 0px 0px 10px 5px; */
+    /* padding: 1rem 1rem; */
+    >.sub-heading{
+        background-color: white;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: black;
+        margin-bottom: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        
+    }
+}
+.paragraph{
+    /* border: 1px solid gray; */
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: justify;
+}
+.note{
+    background-color: white;
+    padding: 0.5rem 1rem;
+    margin-top:-5px ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.sub-wrapper>.example{
+    /* border: 2px solid blue; */
+    /* background-color: rgb(43, 38, 38); */
+    color: white;
+}
+.example-code{
+    font-weight: 500;
+    color: white;
+}
+.example-code>pre{
+    /* background-color: rgb(21, 20, 20); */
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    >.highl{
+        background-color: rgb(21, 21, 21);
+    }
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border: 1px solid white;
+    >thead,tbody{
+        color: white;
+        >tr:nth-child(even){
+            background-color: white;
+            color: #004ADD;
+        }
+    }
+}
+

@@ -1,0 +1,261 @@
+[
+{
+    "id": 1,
+    "question":"What happens if you try to access spam['foo'] if spam is {'bar': 100}?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["It returns None.",
+    "It raises a KeyError.",
+    "It returns the value 100",
+    "It returns 0"
+    ],
+    "answer":"It raises a KeyError.",
+    "discription":"If you try to access a key in a dictionary that does not exist, Python raises a KeyError. In this case, 'foo' is not a key in the dictionary {'bar': 100}, so accessing spam['foo'] results in a KeyError."
+},
+
+{
+    "id": 2,
+    "question":"If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.keys()?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["'cat' in spam checks if 'cat' is a key or a value in the dictionary, while 'cat' in spam.keys() checks if 'cat' is only a key.",
+    "Both expressions have the same effect and check if 'cat' is a key in the dictionary.",
+    "'cat' in spam checks if 'cat' is a value in the dictionary, while 'cat' in spam.keys() checks if 'cat' is a key.",
+    "'cat' in spam checks if 'cat' is a key in the dictionary, while 'cat' in spam.keys() is not a valid expression."
+    ],
+    "answer":"Both expressions have the same effect and check if 'cat' is a key in the dictionary.",
+    "discription":"Both 'cat' in spam and 'cat' in spam.keys() check whether 'cat' is a key in the dictionary spam. The in operator directly checks for membership in the dictionary keys, making .keys() redundant in this context."
+},
+
+{
+    "id": 3,
+    "question":"If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.values()?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["'cat' in spam checks if 'cat' is a key in the dictionary, while 'cat' in spam.values() checks if 'cat' is a value in the dictionary.",
+    "'cat' in spam checks if 'cat' is a value in the dictionary, while 'cat' in spam.values() checks if 'cat' is a key.",
+    "Both expressions check if 'cat' is a key in the dictionary.",
+    "Both expressions check if 'cat' is a value in the dictionary."
+    ],
+    "answer":"'cat' in spam checks if 'cat' is a key in the dictionary, while 'cat' in spam.values() checks if 'cat' is a value in the dictionary.",
+    "discription":"'cat' in spam checks if 'cat' is one of the keys in the dictionary spam.\n'cat' in spam.values() checks if 'cat' is one of the values in the dictionary spam."
+},
+
+{
+    "id": 4,
+    "question":"What are escape characters, and how do you use them in Python?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["Escape characters are symbols that define the beginning and end of a string; they are used by enclosing text in single or double quotes.",
+    "Escape characters are special sequences starting with a backslash that allow you to include otherwise illegal characters in a string, like newlines or quotes.",
+    "Escape characters are functions that allow you to exit loops or functions early; they are used with the return or break statements",
+    "Escape characters are operators that escape from the execution of a program; they are used with the exit() function."
+    ],
+    "answer":"Escape characters are special sequences starting with a backslash that allow you to include otherwise illegal characters in a string, like newlines or quotes.",
+    "discription":"Escape characters in Python are used to include special characters in a string that would otherwise be difficult or impossible to include. For example, \n is used to insert a newline, \\ is used to include a single quote, and \" is used to include a double quote in a string."
+},
+
+{
+    "id": 5,
+    "question":"The string 'Howl's Moving Castle' is a correct value. Why isn't the single quote character in the word Howl's an escape problem?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["Because the single quote is automatically escaped in all strings.",
+    "Because the string is enclosed in double quotes, allowing the single quote to be used without escaping.",
+    "Because Python ignores single quotes in strings.",
+    "Because the single quote is at the beginning of the word."
+    ],
+    "answer":"Because the string is enclosed in double quotes, allowing the single quote to be used without escaping.",
+    "discription":"In Python, if a string is enclosed in double quotes, you can include single quotes ('') inside the string without needing to escape them. Similarly, if a string is enclosed in single quotes, you can include double quotes without escaping them."
+},
+
+{
+    "id": 6,
+    "question":"What are the values of the given expressions?\n'Hello, world!'[1]\n'Hello, world!'[0:5]\n'Hello, world!'[:5]\n'Hello, world!'[3:]",
+    "optionsCode":[],                                                                                               
+    "optionsText":["'e', 'Hello', 'Hello', 'lo, world!'",
+    "'H', 'ello', 'Hello', 'lo, world!'",
+    "'e', 'Hell', 'Hell', 'lo, world!'",
+    "'l', 'Hello', 'Hell', 'o, world!'"
+    ],
+    "answer":"'e', 'Hello', 'Hello', 'lo, world!'",
+    "discription":"'Hello, world!'[1] returns the character at index 1, which is 'e'.\n'Hello, world!'[0:5] returns the substring from index 0 to 4 (5 is not included), which is 'Hello'.\n'Hello, world!'[:5] is a shorthand for 'Hello, world!'[0:5], so it also returns 'Hello'.\n'Hello, world!'[3:] returns the substring starting from index 3 to the end, which is 'lo, world!'."
+},
+
+{
+    "id": 7,
+    "question":"What are the values of the following expressions?\n'Hello'.upper()\n'Hello'.upper().isupper()\n'Hello'.upper().lower()",
+    "optionsCode":[],                                                                                               
+    "optionsText":["'HELLO', True, 'hello'",
+    "'hello', False, 'HELLO'",
+    "'HELLO', False, 'hello'",
+    "'HELLO', True, 'HELLO'"
+    ],
+    "answer":"'HELLO', True, 'hello'",
+    "discription":"'Hello'.upper() converts the string to uppercase, resulting in 'HELLO'.\n'Hello'.upper().isupper() checks if the result of 'Hello'.upper() is in uppercase, which it is, so it returns True.\n'Hello'.upper().lower() first converts the string to uppercase ('HELLO'), then converts it to lowercase, resulting in 'hello'."
+},
+
+{
+    "id": 8,
+    "question":"What are the values of the following expressions?\n'Remember, remember, the fifth of July.'.split()\n'-'.join('There can only one.'.split())",
+    "optionsCode":[],                                                                                               
+    "optionsText":["['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'], 'There-can-only-one.'",
+    "['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'], 'There-can-only-one.'",
+    "['Remember', 'remember', 'the', 'fifth', 'of', 'July.'], 'There-can-only-one.'",
+    "['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'], 'There can only one.'"
+    ],
+    "answer":"['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'], 'There-can-only-one.'",
+    "discription":"'Remember, remember, the fifth of July.'.split() splits the string into a list of words, resulting in ['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.'].\n'-'.join('There can only one.'.split()) first splits 'There can only one.' into a list of words ['There', 'can', 'only', 'one.'] and then joins them with hyphens, resulting in 'There-can-only-one.'."
+},
+
+{
+    "id": 9,
+    "question":"What is the best way to remove whitespace characters from the start or end of a string in Python?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["strip()",
+    "trim()",
+    "remove()",
+    "cut()"
+    ],
+    "answer":"strip()",
+    "discription":"strip() removes whitespace characters from both the start and end of a string."
+},
+
+{
+    "id": 10,
+    "question":"What is the return value of the search() method?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["A Match object if the pattern is found; None if the pattern is not found.",
+    "A list of all matches.",
+    "A boolean value indicating whether the pattern was found.",
+    "The position of the first match as an integer."
+    ],
+    "answer":"A Match object if the pattern is found; None if the pattern is not found.",
+    "discription":"The search() method is typically used in contexts where a match for a pattern is sought. It returns a Match object if the pattern is found in the given string, and None if it is not. This behavior is consistent regardless of the specific module or library being used, as long as the method follows the same convention."
+},
+
+{
+    "id": 11,
+    "question":"From a Match item, how do you get the actual strings that match the pattern?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["group()",
+    "find()",
+    "extract()",
+    "match()"
+    ],
+    "answer":"group()",
+    "discription":"The group() method of a Match object is used to retrieve the actual substring that matched the pattern. If the pattern contains groups, group() can be used with arguments to get specific groups."
+},
+
+{
+    "id": 12,
+    "question":"The findall() method returns a list of strings or a list of string tuples. What determines whether it returns a list of strings or a list of string tuples?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["Whether the search string contains numbers or letters.",
+    "Whether the pattern used in findall() contains capturing groups.",
+    "The length of the string being searched.",
+    "The number of times the findall() method is called."
+    ],
+    "answer":"Whether the pattern used in findall() contains capturing groups.",
+    "discription":"The findall() method returns a list of strings when the pattern contains no capturing groups (i.e., no parentheses). If the pattern includes one or more capturing groups, findall() returns a list of tuples, where each tuple contains the strings matched by each group in the order they appear in the pattern."
+},
+
+{
+    "id": 13,
+    "question":"In regular expressions, what is the difference between the + and * characters?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["+ matches one or more occurrences, while * matches zero or one occurrence.",
+    "+ matches one or more occurrences, while * matches zero or more occurrences.",
+    "+ matches exactly one occurrence, while * matches zero or more occurrences.",
+    "+ matches zero or more occurrences, while * matches one or more occurrences."
+    ],
+    "answer":"+ matches one or more occurrences, while * matches zero or more occurrences.",
+    "discription":"In regular expressions, the + character matches one or more occurrences of the preceding element, while the * character matches zero or more occurrences of the preceding element."
+},
+
+{
+    "id": 14,
+    "question":"What is the difference between .* and .*? in regular expressions?",
+    "optionsCode":[],                                                                                               
+    "optionsText":[".* matches as few characters as possible, while .*? matches as many characters as possible.",
+    ".* matches as many characters as possible, while .*? matches as few characters as possible.",
+    "Both .* and .*? match the same number of characters.",
+    ".* is used for matching digits, while .*? is used for matching letters."
+    ],
+    "answer":".* matches as many characters as possible, while .*? matches as few characters as possible.",
+    "discription":".* is a greedy quantifier that matches the maximum number of characters possible.\n.*? is a non-greedy (or lazy) quantifier that matches the minimum number of characters necessary to satisfy the pattern."
+},
+
+{
+    "id": 15,
+    "question":"What is the syntax for matching both numbers and lowercase letters with a character class in regular expressions?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["[0-9a-z]",
+    "[A-Z0-9]",
+    "[a-zA-Z]",
+    "[a-z0-9A-Z]"
+    ],
+    "answer":"[0-9a-z]",
+    "discription":"[0-9a-z] matches any digit (0-9) or lowercase letter (a-z).\nThe other options include uppercase letters or mix them incorrectly."
+},
+
+{
+    "id": 16,
+    "question":"If numRegex = re.compile(r'\\d+'), what will numRegex.sub('X', '11 drummers, 10 pipers, five rings, 4 hen') return?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["'XX drummers, XX pipers, five rings, X hen'",
+    "'11 drummers, 10 pipers, five rings, 4 hen'",
+    "'X drummers, X pipers, five rings, X hen'",
+    "'drummers, pipers, five rings, hen'"
+    ],
+    "answer":"'X drummers, X pipers, five rings, X hen'",
+    "discription":"The re.compile(r'\\d+') creates a regex object that matches one or more digits.\nThe sub() method replaces all occurrences of the pattern with the string 'X'.\nTherefore, all numbers in the input string are replaced by 'X', resulting in 'X drummers, X pipers, five rings, X hen'."
+},
+
+{
+    "id": 17,
+    "question":"How would you write a regex that matches the full name of someone whose last name is Watanabe? You can assume that the first name that comes before it will always be one word that begins with a capital letter. The regex must match the following:\n'Haruto Watanabe'\n'Alice Watanabe'\n'RoboCop Watanabe'\nbut not the following:\n'haruto Watanabe' (where the first name is not capitalized)\n'Mr. Watanabe' (where the preceding word has a nonletter character)\n'Watanabe' (which has no first name)\n'Haruto watanabe' (where Watanabe is not capitalized)",
+    "optionsCode":[],                                                                                               
+    "optionsText":["[A-Z][a-z]* Watanabe",
+    "[A-Z]\\w+ Watanabe$",
+    "[A-Z]\\w+ watanabe",
+    "\b[A-Z]\\w*\b Watanabe"
+    ],
+    "answer":"[A-Z]\\w+ Watanabe$",
+    "discription":"The regex ^[A-Z]\\w+ Watanabe$ ensures that the first name starts with a capital letter ([A-Z]), is followed by one or more word characters (\\w+), and ends with 'Watanabe'. The ^ and $ anchor the pattern to the start and end of the string, ensuring the entire name matches the specified format."
+},
+
+{
+    "id": 18,
+    "question":"How would you write a regex that matches a sentence where the first word is either Alice, Bob, or Carol; the second word is either eats, pets, or throws; the third word is apples, cats, or baseballs; and the sentence ends with a period? This regex should be case-insensitive. It must match the following:\n 'Alice eats apples.'\n 'Bob pets cats.'\n 'Carol throws baseballs.'\n 'Alice throws Apples.'\n 'BOB EATS CATS.'\n but not the following:\n 'RoboCop eats apples.'\n 'ALICE THROWS FOOTBALLS.'\n 'Carol eats 7 cats.",
+    "optionsCode":[],                                                                                               
+    "optionsText":["r'^(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$'",
+    "r'^(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$' with re.IGNORECASE",
+    "r'(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$'",
+    "r'(alice|bob|carol) (eats|pets|throws) (apples|cats|baseballs)\\.$' with re.IGNORECASE"
+    ],
+    "answer":"r'^(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$' with re.IGNORECASE",
+    "discription":"The regex r'^(Alice|Bob|Carol) (eats|pets|throws) (apples|cats|baseballs)\\.$' ensures that the first word is one of 'Alice,' 'Bob,' or 'Carol,' the second word is one of 'eats,' 'pets,' or 'throws,' and the third word is one of 'apples,' 'cats,' or 'baseballs,' followed by a period at the end of the sentence. The re.IGNORECASE flag makes the regex case-insensitive, allowing it to match sentences regardless of case."
+},
+
+{
+    "id": 19,
+    "question":"Why is PyInputPlus commonly imported with import pyinputplus as pypi?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["To simplify the module name in the code and make it more convenient to use.",
+    "To access additional features that are not available with the standard import.",
+    "To avoid name conflicts with other libraries named pyinputplus.",
+    "To ensure compatibility with older versions of Python."
+    ],
+    "answer":"To simplify the module name in the code and make it more convenient to use.",
+    "discription":"Using import pyinputplus as pypi allows for a shorter and more convenient alias (pypi) when calling functions and methods from the PyInputPlus library. This practice helps in reducing code verbosity and enhancing readability."
+},
+
+{
+    "id": 20,
+    "question":"Using PyInputPlus, how do you ensure that the user enters a whole number between 0 and 99?",
+    "optionsCode":[],                                                                                               
+    "optionsText":["Use inputInt() with parameters specifying the range of values allowed",
+    "Use inputFloat() with parameters specifying the range of values allowed.",
+    "Use inputStr() with a validation function to check if the input is a number within the range.",
+    "Use inputChoice() with a list of numbers from 0 to 99."
+    ],
+    "answer":"Use inputInt() with parameters specifying the range of values allowed",
+    "discription":"To ensure that the user enters a whole number within a specific range using PyInputPlus, you would use the inputInt() function and provide parameters for min and max to restrict the input to values between 0 and 99."
+}
+]

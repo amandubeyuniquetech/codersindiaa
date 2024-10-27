@@ -1,0 +1,263 @@
+[
+
+    {
+        "id": 1,
+        "question":"If you have any, what are your choices for increasing the comparison between different figures on the same graph?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Use different colors or patterns for each figure",
+        "Increase the size of all figures.",
+        "Use the same color for all figures.",
+        "Place the figures on separate graphs."
+        ],
+        "answer":"Use different colors or patterns for each figure",
+        "discription":"To enhance comparison between different figures on the same graph, using different colors or patterns is effective in making them visually distinct."
+    },
+
+    {
+        "id": 2,
+        "question":"Can you explain the benefit of compound interest over a higher rate of interest that does not compound?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Compound interest always results in a lower final amount compared to a higher non-compounding rate.",
+        "Compound interest allows for interest to be calculated on previously earned interest, leading to potentially higher growth over time compared to a higher non-compounding rate.",
+        "Non-compounding interest provides more frequent updates to the principal than compound interest.",
+        "Compound interest is less beneficial because it results in less total interest compared to a single high-rate non-compounding interest."
+        ],
+        "answer":"Compound interest allows for interest to be calculated on previously earned interest, leading to potentially higher growth over time compared to a higher non-compounding rate.",
+        "discription":"Compound interest benefits from earning interest on previously earned interest, which can lead to greater growth over time compared to a higher non-compounding interest rate."
+    },
+
+    {
+        "id": 3,
+        "question":"Is it permissible to use several import statements to import the same module in Python? What would the goal be? Can you think of a situation where it would be beneficial?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["No, it's not permissible and will cause an error.",
+        "Yes, but it will slow down the program significantly.",
+        "Yes, it's permissible to import the same module multiple times, and it can be useful in conditional imports or reloading a module.",
+        "No, but it will lead to unexpected behavior in the code."
+        ],
+        "answer":"Yes, it's permissible to import the same module multiple times, and it can be useful in conditional imports or reloading a module.",
+        "discription":"In Python, you can use several import statements for the same module without causing errors. The module will only be loaded once, but re-importing it can be helpful in specific scenarios like conditional imports or reloading a module after making changes."
+    },
+
+    {
+        "id": 4,
+        "question":"How can you avoid issues with circular importing in Python, where two modules import each other?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Use import statements inside functions instead of at the top of the module.",
+        "Import all required modules in a single module to prevent circular references.",
+        "Use try and except blocks to handle import errors.",
+        "Combine all modules into a single file to avoid imports."
+        ],
+        "answer":"Use import statements inside functions instead of at the top of the module.",
+        "discription":"Circular importing can create hidden dependencies and bugs. To avoid this, place import statements inside functions rather than at the top level of the module. This limits the scope of the import and can prevent circular import issues by delaying the import until it's actually needed."
+    },
+
+    {
+        "id": 5,
+        "question":"Why is  _ _all_ _ in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To define a list of public objects to be exported when using from module import *",
+        "To declare private variables in a class",
+        "To automatically generate documentation for a module",
+        "To handle exceptions in a module"
+        ],
+        "answer":"To define a list of public objects to be exported when using from module import *",
+        "discription":"The __all__ attribute in a Python module is used to specify which objects (e.g., functions, classes) should be exposed when a user imports everything from the module using from module import *. This helps control which parts of the module's API are public and accessible."
+    },
+
+    {
+        "id": 6,
+        "question":"In what situation is it useful to refer to the _ _name_ _ attribute or the string '_ _main_ _'?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To import modules in a Python script",
+        "To check if a Python script is being run directly or imported as a module",
+        "To define global variables in a Python script",
+        "To declare a function in a Python script"
+        ],
+        "answer":"To check if a Python script is being run directly or imported as a module",
+        "discription":"The __name__ attribute is used in Python to determine if a script is being run directly or imported as a module. When a script is run directly, __name__ is set to '__main__'. This allows you to include code that should only execute when the script is run directly, not when it is imported elsewhere."
+    },
+
+    {
+        "id": 7,
+        "question":"What are some of the benefits of attaching a program counter to the RPN interpreter application, which interprets an RPN script line by line?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["It allows the interpreter to execute multiple scripts simultaneously.",
+        "It helps in tracking the current position in the script, facilitating debugging and flow control.",
+        "It increases the overall speed of the RPN calculation process.",
+        "It simplifies the process of converting RPN scripts into other programming languages."
+        ],
+        "answer":"It helps in tracking the current position in the script, facilitating debugging and flow control.",
+        "discription":"Attaching a program counter to an RPN interpreter helps in tracking the current position within the script, making it easier to manage the execution flow and debug any issues by pinpointing where errors occur."
+    },
+
+    {
+        "id": 8,
+        "question":"What are the minimum expressions or statements needed to render a basic programming language like RPN (Reverse Polish Notation) primitive but complete, capable of carrying out any computerized task theoretically possible?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Addition, multiplication, and subtraction operators",
+        "A stack-based memory model and conditional branching",
+        "Basic arithmetic operators and a stack-based memory model",
+        "Input/output operations and a memory management system"
+        ],
+        "answer":"Basic arithmetic operators and a stack-based memory model",
+        "discription":"To create a primitive but complete programming language capable of performing any computable task, a stack-based memory model and basic arithmetic operators (addition, subtraction, multiplication, and division) are sufficient. This combination allows for the manipulation of data and execution of a wide range of operations."
+    },
+
+    {
+        "id": 9,
+        "question":"What is the distinction between a NumPy array and a Pandas DataFrame, and is there a way to convert between the two?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A NumPy array is a multi-dimensional array for numerical data, while a Pandas DataFrame is a 2D table with labeled axes. You can convert a NumPy array to a DataFrame using pd.DataFrame().",
+        "A NumPy array can only handle numerical data, while a Pandas DataFrame can handle any data type. You can convert a DataFrame to a NumPy array using df.to_array().",
+        "A Pandas DataFrame is only used for numerical computations, while a NumPy array is used for data analysis. You can’t convert between them.",
+        "A NumPy array is a data structure for handling labeled data, while a Pandas DataFrame is a multi-dimensional array. You convert a DataFrame to a NumPy array with np.array()."
+        ],
+        "answer":"A NumPy array is a multi-dimensional array for numerical data, while a Pandas DataFrame is a 2D table with labeled axes. You can convert a NumPy array to a DataFrame using pd.DataFrame().",
+        "discription":"A NumPy array is a multi-dimensional array primarily for numerical data, while a Pandas DataFrame is a 2D table that supports labeled axes and different data types. You can convert a NumPy array to a DataFrame using pd.DataFrame()."
+    },
+
+    {
+        "id": 10,
+        "question":"What can go wrong when a user enters a stock ticker symbol, and how do you handle it?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["The ticker symbol may be invalid or not exist.",
+        "The ticker symbol might have too many characters.",
+        "The ticker symbol may be case-sensitive.",
+        "The ticker symbol could be misaligned with the current date."
+        ],
+        "answer":"The ticker symbol may be invalid or not exist.",
+        "discription":"Users might enter an invalid or non-existent stock ticker symbol, which can lead to errors or failures in retrieving stock information. To handle this, you should validate the ticker symbol before making a request, providing a helpful error message if the symbol is invalid."
+    },
+
+    {
+        "id": 11,
+        "question":"Identify some of the plotting techniques that are used to produce a stock-market chart.",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Line Chart",
+        "Scatter Plot",
+        "Heatmap",
+        "Pie Chart"
+        ],
+        "answer":"Line Chart",
+        "discription":"A line chart is commonly used to represent stock-market data by showing price changes over time, making it easy to visualize trends and patterns."
+    },
+
+    {
+        "id": 12,
+        "question":"Why is it essential to print a legend on a stock market chart?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To decorate the chart with colors",
+        "To provide information on different data series",
+        "To reduce the number of data points",
+        "To hide the chart's details"
+        ],
+        "answer":"To provide information on different data series",
+        "discription":"A legend on a stock market chart is crucial because it explains what each line or symbol represents, helping viewers understand which data series corresponds to which information, such as different stocks or indices."
+    },
+
+    {
+        "id": 13,
+        "question":"What is the best way to limit the length of a pandas data frame to less than a year?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Use df[df['date_column'] < (pd.Timestamp.now() - pd.DateOffset(years=1))]",
+        "Apply df.query('date_column < pd.Timestamp.now() - pd.DateOffset(years=1)')",
+        "Use df[df['date_column'] > pd.Timestamp.now() - pd.DateOffset(years=1)]",
+        "Apply df.loc[df['date_column'] > pd.Timestamp.now() - pd.DateOffset(years=1)]"
+        ],
+        "answer":"Use df[df['date_column'] > pd.Timestamp.now() - pd.DateOffset(years=1)]",
+        "discription":"To limit the length of a pandas DataFrame to data from less than a year ago, filter the DataFrame to include only rows where the 'date_column' is greater than the current date minus one year."
+    },
+
+    {
+        "id": 14,
+        "question":"What will be the result of this code snippet? sorted([3, 1, 2], key=lambda x: -x)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 2, 3]",
+        "[3, 2, 1]",
+        "[2, 1, 3]",
+        "[1, 3, 2]"
+        ],
+        "answer":"[3, 2, 1]",
+        "discription":"The lambda function lambda x: -x is used as the key argument in sorted(), which sorts the list in descending order by negating each element."
+    },
+
+    {
+        "id": 15,
+        "question":"Which of the following statements about lambda functions is true?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Lambda functions can have multiple expressions.",
+        "Lambda functions cannot be assigned to a variable.",
+        "Lambda functions are limited to a single expression but can be used wherever function objects are required.",
+        "Lambda functions can only be used as arguments to other functions."
+        ],
+        "answer":"Lambda functions are limited to a single expression but can be used wherever function objects are required.",
+        "discription":"Lambda functions are restricted to a single expression but can be used in any context where a function object is expected."
+    },
+    
+    {
+        "id": 16,
+        "question":"What will be the output of the following code?\ndef my_decorator(func):\n    def wrapper():\n        print('Something is happening before the function.')\n        func()\n        print('Something is happening after the function.')\n    return wrapper\n @my_decorator\ndef say_hello():\n    print('Hello!')\n say_hello()",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Hello!",
+        "Something is happening before the function.\nHello!\nSomething is happening after the function.",
+        "Something is happening before the function.",
+        "Hello!\nSomething is happening after the function."
+        ],
+        "answer":"Something is happening before the function.\nHello!\nSomething is happening after the function.",
+        "discription":"The my_decorator function wraps say_hello, so it adds messages before and after the original function call."
+    },
+
+    {
+        "id": 17,
+        "question":"What is the purpose of using functools.wraps in decorators?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To automatically document the decorated function.",
+        "To ensure that the decorated function maintains its original metadata.",
+        "To speed up the execution of the decorated function.",
+        "To prevent the decorated function from being called."
+        ],
+        "answer":"To ensure that the decorated function maintains its original metadata.",
+        "discription":"functools.wraps is used in decorators to preserve the original function's metadata, such as its name and docstring."
+    },
+
+    {
+        "id": 18,
+        "question":" Which of the following best describes the use of @staticmethod in a class?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To allow a method to be called on an instance of the class.",
+        "To define a method that does not require access to the instance or class itself.",
+        "To create a method that can access and modify class attributes.",
+        "To automatically add a class-level attribute to the method."
+        ],
+        "answer":"To define a method that does not require access to the instance or class itself.",
+        "discription":"@staticmethod is used to define a method that does not operate on an instance of the class or modify class state, making it accessible directly from the class itself."
+    },
+
+    {
+        "id": 19,
+        "question":"What is the purpose of the __del__ method in a class?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To initialize instance attributes.",
+        "To destroy an instance of the class when it is no longer in use.",
+        "To create a new instance of the class.",
+        "To define a class-level attribute."
+        ],
+        "answer":"To destroy an instance of the class when it is no longer in use.",
+        "discription":"The __del__ method is a special method in Python classes that is called when an instance is about to be destroyed, allowing for cleanup of resources."
+    },
+
+    {
+        "id": 20,
+        "question":"What is the Global Interpreter Lock (GIL) in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A lock that prevents multiple threads from executing Python bytecodes simultaneously.",
+        "A method that manages memory allocation in Python.",
+        "A lock that prevents multiple instances of Python from running at the same time.",
+        "A security feature to protect Python code."
+        ],
+        "answer":"A lock that prevents multiple threads from executing Python bytecodes simultaneously.",
+        "discription":"The GIL is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes simultaneously."
+    }
+    
+]

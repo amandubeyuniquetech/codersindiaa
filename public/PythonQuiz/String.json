@@ -1,0 +1,262 @@
+[
+{
+    "id": 1,
+    "question":"What is the correct Python code to calculate the length of a string my_string?",
+
+    "options":["length = my_string.len()",
+    "length = len(my_string)",
+    "length = my_string.length()",
+    "length = length(my_string)"
+    ],
+    "answer":"length = len(my_string)",
+    "description":"The correct way to calculate the length of a string in Python is by using the built-in len() function. The code len(my_string) returns the number of characters in my_string."
+
+},
+
+{
+    "id": 2,
+    "question":"Write a Python Program to Avoid Spaces in String Length",
+                                                                                                    
+    "options":["length = len(string) - string.count(' ')",
+    "length = len(string.replace(' ', ''))",
+    "length = sum(1 for char in string if char != ' ')",
+    "length = len([char for char in string if char != ' '])"
+    ],
+    "answer":"length = len(string.replace(' ', ''))",
+    "discription":"string.replace(' ', '') removes all spaces from the string, and len() then calculates the length of the resulting string without spaces. This method is straightforward and effective for counting characters excluding spaces."
+},
+
+{
+    "id": 3,
+    "question":"Write a Python Program Print First Half of the String in Uppercase and the Next Half in Lowercase",
+                                                                                                    
+    "options":["print(string.upper() + string.lower())",
+    "print(string[:len(string)//2].lower() + string[len(string)//2:].upper())",
+    "print(string[:len(string)//2].upper() + string[len(string)//2:].lower())",
+    "print(string.lower()[:len(string)//2] + string.upper()[len(string)//2:])"
+    ],
+    "answer":"print(string[:len(string)//2].upper() + string[len(string)//2:].lower())",
+    "discription":"this code splits the string into two halves. The first half is converted to uppercase and the second half converted into lower case."
+},
+
+{
+    "id": 4,
+    "question":"Which Python method can be used to ignore any leading whitespace (' ') from a string?\ntext = '   Hello, World!'\nresult = text.____()\nprint(result)",
+                                                                                                    
+    "options":["strip()",
+    "rstrip()",
+    "lstrip()",
+    "replace()"
+    ],
+    "answer":"lstrip()",
+    "discription":"In the code, using lstrip() removes any leading whitespace from the beginning of the string, resulting in 'Hello, World!'."
+},
+
+{
+    "id": 5,
+    "question":"Python program to check string is palindrome or not\nstring = 'Python'\nif string == string[::-1]:\n    print('Palindrome')\nelse:\n    print('Not a Palindrome')",
+                                                                                                    
+    "options":["Palindrome",
+    "Not a Palindrome",
+    "radar",
+    "Error"
+    ],
+    "answer":"Palindrome",
+    "discription":"The code checks if the string is equal to its reverse (string[::-1]). Since 'radar' is the same forward and backward, the output will be Palindrome."
+},
+
+{
+    "id": 6,
+    "question":"Python code to check given character is digit or not\nchar = '5'\nresult = char.isdigit()\nprint(result)",
+                                                                                                    
+    "options":["True",
+    "False",
+    "5",
+    "Error"
+    ],
+    "answer":"True",
+    "discription":"The isdigit() method checks if the character is a digit. Since '5' is a digit, the code returns True."
+},
+
+{
+    "id": 7,
+    "question":"Which of the following Python code snippets correctly removes all occurrences of the character 'a' from the string 'banana'?",
+                                                                                                    
+    "options":["result = 'banana'.remove('a')",
+    "result = 'banana'.replace('a', '')",
+    "result = 'banana'.delete('a')",
+    "result = 'banana'.strip('a')"
+    ],
+    "answer":"result = 'banana'.replace('a', '')",
+    "discription":"The replace() method is used to remove all occurrences of the character 'a' from the string 'banana' by replacing 'a' with an empty string ''."
+},
+
+{
+    "id": 8,
+    "question":"What will be the output of the following Python program?\ns = 'codersIndia'\nif len(s) < 2:\n    result = ''\nelse:\n    result = s[:2] + s[-2:]\nprint(result)",
+                                                                                                    
+    "options":["'coder'",
+    "'codersia'",
+    "'coia'",
+    "'coIndia'"
+    ],
+    "answer":"'coia'",
+    "discription":"The program checks if the length of the string s is less than 2. If it is, the result is set to an empty string. Otherwise, the result is a new string made by concatenating the first two characters (s[:2]) and the last two characters (s[-2:]). In this case, 'codersIndia' gives the output 'coia'."
+},
+
+{
+    "id": 9,
+    "question":"Which of the following Python programs correctly swaps the first two characters of each given string and combines them with a space?\nGiven:\nSample Strings: 'coders', 'India'\nExpected Result: 'Indis codera'",
+                                                                                                    
+    "options":["str1 = 'coders'\nstr2 = 'India'\nnew_str1 = str2[:2] + str1[2:]\nnew_str2 = str1[:2] + str2[2:]\nresult = new_str1 + ' ' + new_str2\nprint(result)",
+    "str1 = 'coders'\nstr2 = 'India'\nresult = str1[2:] + str2[:2] + ' ' + str2[2:] + str1[:2]\nprint(result)",
+    "str1 = 'coders'\nstr2 = 'India'\nresult = str2[2:] + str1[:2] + ' ' + str1[2:] + str2[:2]\nprint(result)",
+    "str1 = 'coders'\nstr2 = 'India'\nnew_str1 = str1[:2] + str2[2:]\nnew_str2 = str2[:2] + str1[2:]\nresult = new_str1 + ' ' + new_str2\nprint(result)"
+    ],
+    "answer":"str1 = 'coders'\nstr2 = 'India'\nnew_str1 = str2[:2] + str1[2:]\nnew_str2 = str1[:2] + str2[2:]\nresult = new_str1 + ' ' + new_str2\nprint(result)",
+    "discription":"swaps the first two characters of each string and then combines them with a space, resulting in the output 'Indis codera'."
+},
+
+{
+    "id": 10,
+    "question":"What will be the output of the following code?\nstr1 = 'Coders'\nstr2 = 'India'\nresult = str1 + ' ' + str2\nprint(result)",
+                                                                                                    
+    "options":["CodersIndia",
+    "Coders India",
+    "Coders",
+    "India"
+    ],
+    "answer":"Coders India",
+    "discription":"The + operator concatenates strings, and the space (' ') is added between str1 and str2, resulting in 'Coders India'."
+},
+
+{
+    "id": 11,
+    "question":"What will be the output of the following code?\nstr1 = 'Python'\nresult = str1 * 3\nprint(result)",
+                                                                                                    
+    "options":["PythonPythonPython",
+    "Python 3",
+    "3Python",
+    "Python Python Python"
+    ],
+    "answer":"PythonPythonPython",
+    "discription":"The * operator repeats the string str1 three times, resulting in 'PythonPythonPython'."
+},
+
+{
+    "id": 12,
+    "question":"What will be the output of the following code?\nstr1 = 'CODERSINDIA'\nresult = str1.lower()\nprint(result)",
+                                                                                                    
+    "options":["codersindia",
+    "CODERSINDIA",
+    "Codersindia",
+    "Coders India"
+    ],
+    "answer":"codersindia",
+    "discription":"The lower() method converts all characters in the string to lowercase, resulting in 'codersindia'."
+},
+
+{
+    "id": 13,
+    "question":"What will be the output of the following code?\nstr1 = 'codersindia'\nresult = str1.upper()\nprint(result)",
+                                                                                                    
+    "options":["CODERSINDIA",
+    "CodersIndia",
+    "Coders india",
+    "codersIndia"
+    ],
+    "answer":"CODERSINDIA",
+    "discription":"The upper() method converts all characters in the string to uppercase, resulting in 'CODERSINDIA'."
+},
+
+{
+    "id": 14,
+    "question":"What will be the output of the following code?\nstr1 = 'banana'\nresult = str1.count('a')\nprint(result)",
+                                                                                                    
+    "options":["2",
+    "3",
+    "4",
+    "5"
+    ],
+    "answer":"3",
+    "discription":"The count() method returns the number of occurrences of the substring 'a', which appears 3 times in 'banana'."
+},
+
+{
+    "id": 15,
+    "question":"What will be the output of the following code?\nstr1 = 'Hello World'\result = str1.replace('World', 'Python')\nprint(result)",
+                                                                                                    
+    "options":["Hello Python",
+    "Hello World Python",
+    "Hello",
+    "World Python"
+    ],
+    "answer":"Hello Python",
+    "discription":"The replace() method replaces occurrences of a substring with another substring, resulting in 'Hello Python'."
+},
+
+{
+    "id": 16,
+    "question":"What is the correct way to reverse the string 'python'?",
+                                                                                                    
+    "options":["str1 = 'python'\nresult = str1[::-1]\nprint(result)",
+    "str1 = 'python'\nresult = str1.reverse()\nprint(result)",
+    "str1 = 'python'\nresult = reversed(str1)\nprint(result)",
+    "str1 = 'python'\nresult = ''.join(reversed(str1))\nprint(result)"
+    ],
+    "answer":"str1 = 'python'\nresult = str1[::-1]\nprint(result)",
+    "discription":"Using slicing with [::-1] reverses the string."
+},
+
+{
+    "id": 17,
+    "question":"Which Python code correctly rotates the string 'python' by 2 positions?",
+                                                                                                    
+    "options":["str1 = 'python'\nresult = str1[2:] + str1[:2]\nprint(result)",
+    "str1 = 'python'\nresult = str1[-2:] + str1[:-2]\nprint(result)",
+    "str1 = 'python'\nresult = str1[::-1]\nprint(result)",
+    "str1 = 'python'\nresult = str1[2:] + str1[:1]\nprint(result)"
+    ],
+    "answer":"str1 = 'python'\nresult = str1[2:] + str1[:2]\nprint(result)",
+    "discription":"The code moves the first two characters to the end, resulting in 'thonpy'."
+},
+
+{
+    "id": 18,
+    "question":"What will be the output of the following code that replaces all occurrences of 'a' with '@@' in 'banana'?",
+                                                                                                    
+    "options":["str1 = 'banana'\nresult = str1.replace('a', '@@')\nprint(result)",
+    "str1 = 'banana'\nresult = str1.replace('a', 'a@@')\nprint(result)",
+    "str1 = 'banana'\nresult = str1.replace('n', '@')\nprint(result)",
+    "str1 = 'banana'\nresult = str1.replace('b', 'a')\nprint(result)"
+    ],
+    "answer":"str1 = 'banana'\nresult = str1.replace('a', '@@')\nprint(result)",
+    "discription":"The code replaces all instances of 'a' with '@@', resulting in 'b@@n@@n@@'."
+},
+
+{
+    "id": 19,
+    "question":"Which Python code correctly concatenates the first and last letters of the strings 'abc' and 'def'?",
+                                                                                                    
+    "options":["str1 = 'abc'\nstr2 = 'def'\nresult = str1[0] + str2[-1]\nprint(result)",
+    "str1 = 'abc'\nstr2 = 'def'\nresult = str1[0] + str2[0] + str1[-1] + str2[-1]\nprint(result)",
+    "str1 = 'abc'\nstr2 = 'def'\nresult = str1[-1] + str2[-1]\nprint(result)",
+    "str1 = 'abc'\nstr2 = 'def'\nresult = str1[0] + str2[0]\nprint(result)"
+    ],
+    "answer":"str1 = 'abc'\nstr2 = 'def'\nresult = str1[0] + str2[-1]\nprint(result)",
+    "discription":"The code combines the first and last characters of both strings, resulting in 'adcf'."
+},
+
+{
+    "id": 20,
+    "question":"What will be the output of the following Python code that removes the first and last characters from the string 'CodersIndia'?",
+                                                                                                    
+    "options":["str1 = 'CodersIndia'\nresult = str1[1:-1]\nprint(result)",
+    "str1 = 'CodersIndia'\nresult = str1[1:-2]\nprint(result)",
+    "str1 = 'CodersIndia'\nresult = str1[:-1]\nprint(result)",
+    "str1 = 'CodersIndia'\nresult = str1[1:]\nprint(result)"
+    ],
+    "answer":"str1 = 'CodersIndia'\nresult = str1[1:-1]\nprint(result)",
+    "discription":"The code slices the string to exclude the first and last characters, resulting in 'odersIndi'."
+}
+]

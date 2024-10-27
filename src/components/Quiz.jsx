@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import QuizHeader from "./QuizHeader";
+import "./Quiz.css";
 
 const Loading = () => (
   <div className="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center items-center border-2 rounded-tr-[50%] rounded-bl-[50%]">
@@ -23,7 +24,7 @@ const Quiz = () => {
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
   const [loading, setLoading] = useState(false);
-  const [timer, setTimer] = useState(60); 
+  const [timer, setTimer] = useState(4*60); 
   const [timerIntervalId, setTimerIntervalId] = useState(null);
   const [status, setStatus] = useState("");
 
@@ -95,7 +96,7 @@ const Quiz = () => {
     setScore(0);
     setShowResult(false);
     setLoading(false);
-    setTimer(60); 
+    setTimer(4*60); 
     navigate("/quiz"); 
   };
 
@@ -104,36 +105,39 @@ const Quiz = () => {
       <QuizHeader timer={timer} />
       <div className="md:w-9/12 w-[90%] flex md:flex-row flex-col mx-auto">
         {/* question section */}
-        <div className="md:w-[70%] w-full">
+        <div  className="md:w-[70%]  w-full">
           <div>
             {questions.map((question, index) => (
-              <div
+              <div 
+              id="question-main-wrapper"
                 key={question.id}
-                className="m-3 py-3 px-4 shadow-sm border border-gray-200 rounded "
+                className={`m-3 py-3 px-4 shadow-sm border border-gray-200  ${
+                  showResult && answers[question.id] !== question.answer ? "bg-red-200" : ""
+                }`}
               >
-                <p className="flex items-center rounded text-xs p-2 cursor-pointer">
-                  <span className="h-8 w-8 bg-[#FCC822] rounded-full flex justify-center items-center text-green-800 mr-3">
+                <p className=" flex items-center rounded text-xs p-2 cursor-pointer">
+                  <span className="question-id h-8 w-8 bg-[#004AAD] rounded-full flex justify-center items-center text-white mr-3">
                     {index + 1}
                   </span>
-                  <p className="">{question.question}</p>
+                  <p className="question">{question.question}</p>
                 </p>
                 <div className="grid grid-cols-2 gap-4 mt-5">
                   {question.options.map((option, index) => (
                     <div
-                      className={`border border-gray-200 rounded text-xs p-2 cursor-pointer ${
-                        answers[question.id] === option ? "bg-gray-300" : ""
+                      className={`border border-gray-200  text-xs p-2 cursor-pointer question-option ${
+                        answers[question.id] === option ? "bg-[#004AAD] text-white" : "bg-"
                       }`}
                       key={option}
                       onClick={() => handleAnswerSelect(question.id, option)}
                     >
-                      <p className="text-[10px] mb-1">Option {index + 1}</p>
+                      <p className="text-[10px] mb-1 ">Option {index + 1}</p>
                       <p>{option}</p>
                     </div>
                   ))}
                 </div>
               </div>
             ))}
-            <button onClick={handleSubmit} className="bg-[#FCC822] px-6 py-2 text-white rounded">
+            <button onClick={handleSubmit} className="bg-[#004AAD] px-6 py-2 text-white rounded">
               Submit Quiz
             </button>
           </div>
@@ -149,20 +153,21 @@ const Quiz = () => {
               {status}
             </h3>
                 <h1 className="text-3xl font-bold my-2">
-                  {score * 10}
-                  <span className="text-slate-800">/60</span>
+                  {/* {score * 10} */}
+                  {score}
+                  <span className="text-slate-800">/20</span>
                 </h1>
                 <p className="text-sm flex justify-center items-center gap-2">
                   Total Time:{" "}
                   <span className="text-xl text-orange-500">
-                    {formatTime(60 - timer)}
+                    {formatTime(4*60 - timer)}
                     <span className="text-xs">sec</span>
                   </span>
                 </p>
               </div>
               <button
                 onClick={restartQuiz}
-                className="bg-[#FCC822] text-white w-full py-2 rounded mt-16"
+                className="bg-[#004AAD] text-white w-full py-2 rounded mt-16"
               >
                 Restart
               </button>

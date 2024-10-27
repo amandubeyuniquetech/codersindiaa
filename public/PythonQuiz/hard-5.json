@@ -1,0 +1,261 @@
+[
+    {
+        "id": 1,
+        "question":"How can you augment, instead of completely replacing, an inherited method?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["By redefining the method in the subclass without using the superclass method.",
+        "By calling the superclass method using super() within the subclass method.",
+        "By using the @augment decorator on the method in the subclass.",
+        "By defining the method twice in the subclass."
+        ],
+        "answer":"By calling the superclass method using super() within the subclass method.",
+        "discription":"In Python, you can augment an inherited method by calling the superclass method using super() within the subclass method. This allows you to extend the behavior of the inherited method rather than completely replacing it."
+    },
+
+    {
+        "id": 2,
+        "question":"Which two operator overloading methods can you use in your classes to support iteration in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["__getitem__ and __iter__",
+        "__next__ and __contains__",
+        "__len__ and __iter__",
+        "__iter__ and __next__"
+        ],
+        "answer":"__iter__ and __next__",
+        "discription":"To support iteration in a Python class, you need to define __iter__ and __next__ methods. The __iter__ method returns an iterator object, while the __next__ method returns the next item in the sequence and raises StopIteration when there are no more items."
+    },
+
+    {
+        "id": 3,
+        "question":"In what contexts do the two operator overloading methods __str__ and __repr__ manage printing in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["__str__ is used for debugging, and __repr__ is used for user-friendly output.",
+        "__str__ is used for user-friendly output, and __repr__ is used for debugging.",
+        "Both __str__ and __repr__ are used interchangeably for all types of output.",
+        "__str__ is used for internal data representation, and __repr__ is used for external data representation."
+        ],
+        "answer":"__str__ is used for user-friendly output, and __repr__ is used for debugging.",
+        "discription":"In Python, __str__ provides a human-readable string representation of an object, which is useful for end-user output, while __repr__ provides a detailed string representation that is helpful for debugging and can be used to recreate the object."
+    },
+
+    {
+        "id": 4,
+        "question":"In a class, how do you intercept slice operations?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["By defining the __slice__ method in the class.",
+        "By implementing the __getitem__ and __setitem__ methods.",
+        "By using the slice() function inside the class.",
+        "By overriding the __iter__ method."
+        ],
+        "answer":"By implementing the __getitem__ and __setitem__ methods.",
+        "discription":"To intercept slice operations in a class, you need to implement the __getitem__ method for retrieving items and the __setitem__ method for setting items. For example, if you define __getitem__(self, key) and __setitem__(self, key, value) in your class, you can handle slice operations on instances of the class."
+    },
+
+    {
+        "id": 5,
+        "question":"In a class, how do you capture in-place addition?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["By defining the __add__ method.",
+        "By defining the __iadd__ method.",
+        "By defining the __setitem__ method.",
+        "By defining the __getitem__ method."
+        ],
+        "answer":"By defining the __iadd__ method.",
+        "discription":"To capture in-place addition (using the += operator) in a class, you define the __iadd__ method. This method allows you to specify the behavior of the in-place addition operation, modifying the object directly. For example, def __iadd__(self, other): would handle obj += other."
+    },
+
+    {
+        "id": 6,
+        "question":"When is it appropriate to use operator overloading?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["When you want to use standard operators with custom objects.",
+        "When you want to create multiple methods with the same name.",
+        "When you need to create an abstract class.",
+        "When you want to change the default behavior of loops."
+        ],
+        "answer":"When you want to use standard operators with custom objects.",
+        "discription":"Operator overloading in Python is appropriate when you want to define how standard operators (like +, -, *) work with instances of your custom classes. By overloading operators, you can customize their behavior to perform specific actions on objects of your class."
+    },
+
+    {
+        "id": 7,
+        "question":"What is the purpose of pseudoprivate attributes in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To make attributes inaccessible from outside the class.",
+        "To create a new class dynamically.",
+        "To ensure attributes are read-only.",
+        "To indicate that attributes are for internal use only."
+        ],
+        "answer":"To indicate that attributes are for internal use only.",
+        "discription":"Pseudoprivate attributes, prefixed with a single underscore (e.g., _attribute), are used in Python to indicate that they are intended for internal use within a class or module. While they are not strictly private, this convention helps signal to developers that these attributes should not be accessed or modified directly from outside the class."
+    },
+
+    {
+        "id": 8,
+        "question":"Identify two methods for specifying actions to be executed at termination time, regardless of whether or not an exception exists in Python.",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Using try and finally blocks.",
+        "Using try and except blocks.",
+        "Using if and else statements.",
+        "Using while and break statements."
+        ],
+        "answer":"Using try and finally blocks.",
+        "discription":"In Python, the finally block is used alongside the try block to specify actions that should be executed at termination time, regardless of whether an exception occurred. The code inside the finally block will always run after the try block, ensuring that cleanup or finalization code is executed."
+    },
+
+    {
+        "id": 9,
+        "question":"What does the assert statement do in Python, and what other statement is it like?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["It checks if a condition is true and raises an AssertionError if it is false, similar to the if statement.",
+        "It prints a message to the console if a condition is true, similar to the print statement.",
+        "It stops the execution of a program, similar to the break statement.",
+        "It assigns a value to a variable if a condition is true, similar to the if-else statement."
+        ],
+        "answer":"It checks if a condition is true and raises an AssertionError if it is false, similar to the if statement.",
+        "discription":"The assert statement in Python is used to test if a condition is true. If the condition is false, it raises an AssertionError and stops the program. It's similar to an if statement, but it's mainly used for debugging purposes to ensure certain conditions hold true during execution."
+    },
+
+    {
+        "id": 10,
+        "question":"What is the purpose of the with/as statement in Python, and what other statement is it similar to?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["It handles file I/O operations and is similar to a for loop.",
+        "It manages exceptions and is similar to a try/except block.",
+        "It ensures proper resource management and is similar to a try/finally block.",
+        "It imports modules and is similar to the import statement."
+        ],
+        "answer":"It ensures proper resource management and is similar to a try/finally block.",
+        "discription":"The with/as statement in Python is used to ensure that resources like files or network connections are properly managed. It is similar to a try/finally block because it automatically handles the setup and cleanup of resources, ensuring that they are released after use, even if an error occurs."
+    },
+
+    {
+        "id": 11,
+        "question":"What are the two latest user-defined exception constraints in Python 3.X?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Exceptions must be derived from the BaseException class and must include a custom __init__ method.",
+        "Exceptions must be derived from the Exception class and can include custom attributes.",
+        "Exceptions must be derived from the Error class and must include a custom error message.",
+        "Exceptions must be derived from the StandardError class and must override the __str__ method."
+        ],
+        "answer":"Exceptions must be derived from the Exception class and can include custom attributes.",
+        "discription":"In Python 3.X, user-defined exceptions must be derived from the Exception class. This allows the creation of custom exceptions that can include specific attributes and methods tailored to the needs of the program."
+    },
+
+    {
+        "id": 12,
+        "question":"How are class-based exceptions that have been raised matched to handlers in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["By matching the exception name exactly.",
+        "By the order in which exceptions are defined in the code.",
+        "By checking the type of the exception and matching it to the nearest superclass.",
+        "By matching the line number where the exception occurred."
+        ],
+        "answer":"By checking the type of the exception and matching it to the nearest superclass.",
+        "discription":"In Python, when a class-based exception is raised, the exception handling mechanism checks the type of the exception and matches it to the nearest superclass defined in the except blocks. If the exact exception type is not found, the handler for a parent class of that exception will be used, following the class hierarchy."
+    },
+
+    {
+        "id": 13,
+        "question":"Which two methods can be used to attach context information to exception artifacts in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Using raise with a custom exception message and logging.",
+        "Using assert statements and custom exception messages.",
+        "Using try-except blocks with print statements.",
+        "Using raise with a custom exception class and args attribute."
+        ],
+        "answer":"Using raise with a custom exception message and logging.",
+        "discription":"To attach context information to exception artifacts, you can use raise with a custom exception message to provide detailed information about the error, and you can use logging to record additional context information for debugging purposes."
+    },
+
+    {
+        "id": 14,
+        "question":"What is the difference between __getattr__ and __getattribute__?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["__getattr__ is called when an attribute is accessed, while __getattribute__ is called only if the attribute does not exist.",
+        "__getattribute__ is called when an attribute is accessed, while __getattr__ is called only if the attribute does not exist.",
+        "__getattr__ and __getattribute__ are interchangeable and function the same way.",
+        "__getattr__ is used for method attributes only, while __getattribute__ is used for all attributes."
+        ],
+        "answer":"__getattribute__ is called when an attribute is accessed, while __getattr__ is called only if the attribute does not exist.",
+        "discription":"__getattribute__ is called whenever an attribute is accessed, whether it exists or not. In contrast, __getattr__ is only called when the attribute being accessed is not found in the usual places (i.e., it's not an existing attribute)."
+    },
+
+    {
+        "id": 15,
+        "question":"What is the key difference between properties and descriptors in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Properties are methods, while descriptors are functions.",
+        "Properties are used to manage attributes with getter/setter methods, while descriptors define how attributes are accessed and managed.",
+        "Properties can only be used in classes, while descriptors can be used in functions.",
+        "Properties allow dynamic attribute assignment, while descriptors provide static attribute management."
+        ],
+        "answer":"Properties are used to manage attributes with getter/setter methods, while descriptors define how attributes are accessed and managed.",
+        "discription":"Properties in Python provide a way to manage attribute access through getter and setter methods. Descriptors, on the other hand, are a more general mechanism that allows you to customize how attributes are accessed, set, or deleted by defining methods in a class (like __get__, __set__, and __delete__)."
+    },
+
+    {
+        "id": 16,
+        "question":"What are the key differences in functionality between __getattr__ and __getattribute__, as well as properties and descriptors?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["__getattr__ is called for existing attributes, while __getattribute__ is used for non-existing attributes; properties are used to manage attributes dynamically, and descriptors provide additional control over attribute access.",
+        "__getattribute__ is called for all attribute access, whereas __getattr__ is called only when the attribute is not found; properties simplify attribute access, and descriptors offer more control over how attributes are accessed and modified.",
+        "__getattr__ is only used for class attributes, while __getattribute__ is used for instance attributes; properties are used to define class-level attributes, and descriptors are used to manage instance-level attributes.",
+        "Both __getattr__ and __getattribute__ handle attribute access equally, properties are used only in built-in types, and descriptors are a type of Python decorator."
+        ],
+        "answer":"__getattribute__ is called for all attribute access, whereas __getattr__ is called only when the attribute is not found; properties simplify attribute access, and descriptors offer more control over how attributes are accessed and modified.",
+        "discription":"__getattribute__ is called for all attribute access (both existing and non-existing attributes), while __getattr__ is invoked only when the attribute is not found. Properties are used to simplify access to attributes by defining getter, setter, and deleter methods, while descriptors provide more control by defining methods for getting, setting, and deleting attributes."
+    },
+
+    {
+        "id": 17,
+        "question":"What is the best way to declare a class's metaclass?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["class MyClass(metaclass=Meta):",
+        "class MyClass(metaclass='Meta'):",
+        "class MyClass(metaclass=MetaClass()):",
+        "class MyClass(Meta):"
+        ],
+        "answer":"class MyClass(metaclass=Meta):",
+        "discription":"The correct way to declare a class's metaclass in Python is by using the metaclass keyword in the class definition. This specifies that Meta is the metaclass for MyClass."
+    },
+
+    {
+        "id": 18,
+        "question":"How do class decorators overlap with metaclasses for handling classes?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Class decorators modify instance behavior, while metaclasses handle class-level behavior.",
+        "Both class decorators and metaclasses can modify class attributes and methods during class creation.",
+        "Class decorators change how methods are called, whereas metaclasses are used for handling instance methods.",
+        "Metaclasses are used to modify instances of a class, whereas class decorators are only applied to the class definition itself."
+        ],
+        "answer":"Both class decorators and metaclasses can modify class attributes and methods during class creation.",
+        "discription":"Class decorators and metaclasses can both be used to modify class-level attributes and methods. Class decorators are applied to the class definition after it is created, while metaclasses are involved in the class creation process itself. Both techniques allow for customization of how classes behave."
+    },
+
+    {
+        "id": 19,
+        "question":"How do class decorators overlap with metaclasses for handling instances?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Class decorators modify instance attributes directly, while metaclasses handle instance creation and initialization.",
+        "Class decorators can only be used to add methods, whereas metaclasses only affect class inheritance.",
+        "Class decorators and metaclasses both handle instance creation and can modify instance attributes.",
+        "Class decorators are used for altering class methods and attributes, whereas metaclasses focus on class structure and instance handling."
+        ],
+        "answer":"Class decorators are used for altering class methods and attributes, whereas metaclasses focus on class structure and instance handling.",
+        "discription":"Class decorators modify class methods and attributes, while metaclasses handle the creation and management of class instances."
+    },
+
+    {
+        "id": 20,
+        "question":"If you're using IDLE to run a Python application, explain how to print a multidimensional list as efficiently?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Use nested loops to print each element manually.",
+        "Use the print() function directly on the list.",
+        "Use the pprint module’s pprint() function.",
+        "Convert the list to a string with str() and then print it."
+        ],
+        "answer":"Use the pprint module’s pprint() function.",
+        "discription":"The pprint module’s pprint() function is designed to efficiently print nested structures, such as multidimensional lists, in a readable format."
+    }
+]

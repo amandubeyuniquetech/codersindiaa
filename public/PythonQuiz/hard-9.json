@@ -1,0 +1,264 @@
+[
+
+    {
+        "id": 1,
+        "question":"How do you implement a context manager in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["By defining __enter__ and __exit__ methods in a class.",
+        "By using the contextlib module.",
+        "By defining start and end methods in a class.",
+        "By using try...finally blocks."
+        ],
+        "answer":"By defining __enter__ and __exit__ methods in a class.",
+        "discription":"Context managers are implemented by defining __enter__ and __exit__ methods in a class."
+    },
+
+    {
+        "id": 2,
+        "question":"What is the difference between @staticmethod and @classmethod decorators?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["@staticmethod does not access class or instance data; @classmethod accesses class data.",
+        "@staticmethod is used to create class methods; @classmethod is used for instance methods.",
+        "@staticmethod can be called on an instance; @classmethod cannot.",
+        "@staticmethod and @classmethod are interchangeable."
+        ],
+        "answer":"@staticmethod does not access class or instance data; @classmethod accesses class data.",
+        "discription":"@staticmethod defines a method that does not access class or instance data, while @classmethod accesses class data but not instance data."
+    },
+
+    {
+        "id": 3,
+        "question":"What does the join() method do in the context of threading?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["It terminates a thread.",
+        "It blocks the calling thread until the thread whose join() method is called terminates.",
+        "It creates a new thread.",
+        "It pauses the thread’s execution."
+        ],
+        "answer":"It blocks the calling thread until the thread whose join() method is called terminates.",
+        "discription":"The join() method waits for the thread to complete its execution before proceeding with the rest of the program."
+    },
+
+    {
+        "id": 4,
+        "question":"What is a Lock in threading?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A mechanism to prevent data corruption by ensuring that only one thread can access a resource at a time.",
+        "A method to speed up thread execution.",
+        "A technique to synchronize thread creation.",
+        "A type of exception handling in threads."
+        ],
+        "answer":"A mechanism to prevent data corruption by ensuring that only one thread can access a resource at a time.",
+        "discription":"Lock is used to ensure mutual exclusion, preventing multiple threads from accessing shared resources simultaneously."
+    },
+
+    {
+        "id": 5,
+        "question":"How do you use a Lock in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["lock = threading.Lock()",
+        "lock = threading.create_lock()",
+        "lock = threading.set_lock()",
+        "lock = threading.acquire_lock()"
+        ],
+        "answer":"lock = threading.Lock()",
+        "discription":"A Lock is created using threading.Lock(), and you use lock.acquire() to lock and lock.release() to unlock."
+    },
+
+    {
+        "id": 6,
+        "question":"What is a Condition object used for in threading?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To manage thread synchronization with additional control over the thread execution.",
+        "To create new threads.",
+        "To handle exceptions in threads.",
+        "To speed up thread execution."
+        ],
+        "answer":"To manage thread synchronization with additional control over the thread execution.",
+        "discription":"Condition objects are used for more complex thread synchronization scenarios, allowing threads to wait for some condition to be met."
+    },
+
+    {
+        "id": 7,
+        "question":"What is the purpose of Semaphore in Python threading?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To limit the number of threads that can access a resource simultaneously.",
+        "To create and start new threads.",
+        "To prevent deadlocks between threads.",
+        "To provide a thread-safe way to execute code."
+        ],
+        "answer":"To limit the number of threads that can access a resource simultaneously.",
+        "discription":"Semaphore is used to control access to a resource by limiting the number of threads that can access it concurrently."
+    },
+
+    {
+        "id": 8,
+        "question":"What is a ThreadPoolExecutor?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A class in concurrent.futures that manages a pool of threads to execute tasks asynchronously.",
+        "A class that provides thread synchronization.",
+        "A method for manually managing thread creation.",
+        "A tool for debugging thread execution."
+        ],
+        "answer":"A class in concurrent.futures that manages a pool of threads to execute tasks asynchronously.",
+        "discription":"ThreadPoolExecutor from the concurrent.futures module provides a high-level interface for asynchronously executing tasks using a pool of threads."
+    },
+
+    {
+        "id": 9,
+        "question":"What are ThreadLocal objects used for in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To store data that is unique to each thread.",
+        "To manage global variables across threads.",
+        "To synchronize access to shared resources.",
+        "To control the execution order of threads."
+        ],
+        "answer":"To store data that is unique to each thread.",
+        "discription":"ThreadLocal objects allow you to store data that is specific to a thread and not shared among threads."
+    },
+
+    {
+        "id": 10,
+        "question":"What will be the output of the following code?\na, *b, c = [1, 2, 3, 4, 5]\nprint(b)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[2, 3, 4]",
+        "[1, 2, 3, 4, 5]",
+        "2 3 4",
+        "(2, 3, 4)"
+        ],
+        "answer":"[2, 3, 4]",
+        "discription":"The star operator (*) allows us to capture multiple elements in a list. In this example, b captures the middle elements [2, 3, 4], while a and c capture the first and last elements, respectively."
+    },
+
+    {
+        "id": 11,
+        "question":"What will be the result of the following code?\ndef func(x, y, z):\n    return x + y + z\n d = {'x': 1, 'y': 2, 'z': 3}\nresult = func(**d)\nprint(result)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["{'x': 1, 'y': 2, 'z': 3}",
+        "SyntaxError",
+        "6",
+        "(1, 2, 3)"
+        ],
+        "answer":"6",
+        "discription":"The code uses dictionary unpacking (**d) to pass the values of the dictionary d as arguments to the function func. The function adds up the values 1 + 2 + 3, resulting in 6."
+    },
+
+    {
+        "id": 12,
+        "question":"What will be the output of the following code?\n(a, (b, c)) = (1, (2, 3))\nprint(b)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["1",
+        "2",
+        "3",
+        "TypeError"
+        ],
+        "answer":"2",
+        "discription":"The code demonstrates nested unpacking. The variable b is assigned the value 2, which is part of the inner tuple (2, 3)."
+    },
+
+    {
+        "id": 13,
+        "question":"What will be the output of the following code?\na, b = 5, 10\na, b = b, a\nprint(a, b)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["5 10",
+        "10 5",
+        "5 5",
+        "10 10"
+        ],
+        "answer":"10 5",
+        "discription":"The code shows how to swap the values of two variables using tuple unpacking. The values of a and b are swapped, so the output is 10 5."
+    },
+
+    {
+        "id": 14,
+        "question":"How can you ignore the second value in the following unpacking?\na, _, c = (1, 2, 3)\nprint(c)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["1",
+        "2",
+        "3",
+        "SyntaxError"
+        ],
+        "answer":"3",
+        "discription":"The underscore (_) is often used as a placeholder to ignore values during unpacking. Here, a gets 1, _ (ignored) gets 2, and c gets 3."
+    },
+
+    {
+        "id": 15,
+        "question":"What will be the output of the following code?\na, *b, c, *d = [1, 2, 3, 4, 5, 6, 7]\nprint(b, d)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[2, 3, 4, 5] []",
+        "[2, 3, 4, 5] [6, 7]",
+        "[] [2, 3, 4, 5, 6, 7]",
+        "SyntaxError"
+        ],
+        "answer":"SyntaxError",
+        "discription":"Python only allows one starred expression in unpacking, so this code raises a SyntaxError."
+    },
+
+    {
+        "id": 16,
+        "question":"What will be the output of the following code?\ndef func(**kwargs):\n    return kwargs['a'] + kwargs['b']\n data = {'a': 1, 'b': 2, 'c': 3}\nresult = func(**data)\nprint(result)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["1",
+        "2",
+        "6",
+        "3"
+        ],
+        "answer":"3",
+        "discription":"The dictionary data is unpacked into keyword arguments for func, which returns 1 + 2 = 3."
+    },
+    
+    {
+        "id": 17,
+        "question":"What will be the output of the following code?\ndef func(*args):\n    a, *b, c = args\n    return b\n   result = func(1, 2, 3, 4, 5)\nprint(result)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[2, 3, 4]",
+        "[1, 2, 3, 4]",
+        "[2, 3, 4, 5]",
+        "[3,4]"
+        ],
+        "answer":"[2, 3, 4]",
+        "discription":"The star operator captures the middle elements [2, 3, 4] in b."
+    },
+    
+    {
+        "id": 18,
+        "question":"What will be the output of the following code?\ndef func(a, b, c):\n    return a + b + c\nvalues = (1, 2, 3)\nresult = func(*values)\nprint(result)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["(1, 2, 3)",
+        "6",
+        "[1, 2, 3]",
+        "SyntaxError"
+        ],
+        "answer":"6",
+        "discription":"The tuple values is unpacked into arguments for func, resulting in 1 + 2 + 3 = 6."
+    },
+    
+    {
+        "id": 19,
+        "question":"What will be the output of the following code?\nclass MyClass:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\nobj = MyClass(1, 2)\na, b = obj.x, obj.y\nprint(a, b)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["1 2",
+        "2 1",
+        "(1, 2)",
+        "SyntaxError"
+        ],
+        "answer":"1 2",
+        "discription":"The attributes x and y of obj are unpacked into a and b, resulting in 1 2."
+    },
+    
+    {
+        "id": 20,
+        "question":"What will be the output of the following code?\na, b = [1, 2, 3][1:]\nprint(a, b)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["1 2",
+        "2 3",
+        "[2, 3]",
+        "SyntaxError"
+        ],
+        "answer":"2 3",
+        "discription":"The list slice [1:] returns [2, 3], which is unpacked into a and b."
+    }
+
+    
+]

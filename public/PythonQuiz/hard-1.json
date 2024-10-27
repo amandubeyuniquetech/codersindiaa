@@ -1,0 +1,263 @@
+[
+    {
+        "id": 1,
+        "question":"What happens to variables in a local scope when the function call returns?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["They are preserved and can be accessed outside the function.",
+        "They are deleted and cannot be accessed outside the function.",
+        "They are converted to global variables.",
+        "They are stored in memory until the program ends."
+        ],
+        "answer":"They are deleted and cannot be accessed outside the function.",
+        "discription":"When a function call returns, the local scope is destroyed, and all variables defined within that local scope are deleted. They cannot be accessed outside the function."
+    },
+    
+    
+    {
+        "id": 2,
+        "question":"What is the concept of a return value? Is it possible to have a return value in an expression?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A return value is the value that a function outputs. It is not possible to use a return value in an expression.",
+        "A return value is the value that a function receives as input. It is possible to use a return value in an expression.",
+        "A return value is the value that a function outputs. It is possible to use a return value in an expression.",
+        "A return value is the value that a function uses to determine its flow. It is not possible to use a return value in an expression."
+        ],
+        "answer":"A return value is the value that a function outputs. It is possible to use a return value in an expression.",
+        "discription":"A return value is the result that a function produces and sends back to the caller.\nThis return value can be used in expressions, allowing it to be further processed or utilized in the program."
+    },
+
+    {
+        "id": 3,
+        "question":"What does the statement import areallyourpetsnamederic do?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["It imports a built-in Python module named areallyourpetsnamederic.",
+        "It creates a new module named areallyourpetsnamederic.",
+        "It imports a module named areallyourpetsnamederic, assuming such a module exists.",
+        "It causes a syntax error because areallyourpetsnamederic is not a valid module name."
+        ],
+        "answer":"It imports a module named areallyourpetsnamederic, assuming such a module exists.",
+        "discription":"The statement import areallyourpetsnamederic attempts to import a module with the name areallyourpetsnamederic. If such a module exists in the Python path, it will be imported without errors. Otherwise, an ImportError will occur."
+    },
+
+    {
+        "id": 4,
+        "question":"What can you do to save a program from crashing if it encounters an error?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Use the pass statement in your code.",
+        "Use comments to skip over the error-prone code.",
+        "Use error handling with try and except blocks.",
+        "Use error handling with try and except blocks."
+        ],
+        "answer":"Use error handling with try and except blocks.",
+        "discription":"By using try and except blocks, you can catch exceptions and handle errors gracefully, preventing the program from crashing. This allows you to provide alternative behavior or informative messages when errors occur."
+    },
+
+    {
+        "id": 5,
+        "question":"How do you distinguish between copy.copy() and copy.deepcopy() in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["copy.copy() creates a shallow copy, while copy.deepcopy() creates a deep copy.",
+        "copy.copy() copies the list, while copy.deepcopy() copies the tuple.",
+        "copy.copy() creates a deep copy, while copy.deepcopy() creates a shallow copy.",
+        "copy.copy() copies only the first level of elements, while copy.deepcopy() does not copy elements at all."
+        ],
+        "answer":"copy.copy() creates a shallow copy, while copy.deepcopy() creates a deep copy.",
+        "discription":"copy.copy() creates a shallow copy of an object, meaning it copies the object itself but not the nested objects. copy.deepcopy() creates a deep copy of an object, meaning it copies the object as well as all nested objects, resulting in a completely independent copy."
+    },
+
+    {
+        "id": 6,
+        "question":"What is a shortcut for the following code?\nif 'color' not in spam:\nspam['color'] = 'black'\n",
+        "optionsCode":[],                                                                                                
+        "optionsText":["spam['color'] = spam.get('color', 'black')",
+        "spam.setdefault('color', 'black')",
+        "spam.update({'color': 'black'})",
+        "spam['color'] == 'black'"
+        ],
+        "answer":"spam.setdefault('color', 'black')",
+        "discription":"The setdefault() method provides a shortcut for the given code. It checks if the key 'color' exists in the dictionary spam. If the key does not exist, it adds 'color' with the value 'black'. If the key already exists, it does nothing and leaves the existing value unchanged."
+    },
+
+    {
+        "id": 7,
+        "question":"How do you 'pretty print' dictionary values using which module and function in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Using the print() function from the sys module.",
+        "Using the pprint() function from the pprint module.",
+        "Using the format() function from the string module.",
+        "Using the dump() function from the json module."
+        ],
+        "answer":"Using the pprint() function from the pprint module.",
+        "discription":"The pprint module provides the pprint() function, which is used to 'pretty print' dictionary values in a more readable format, especially when dealing with nested or large dictionaries."
+    },
+
+    {
+        "id": 8,
+        "question":"What are the methods for right-justifying, left-justifying, and centering a string?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["rjust(), ljust(), center()",
+        "right(), left(), center()",
+        "justify_right(), justify_left(), align_center()",
+        "right_justify(), left_justify(), center_align()"
+        ],
+        "answer":"rjust(), ljust(), center()",
+        "discription":"rjust(width) right-justifies a string in a field of a given width.\nljust(width) left-justifies a string in a field of a given width.\ncenter(width) centers a string in a field of a given width."
+    },
+
+    {
+        "id": 9,
+        "question":"What is the name of the feature responsible for generating Regex objects in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["re.compile()",
+        "regex.create()",
+        "re.match()",
+        "re.build()"
+        ],
+        "answer":"re.compile()",
+        "discription":"re.compile() is used to generate Regex objects in Python. It compiles a regular expression pattern into a Regex object, which can then be used for matching and searching."
+    },
+
+    {
+        "id": 10,
+        "question":"Why do raw strings often appear in Regex objects in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To prevent Python from interpreting backslashes as escape characters.",
+        "To automatically escape special characters in the string",
+        "To make the string lowercase.",
+        "To remove whitespace from the string."
+        ],
+        "answer":"To prevent Python from interpreting backslashes as escape characters.",
+        "discription":"Raw strings (e.g., r'pattern') are used in Regex objects to prevent Python from interpreting backslashes as escape characters. This allows the backslashes to be treated literally, which is essential when writing regular expressions."
+    },
+
+    {
+        "id": 11,
+        "question":"In the regex created from the pattern r'(\\d\\d\\d)-(\\d\\d\\d-\\d\\d\\d\\d)', what do the groups cover?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Group 0 covers the entire match, Group 1 covers the first three digits, and Group 2 covers the last seven digits.",
+        "Group 0 covers the first three digits, Group 1 covers the dash, and Group 2 covers the last seven digits.",
+        "Group 0 covers the first three digits, Group 1 covers the last seven digits, and Group 2 covers the entire match.",
+        "Group 0 covers the entire match, Group 1 covers the last seven digits, and Group 2 covers the first three digits."
+        ],
+        "answer":"Group 0 covers the entire match, Group 1 covers the first three digits, and Group 2 covers the last seven digits.",
+        "discription":"In a regular expression, Group 0 (group(0)) refers to the entire matched string.\nGroup 1 (group(1)) refers to the first set of parentheses (\\d\\d\\d), which matches the first three digits.\nGroup 2 (group(2)) refers to the second set of parentheses (\\d\\d\\d-\\d\\d\\d\\d), which matches the last seven digits."
+    },
+
+    {
+        "id": 12,
+        "question":"In standard regular expression syntax, parentheses and periods have distinct meanings. How can you tell a regex that you want it to match actual parentheses and periods?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Use backslashes before the parentheses and periods, like \\(, \\), and \\.",
+        "Use double parentheses and periods, like ((, )), and ..",
+        "Enclose the parentheses and periods in square brackets, like [(], [)], and [.]",
+        "Use curly braces around the parentheses and periods, like {(}, {)}, and {.}"
+        ],
+        "answer":"Use backslashes before the parentheses and periods, like \\(, \\), and \\.",
+        "discription":"In regular expressions, parentheses () are used for grouping, and periods . match any character except a newline. To match these characters literally, you must escape them with a backslash (\\). This tells the regex engine to interpret them as literal characters rather than special characters."
+    },
+
+    {
+        "id": 13,
+        "question":"In regular expressions, what does the | character signify?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["It matches any single character except newline.",
+        "It is used to group patterns.",
+        "It represents an OR operation, matching patterns on either side of it.",
+        "It escapes special characters."
+        ],
+        "answer":"It represents an OR operation, matching patterns on either side of it.",
+        "discription":"The | character in regular expressions acts as a logical OR operator, allowing you to match one pattern or another. For example, the pattern cat|dog matches either 'cat' or 'dog'"
+    },
+
+    {
+        "id": 14,
+        "question":"In regular expressions, what does the . (dot) character stand for",
+        "optionsCode":[],                                                                                                
+        "optionsText":["It matches the start of a string",
+        "It matches any single character except newline.",
+        "It matches the end of a string.",
+        "It matches a literal period character."
+        ],
+        "answer":"It matches any single character except newline.",
+        "discription":"In regular expressions, the . (dot) is a wildcard character that matches any single character, except for newline characters"
+    },
+
+    {
+        "id": 15,
+        "question":"What is the difference between {4} and {4,5} in regular expression?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["{4} matches exactly 4 occurrences, while {4,5} matches exactly 5 occurrences.",
+        "{4} matches 4 or more occurrences, while {4,5} matches 4 or fewer occurrences.",
+        "{4} matches exactly 4 occurrences, while {4,5} matches between 4 and 5 occurrences.",
+        "{4} matches at least 4 occurrences, while {4,5} matches 5 or more occurrences."
+        ],
+        "answer":"{4} matches exactly 4 occurrences, while {4,5} matches between 4 and 5 occurrences.",
+        "discription":"In regular expressions, {4} specifies that the preceding element must appear exactly 4 times, while {4,5} specifies that the preceding element can appear between 4 and 5 times inclusively."
+    },
+
+    {
+        "id": 16,
+        "question":"What do you mean by the \\d, \\w, and \\s shorthand character classes signify in regular expressions?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["\\d matches any whitespace character, \\w matches any non-digit character, and \\s matches any digit character.",
+        "\\d matches any digit, \\w matches any word character (letters, digits, and underscore), and \\s matches any whitespace character.",
+        "\\d matches any letter, \\w matches any whitespace character, and \\s matches any word character.",
+        "\\d matches any digit, \\w matches any special character, and \\s matches any space."
+        ],
+        "answer":"\\d matches any digit, \\w matches any word character (letters, digits, and underscore), and \\s matches any whitespace character.",
+        "discription":"\\d matches any digit (0-9).\n\\w matches any word character, which includes letters, digits, and underscores.\n\\s matches any whitespace character, such as spaces, tabs, and newlines."
+    },
+
+    {
+        "id": 17,
+        "question":"What do means by \\D, \\W, and \\S shorthand character classes signify in regular expressions?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["They match any digit, word character, and whitespace character respectively.",
+        "They match any non-digit, non-word character, and non-whitespace character respectively.",
+        "They match any digit, whitespace character, and word character respectively.",
+        "They match any non-word character, digit, and whitespace character respectively."
+        ],
+        "answer":"They match any non-digit, non-word character, and non-whitespace character respectively.",
+        "discription":"\\D matches any character that is not a digit.\n\\W matches any character that is not a word character (anything other than letters, digits, and underscores).\n\\S matches any character that is not a whitespace character (spaces, tabs, etc.)."
+    },
+
+    {
+        "id": 18,
+        "question":"What is the procedure for making a regular expression case insensitive in regex?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Add (?i) at the start of the pattern",
+        "Use ^ before the pattern",
+        "Use \\c before each character",
+        "Use {} brackets around the pattern"
+        ],
+        "answer":"Add (?i) at the start of the pattern",
+        "discription":"Adding (?i) at the beginning of a regex pattern makes the entire pattern case insensitive. This allows the pattern to match letters regardless of their case."
+    },
+
+    {
+        "id": 19,
+        "question":"What does the . character normally match? What does it match if re.DOTALL is passed as the second argument in re.compile()?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Normally matches any character except a newline; matches any character including a newline with re.DOTALL",
+        "Normally matches only digits; matches digits and letters with re.DOTALL",
+        "Normally matches spaces; matches all whitespace characters with re.DOTALL",
+        "Normally matches special characters; matches alphanumeric characters with re.DOTALL"
+        ],
+        "answer":"Normally matches any character except a newline; matches any character including a newline with re.DOTALL",
+        "discription":"The . character in regex matches any character except a newline by default. However, when re.DOTALL is passed as a second argument in re.compile(), the . character will match any character, including newline characters."
+    },
+
+    {
+        "id": 20,
+        "question":"What does passing re.VERBOSE as the second argument to re.compile() allow you to do?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Ignore case when matching",
+        "Include comments and whitespace in the regex for readability",
+        "Match the pattern across multiple lines",
+        "Enable global matching of the pattern"
+        ],
+        "answer":"Include comments and whitespace in the regex for readability",
+        "discription":"re.VERBOSE allows you to write regular expressions that are more readable by allowing you to include whitespace and comments."
+    }
+    
+]

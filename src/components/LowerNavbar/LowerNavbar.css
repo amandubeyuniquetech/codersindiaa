@@ -1,0 +1,22 @@
+#lower-navbar{
+    display: flex;
+    background-color:black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    /* margin-top: 100px; */
+    z-index: 9;
+    >.lower-nav-item{
+        font-weight: 400;
+        font-size: 0.9rem;
+        padding: 0.3rem 1rem;
+        /* padding: 1rem; */
+        transition: all 0.5s;
+        cursor: pointer;
+        width: max-content;
+        
+    }
+    >.lower-nav-item:hover{
+        background-color:var(--main-color) ;
+    }
+}

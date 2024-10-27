@@ -1,0 +1,50 @@
+[
+  {
+    "mainHeading": "PYTHON PIP",
+    "subHeadings": [
+      {
+        "id": 1,
+        "subHeading": "What is Python Pip?",
+        "subHeadingParagraph": "Python's pip is the standard package manager for Python, allowing users to install, update, and manage packages from the Python Package Index (PyPI) and other repositories. Here’s a summary of what pip is, how it works, and its key functionalities:",
+        "note": "",
+        "codeExample": "",
+        "tableData": [],
+        "diagramLink": "",
+        "videoLink": "",
+        "list": []
+      }
+    ]
+  },
+  {
+    "mainHeading": "",
+    "subHeadings": [
+      {
+        "id": 1,
+        "subHeading": "1. Installing Packages",
+        "subHeadingParagraph": "",
+        "note": "",
+        "codeExample": "# 1.Basic Installation:\npip install requests\n # This command installs the requests package, which is used for making HTTP requests in Python.\n\n # 2.Installing a Specific Version:\npip install requests==2.26.0 \n # This installs version 2.26.0 of the requests package.",
+        "tableData":[],
+        "diagramLink": "",
+        "videoLink": "",
+        "list": []
+      }
+    ]
+  },
+  {
+    "mainHeading": "",
+    "subHeadings": [
+      {
+        "id": 1,
+        "subHeading": "2.Installing a Specific Version:",
+        "subHeadingParagraph": "Basic Installation:",
+        "note": "",
+        "codeExample": "pip install requests==2.26.0 \n # This installs version 2.26.0 of the requests package.",
+        "tableData":[],
+        "diagramLink": "",
+        "videoLink": "",
+        "list": []
+      }
+    ]
+  }
+]

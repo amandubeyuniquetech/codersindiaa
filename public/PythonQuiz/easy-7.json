@@ -1,0 +1,262 @@
+[
+
+    {
+        "id": 1,
+        "question":"What will be the output of the following code?\nprint(5 > 3)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["True",
+        "False",
+        "None",
+        "Error"
+        ],
+        "answer":"True",
+        "discription":"The expression 5 > 3 evaluates to True because 5 is greater than 3."
+    },
+
+    {
+        "id": 2,
+        "question":"What will be the output of the following code?\ntext = 'Python'\nprint(text[1:4])",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Pyt",
+        "yth",
+        "tho",
+        "ytho"
+        ],
+        "answer":"yth",
+        "discription":"The slice text[1:4] returns the substring from index 1 to 3, which is yth."
+    },
+
+    {
+        "id": 3,
+        "question":"What will be the output of the following code?\ni = 0\nwhile i < 3:\n    print(i)\n    i += 1",
+        "optionsCode":[],                                                                                                
+        "optionsText":["0 1 2",
+        "1 2 3",
+        "0 1 2 3",
+        "1 2"
+        ],
+        "answer":"0 1 2",
+        "discription":"The while loop continues as long as i is less than 3, printing 0, 1, and 2."
+    },
+
+    {
+        "id": 4,
+        "question":"What will be the output of the following code?\nnumbers = [1, 2, 3, 4, 5]\nprint(numbers[0])",
+        "optionsCode":[],                                                                                                
+        "optionsText":["1",
+        "2",
+        "5",
+        "4"
+        ],
+        "answer":"1",
+        "discription":"List indexing starts at 0, so numbers[0] accesses the first element, which is 1."
+    },
+
+    {
+        "id": 5,
+        "question":"What will be the output of the following code?\nprint('Hello' * 3)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["HelloHelloHello",
+        "Hello Hello Hello",
+        "Hello3",
+        "Error"
+        ],
+        "answer":"HelloHelloHello",
+        "discription":"The * operator repeats the string 3 times, resulting in HelloHelloHello."
+    },
+
+    {
+        "id": 6,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(list(my_dict.keys()))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["['1', '2', '3']",
+        "['a', 'b', 'c']",
+        "['a', '1', 'b']",
+        "['a', 'b', '3']"
+        ],
+        "answer":"['a', 'b', 'c']",
+        "discription":"The keys method returns a list of the dictionary's keys, which are 'a', 'b', and 'c'."
+    },
+
+    {
+        "id": 7,
+        "question":"What will be the output of the following code?\nx = 10\nif x > 5:\n    print('Greater')\nelse:\n    print('Smaller')",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Greater",
+        "Smaller",
+        "Error",
+        "None"
+        ],
+        "answer":"Greater",
+        "discription":"Since x is greater than 5, the if condition is true, and Greater is printed."
+    },
+
+    {
+        "id": 8,
+        "question":"What will be the output of the following code?\ntup = (1, 2, 3)\nprint(tup[1])",
+        "optionsCode":[],                                                                                                
+        "optionsText":["1",
+        "2",
+        "3",
+        "Error"
+        ],
+        "answer":"2",
+        "discription":"Tuple indexing starts at 0, so tup[1] accesses the second element, which is 2."
+    },
+
+    {
+        "id": 9,
+        "question":"What will be the output of the following code?\nlst = [1, 2, 3]\nlst.append(4)\nprint(lst)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 2, 3, 4]",
+        "[1, 2, 3]",
+        "[4, 1, 2, 3]",
+        "[1, 2, 3, [4]]"
+        ],
+        "answer":"[1, 2, 3, 4]",
+        "discription":"The append method adds 4 to the end of the list, resulting in [1, 2, 3, 4]."
+    },
+
+    {
+        "id": 10,
+        "question":"What will be the output of the following code?\ndef greet():\n    return 'Hello'\nprint(greet())",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Hello",
+        "None",
+        "Error",
+        "greet"
+        ],
+        "answer":"Hello",
+        "discription":"The greet function returns the string 'Hello', which is then printed."
+    },
+
+    {
+        "id": 11,
+        "question":"What will be the output of the following code?\nprint(True and False)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["True",
+        "False",
+        "None",
+        "Error"
+        ],
+        "answer":"False",
+        "discription":"The and operator returns True only if both operands are True; otherwise, it returns False."
+    },
+
+    {
+        "id": 12,
+        "question":"What will be the output of the following code?\ntext = 'HELLO'\nprint(text.lower())",
+        "optionsCode":[],                                                                                                
+        "optionsText":["hello",
+        "HELLO",
+        "Hello",
+        "None"
+        ],
+        "answer":"hello",
+        "discription":"The lower method converts all characters in the string to lowercase."
+    },
+
+    {
+        "id": 13,
+        "question":"What will be the output of the following code?\nnumbers = [10, 20, 30, 40, 50]\nprint(numbers[1:4])",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[10, 20, 30",
+        "[20, 30, 40]",
+        "[30, 40, 50]",
+        "[20, 30]"
+        ],
+        "answer":"[20, 30, 40]",
+        "discription":"The slice numbers[1:4] returns the elements from index 1 to 3, which are [20, 30, 40]."
+    },
+
+    {
+        "id": 14,
+        "question":"What will be the output of the following code?\nlst = [3, 1, 4, 2]\nlst.sort()\nprint(lst)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 2, 3, 4]",
+        "[3, 1, 4, 2]",
+        "[4, 3, 2, 1]",
+        "[2, 4, 1, 3]"
+        ],
+        "answer":"[1, 2, 3, 4]",
+        "discription":"The sort method sorts the list in ascending order."
+    },
+
+    {
+        "id": 15,
+        "question":"What will be the output of the following code?\nresult = 10 % 3\nprint(result)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["1",
+        "2",
+        "3",
+        "4"
+        ],
+        "answer":"1",
+        "discription":"The modulus operator % returns the remainder of the division, so 10 % 3 results in 1."
+    },
+
+    {
+        "id": 16,
+        "question":"What will be the output of the following code?\ntext = 'Python'\nprint(text[-1])",
+        "optionsCode":[],                                                                                                
+        "optionsText":["'p'",
+        "'n'",
+        "'o'",
+        "'t'"
+        ],
+        "answer":"'n'",
+        "discription":"Negative indexing starts from the end, so text[-1] accesses the last character, which is n."
+    },
+
+    {
+        "id": 17,
+        "question":"What will be the output of the following code?\nlst = [1, 2] * 3\nprint(lst)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 2, 1, 2, 1, 2]",
+        "[1, 2, 3, 1, 2, 3]",
+        "[1, 2, 3, 4, 5, 6]",
+        "[3, 1, 2, 3, 1, 2]"
+        ],
+        "answer":"[1, 2, 1, 2, 1, 2]",
+        "discription":"The * operator repeats the list 3 times, resulting in [1, 2, 1, 2, 1, 2]."
+    },
+
+    {
+        "id": 18,
+        "question":"What will be the output of the following code?\nresult = '3' + '4'\nprint(result)",
+        "optionsCode":[],                                                                                                
+        "optionsText":["'7'",
+        "'34'",
+        "'3 4'",
+        "Error"
+        ],
+        "answer":"'34'",
+        "discription":"The + operator concatenates the strings '3' and '4', resulting in '34'."
+    },
+
+    {
+        "id": 19,
+        "question":"What will be the output of the following code?\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(list(my_dict.values()))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["[1, 2, 3]",
+        "['a', 'b', 'c']",
+        "['1', '2', '3']",
+        "['a', '1', 'b']"
+        ],
+        "answer":"[1, 2, 3]",
+        "discription":"The values method returns a list of the dictionary's values, which are [1, 2, 3]."
+    },
+
+    {
+        "id": 20,
+        "question":"What will be the output of the following code?\ntext = 'Hello, World!'\nprint(text.replace('World', 'Python'))",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Hello, Python!",
+        "Hello, World!",
+        "Hello,",
+        "None"
+        ],
+        "answer":"Hello, Python!",
+        "discription":"The replace method substitutes 'World' with 'Python', resulting in Hello, Python!."
+    }
+]

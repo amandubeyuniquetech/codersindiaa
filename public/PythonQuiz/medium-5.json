@@ -1,0 +1,263 @@
+[
+
+{
+    "id": 1,
+    "question":"How can you use the sqlalchemy module to connect to the sqlite3 database books.db?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["engine = create_engine('sqlite:///books.db')",
+    "engine = create_engine('sqlite3://books.db')",
+    "engine = create_engine('sqlite:///books.db', echo=True)",
+    "engine = connect('sqlite:///books.db')"
+    ],
+    "answer":"engine = create_engine('sqlite:///books.db')",
+    "discription":"To connect to the books.db SQLite database using SQLAlchemy, use create_engine('sqlite:///books.db'). This command initializes the connection to the SQLite database, specifying the path to the database file."
+},
+
+{
+    "id": 2,
+    "question":"To increment the count field of an object named test and print the updated value, which of the following approaches is correct?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["test.count += 1 and then print(test.count)",
+    "test.increment(count) and then print(test.count)",
+    "test.count = test.count + 1 and then print(test.count)",
+    "test.update(count + 1) and then print(test.count)"
+    ],
+    "answer":"test.count += 1 and then print(test.count)",
+    "discription":"To increment the count field of an object, you can use the shorthand operator += to increase the value by 1 and then print it. This is the most straightforward and commonly used method to update and display an object's attribute."
+},
+
+{
+    "id": 3,
+    "question":"Where does an inheritance search look for an attribute in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Only in the child class.",
+    "Only in the parent class.",
+    "First in the child class, then in the parent class.",
+    "In all classes simultaneously."
+    ],
+    "answer":"First in the child class, then in the parent class.",
+    "discription":"In Python, when an attribute is accessed in an object, the inheritance search first looks in the child class. If the attribute isn't found there, the search continues in the parent class, following the method resolution order (MRO)."
+},
+
+{
+    "id": 4,
+    "question":"How would you define the superclasses of a class?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["By using the super() function inside the class.",
+    "By listing the superclasses inside the class definition's parentheses.",
+    "By importing the superclass before defining the class.",
+    "By using the inherit() method in the class."
+    ],
+    "answer":"By listing the superclasses inside the class definition's parentheses.",
+    "discription":"In Python, to define the superclasses of a class, you list them inside the parentheses in the class definition. For example, class ChildClass(ParentClass1, ParentClass2): indicates that ChildClass inherits from ParentClass1 and ParentClass2."
+},
+
+{
+    "id": 5,
+    "question":"How do you make instances and classes?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Define a function for a class and call it for an instance",
+    "Use the class keyword for a class and call the class for an instance.",
+    "Use the instance keyword for instances and the class keyword for classes.",
+    "Define a method for a class and use super() to create an instance."
+    ],
+    "answer":"Use the class keyword for a class and call the class for an instance.",
+    "discription":"In Python, you create a class using the class keyword followed by the class name. To create an instance, you call the class using its name followed by parentheses. For example, class Car: defines a class, and my_car = Car() creates an instance of that class."
+},
+
+{
+    "id": 6,
+    "question":"Where and how are instance attributes created in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Inside the __init__ method, using the self keyword.",
+    "Inside any method, using the class keyword.",
+    "Outside the class definition, by assigning values directly.",
+    "Inside the __main__ block, using the init keyword."
+    ],
+    "answer":"Inside the __init__ method, using the self keyword.",
+    "discription":"Instance attributes in Python are created inside the __init__ method using the self keyword. This allows each instance of the class to have its own unique set of attributes."
+},
+
+{
+    "id": 7,
+    "question":"What does the term 'self' in a Python class mean?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["The class itself.",
+    "A global variable.",
+    "A reference to the instance of the class",
+    "A method that must be defined."
+    ],
+    "answer":"A reference to the instance of the class",
+    "discription":"In Python, self is a reference to the current instance of the class. It is used to access variables and methods associated with the object that is created from the class. The self parameter is always the first parameter in instance methods."
+},
+
+{
+    "id": 8,
+    "question":"What is the most popular form of operator overloading?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Overloading the + operator for string concatenation.",
+    "Overloading the * operator for list multiplication.",
+    "Overloading the == operator for object comparison.",
+    "Overloading the / operator for division."
+    ],
+    "answer":"Overloading the + operator for string concatenation.",
+    "discription":"The + operator is commonly overloaded in Python to allow the concatenation of strings. By defining a special method like __add__ in a class, you can customize how the + operator behaves for objects of that class."
+},
+
+{
+    "id": 9,
+    "question":"What is the concept of an abstract superclass?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A superclass that can be directly instantiated.",
+    "A class that does not contain any methods.",
+    "A class that provides a template with methods to be implemented by subclasses.",
+    "A superclass that cannot have any subclasses."
+    ],
+    "answer":"A class that provides a template with methods to be implemented by subclasses.",
+    "discription":"An abstract superclass in Python defines methods that are meant to be overridden in subclasses, providing a template for subclasses to implement specific behaviors. It cannot be instantiated directly and is often used to enforce a certain structure in the derived classes."
+},
+
+{
+    "id": 10,
+    "question":"How is the local scope of a class different from that of a function?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A class's local scope can access global variables, but a function's local scope cannot.",
+    "A function's local scope is only accessible within the function, while a class's local scope is accessible across all its methods.",
+    "A class's local scope is reset after each method call, while a function's local scope is persistent.",
+    "A function's local scope can be accessed by any class, but a class's local scope is restricted to the class itself."
+    ],
+    "answer":"A function's local scope is only accessible within the function, while a class's local scope is accessible across all its methods.",
+    "discription":"In Python, the local scope of a function is confined to that function, meaning variables defined within it are not accessible outside. In contrast, the local scope of a class encompasses all its methods, allowing variables defined within the class to be accessed across its methods."
+},
+
+{
+    "id": 11,
+    "question":"What is the concept of delegation in object-oriented programming?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Assigning a method to a class instead of an instance.",
+    "Allowing an object to pass tasks to another object.",
+    "Making a class a subclass of another class.",
+    "Hiding methods of a class from outside access."
+    ],
+    "answer":"Allowing an object to pass tasks to another object.",
+    "discription":"Delegation is a design principle where an object passes responsibility for a task to another object. Instead of performing the task itself, the original object delegates the task to another object, which handles the request. This allows for more flexible and modular code by separating responsibilities among objects."
+},
+
+{
+    "id": 12,
+    "question":"What is the concept of composition in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["A class inherits from multiple superclasses.",
+    "A class is used as an attribute in another class.",
+    "A class overrides methods of its superclass.",
+    "A class combines multiple methods into a single method."
+    ],
+    "answer":"A class is used as an attribute in another class.",
+    "discription":"Composition in Python refers to the design principle where a class is composed of one or more objects of other classes as its attributes. This allows for building complex functionality by combining simpler, reusable components. For example, a Car class might use Engine and Transmission classes as attributes."
+},
+
+{
+    "id": 13,
+    "question":"What are bound methods in Python and how do we use them?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Methods that are tied to a function rather than an object.",
+    "Methods that are called with a class name but not an object.",
+    "Methods that are bound to an instance of a class and can access its attributes.",
+    "Methods that are used to create new classes."
+    ],
+    "answer":"Methods that are bound to an instance of a class and can access its attributes.",
+    "discription":"Bound methods are functions that are associated with an instance of a class. They are called on an object and have access to the instance's attributes and other methods. For example, if obj is an instance of class MyClass and method is a method defined in MyClass, then obj.method() is a bound method, and it operates in the context of obj."
+},
+
+{
+    "id": 14,
+    "question":"Describe three applications for exception processing in Python.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["To handle unexpected errors, manage user input, and log application events.",
+    "To improve code execution speed, perform calculations, and validate data types.",
+    "To format output, perform data encryption, and sort data.",
+    "To debug code, update libraries, and create new classes."
+    ],
+    "answer":"To handle unexpected errors, manage user input, and log application events.",
+    "discription":"Exception processing in Python is used to manage and handle unexpected errors during program execution, ensure proper handling of user input to avoid crashes, and log application events for troubleshooting and monitoring."
+},
+
+{
+    "id": 15,
+    "question":"What happens if you don't handle an exception in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["The program will continue running normally.",
+    "The exception will be ignored and not affect the program.",
+    "The program will terminate and display an error message.",
+    "The exception will be automatically corrected by Python."
+    ],
+    "answer":"The program will terminate and display an error message.",
+    "discription":"If you don't handle an exception in Python, the program will terminate and display an error message, showing the type of exception and where it occurred. Handling exceptions with try-except blocks allows the program to manage errors gracefully without crashing."
+},
+
+{
+    "id": 16,
+    "question":"Which two methods can be used to trigger exceptions in your Python script?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Using the raise statement and creating syntax errors.",
+    "Using the try block and calling undefined variables.",
+    "Using the assert statement and importing non-existent modules.",
+    "Using the raise statement and the assert statement."
+    ],
+    "answer":"Using the raise statement and the assert statement.",
+    "discription":"In Python, exceptions can be triggered using the raise statement, which allows you to manually raise an exception, and the assert statement, which raises an AssertionError if a given condition is not true. Both methods are useful for handling and debugging errors in your script."
+},
+
+{
+    "id": 17,
+    "question":"What are the two most popular try statement variations in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["try-finally and try-else",
+    "try-catch and try-finally",
+    "try-except and try-finally",
+    "try-assert and try-raise"
+    ],
+    "answer":"try-except and try-finally",
+    "discription":"In Python, the two most popular variations of the try statement are try-except and try-finally. The try-except block is used to catch and handle exceptions, while the try-finally block ensures that some code runs no matter what, even if an exception occurs."
+},
+
+{
+    "id": 18,
+    "question":"What is the purpose of the raise statement in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["To catch an exception in the code",
+    "To trigger an exception intentionally",
+    "To stop the execution of a loop.",
+    "To declare a variable as global."
+    ],
+    "answer":"To trigger an exception intentionally",
+    "discription":"The raise statement in Python is used to intentionally trigger an exception. This can be useful when you want to flag an error condition and handle it using exception handling mechanisms, ensuring that your program behaves predictably in unexpected situations."
+},
+
+{
+    "id": 19,
+    "question":"Describe two methods for specifying the text of an exception object's error message.",
+    "optionsCode":[],                                                                                                
+    "optionsText":["Using the raise statement with a string message or a custom exception class.",
+    "Assigning a string message directly to the exception object's attribute.",
+    "Using the assert statement with a string message.",
+    "Defining a custom method in the class for error messages."
+    ],
+    "answer":"Using the raise statement with a string message or a custom exception class.",
+    "discription":"In Python, you can specify the text of an exception object's error message by using the raise statement with a string message, such as raise ValueError('Invalid value'), or by defining and raising a custom exception class with its own message, such as raise MyCustomError('Custom error message')."
+},
+
+{
+    "id": 20,
+    "question":"Why is it recommended not to use string-based exceptions in Python?",
+    "optionsCode":[],                                                                                                
+    "optionsText":["String-based exceptions are less readable.",
+    "String-based exceptions do not provide stack trace information.",
+    "String-based exceptions are deprecated in Python 3.",
+    "String-based exceptions do not work with the try and except block."
+    ],
+    "answer":"String-based exceptions do not provide stack trace information.",
+    "discription":"String-based exceptions are discouraged because they do not carry stack trace information, which is crucial for debugging. Instead, Python encourages using classes derived from the Exception class, which provide more detailed error reporting and stack traces, making it easier to diagnose and fix issues."
+}
+
+]

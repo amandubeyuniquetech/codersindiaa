@@ -1,0 +1,95 @@
+
+.tutorial-sidebar{
+    
+    width: max-content;
+    height: 100%;
+    overflow-y: scroll;
+    position: fixed;
+    /* background-color: white; */
+    /* z-index: 0; */
+    font-size: 0.9rem;
+    
+    
+}
+.tutorial-sidebar>.list-item{
+    padding: 0.5rem 2rem;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    transition: all 0.3s;
+    /* border-radius: 40%; */
+
+}
+.tutorial-sidebar>.list-item:hover{
+    background-color: #004AAD;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* 
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #212121;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+} */
+
+
+
+.sidebar{
+    width: max-content;
+    /* padding: 0.5rem; */
+    background-color:rgb(228, 233, 253);
+    /* position: fixed; */
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 10rem;
+    padding-left: 3rem;
+}
+.title{
+    padding: 0.3rem 0.5rem;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    
+}
+.title:hover{
+    background-color: #004AAD;
+    color: white;
+    
+}
+.subItems{
+    /* border: 1px solid black; */
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-left: 4px solid #004AAD;
+    background-color: white;
+    
+}
+.subItem{
+    /* border: 1px solid blue; */
+    /* padding: 0.3rem 0.5rem; */
+    /* margin-block:0.3rem ; */
+    padding-left: 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.subItem:hover{
+    color: black;
+    font-weight: 500;
+}

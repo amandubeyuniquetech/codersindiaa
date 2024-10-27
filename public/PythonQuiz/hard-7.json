@@ -1,0 +1,262 @@
+[
+    {
+        "id": 1,
+        "question":"Create a CSV file called books.csv by using these lines:\ntitle,author,year\nThe Weirdstone of Brisingamen,Alan Garner,1960\nPerdido Street Station,China Miéville,2000\nThud!,Terry Pratchett,2005\nThe Spellman Files,Lisa Lutz,2007\nSmall Gods,Terry Pratchett,1992\n",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Use open('books.csv', 'w') to create the file, then manually write each line.",
+        "Use csv.writer to create the file and write rows as lists.",
+        "Use with open('books.csv', 'w') as file: followed by file.write() for each line.",
+        "Use pandas library with DataFrame.to_csv() to create the file."
+        ],
+        "answer":"Use with open('books.csv', 'w') as file: followed by file.write() for each line.",
+        "discription":"Using with open('books.csv', 'w') as file: and file.write() for each line is a straightforward method to create and write the specified content to a CSV file in Python."
+    },
+
+    {
+        "id": 2,
+        "question":"Use the sqlite3 module to create a SQLite database called books.db, and a table called books with these fields: title (text), author (text), and year (integer).",
+        "optionsText":[],                                                                                                
+        "optionsCode":["import sqlite3\n    conn = sqlite3.connect('books.db')\nc = conn.cursor()\nc.execute('CREATE DATABASE books.db')\nc.execute('CREATE TABLE books (title TEXT, author TEXT, year INTEGER)')\nconn.commit()\nconn.close()",
+        "import sqlite3\n   conn = sqlite3.connect('books.db')\nc = conn.cursor()\nc.execute('CREATE TABLE books (title TEXT, author TEXT, year INTEGER)')\nconn.commit()\nconn.close()",
+        "import sqlite3\n   conn = sqlite3.connect('books')\nc = conn.cursor()\nc.execute('CREATE TABLE books (title TEXT, author TEXT, year INTEGER)')\nconn.commit()\nconn.close()",
+        "import sqlite3\n   conn = sqlite3.connect('books.db')\nc = conn.cursor()\nc.execute('CREATE TABLE books (title VARCHAR, author VARCHAR, year INT)')\nconn.commit()\nconn.close()"
+        ],
+        "answer":"import sqlite3\n   conn = sqlite3.connect('books.db')\nc = conn.cursor()\nc.execute('CREATE TABLE books (title TEXT, author TEXT, year INTEGER)')\nconn.commit()\nconn.close()",
+        "discription":"The correct code snippet connects to books.db, creates the books table with fields for title, author, and year, and then closes the connection."
+    },
+        
+    {
+        "id": 3,
+        "question":"Read books.csv and insert its data into the book table.",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Use the SQL command COPY book FROM 'books.csv'",
+        "Use Python's pandas library to read the CSV and then execute SQL insert statements",
+        "Use the SQL command INSERT INTO book VALUES ('books.csv')",
+        "Use the SQL command LOAD DATA INFILE 'books.csv' INTO TABLE book"
+        ],
+        "answer":"Use Python's pandas library to read the CSV and then execute SQL insert statements",
+        "discription":"You can read books.csv using Python’s pandas library and then use SQL insert statements to add the data to the book table."
+    },
+
+    {
+        "id": 4,
+        "question":"Select and print the title column from the book table in alphabetical order.",
+        "optionsCode":[],                                                                                                
+        "optionsText":["SELECT title FROM book ORDER BY title DESC;",
+        "SELECT title FROM book;",
+        "SELECT title FROM book ORDER BY title;",
+        "SELECT title FROM book ORDER BY book.title;"
+        ],
+        "answer":"SELECT title FROM book ORDER BY title;",
+        "discription":"Use SELECT title FROM book ORDER BY title; to select and sort the title column in alphabetical order."
+    },
+
+    {
+        "id": 5,
+        "question":"From the book table, how do you select and print all columns in the order of publication?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["SELECT * FROM book ORDER BY publication;",
+        "SELECT * FROM book ORDER BY publication DESC;",
+        "SELECT ALL FROM book ORDER BY publication;",
+        "SELECT book.* FROM book ORDER BY publication;"
+        ],
+        "answer":"SELECT * FROM book ORDER BY publication;",
+        "discription":"The query SELECT * FROM book ORDER BY publication; selects all columns from the book table and orders the results by the publication column."
+    },
+
+    {
+        "id": 6,
+        "question":"How do you use the sqlalchemy module to connect to the sqlite3 database books.db?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["engine = create_engine('sqlite:///books.db')",
+        "engine = connect('sqlite3://books.db')",
+        "engine = open_connection('sqlite:///books.db')",
+        "engine = Database('sqlite3://books.db')"
+        ],
+        "answer":"engine = create_engine('sqlite:///books.db')",
+        "discription":"Use create_engine('sqlite:///books.db') from SQLAlchemy to connect to the books.db SQLite database."
+    },
+
+    {
+        "id": 7,
+        "question":"After installing the Redis server and the Python redis library, and creating a Redis hash called test with the fields count (1) and name ('Fester Bestertester'), how do you print all the fields for test in Python?",
+        "optionsText":[],                                                                                                
+        "optionsCode":["import redis\nr = redis.Redis()\nr.hset('test', 'count', 1)\nr.hset('test', 'name', 'Fester Bestertester')\nprint(r.hgetall('test'))",
+        "import redis\nr = redis.Redis()\nr.hset('test', 'count', 1)\nr.hset('test', 'name', 'Fester Bestertester')\nprint(r.hkeys('test'))",
+        "import redis\nr = redis.Redis()\nr.hmset('test', {'count': 1, 'name': 'Fester Bestertester'})\nprint(r.hget('test', 'count'))",
+        "import redis\nr = redis.Redis()\nr.hset('test', 'count', 1)\nr.hset('test', 'name', 'Fester Bestertester')\nprint(r.hgetall())"
+        ],
+        "answer":"import redis\nr = redis.Redis()\nr.hset('test', 'count', 1)\nr.hset('test', 'name', 'Fester Bestertester')\nprint(r.hgetall('test'))",
+        "discription":"Use `r.hgetall('test')` to print all fields and their values for the Redis hash `test`."
+    },
+
+    {
+        "id": 8,
+        "question":"What is a probability distribution, and how can you predict values if they are meant to be random?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A probability distribution is a function that maps each possible outcome to a specific value. You can predict exact values from it.",
+        "A probability distribution is a way to model the likelihood of different outcomes. You predict values based on their probabilities.",
+        "A probability distribution predicts outcomes with absolute certainty, so randomness is not involved.",
+        "A probability distribution is a fixed set of outcomes that are guaranteed to occur."
+        ],
+        "answer":"A probability distribution is a way to model the likelihood of different outcomes. You predict values based on their probabilities.",
+        "discription":"A probability distribution models the likelihood of different outcomes, allowing predictions based on the probability of each outcome, not exact values."
+    },
+
+    {
+        "id": 9,
+        "question":"Is there a distinction between true random numbers and pseudo-random numbers, if there is one? Why are the latter considered “good enough”?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Yes, true random numbers are generated by physical processes, while pseudo-random numbers are generated by algorithms. Pseudo-random numbers are considered good enough because they are statistically similar to true random numbers for most applications.",
+        "No, there is no distinction; they are the same. Pseudo-random numbers are not used in practice because they are less reliable.",
+        "Yes, true random numbers are always more accurate than pseudo-random numbers. Pseudo-random numbers are not considered good enough.",
+        "Yes, true random numbers can only be used in cryptography, while pseudo-random numbers can be used in all applications."
+        ],
+        "answer":"Yes, true random numbers are generated by physical processes, while pseudo-random numbers are generated by algorithms. Pseudo-random numbers are considered good enough because they are statistically similar to true random numbers for most applications.",
+        "discription":"True random numbers come from physical processes, while pseudo-random numbers are algorithmically generated. Pseudo-random numbers are often “good enough” because they are statistically similar to true random numbers for most practical uses."
+    },
+
+    {
+        "id": 10,
+        "question":"What are the two main factors that influence the behaviour of a 'normal' probability distribution?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Mean and variance",
+        "Mean and mode",
+        "Mean and skewness",
+        "Variance and kurtosis"
+        ],
+        "answer":"Mean and variance",
+        "discription":"The behavior of a normal probability distribution is mainly influenced by the mean (which determines the center) and the variance (which determines the spread)."
+    },
+
+    {
+        "id": 11,
+        "question":"What is the relationship between exponentiation and logarithms?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Exponentiation is the inverse operation of logarithms, and vice versa.",
+        "Exponentiation and logarithms are unrelated mathematical operations.",
+        "Exponentiation is a type of logarithm operation.",
+        "Logarithms are used to simplify exponentiation calculations, but they are not related."
+        ],
+        "answer":"Exponentiation is the inverse operation of logarithms, and vice versa.",
+        "discription":"Exponentiation and logarithms are inverse operations: 𝑏𝑥=𝑦b x =y implies log  𝑏(𝑦)=𝑥log b ​ (y)=x."
+    },
+
+    {
+        "id": 12,
+        "question":"What are the three logarithmic functions that Python supports?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["log10(), log2(), and log(), where log() is the natural logarithm",
+        "log(), ln(), and lg()",
+        "log(), exp(), and sqrt()",
+        "log(), log1p(), and log2()"
+        ],
+        "answer":"log10(), log2(), and log(), where log() is the natural logarithm",
+        "discription":"Python supports log10() for base-10 logarithms, log2() for base-2 logarithms, and log() for natural logarithms."
+    },
+
+    {
+        "id": 13,
+        "question":"How can you list the files in your current directory using Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["os.list_files()",
+        "os.listdir()",
+        "glob.get_files()",
+        "pathlib.list()"
+        ],
+        "answer":"os.listdir()",
+        "discription":"Use os.listdir() to list the files and directories in your current directory in Python."
+    },
+
+    {
+        "id": 14,
+        "question":"How can you create a list of all the files in your parent directory using Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["import os; files = os.listdir('..')",
+        "import shutil; files = shutil.get_files('..')",
+        "import glob; files = glob.glob('..')",
+        "import pathlib; files = pathlib.Path('..').files()"
+        ],
+        "answer":"import os; files = os.listdir('..')",
+        "discription":"Use os.listdir('..') to list all files and directories in the parent directory."
+    },
+
+    {
+        "id": 15,
+        "question":"How can you use multiprocessing to create three separate processes in Python, where each process waits a random number of seconds between one and five, prints the current time, and then exits?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Create three processes, each calling worker which waits randomly, prints the time, then exits.",
+        "Create three processes without ensuring they all complete.",
+        "Create three processes that wait a fixed 3 seconds and print the time.",
+        "Create three processes where each waits for a random time, but prints the epoch time."
+        ],
+        "answer":"Create three processes, each calling worker which waits randomly, prints the time, then exits.",
+        "discription":"Use three processes with multiprocessing, where each process waits a random time between one and five seconds, prints the current time, and exits."
+    },
+
+    {
+        "id": 16,
+        "question":"In the fromfunction function, which is used to construct new arrays, what is the role of the callable argument?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["To specify the shape of the new array",
+        "To define the data type of the array elements",
+        "To provide a function that generates array values based on indices",
+        "To indicate whether the array should be one-dimensional or multi-dimensional"
+        ],
+        "answer":"To provide a function that generates array values based on indices",
+        "discription":"In the fromfunction function, the callable argument is a function that generates the values of the array based on the indices of the array."
+    },
+
+    {
+        "id": 17,
+        "question":"What happens when a NumPy array is combined with a single-value operand (a scalar, such as an int or a floating-point value) through addition, as in the expression A + n?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["The scalar is added to each element of the array.",
+        "The scalar replaces each element of the array.",
+        "The scalar is ignored, and only the array is retained.",
+        "The scalar is multiplied by each element of the array."
+        ],
+        "answer":"The scalar is added to each element of the array.",
+        "discription":"When a scalar is added to a NumPy array, the scalar is broadcasted and added to each element of the array."
+    },
+
+    {
+        "id": 18,
+        "question":"Can array-to-scalar operations use combined operation-assign operators (such as += or *=)? What is the outcome?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["No, combined operation-assign operators cannot be used with arrays and scalars.",
+        "Yes, combined operation-assign operators can be used, and they apply the operation element-wise between the array and the scalar.",
+        "Yes, combined operation-assign operators are used, but they produce an error if the scalar is zero.",
+        "Yes, combined operation-assign operators can be used, but they only update the scalar value and not the array."
+        ],
+        "answer":"Yes, combined operation-assign operators can be used, and they apply the operation element-wise between the array and the scalar.",
+        "discription":"Combined operation-assign operators (such as += or *=) can be used with arrays and scalars, applying the operation element-wise to each element of the array."
+    },
+
+    {
+        "id": 19,
+        "question":"What is the best way to use a Boolean array to mask another array in Python?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Using the numpy.where function",
+        "Using the & (bitwise AND) operator",
+        "Using indexing with the Boolean array",
+        "Using the numpy.select function"
+        ],
+        "answer":"Using indexing with the Boolean array",
+        "discription":"The best way to mask another array using a Boolean array is by directly indexing the array with the Boolean array, which filters the array to include only elements where the Boolean array is True."
+    },
+
+    {
+        "id": 20,
+        "question":"What are three different ways to get the standard deviation of a large collection of data using standard Python and its packages? Sort the three of them by how quickly they execute.",
+        "optionsCode":[],                                                                                                
+        "optionsText":["numpy.std(), statistics.stdev(), and manual calculation with a loop (fastest to slowest)",
+        "statistics.stdev(), numpy.std(), and manual calculation with a loop (fastest to slowest)",
+        "manual calculation with a loop, numpy.std(), and statistics.stdev() (fastest to slowest)",
+        "manual calculation with a loop, statistics.stdev(), and numpy.std() (fastest to slowest)"
+        ],
+        "answer":"numpy.std(), statistics.stdev(), and manual calculation with a loop (fastest to slowest)",
+        "discription":"numpy.std() is the fastest due to its optimized implementation in C, followed by statistics.stdev(), and lastly, manual calculation with a loop, which is the slowest due to Python's iteration overhead."
+    }
+    
+]

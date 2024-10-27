@@ -1,74 +1,242 @@
 [
     {
       "id": 1,
-      "question": "What is the purpose of HTML in web development?",
+      "question": "In the following elements, which of them are values or expressions? (e.g., values can be integers or strings, and expressions will be mathematical operators.)",
       "options": [
-        "Styling web pages",
-        "Defining data structures",
-        "Programming server-side logic",
-        "Creating the structure of web pages"
+        "42, 5+3",
+        "Hello,World!",
+        "/",
+        "* (Multiplication operator)"
       ],
-      "answer": "Creating the structure of web pages",
-      "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
+      "answer": "42, 5+3",
+      "description": "..."
     },
     {
       "id": 2,
-      "question": "What does CSS stand for in web development?",
+      "question": "What is the difference between a string and a variable?",
       "options": [
-        "Computer Style Sheets",
-        "Creative Style System",
-        "Cascading Style Sheets",
-        "Colorful Style Scripts"
+      "A string is a sequence of characters, while a variable is a container that can store different types of data.",
+       "A string can only store numeric values, while a variable can store text.",
+       "A string is a type of variable that can change its value, while a variable is a fixed value.",
+        "A string is a sequence of numbers, while a variable is a mathematical operator."
       ],
-      "answer": "Cascading Style Sheets",
-      "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
+      "answer": "A string is a sequence of characters, while a variable is a container that can store different types of data.",
+      "description": "..."
     },
     {
       "id": 3,
-      "question": "Which of the following is a popular front-end JavaScript framework?",
+      "question": "Which of the following correctly describes three different data types?",
       "options": [
-        "Express.js",
-        "Vue.js",
-        "Django",
-        "Flask"
+        "Boolean, Algorithm, Array",
+        "Loop, Function, Variable",
+        "Character, Method, Class",
+        "Integer, Float, String"
       ],
-      "answer": "Vue.js",
-      "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
+      "answer": "Integer, Float, String",
+      "description": "..."
     },
     {
       "id": 4,
-      "question": "What is the purpose of a web server in web development?",
+      "question": "What is an expression made up of, and what do all expressions do?",
       "options": [
-        "Managing databases",
-        "Rendering user interfaces",
-        "Storing client-side scripts",
-        "Handling HTTP requests and responses"
+        "Constants and variables; print text.",
+        "Values, variables, operators; produce a value.",
+        "Functions and loops; define structure.",
+        "Data types; store information."
       ],
-      "answer": "Handling HTTP requests and responses",
-      "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
+      "answer": "Values, variables, operators; produce a value.",
+      "description": "...."
     },
     {
       "id": 5,
-      "question": "What is the role of AJAX in web development?",
+      "question": "This assignment statements, like spam = 10. What is the difference between an expression and a statement?",
       "options": [
-        "Asynchronous JavaScript and XML",
-        "Advanced JSON and XML",
-        "Automated JavaScript and XHTML",
-        "Asynchronous JSON and XHTML"
+        "An expression creates a variable; a statement evaluates to a value.",
+        "An expression prints output; a statement stores data.",
+        "An expression evaluates to a value; a statement performs an action.",
+        "An expression runs a loop; a statement defines a function."
       ],
-      "answer": "Asynchronous JavaScript and XML",
-      "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
+      "answer": "An expression evaluates to a value; a statement performs an action.",
+      "description": "..."
     },
     {
       "id": 6,
-      "question": "What does the term 'responsive design' refer to in web development?",
+      "question": "What does the `len()` function do?",
       "options": [
-        "Designing visually appealing websites",
-        "Creating mobile applications",
-        "Designing websites that adapt to different screen sizes",
-        "Implementing secure server configurations"
+        "Returns the length of a string",
+        "Returns the number of elements in a list",
+        "Returns the number of key-value pairs in a dictionary",
+        "All of the above"
       ],
-      "answer": "Designing websites that adapt to different screen sizes",
-      "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
+      "answer": "All of the above",
+      "description": "The len() function returns the length of the specified object, which can be a string, list, dictionary, etc"
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is a mutable data type in Python?",
+      "options": [
+        "touple",
+        "list",
+        "string",
+        "int"
+      ],
+      "answer": "list",
+      "description": "Lists are mutable, meaning their content can be changed."
+    },
+    {
+      "id": 8,
+      "question": "What is the output of print(\"Hello\"[1])?",
+      "options": [
+        "H",
+        "e",
+        "l",
+        "o"
+      ],
+      "answer": "e",
+      "description": "Indexing starts at `0`, so the character at index `1` in \"Hello\" is `e`."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following functions can be used to convert a string to an integer in Python?",
+      "options": [
+        "int()",
+        "str()",
+        "float()",
+        "list()"
+      ],
+      "answer": "int()",
+      "description": "`int()` converts a string to an integer."
+    },
+    {
+      "id": 10,
+      "question": "What is the output of `print(type([]))`?",
+      "options": [
+        "<class 'list'>",
+        "<class 'tuple'>",
+        "<class 'dict'>",
+        "<class 'set'>"
+      ],
+      "answer": "<class 'list'>",
+      "description": " The `type()` function returns the type of the object, and `[]` is a `list`."
+    },
+    {
+      "id": 11,
+      "question": "How do you create a function in Python?",
+      "options": [
+        "function myFunction()",
+        "def myFunction():",
+        "create myFunction():",
+        "function: myFunction()"
+      ],
+      "answer": "def myFunction():",
+      "description": "`def` is the keyword used to define a function in Python."
+    },
+    {
+      "id": 12,
+      "question": "What is the result of `3 == 3.0` in Python?",
+      "options": [
+        "True",
+        "False",
+        "error",
+        "None"
+      ],
+      "answer": "True",
+      "description": "Python considers the integer `3` and the float `3.0` as equal in value."
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is used to handle exceptions in Python?",
+      "options": [
+        "try",
+        "except",
+        "finally",
+        "All of the above"
+      ],
+      "answer": "All of the above",
+      "description": "All these keywords are part of Python's exception handling mechanism."
+    },
+    {
+      "id": 14,
+      "question": "What is the correct way to import a module in Python?",
+      "options": [
+        "include math",
+        "import(math)",
+        "import math",
+        "require 'math'"
+      ],
+      "answer": "import math",
+      "description": "import is the keyword used to import modules in Python."
+    },
+    {
+      "id": 15,
+      "question": "Which keyword is used to define a class in Python?",
+      "options": [
+        "class",
+        "def",
+        "object",
+        "define"
+      ],
+      "answer": "class",
+      "description": "`class` is the keyword used to define a class in Python."
+    },
+    {
+      "id": 16,
+      "question": "What is the output of `print(5 // 2)`?",
+      "options": [
+        "2.5",
+        "2",
+        "3",
+        "1"
+      ],
+      "answer": "2",
+      "description": "`//` performs integer division, which results in `2`."
+    },
+    {
+      "id": 17,
+      "question": "Which of the following is a valid variable name in Python?",
+      "options": [
+        "1variable",
+        "_variable",
+        "variable-name",
+        "variable name"
+      ],
+      "answer": "_variable",
+      "description": "Variable names can start with an `underscore`."
+    },
+    {
+      "id": 18,
+      "question": "How do you check the data type of a variable in Python?",
+      "options": [
+        "checktype()",
+        "type()",
+        "datatype()",
+        "isinstance()"
+      ],
+      "answer": "type()",
+      "description": "`type()` is used to check the data type of a variable."
+    },
+    {
+      "id": 19,
+      "question": "What is the output of the following code: `print(\"Hello\" + \"World\")`?",
+      "options": [
+        "Hello World",
+        "HelloWorld",
+        "Hello+World",
+        "None of the above"
+      ],
+      "answer": "HelloWorld",
+      "description": "The `+` operator concatenates strings without adding spaces."
+    },
+    {
+      "id": 20,
+      "question": "Which of the following is a correct way to create a set in Python?",
+      "options": [
+        "set = {1, 2, 3}",
+        "set = (1, 2, 3)",
+        "set = [1, 2, 3]",
+        "set = '1, 2, 3'"
+      ],
+      "answer": "set = {1, 2, 3}",
+      "description": "Sets in Python are created using curly braces."
     }
   ]

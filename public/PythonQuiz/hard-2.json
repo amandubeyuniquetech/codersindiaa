@@ -1,0 +1,264 @@
+[
+
+    {
+        "id": 1,
+        "question":"How would you write a regex that matches a number with a comma for every three digits? It must match the following:\n'42'\n'1,234'\n'6,368,745'\nbut not the following:\n'12,34,567' (which has only two digits between the commas)\n'1234' (which lacks commas",
+        "optionsCode":[],                                                                                                
+        "optionsText":["\\d{1,3}(,\\d{3})*",
+        "\\d{3,}(,\\d{3})*",
+        "^\\d{1,3}(,\\d{3})*$",
+        "^\\d+(,\\d{3})*$"
+        ],
+        "answer":"^\\d{1,3}(,\\d{3})*$",
+        "discription":"The regex ^\\d{1,3}(,\\d{3})*$ matches a number with one to three digits, optionally followed by groups of three digits separated by commas. The ^ and $ ensure that the entire string must match this pattern."
+    },
+
+    {
+        "id": 2,
+        "question":"Is the Python Standard Library included with PyInputPlus?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Yes, PyInputPlus includes the entire Python Standard Library.",
+        "No, PyInputPlus does not include the Python Standard Library; it is a separate library for input validation.",
+        "Yes, PyInputPlus includes some modules from the Python Standard Library.",
+        "No, PyInputPlus is part of the Python Standard Library."
+        ],
+        "answer":"No, PyInputPlus does not include the Python Standard Library; it is a separate library for input validation.",
+        "discription":"PyInputPlus is a third-party library used to validate user input in Python. It does not include the Python Standard Library but provides its own functions for handling and validating input."
+    },
+
+    {
+        "id": 3,
+        "question":"What is transferred to the keyword arguments allowRegexes and blockRegexes in PyInputPlus?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["A list of regular expressions that define allowed or blocked patterns",
+        "A list of strings specifying the valid and invalid input formats.",
+        "A list of integers specifying valid and invalid numeric ranges.",
+        "A list of functions that validate the input."
+        ],
+        "answer":"A list of regular expressions that define allowed or blocked patterns",
+        "discription":"In PyInputPlus, the allowRegexes and blockRegexes keyword arguments are used to specify lists of regular expressions. allowRegexes defines patterns that are permitted, while blockRegexes specifies patterns that are blocked or disallowed in the input."
+    },
+
+    {
+        "id": 4,
+        "question":"To what does a relative path refer?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["The absolute location of a file or folder in the file system.",
+        "A path that starts from the root directory of the file system.",
+        "A path that is relative to the current working directory.",
+        "A path that always refers to the home directory."
+        ],
+        "answer":"A path that is relative to the current working directory.",
+        "discription":"A relative path refers to the location of a file or directory relative to the current working directory. It doesn't start from the root directory but from wherever you are currently working in the file system. This makes it easier to navigate and access files without needing the full absolute path."
+    },
+
+    {
+        "id": 5,
+        "question":"What does an absolute path start with your operating system?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["The current directory",
+        "A tilde (~)",
+        "A period (.)",
+        "A root directory or drive letter (like / on Unix-based systems or C:\\ on Windows)"
+        ],
+        "answer":"A root directory or drive letter (like / on Unix-based systems or C:\\ on Windows)",
+        "discription":"An absolute path starts from the root directory or drive letter, providing the full address to a file or folder in your operating system, regardless of the current working directory. For example, on Unix-based systems, it starts with /, and on Windows, it starts with a drive letter like C:\\."
+    },
+
+    {
+        "id": 6,
+        "question":"What do the functions os.getcwd() and os.chdir() do?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["os.getcwd() changes the working directory, and os.chdir() prints the current directory.",
+        "os.getcwd() prints the current working directory, and os.chdir() changes the working directory.",
+        "Both os.getcwd() and os.chdir() change the working directory.",
+        "Both os.getcwd() and os.chdir() print the current working directory."
+        ],
+        "answer":"os.getcwd() prints the current working directory, and os.chdir() changes the working directory.",
+        "discription":"os.getcwd(): Returns the current working directory as a string.\nos.chdir(): Changes the current working directory to the path provided."
+    },
+
+    {
+        "id": 7,
+        "question":"What do the . and .. folders represent in a file system?",
+        "optionsCode":[],                                                                                                
+        "optionsText":[". represents the current directory, and .. represents the parent directory.",
+        ". represents the root directory, and .. represents the home directory.",
+        ". represents a hidden directory, and .. represents a backup directory.",
+        ". represents the home directory, and .. represents the root directory."
+        ],
+        "answer":". represents the current directory, and .. represents the parent directory.",
+        "discription":". (single dot) represents the current directory you are working in.\n.. (double dot) represents the parent directory, which is one level up from the current directory."
+    },
+
+    {
+        "id": 8,
+        "question":"What are the three “mode” arguments that can be passed to the open() function?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["'r', 'w', 'a'",
+        "'read', 'write', 'append'",
+        "'open', 'close', 'update'",
+        "'read', 'append', 'modify'"
+        ],
+        "answer":"'r', 'w', 'a'",
+        "discription":"The open() function in Python can use 'r' for reading, 'w' for writing (which overwrites the file), and 'a' for appending data to the file."
+    },
+
+    {
+        "id": 9,
+        "question":"What happens if an existing file is opened in write mode?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["The file's contents are preserved and new data is appended.",
+        "The file's contents are replaced with the new data.",
+        "The file's contents are read but not modified.",
+        "The file cannot be opened if it already exists."
+        ],
+        "answer":"The file's contents are replaced with the new data.",
+        "discription":"When a file is opened in write mode ('w'), its existing contents are erased, and new data will be written to the file."
+    },
+
+    {
+        "id": 10,
+        "question":"What data structure does a shelf value resemble?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["List",
+        "Dictionary",
+        "Tuple",
+        "Set"
+        ],
+        "answer":"Dictionary",
+        "discription":"A shelf value in Python, provided by the shelve module, resembles a dictionary because it allows you to store key-value pairs in a persistent storage format."
+    },
+
+    {
+        "id": 11,
+        "question":"How do you distinguish between shutil.copy() and shutil.copytree()?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["shutil.copy() copies an entire directory, while shutil.copytree() copies a single file.",
+        "shutil.copy() copies a single file, while shutil.copytree() copies an entire directory.",
+        "shutil.copy() renames files, while shutil.copytree() deletes files.",
+        "shutil.copy() and shutil.copytree() are functionally identical."
+        ],
+        "answer":"shutil.copy() copies a single file, while shutil.copytree() copies an entire directory.",
+        "discription":"shutil.copy() is used to copy individual files, whereas shutil.copytree() is used to recursively copy an entire directory and its contents."
+    },
+
+    {
+        "id": 12,
+        "question":"What is the difference between the delete functions in the send2trash and shutil modules?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["send2trash permanently deletes files, while shutil moves files to the trash.",
+        "send2trash moves files to the trash, while shutil permanently deletes files.",
+        "Both send2trash and shutil move files to the trash.",
+        "Both send2trash and shutil permanently delete files."
+        ],
+        "answer":"send2trash moves files to the trash, while shutil permanently deletes files.",
+        "discription":"The send2trash module moves files or directories to the system's trash or recycle bin, allowing recovery, whereas shutil functions like shutil.rmtree() permanently delete files or directories"
+    },
+
+    {
+        "id": 13,
+        "question":"How would you create a program to search a folder tree for files with a certain file extension (like .pdf or .jpg) and copy them to a new folder?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Use os.listdir() to get files, then use shutil.copy() to copy them.",
+        "Use os.walk() to traverse the folder tree, then use shutil.copy() to copy the matching files.",
+        "Use glob.glob() to find files, then use os.rename() to move them.",
+        "Use pathlib.Path().iterdir() to find files, then use pathlib.copy() to copy them."
+        ],
+        "answer":"Use os.walk() to traverse the folder tree, then use shutil.copy() to copy the matching files.",
+        "discription":"The os.walk() function allows you to traverse the directory tree to find files with specific extensions, and shutil.copy() can be used to copy these files to a new location."
+    },
+
+    {
+        "id": 14,
+        "question":"What are the two lines that must be present in your software in order to call logging.debug()?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["import logging and logging.basicConfig(level=logging.DEBUG)",
+        "import log and log.basicConfig(level=log.DEBUG)",
+        "import logging and logging.basicConfig(level=logging.INFO)",
+        "import debug and debug.basicConfig(level=debug.DEBUG)"
+        ],
+        "answer":"import logging and logging.basicConfig(level=logging.DEBUG)",
+        "discription":"To use logging.debug(), you need to import the logging module and configure the logging level to DEBUG using logging.basicConfig(level=logging.DEBUG)."
+    },
+
+    {
+        "id": 15,
+        "question":"What are the two lines that your program must have in order to have logging.debug() send a logging message to a file named programLog.txt?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["import logging and logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)",
+        "import log and log.basicConfig(file='programLog.txt', level=log.DEBUG)",
+        "import logging and logging.basicConfig(filename='programLog.txt', level=logging.INFO)",
+        "import debug and debug.basicConfig(file='programLog.txt', level=debug.DEBUG)"
+        ],
+        "answer":"import logging and logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)",
+        "discription":"To have logging.debug() send messages to a file, you need to import the logging module and configure it with logging.basicConfig(filename='programLog.txt', level=logging.DEBUG)."
+    },
+
+    {
+        "id": 16,
+        "question":"What are the five levels of logging?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Debug, Info, Notice, Warning, Error",
+        "Trace, Debug, Info, Warning, Critical",
+        "Debug, Info, Warning, Error, Critical",
+        "Info, Notice, Warning, Error, Fatal"
+        ],
+        "answer":"Debug, Info, Warning, Error, Critical",
+        "discription":"The five standard levels of logging in Python are Debug, Info, Warning, Error, and Critical, in increasing order of severity."
+    },
+
+    {
+        "id": 17,
+        "question":"What line of code would you add to your software to disable all logging messages?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["logging.disable(logging.INFO)",
+        "logging.disable(logging.WARNING)",
+        "logging.disable(logging.DEBUG)",
+        "logging.disable(logging.CRITICAL)"
+        ],
+        "answer":"logging.disable(logging.CRITICAL)",
+        "discription":"To disable all logging messages in a Python program, you can use the logging.disable(logging.CRITICAL) line. This will prevent any logging messages, including critical ones, from being displayed or recorded."
+    },
+
+    {
+        "id": 18,
+        "question":"Why is using logging messages better than using print() to display the same message?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Logging messages can be turned on or off, while print() cannot.",
+        "print() can only display messages to the console, but logging can be configured to write messages to a file.",
+        "Logging messages have different levels (e.g., debug, info, warning) that help in categorizing the importance of messages.",
+        "All of the above."
+        ],
+        "answer":"All of the above.",
+        "discription":"Using logging messages is better than using print() because logging offers more flexibility. You can easily turn logging on or off, write messages to files, and categorize messages by importance (e.g., debug, info, warning). This makes it a more powerful tool for tracking and debugging code."
+    },
+
+    {
+        "id": 19,
+        "question":"What are the differences between the Step Over, Step In, and Step Out buttons in the debugger?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["Step Over executes the current function and moves to the next line; Step In moves into the function to debug it; Step Out exits the current function.",
+        "Step Over skips the current line; Step In skips the current function; Step Out restarts the debugging process.",
+        "Step Over moves to the previous line; Step In moves to the next line without executing the function; Step Out skips the rest of the code.",
+        "Step Over stops the debugging process; Step In saves the debug state; Step Out resumes normal execution."
+        ],
+        "answer":"Step Over executes the current function and moves to the next line; Step In moves into the function to debug it; Step Out exits the current function.",
+        "discription":"Step Over: Executes the current line of code and moves to the next line in the same function, skipping over function calls.\nStep In: Moves into the function call on the current line to debug its code line-by-line.\nStep Out: Exits the current function and returns to the calling function, resuming execution from there."
+    },
+
+    {
+        "id": 20,
+        "question":"After you click Continue in a debugger, when will it stop?",
+        "optionsCode":[],                                                                                                
+        "optionsText":["When it reaches a breakpoint.",
+        "After executing the next line of code.",
+        "When it finishes executing the current function.",
+        "When the program crashes."
+        ],
+        "answer":"When it reaches a breakpoint.",
+        "discription":"Clicking Continue allows the debugger to run the program normally until it encounters a breakpoint, at which point it will pause again."
+    }
+
+    
+]
